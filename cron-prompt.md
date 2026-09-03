@@ -27,7 +27,9 @@ WEBSITE UPDATE:
    cd /home/kos/personal-newspaper && python3 scripts/build.py build
    cd /home/kos/personal-newspaper && python3 -m unittest discover -v
    cd /home/kos/personal-newspaper && git add public/data/news.json public/data/archive.json public/data/archive/ && (git diff --cached --quiet || git commit -m "Publish daily edition $(date +%F)") && git push origin main
-7. If validation, ingest, build, tests, commit, or push fail: preserve the currently published edition, report the failure plainly, and do not claim the public site updated. The ingest command is atomic and must be the only way you replace public/data/news.json. A successful push triggers the GitHub Pages deployment workflow; only then may you report the public update as submitted.
+   cd /home/kos/personal-newspaper && sleep 5 && RUN_ID=$(gh run list --repo karask/my-newspaper --workflow pages.yml --commit "$(git rev-parse HEAD)" --limit 1 --json databaseId --jq '.[0].databaseId') && test -n "$RUN_ID" && gh run watch "$RUN_ID" --repo karask/my-newspaper --exit-status
+   cd /home/kos/personal-newspaper && python3 -c "import json, pathlib, urllib.request; local=json.loads(pathlib.Path('public/data/news.json').read_text()); req=urllib.request.Request('https://karask.github.io/my-newspaper/data/news.json?verify=' + local['edition']['updated_at'], headers={'User-Agent':'daily-newspaper-verifier','Cache-Control':'no-cache'}); remote=json.load(urllib.request.urlopen(req, timeout=30)); assert (remote['edition']['date'], remote['edition']['updated_at']) == (local['edition']['date'], local['edition']['updated_at'])"
+7. If validation, ingest, build, tests, commit, push, Pages deployment, or live-data verification fail: preserve the previously published edition where possible, report the exact failed gate plainly, and do not claim the public site updated. The ingest command is atomic and must be the only way you replace public/data/news.json.
 
 DELIVERABLE — your final response is one Telegram-ready markdown message:
 - One-line greeting with today's date and a direct line saying whether the website update was verified.
