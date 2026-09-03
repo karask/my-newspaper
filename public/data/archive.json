@@ -1,0 +1,9 @@
+{
+  "editions": [
+    {
+      "date": "2026-09-03",
+      "url": "./data/news.json",
+      "current": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+dist/
+
+# Local research/build artifacts
+*.png
+research-search-results.json
+daily-news-candidate.json

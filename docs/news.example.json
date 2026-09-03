@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "edition": {
+    "date": "2026-09-03",
+    "title": "The Daily Signal",
+    "kicker": "Example data contract — not live reporting",
+    "status": "demo",
+    "updated_at": "2026-09-03T06:30:00+03:00"
+  },
+  "sections": ["Bitcoin", "AI", "Robotics", "Longevity"],
+  "lead_story_id": "example-1",
+  "stories": [
+    {
+      "id": "example-1",
+      "section": "AI",
+      "rank": 1,
+      "story_type": "Explainer",
+      "title": "DEMO — An example headline shows the complete story contract",
+      "summary": "This sample is intentionally fictional and exists only to document the ingest interface.",
+      "source": {
+        "name": "Demo desk",
+        "url": "https://example.com/"
+      },
+      "canonical_url": "https://example.com/daily-signal/example-story",
+      "published_at": "2026-09-03T05:45:00+03:00",
+      "corroboration": [
+        {
+          "name": "Illustrative context",
+          "url": "https://example.org/"
+        }
+      ],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "Demonstration value only; not an editorial assessment."
+      },
+      "tags": ["Demo", "Example"]
+    }
+  ]
+}

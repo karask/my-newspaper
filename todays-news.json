@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "edition": {
+    "date": "2026-09-03",
+    "title": "The Daily Signal",
+    "kicker": "Four fields. One carefully sourced morning edition.",
+    "status": "live",
+    "updated_at": "2026-09-03T18:22:29+03:00"
+  },
+  "sections": [
+    "Bitcoin",
+    "AI",
+    "Robotics",
+    "Longevity"
+  ],
+  "lead_story_id": "ai-nyc-schools-moratorium",
+  "stories": [
+    {
+      "id": "ai-nyc-schools-moratorium",
+      "section": "AI",
+      "rank": 1,
+      "story_type": "Policy",
+      "title": "NYC schools impose a one-year generative-AI moratorium through eighth grade",
+      "summary": "The largest U.S. school district will prohibit student-facing generative AI for elementary and middle-school students while introducing twice-yearly AI-literacy classes in high school. Teachers may still use AI for planning and operations, making this a restriction on unsupervised student use rather than a blanket rejection of the technology.",
+      "source": {
+        "name": "ABC News / Associated Press",
+        "url": "https://abcnews.com/US/wireStory/nyc-nations-largest-school-district-bans-ai-students-136149168"
+      },
+      "canonical_url": "https://abcnews.com/US/wireStory/nyc-nations-largest-school-district-bans-ai-students-136149168",
+      "published_at": "2026-09-02T12:54:00-04:00",
+      "corroboration": [
+        {
+          "name": "MediaNama",
+          "url": "https://medianama.com/2026/09/223-new-york-banning-generative-ai-grade-8"
+        },
+        {
+          "name": "Hoodline",
+          "url": "https://hoodline.com/2026/09/nyc-bans-ai-for-600-000-students-through-8th-grade-cellphone-style-crackdown"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Primary reporting is an Associated Press dispatch carried by ABC; two independent outlets corroborate the policy details."
+      },
+      "tags": [
+        "Education",
+        "Policy",
+        "Generative AI"
+      ]
+    },
+    {
+      "id": "longevity-semaglutide-mice",
+      "section": "Longevity",
+      "rank": 2,
+      "story_type": "Research",
+      "title": "Late-life semaglutide extends lifespan and healthspan in older female mice",
+      "summary": "An NIH-funded study reports that three months of semaglutide improved muscle and cognitive function and reduced several molecular hallmarks of aging in older female mice. A separate lifespan cohort lived a median of nearly 100 days longer, but the evidence is preclinical and does not establish a longevity effect in humans.",
+      "source": {
+        "name": "National Institutes of Health",
+        "url": "https://www.nih.gov/news-events/news-releases/glp-1-treatment-late-life-extends-lifespan-animal-model"
+      },
+      "canonical_url": "https://www.nih.gov/news-events/news-releases/glp-1-treatment-late-life-extends-lifespan-animal-model",
+      "published_at": "2026-09-02T12:00:00-04:00",
+      "corroboration": [
+        {
+          "name": "Nature News",
+          "url": "https://www.nature.com/articles/d41586-026-02757-1"
+        },
+        {
+          "name": "Scientific American",
+          "url": "https://www.scientificamerican.com/article/glp-1-weight-loss-medication-could-slow-aging-and-extend-lifespan/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "NIH summarizes the funded animal study; independent science publications corroborate it. The result is limited to an animal model."
+      },
+      "tags": [
+        "GLP-1",
+        "Semaglutide",
+        "Aging Biology"
+      ]
+    },
+    {
+      "id": "robotics-microduck-demand",
+      "section": "Robotics",
+      "rank": 3,
+      "story_type": "Product",
+      "title": "Microduck crosses 10,000 sales as a small robot and open development platform",
+      "summary": "Hugging Face says the $399, 800-gram Microduck sold more than 10,000 units within days, pushing deliveries beyond Christmas. Built by subsidiary Pollen Robotics around a Rockchip RK3566, the device sits between consumer toy and programmable robotics platform, with open software and on-device sensing.",
+      "source": {
+        "name": "CNBC",
+        "url": "https://www.cnbc.com/2026/09/01/hugging-faces-new-duck-robot-is-selling-fast-a-chinese-chip-powers-it.html"
+      },
+      "canonical_url": "https://www.cnbc.com/2026/09/01/hugging-faces-new-duck-robot-is-selling-fast-a-chinese-chip-powers-it.html",
+      "published_at": "2026-09-01T12:00:00+08:00",
+      "corroboration": [
+        {
+          "name": "Pollen Robotics",
+          "url": "https://pollen-robotics.com/microduck/blog/introducing-microduck/"
+        },
+        {
+          "name": "Quartz",
+          "url": "https://qz.com/hugging-face-microduck-robot-sales-rockchip-chinese-chip-090126"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Reported sales are attributed to Hugging Face and corroborated by independent coverage; product specifications are also available from the maker."
+      },
+      "tags": [
+        "Consumer Robotics",
+        "Open Source",
+        "Edge AI"
+      ]
+    },
+    {
+      "id": "bitcoin-sec-transfer-agent-tokenized",
+      "section": "Bitcoin",
+      "story_type": "Regulation",
+      "title": "SEC proposes transfer-agent overhaul that opens the door to tokenized securities",
+      "summary": "The SEC has proposed a major update to transfer-agent rules, the first major overhaul in decades, explicitly accounting for blockchain-based securities. The proposal was released this week and is driving regulation desks' X threads today; it would modernize how custody and recordkeeping for tokenized assets are handled. Rulemaking is not final.",
+      "source": {
+        "name": "crypto.news",
+        "url": "https://crypto.news/sec-proposes-transfer-agent-for-tokenized-securities/"
+      },
+      "canonical_url": "https://crypto.news/sec-proposes-transfer-agent-for-tokenized-securities/",
+      "published_at": "2026-09-01T19:33:32+00:00",
+      "corroboration": [
+        {
+          "name": "KuCoin News Flash",
+          "url": "https://www.kucoin.com/news/flash/sec-proposes-major-transfer-agent-rule-overhaul-addresses-tokenized-securities"
+        },
+        {
+          "name": "CoinGape",
+          "url": "https://coingape.com/sec-proposes-rule-changes-for-transfer-agents-to-reflect-tokenized-securities/"
+        },
+        {
+          "name": "Crypto Briefing",
+          "url": "https://cryptobriefing.com/sec-transfer-agent-rule-tokenization/"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Independent coverage from four outlets plus same-day X threads; proposal is regulatory, not yet a final rule."
+      },
+      "tags": [
+        "SEC",
+        "Tokenization",
+        "Regulation"
+      ],
+      "rank": 4
+    },
+    {
+      "id": "bitcoin-strategy-capital-cycle",
+      "section": "Bitcoin",
+      "rank": 5,
+      "story_type": "Treasury",
+      "title": "Strategy resumes accumulation after summer sales, buying 4,603 bitcoin",
+      "summary": "Strategy bought 4,603 BTC for about $369.7 million at an average $80,318 after a roughly ten-week pause. The company had sold a smaller portion of its holdings during the summer to support preferred-share obligations; CEO Phong Le characterized both moves as capital-management decisions rather than attempts to time bitcoin.",
+      "source": {
+        "name": "Bitbo",
+        "url": "https://bitbo.io/news/strategy-resumes-bitcoin-buying/"
+      },
+      "canonical_url": "https://bitbo.io/news/strategy-resumes-bitcoin-buying/",
+      "published_at": "2026-09-02T12:00:00-04:00",
+      "corroboration": [
+        {
+          "name": "WebProNews",
+          "url": "https://webpronews.com/strategy-ceo-defends-bitcoin-machine-after-summer-sales-and-370-million-rebuy"
+        },
+        {
+          "name": "Bloomingbit",
+          "url": "https://en.bloomingbit.io/feed/news/119656"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "The purchase amount and treasury total agree across multiple reports; interpretation of the summer sales remains management framing."
+      },
+      "tags": [
+        "Strategy",
+        "Corporate Treasury",
+        "Capital Markets"
+      ]
+    },
+    {
+      "id": "bitcoin-range-support",
+      "section": "Bitcoin",
+      "rank": 6,
+      "story_type": "Market watch",
+      "title": "Bitcoin rebounds from the $76,000 area while spot demand remains mixed",
+      "summary": "Bitcoin recovered toward $77,600 after testing the mid-$76,000s, where analysts identify an active-investor cost basis near $76,350. The rebound is not yet backed by a clean spot-demand signal: recent ETF flows and exchange deposits remain mixed, keeping the $80,000 area as the immediate test rather than a confirmed breakout.",
+      "source": {
+        "name": "Bloomingbit",
+        "url": "https://en.bloomingbit.io/feed/news/119656"
+      },
+      "canonical_url": "https://en.bloomingbit.io/feed/news/119656",
+      "published_at": "2026-09-03T09:00:00+09:00",
+      "corroboration": [
+        {
+          "name": "TronWeekly",
+          "url": "https://tronweekly.com/bitcoin-price-faces-a-critical-83k-test-amid"
+        }
+      ],
+      "quality": {
+        "signal": "analysis",
+        "confidence": "medium",
+        "note": "Price levels are corroborated, but market interpretation is time-sensitive and partly analyst commentary."
+      },
+      "tags": [
+        "Markets",
+        "ETF Flows",
+        "Price Action"
+      ]
+    },
+    {
+      "id": "bitcoin-hayes-1m-2030-eth-preference",
+      "section": "Bitcoin",
+      "story_type": "Markets",
+      "title": "Arthur Hayes: BTC to $1M by 2030, but he'd rather be buying Ethereum",
+      "summary": "Arthur Hayes (BitMEX co-founder) predicts Bitcoin reaches $1M by 2030 while naming Ethereum his top crypto pick, expecting a 3-5x move. The forecast is circulating widely on X today and has been picked up across crypto press. It is a prominent-market-maker forecast, not a verified event.",
+      "source": {
+        "name": "Cointelegraph Magazine",
+        "url": "https://cointelegraph.com/magazine/btc-will-hit-1m-by-2030-but-arthur-hayes-is-buying-eth-instead"
+      },
+      "canonical_url": "https://cointelegraph.com/magazine/btc-will-hit-1m-by-2030-but-arthur-hayes-is-buying-eth-instead",
+      "published_at": "2026-09-02T13:30:00+00:00",
+      "corroboration": [
+        {
+          "name": "Altcoin Buzz",
+          "url": "https://www.altcoinbuzz.io/arthur-hayes-bitcoin-1m-2030-ethereum"
+        },
+        {
+          "name": "X: @InsideDHive (12 likes)",
+          "url": "https://x.com/InsideDHive/status/2095251638973767941"
+        },
+        {
+          "name": "BitcoinEthereumNews",
+          "url": "https://bitcoinethereumnews.com/bitcoin/btc-will-hit-1m-by-2030-but-arthur-hayes-is-buying-eth-instead/"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "The statements are corroborated across multiple outlets and X; the $1M/2030 figure is a forecast, not a verified market event."
+      },
+      "tags": [
+        "Arthur Hayes",
+        "Forecast",
+        "Ethereum"
+      ],
+      "rank": 7
+    },
+    {
+      "id": "robotics-why-demos-mislead",
+      "section": "Robotics",
+      "rank": 8,
+      "story_type": "Analysis",
+      "title": "A robotics reality check argues that polished demos hide the hardest engineering",
+      "summary": "A widely discussed essay catalogs why robotics remains difficult: variable environments, sparse failure data, hardware wear, safety constraints and the gap between a controlled demonstration and reliable deployment. It is commentary rather than a product announcement, but it provides a useful counterweight to this week's consumer-robotics hype.",
+      "source": {
+        "name": "Second Thoughts",
+        "url": "https://secondthoughts.ai/p/14-reasons-robotics-is-hard"
+      },
+      "canonical_url": "https://secondthoughts.ai/p/14-reasons-robotics-is-hard",
+      "published_at": "2026-09-02T12:00:00-04:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "analysis",
+        "confidence": "medium",
+        "note": "This is clearly labeled expert commentary and has not been treated as a factual breaking-news claim."
+      },
+      "tags": [
+        "Reliability",
+        "Deployment",
+        "Engineering"
+      ]
+    }
+  ]
+}
