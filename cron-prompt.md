@@ -26,7 +26,8 @@ WEBSITE UPDATE:
    cd /home/kos/personal-newspaper && python3 scripts/build.py ingest daily-news-candidate.json
    cd /home/kos/personal-newspaper && python3 scripts/build.py build
    cd /home/kos/personal-newspaper && python3 -m unittest discover -v
-7. If validation, ingest, build, or tests fail: preserve the currently published edition, report the failure plainly, and do not claim the site updated. The ingest command is atomic and must be the only way you replace public/data/news.json.
+   cd /home/kos/personal-newspaper && git add public/data/news.json public/data/archive.json public/data/archive/ && (git diff --cached --quiet || git commit -m "Publish daily edition $(date +%F)") && git push origin main
+7. If validation, ingest, build, tests, commit, or push fail: preserve the currently published edition, report the failure plainly, and do not claim the public site updated. The ingest command is atomic and must be the only way you replace public/data/news.json. A successful push triggers the GitHub Pages deployment workflow; only then may you report the public update as submitted.
 
 DELIVERABLE — your final response is one Telegram-ready markdown message:
 - One-line greeting with today's date and a direct line saying whether the website update was verified.
