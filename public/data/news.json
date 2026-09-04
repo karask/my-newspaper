@@ -5,7 +5,7 @@
     "title": "The Daily Signal",
     "kicker": "Primary-source tech intelligence, compiled from the live wire.",
     "status": "live",
-    "updated_at": "2026-09-04T11:07:54+03:00"
+    "updated_at": "2026-09-04T11:34:25+03:00"
   },
   "sections": [
     "Bitcoin",
@@ -644,6 +644,45 @@
         "Generative Media",
         "Official X"
       ]
+    },
+    {
+      "id": "ai-sanders-casar-superintelligence-ban",
+      "section": "AI",
+      "story_type": "Policy",
+      "title": "Sanders and Casar introduce legislation to ban artificial superintelligence and pause advanced AI development",
+      "summary": "Sen. Bernie Sanders and Sen. Greg Casar introduced the 'Ban Artificial Superintelligence Act,' which would ban artificial superintelligence and temporarily pause development of advanced AI systems in the US, following a string of incidents involving autonomous AI agents. The proposal frames a pause as a risk-control measure while capability testing standards are established. It is now in the legislative process and has drawn a fast-response debate on whether a pause is enforceable.",
+      "source": {
+        "name": "Sanders Senate (primary)",
+        "url": "https://sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development"
+      },
+      "canonical_url": "https://sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development",
+      "published_at": "2026-09-03T12:00:00-04:00",
+      "corroboration": [
+        {
+          "name": "The Washington Post",
+          "url": "https://www.washingtonpost.com/technology/2026/09/03/sanders-proposes-artificial-superintelligence-ban-after-rogue-ai-incidents/"
+        },
+        {
+          "name": "Politico",
+          "url": "https://politico.com/live-updates/2026/09/03/congress/bernie-sanders-greg-casar-ai-superintelligence-ban-01063277"
+        },
+        {
+          "name": "Axios",
+          "url": "https://axios.com/2026/09/03/bernie-sanders-superintelligence-ban-ai-pause"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Primary source is the Senate press release; WaPo, Politico and Axios independently confirm the legislation and its pause mechanism. This is a proposed bill, not enacted law."
+      },
+      "tags": [
+        "Policy",
+        "Legislation",
+        "AI Safety",
+        "Superintelligence"
+      ],
+      "rank": 20
     }
   ]
 }

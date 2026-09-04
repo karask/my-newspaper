@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "edition": {
-    "date": "2026-09-03",
+    "date": "2026-09-04",
     "title": "The Daily Signal",
-    "kicker": "Four fields. One carefully sourced morning edition.",
+    "kicker": "Primary-source tech intelligence, compiled from the live wire.",
     "status": "live",
-    "updated_at": "2026-09-03T18:22:29+03:00"
+    "updated_at": "2026-09-04T11:34:25+03:00"
   },
   "sections": [
     "Bitcoin",
@@ -13,274 +13,676 @@
     "Robotics",
     "Longevity"
   ],
-  "lead_story_id": "ai-nyc-schools-moratorium",
+  "lead_story_id": "ai-gpt6-astra",
   "stories": [
     {
-      "id": "ai-nyc-schools-moratorium",
+      "id": "ai-gpt6-astra",
       "section": "AI",
       "rank": 1,
-      "story_type": "Policy",
-      "title": "NYC schools impose a one-year generative-AI moratorium through eighth grade",
-      "summary": "The largest U.S. school district will prohibit student-facing generative AI for elementary and middle-school students while introducing twice-yearly AI-literacy classes in high school. Teachers may still use AI for planning and operations, making this a restriction on unsupervised student use rather than a blanket rejection of the technology.",
+      "story_type": "Model release",
+      "title": "OpenAI releases GPT-6 Astra, its first model rated Critical for cybersecurity capability",
+      "summary": "OpenAI began the staged rollout of GPT-6 Astra, calling it its most capable model for computer use, browsing, software engineering, science and professional work. The first access goes to selected Daybreak organizations; Plus, Pro, Business, Enterprise and API availability is due over the coming days. OpenAI prices standard API use at $10 per million input tokens and $50 per million output tokens, while the system card says Astra is the first model to reach the company's Critical cybersecurity threshold.",
       "source": {
-        "name": "ABC News / Associated Press",
-        "url": "https://abcnews.com/US/wireStory/nyc-nations-largest-school-district-bans-ai-students-136149168"
+        "name": "X: @OpenAI",
+        "url": "https://x.com/OpenAI/status/2095595741528125780"
       },
-      "canonical_url": "https://abcnews.com/US/wireStory/nyc-nations-largest-school-district-bans-ai-students-136149168",
-      "published_at": "2026-09-02T12:54:00-04:00",
+      "canonical_url": "https://deploymentsafety.openai.com/gpt-6-astra",
+      "published_at": "2026-09-03T19:32:13Z",
       "corroboration": [
         {
-          "name": "MediaNama",
-          "url": "https://medianama.com/2026/09/223-new-york-banning-generative-ai-grade-8"
+          "name": "OpenAI Developers",
+          "url": "https://x.com/OpenAIDevs/status/2095596020638036311"
         },
         {
-          "name": "Hoodline",
-          "url": "https://hoodline.com/2026/09/nyc-bans-ai-for-600-000-students-through-8th-grade-cellphone-style-crackdown"
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html"
         }
       ],
       "quality": {
         "signal": "corroborated",
         "confidence": "high",
-        "note": "Primary reporting is an Associated Press dispatch carried by ABC; two independent outlets corroborate the policy details."
+        "note": "Official OpenAI launch post and system card, independently corroborated by CNBC. Rollout is staged, not universal on day one."
       },
       "tags": [
-        "Education",
-        "Policy",
-        "Generative AI"
+        "GPT-6",
+        "Astra",
+        "Agents",
+        "Cybersecurity",
+        "Official X"
       ]
     },
     {
-      "id": "longevity-semaglutide-mice",
-      "section": "Longevity",
+      "id": "ai-nvidia-huggingface",
+      "section": "AI",
       "rank": 2,
-      "story_type": "Research",
-      "title": "Late-life semaglutide extends lifespan and healthspan in older female mice",
-      "summary": "An NIH-funded study reports that three months of semaglutide improved muscle and cognitive function and reduced several molecular hallmarks of aging in older female mice. A separate lifespan cohort lived a median of nearly 100 days longer, but the evidence is preclinical and does not establish a longevity effect in humans.",
+      "story_type": "Acquisition",
+      "title": "NVIDIA agrees to acquire Hugging Face for $12.93 billion while keeping the platform open",
+      "summary": "NVIDIA announced an agreement to acquire Hugging Face for $12.93 billion. The companies say Hugging Face will remain open, multi-cloud and compute-agnostic—an important commitment for the hub, Transformers, datasets and the LeRobot ecosystem. This is a major consolidation event across AI software distribution, open models and robotics tooling, subject to the transaction closing and those openness commitments holding in practice.",
       "source": {
-        "name": "National Institutes of Health",
-        "url": "https://www.nih.gov/news-events/news-releases/glp-1-treatment-late-life-extends-lifespan-animal-model"
+        "name": "NVIDIA",
+        "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/"
       },
-      "canonical_url": "https://www.nih.gov/news-events/news-releases/glp-1-treatment-late-life-extends-lifespan-animal-model",
-      "published_at": "2026-09-02T12:00:00-04:00",
+      "canonical_url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+      "published_at": "2026-09-03T12:02:49Z",
       "corroboration": [
         {
-          "name": "Nature News",
-          "url": "https://www.nature.com/articles/d41586-026-02757-1"
+          "name": "X: @huggingface",
+          "url": "https://x.com/huggingface/status/2095508870915338284"
         },
         {
-          "name": "Scientific American",
-          "url": "https://www.scientificamerican.com/article/glp-1-weight-loss-medication-could-slow-aging-and-extend-lifespan/"
+          "name": "X: @nvidia",
+          "url": "https://x.com/nvidia/status/2095518531693806017"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official NVIDIA announcement confirmed by official Hugging Face and NVIDIA X accounts."
+      },
+      "tags": [
+        "NVIDIA",
+        "Hugging Face",
+        "M&A",
+        "Open Source",
+        "Official X"
+      ]
+    },
+    {
+      "id": "ai-fable-51-catchup",
+      "section": "AI",
+      "rank": 3,
+      "story_type": "Catch-up / model release",
+      "title": "Catch-up: Anthropic shipped Claude Fable 5.1 and Mythos 5.1 with sharply cheaper cache reads",
+      "summary": "Anthropic released Claude Fable 5.1 and the restricted Claude Mythos 5.1 on September 1, but the earlier edition missed it. Fable 5.1 is generally available for coding and knowledge work; Anthropic reports a 75% reduction in cache-read pricing, fewer false-positive safety interventions and a one-million-token context window. Mythos 5.1 uses the same underlying model with different safeguards and is limited to vetted cybersecurity and life-sciences organizations.",
+      "source": {
+        "name": "Anthropic",
+        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+      },
+      "canonical_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "published_at": "2026-09-01T18:03:14Z",
+      "corroboration": [
+        {
+          "name": "X: @claudeai",
+          "url": "https://x.com/claudeai/status/2094848572143407483"
         }
       ],
       "quality": {
         "signal": "primary",
         "confidence": "high",
-        "note": "NIH summarizes the funded animal study; independent science publications corroborate it. The result is limited to an animal model."
+        "note": "Official Anthropic release and official Claude X post. Included as an explicitly labeled catch-up because the prior daily pipeline missed it."
       },
       "tags": [
-        "GLP-1",
-        "Semaglutide",
-        "Aging Biology"
+        "Claude",
+        "Fable 5.1",
+        "Mythos 5.1",
+        "Catch-up",
+        "Official X"
       ]
     },
     {
-      "id": "robotics-microduck-demand",
-      "section": "Robotics",
-      "rank": 3,
-      "story_type": "Product",
-      "title": "Microduck crosses 10,000 sales as a small robot and open development platform",
-      "summary": "Hugging Face says the $399, 800-gram Microduck sold more than 10,000 units within days, pushing deliveries beyond Christmas. Built by subsidiary Pollen Robotics around a Rockchip RK3566, the device sits between consumer toy and programmable robotics platform, with open software and on-device sensing.",
+      "id": "ai-weathernext-3",
+      "section": "AI",
+      "rank": 4,
+      "story_type": "Model release",
+      "title": "Google DeepMind launches WeatherNext 3 across Search, Gemini, Maps and cloud data products",
+      "summary": "Google DeepMind introduced WeatherNext 3, its newest global weather model, and integrated forecasts into Search, Gemini, Maps and Maps Platform. Forecast data is also being made available through BigQuery, Earth Engine and Google Cloud Storage. The release matters because it moves a research-grade weather model directly into consumer and developer products rather than leaving it as a benchmark demo.",
       "source": {
-        "name": "CNBC",
-        "url": "https://www.cnbc.com/2026/09/01/hugging-faces-new-duck-robot-is-selling-fast-a-chinese-chip-powers-it.html"
+        "name": "Google DeepMind",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/"
       },
-      "canonical_url": "https://www.cnbc.com/2026/09/01/hugging-faces-new-duck-robot-is-selling-fast-a-chinese-chip-powers-it.html",
-      "published_at": "2026-09-01T12:00:00+08:00",
+      "canonical_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/",
+      "published_at": "2026-09-03T15:03:05Z",
       "corroboration": [
         {
-          "name": "Pollen Robotics",
-          "url": "https://pollen-robotics.com/microduck/blog/introducing-microduck/"
+          "name": "X: @GoogleDeepMind",
+          "url": "https://x.com/GoogleDeepMind/status/2095528012791902536"
         },
         {
-          "name": "Quartz",
-          "url": "https://qz.com/hugging-face-microduck-robot-sales-rockchip-chinese-chip-090126"
+          "name": "X: @GoogleResearch",
+          "url": "https://x.com/GoogleResearch/status/2095591983276540234"
         }
       ],
       "quality": {
-        "signal": "corroborated",
+        "signal": "primary",
         "confidence": "high",
-        "note": "Reported sales are attributed to Hugging Face and corroborated by independent coverage; product specifications are also available from the maker."
+        "note": "Official Google release corroborated by two official Google research accounts."
       },
       "tags": [
-        "Consumer Robotics",
-        "Open Source",
-        "Edge AI"
+        "WeatherNext 3",
+        "Google DeepMind",
+        "Forecasting",
+        "Official X"
       ]
     },
     {
-      "id": "bitcoin-sec-transfer-agent-tokenized",
-      "section": "Bitcoin",
-      "story_type": "Regulation",
-      "title": "SEC proposes transfer-agent overhaul that opens the door to tokenized securities",
-      "summary": "The SEC has proposed a major update to transfer-agent rules, the first major overhaul in decades, explicitly accounting for blockchain-based securities. The proposal was released this week and is driving regulation desks' X threads today; it would modernize how custody and recordkeeping for tokenized assets are handled. Rulemaking is not final.",
-      "source": {
-        "name": "crypto.news",
-        "url": "https://crypto.news/sec-proposes-transfer-agent-for-tokenized-securities/"
-      },
-      "canonical_url": "https://crypto.news/sec-proposes-transfer-agent-for-tokenized-securities/",
-      "published_at": "2026-09-01T19:33:32+00:00",
-      "corroboration": [
-        {
-          "name": "KuCoin News Flash",
-          "url": "https://www.kucoin.com/news/flash/sec-proposes-major-transfer-agent-rule-overhaul-addresses-tokenized-securities"
-        },
-        {
-          "name": "CoinGape",
-          "url": "https://coingape.com/sec-proposes-rule-changes-for-transfer-agents-to-reflect-tokenized-securities/"
-        },
-        {
-          "name": "Crypto Briefing",
-          "url": "https://cryptobriefing.com/sec-transfer-agent-rule-tokenization/"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "high",
-        "note": "Independent coverage from four outlets plus same-day X threads; proposal is regulatory, not yet a final rule."
-      },
-      "tags": [
-        "SEC",
-        "Tokenization",
-        "Regulation"
-      ],
-      "rank": 4
-    },
-    {
-      "id": "bitcoin-strategy-capital-cycle",
-      "section": "Bitcoin",
+      "id": "ai-runway-gwm-worlds-2",
+      "section": "AI",
       "rank": 5,
-      "story_type": "Treasury",
-      "title": "Strategy resumes accumulation after summer sales, buying 4,603 bitcoin",
-      "summary": "Strategy bought 4,603 BTC for about $369.7 million at an average $80,318 after a roughly ten-week pause. The company had sold a smaller portion of its holdings during the summer to support preferred-share obligations; CEO Phong Le characterized both moves as capital-management decisions rather than attempts to time bitcoin.",
+      "story_type": "Research release",
+      "title": "Runway releases GWM Worlds 2 for interactive 720p world simulation with synchronized audio",
+      "summary": "Runway introduced GWM Worlds 2, a general world model designed for interactive real-time simulation at 720p and 24 frames per second with synchronized 48 kHz audio. The release pushes generative video toward controllable environments rather than passive clips. Performance and controllability claims are vendor-reported and need independent testing, but the system is a concrete research release with a live technical page.",
       "source": {
-        "name": "Bitbo",
-        "url": "https://bitbo.io/news/strategy-resumes-bitcoin-buying/"
+        "name": "Runway Research",
+        "url": "https://runway.com/research/introducing-gwm-worlds-2"
       },
-      "canonical_url": "https://bitbo.io/news/strategy-resumes-bitcoin-buying/",
-      "published_at": "2026-09-02T12:00:00-04:00",
+      "canonical_url": "https://runway.com/research/introducing-gwm-worlds-2",
+      "published_at": "2026-09-03T15:50:47Z",
       "corroboration": [
         {
-          "name": "WebProNews",
-          "url": "https://webpronews.com/strategy-ceo-defends-bitcoin-machine-after-summer-sales-and-370-million-rebuy"
-        },
-        {
-          "name": "Bloomingbit",
-          "url": "https://en.bloomingbit.io/feed/news/119656"
+          "name": "X: @runwayml",
+          "url": "https://x.com/runwayml/status/2095540014645920040"
         }
       ],
       "quality": {
-        "signal": "corroborated",
+        "signal": "primary",
         "confidence": "high",
-        "note": "The purchase amount and treasury total agree across multiple reports; interpretation of the summer sales remains management framing."
+        "note": "Official Runway research page and official X launch post; performance claims remain vendor-reported."
       },
       "tags": [
-        "Strategy",
-        "Corporate Treasury",
-        "Capital Markets"
+        "World Models",
+        "Runway",
+        "Simulation",
+        "Video",
+        "Official X"
       ]
     },
     {
-      "id": "bitcoin-range-support",
-      "section": "Bitcoin",
+      "id": "ai-grok-enterprise",
+      "section": "AI",
       "rank": 6,
-      "story_type": "Market watch",
-      "title": "Bitcoin rebounds from the $76,000 area while spot demand remains mixed",
-      "summary": "Bitcoin recovered toward $77,600 after testing the mid-$76,000s, where analysts identify an active-investor cost basis near $76,350. The rebound is not yet backed by a clean spot-demand signal: recent ETF flows and exchange deposits remain mixed, keeping the $80,000 area as the immediate test rather than a confirmed breakout.",
+      "story_type": "Product release",
+      "title": "xAI launches Grok Bot for Enterprise with deployment and governance controls",
+      "summary": "xAI launched Grok Bot for Enterprise, positioning it as an organization-managed agent product rather than a consumer chat feature. The release focuses on enterprise deployment, control and integration, and was published on xAI's official product channel before being amplified by Elon Musk. Concrete customer behavior and reliability remain to be tested after launch.",
       "source": {
-        "name": "Bloomingbit",
-        "url": "https://en.bloomingbit.io/feed/news/119656"
+        "name": "SpaceXAI / xAI",
+        "url": "https://x.ai/news/grok-bot-for-enterprise"
       },
-      "canonical_url": "https://en.bloomingbit.io/feed/news/119656",
-      "published_at": "2026-09-03T09:00:00+09:00",
+      "canonical_url": "https://x.ai/news/grok-bot-for-enterprise",
+      "published_at": "2026-09-03T21:14:52Z",
       "corroboration": [
         {
-          "name": "TronWeekly",
-          "url": "https://tronweekly.com/bitcoin-price-faces-a-critical-83k-test-amid"
+          "name": "X: @bot",
+          "url": "https://x.com/bot/status/2095621571335655872"
+        },
+        {
+          "name": "X: @elonmusk",
+          "url": "https://x.com/elonmusk/status/2095668208090959941"
         }
       ],
       "quality": {
-        "signal": "analysis",
-        "confidence": "medium",
-        "note": "Price levels are corroborated, but market interpretation is time-sensitive and partly analyst commentary."
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official xAI product page and product-account launch post, amplified by xAI leadership."
       },
       "tags": [
-        "Markets",
-        "ETF Flows",
-        "Price Action"
+        "xAI",
+        "Grok",
+        "Enterprise",
+        "Agents",
+        "Official X"
       ]
     },
     {
-      "id": "bitcoin-hayes-1m-2030-eth-preference",
-      "section": "Bitcoin",
-      "story_type": "Markets",
-      "title": "Arthur Hayes: BTC to $1M by 2030, but he'd rather be buying Ethereum",
-      "summary": "Arthur Hayes (BitMEX co-founder) predicts Bitcoin reaches $1M by 2030 while naming Ethereum his top crypto pick, expecting a 3-5x move. The forecast is circulating widely on X today and has been picked up across crypto press. It is a prominent-market-maker forecast, not a verified event.",
+      "id": "ai-ecommerce-bench",
+      "section": "AI",
+      "rank": 7,
+      "story_type": "Benchmark release",
+      "title": "Qwen releases E-Commerce Bench for long-horizon autonomous business agents",
+      "summary": "The Qwen team released E-Commerce Bench, a benchmark for agents operating multi-step business workflows over long horizons. The project includes an arXiv paper, a public benchmark site and code under the QwenLM organization. It is useful because it tests sustained operation rather than isolated question answering, though benchmark relevance will depend on how closely its environments match real production systems.",
       "source": {
-        "name": "Cointelegraph Magazine",
-        "url": "https://cointelegraph.com/magazine/btc-will-hit-1m-by-2030-but-arthur-hayes-is-buying-eth-instead"
+        "name": "E-Commerce Bench paper",
+        "url": "https://arxiv.org/abs/2608.30730"
       },
-      "canonical_url": "https://cointelegraph.com/magazine/btc-will-hit-1m-by-2030-but-arthur-hayes-is-buying-eth-instead",
-      "published_at": "2026-09-02T13:30:00+00:00",
+      "canonical_url": "https://ecbench.github.io/",
+      "published_at": "2026-09-03T11:37:24Z",
       "corroboration": [
         {
-          "name": "Altcoin Buzz",
-          "url": "https://www.altcoinbuzz.io/arthur-hayes-bitcoin-1m-2030-ethereum"
+          "name": "X: @Alibaba_Qwen",
+          "url": "https://x.com/Alibaba_Qwen/status/2095476249556853100"
         },
         {
-          "name": "X: @InsideDHive (12 likes)",
-          "url": "https://x.com/InsideDHive/status/2095251638973767941"
-        },
-        {
-          "name": "BitcoinEthereumNews",
-          "url": "https://bitcoinethereumnews.com/bitcoin/btc-will-hit-1m-by-2030-but-arthur-hayes-is-buying-eth-instead/"
+          "name": "GitHub: QwenLM",
+          "url": "https://github.com/QwenLM/E-CommerceBench"
         }
       ],
       "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "The statements are corroborated across multiple outlets and X; the $1M/2030 figure is a forecast, not a verified market event."
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official paper, project site, code repository and Qwen X announcement."
       },
       "tags": [
-        "Arthur Hayes",
-        "Forecast",
-        "Ethereum"
-      ],
-      "rank": 7
+        "Qwen",
+        "Agents",
+        "Benchmark",
+        "Open Source",
+        "Official X"
+      ]
     },
     {
-      "id": "robotics-why-demos-mislead",
+      "id": "robotics-figure-nscale",
       "section": "Robotics",
       "rank": 8,
-      "story_type": "Analysis",
-      "title": "A robotics reality check argues that polished demos hide the hardest engineering",
-      "summary": "A widely discussed essay catalogs why robotics remains difficult: variable environments, sparse failure data, hardware wear, safety constraints and the gap between a controlled demonstration and reliable deployment. It is commentary rather than a product announcement, but it provides a useful counterweight to this week's consumer-robotics hype.",
+      "story_type": "Infrastructure",
+      "title": "Figure and Nscale plan up to 100,000 NVIDIA Vera Rubin GPUs for humanoid-robot training",
+      "summary": "Figure and Nscale signed a strategic partnership for up to 100,000 NVIDIA Vera Rubin GPUs, with a $3.5 billion initial phase and more than $6 billion at full scale. The first 100,000-GPU capacity is targeted for the second half of 2027 in Barstow, Texas, and Nscale is also investing in Figure. It is a striking statement about the compute intensity Figure expects for embodied intelligence, but the largest capacity is a future commitment rather than deployed infrastructure today.",
       "source": {
-        "name": "Second Thoughts",
-        "url": "https://secondthoughts.ai/p/14-reasons-robotics-is-hard"
+        "name": "Figure",
+        "url": "https://www.figure.ai/news/figure-and-nscale-sign-strategic-partnership"
       },
-      "canonical_url": "https://secondthoughts.ai/p/14-reasons-robotics-is-hard",
-      "published_at": "2026-09-02T12:00:00-04:00",
-      "corroboration": [],
+      "canonical_url": "https://www.figure.ai/news/figure-and-nscale-sign-strategic-partnership",
+      "published_at": "2026-09-03T13:09:49Z",
+      "corroboration": [
+        {
+          "name": "X: @Figure_robot",
+          "url": "https://x.com/Figure_robot/status/2095499507991744723"
+        },
+        {
+          "name": "X: Brett Adcock",
+          "url": "https://x.com/adcock_brett/status/2095499534940185022"
+        }
+      ],
       "quality": {
-        "signal": "analysis",
-        "confidence": "medium",
-        "note": "This is clearly labeled expert commentary and has not been treated as a factual breaking-news claim."
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official Figure announcement and official company/CEO X posts. Future capacity and spending are stated plans."
       },
       "tags": [
-        "Reliability",
-        "Deployment",
-        "Engineering"
+        "Figure",
+        "Humanoids",
+        "Nscale",
+        "NVIDIA",
+        "Compute",
+        "Official X"
       ]
+    },
+    {
+      "id": "robotics-gopro-defense-acquisition",
+      "section": "Robotics",
+      "rank": 9,
+      "story_type": "Acquisition",
+      "title": "GoPro acquisition points the camera company toward defense, robotics and aerospace",
+      "summary": "Starman Holding agreed to acquire GoPro and says the combined company will expand into defense, government, robotics and aerospace. The move could redirect GoPro's imaging, rugged-device and edge-hardware capabilities into machine perception and defense platforms. The strategic direction is explicit, but operational plans and product milestones remain sparse.",
+      "source": {
+        "name": "The Verge",
+        "url": "https://www.theverge.com/news/987494/gopro-starman-holding-merger-aquisition"
+      },
+      "canonical_url": "https://www.theverge.com/news/987494/gopro-starman-holding-merger-aquisition",
+      "published_at": "2026-09-04T05:29:00Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "Reputable reporting of an announced acquisition; detailed robotics plans are not yet public."
+      },
+      "tags": [
+        "GoPro",
+        "Defense",
+        "Robotics",
+        "M&A"
+      ]
+    },
+    {
+      "id": "bitcoin-imf-el-salvador",
+      "section": "Bitcoin",
+      "rank": 10,
+      "story_type": "Policy",
+      "title": "IMF says El Salvador used no public funds for recent Bitcoin accumulation under its program review",
+      "summary": "The IMF reached a staff-level agreement on El Salvador's combined second and third program reviews and said Bitcoin accumulation since the first review reflected private donations rather than public spending. The release also says Chivo's majority ownership moved to a private operator and no further public Bitcoin accumulation is expected. Board approval would unlock roughly $140 million, making the Bitcoin conditions operational rather than rhetorical.",
+      "source": {
+        "name": "X: @IMFNews",
+        "url": "https://x.com/IMFNews/status/2095651193255084274"
+      },
+      "canonical_url": "https://www.imf.org/en/news/articles/2026/09/03/pr26285-el-salvador-imf-reaches-sla-on-combined-2nd-and-3rd-rev-under-eff-arrangement",
+      "published_at": "2026-09-03T23:12:34Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official IMF press release and official IMF X account; Board approval is still pending."
+      },
+      "tags": [
+        "El Salvador",
+        "IMF",
+        "Policy",
+        "Bitcoin Treasury",
+        "Official X"
+      ]
+    },
+    {
+      "id": "bitcoin-stacks-genesis-bond",
+      "section": "Bitcoin",
+      "rank": 11,
+      "story_type": "Launch / partnership",
+      "title": "21Shares joins the Stacks Genesis Bond as an inaugural Bitcoin-staking partner",
+      "summary": "Stacks named 21Shares an inaugural partner for its Genesis Bond and said the first Bitcoin bond is expected around September 10. The partnership links an established crypto asset manager to Stacks' Bitcoin-staking infrastructure. Product mechanics, jurisdiction and investor terms need to be evaluated once complete offering documents are available.",
+      "source": {
+        "name": "X: @Stacks",
+        "url": "https://x.com/Stacks/status/2095528714616668420"
+      },
+      "canonical_url": "https://x.com/Stacks/status/2095528714616668420",
+      "published_at": "2026-09-03T15:05:53Z",
+      "corroboration": [
+        {
+          "name": "X: Muneeb Ali",
+          "url": "https://x.com/muneeb/status/2095531117461836206"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official Stacks announcement and founder confirmation; detailed bond terms were not present in the source set."
+      },
+      "tags": [
+        "Stacks",
+        "21Shares",
+        "sBTC",
+        "Bitcoin Bond",
+        "Official X"
+      ]
+    },
+    {
+      "id": "bitcoin-quantum-safe-spend",
+      "section": "Bitcoin",
+      "rank": 12,
+      "story_type": "Protocol research",
+      "title": "StarkWare demonstrates a quantum-safe Bitcoin mainnet spend path without a protocol fork",
+      "summary": "StarkWare demonstrated a quantum-safe Bitcoin mainnet transaction design intended as a last-resort recovery path without changing Bitcoin's base protocol. The work targets the risk that future quantum computers could expose coins whose public keys are already visible. It is an experimental construction rather than an adopted Bitcoin standard, so security review and ecosystem consensus remain the real tests.",
+      "source": {
+        "name": "X: @StarkWareLtd",
+        "url": "https://x.com/StarkWareLtd/status/2095107659410051099"
+      },
+      "canonical_url": "https://x.com/StarkWareLtd/status/2095107659410051099",
+      "published_at": "2026-09-02T11:12:45Z",
+      "corroboration": [
+        {
+          "name": "X: Pete Rizzo interview",
+          "url": "https://x.com/pete_rizzo_/status/2095652148654555217"
+        }
+      ],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "Official StarkWare announcement with a high-signal follow-up interview. This is experimental research, not an adopted protocol change."
+      },
+      "tags": [
+        "Quantum Security",
+        "Bitcoin",
+        "StarkWare",
+        "Protocol",
+        "Catch-up"
+      ]
+    },
+    {
+      "id": "bitcoin-bullish-sbtc-listing",
+      "section": "Bitcoin",
+      "rank": 13,
+      "story_type": "Market infrastructure",
+      "title": "Bullish lists STX and two sBTC trading pairs",
+      "summary": "Bullish listed STX/USDC, sBTC/USDC and sBTC/BTC, adding exchange infrastructure for the Stacks ecosystem and its Bitcoin-backed sBTC asset. The listing is a concrete distribution milestone rather than a price forecast. Liquidity depth and sustained trading volume will determine whether it becomes material.",
+      "source": {
+        "name": "X: @Bullish",
+        "url": "https://x.com/Bullish/status/2095498487651561973"
+      },
+      "canonical_url": "https://exchange.bullish.com/trade/STXUSDC",
+      "published_at": "2026-09-03T13:05:46Z",
+      "corroboration": [
+        {
+          "name": "X: @Stacks",
+          "url": "https://x.com/Stacks/status/2095497936256037004"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official exchange announcement confirmed by the official Stacks account."
+      },
+      "tags": [
+        "Bullish",
+        "Stacks",
+        "sBTC",
+        "Exchange",
+        "Official X"
+      ]
+    },
+    {
+      "id": "bitcoin-hashkey-stacks",
+      "section": "Bitcoin",
+      "rank": 14,
+      "story_type": "Infrastructure partnership",
+      "title": "HashKey Cloud becomes a Stacks Bitcoin-staking launch partner and sBTC signer",
+      "summary": "Stacks named HashKey Cloud a launch partner for Bitcoin staking and an sBTC signer, expanding the institutional infrastructure around its Bitcoin layer. HashKey Cloud separately confirmed the role. The announcement is meaningful for network operations, though the economic impact depends on actual stake, signer participation and demand after launch.",
+      "source": {
+        "name": "X: @Stacks",
+        "url": "https://x.com/Stacks/status/2095678694039990766"
+      },
+      "canonical_url": "https://x.com/Stacks/status/2095678694039990766",
+      "published_at": "2026-09-04T01:01:51Z",
+      "corroboration": [
+        {
+          "name": "X: @HashKeyCloud",
+          "url": "https://x.com/HashKeyCloud/status/2095696259483066713"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Matching official announcements from Stacks and HashKey Cloud."
+      },
+      "tags": [
+        "HashKey",
+        "Stacks",
+        "sBTC",
+        "Staking",
+        "Official X"
+      ]
+    },
+    {
+      "id": "longevity-semaglutide-nature",
+      "section": "Longevity",
+      "rank": 15,
+      "story_type": "Peer-reviewed research",
+      "title": "Nature study finds late-life semaglutide slowed aging markers and extended lifespan in female mice",
+      "summary": "A Nature paper reports that late-life semaglutide improved several functional measures and extended median lifespan from 742 to 834 days in 20-month-old female mice. The study provides unusually direct preclinical evidence for a widely used GLP-1 drug, including comparisons with calorie restriction. It does not establish human longevity benefit, and commentators note that reduced food intake may explain part of the effect.",
+      "source": {
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10940-7"
+      },
+      "canonical_url": "https://www.nature.com/articles/s41586-026-10940-7",
+      "published_at": "2026-09-03T12:05:01Z",
+      "corroboration": [
+        {
+          "name": "X: @Nature",
+          "url": "https://x.com/Nature/status/2095483197698027896"
+        },
+        {
+          "name": "NIH",
+          "url": "https://www.nih.gov/news-events/news-releases/glp-1-treatment-late-life-extends-lifespan-animal-model"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Peer-reviewed animal study and official Nature post, corroborated by NIH. Findings are in aged female mice, not humans."
+      },
+      "tags": [
+        "Semaglutide",
+        "GLP-1",
+        "Aging",
+        "Mice",
+        "Nature",
+        "Official X"
+      ]
+    },
+    {
+      "id": "longevity-eight-sleep-bio-age",
+      "section": "Longevity",
+      "rank": 16,
+      "story_type": "Product / model release",
+      "title": "Eight Sleep launches an in-app Biological Age model developed with Bryan Johnson",
+      "summary": "Eight Sleep launched an in-app Biological Age estimate based on sleep and physiological signals, developed with input from Bryan Johnson and linked to the BCG-FM research model. It turns longitudinal sleep data into a consumer-facing aging metric and is notable as a productization of biological-age modeling. The company explicitly says it is research-oriented and not a diagnostic device; independent validation and calibration across populations remain open questions.",
+      "source": {
+        "name": "Eight Sleep",
+        "url": "https://www.eightsleep.com/blog/biological-age"
+      },
+      "canonical_url": "https://www.eightsleep.com/blog/biological-age",
+      "published_at": "2026-09-03T14:16:07Z",
+      "corroboration": [
+        {
+          "name": "X: @eightsleep",
+          "url": "https://x.com/eightsleep/status/2095516192387510342"
+        },
+        {
+          "name": "BCG-FM paper",
+          "url": "https://arxiv.org/abs/2606.07692"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official product announcement with linked research. The metric is not a medical diagnosis and needs independent validation."
+      },
+      "tags": [
+        "Biological Age",
+        "Eight Sleep",
+        "Wearables",
+        "Sleep",
+        "Official X"
+      ]
+    },
+    {
+      "id": "longevity-skin-microbiome",
+      "section": "Longevity",
+      "rank": 17,
+      "story_type": "Research perspective",
+      "title": "Science maps how the skin microbiome may shape healthy skin aging",
+      "summary": "A Science Perspective reviews the relationship between the skin microbiome, barrier function, inflammation and healthy skin aging. It is useful as a technical synthesis of an emerging intervention area, not evidence that a specific microbiome treatment extends lifespan or reverses aging. The distinction matters because the field is mechanistically interesting but still short on decisive human intervention trials.",
+      "source": {
+        "name": "Science",
+        "url": "https://www.science.org/doi/10.1126/science.aeh4348"
+      },
+      "canonical_url": "https://www.science.org/doi/10.1126/science.aeh4348",
+      "published_at": "2026-09-04T04:58:05Z",
+      "corroboration": [
+        {
+          "name": "X: @ScienceMagazine",
+          "url": "https://x.com/ScienceMagazine/status/2095738147057369344"
+        }
+      ],
+      "quality": {
+        "signal": "analysis",
+        "confidence": "high",
+        "note": "Official Science Perspective and journal X post. This is synthesis, not a primary intervention trial."
+      },
+      "tags": [
+        "Skin Microbiome",
+        "Healthy Aging",
+        "Science",
+        "Perspective",
+        "Official X"
+      ]
+    },
+    {
+      "id": "longevity-nih-dementia-free-years",
+      "section": "Longevity",
+      "rank": 18,
+      "story_type": "Cohort research",
+      "title": "NIH highlights an association between zero midlife vascular risks and roughly 13 more dementia-free years",
+      "summary": "NIH highlighted ARIC cohort results linking the absence of measured midlife vascular risk factors with roughly 13 additional dementia-free years. The study followed 12,409 participants and reinforces the connection between vascular health and cognitive aging. It is observational, so it identifies an association rather than proving that eliminating those risk factors alone causes the full difference.",
+      "source": {
+        "name": "Neurology Open Access",
+        "url": "https://www.neurology.org/doi/10.1212/WN9.0000000000000152"
+      },
+      "canonical_url": "https://www.neurology.org/doi/10.1212/WN9.0000000000000152",
+      "published_at": "2026-09-03T14:28:06Z",
+      "corroboration": [
+        {
+          "name": "X: @NIH",
+          "url": "https://x.com/NIH/status/2095519208738025510"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Peer-reviewed observational cohort research highlighted by NIH; association does not prove causation."
+      },
+      "tags": [
+        "Dementia",
+        "Vascular Health",
+        "ARIC",
+        "Cohort",
+        "Official X"
+      ]
+    },
+    {
+      "id": "ai-luma-governance",
+      "section": "AI",
+      "rank": 19,
+      "story_type": "Product release",
+      "title": "Luma adds enterprise teams, project credit caps and centralized billing controls",
+      "summary": "Luma launched enterprise governance features including team management, per-project credit caps and centralized billing. It is not a new generative model, but it is a concrete sign that frontier media tooling is moving from individual creation into managed production environments. The importance is operational rather than scientific, and adoption data is not yet available.",
+      "source": {
+        "name": "Luma Enterprise",
+        "url": "https://lumalabs.ai/enterprise"
+      },
+      "canonical_url": "https://lumalabs.ai/enterprise",
+      "published_at": "2026-09-03T16:59:00Z",
+      "corroboration": [
+        {
+          "name": "X: @LumaLabsAI",
+          "url": "https://x.com/LumaLabsAI/status/2095557180959400060"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official Luma product page and official X announcement."
+      },
+      "tags": [
+        "Luma",
+        "Enterprise",
+        "Governance",
+        "Generative Media",
+        "Official X"
+      ]
+    },
+    {
+      "id": "ai-sanders-casar-superintelligence-ban",
+      "section": "AI",
+      "story_type": "Policy",
+      "title": "Sanders and Casar introduce legislation to ban artificial superintelligence and pause advanced AI development",
+      "summary": "Sen. Bernie Sanders and Sen. Greg Casar introduced the 'Ban Artificial Superintelligence Act,' which would ban artificial superintelligence and temporarily pause development of advanced AI systems in the US, following a string of incidents involving autonomous AI agents. The proposal frames a pause as a risk-control measure while capability testing standards are established. It is now in the legislative process and has drawn a fast-response debate on whether a pause is enforceable.",
+      "source": {
+        "name": "Sanders Senate (primary)",
+        "url": "https://sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development"
+      },
+      "canonical_url": "https://sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development",
+      "published_at": "2026-09-03T12:00:00-04:00",
+      "corroboration": [
+        {
+          "name": "The Washington Post",
+          "url": "https://www.washingtonpost.com/technology/2026/09/03/sanders-proposes-artificial-superintelligence-ban-after-rogue-ai-incidents/"
+        },
+        {
+          "name": "Politico",
+          "url": "https://politico.com/live-updates/2026/09/03/congress/bernie-sanders-greg-casar-ai-superintelligence-ban-01063277"
+        },
+        {
+          "name": "Axios",
+          "url": "https://axios.com/2026/09/03/bernie-sanders-superintelligence-ban-ai-pause"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Primary source is the Senate press release; WaPo, Politico and Axios independently confirm the legislation and its pause mechanism. This is a proposed bill, not enacted law."
+      },
+      "tags": [
+        "Policy",
+        "Legislation",
+        "AI Safety",
+        "Superintelligence"
+      ],
+      "rank": 20
     }
   ]
 }
