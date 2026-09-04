@@ -60,6 +60,18 @@
         "note": {"type": "string", "minLength": 1}
       }
     },
+    "popularity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["platform", "engagement", "label", "observed_at", "evidence_url"],
+      "properties": {
+        "platform": {"enum": ["x", "reddit", "youtube", "mixed"]},
+        "engagement": {"type": "integer", "minimum": 0},
+        "label": {"type": "string", "minLength": 1},
+        "observed_at": {"type": "string", "format": "date-time"},
+        "evidence_url": {"type": "string", "format": "uri", "pattern": "^https://"}
+      }
+    },
     "story": {
       "type": "object",
       "additionalProperties": false,
@@ -82,6 +94,7 @@
           "items": {"$ref": "#/$defs/link"}
         },
         "quality": {"$ref": "#/$defs/quality"},
+        "popularity": {"$ref": "#/$defs/popularity"},
         "tags": {
           "type": "array",
           "items": {"type": "string", "minLength": 1},

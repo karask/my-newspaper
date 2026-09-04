@@ -6,8 +6,7 @@
   var elements = {
     meta: document.getElementById("edition-meta"),
     filters: document.getElementById("topic-filters"),
-    lead: document.getElementById("lead-story"),
-    stream: document.getElementById("story-stream"),
+    grid: document.getElementById("story-grid"),
     status: document.getElementById("page-status"),
     themeToggle: document.getElementById("theme-toggle"),
     themeLabel: document.getElementById("theme-label"),
@@ -29,8 +28,7 @@
   }
 
   function setBusy(isBusy) {
-    elements.lead.setAttribute("aria-busy", String(isBusy));
-    elements.stream.setAttribute("aria-busy", String(isBusy));
+    elements.grid.setAttribute("aria-busy", String(isBusy));
   }
 
   function setTheme(theme) {
@@ -106,15 +104,26 @@
       core.escapeHtml(signal) + " · " + core.escapeHtml(confidence) + " confidence</span>";
   }
 
+  function popularityMarkup(story) {
+    var popularity = story.popularity;
+    if (!popularity || !popularity.label) return "";
+    return '<span class="popularity" title="Observed ' +
+      core.escapeHtml(fullTimestamp(popularity.observed_at)) + '">' +
+      core.escapeHtml(popularity.label) + "</span>";
+  }
+
   function evidenceMarkup(story) {
-    var source = story.source || {};
-    var sourceUrl = core.safeUrl(source.url);
-    return '<div class="evidence-line">' +
-      '<a class="source-link badge badge--source" href="' + core.escapeHtml(sourceUrl) +
-      '" target="_blank" rel="noopener noreferrer">' + core.escapeHtml(source.name || "Unknown source") + "</a>" +
-      '<span aria-hidden="true">/</span>' +
-      '<span>' + core.escapeHtml(core.sourceCountLabel(story.corroboration)) + "</span>" +
-      '<span aria-hidden="true">/</span>' + qualityMarkup(story) + "</div>";
+    return '<div class="evidence-line">' + qualityMarkup(story) +
+      popularityMarkup(story) + "</div>";
+  }
+
+  function sourceLinksMarkup(story) {
+    return '<div class="source-list" aria-label="Story sources"><span class="source-label">sources</span>' +
+      core.storyLinks(story).map(function (link) {
+        return '<a class="source-link badge badge--source" href="' +
+          core.escapeHtml(link.url) + '" target="_blank" rel="noopener noreferrer">' +
+          core.escapeHtml(link.name) + " ↗</a>";
+      }).join("") + "</div>";
   }
 
   function storyTime(story) {
@@ -153,42 +162,23 @@
     });
   }
 
-  function renderLead(story) {
-    if (!story) {
-      elements.lead.innerHTML = statePanel("empty");
+  function renderStories(stories) {
+    if (!stories.length) {
+      elements.grid.innerHTML = statePanel("empty");
       return;
     }
-    var url = core.safeUrl(story.canonical_url);
-    elements.lead.innerHTML = '<article class="lead-article">' +
-      '<div class="story-taxonomy">' + badge(story.section || "Unfiled", "section") +
-      badge(story.story_type || "Story", "type") + storyTime(story) + "</div>" +
-      '<h3><a href="' + core.escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">' +
-      core.escapeHtml(story.title || "Untitled story") + "</a></h3>" +
-      '<p class="lead-summary">' + core.escapeHtml(story.summary || "No summary was supplied.") + "</p>" +
-      evidenceMarkup(story) +
-      '<a class="read-link" href="' + core.escapeHtml(url) +
-      '" target="_blank" rel="noopener noreferrer">open canonical <span aria-hidden="true">↗</span></a>' +
-      "</article>";
-  }
-
-  function renderStream(stories, lead) {
-    var remainder = stories.filter(function (story) { return !lead || story.id !== lead.id; });
-    if (!remainder.length) {
-      elements.stream.innerHTML = statePanel("empty");
-      return;
-    }
-    elements.stream.innerHTML = remainder.map(function (story) {
+    elements.grid.innerHTML = stories.map(function (story, index) {
       var url = core.safeUrl(story.canonical_url);
-      return '<article class="stream-story">' +
-        '<p class="story-rank" aria-label="Rank ' + core.escapeHtml(story.rank || "—") + '">' +
-        core.escapeHtml(String(story.rank || "—").padStart(2, "0")) + "</p>" +
-        '<div class="stream-copy"><div class="story-taxonomy">' +
-        badge(story.section || "Unfiled", "section") + badge(story.story_type || "Story", "type") +
-        storyTime(story) + "</div>" +
+      return '<article class="story-card">' +
+        '<div class="story-card__top"><p class="story-rank" aria-label="Position ' +
+        core.escapeHtml(String(index + 1)) + '">' +
+        core.escapeHtml(String(index + 1).padStart(2, "0")) + "</p>" +
+        '<div class="story-taxonomy">' + badge(story.section || "Unfiled", "section") +
+        badge(story.story_type || "Story", "type") + storyTime(story) + "</div></div>" +
         '<h3><a href="' + core.escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">' +
         core.escapeHtml(story.title || "Untitled story") + "</a></h3>" +
-        '<p class="stream-summary">' + core.escapeHtml(story.summary || "No summary was supplied.") + "</p>" +
-        evidenceMarkup(story) + "</div></article>";
+        '<p class="story-summary">' + core.escapeHtml(story.summary || "No summary was supplied.") + "</p>" +
+        evidenceMarkup(story) + sourceLinksMarkup(story) + "</article>";
     }).join("");
   }
 
@@ -202,11 +192,9 @@
 
   function render() {
     var stories = core.selectStories(state.edition.stories, state.topic);
-    var lead = core.leadFor(state.edition, state.topic);
     renderMeta();
     renderFilters();
-    renderLead(lead);
-    renderStream(stories, lead);
+    renderStories(stories);
     elements.status.textContent = stories.length ?
       (state.topic === "All" ? "Full edition loaded." : state.topic + " section loaded.") :
       core.stateMessage('empty');
@@ -215,8 +203,7 @@
   }
 
   function showError() {
-    elements.lead.innerHTML = statePanel("error");
-    elements.stream.innerHTML = "";
+    elements.grid.innerHTML = statePanel("error");
     elements.filters.innerHTML = "";
     elements.meta.textContent = "Edition unavailable";
     elements.status.textContent = core.stateMessage('error');

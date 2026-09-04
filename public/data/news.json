@@ -5,7 +5,7 @@
     "title": "The Daily Signal",
     "kicker": "Primary-source tech intelligence, compiled from the live wire.",
     "status": "live",
-    "updated_at": "2026-09-04T11:34:25+03:00"
+    "updated_at": "2026-09-04T11:57:19+03:00"
   },
   "sections": [
     "Bitcoin",
@@ -49,7 +49,14 @@
         "Agents",
         "Cybersecurity",
         "Official X"
-      ]
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 237266,
+        "label": "X · 211.1K likes · 21.1K reposts · 5.0K replies",
+        "observed_at": "2026-09-04T08:51:17Z",
+        "evidence_url": "https://x.com/OpenAI/status/2095595741528125780"
+      }
     },
     {
       "id": "ai-nvidia-huggingface",
@@ -85,7 +92,14 @@
         "M&A",
         "Open Source",
         "Official X"
-      ]
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 5658,
+        "label": "X · 5.0K likes · 482 reposts · 170 replies",
+        "observed_at": "2026-09-04T08:51:17Z",
+        "evidence_url": "https://x.com/huggingface/status/2095508870915338284"
+      }
     },
     {
       "id": "ai-fable-51-catchup",
@@ -117,7 +131,14 @@
         "Mythos 5.1",
         "Catch-up",
         "Official X"
-      ]
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 75429,
+        "label": "X · 65.3K likes · 7.3K reposts · 2.8K replies",
+        "observed_at": "2026-09-04T08:51:17Z",
+        "evidence_url": "https://x.com/claudeai/status/2094848572143407483"
+      }
     },
     {
       "id": "ai-weathernext-3",
@@ -152,7 +173,14 @@
         "Google DeepMind",
         "Forecasting",
         "Official X"
-      ]
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 1403,
+        "label": "X · 1.1K likes · 154 reposts · 154 replies",
+        "observed_at": "2026-09-04T08:51:17Z",
+        "evidence_url": "https://x.com/GoogleDeepMind/status/2095528012791902536"
+      }
     },
     {
       "id": "ai-runway-gwm-worlds-2",
@@ -184,7 +212,14 @@
         "Simulation",
         "Video",
         "Official X"
-      ]
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 845,
+        "label": "X · 711 likes · 98 reposts · 36 replies",
+        "observed_at": "2026-09-04T08:51:17Z",
+        "evidence_url": "https://x.com/runwayml/status/2095540014645920040"
+      }
     },
     {
       "id": "ai-grok-enterprise",
@@ -220,7 +255,14 @@
         "Enterprise",
         "Agents",
         "Official X"
-      ]
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 5762,
+        "label": "X · 4.7K likes · 595 reposts · 503 replies",
+        "observed_at": "2026-09-04T08:51:17Z",
+        "evidence_url": "https://x.com/elonmusk/status/2095668208090959941"
+      }
     },
     {
       "id": "ai-ecommerce-bench",
@@ -256,7 +298,14 @@
         "Benchmark",
         "Open Source",
         "Official X"
-      ]
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 709,
+        "label": "X · 592 likes · 53 reposts · 64 replies",
+        "observed_at": "2026-09-04T08:51:17Z",
+        "evidence_url": "https://x.com/Alibaba_Qwen/status/2095476249556853100"
+      }
     },
     {
       "id": "robotics-figure-nscale",
@@ -293,7 +342,14 @@
         "NVIDIA",
         "Compute",
         "Official X"
-      ]
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 3614,
+        "label": "X · 3.2K likes · 329 reposts · 122 replies",
+        "observed_at": "2026-09-04T08:51:17Z",
+        "evidence_url": "https://x.com/Figure_robot/status/2095499507991744723"
+      }
     },
     {
       "id": "robotics-gopro-defense-acquisition",
@@ -346,7 +402,14 @@
         "Policy",
         "Bitcoin Treasury",
         "Official X"
-      ]
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 516,
+        "label": "X · 392 likes · 109 reposts · 15 replies",
+        "observed_at": "2026-09-04T08:51:17Z",
+        "evidence_url": "https://x.com/IMFNews/status/2095651193255084274"
+      }
     },
     {
       "id": "bitcoin-stacks-genesis-bond",
@@ -378,7 +441,14 @@
         "sBTC",
         "Bitcoin Bond",
         "Official X"
-      ]
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 434,
+        "label": "X · 315 likes · 80 reposts · 39 replies",
+        "observed_at": "2026-09-04T08:51:17Z",
+        "evidence_url": "https://x.com/muneeb/status/2095531117461836206"
+      }
     },
     {
       "id": "bitcoin-quantum-safe-spend",
@@ -410,7 +480,14 @@
         "StarkWare",
         "Protocol",
         "Catch-up"
-      ]
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 136,
+        "label": "X · 104 likes · 24 reposts · 8 replies",
+        "observed_at": "2026-09-04T08:51:17Z",
+        "evidence_url": "https://x.com/pete_rizzo_/status/2095652148654555217"
+      }
     },
     {
       "id": "bitcoin-bullish-sbtc-listing",
@@ -442,7 +519,14 @@
         "sBTC",
         "Exchange",
         "Official X"
-      ]
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 263,
+        "label": "X · 195 likes · 46 reposts · 22 replies",
+        "observed_at": "2026-09-04T08:51:17Z",
+        "evidence_url": "https://x.com/Stacks/status/2095497936256037004"
+      }
     },
     {
       "id": "bitcoin-hashkey-stacks",
@@ -474,7 +558,14 @@
         "sBTC",
         "Staking",
         "Official X"
-      ]
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 150,
+        "label": "X · 118 likes · 27 reposts · 5 replies",
+        "observed_at": "2026-09-04T08:51:17Z",
+        "evidence_url": "https://x.com/Stacks/status/2095678694039990766"
+      }
     },
     {
       "id": "longevity-semaglutide-nature",
@@ -511,7 +602,14 @@
         "Mice",
         "Nature",
         "Official X"
-      ]
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 191,
+        "label": "X · 148 likes · 34 reposts · 9 replies",
+        "observed_at": "2026-09-04T08:51:17Z",
+        "evidence_url": "https://x.com/Nature/status/2095483197698027896"
+      }
     },
     {
       "id": "longevity-eight-sleep-bio-age",
@@ -547,7 +645,14 @@
         "Wearables",
         "Sleep",
         "Official X"
-      ]
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 238,
+        "label": "X · 221 likes · 9 reposts · 8 replies",
+        "observed_at": "2026-09-04T08:51:17Z",
+        "evidence_url": "https://x.com/eightsleep/status/2095516192387510342"
+      }
     },
     {
       "id": "longevity-skin-microbiome",
@@ -579,7 +684,14 @@
         "Science",
         "Perspective",
         "Official X"
-      ]
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 29,
+        "label": "X · 25 likes · 4 reposts · 0 replies",
+        "observed_at": "2026-09-04T08:51:17Z",
+        "evidence_url": "https://x.com/ScienceMagazine/status/2095738147057369344"
+      }
     },
     {
       "id": "longevity-nih-dementia-free-years",
@@ -611,7 +723,14 @@
         "ARIC",
         "Cohort",
         "Official X"
-      ]
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 37,
+        "label": "X · 27 likes · 7 reposts · 3 replies",
+        "observed_at": "2026-09-04T08:51:17Z",
+        "evidence_url": "https://x.com/NIH/status/2095519208738025510"
+      }
     },
     {
       "id": "ai-luma-governance",
@@ -643,7 +762,14 @@
         "Governance",
         "Generative Media",
         "Official X"
-      ]
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 22,
+        "label": "X · 18 likes · 0 reposts · 4 replies",
+        "observed_at": "2026-09-04T08:51:17Z",
+        "evidence_url": "https://x.com/LumaLabsAI/status/2095557180959400060"
+      }
     },
     {
       "id": "ai-sanders-casar-superintelligence-ban",

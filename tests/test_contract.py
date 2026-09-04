@@ -29,6 +29,15 @@ class PublishedContractTests(unittest.TestCase):
             [{"const": "Bitcoin"}, {"const": "AI"}, {"const": "Robotics"}, {"const": "Longevity"}],
         )
 
+    def test_schema_documents_optional_observed_popularity(self):
+        story_properties = self.schema["$defs"]["story"]["properties"]
+        self.assertEqual(story_properties["popularity"], {"$ref": "#/$defs/popularity"})
+        popularity = self.schema["$defs"]["popularity"]
+        self.assertEqual(popularity["required"], [
+            "platform", "engagement", "label", "observed_at", "evidence_url"
+        ])
+        self.assertFalse(popularity["additionalProperties"])
+
     def test_example_and_seed_pass_the_runtime_validator(self):
         self.assertEqual(self.build.validate_news(self.example), [])
         self.assertEqual(self.build.validate_news(self.seed), [])
@@ -95,6 +104,18 @@ class EditorialAutomationTests(unittest.TestCase):
             "@Figure_robot",
             "@Nature",
             "official account is sufficient primary evidence",
+        ]:
+            self.assertIn(token, self.prompt)
+
+    def test_pipeline_records_observed_popularity_without_inventing_metrics(self):
+        for token in [
+            "POPULARITY PASS",
+            "likes + reposts + replies",
+            "score + comments",
+            "observed_at",
+            "evidence_url",
+            "Omit popularity when metrics are not directly observable",
+            "Order stories by observed popularity when available",
         ]:
             self.assertIn(token, self.prompt)
 

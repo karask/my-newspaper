@@ -61,6 +61,17 @@ class ValidationTests(unittest.TestCase):
     def test_accepts_complete_document(self):
         self.assertEqual(self.build.validate_news(valid_payload()), [])
 
+    def test_accepts_observed_popularity_metadata(self):
+        payload = valid_payload()
+        payload["stories"][0]["popularity"] = {
+            "platform": "x",
+            "engagement": 1234,
+            "label": "X · 1K likes · 200 reposts · 34 replies",
+            "observed_at": "2026-09-04T12:00:00+03:00",
+            "evidence_url": "https://x.com/example/status/1",
+        }
+        self.assertEqual(self.build.validate_news(payload), [])
+
     def test_rejects_missing_required_story_fields(self):
         payload = valid_payload()
         del payload["stories"][0]["summary"]

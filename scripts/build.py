@@ -31,10 +31,12 @@ ROOT_FIELDS = {"schema_version", "edition", "sections", "lead_story_id", "storie
 EDITION_FIELDS = {"date", "title", "kicker", "status", "updated_at"}
 STORY_FIELDS = {
     "id", "section", "rank", "story_type", "title", "summary", "source",
-    "canonical_url", "published_at", "corroboration", "quality", "tags",
+    "canonical_url", "published_at", "corroboration", "quality", "tags", "popularity",
 }
 LINK_FIELDS = {"name", "url"}
 QUALITY_FIELDS = {"signal", "confidence", "note"}
+POPULARITY_FIELDS = {"platform", "engagement", "label", "observed_at", "evidence_url"}
+POPULARITY_PLATFORMS = {"x", "reddit", "youtube", "mixed"}
 
 
 class ValidationError(ValueError):
@@ -183,6 +185,38 @@ def validate_news(document: Any) -> list[str]:
                 f"{path}.quality.confidence must be one of {sorted(CONFIDENCE_LEVELS)!r}"
             )
         _string(quality, "note", f"{path}.quality", errors)
+
+        if "popularity" in story:
+            popularity = _required_object(
+                story.get("popularity"), f"{path}.popularity", errors
+            )
+            _unknown_fields(
+                popularity, POPULARITY_FIELDS, f"{path}.popularity", errors
+            )
+            platform = _string(popularity, "platform", f"{path}.popularity", errors)
+            if platform and platform not in POPULARITY_PLATFORMS:
+                errors.append(
+                    f"{path}.popularity.platform must be one of "
+                    f"{sorted(POPULARITY_PLATFORMS)!r}"
+                )
+            engagement = popularity.get("engagement")
+            if (
+                not isinstance(engagement, int)
+                or isinstance(engagement, bool)
+                or engagement < 0
+            ):
+                errors.append(f"{path}.popularity.engagement must be a non-negative integer")
+            _string(popularity, "label", f"{path}.popularity", errors)
+            observed_at = _string(
+                popularity, "observed_at", f"{path}.popularity", errors
+            )
+            if observed_at:
+                _timestamp(observed_at, f"{path}.popularity.observed_at", errors)
+            evidence_url = _string(
+                popularity, "evidence_url", f"{path}.popularity", errors
+            )
+            if evidence_url:
+                _https_url(evidence_url, f"{path}.popularity.evidence_url", errors)
 
         tags = _required_list(story.get("tags"), f"{path}.tags", errors)
         if any(not isinstance(tag, str) or not tag.strip() for tag in tags):

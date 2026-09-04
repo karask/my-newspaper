@@ -75,8 +75,12 @@ class SemanticShellTests(unittest.TestCase):
         )
 
     def test_has_data_driven_mounts_and_live_status(self):
-        for element_id in {"edition-meta", "edition-select", "topic-filters", "lead-story", "story-stream"}:
+        for element_id in {"edition-meta", "edition-select", "topic-filters", "story-grid"}:
             self.assertIn(element_id, self.inspector.ids)
+        self.assertNotIn("lead-story", self.inspector.ids)
+        self.assertNotIn("story-stream", self.inspector.ids)
+        self.assertNotIn("explore-heading", self.inspector.ids)
+        self.assertNotIn("monitor-heading", self.inspector.ids)
         self.assertIn("page-status", self.inspector.ids)
         self.assertIn('role="status"', self.html)
         self.assertIn('aria-live="polite"', self.html)
@@ -104,6 +108,17 @@ class NewsCoreTests(unittest.TestCase):
         expression = f"NewsCore.selectStories({json.dumps(stories)}, 'AI').map(x => x.id)"
         self.assertEqual(run_core(expression), ["c", "a"])
 
+    def test_popularity_signals_order_the_feed_before_editorial_rank(self):
+        stories = [
+            {"id": "ranked", "section": "AI", "rank": 1},
+            {"id": "popular", "section": "AI", "rank": 8,
+             "popularity": {"engagement": 900}},
+            {"id": "less-popular", "section": "AI", "rank": 2,
+             "popularity": {"engagement": 120}},
+        ]
+        expression = f"NewsCore.selectStories({json.dumps(stories)}, 'All').map(x => x.id)"
+        self.assertEqual(run_core(expression), ["popular", "less-popular", "ranked"])
+
     def test_lead_uses_declared_story_for_all_and_top_rank_for_topic(self):
         document = {
             "lead_story_id": "b",
@@ -117,6 +132,25 @@ class NewsCoreTests(unittest.TestCase):
         topic_lead = run_core(f"NewsCore.leadFor({json.dumps(document)}, 'Bitcoin').id")
         self.assertEqual(all_lead, "b")
         self.assertEqual(topic_lead, "c")
+
+    def test_story_links_include_every_unique_source_and_canonical(self):
+        story = {
+            "source": {"name": "Official X", "url": "https://x.com/a/status/1"},
+            "canonical_url": "https://example.com/release",
+            "corroboration": [
+                {"name": "Release", "url": "https://example.com/release"},
+                {"name": "Reddit", "url": "https://reddit.com/r/a/comments/1"},
+            ],
+        }
+        links = run_core(f"NewsCore.storyLinks({json.dumps(story)})")
+        self.assertEqual(
+            links,
+            [
+                {"name": "Official X", "url": "https://x.com/a/status/1"},
+                {"name": "Canonical", "url": "https://example.com/release"},
+                {"name": "Reddit", "url": "https://reddit.com/r/a/comments/1"},
+            ],
+        )
 
     def test_source_count_is_derived_from_corroboration_links(self):
         self.assertEqual(run_core("NewsCore.sourceCountLabel([])"), "1 source")
@@ -156,12 +190,12 @@ class ClientContractTests(unittest.TestCase):
         for token in ["./data/archive.json", "edition-select", "loadEdition(option.value)"]:
             self.assertIn(token, self.javascript)
 
-    def test_explore_headline_uses_restrained_full_measure(self):
-        self.assertIn("max-width: 100%", self.css)
-        self.assertIn("text-wrap: balance", self.css)
-        self.assertIn("font-size: clamp(1.55rem, 2.2vw, 2.35rem)", self.css)
-        self.assertIn("line-height: 1.14", self.css)
-        self.assertNotIn("max-width: 20ch", self.css)
+    def test_every_story_uses_one_three_column_card_format(self):
+        self.assertIn("renderStories", self.javascript)
+        self.assertNotIn("renderLead", self.javascript)
+        self.assertNotIn("renderStream", self.javascript)
+        self.assertIn("grid-template-columns: repeat(3, minmax(0, 1fr))", self.css)
+        self.assertIn(".story-card", self.css)
 
     def test_source_and_story_type_have_distinct_badge_treatments(self):
         self.assertIn("badge--source", self.javascript)
@@ -186,6 +220,12 @@ class ClientContractTests(unittest.TestCase):
         self.assertIn("grid-template-columns", self.css)
         self.assertIn("border-block", self.css)
 
+    def test_every_story_shows_full_summary_and_all_source_links(self):
+        self.assertIn("sourceLinksMarkup", self.javascript)
+        self.assertIn("core.storyLinks(story)", self.javascript)
+        self.assertIn("class=\"story-summary\"", self.javascript)
+        self.assertNotIn("-webkit-line-clamp", self.css)
+
 
 class TerminalNewswireContractTests(unittest.TestCase):
     @classmethod
@@ -203,8 +243,10 @@ class TerminalNewswireContractTests(unittest.TestCase):
         self.assertNotIn("Palatino", self.css)
         self.assertNotIn("::first-letter", self.css)
         self.assertNotIn("8.7rem", self.css)
-        self.assertLess(self.html.find("The Daily Signal"), self.html.find("Explore"))
-        self.assertLess(self.html.find("id=\"explore-heading\""), self.html.find("id=\"monitor-heading\""))
+        self.assertLess(self.html.find("The Daily Signal"), self.html.find("All signals"))
+        self.assertIn('id="story-grid"', self.html)
+        self.assertNotIn("Explore", self.html)
+        self.assertNotIn("Monitor", self.html)
 
     def test_palette_is_warm_near_black_with_minimal_signal_colors(self):
         self.assertIn("#161310", self.html)
@@ -237,13 +279,10 @@ class TerminalNewswireContractTests(unittest.TestCase):
         for token in ("views", "likes", "shares", "trending", "uptime", "dau"):
             self.assertNotIn(token, lowered)
 
-    def test_stream_is_dense_and_summaries_stay_readable(self):
-        self.assertIn("padding: 0.75rem 0", self.css)
-        self.assertNotIn("padding: 1.65rem 0", self.css)
-        self.assertIn("max-width: 62ch", self.css)
-        self.assertIn("line-height: 1.62", self.css)
-        self.assertIn("-webkit-line-clamp: 2", self.css)
-        self.assertNotIn("-webkit-line-clamp: 3", self.css)
+    def test_story_grid_is_dense_and_summaries_stay_readable(self):
+        self.assertIn("gap: 1px", self.css)
+        self.assertIn("line-height: 1.58", self.css)
+        self.assertNotIn("-webkit-line-clamp", self.css)
 
 
 if __name__ == "__main__":

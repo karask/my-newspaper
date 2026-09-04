@@ -29,6 +29,13 @@ Use web_search for each topic with release verbs and the current date, plus exac
 SECOND GAP-FILLING SWEEP
 Required when the first deduplicated set has fewer than 12 items or any topic has fewer than 3. Search each underfilled topic separately; re-check the official handles above; run a 72-hour catch-up query; compare against archived canonical URLs. Record which handles and primary sites were checked even when they had no qualifying post.
 
+POPULARITY PASS
+After selecting and de-duplicating the stories, inspect their exact X, Reddit, and YouTube source URLs for directly observable engagement:
+- X engagement = likes + reposts + replies.
+- Reddit engagement = score + comments.
+- YouTube engagement = likes + comments.
+For each story with observable metrics, add the optional popularity object with lowercase platform, integer engagement, a concise exact label, timezone-aware observed_at, and the exact evidence_url where the counts were observed. Use the strongest directly observed signal for that story. Omit popularity when metrics are not directly observable; never estimate, extrapolate, or invent engagement. Order stories by observed popularity when available, then by editorial consequence and confidence when popularity is absent or tied. Engagement is a ranking signal, not an evidence-quality signal.
+
 EDITORIAL AND EVIDENCE RULES
 - A valid story needs a real HTTPS primary/canonical link and an exposed publication timestamp. Never use retrieval time as if it were publication time; if only a date exists, use noon in the source timezone and state the limitation.
 - For official launches, use the official X post as source and the official release page as canonical_url when both exist. Put additional official or independent links in corroboration.
