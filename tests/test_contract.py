@@ -71,6 +71,47 @@ class PublishedContractTests(unittest.TestCase):
         self.assertTrue(imports <= allowed, imports - allowed)
 
 
+class EditorialAutomationTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.prompt = (ROOT / "cron-prompt.md").read_text(encoding="utf-8")
+        cls.workflow = (ROOT / ".github" / "workflows" / "pages.yml").read_text(
+            encoding="utf-8"
+        )
+
+    def test_pages_deploy_enforces_production_coverage(self):
+        self.assertIn(
+            "python scripts/build.py validate --production public/data/news.json",
+            self.workflow,
+        )
+
+    def test_pipeline_has_an_official_x_release_sweep(self):
+        for token in [
+            "OFFICIAL X RELEASE SWEEP",
+            "grok --no-auto-update -p",
+            "@OpenAI",
+            "@claudeai",
+            "@GoogleDeepMind",
+            "@Figure_robot",
+            "@Nature",
+            "official account is sufficient primary evidence",
+        ]:
+            self.assertIn(token, self.prompt)
+
+    def test_pipeline_has_broad_coverage_and_catchup_gates(self):
+        for token in [
+            "16–30 stories total",
+            "4–8 qualifying stories per topic",
+            "minimum of 12",
+            "72-hour catch-up sweep",
+            "second gap-filling sweep",
+            "already-published canonical URLs",
+            "validate --production daily-news-candidate.json",
+        ]:
+            self.assertIn(token, self.prompt)
+        self.assertNotIn("Include 1–3 qualifying stories per topic", self.prompt)
+
+
 class DocumentationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

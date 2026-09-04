@@ -87,6 +87,23 @@ class ValidationTests(unittest.TestCase):
         self.assertIn("lead_story_id", errors)
         self.assertIn("updated_at", errors)
 
+    def test_production_validation_rejects_a_thin_live_edition(self):
+        payload = valid_payload()
+        payload["edition"]["status"] = "live"
+        errors = self.build.validate_production_coverage(payload)
+        self.assertIn("live editions need at least 12 stories; found 1", errors)
+
+    def test_production_validate_command_rejects_a_thin_live_file(self):
+        payload = valid_payload()
+        payload["edition"]["status"] = "live"
+        with tempfile.TemporaryDirectory() as tmp:
+            candidate = Path(tmp) / "candidate.json"
+            candidate.write_text(json.dumps(payload), encoding="utf-8")
+            self.assertEqual(
+                self.build.main(["validate", "--production", str(candidate)]),
+                2,
+            )
+
     def test_rejects_undeclared_fields_to_catch_feed_drift(self):
         payload = valid_payload()
         payload["engagement_score"] = 99

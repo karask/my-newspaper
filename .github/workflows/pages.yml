@@ -24,6 +24,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - name: Enforce live-edition coverage
+        run: python scripts/build.py validate --production public/data/news.json
       - name: Run tests
         run: python -m unittest discover -v
       - name: Build static site

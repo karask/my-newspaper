@@ -194,6 +194,23 @@ def validate_news(document: Any) -> list[str]:
     return errors
 
 
+def validate_production_coverage(document: Any) -> list[str]:
+    """Return publication-gate errors for a structurally valid live edition."""
+
+    if not isinstance(document, dict):
+        return []
+    edition = document.get("edition")
+    stories = document.get("stories")
+    if (
+        isinstance(edition, dict)
+        and edition.get("status") == "live"
+        and isinstance(stories, list)
+        and len(stories) < 12
+    ):
+        return [f"live editions need at least 12 stories; found {len(stories)}"]
+    return []
+
+
 def load_news(path: Path) -> dict[str, Any]:
     try:
         with path.open(encoding="utf-8") as handle:
@@ -302,6 +319,11 @@ def make_parser() -> argparse.ArgumentParser:
     build.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
     build.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     validate = subparsers.add_parser("validate", help="validate an edition JSON file")
+    validate.add_argument(
+        "--production",
+        action="store_true",
+        help="also enforce minimum live-edition coverage",
+    )
     validate.add_argument("candidate", type=Path)
     ingest = subparsers.add_parser(
         "ingest", help="validate and atomically replace public/data/news.json"
@@ -317,7 +339,10 @@ def main(argv: list[str] | None = None) -> int:
     command = args.command or "build"
     try:
         if command == "validate":
-            load_news(args.candidate)
+            document = load_news(args.candidate)
+            coverage_errors = validate_production_coverage(document) if args.production else []
+            if coverage_errors:
+                raise ValidationError(coverage_errors)
             print(f"Valid: {args.candidate}")
         elif command == "ingest":
             atomic_ingest(args.candidate, args.target)
