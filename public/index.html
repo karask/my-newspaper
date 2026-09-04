@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="theme-color" content="#171613">
+    <meta name="theme-color" content="#161310">
     <meta
       name="description"
-      content="A calm daily newspaper for consequential developments in Bitcoin, AI, robotics, and longevity."
+      content="A personal newswire for consequential developments in Bitcoin, AI, robotics, and longevity."
     >
     <title>The Daily Signal — Personal Intelligence</title>
     <link rel="stylesheet" href="./styles.css">
@@ -26,34 +26,34 @@
     <a class="skip-link" href="#main-content">Skip to the edition</a>
 
     <header class="masthead">
-      <div class="utility-line page-width">
-        <p>Personal intelligence · Four consequential frontiers</p>
+      <div class="desk-bar page-width">
+        <div class="identity">
+          <span class="status-pip" aria-hidden="true"></span>
+          <p class="prompt-label">SIGNAL(1)</p>
+          <h1>The Daily Signal</h1>
+        </div>
+        <p class="identity-path">bitcoin / ai / robotics / longevity</p>
         <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme">
-          <span aria-hidden="true" class="theme-mark">◐</span>
-          <span id="theme-label">Light edition</span>
+          <span aria-hidden="true" class="theme-mark">▣</span>
+          <span id="theme-label">light</span>
         </button>
-      </div>
-
-      <div class="nameplate page-width">
-        <p class="nameplate-flourish" aria-hidden="true">Est. for the curious</p>
-        <h1>The Daily Signal</h1>
-        <p class="deck">The developments worth exploring. The shifts worth monitoring.</p>
       </div>
 
       <div class="edition-line page-width" id="edition-meta" aria-live="polite">
         <span>Loading today’s edition…</span>
       </div>
 
-      <div class="archive-control page-width">
-        <label for="edition-select">Edition archive</label>
-        <select id="edition-select" aria-label="Choose a newspaper edition">
-          <option value="./data/news.json">Current edition</option>
-        </select>
+      <div class="desk-controls page-width">
+        <div class="archive-control">
+          <label for="edition-select">archive</label>
+          <select id="edition-select" aria-label="Choose a newspaper edition">
+            <option value="./data/news.json">Current edition</option>
+          </select>
+        </div>
+        <nav class="topic-nav" aria-label="Filter the edition by topic">
+          <div class="topic-filters" id="topic-filters"></div>
+        </nav>
       </div>
-
-      <nav class="topic-nav page-width" aria-label="Filter the edition by topic">
-        <div class="topic-filters" id="topic-filters"></div>
-      </nav>
     </header>
 
     <main class="page-width" id="main-content" tabindex="-1">
@@ -65,7 +65,7 @@
         <section class="explore" aria-labelledby="explore-heading">
           <div class="section-rule">
             <h2 id="explore-heading">Explore</h2>
-            <p>One story, read deeply</p>
+            <p>lead</p>
           </div>
           <div id="lead-story" aria-busy="true"></div>
         </section>
@@ -73,7 +73,7 @@
         <aside class="monitor" aria-labelledby="monitor-heading">
           <div class="section-rule section-rule--monitor">
             <h2 id="monitor-heading">Monitor</h2>
-            <p>Ranked signal stream</p>
+            <p>stream</p>
           </div>
           <div class="story-stream" id="story-stream" aria-busy="true"></div>
         </aside>
@@ -90,8 +90,8 @@
 
     <footer class="colophon page-width">
       <p>The Daily Signal</p>
-      <p>Bitcoin · AI · Robotics · Longevity</p>
-      <p>No engagement bait. Just an ordered reading list.</p>
+      <p>bitcoin / ai / robotics / longevity</p>
+      <p>no engagement bait</p>
     </footer>
 
     <script src="./news-core.js"></script>

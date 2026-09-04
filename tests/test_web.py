@@ -1,4 +1,5 @@
 import json
+import re
 import shutil
 import subprocess
 import unittest
@@ -158,8 +159,8 @@ class ClientContractTests(unittest.TestCase):
     def test_explore_headline_uses_restrained_full_measure(self):
         self.assertIn("max-width: 100%", self.css)
         self.assertIn("text-wrap: balance", self.css)
-        self.assertIn("font-size: clamp(1.95rem, 3vw, 3.5rem)", self.css)
-        self.assertIn("line-height: 0.98", self.css)
+        self.assertIn("font-size: clamp(1.55rem, 2.2vw, 2.35rem)", self.css)
+        self.assertIn("line-height: 1.14", self.css)
         self.assertNotIn("max-width: 20ch", self.css)
 
     def test_source_and_story_type_have_distinct_badge_treatments(self):
@@ -180,8 +181,69 @@ class ClientContractTests(unittest.TestCase):
     def test_filters_and_story_stream_are_not_saas_card_grids(self):
         self.assertNotIn("box-shadow:", self.css)
         self.assertNotIn("border-radius: 16px", self.css)
-        self.assertIn("column-rule", self.css)
+        self.assertNotIn("backdrop-filter", self.css)
+        self.assertNotIn("column-count: 2", self.css)
+        self.assertIn("grid-template-columns", self.css)
         self.assertIn("border-block", self.css)
+
+
+class TerminalNewswireContractTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.html = (PUBLIC / "index.html").read_text(encoding="utf-8")
+        cls.css = (PUBLIC / "styles.css").read_text(encoding="utf-8")
+        cls.javascript = (PUBLIC / "app.js").read_text(encoding="utf-8")
+
+    def test_masthead_is_a_compact_desk_not_a_broadsheet_nameplate(self):
+        self.assertIn("desk-bar", self.html)
+        self.assertIn("SIGNAL(1)", self.html)
+        self.assertNotIn("nameplate-flourish", self.html)
+        self.assertNotIn("nameplate", self.html)
+        self.assertNotIn("Iowan Old Style", self.css)
+        self.assertNotIn("Palatino", self.css)
+        self.assertNotIn("::first-letter", self.css)
+        self.assertNotIn("8.7rem", self.css)
+        self.assertLess(self.html.find("The Daily Signal"), self.html.find("Explore"))
+        self.assertLess(self.html.find("id=\"explore-heading\""), self.html.find("id=\"monitor-heading\""))
+
+    def test_palette_is_warm_near_black_with_minimal_signal_colors(self):
+        self.assertIn("#161310", self.html)
+        self.assertIn("#161310", self.css)
+        self.assertIn("#161310", self.javascript)
+        self.assertIn("#b6e05c", self.css)
+        self.assertIn("#5ecad4", self.css)
+        self.assertIn("#e3923c", self.css)
+        self.assertIn("--mono:", self.css)
+        self.assertIn("IBM Plex Mono", self.css)
+        self.assertIn("IBM Plex Sans", self.css)
+
+    def test_no_gradients_glass_or_soft_corners(self):
+        self.assertNotIn("linear-gradient", self.css)
+        self.assertNotIn("radial-gradient", self.css)
+        self.assertNotIn("backdrop-filter", self.css)
+        self.assertNotIn("filter: blur", self.css)
+        radii = re.findall(r"border-radius:\s*([^;]+);", self.css)
+        self.assertTrue(radii, "sharp corners should be explicit")
+        for value in radii:
+            self.assertEqual(value.strip(), "0", value)
+
+    def test_client_presents_real_story_count_update_and_status(self):
+        self.assertIn("storyCount", self.javascript)
+        self.assertIn("meta-count", self.javascript)
+        self.assertIn("meta-status", self.javascript)
+        self.assertIn("edition.status", self.javascript)
+        self.assertIn("updated_at", self.javascript)
+        lowered = self.javascript.lower()
+        for token in ("views", "likes", "shares", "trending", "uptime", "dau"):
+            self.assertNotIn(token, lowered)
+
+    def test_stream_is_dense_and_summaries_stay_readable(self):
+        self.assertIn("padding: 0.75rem 0", self.css)
+        self.assertNotIn("padding: 1.65rem 0", self.css)
+        self.assertIn("max-width: 62ch", self.css)
+        self.assertIn("line-height: 1.62", self.css)
+        self.assertIn("-webkit-line-clamp: 2", self.css)
+        self.assertNotIn("-webkit-line-clamp: 3", self.css)
 
 
 if __name__ == "__main__":

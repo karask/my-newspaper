@@ -35,12 +35,12 @@
 
   function setTheme(theme) {
     document.documentElement.dataset.theme = theme;
-    var nextLabel = theme === "dark" ? "Light edition" : "Dark edition";
+    var nextLabel = theme === "dark" ? "light" : "dark";
     elements.themeLabel.textContent = nextLabel;
-    elements.themeToggle.setAttribute("aria-label", "Switch to " + nextLabel.toLowerCase());
+    elements.themeToggle.setAttribute("aria-label", "Switch to " + nextLabel + " surface");
     document.querySelector('meta[name="theme-color"]').setAttribute(
       "content",
-      theme === "dark" ? "#171613" : "#eee7d9"
+      theme === "dark" ? "#161310" : "#efe8dc"
     );
   }
 
@@ -125,13 +125,17 @@
 
   function renderMeta() {
     var edition = state.edition.edition || {};
-    var status = edition.status === "demo" ? '<span class="demo-stamp">Demo edition</span>' :
-      (state.editionUrl !== "./data/news.json" ? '<span class="demo-stamp">Archive edition</span>' : "");
+    var storyCount = Array.isArray(state.edition.stories) ? state.edition.stories.length : 0;
+    var status = edition.status || "unknown";
+    var extra = status === "demo" ? '<span class="demo-stamp">demo</span>' :
+      (state.editionUrl !== "./data/news.json" ? '<span class="demo-stamp">archive</span>' : "");
     elements.meta.innerHTML = '<span class="edition-date">' +
       core.escapeHtml(formatDate(edition.date + "T12:00:00", { weekday: "long", year: "numeric", month: "long", day: "numeric" })) +
       '</span><span class="edition-kicker">' + core.escapeHtml(edition.kicker || "Daily briefing") +
-      '</span><span class="edition-updated">Updated <time datetime="' + core.escapeHtml(edition.updated_at || "") + '">' +
-      core.escapeHtml(shortTimestamp(edition.updated_at)) + "</time></span>" + status;
+      '</span><span class="meta-count">stories ' + core.escapeHtml(String(storyCount)) +
+      '</span><span class="edition-updated">upd <time datetime="' + core.escapeHtml(edition.updated_at || "") + '">' +
+      core.escapeHtml(shortTimestamp(edition.updated_at)) +
+      '</time></span><span class="meta-status">status ' + core.escapeHtml(status) + "</span>" + extra;
   }
 
   function renderFilters() {
@@ -163,7 +167,7 @@
       '<p class="lead-summary">' + core.escapeHtml(story.summary || "No summary was supplied.") + "</p>" +
       evidenceMarkup(story) +
       '<a class="read-link" href="' + core.escapeHtml(url) +
-      '" target="_blank" rel="noopener noreferrer">Read the canonical story <span aria-hidden="true">↗</span></a>' +
+      '" target="_blank" rel="noopener noreferrer">open canonical <span aria-hidden="true">↗</span></a>' +
       "</article>";
   }
 
@@ -189,7 +193,7 @@
   }
 
   function statePanel(kind) {
-    var heading = kind === "error" ? "The presses paused" : "A quiet desk";
+    var heading = kind === "error" ? "Load failed" : "Empty section";
     var action = kind === "error" ? '<button type="button" class="retry-button" id="retry-load">Try again</button>' : "";
     return '<div class="state-panel"><p class="state-eyebrow">' +
       (kind === "error" ? "Edition unavailable" : "Nothing filed") + '</p><h3>' + heading +
