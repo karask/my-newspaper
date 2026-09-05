@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "edition": {
-    "date": "2026-09-04",
+    "date": "2026-09-05",
     "title": "The Daily Signal",
     "kicker": "Primary-source tech intelligence, compiled from the live wire.",
     "status": "live",
-    "updated_at": "2026-09-04T11:57:19+03:00"
+    "updated_at": "2026-09-05T06:45:00+03:00"
   },
   "sections": [
     "Bitcoin",
@@ -13,802 +13,832 @@
     "Robotics",
     "Longevity"
   ],
-  "lead_story_id": "ai-gpt6-astra",
+  "lead_story_id": "ai-gpt6-astra-ga",
   "stories": [
     {
-      "id": "ai-gpt6-astra",
+      "id": "ai-gpt6-astra-ga",
       "section": "AI",
       "rank": 1,
-      "story_type": "Model release",
-      "title": "OpenAI releases GPT-6 Astra, its first model rated Critical for cybersecurity capability",
-      "summary": "OpenAI began the staged rollout of GPT-6 Astra, calling it its most capable model for computer use, browsing, software engineering, science and professional work. The first access goes to selected Daybreak organizations; Plus, Pro, Business, Enterprise and API availability is due over the coming days. OpenAI prices standard API use at $10 per million input tokens and $50 per million output tokens, while the system card says Astra is the first model to reach the company's Critical cybersecurity threshold.",
+      "story_type": "Model rollout / infrastructure",
+      "title": "GPT-6 Astra goes broadly available: ChatGPT, API, and Microsoft Foundry in one day",
+      "summary": "OpenAI moved GPT-6 Astra from a Daybreak-limited launch to broad availability across ChatGPT Work/Codex, the API, and Microsoft Foundry for all Azure customers, with CEO Sam Altman saying Plus and Business access is live despite the launch post allowing 'a few days.' API pricing is $10/$50 per million input/output tokens (2x at >272K context), and Azure mirrors short-context pricing at $20/$75 for long-context Global. This is the day a Critical-rated cyber model stopped being a preview: the practical question shifts to reliability at scale, with fine-tuning and audio/video I/O still unsupported.",
       "source": {
-        "name": "X: @OpenAI",
-        "url": "https://x.com/OpenAI/status/2095595741528125780"
+        "name": "OpenAI",
+        "url": "https://openai.com/index/gpt-6-astra/"
       },
-      "canonical_url": "https://deploymentsafety.openai.com/gpt-6-astra",
-      "published_at": "2026-09-03T19:32:13Z",
+      "canonical_url": "https://openai.com/index/gpt-6-astra/",
+      "published_at": "2026-09-04T20:13:05Z",
       "corroboration": [
         {
-          "name": "OpenAI Developers",
-          "url": "https://x.com/OpenAIDevs/status/2095596020638036311"
+          "name": "X: @OpenAI",
+          "url": "https://x.com/OpenAI/status/2095968413646737608"
         },
         {
-          "name": "CNBC",
-          "url": "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html"
+          "name": "X: @sama",
+          "url": "https://x.com/sama/status/2096008528834244741"
+        },
+        {
+          "name": "X: @OpenAIDevs",
+          "url": "https://x.com/OpenAIDevs/status/2095968506244460673"
         }
       ],
       "quality": {
-        "signal": "corroborated",
+        "signal": "primary",
         "confidence": "high",
-        "note": "Official OpenAI launch post and system card, independently corroborated by CNBC. Rollout is staged, not universal on day one."
+        "note": "Official OpenAI launch page plus three in-window official posts (OpenAI, OpenAIDevs, sama). Availability rollout details differ slightly between posts; capability claims remain OpenAI-reported."
       },
       "tags": [
         "GPT-6",
         "Astra",
-        "Agents",
-        "Cybersecurity",
+        "Computer Use",
+        "Microsoft Foundry",
         "Official X"
       ],
       "popularity": {
         "platform": "x",
-        "engagement": 237266,
-        "label": "X · 211.1K likes · 21.1K reposts · 5.0K replies",
-        "observed_at": "2026-09-04T08:51:17Z",
-        "evidence_url": "https://x.com/OpenAI/status/2095595741528125780"
+        "engagement": 27625,
+        "label": "X · 25,098 likes · 1,783 reposts · 744 replies",
+        "observed_at": "2026-09-05T03:52:00Z",
+        "evidence_url": "https://x.com/OpenAI/status/2095968413646737608"
       }
     },
     {
-      "id": "ai-nvidia-huggingface",
+      "id": "ai-claude-fermats-last-theorem",
       "section": "AI",
       "rank": 2,
-      "story_type": "Acquisition",
-      "title": "NVIDIA agrees to acquire Hugging Face for $12.93 billion while keeping the platform open",
-      "summary": "NVIDIA announced an agreement to acquire Hugging Face for $12.93 billion. The companies say Hugging Face will remain open, multi-cloud and compute-agnostic—an important commitment for the hub, Transformers, datasets and the LeRobot ecosystem. This is a major consolidation event across AI software distribution, open models and robotics tooling, subject to the transaction closing and those openness commitments holding in practice.",
+      "story_type": "Research release",
+      "title": "Anthropic's Claude agents produced the first end-to-end machine-checked Lean 4 proof of Fermat's Last Theorem",
+      "summary": "Anthropic published a complete, kernel-checked Lean 4 formalization of Fermat's Last Theorem (the Frey-Serre-Ribet-Wiles-Taylor route) built in about 11 days by a Claude Code / Prove2Me multi-agent harness, writing ~13M lines of Lean and proving ~30,300 theorems. The build rests on exactly Lean's three standard axioms, was confirmed by the Lean comparator against Mathlib's own statement, and was accepted by an independent Rust kernel (nanoda); the repo ships a browsable 390 MB HTML rendering of the whole proof. This is autoformalization of the Wiles argument, not a new theorem, and it ran on an internal research model roughly comparable to Claude Fable 5.1 — but it demonstrates that machine-checked formalization of major mathematics is now achievable at agent scale.",
       "source": {
-        "name": "NVIDIA",
-        "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/"
+        "name": "Anthropic",
+        "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem"
       },
-      "canonical_url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
-      "published_at": "2026-09-03T12:02:49Z",
+      "canonical_url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "published_at": "2026-09-04T18:50:48Z",
       "corroboration": [
         {
-          "name": "X: @huggingface",
-          "url": "https://x.com/huggingface/status/2095508870915338284"
+          "name": "GitHub: anthropics/fermats-last-theorem",
+          "url": "https://github.com/anthropics/fermats-last-theorem"
         },
         {
-          "name": "X: @nvidia",
-          "url": "https://x.com/nvidia/status/2095518531693806017"
+          "name": "X: @AnthropicAI",
+          "url": "https://x.com/AnthropicAI/status/2095947707605266436"
         }
       ],
       "quality": {
-        "signal": "corroborated",
+        "signal": "primary",
         "confidence": "high",
-        "note": "Official NVIDIA announcement confirmed by official Hugging Face and NVIDIA X accounts."
+        "note": "Official Anthropic research post with the open-source proof repository. Verification is kernel-based; semantic review of each intermediate theorem remains a human task, and the repo is labeled 'research artifact, not maintained.'"
       },
       "tags": [
-        "NVIDIA",
-        "Hugging Face",
-        "M&A",
+        "Lean",
+        "Proof Automation",
+        "Claude",
+        "Research",
         "Open Source",
         "Official X"
       ],
       "popularity": {
         "platform": "x",
-        "engagement": 5658,
-        "label": "X · 5.0K likes · 482 reposts · 170 replies",
-        "observed_at": "2026-09-04T08:51:17Z",
-        "evidence_url": "https://x.com/huggingface/status/2095508870915338284"
+        "engagement": 8929,
+        "label": "X · 7,615 likes · 990 reposts · 324 replies",
+        "observed_at": "2026-09-05T03:52:00Z",
+        "evidence_url": "https://x.com/AnthropicAI/status/2095947707605266436"
       }
     },
     {
-      "id": "ai-fable-51-catchup",
+      "id": "ai-k2-horizon",
       "section": "AI",
       "rank": 3,
-      "story_type": "Catch-up / model release",
-      "title": "Catch-up: Anthropic shipped Claude Fable 5.1 and Mythos 5.1 with sharply cheaper cache reads",
-      "summary": "Anthropic released Claude Fable 5.1 and the restricted Claude Mythos 5.1 on September 1, but the earlier edition missed it. Fable 5.1 is generally available for coding and knowledge work; Anthropic reports a 75% reduction in cache-read pricing, fewer false-positive safety interventions and a one-million-token context window. Mythos 5.1 uses the same underlying model with different safeguards and is limited to vetted cybersecurity and life-sciences organizations.",
+      "story_type": "Catch-up / open model release",
+      "title": "Catch-up: IFM ships K2 Horizon, six fully open frontier models from 0.9B to 375B with data and recipe",
+      "summary": "MBZUAI's Institute of Foundation Models released K2 Horizon on September 3, a fleet of six open models (0.9B to 375B-A23B) that is unusual in shipping weights, code, training data and methodology under Apache 2.0, with day-zero vLLM/SGLang/Ollama support and FP8 variants. The 375B-A23B flagship is a sparse MoE with 23B active parameters and a native 512K context window; IFM claims the 0.9B/3.7B/7B sizes set state of the art in their classes and the 375B is competitive with closed frontier models on agentic work. The earlier edition missed this launch. Independent reproduction of the benchmark claims is still pending, but the openness of the training stack is the part builders can verify directly.",
       "source": {
-        "name": "Anthropic",
-        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+        "name": "IFM",
+        "url": "https://ifm.ai/k2/press-release"
       },
-      "canonical_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-      "published_at": "2026-09-01T18:03:14Z",
+      "canonical_url": "https://ifm.ai/k2/press-release",
+      "published_at": "2026-09-03T12:00:00Z",
       "corroboration": [
         {
-          "name": "X: @claudeai",
-          "url": "https://x.com/claudeai/status/2094848572143407483"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official Anthropic release and official Claude X post. Included as an explicitly labeled catch-up because the prior daily pipeline missed it."
-      },
-      "tags": [
-        "Claude",
-        "Fable 5.1",
-        "Mythos 5.1",
-        "Catch-up",
-        "Official X"
-      ],
-      "popularity": {
-        "platform": "x",
-        "engagement": 75429,
-        "label": "X · 65.3K likes · 7.3K reposts · 2.8K replies",
-        "observed_at": "2026-09-04T08:51:17Z",
-        "evidence_url": "https://x.com/claudeai/status/2094848572143407483"
-      }
-    },
-    {
-      "id": "ai-weathernext-3",
-      "section": "AI",
-      "rank": 4,
-      "story_type": "Model release",
-      "title": "Google DeepMind launches WeatherNext 3 across Search, Gemini, Maps and cloud data products",
-      "summary": "Google DeepMind introduced WeatherNext 3, its newest global weather model, and integrated forecasts into Search, Gemini, Maps and Maps Platform. Forecast data is also being made available through BigQuery, Earth Engine and Google Cloud Storage. The release matters because it moves a research-grade weather model directly into consumer and developer products rather than leaving it as a benchmark demo.",
-      "source": {
-        "name": "Google DeepMind",
-        "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/"
-      },
-      "canonical_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/",
-      "published_at": "2026-09-03T15:03:05Z",
-      "corroboration": [
-        {
-          "name": "X: @GoogleDeepMind",
-          "url": "https://x.com/GoogleDeepMind/status/2095528012791902536"
+          "name": "Hugging Face: IFM/K2-Horizon-375B-A23B",
+          "url": "https://huggingface.co/IFM/K2-Horizon-375B-A23B"
         },
         {
-          "name": "X: @GoogleResearch",
-          "url": "https://x.com/GoogleResearch/status/2095591983276540234"
+          "name": "MBZUAI",
+          "url": "https://mbzuai.ac.ae/news/mbzuais-institute-of-foundation-models-launches-k2-horizon-the-worlds-largest-fully-open-ai-models-in-history/"
         }
       ],
       "quality": {
         "signal": "primary",
         "confidence": "high",
-        "note": "Official Google release corroborated by two official Google research accounts."
+        "note": "Official IFM/MBZUAI press release and model repositories. Included as an explicitly labeled catch-up; only the release date is exposed on the page (noon UTC used). Benchmark claims are vendor-reported."
       },
       "tags": [
-        "WeatherNext 3",
-        "Google DeepMind",
-        "Forecasting",
-        "Official X"
-      ],
-      "popularity": {
-        "platform": "x",
-        "engagement": 1403,
-        "label": "X · 1.1K likes · 154 reposts · 154 replies",
-        "observed_at": "2026-09-04T08:51:17Z",
-        "evidence_url": "https://x.com/GoogleDeepMind/status/2095528012791902536"
-      }
+        "K2 Horizon",
+        "IFM",
+        "MBZUAI",
+        "Open Weights",
+        "MoE",
+        "Catch-up"
+      ]
     },
     {
-      "id": "ai-runway-gwm-worlds-2",
+      "id": "ai-muse-spark-max",
       "section": "AI",
-      "rank": 5,
-      "story_type": "Research release",
-      "title": "Runway releases GWM Worlds 2 for interactive 720p world simulation with synchronized audio",
-      "summary": "Runway introduced GWM Worlds 2, a general world model designed for interactive real-time simulation at 720p and 24 frames per second with synchronized 48 kHz audio. The release pushes generative video toward controllable environments rather than passive clips. Performance and controllability claims are vendor-reported and need independent testing, but the system is a concrete research release with a live technical page.",
+      "rank": 4,
+      "story_type": "Model tier release",
+      "title": "Meta opens Muse Spark 1.3 max reasoning effort to all developers on Muse Code and the Model API",
+      "summary": "Meta released a new `reasoning_effort=max` tier for Muse Spark 1.3, the highest reasoning setting above xhigh, available on Muse Code and the Meta Model API with the base model (shipped September 2) unchanged. The model id stays `muse-spark-1.3` with a 1,048,576-token context and 131,072-token output limit; Meta says max delivers stronger coding and agentic performance than high/xhigh, and earlier third-party testing had the base 1.3 model at 62 on the Artificial Analysis index, behind only Claude Fable 5.1 and Opus 5. The tier is Standard-tier only (not Contributor tier), so it matters most for API cost/capability planning.",
       "source": {
-        "name": "Runway Research",
-        "url": "https://runway.com/research/introducing-gwm-worlds-2"
+        "name": "X: @AIatMeta",
+        "url": "https://x.com/AIatMeta/status/2095940043294847084"
       },
-      "canonical_url": "https://runway.com/research/introducing-gwm-worlds-2",
-      "published_at": "2026-09-03T15:50:47Z",
+      "canonical_url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+      "published_at": "2026-09-04T18:20:21Z",
       "corroboration": [
         {
-          "name": "X: @runwayml",
-          "url": "https://x.com/runwayml/status/2095540014645920040"
+          "name": "Meta research: Muse Spark 1.3",
+          "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3"
         }
       ],
       "quality": {
         "signal": "primary",
-        "confidence": "high",
-        "note": "Official Runway research page and official X launch post; performance claims remain vendor-reported."
+        "confidence": "medium",
+        "note": "Official Meta account announcing the tier (quoting CAIO Alexandr Wang); the base model release page is Meta's canonical page but dates from September 2. No separate model card for the max tier was linked from the post."
       },
       "tags": [
-        "World Models",
-        "Runway",
-        "Simulation",
-        "Video",
+        "Meta",
+        "Muse Spark",
+        "Reasoning",
+        "API",
         "Official X"
       ],
       "popularity": {
         "platform": "x",
-        "engagement": 845,
-        "label": "X · 711 likes · 98 reposts · 36 replies",
-        "observed_at": "2026-09-04T08:51:17Z",
-        "evidence_url": "https://x.com/runwayml/status/2095540014645920040"
+        "engagement": 624,
+        "label": "X · 558 likes · 28 reposts · 38 replies",
+        "observed_at": "2026-09-05T03:52:00Z",
+        "evidence_url": "https://x.com/AIatMeta/status/2095940043294847084"
       }
     },
     {
-      "id": "ai-grok-enterprise",
+      "id": "ai-grok-bot-marketplace",
       "section": "AI",
-      "rank": 6,
+      "rank": 5,
       "story_type": "Product release",
-      "title": "xAI launches Grok Bot for Enterprise with deployment and governance controls",
-      "summary": "xAI launched Grok Bot for Enterprise, positioning it as an organization-managed agent product rather than a consumer chat feature. The release focuses on enterprise deployment, control and integration, and was published on xAI's official product channel before being amplified by Elon Musk. Concrete customer behavior and reliability remain to be tested after launch.",
+      "title": "xAI ships installable Grok Bot templates, led by a vendor-spend 'Haggle Bot'",
+      "summary": "xAI opened its Grok Bot template marketplace with 69 public bots, headlined by Haggle Bot, which maps vendor spend across Slack, Notion, Drive, Gmail, Hex and Ramp and found over $100K in savings in one internal SpaceXAI audit (e.g. $85,662/yr in unused SKUs). The release extends Grok Bot for Enterprise (launched September 3) from a managed agent into a templated agent ecosystem. The savings figures are a vendor-internal anecdote, and the enterprise CTA routes through a Cursor waitlist rather than a GA xAI enterprise SKU, so treat the marketplace as the launch and the numbers as directional.",
       "source": {
-        "name": "SpaceXAI / xAI",
-        "url": "https://x.ai/news/grok-bot-for-enterprise"
+        "name": "xAI",
+        "url": "https://x.ai/news/grok-bot-procurement"
       },
-      "canonical_url": "https://x.ai/news/grok-bot-for-enterprise",
-      "published_at": "2026-09-03T21:14:52Z",
+      "canonical_url": "https://x.ai/news/grok-bot-procurement",
+      "published_at": "2026-09-04T19:19:20Z",
       "corroboration": [
         {
           "name": "X: @bot",
-          "url": "https://x.com/bot/status/2095621571335655872"
-        },
-        {
-          "name": "X: @elonmusk",
-          "url": "https://x.com/elonmusk/status/2095668208090959941"
+          "url": "https://x.com/bot/status/2095954887205138597"
         }
       ],
       "quality": {
         "signal": "primary",
         "confidence": "high",
-        "note": "Official xAI product page and product-account launch post, amplified by xAI leadership."
+        "note": "Official xAI product page and product-account launch post. Savings claims are one internal audit, not a third-party benchmark."
       },
       "tags": [
         "xAI",
         "Grok",
+        "Agents",
         "Enterprise",
-        "Agents",
         "Official X"
       ],
       "popularity": {
         "platform": "x",
-        "engagement": 5762,
-        "label": "X · 4.7K likes · 595 reposts · 503 replies",
-        "observed_at": "2026-09-04T08:51:17Z",
-        "evidence_url": "https://x.com/elonmusk/status/2095668208090959941"
+        "engagement": 4403,
+        "label": "X · 3.9K likes · 336 reposts · 181 replies",
+        "observed_at": "2026-09-05T03:52:00Z",
+        "evidence_url": "https://x.com/bot/status/2095954887205138597"
       }
     },
     {
-      "id": "ai-ecommerce-bench",
+      "id": "ai-runway-team-plan",
       "section": "AI",
-      "rank": 7,
-      "story_type": "Benchmark release",
-      "title": "Qwen releases E-Commerce Bench for long-horizon autonomous business agents",
-      "summary": "The Qwen team released E-Commerce Bench, a benchmark for agents operating multi-step business workflows over long horizons. The project includes an arXiv paper, a public benchmark site and code under the QwenLM organization. It is useful because it tests sustained operation rather than isolated question answering, though benchmark relevance will depend on how closely its environments match real production systems.",
+      "rank": 6,
+      "story_type": "Product release",
+      "title": "Runway adds a self-serve Team Plan with pooled credits and agent connectors for 2-9 seats",
+      "summary": "Runway launched a Team Plan covering 2-9 seats with pooled credits, shared projects, commenting, agent skills and Agent Connectors. It is a distribution and collaboration move rather than a new model, but it puts enterprise-style governance (including the September 3 credit caps) into self-serve packaging. Pricing is on the public team page; adoption data is not yet available.",
       "source": {
-        "name": "E-Commerce Bench paper",
-        "url": "https://arxiv.org/abs/2608.30730"
+        "name": "Runway",
+        "url": "https://runway.com/pricing?tab=team"
       },
-      "canonical_url": "https://ecbench.github.io/",
-      "published_at": "2026-09-03T11:37:24Z",
+      "canonical_url": "https://runway.com/pricing?tab=team",
+      "published_at": "2026-09-04T16:53:45Z",
       "corroboration": [
         {
-          "name": "X: @Alibaba_Qwen",
-          "url": "https://x.com/Alibaba_Qwen/status/2095476249556853100"
-        },
-        {
-          "name": "GitHub: QwenLM",
-          "url": "https://github.com/QwenLM/E-CommerceBench"
+          "name": "X: @runwayml",
+          "url": "https://x.com/runwayml/status/2095918249674215599"
         }
       ],
       "quality": {
         "signal": "primary",
-        "confidence": "high",
-        "note": "Official paper, project site, code repository and Qwen X announcement."
-      },
-      "tags": [
-        "Qwen",
-        "Agents",
-        "Benchmark",
-        "Open Source",
-        "Official X"
-      ],
-      "popularity": {
-        "platform": "x",
-        "engagement": 709,
-        "label": "X · 592 likes · 53 reposts · 64 replies",
-        "observed_at": "2026-09-04T08:51:17Z",
-        "evidence_url": "https://x.com/Alibaba_Qwen/status/2095476249556853100"
-      }
-    },
-    {
-      "id": "robotics-figure-nscale",
-      "section": "Robotics",
-      "rank": 8,
-      "story_type": "Infrastructure",
-      "title": "Figure and Nscale plan up to 100,000 NVIDIA Vera Rubin GPUs for humanoid-robot training",
-      "summary": "Figure and Nscale signed a strategic partnership for up to 100,000 NVIDIA Vera Rubin GPUs, with a $3.5 billion initial phase and more than $6 billion at full scale. The first 100,000-GPU capacity is targeted for the second half of 2027 in Barstow, Texas, and Nscale is also investing in Figure. It is a striking statement about the compute intensity Figure expects for embodied intelligence, but the largest capacity is a future commitment rather than deployed infrastructure today.",
-      "source": {
-        "name": "Figure",
-        "url": "https://www.figure.ai/news/figure-and-nscale-sign-strategic-partnership"
-      },
-      "canonical_url": "https://www.figure.ai/news/figure-and-nscale-sign-strategic-partnership",
-      "published_at": "2026-09-03T13:09:49Z",
-      "corroboration": [
-        {
-          "name": "X: @Figure_robot",
-          "url": "https://x.com/Figure_robot/status/2095499507991744723"
-        },
-        {
-          "name": "X: Brett Adcock",
-          "url": "https://x.com/adcock_brett/status/2095499534940185022"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official Figure announcement and official company/CEO X posts. Future capacity and spending are stated plans."
-      },
-      "tags": [
-        "Figure",
-        "Humanoids",
-        "Nscale",
-        "NVIDIA",
-        "Compute",
-        "Official X"
-      ],
-      "popularity": {
-        "platform": "x",
-        "engagement": 3614,
-        "label": "X · 3.2K likes · 329 reposts · 122 replies",
-        "observed_at": "2026-09-04T08:51:17Z",
-        "evidence_url": "https://x.com/Figure_robot/status/2095499507991744723"
-      }
-    },
-    {
-      "id": "robotics-gopro-defense-acquisition",
-      "section": "Robotics",
-      "rank": 9,
-      "story_type": "Acquisition",
-      "title": "GoPro acquisition points the camera company toward defense, robotics and aerospace",
-      "summary": "Starman Holding agreed to acquire GoPro and says the combined company will expand into defense, government, robotics and aerospace. The move could redirect GoPro's imaging, rugged-device and edge-hardware capabilities into machine perception and defense platforms. The strategic direction is explicit, but operational plans and product milestones remain sparse.",
-      "source": {
-        "name": "The Verge",
-        "url": "https://www.theverge.com/news/987494/gopro-starman-holding-merger-aquisition"
-      },
-      "canonical_url": "https://www.theverge.com/news/987494/gopro-starman-holding-merger-aquisition",
-      "published_at": "2026-09-04T05:29:00Z",
-      "corroboration": [],
-      "quality": {
-        "signal": "developing",
         "confidence": "medium",
-        "note": "Reputable reporting of an announced acquisition; detailed robotics plans are not yet public."
+        "note": "Official Runway pricing page and X announcement. The pricing page is the only canonical URL linked in the post."
       },
       "tags": [
-        "GoPro",
-        "Defense",
-        "Robotics",
-        "M&A"
+        "Runway",
+        "Generative Video",
+        "Enterprise",
+        "Official X"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 73,
+        "label": "X · 61 likes · 4 reposts · 8 replies",
+        "observed_at": "2026-09-05T03:52:00Z",
+        "evidence_url": "https://x.com/runwayml/status/2095918249674215599"
+      }
+    },
+    {
+      "id": "bitcoin-sec-nasdaq-texas",
+      "section": "Bitcoin",
+      "rank": 7,
+      "story_type": "Regulation",
+      "title": "SEC accelerates Nasdaq Texas rule change defining 'digital commodity' and opening 15% NAV buffer for active crypto trusts",
+      "summary": "The SEC granted accelerated approval (Release No. 34-106268, September 3) of a Nasdaq Texas amendment to Rule 5711(d) for Commodity-Based Trust Shares, which introduces an official 'digital commodity' definition, legalizes actively managed crypto strategies, and permits funds to hold up to 15% of NAV in instruments that initially fail strict listing criteria. The order explicitly cites a trust holding Bitcoin, Ether, Solana and XRP as digital commodities that currently meet the criteria. It is a generic-listing framework rather than a new fund approval, but it materially widens the shelf for multi-asset and actively managed crypto ETPs and extends the March 2026 joint SEC-CFTC commodity interpretation into exchange rules.",
+      "source": {
+        "name": "SEC",
+        "url": "https://www.sec.gov/files/rules/sro/nasdaqtx/2026/34-106268.pdf"
+      },
+      "canonical_url": "https://www.sec.gov/files/rules/sro/nasdaqtx/2026/34-106268.pdf",
+      "published_at": "2026-09-03T17:00:00Z",
+      "corroboration": [
+        {
+          "name": "CoinGape",
+          "url": "https://coingape.com/sec-clears-bitcoin-ether-xrp-solana-as-commodities-under-nasdaq-texas-rule-change/"
+        },
+        {
+          "name": "U.Today",
+          "url": "https://u.today/xrp-and-solana-cleared-in-fresh-sec-nasdaq-order-main-crypto-news-this-morning"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Primary SEC order document (order dated September 3, 2026; date-only timestamp approximated to late ET) corroborated by two independent reports of the same release number and rule change."
+      },
+      "tags": [
+        "SEC",
+        "Nasdaq Texas",
+        "Digital Commodity",
+        "ETF",
+        "Regulation"
       ]
     },
     {
-      "id": "bitcoin-imf-el-salvador",
+      "id": "bitcoin-coinbase-stock-perps",
       "section": "Bitcoin",
-      "rank": 10,
-      "story_type": "Policy",
-      "title": "IMF says El Salvador used no public funds for recent Bitcoin accumulation under its program review",
-      "summary": "The IMF reached a staff-level agreement on El Salvador's combined second and third program reviews and said Bitcoin accumulation since the first review reflected private donations rather than public spending. The release also says Chivo's majority ownership moved to a private operator and no further public Bitcoin accumulation is expected. Board approval would unlock roughly $140 million, making the Bitcoin conditions operational rather than rhetorical.",
+      "rank": 8,
+      "story_type": "Regulatory filing",
+      "title": "Coinbase files Form 1-N and BD-N to bring 24/7 single-stock perpetuals to US traders",
+      "summary": "Coinbase confirmed on September 3 that it filed SEC notice registrations (Form 1-N for Coinbase Derivatives and Form BD-N for Coinbase Financial Markets, both dated September 1) to bring single-stock perpetual futures onshore under the dual SEC-CFTC security-futures framework established by the 2000 CFMA. The company said it will work with both agencies, and the filings are deliberately routed through security futures rather than the CFTC-only self-certification path that CME Group is suing the CFTC over. This is a notice registration, not an approval: contract terms, leverage limits, clearing and a launch date are all still undisclosed.",
       "source": {
-        "name": "X: @IMFNews",
-        "url": "https://x.com/IMFNews/status/2095651193255084274"
+        "name": "X: @coinbase",
+        "url": "https://x.com/coinbase/status/2095598512557772927"
       },
-      "canonical_url": "https://www.imf.org/en/news/articles/2026/09/03/pr26285-el-salvador-imf-reaches-sla-on-combined-2nd-and-3rd-rev-under-eff-arrangement",
-      "published_at": "2026-09-03T23:12:34Z",
-      "corroboration": [],
+      "canonical_url": "https://crypto.news/coinbase-files-to-bring-stock-perpetuals-to-the-us",
+      "published_at": "2026-09-03T19:43:14Z",
+      "corroboration": [
+        {
+          "name": "Coinbase filings (crypto.news)",
+          "url": "https://crypto.news/coinbase-files-to-bring-stock-perpetuals-to-the-us"
+        },
+        {
+          "name": "X: @faryarshirzad",
+          "url": "https://x.com/faryarshirzad/status/2095593895988019215"
+        }
+      ],
       "quality": {
-        "signal": "primary",
+        "signal": "corroborated",
         "confidence": "high",
-        "note": "Official IMF press release and official IMF X account; Board approval is still pending."
+        "note": "Official Coinbase post with copies of both filings reported; policy officer Shirzad confirmed the filings separately. Filings are notices, not approvals, and CME's lawsuit against the CFTC clouds the broader perps legal landscape."
       },
       "tags": [
-        "El Salvador",
-        "IMF",
-        "Policy",
-        "Bitcoin Treasury",
+        "Coinbase",
+        "Stock Perps",
+        "Security Futures",
+        "SEC",
+        "CFTC",
         "Official X"
       ],
       "popularity": {
         "platform": "x",
-        "engagement": 516,
-        "label": "X · 392 likes · 109 reposts · 15 replies",
-        "observed_at": "2026-09-04T08:51:17Z",
-        "evidence_url": "https://x.com/IMFNews/status/2095651193255084274"
+        "engagement": 1285,
+        "label": "X · 1.0K likes · 143 reposts · 98 replies",
+        "observed_at": "2026-09-05T03:52:00Z",
+        "evidence_url": "https://x.com/coinbase/status/2095598512557772927"
       }
     },
     {
-      "id": "bitcoin-stacks-genesis-bond",
+      "id": "bitcoin-openreserve-occ",
       "section": "Bitcoin",
-      "rank": 11,
-      "story_type": "Launch / partnership",
-      "title": "21Shares joins the Stacks Genesis Bond as an inaugural Bitcoin-staking partner",
-      "summary": "Stacks named 21Shares an inaugural partner for its Genesis Bond and said the first Bitcoin bond is expected around September 10. The partnership links an established crypto asset manager to Stacks' Bitcoin-staking infrastructure. Product mechanics, jurisdiction and investor terms need to be evaluated once complete offering documents are available.",
+      "rank": 9,
+      "story_type": "Banking infrastructure",
+      "title": "OCC grants preliminary conditional approval to OpenReserve Bank, a full-service national bank for tokenized deposits and digital assets",
+      "summary": "OCC Corporate Decision #1389 (September 2, 2026) grants preliminary conditional approval to charter OpenReserve Bank, N.A. in Salt Lake City as a full-service national bank — not a trust charter — with tokenized deposits, digital-asset custody and a planned stablecoin subsidiary issuing rUSD under the GENIUS Act. The conditions are strict: at least $210M paid-in capital, a 12% Tier 1 leverage ratio for three years, and Federal Reserve/FDIC approvals still outstanding. It is the clearest signal yet that regulators see blockchain-native companies fitting inside federal banking supervision rather than alongside it, and it is a16z-backed.",
       "source": {
-        "name": "X: @Stacks",
-        "url": "https://x.com/Stacks/status/2095528714616668420"
+        "name": "OCC",
+        "url": "https://www.occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2026/cd1389.pdf"
       },
-      "canonical_url": "https://x.com/Stacks/status/2095528714616668420",
-      "published_at": "2026-09-03T15:05:53Z",
+      "canonical_url": "https://www.occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2026/cd1389.pdf",
+      "published_at": "2026-09-02T12:00:00Z",
       "corroboration": [
         {
-          "name": "X: Muneeb Ali",
-          "url": "https://x.com/muneeb/status/2095531117461836206"
+          "name": "Decrypt",
+          "url": "https://decrypt.co/377458/openreserve-occ-approval-full-service-national-bank"
+        },
+        {
+          "name": "X: @CoinDesk",
+          "url": "https://x.com/CoinDesk/status/2095934924130038023"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Primary OCC decision letter (dated September 2, 2026; date-only timestamp used) corroborated by independent reporting and a CoinDesk post within the window. Preliminary only: final approval, FDIC insurance and Fed stock remain."
+      },
+      "tags": [
+        "OCC",
+        "OpenReserve",
+        "National Bank",
+        "Stablecoins",
+        "Tokenized Deposits"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 158,
+        "label": "X · 120 likes · 19 reposts · 19 replies",
+        "observed_at": "2026-09-05T03:52:00Z",
+        "evidence_url": "https://x.com/CoinDesk/status/2095934924130038023"
+      }
+    },
+    {
+      "id": "bitcoin-south-korea-tokenization",
+      "section": "Bitcoin",
+      "rank": 10,
+      "story_type": "Policy / infrastructure",
+      "title": "South Korea publishes a three-phase roadmap to tokenize stocks, bonds and funds, ending in stablecoin settlement",
+      "summary": "South Korea's Financial Services Commission announced on September 4 a phased roadmap for tokenizing securities: phase 1 begins February 4, 2027 (when the Electronic Registration Act takes effect) with institutional money-market funds, bonds, unlisted stocks via trust and public fractional securities; phase 2 extends tokenization to all publicly offered securities; phase 3 builds on-chain payment infrastructure linked to stablecoins. Subordinate-statute revisions are due by end of September 2026. This is a government capital-markets infrastructure program — tokenized securities rather than Bitcoin — but it sets the template for regulated on-chain asset distribution that RWA projects are aiming for.",
+      "source": {
+        "name": "FSC",
+        "url": "https://www.fsc.go.kr/eng/pr010101/87653"
+      },
+      "canonical_url": "https://www.fsc.go.kr/eng/pr010101/87653",
+      "published_at": "2026-09-04T04:00:00Z",
+      "corroboration": [
+        {
+          "name": "X: @CoinDesk",
+          "url": "https://x.com/CoinDesk/status/2095832791539757106"
+        },
+        {
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/09/04/south-korea-targets-february-2027-rollout-for-full-tokenized-securities-market"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official FSC press release (meeting held September 4; date-only timestamp used, noon KST approximated to 04:00 UTC) corroborated by CoinDesk reporting of the same roadmap."
+      },
+      "tags": [
+        "South Korea",
+        "Tokenized Securities",
+        "RWA",
+        "Stablecoins",
+        "Policy"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 345,
+        "label": "X · 265 likes · 50 reposts · 30 replies",
+        "observed_at": "2026-09-05T03:52:00Z",
+        "evidence_url": "https://x.com/CoinDesk/status/2095832791539757106"
+      }
+    },
+    {
+      "id": "bitcoin-nsa-clarity-neutral",
+      "section": "Bitcoin",
+      "rank": 11,
+      "story_type": "Policy",
+      "title": "National Sheriffs' Association shifts to neutral on the CLARITY Act ahead of the Senate cloture vote",
+      "summary": "The National Sheriffs' Association publicly moved from opposition to a neutral stance on the CLARITY Act on September 4, saying it wants to step back and let Congress build the regulatory framework — removing one of the highest-profile law-enforcement opponents ahead of the September 15 Senate cloture vote. Neutral is not support: the NSA's earlier letter argued Section 604 could exempt mixers and DeFi protocols from AML rules, and that letter's text remains paywalled. The shift matters mainly as a signal that the bill can clear the procedural hurdle without a formal law-enforcement block.",
+      "source": {
+        "name": "X: @CoinDesk",
+        "url": "https://x.com/CoinDesk/status/2095810336242778553"
+      },
+      "canonical_url": "https://www.coindesk.com/policy/2026/09/04/u-s-sheriff-s-association-shifts-opposition-stance-to-clarity-act-to-neutral",
+      "published_at": "2026-09-04T13:44:57Z",
+      "corroboration": [
+        {
+          "name": "X: @BitcoinMagazine",
+          "url": "https://x.com/BitcoinMagazine/status/2095813271991333031"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Two independent outlets report the stance change; the NSA's own letter was not directly retrieved (Politico Pro is paywalled). Position statement, not new legislation."
+      },
+      "tags": [
+        "CLARITY Act",
+        "Policy",
+        "US",
+        "AML",
+        "Official X"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 1305,
+        "label": "X · 1.0K likes · 203 reposts · 49 replies",
+        "observed_at": "2026-09-05T03:52:00Z",
+        "evidence_url": "https://x.com/CoinDesk/status/2095810336242778553"
+      }
+    },
+    {
+      "id": "bitcoin-hargreaves-lansdown-etn",
+      "section": "Bitcoin",
+      "rank": 12,
+      "story_type": "Distribution",
+      "title": "Hargreaves Lansdown lists nine Bitcoin and Ether ETNs, opening crypto to its ~2 million UK clients",
+      "summary": "The UK's largest retail wealth platform, Hargreaves Lansdown, listed nine BTC/ETH exchange-traded notes from iShares, CoinShares, WisdomTree, 21Shares, Invesco and Bitwise on September 4, following the FCA's October 2025 lift of the retail crypto-ETP ban. The products carry an appropriateness test and a 24-hour waiting period, and are not ISA-eligible after April 2026. It is a concrete retail distribution milestone in Europe's largest wealth-management market, but ETNs are note-based exposure, not spot BTC.",
+      "source": {
+        "name": "X: @BitcoinMagazine",
+        "url": "https://x.com/BitcoinMagazine/status/2095952167139991916"
+      },
+      "canonical_url": "https://www.coindesk.com/business/2026/09/04/from-warning-to-listing-uk-s-largest-wealth-platform-opens-access-to-crypto-etns",
+      "published_at": "2026-09-04T19:08:32Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "Reported by two outlets from the platform's listing announcement; the BitcoinMagazine post had no link, so the CoinDesk piece serves as the canonical reporting URL."
+      },
+      "tags": [
+        "Hargreaves Lansdown",
+        "UK",
+        "ETN",
+        "Distribution",
+        "Official X"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 604,
+        "label": "X · 496 likes · 74 reposts · 34 replies",
+        "observed_at": "2026-09-05T03:52:00Z",
+        "evidence_url": "https://x.com/BitcoinMagazine/status/2095952167139991916"
+      }
+    },
+    {
+      "id": "bitcoin-trezor-shipmonk",
+      "section": "Bitcoin",
+      "rank": 13,
+      "story_type": "Security incident",
+      "title": "Trezor: ShipMonk shipping-provider breach extends to ~67,000 additional US customers",
+      "summary": "Trezor updated its incident disclosure on September 4 after its shipping provider ShipMonk told it that 2019-2021 US order data (~67,000 customers — names, emails, phones, shipping addresses, order numbers) was also in the earlier breach. Devices and keys were not compromised, but the exposed data is a phishing and physical-security risk for long-time holders. ShipMonk had previously attested that the old data was deleted, so this is a third-party logistics failure, not a Trezor firmware or key-derivation issue.",
+      "source": {
+        "name": "Trezor",
+        "url": "https://trezor.io/blog/news/recent-customer-data-exposed-in-shipping-provider-incident"
+      },
+      "canonical_url": "https://trezor.io/blog/news/recent-customer-data-exposed-in-shipping-provider-incident",
+      "published_at": "2026-09-04T14:29:05Z",
+      "corroboration": [
+        {
+          "name": "X: @CoinDesk",
+          "url": "https://x.com/CoinDesk/status/2095821445821600068"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official Trezor blog update corroborated by CoinDesk reporting the same day. Scope is customer PII from order history, not device keys."
+      },
+      "tags": [
+        "Trezor",
+        "Security",
+        "Hardware Wallets",
+        "Official X"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 418,
+        "label": "X · 322 likes · 69 reposts · 27 replies",
+        "observed_at": "2026-09-05T03:52:00Z",
+        "evidence_url": "https://x.com/CoinDesk/status/2095821445821600068"
+      }
+    },
+    {
+      "id": "robotics-irobot-roomba-duo",
+      "section": "Robotics",
+      "rank": 14,
+      "story_type": "Product launch",
+      "title": "iRobot unveils Roomba Duo, a main vacuum plus deployable companion robot that cleans under low furniture",
+      "summary": "At IFA 2026 in Berlin, iRobot unveiled the Roomba Duo, its first dual-unit system: a large robot that vacuums and steam-mops paired with an ultra-compact companion robot (8.3 cm tall) that a mechanical arm deploys from the main unit's dock to clean under beds, sofas and dining chairs. The pair share one home map and run from an autonomous mobile dock, and the current prototype uses the Roomba Plus 575 Combo as the deployable mini. It is still a prototype with no price or release date, but the 'Transformers of robot vacuums' architecture — specialized robots cooperating as one system — is a concrete design bet on multi-robot home autonomy.",
+      "source": {
+        "name": "iRobot",
+        "url": "https://www.prnewswire.com/news-releases/irobot-unveils-roomba-duo-at-ifa-2026-proving-the-future-of-floor-care-has-a-familiar-name-302866825.html"
+      },
+      "canonical_url": "https://www.prnewswire.com/news-releases/irobot-unveils-roomba-duo-at-ifa-2026-proving-the-future-of-floor-care-has-a-familiar-name-302866825.html",
+      "published_at": "2026-09-04T08:15:00Z",
+      "corroboration": [
+        {
+          "name": "Tom's Guide",
+          "url": "https://www.tomsguide.com/home/irobot-roomba-duo-is-like-the-transformers-of-robot-vacuums-mechanical-arm-releases-companion-robot-for-tight-spaces"
         }
       ],
       "quality": {
         "signal": "primary",
         "confidence": "high",
-        "note": "Official Stacks announcement and founder confirmation; detailed bond terms were not present in the source set."
+        "note": "Official iRobot PR (September 4, 2026, 04:15 ET) with hands-on Tom's Guide coverage from the IFA floor. Prototype stage; no price or ship date disclosed."
       },
       "tags": [
-        "Stacks",
-        "21Shares",
-        "sBTC",
-        "Bitcoin Bond",
-        "Official X"
-      ],
-      "popularity": {
-        "platform": "x",
-        "engagement": 434,
-        "label": "X · 315 likes · 80 reposts · 39 replies",
-        "observed_at": "2026-09-04T08:51:17Z",
-        "evidence_url": "https://x.com/muneeb/status/2095531117461836206"
-      }
+        "iRobot",
+        "Roomba",
+        "Home Robotics",
+        "Multi-Robot",
+        "IFA 2026"
+      ]
     },
     {
-      "id": "bitcoin-quantum-safe-spend",
-      "section": "Bitcoin",
-      "rank": 12,
-      "story_type": "Protocol research",
-      "title": "StarkWare demonstrates a quantum-safe Bitcoin mainnet spend path without a protocol fork",
-      "summary": "StarkWare demonstrated a quantum-safe Bitcoin mainnet transaction design intended as a last-resort recovery path without changing Bitcoin's base protocol. The work targets the risk that future quantum computers could expose coins whose public keys are already visible. It is an experimental construction rather than an adopted Bitcoin standard, so security review and ecosystem consensus remain the real tests.",
+      "id": "robotics-xfeng-dogotix-900m",
+      "section": "Robotics",
+      "rank": 15,
+      "story_type": "Funding",
+      "title": "Catch-up: XPENG's robotics unit Dogotix raises over $900M at $6.3B valuation for the IRON humanoid",
+      "summary": "XPENG announced that its robotics business — spun off into a standalone subsidiary called Dogotix — signed share-purchase agreements raising more than US$900M at a post-money valuation above US$6.3B (~43 billion yuan), which the company calls the largest single-round private financing in China's embodied AI industry. The round was led by IDG Capital with Gaorong Ventures and strategic participation from Tencent and Alibaba, and funds Physical AI research, model training, data generation and mass-production facilities; the IRON humanoid (76 body DOF, 21 per hand, three in-house Turing chips at up to 2,250 TOPS) targets mass production by end of 2026 with external deliveries in 2027. The deal was announced August 24, outside the primary window, so it is included as a plainly labeled catch-up; it has not yet closed.",
       "source": {
-        "name": "X: @StarkWareLtd",
-        "url": "https://x.com/StarkWareLtd/status/2095107659410051099"
+        "name": "XPENG",
+        "url": "https://finance.yahoo.com/news/xpeng-robotics-business-raises-over-090000421.html"
       },
-      "canonical_url": "https://x.com/StarkWareLtd/status/2095107659410051099",
-      "published_at": "2026-09-02T11:12:45Z",
+      "canonical_url": "https://finance.yahoo.com/news/xpeng-robotics-business-raises-over-090000421.html",
+      "published_at": "2026-08-24T12:00:00Z",
       "corroboration": [
         {
-          "name": "X: Pete Rizzo interview",
-          "url": "https://x.com/pete_rizzo_/status/2095652148654555217"
+          "name": "Cryptopolitan",
+          "url": "https://www.cryptopolitan.com/xpeng-robotics-idg-led-funding/"
+        },
+        {
+          "name": "TechSabado",
+          "url": "https://techsabado.com/2026/09/03/robotics-xpeng-raises-900m-for-humanoid-robot-business/"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official XPENG announcement reported by multiple outlets; included as a labeled catch-up because the announcement predates the 30-hour window. Transaction is at the share-purchase-agreement stage and not closed."
+      },
+      "tags": [
+        "XPENG",
+        "Dogotix",
+        "IRON",
+        "Funding",
+        "China",
+        "Catch-up"
+      ]
+    },
+    {
+      "id": "robotics-minth-agibot-serbia",
+      "section": "Robotics",
+      "rank": 16,
+      "story_type": "Infrastructure",
+      "title": "Minth and AGIBOT open Europe's first humanoid mass-production line in Serbia, targeting 20,000 units a year",
+      "summary": "Automotive Tier-1 supplier Minth and Shanghai's AGIBOT inaugurated serial humanoid and quadruped production at Minth's Šabac, Serbia site on September 2, with an initial €20M investment and a planned €200M Robotics Industrial Park in Inđija targeting up to 20,000 units annually. Phase-1 targets are roughly 5,000 assembled units, and Serbian President Vučić attended the opening. Units will run AGIBOT's 'One Robotic Body, Three Intelligences' architecture, and the in-country build is aimed at continuous physical-interaction data for training embodied models. It is a concrete outside-China manufacturing bet, but ramping a line in a new automotive complex will test supply chain and quality control at scale.",
+      "source": {
+        "name": "Humanoids Daily",
+        "url": "https://www.humanoidsdaily.com/news/minth-group-and-agibot-launch-europe-s-first-humanoid-mass-production-line-in-serbia"
+      },
+      "canonical_url": "https://www.humanoidsdaily.com/news/minth-group-and-agibot-launch-europe-s-first-humanoid-mass-production-line-in-serbia",
+      "published_at": "2026-09-02T12:00:00Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Dedicated robotics industry coverage of the inauguration (Wednesday, September 2, 2026; date-only timestamp used). The launch itself is documented with state officials present, but the AGIBOT/Minth press pages were not independently retrieved in this window."
+      },
+      "tags": [
+        "AGIBOT",
+        "Minth",
+        "Serbia",
+        "Mass Production",
+        "Humanoids",
+        "Manufacturing"
+      ]
+    },
+    {
+      "id": "robotics-ifa-embodied-showcase",
+      "section": "Robotics",
+      "rank": 17,
+      "story_type": "Industry event",
+      "title": "IFA 2026 opens in Berlin with a concentrated Chinese embodied-AI push: Galbot's autonomous G1 store, XGSynBot's Z1, and a humanoid 'runway'",
+      "summary": "IFA 2026 (September 4-8, Messe Berlin) opened with Hall 25's IFA Next zone dominated by Chinese embodied-AI companies: Galbot (China's highest-valued unlisted humanoid firm) is running its G1 in a fully autonomous pharmacy/store demo, and its ET1 biped — which played autonomous tennis against a former pro last month — remains an R&D platform with no pricing. XGSynBot debuted its Z1 wheeled humanoid, claiming a six-second end-effector tool swap that no independent engineer has yet verified, and on September 5 a 'Robots on the Runway' event will walk humanoids from AGIBOT, Unitree and EngineAI down a catwalk. The context is the FCC's July 28 Covered List action barring new Chinese robots from US authorization, which makes IFA the de facto European launchpad for the sector this year.",
+      "source": {
+        "name": "TechTimes",
+        "url": "https://www.techtimes.com/articles/326666/20260904/galbot-g1-ifa-2026-robot-working-real-pharmacy-shifts-brings-china-spy-law-europe.htm"
+      },
+      "canonical_url": "https://www.techtimes.com/articles/326666/20260904/galbot-g1-ifa-2026-robot-working-real-pharmacy-shifts-brings-china-spy-law-europe.htm",
+      "published_at": "2026-09-04T16:10:00Z",
+      "corroboration": [
+        {
+          "name": "TechTimes: XGSynBot Z1",
+          "url": "https://www.techtimes.com/articles/326648/20260904/xgsynbot-z1-debuts-ifa-berlin-chinese-startup-claims-six-second-tool-swap-none-verified.htm"
         }
       ],
       "quality": {
         "signal": "developing",
         "confidence": "medium",
-        "note": "Official StarkWare announcement with a high-signal follow-up interview. This is experimental research, not an adopted protocol change."
+        "note": "On-floor industry reporting of multiple simultaneous debuts; performance claims (especially XGSynBot's 6-second swap) are company-claimed and not independently verified. An event report, not a single product launch."
       },
       "tags": [
-        "Quantum Security",
-        "Bitcoin",
-        "StarkWare",
-        "Protocol",
-        "Catch-up"
-      ],
-      "popularity": {
-        "platform": "x",
-        "engagement": 136,
-        "label": "X · 104 likes · 24 reposts · 8 replies",
-        "observed_at": "2026-09-04T08:51:17Z",
-        "evidence_url": "https://x.com/pete_rizzo_/status/2095652148654555217"
-      }
+        "IFA 2026",
+        "Galbot",
+        "XGSynBot",
+        "Embodied AI",
+        "FCC Covered List"
+      ]
     },
     {
-      "id": "bitcoin-bullish-sbtc-listing",
-      "section": "Bitcoin",
-      "rank": 13,
-      "story_type": "Market infrastructure",
-      "title": "Bullish lists STX and two sBTC trading pairs",
-      "summary": "Bullish listed STX/USDC, sBTC/USDC and sBTC/BTC, adding exchange infrastructure for the Stacks ecosystem and its Bitcoin-backed sBTC asset. The listing is a concrete distribution milestone rather than a price forecast. Liquidity depth and sustained trading volume will determine whether it becomes material.",
+      "id": "robotics-cj-logistics-humanoid",
+      "section": "Robotics",
+      "rank": 18,
+      "story_type": "Deployment",
+      "title": "CJ Logistics deploys dual-arm humanoid robots in a live South Korean warehouse for the first time",
+      "summary": "CJ Logistics placed two humanoid dual-arm robots at its Olive Young distribution center in Yongin, the first live logistics use of humanoids in South Korea, where they insert cushioning material on packaging lines and will expand to picking, sorting and inspection. The robots run on a Robot Foundation Model (RFM) built with Robotis (hardware), Aidin Robotics (hands) and Realworld AI (model), and live operational data feeds back into RFM training. It is a narrow single-task deployment rather than unsupervised autonomy, but it is real commercial floor time — the kind of evidence the sector has been short of.",
       "source": {
-        "name": "X: @Bullish",
-        "url": "https://x.com/Bullish/status/2095498487651561973"
+        "name": "Complete AI Training",
+        "url": "https://completeaitraining.com/news/cj-logistics-deploys-humanoid-robots-in-live-warehouse/"
       },
-      "canonical_url": "https://exchange.bullish.com/trade/STXUSDC",
-      "published_at": "2026-09-03T13:05:46Z",
-      "corroboration": [
-        {
-          "name": "X: @Stacks",
-          "url": "https://x.com/Stacks/status/2095497936256037004"
-        }
-      ],
+      "canonical_url": "https://completeaitraining.com/news/cj-logistics-deploys-humanoid-robots-in-live-warehouse/",
+      "published_at": "2026-09-04T12:00:00Z",
+      "corroboration": [],
       "quality": {
-        "signal": "corroborated",
-        "confidence": "high",
-        "note": "Official exchange announcement confirmed by the official Stacks account."
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "Sector news report (September 4, 2026; date-only timestamp used) of a live deployment. Current scope is one task (cushion insertion); expansion plans are stated, not yet executed."
       },
       "tags": [
-        "Bullish",
-        "Stacks",
-        "sBTC",
-        "Exchange",
-        "Official X"
-      ],
-      "popularity": {
-        "platform": "x",
-        "engagement": 263,
-        "label": "X · 195 likes · 46 reposts · 22 replies",
-        "observed_at": "2026-09-04T08:51:17Z",
-        "evidence_url": "https://x.com/Stacks/status/2095497936256037004"
-      }
+        "CJ Logistics",
+        "South Korea",
+        "Warehouse Robotics",
+        "Robot Foundation Model",
+        "Deployment"
+      ]
     },
     {
-      "id": "bitcoin-hashkey-stacks",
-      "section": "Bitcoin",
-      "rank": 14,
-      "story_type": "Infrastructure partnership",
-      "title": "HashKey Cloud becomes a Stacks Bitcoin-staking launch partner and sBTC signer",
-      "summary": "Stacks named HashKey Cloud a launch partner for Bitcoin staking and an sBTC signer, expanding the institutional infrastructure around its Bitcoin layer. HashKey Cloud separately confirmed the role. The announcement is meaningful for network operations, though the economic impact depends on actual stake, signer participation and demand after launch.",
-      "source": {
-        "name": "X: @Stacks",
-        "url": "https://x.com/Stacks/status/2095678694039990766"
-      },
-      "canonical_url": "https://x.com/Stacks/status/2095678694039990766",
-      "published_at": "2026-09-04T01:01:51Z",
-      "corroboration": [
-        {
-          "name": "X: @HashKeyCloud",
-          "url": "https://x.com/HashKeyCloud/status/2095696259483066713"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "high",
-        "note": "Matching official announcements from Stacks and HashKey Cloud."
-      },
-      "tags": [
-        "HashKey",
-        "Stacks",
-        "sBTC",
-        "Staking",
-        "Official X"
-      ],
-      "popularity": {
-        "platform": "x",
-        "engagement": 150,
-        "label": "X · 118 likes · 27 reposts · 5 replies",
-        "observed_at": "2026-09-04T08:51:17Z",
-        "evidence_url": "https://x.com/Stacks/status/2095678694039990766"
-      }
-    },
-    {
-      "id": "longevity-semaglutide-nature",
+      "id": "longevity-orai-stim1",
       "section": "Longevity",
-      "rank": 15,
-      "story_type": "Peer-reviewed research",
-      "title": "Nature study finds late-life semaglutide slowed aging markers and extended lifespan in female mice",
-      "summary": "A Nature paper reports that late-life semaglutide improved several functional measures and extended median lifespan from 742 to 834 days in 20-month-old female mice. The study provides unusually direct preclinical evidence for a widely used GLP-1 drug, including comparisons with calorie restriction. It does not establish human longevity benefit, and commentators note that reduced food intake may explain part of the effect.",
+      "rank": 19,
+      "story_type": "Catch-up / animal research",
+      "title": "Catch-up: ORAI calcium channels and STIM1 in capillaries are essential for matching blood flow to brain activity",
+      "summary": "A Science Signaling paper (issue of September 1, 2026) shows that ORAI1/ORAI3 calcium channels and their regulator STIM1 in capillary endothelial cells are required for capillaries to signal upstream arterioles to dilate during prolonged neuronal activity; endothelial-specific knockout of Stim1 or Orai1 disrupted that signaling, impaired sustained arteriole dilation and reduced evoked blood flow in mouse somatosensory cortex. Mice with the deficiency showed cognitive impairment (Stim1/Orai1) or anxiety-like behavior (Orai3), linking impaired capillary-to-arteriole signaling to early vascular-dementia-like phenotypes. This is mouse physiology, not a human intervention, but it identifies a druggable endothelial mechanism sitting at the intersection of cerebrovascular health and cognitive aging.",
       "source": {
-        "name": "Nature",
-        "url": "https://www.nature.com/articles/s41586-026-10940-7"
+        "name": "Science Signaling",
+        "url": "https://www.science.org/doi/10.1126/scisignal.aef0939"
       },
-      "canonical_url": "https://www.nature.com/articles/s41586-026-10940-7",
-      "published_at": "2026-09-03T12:05:01Z",
-      "corroboration": [
-        {
-          "name": "X: @Nature",
-          "url": "https://x.com/Nature/status/2095483197698027896"
-        },
-        {
-          "name": "NIH",
-          "url": "https://www.nih.gov/news-events/news-releases/glp-1-treatment-late-life-extends-lifespan-animal-model"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "high",
-        "note": "Peer-reviewed animal study and official Nature post, corroborated by NIH. Findings are in aged female mice, not humans."
-      },
-      "tags": [
-        "Semaglutide",
-        "GLP-1",
-        "Aging",
-        "Mice",
-        "Nature",
-        "Official X"
-      ],
-      "popularity": {
-        "platform": "x",
-        "engagement": 191,
-        "label": "X · 148 likes · 34 reposts · 9 replies",
-        "observed_at": "2026-09-04T08:51:17Z",
-        "evidence_url": "https://x.com/Nature/status/2095483197698027896"
-      }
-    },
-    {
-      "id": "longevity-eight-sleep-bio-age",
-      "section": "Longevity",
-      "rank": 16,
-      "story_type": "Product / model release",
-      "title": "Eight Sleep launches an in-app Biological Age model developed with Bryan Johnson",
-      "summary": "Eight Sleep launched an in-app Biological Age estimate based on sleep and physiological signals, developed with input from Bryan Johnson and linked to the BCG-FM research model. It turns longitudinal sleep data into a consumer-facing aging metric and is notable as a productization of biological-age modeling. The company explicitly says it is research-oriented and not a diagnostic device; independent validation and calibration across populations remain open questions.",
-      "source": {
-        "name": "Eight Sleep",
-        "url": "https://www.eightsleep.com/blog/biological-age"
-      },
-      "canonical_url": "https://www.eightsleep.com/blog/biological-age",
-      "published_at": "2026-09-03T14:16:07Z",
-      "corroboration": [
-        {
-          "name": "X: @eightsleep",
-          "url": "https://x.com/eightsleep/status/2095516192387510342"
-        },
-        {
-          "name": "BCG-FM paper",
-          "url": "https://arxiv.org/abs/2606.07692"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official product announcement with linked research. The metric is not a medical diagnosis and needs independent validation."
-      },
-      "tags": [
-        "Biological Age",
-        "Eight Sleep",
-        "Wearables",
-        "Sleep",
-        "Official X"
-      ],
-      "popularity": {
-        "platform": "x",
-        "engagement": 238,
-        "label": "X · 221 likes · 9 reposts · 8 replies",
-        "observed_at": "2026-09-04T08:51:17Z",
-        "evidence_url": "https://x.com/eightsleep/status/2095516192387510342"
-      }
-    },
-    {
-      "id": "longevity-skin-microbiome",
-      "section": "Longevity",
-      "rank": 17,
-      "story_type": "Research perspective",
-      "title": "Science maps how the skin microbiome may shape healthy skin aging",
-      "summary": "A Science Perspective reviews the relationship between the skin microbiome, barrier function, inflammation and healthy skin aging. It is useful as a technical synthesis of an emerging intervention area, not evidence that a specific microbiome treatment extends lifespan or reverses aging. The distinction matters because the field is mechanistically interesting but still short on decisive human intervention trials.",
-      "source": {
-        "name": "Science",
-        "url": "https://www.science.org/doi/10.1126/science.aeh4348"
-      },
-      "canonical_url": "https://www.science.org/doi/10.1126/science.aeh4348",
-      "published_at": "2026-09-04T04:58:05Z",
+      "canonical_url": "https://www.science.org/doi/10.1126/scisignal.aef0939",
+      "published_at": "2026-09-01T12:00:00Z",
       "corroboration": [
         {
           "name": "X: @ScienceMagazine",
-          "url": "https://x.com/ScienceMagazine/status/2095738147057369344"
-        }
-      ],
-      "quality": {
-        "signal": "analysis",
-        "confidence": "high",
-        "note": "Official Science Perspective and journal X post. This is synthesis, not a primary intervention trial."
-      },
-      "tags": [
-        "Skin Microbiome",
-        "Healthy Aging",
-        "Science",
-        "Perspective",
-        "Official X"
-      ],
-      "popularity": {
-        "platform": "x",
-        "engagement": 29,
-        "label": "X · 25 likes · 4 reposts · 0 replies",
-        "observed_at": "2026-09-04T08:51:17Z",
-        "evidence_url": "https://x.com/ScienceMagazine/status/2095738147057369344"
-      }
-    },
-    {
-      "id": "longevity-nih-dementia-free-years",
-      "section": "Longevity",
-      "rank": 18,
-      "story_type": "Cohort research",
-      "title": "NIH highlights an association between zero midlife vascular risks and roughly 13 more dementia-free years",
-      "summary": "NIH highlighted ARIC cohort results linking the absence of measured midlife vascular risk factors with roughly 13 additional dementia-free years. The study followed 12,409 participants and reinforces the connection between vascular health and cognitive aging. It is observational, so it identifies an association rather than proving that eliminating those risk factors alone causes the full difference.",
-      "source": {
-        "name": "Neurology Open Access",
-        "url": "https://www.neurology.org/doi/10.1212/WN9.0000000000000152"
-      },
-      "canonical_url": "https://www.neurology.org/doi/10.1212/WN9.0000000000000152",
-      "published_at": "2026-09-03T14:28:06Z",
-      "corroboration": [
-        {
-          "name": "X: @NIH",
-          "url": "https://x.com/NIH/status/2095519208738025510"
+          "url": "https://x.com/ScienceMagazine/status/2096070843788845471"
         }
       ],
       "quality": {
         "signal": "corroborated",
         "confidence": "high",
-        "note": "Peer-reviewed observational cohort research highlighted by NIH; association does not prove causation."
+        "note": "Peer-reviewed paper in the current Science Signaling issue (accepted August 13, 2026; issue dated September 1, 2026, with the journal's X post in-window on September 5). Labeled catch-up because the issue date predates the primary window. Mouse study; no human data."
       },
       "tags": [
-        "Dementia",
-        "Vascular Health",
-        "ARIC",
-        "Cohort",
+        "Neurovascular Coupling",
+        "ORAI",
+        "STIM1",
+        "Cognitive Aging",
+        "Mice",
+        "Catch-up"
+      ]
+    },
+    {
+      "id": "longevity-platelet-serotonin-aging",
+      "section": "Longevity",
+      "rank": 20,
+      "story_type": "Animal research",
+      "title": "Science Immunology: platelet-derived serotonin drives age-related lung clotting and severe respiratory disease after SARS-CoV-2",
+      "summary": "A Science Immunology paper shows that platelets from older mice release more serotonin when activated, and that platelet-released serotonin drives platelet aggregation and fibrin deposition in the lung microvasculature after SARS-CoV-2 infection, producing severe respiratory dysfunction; blocking serotonin signaling reduced disease severity in the aging-mouse model. Middle-aged mice and aged human healthy donors both showed enhanced platelet serotonin release, tying the mechanism to human aging as well. It is an animal study with supporting human-donor observations, not a treatment — but it points at a druggable, age-dependent clotting pathway relevant to severe-age-90s respiratory outcomes and vascular aging generally.",
+      "source": {
+        "name": "Science Immunology",
+        "url": "https://www.science.org/doi/10.1126/sciimmunol.aec9853"
+      },
+      "canonical_url": "https://www.science.org/doi/10.1126/sciimmunol.aec9853",
+      "published_at": "2026-09-04T03:00:07Z",
+      "corroboration": [
+        {
+          "name": "X: @ScienceMagazine",
+          "url": "https://x.com/ScienceMagazine/status/2095708459224248593"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Peer-reviewed paper flagged by the journal's official account in-window. Primary evidence is in aging mice; human contribution is limited to donor platelet observations. No medical advice: a mechanism study, not an intervention trial."
+      },
+      "tags": [
+        "SARS-CoV-2",
+        "Platelets",
+        "Serotonin",
+        "Aging",
+        "Mice",
+        "Science Immunology",
         "Official X"
       ],
       "popularity": {
         "platform": "x",
-        "engagement": 37,
-        "label": "X · 27 likes · 7 reposts · 3 replies",
-        "observed_at": "2026-09-04T08:51:17Z",
-        "evidence_url": "https://x.com/NIH/status/2095519208738025510"
+        "engagement": 81,
+        "label": "X · 64 likes · 13 reposts · 4 replies",
+        "observed_at": "2026-09-05T03:52:00Z",
+        "evidence_url": "https://x.com/ScienceMagazine/status/2095708459224248593"
       }
     },
     {
-      "id": "ai-luma-governance",
-      "section": "AI",
-      "rank": 19,
-      "story_type": "Product release",
-      "title": "Luma adds enterprise teams, project credit caps and centralized billing controls",
-      "summary": "Luma launched enterprise governance features including team management, per-project credit caps and centralized billing. It is not a new generative model, but it is a concrete sign that frontier media tooling is moving from individual creation into managed production environments. The importance is operational rather than scientific, and adoption data is not yet available.",
+      "id": "longevity-nih-dod-biodefense",
+      "section": "Longevity",
+      "rank": 21,
+      "story_type": "Funding / infrastructure",
+      "title": "Nature: US military plan to redirect hundreds of millions in NIH infectious-disease research to DoD biodefense",
+      "summary": "Nature reports that the NIH and the Department of Defense have signed a 10-year agreement under which hundreds of millions of dollars in NIAID infectious-disease projects will shift to military biodefence programmes ('Operation Prevailing Edge'), with the full agreement targeted for end of this fiscal year. NIH director Jay Bhattacharya defends the arrangement as a partnership, while biosecurity researchers warn that moving work away from NIAID fragments pandemic preparedness and changes the transparency and clinical-translation norms that define NIH-funded science. For biotech and longevity programs, it is a reminder that federal research money now has a second, less transparent destination, and that grant-portfolio strategy may matter more than ever.",
       "source": {
-        "name": "Luma Enterprise",
-        "url": "https://lumalabs.ai/enterprise"
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/d41586-026-02799-5"
       },
-      "canonical_url": "https://lumalabs.ai/enterprise",
-      "published_at": "2026-09-03T16:59:00Z",
+      "canonical_url": "https://www.nature.com/articles/d41586-026-02799-5",
+      "published_at": "2026-09-04T20:15:28Z",
       "corroboration": [
         {
-          "name": "X: @LumaLabsAI",
-          "url": "https://x.com/LumaLabsAI/status/2095557180959400060"
+          "name": "X: @Nature",
+          "url": "https://x.com/Nature/status/2095969014052790499"
         }
       ],
       "quality": {
-        "signal": "primary",
+        "signal": "corroborated",
         "confidence": "high",
-        "note": "Official Luma product page and official X announcement."
+        "note": "Nature news piece (based on two NIH employees; the full agreement is not yet public) and the journal's official X post. A funding/infrastructure shift, not a scientific result."
       },
       "tags": [
-        "Luma",
-        "Enterprise",
-        "Governance",
-        "Generative Media",
+        "NIH",
+        "NIAID",
+        "DoD",
+        "Funding",
+        "Biodefense",
         "Official X"
       ],
       "popularity": {
         "platform": "x",
-        "engagement": 22,
-        "label": "X · 18 likes · 0 reposts · 4 replies",
-        "observed_at": "2026-09-04T08:51:17Z",
-        "evidence_url": "https://x.com/LumaLabsAI/status/2095557180959400060"
+        "engagement": 103,
+        "label": "X · 56 likes · 42 reposts · 5 replies",
+        "observed_at": "2026-09-05T03:52:00Z",
+        "evidence_url": "https://x.com/Nature/status/2095969014052790499"
       }
     },
     {
-      "id": "ai-sanders-casar-superintelligence-ban",
-      "section": "AI",
-      "story_type": "Policy",
-      "title": "Sanders and Casar introduce legislation to ban artificial superintelligence and pause advanced AI development",
-      "summary": "Sen. Bernie Sanders and Sen. Greg Casar introduced the 'Ban Artificial Superintelligence Act,' which would ban artificial superintelligence and temporarily pause development of advanced AI systems in the US, following a string of incidents involving autonomous AI agents. The proposal frames a pause as a risk-control measure while capability testing standards are established. It is now in the legislative process and has drawn a fast-response debate on whether a pause is enforceable.",
+      "id": "longevity-fda-foreign-trials",
+      "section": "Longevity",
+      "rank": 22,
+      "story_type": "Policy / regulation",
+      "title": "FDA raises the bar for inspecting foreign clinical-trial sites as China-based trials surge",
+      "summary": "The FDA's official account announced on September 4 that it is expanding inspections of foreign clinical-trial sites, adding resources and increasing scrutiny of data from sites it cannot access, as China-based trial activity surges. The scope and effective date were not detailed in the post, which links BioSpace's reporting rather than an FDA.gov release. For longevity and biotech programs, the practical effect is that any trial with significant China or other ex-US sites will face tighter inspection, data-access and site-qualification requirements — a direct cost and schedule factor in multi-site aging trials.",
       "source": {
-        "name": "Sanders Senate (primary)",
-        "url": "https://sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development"
+        "name": "X: @FDA",
+        "url": "https://x.com/FDA/status/2095883683412541583"
       },
-      "canonical_url": "https://sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development",
-      "published_at": "2026-09-03T12:00:00-04:00",
-      "corroboration": [
-        {
-          "name": "The Washington Post",
-          "url": "https://www.washingtonpost.com/technology/2026/09/03/sanders-proposes-artificial-superintelligence-ban-after-rogue-ai-incidents/"
-        },
-        {
-          "name": "Politico",
-          "url": "https://politico.com/live-updates/2026/09/03/congress/bernie-sanders-greg-casar-ai-superintelligence-ban-01063277"
-        },
-        {
-          "name": "Axios",
-          "url": "https://axios.com/2026/09/03/bernie-sanders-superintelligence-ban-ai-pause"
-        }
-      ],
+      "canonical_url": "https://www.biospace.com/fda/fda-raises-bar-for-foreign-site-inspections-as-china-trials-surge",
+      "published_at": "2026-09-04T14:36:24Z",
+      "corroboration": [],
       "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Primary source is the Senate press release; WaPo, Politico and Axios independently confirm the legislation and its pause mechanism. This is a proposed bill, not enacted law."
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "Official FDA account post; the linked BioSpace piece (not FDA.gov) carries the detail. Scope and effective date not in the post."
       },
       "tags": [
+        "FDA",
+        "Clinical Trials",
+        "Foreign Sites",
         "Policy",
-        "Legislation",
-        "AI Safety",
-        "Superintelligence"
+        "Official X"
       ],
-      "rank": 20
+      "popularity": {
+        "platform": "x",
+        "engagement": 62,
+        "label": "X · 42 likes · 13 reposts · 7 replies",
+        "observed_at": "2026-09-05T03:52:00Z",
+        "evidence_url": "https://x.com/FDA/status/2095883683412541583"
+      }
     }
   ]
 }
