@@ -24,6 +24,7 @@ Run last30days for discovery breadth, not as the sole source and not as a rankin
 If one source run fails, continue with the other passes and disclose the gap.
 
 DISCOVERY PASS 3 — WEB AND PRIMARY-SOURCE GAP CHECK
+WEB_SEARCH BUDGET: at most 16 calls across the entire run, including the second sweep. Start with one broad query per topic, then spend remaining calls only on exact names surfaced by Grok or last30days. Do not retry a failed web_search query. The configured primary search provider is the keyed Brave Search API; if any web_search call fails, switch immediately to independent discovery paths—Grok, last30days, direct canonical fetches via curl/Python, official RSS/newsroom feeds, GitHub, arXiv, Reddit, or YouTube—and continue to drafting and publication when the evidence and coverage gates are satisfied. A web_search-provider failure alone is not a publication failure.
 Use web_search for each topic with release verbs and the current date, plus exact searches for names surfaced on X. Search official product blogs, company newsrooms, GitHub releases, arXiv/publisher pages, regulators and institutional press releases. Explicitly search for "released", "launches", "introducing", "system card", "paper", "open source", "acquires", and "funding". Open and read canonical pages for load-bearing claims. Do not privilege an old newspaper article over a newer official release.
 
 SECOND GAP-FILLING SWEEP

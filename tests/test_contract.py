@@ -119,6 +119,16 @@ class EditorialAutomationTests(unittest.TestCase):
         ]:
             self.assertIn(token, self.prompt)
 
+    def test_pipeline_bounds_web_search_and_switches_to_independent_fallbacks(self):
+        for token in [
+            "WEB_SEARCH BUDGET: at most 16 calls",
+            "Do not retry a failed web_search query",
+            "Brave Search API",
+            "Grok, last30days, direct canonical fetches",
+            "continue to drafting and publication",
+        ]:
+            self.assertIn(token, self.prompt)
+
     def test_pipeline_has_broad_coverage_and_catchup_gates(self):
         for token in [
             "16–30 stories total",
