@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "edition": {
-    "date": "2026-09-07",
+    "date": "2026-09-08",
     "title": "The Daily Signal",
     "kicker": "Primary-source tech intelligence, compiled from the live wire.",
     "status": "live",
-    "updated_at": "2026-09-07T18:58:00+03:00"
+    "updated_at": "2026-09-08T07:30:00+03:00"
   },
   "sections": [
     "Bitcoin",
@@ -13,646 +13,754 @@
     "Robotics",
     "Longevity"
   ],
-  "lead_story_id": "bitcoin-liquid-pause",
+  "lead_story_id": "ai-jensen-gpu-agi",
   "stories": [
     {
-      "id": "ai-alien-mind",
-      "section": "AI",
-      "rank": 1,
-      "story_type": "Safety / research essay",
-      "title": "OpenAI chief scientist: 'An Alien Mind' - CoT monitoring degrades, and no lab has solved alignment well enough to keep scaling at maximum speed",
-      "summary": "Jakub Pachocki published 'An Alien Mind' on OpenAI's site (Sep 6), arguing that scaling plus recursive self-improvement is likely to continue, that chain-of-thought monitoring is getting less reliable, and that no lab has solved alignment/monitoring well enough to keep scaling at maximum speed. He treats GPT-6 Astra as better aligned than GPT-5.6 Sol but still insufficient, and calls for voluntary slowdowns plus international coordination - a rare explicit position paper from OpenAI's chief scientist, amplified by Sam Altman within the hour. Caveats: it is a position essay, not a model, system card or product freeze.",
-      "source": {
-        "name": "Jakub Pachocki (@merettm)",
-        "url": "https://x.com/merettm/status/2096630018495377464"
-      },
-      "canonical_url": "https://openai.com/index/an-alien-mind/",
-      "published_at": "2026-09-06T16:02:04Z",
-      "corroboration": [
-        {
-          "name": "Sam Altman (@sama) quote-post",
-          "url": "https://x.com/sama/status/2096647371983880383"
-        },
-        {
-          "name": "OpenAI page",
-          "url": "https://openai.com/index/an-alien-mind/"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "high",
-        "note": "Essay lives on openai.com (fetched in-window, Safety section, Sep 6) and was posted by the author at 16:02 UTC with Altman's amplification at 17:11 UTC; @OpenAI itself did not post it in-window. Slowdown calls are the author's judgment, not a binding product decision."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 14903,
-        "label": "14,903 X engagement (likes 12,204 + reposts 1,944 + replies 755) at 2026-09-07T15:58Z",
-        "observed_at": "2026-09-07T15:58:00Z",
-        "evidence_url": "https://x.com/merettm/status/2096630018495377464"
-      },
-      "tags": [
-        "OpenAI",
-        "Alignment",
-        "RSI",
-        "Chain-of-thought monitoring",
-        "Safety",
-        "Scaling"
-      ]
-    },
-    {
-      "id": "bitcoin-liquid-pause",
+      "id": "bitcoin-liquid-restart",
       "section": "Bitcoin",
-      "rank": 2,
-      "story_type": "Security incident / sidechain",
-      "title": "Liquid Network pauses after purported white-hats drain ~4,000 BTC (~$320M) of federation reserves",
-      "summary": "Blockstream paused its Liquid sidechain on 2026-09-06 after ~3,998.5 of ~4,200 BTC (~$320M, ~95% of federation reserves) left via SideSwap's peg-out path under an Elements code flaw that allowed unbacked L-BTC, with no keys stolen and valid 11-of-15 federation signatures. Official statements pin the timeline: customer peg-out request at 14:05 UTC, federation paid 3,996 BTC at 14:28 UTC; a PGP-signed Blockstream note says bridge nodes are patched, and a receiving-address message claims 'white hats' who will return most coins once the bug is fixed. Exchanges suspended LBTC deposits/withdrawals; USDT, DePix and RWA assets were reported unaffected. Caveats: the white-hat framing is actor-reported, coins had not returned as of 09-07 06:15 UTC, and mempool.space and Blockstream disagree about block 4,050,336.",
+      "rank": 1,
+      "story_type": "Security incident / sidechain (update)",
+      "title": "Liquid: patched bridge nodes, coordinated federation restart in the works after ~4,000 BTC white-hat drain",
+      "summary": "Blockstream's @Blockstream post (2026-09-08 01:00 UTC) is the operator's technical follow-up to the Liquid incident: patched bridge-node software is deployed, the federation is preparing a coordinated restart, and further hardening is promised. The status page confirms the sidechain is still paused - bridge nodes disabled, L-BTC peg-in/out frozen - with USDT/DePix/RWAs reported unaffected. This is the restart phase of the story that topped yesterday's edition; the ~598.5 BTC 'bounty' the white hats kept after returning 3,400 BTC has not been reconciled, and Blockstream has not confirmed 1:1 L-BTC backing or a restart time.",
       "source": {
-        "name": "Liquid Network (@Liquid_BTC)",
-        "url": "https://x.com/Liquid_BTC/status/2096696272447218108"
+        "name": "Blockstream (@Blockstream)",
+        "url": "https://x.com/Blockstream/status/2097127976672342487"
       },
-      "canonical_url": "https://www.theblock.co/news/defi/2026-09-06-liquid-network-pauses-after-purported-white-hat-hackers-withdraw-320-million-in-bitcoin-413626",
-      "published_at": "2026-09-06T20:25:20Z",
+      "canonical_url": "https://status.blockstream.com/incidents/b8b719f3-db70-4487-9cff-946e69509228",
+      "published_at": "2026-09-08T01:00:47Z",
       "corroboration": [
         {
-          "name": "SideSwap (@side_swap)",
-          "url": "https://x.com/side_swap/status/2096709838310928674"
+          "name": "Liquid Network (@Liquid_BTC) incident post",
+          "url": "https://x.com/Liquid_BTC/status/2096696272447218108"
         },
         {
-          "name": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/09/07/bitcoin-network-used-by-exchanges-hit-by-usd320-million-exploit-hackers-claim-they-re-the-good-guys"
-        },
-        {
-          "name": "Reuters",
-          "url": "https://www.reuters.com/technology/bitcoin-based-liquid-network-says-320-million-withdrawn-hack-2026-09-07/"
+          "name": "Blockstream incident status page",
+          "url": "https://status.blockstream.com/incidents/b8b719f3-db70-4487-9cff-946e69509228"
         }
       ],
       "quality": {
-        "signal": "corroborated",
+        "signal": "primary",
         "confidence": "high",
-        "note": "Official @Liquid_BTC incident post (09-06 20:25 UTC) plus operator @side_swap timeline post, The Block, CoinDesk and Reuters. 'White hat' and return-funds framing remain actor claims; root cause is an Elements inflation bug, not stolen federation keys."
+        "note": "Official operator post plus the operator's live status page (fetched in-window: 'September 7, 12:14 AM Active', bridge nodes disabled). Distinct from yesterday's pause story (different canonical URL and event). Restart timing and L-BTC backing state are not yet confirmed."
       },
       "popularity": {
         "platform": "x",
-        "engagement": 3140,
-        "label": "3,140 X engagement (likes 2,133 + reposts 640 + replies 367) at 2026-09-07T15:58Z",
-        "observed_at": "2026-09-07T15:58:00Z",
-        "evidence_url": "https://x.com/Liquid_BTC/status/2096696272447218108"
+        "engagement": 328,
+        "label": "328 X engagement (likes 246 + reposts 39 + replies 43) at 2026-09-08T03:55Z",
+        "observed_at": "2026-09-08T03:55:53Z",
+        "evidence_url": "https://x.com/Blockstream/status/2097127976672342487"
       },
       "tags": [
         "Liquid Network",
         "Bitcoin sidechain",
         "Blockstream",
-        "Elements",
-        "Peg-out",
         "Security incident",
+        "Peg-out",
         "Official X"
       ]
     },
     {
-      "id": "robotics-unitree-unifolm",
-      "section": "Robotics",
-      "rank": 3,
-      "story_type": "Capability demo / model claim",
-      "title": "Unitree claims UnifoLM-X2-1.0: first real-time world-model-driven fully autonomous humanoid combat",
-      "summary": "@UnitreeRobotics posted UnifoLM-X2-1.0 on 2026-09-07: a real-time world-model planning system that drives fully autonomous humanoid sparring, framed as proof that world-model humanoids can scale to deployment. For builders the signal is the architecture claim - online world-model planning as the control layer for humanoids - but this is an official marketing demo: no paper, code, independent eval or hardware spec was attached, and 'world's first' is Unitree's own framing.",
-      "source": {
-        "name": "Unitree Robotics (@UnitreeRobotics)",
-        "url": "https://x.com/UnitreeRobotics/status/2096932273602048258"
-      },
-      "canonical_url": "https://x.com/UnitreeRobotics/status/2096932273602048258",
-      "published_at": "2026-09-07T12:03:07Z",
-      "corroboration": [
-        {
-          "name": "Unitree Robotics account",
-          "url": "https://x.com/UnitreeRobotics"
-        }
-      ],
-      "quality": {
-        "signal": "developing",
-        "confidence": "medium",
-        "note": "Official vendor post only (no canonical paper/GitHub/repo page found in the post or follow-up search). Treat capability claims as vendor-reported until a writeup or code lands."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 1092,
-        "label": "1,092 X engagement (likes 879 + reposts 147 + replies 66) at 2026-09-07T15:58Z",
-        "observed_at": "2026-09-07T15:58:00Z",
-        "evidence_url": "https://x.com/UnitreeRobotics/status/2096932273602048258"
-      },
-      "tags": [
-        "Unitree",
-        "UnifoLM",
-        "World models",
-        "Humanoid robots",
-        "Autonomy"
-      ]
-    },
-    {
-      "id": "robotics-scirrobotics-zest",
-      "section": "Robotics",
-      "rank": 4,
-      "story_type": "Peer-reviewed research",
-      "title": "Science Robotics: ZEST learns acrobatic robot control zero-shot from motion capture and animation",
-      "summary": "Science Robotics published 'ZEST: Zero-shot embodied skill transfer for athletic robot control' (Sleiman, Li, Adu-Bredu, Deits, Kumar, Bergamin et al.): reinforcement learning trained on motion-capture and animation data transfers athletic/acrobatic skills to humanoid and quadruped robots with zero-shot sim-to-real. For builders this is a data-sourcing result - large existing motion/animation corpora as RL training signal for athletic control - rather than a new actuator or robot. Caveats: lab-scale sim-to-real research, not a commercial deployment.",
-      "source": {
-        "name": "Science Magazine (@ScienceMagazine)",
-        "url": "https://x.com/ScienceMagazine/status/2096981615129788504"
-      },
-      "canonical_url": "https://www.science.org/doi/10.1126/scirobotics.aec7695",
-      "published_at": "2026-09-07T15:19:11Z",
-      "corroboration": [
-        {
-          "name": "Science Robotics journal",
-          "url": "https://www.science.org/journal/scirobotics"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "high",
-        "note": "Peer-reviewed paper verified via Crossref (DOI 10.1126/scirobotics.aec7695, Science Robotics, vol 11 issue 117); promoted on X 09-07 by @ScienceMagazine and @SciRobotics. The paper's online record predates the September issue; the in-window event is the journal issue's publication and promotion."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 14,
-        "label": "14 X engagement (likes 9 + reposts 3 + replies 2) at 2026-09-07T15:58Z",
-        "observed_at": "2026-09-07T15:58:00Z",
-        "evidence_url": "https://x.com/ScienceMagazine/status/2096981615129788504"
-      },
-      "tags": [
-        "Science Robotics",
-        "ZEST",
-        "Reinforcement learning",
-        "Zero-shot",
-        "Motion capture",
-        "Humanoid control"
-      ]
-    },
-    {
-      "id": "longevity-eight-sleep-age",
-      "section": "Longevity",
-      "rank": 5,
-      "story_type": "Product launch / consumer biomarker",
-      "title": "Eight Sleep ships 'Biological Age': contactless sleep-based aging readout built with Bryan Johnson's Immortals",
-      "summary": "Eight Sleep launched Biological Age in the Pod app - a nightly, contactless aging readout built from ballistocardiography (passive heartbeat/breath motion), trained on 2.7M hours from 100,000+ people, with Apple Health/Health Connect and US HealthEx hooks, in a collaboration with Bryan Johnson's Immortals. It is available on Pod 4 or newer (China later in 2026). It is a consumer wellness metric, not a diagnostic device: Eight Sleep itself says labels are partly self-reported, external cohorts are small, and it is not clinically validated. No medical advice.",
-      "source": {
-        "name": "Eight Sleep (@eightsleep)",
-        "url": "https://x.com/eightsleep/status/2095516192387510342"
-      },
-      "canonical_url": "https://www.eightsleep.com/blog/biological-age/",
-      "published_at": "2026-09-03T14:16:07Z",
-      "corroboration": [
-        {
-          "name": "Eight Sleep blog",
-          "url": "https://www.eightsleep.com/blog/biological-age/"
-        },
-        {
-          "name": "In-window @eightsleep confirmation replies",
-          "url": "https://x.com/eightsleep/status/2095917934098944314"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "high",
-        "note": "Official launch post (09-03 14:16 UTC) plus the company's in-window follow-on posts (09-04) confirming the Immortals collaboration and Pod-4 gating; company blog corroborates. Vendor-built clock; research-not-diagnostic per the company."
-      },
-      "tags": [
-        "Eight Sleep",
-        "Biological age",
-        "Bryan Johnson",
-        "Ballistocardiography",
-        "Consumer longevity"
-      ]
-    },
-    {
-      "id": "bitcoin-stacks-staking",
+      "id": "bitcoin-stacks-genesis-bond",
       "section": "Bitcoin",
-      "rank": 6,
-      "story_type": "Protocol / product launch",
-      "title": "Stacks pooled Bitcoin staking goes live in Xverse: earn BTC yield on BTC via sBTC",
-      "summary": "Xverse opened pooled Bitcoin staking on Stacks on 2026-09-07 (app v2.9): users pair BTC with STX in an operator-managed pool and earn staking yield paid in BTC, with limited capacity and a ~6-month bonding period; @Stacks confirmed first rewards land around Sept 10 (cycle 143, ~Bitcoin block 966,350). It is the consumer-facing first rung of Stacks' Bitcoin-yield roadmap, and it is pooled/bootstrap access - not the permissionless self-custodial path that PoX-6 is meant to unlock later.",
+      "rank": 2,
+      "story_type": "Product / launch countdown",
+      "title": "Stacks Genesis Bond enrollment opens in 3 days; anchors UTXO (Nakamoto), HashKey Cloud, 21shares",
+      "summary": "@Stacks (2026-09-07 20:04 UTC) opened the enrollment runway for the self-custodial Genesis Bond - the permissionless Bitcoin-staking path that the pooled Xverse launch on 09-07 was only the first rung of. Named anchors: UTXO (Nakamoto Inc.), HashKey Cloud, 21shares. Yield is ~3% BTC APY annualized over a Bitcoin year (a single 6-month bond delivers ~1.44%) per Stacks' own docs; the enrollment cap can close before Sep 9. This is the consumer entry point to Stacks' Bitcoin-yield roadmap - still Stacks L2 PoX-5 mechanics, not native Bitcoin L1 consensus staking.",
       "source": {
         "name": "Stacks (@Stacks)",
-        "url": "https://x.com/Stacks/status/2096956284717220040"
+        "url": "https://x.com/Stacks/status/2097053405089034616"
       },
-      "canonical_url": "https://www.stacks.co/blog/pooled-bitcoin-staking-on-stacks-how-it-works",
-      "published_at": "2026-09-07T13:38:32Z",
+      "canonical_url": "https://www.stacks.co/bitcoin-staking",
+      "published_at": "2026-09-07T20:04:27Z",
       "corroboration": [
         {
-          "name": "Xverse (@xverse)",
-          "url": "https://x.com/xverse/status/2096945845568753878"
+          "name": "Stacks Bitcoin staking docs",
+          "url": "https://www.stacks.co/bitcoin-staking"
         },
         {
-          "name": "Xverse staking product page",
+          "name": "Xverse pooled staking page",
           "url": "https://portfolio.xverse.app/earn/stake-bitcoin"
         }
       ],
       "quality": {
         "signal": "primary",
         "confidence": "high",
-        "note": "Official @Stacks post (09-07 13:38 UTC) plus @xverse launch post and the official how-it-works blog. Pool capacity is capped and rewards require an STX pair; self-custodial Genesis Bond remains a separate, later track."
+        "note": "Official @Stacks post; canonical product page fetched in-window (target ~3% BTC APY annualized, 6-month bond delivers ~1.44%). Distinct event from yesterday's pooled Xverse launch and the sBTC signers post."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 128,
+        "label": "128 X engagement (likes 99 + reposts 20 + replies 9) at 2026-09-08T03:55Z",
+        "observed_at": "2026-09-08T03:55:53Z",
+        "evidence_url": "https://x.com/Stacks/status/2097053405089034616"
       },
       "tags": [
         "Stacks",
-        "sBTC",
+        "Genesis Bond",
         "Bitcoin staking",
-        "Xverse",
         "PoX",
-        "Yield"
+        "Self-custodial",
+        "Institutional anchors"
+      ]
+    },
+    {
+      "id": "bitcoin-swift-tokenized",
+      "section": "Bitcoin",
+      "rank": 3,
+      "story_type": "Institutional infrastructure",
+      "title": "DBS and Citi settle a weekend USD payment in minutes on Swift's Digital Ledger (tokenized deposits)",
+      "summary": "DBS (Singapore) and Citi (New York) completed a weekend cross-border USD payment on Swift's blockchain Digital Ledger using tokenized deposits - settling in minutes instead of up to two business days. It is the second confirmed live use of the ledger that launched in July with 17 banks, following HSBC/Standard Chartered's first cross-border transfer in August. For builders this is the incumbent settlement network shipping 24/7 tokenized-deposit rails that directly compete with stablecoin and Bitcoin-based settlement for corporate liquidity; Swift's 1.5-quadrillion-dollar network is racing to prove it can adapt to always-on settlement.",
+      "source": {
+        "name": "CoinDesk",
+        "url": "https://www.coindesk.com/business/2026/09/07/dbs-and-citi-enable-instant-24-7-cross-border-tokenised-deposit-payments-on-the-swift-ledger"
+      },
+      "canonical_url": "https://www.coindesk.com/business/2026/09/07/dbs-and-citi-enable-instant-24-7-cross-border-tokenised-deposit-payments-on-the-swift-ledger",
+      "published_at": "2026-09-07T12:04:16Z",
+      "corroboration": [
+        {
+          "name": "@CoinDesk in-window post",
+          "url": "https://x.com/CoinDesk/status/2096932562367135953"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official bank announcement covered by CoinDesk with in-window @CoinDesk post. Bank rails (tokenized deposits on Swift's ledger), not Bitcoin L1 - included as the incumbent-settlement counterpoint."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 780,
+        "label": "780 X engagement (likes 586 + reposts 102 + replies 92) at 2026-09-08T03:55Z",
+        "observed_at": "2026-09-08T03:55:53Z",
+        "evidence_url": "https://x.com/CoinDesk/status/2096932562367135953"
+      },
+      "tags": [
+        "Swift",
+        "Tokenized deposits",
+        "Cross-border payments",
+        "DBS",
+        "Citi",
+        "24/7 settlement"
+      ]
+    },
+    {
+      "id": "bitcoin-lam-plea",
+      "section": "Bitcoin",
+      "rank": 4,
+      "story_type": "Enforcement / legal",
+      "title": "Malone Lam to plead guilty in ~4,100 BTC / $240M social-engineering Bitcoin theft",
+      "summary": "The 22-year-old Singaporean at the center of one of the largest cryptocurrency thefts in U.S. history - a ~4,100 BTC (~$240M) social-engineering heist that impersonated Google/Gemini contacts to dupe a stranger into signing transactions - is set to plead guilty in Washington this week per the AP/US News wire (Sept 7). The superseding indictment and upcoming plea hearing cap the criminal phase of the 2024 incident that reshaped how exchanges and wallets treat 'signed-by-victim' outflows. Caveat: the plea is scheduled, not yet entered; co-defendants' outcomes are still pending.",
+      "source": {
+        "name": "U.S. News / Associated Press",
+        "url": "https://www.usnews.com/news/business/articles/2026-09-07/partys-over-for-crypto-scammers-who-went-on-a-spending-spree-after-a-240-million-bitcoin-theft"
+      },
+      "canonical_url": "https://www.usnews.com/news/business/articles/2026-09-07/partys-over-for-crypto-scammers-who-went-on-a-spending-spree-after-a-240-million-bitcoin-theft",
+      "published_at": "2026-09-07T11:53:00Z",
+      "corroboration": [
+        {
+          "name": "@CoinDesk in-window post",
+          "url": "https://x.com/CoinDesk/status/2097013826226921886"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "AP wire via US News (Sept 7, 07:53 a.m. ET) with in-window @CoinDesk post. Plea hearing reported as scheduled for ~Sept 9, not yet held."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 160,
+        "label": "160 X engagement (likes 121 + reposts 12 + replies 27) at 2026-09-08T03:55Z",
+        "observed_at": "2026-09-08T03:55:53Z",
+        "evidence_url": "https://x.com/CoinDesk/status/2097013826226921886"
+      },
+      "tags": [
+        "Bitcoin theft",
+        "Social engineering",
+        "Malone Lam",
+        "DOJ",
+        "Enforcement"
       ]
     },
     {
       "id": "bitcoin-sbtc-signers",
       "section": "Bitcoin",
-      "rank": 7,
+      "rank": 5,
       "story_type": "Ecosystem expansion",
-      "title": "sBTC signer set expands with The Tie, Ankr and HashKey Cloud",
-      "summary": "@Stacks added The Tie, Ankr and HashKey Cloud to the sBTC signer set - the federation that pegs BTC in and out of Stacks - with HashKey Cloud also a Genesis Bond launch partner. This widens the institutional rails around Stacks' Bitcoin-collateralized asset, though Ankr was already announced on 24 Aug so the post is partly a bundled recap, and the signer set remains a threshold federation rather than Bitcoin L1 consensus.",
+      "title": "sBTC signer set widens with The Tie, Ankr and HashKey Cloud - federation rails around Stacks' BTC-collateral asset",
+      "summary": "@Stacks added three more institutions - The Tie, Ankr and HashKey Cloud - to the sBTC signer set, the threshold federation that pegs BTC in and out of Stacks' Bitcoin-collateralized asset; HashKey Cloud is also a Genesis Bond launch partner. It is incremental institutional width, not protocol consensus: the signer set remains a threshold federation, and Ankr was already announced 24 Aug so part of this post is a bundled recap. Caveat: yield and capacity numbers in Stacks' docs are self-reported and not independently audited.",
       "source": {
         "name": "Stacks (@Stacks)",
         "url": "https://x.com/Stacks/status/2096936580435051005"
       },
       "canonical_url": "https://www.stacks.co/sbtc",
       "published_at": "2026-09-07T12:20:14Z",
-      "corroboration": [],
+      "corroboration": [
+        {
+          "name": "Stacks sBTC product page",
+          "url": "https://www.stacks.co/sbtc"
+        }
+      ],
       "quality": {
         "signal": "primary",
         "confidence": "medium",
-        "note": "Official @Stacks post; one of the three signers (Ankr) predates the post, so treat as an expansion/recap, not three same-day joins."
+        "note": "Official @Stacks post; one signer (Ankr) predates the post, so treat as expansion/recap rather than three same-day joins."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 171,
+        "label": "171 X engagement (likes 130 + reposts 32 + replies 9) at 2026-09-08T04:25Z",
+        "observed_at": "2026-09-08T04:25:11Z",
+        "evidence_url": "https://x.com/Stacks/status/2096936580435051005"
       },
       "tags": [
         "sBTC",
         "Stacks",
         "Bitcoin bridge",
-        "Threshold federation"
+        "Threshold federation",
+        "Institutional anchors"
       ]
     },
     {
-      "id": "bitcoin-capital-b",
-      "section": "Bitcoin",
-      "rank": 8,
-      "story_type": "Institutional flow",
-      "title": "Capital B confirms purchase of 376 BTC (~$29M) via official Euronext release",
-      "summary": "Capital B confirmed, via an official Euronext company-news release on 2026-09-07 08:00 CEST, the acquisition of 376 BTC (~253M EUR) to back its token after fresh capital raises. It is an executed treasury/purchase commitment disclosed on a regulated exchange's newswire, not a new product - a concrete data point for how public-listed BTC vehicles are being recapitalized after the summer sell-off.",
-      "source": {
-        "name": "Bitcoin News Digest",
-        "url": "https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-september-7-2026"
-      },
-      "canonical_url": "https://live.euronext.com/fr/products/equities/company-news/2026-09-07-capital-b-confirme-lacquisition-376-btc-pour-253-m-eur",
-      "published_at": "2026-09-07T06:00:00Z",
-      "corroboration": [
-        {
-          "name": "The Block",
-          "url": "https://www.theblock.co/"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "Euronext company-news release (2026-09-07 08:00 CEST) reported via the daily digest and The Block; the Euronext page is JS-rendered, so the exact figures (376 BTC / 253M EUR) are as reported."
-      },
-      "tags": [
-        "Capital B",
-        "Bitcoin treasury",
-        "Euronext",
-        "Tokenized BTC"
-      ]
-    },
-    {
-      "id": "ai-openai-research-acceleration",
+      "id": "ai-jensen-gpu-agi",
       "section": "AI",
-      "rank": 9,
-      "story_type": "Research / internal metrics",
-      "title": "OpenAI claims an 'automated research intern' milestone in internal research-acceleration post",
-      "summary": "OpenAI's 'Research acceleration: The view inside OpenAI' post (dated Sep 6) claims the lab has hit an internal 'automated research intern' goal - agents completing well-defined multi-day research tasks under human direction - and publishes internal agent-usage metrics. It is a concrete operational signal about how far agent-in-the-loop research has pushed inside a frontier lab, but it is a research view, not a shipped product, API or benchmark, and no official account posted it in-window.",
+      "rank": 1,
+      "story_type": "Infrastructure / CEO claim",
+      "title": "Jensen Huang: GPT-6 Astra trained on ~100K+ Grace Blackwell NVLink72, '400K GPUs coming online', 'AGI has arrived'",
+      "summary": "NVIDIA's @JensenHuang (2026-09-06 20:41 UTC) put out a three-claim infrastructure post tied to OpenAI's GPT-6 Astra: the flagship was trained on ~100K+ NVIDIA Grace Blackwell NVLink72 racks, '400K GPUs coming online next', and 'AGI has arrived'. For builders the load-bearing number is the 100K+ NVL72 figure - a concrete datapoint on frontier-training scale - but all three claims are CEO assertions, not an NVIDIA blog, SKU or benchmark; '400K GPUs' does not specify which cluster or generation, and 'AGI has arrived' is a rhetorical claim, not a product launch. @nvidia itself posted nothing in-window.",
       "source": {
-        "name": "OpenAI",
-        "url": "https://openai.com/index/research-acceleration-view-inside-openai/"
+        "name": "Jensen Huang (@JensenHuang)",
+        "url": "https://x.com/JensenHuang/status/2096700264569090384"
       },
-      "canonical_url": "https://openai.com/index/research-acceleration-view-inside-openai/",
-      "published_at": "2026-09-06T00:00:00Z",
+      "canonical_url": "https://x.com/JensenHuang/status/2096700264569090384",
+      "published_at": "2026-09-06T20:41:12Z",
       "corroboration": [
         {
-          "name": "OpenAI index",
-          "url": "https://openai.com/index/"
+          "name": "OpenAI GPT-6 Astra release page",
+          "url": "https://openai.com/index/gpt-6-astra/"
         }
       ],
       "quality": {
         "signal": "primary",
         "confidence": "medium",
-        "note": "Official OpenAI page, dated Sep 6 (date-only, noon UTC used). Self-reported internal metrics; no external benchmark attached."
+        "note": "CEO post only (no NVIDIA blog or system-card URL in the post). GPU counts and the AGI framing are assertions; GPT-6 Astra itself was already covered in the 09-05 edition."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 46950,
+        "label": "46,950 X engagement (likes 40,608 + reposts 4,583 + replies 1,759) at 2026-09-08T03:55Z",
+        "observed_at": "2026-09-08T03:55:53Z",
+        "evidence_url": "https://x.com/JensenHuang/status/2096700264569090384"
+      },
+      "tags": [
+        "NVIDIA",
+        "Grace Blackwell NVLink72",
+        "Training scale",
+        "GPT-6 Astra",
+        "Infrastructure",
+        "CEO claim"
+      ]
+    },
+    {
+      "id": "ai-chatgpt-work-style",
+      "section": "AI",
+      "rank": 2,
+      "story_type": "Product feature",
+      "title": "ChatGPT Work now learns your writing style from connected Gmail, Drive, Slack and SharePoint",
+      "summary": "@ChatGPT (2026-09-07 17:44 UTC) shipped a writing-style personalization pass in ChatGPT Work: connect Gmail, Google Drive, Slack and SharePoint and the assistant profiles your tone, formatting and voice for work-facing drafts. It is a workflow feature, not a model - web only, on paid plans with ChatGPT Work - but it is one of the first mainstream agent products to treat 'style transfer from your own corpus' as a first-class setup step. Caveat: the official setup URL is a login callback, not a docs page; the linked blog/release page is thin.",
+      "source": {
+        "name": "ChatGPT (@ChatGPT)",
+        "url": "https://x.com/ChatGPT/status/2097018264048251309"
+      },
+      "canonical_url": "https://chatgpt.com/auth/login_with?callback_path=%2F%3Fsurface%3Dwork%26writing_style%3Dsetup",
+      "published_at": "2026-09-07T17:44:49Z",
+      "corroboration": [
+        {
+          "name": "ChatGPT Work product page",
+          "url": "https://chatgpt.com/work"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official product-account post; the linked setup URL is the in-product flow, not a docs/blog page. Feature, not a model or API."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 6674,
+        "label": "6,674 X engagement (likes 6,053 + reposts 351 + replies 270) at 2026-09-08T03:55Z",
+        "observed_at": "2026-09-08T03:55:53Z",
+        "evidence_url": "https://x.com/ChatGPT/status/2097018264048251309"
       },
       "tags": [
         "OpenAI",
-        "Research agents",
+        "ChatGPT Work",
         "Agents",
-        "Research automation"
+        "Writing style",
+        "Product feature"
       ]
     },
     {
-      "id": "ai-viggle-animate",
+      "id": "ai-coreweave-kimi-k3",
       "section": "AI",
-      "rank": 10,
-      "story_type": "Open-weights model release",
-      "title": "Viggle ships Viggle-Animate: open weights for video character replacement from a single repainted frame",
-      "summary": "Viggle released Viggle-Animate, its first open model - open weights on Hugging Face (~68.9 GB) for character replacement in video from one of the video's own repainted frames, with no pose skeleton, segmentation mask or face-crop extractors. For builders it is a drop-in path into video character-swap pipelines without the intermediate-representation stack. Caveats: the weights carry a community license (open weights, not a permissive open-source license), and the release is Viggle's own benchmark story - 'the current model rather than the expected limit of the approach'.",
+      "rank": 3,
+      "story_type": "Inference infrastructure",
+      "title": "CoreWeave: BYO-weights 'Dedicated Inference' for Moonshot Kimi K3 (2.8T params, 1M context)",
+      "summary": "@CoreWeave (2026-09-07 12:37 UTC) promoted its Dedicated Inference path for Moonshot's Kimi K3 - a 2.8T-parameter, 1M-context model - with BYO-weights, autoscaling and routing on NVIDIA GPUs. The canonical how-to blog was actually published 2026-09-03 (datePublished in the page's own schema), so this is an in-window promotional push of an already-shipped capability, not a same-day launch. For builders the signal is that 2.8T MoE-class open models are now a first-class SKU on dedicated GPU clouds rather than just serverless; Kimi K3 weights launched in July, and CoreWeave does not supply or license the model itself.",
       "source": {
-        "name": "Viggle blog",
-        "url": "https://viggle.ai/blog/viggle-animate-character-replacement-from-a-repainted-frame"
+        "name": "CoreWeave (@CoreWeave)",
+        "url": "https://x.com/CoreWeave/status/2096940846088175696"
       },
-      "canonical_url": "https://viggle.ai/blog/viggle-animate-character-replacement-from-a-repainted-frame",
-      "published_at": "2026-09-04T00:00:00Z",
+      "canonical_url": "https://www.coreweave.com/blog/get-started-with-kimi-k3-dedicated-inference",
+      "published_at": "2026-09-07T12:37:11Z",
       "corroboration": [
         {
-          "name": "Hugging Face model card",
-          "url": "https://huggingface.co/Viggle/Viggle-Animate"
+          "name": "CoreWeave Dedicated Inference docs",
+          "url": "https://docs.coreweave.com/products/inference/tutorials/deploy-kimi-k3"
         },
         {
-          "name": "Hugging Face (@huggingface) reply welcoming the drop",
-          "url": "https://x.com/huggingface/status/2096858180365987914"
+          "name": "CoreWeave blog",
+          "url": "https://www.coreweave.com/blog/get-started-with-kimi-k3-dedicated-inference"
         }
       ],
       "quality": {
         "signal": "primary",
         "confidence": "medium",
-        "note": "Official launch blog (date-only, noon UTC) with live HF model card fetched via API (created 2026-08-31, last modified 09-04, minimax-h3-community-license). Vendor-reported quality claims; community license, not MIT/Apache."
+        "note": "Official @CoreWeave post in-window; the blog's own datePublished is 2026-09-03T15:55:01Z, so the underlying capability predates the post. The tweet itself had no link."
       },
       "tags": [
-        "Viggle",
-        "Video generation",
-        "Open weights",
-        "Character replacement",
-        "Hugging Face"
+        "CoreWeave",
+        "Kimi K3",
+        "Moonshot",
+        "Dedicated inference",
+        "BYO-weights",
+        "GPU cloud"
       ]
     },
     {
-      "id": "ai-redhat-ripwire",
+      "id": "ai-together-glm53-flash",
       "section": "AI",
-      "rank": 11,
-      "story_type": "Open-source tooling release",
-      "title": "Red Hat's ripwire: 'the ripgrep of AI context' - a zero-dependency C++23 CLI + MCP server that maps repos for coding agents",
-      "summary": "Red Hat's ripwire ships a zero-dependency C++23 CLI plus MCP server that gives coding agents a ranked, deterministic map of any repo - blast radius, tests-to-run, quality deltas - with signatures at ~80% fewer bytes than full bodies and claimed cost of ~5% of a grep-and-read pass's tokens. It is directly usable: install it, point an agent at a repo, and it answers 'what did this change touch' without burning context. Caveats: it is a new tool from an early stage with no independent benchmark, and the repo is redhat-et (Red Hat engineering team), not the main Red Hat org.",
+      "rank": 4,
+      "story_type": "Benchmark / inference pricing",
+      "title": "Together Compute: GLM-5.3 Flash vs GPT-5.6 Terra on the Artificial Analysis Intelligence Index - '82% less per task'",
+      "summary": "@TogetherCompute (2026-09-07 18:38 UTC) published a benchmark-marketing post comparing GLM-5.3 Flash against GPT-5.6 Terra on the Artificial Analysis Intelligence Index, claiming '82% less per task'. GLM-5.3-Flash itself landed on Together's serverless on 2026-08-27, so this is an in-window benchmark push, not a new model - but it is a useful datapoint on how far open-weights GLM-class models have closed the per-task cost gap against frontier proprietary tiers. Caveat: the numbers are vendor-published and the 'Intelligence Index' is one of several agentic benchmarks, not a consensus eval.",
       "source": {
-        "name": "GitHub (redhat-et/ripwire)",
-        "url": "https://github.com/redhat-et/ripwire"
+        "name": "Together Compute (@togethercompute)",
+        "url": "https://x.com/togethercompute/status/2097031751310639213"
       },
-      "canonical_url": "https://github.com/redhat-et/ripwire",
-      "published_at": "2026-09-07T01:20:00Z",
+      "canonical_url": "https://www.together.ai/models/glm-5-3-flash",
+      "published_at": "2026-09-07T18:38:25Z",
       "corroboration": [
         {
-          "name": "Hacker News discussion",
-          "url": "https://news.ycombinator.com/item?id=43884215"
+          "name": "Together model page",
+          "url": "https://www.together.ai/models/glm-5-3-flash"
         }
       ],
       "quality": {
         "signal": "primary",
         "confidence": "medium",
-        "note": "Live GitHub repo fetched in-window: release timestamp 2026-09-07T01:20:27Z and token-cost claims from the project's own description. Token savings are project-reported; no independent benchmark."
+        "note": "Vendor-published benchmark post (no independent replication). Model itself launched 2026-08-27 per the changelog; the 09-07 post is the in-window benchmark push."
       },
       "tags": [
-        "Red Hat",
-        "Coding agents",
-        "MCP",
-        "Developer tooling",
-        "Open source",
-        "Context efficiency"
+        "Together Compute",
+        "GLM-5.3 Flash",
+        "GPT-5.6 Terra",
+        "Benchmark",
+        "Inference pricing"
       ]
     },
     {
-      "id": "robotics-pudu-d7",
+      "id": "robotics-xpeng-iron",
       "section": "Robotics",
-      "rank": 12,
-      "story_type": "Product launch",
-      "title": "PUDU D7 semi-humanoid robot makes its European debut at IFA 2026",
-      "summary": "Pudu Robotics announced at IFA 2026 in Berlin that its PUDU D7 semi-humanoid intelligent robot makes its European debut, with the full Pudu portfolio (commercial service, cleaning and industrial) on display and live demonstrations running. It is one of several Chinese service-robotic vendors pushing the semi-humanoid form factor into European commercial channels this week - useful as a signal of where service-robot economics are landing, though it is a vendor debut, not independent test results.",
+      "rank": 1,
+      "story_type": "Manufacturing / production line",
+      "title": "XPENG commissions the world's first automated production line for advanced general-purpose humanoids - first IRON walks off the line on its own",
+      "summary": "XPENG (2026-09-08, PRNewswire + @XPENG_Global + CEO @xiaopenghexpeng) officially commissioned its Guangzhou humanoid production line and claims the first advanced general-purpose humanoid - IRON - completed automated production and walked off the line on its own. Core-process automation is >80% and the line is built to automotive-grade quality standards; the framing is 'lab to line, 0 to 1'. What they did NOT announce: factory location, annual capacity, takt time, price, ship date or customer orders - so treat it as a production-line commissioning, not mass production. CEO's added claim: 'using robots to mass-produce robots, autonomously.' Commercial deliveries remain guided to 2027.",
       "source": {
-        "name": "Pudu Robotics (via PR Newswire)",
-        "url": "https://www.prnewswire.com/news-releases/pudu-robotics-feiert-sein-debut-auf-der-ifa-und-bringt-sein-gesamtes-robotik-portfolio-nach-europa-302871208.html"
+        "name": "XPENG Robotics (@XPENG_Global)",
+        "url": "https://x.com/XPENG_Global/status/2097157136350363679"
       },
-      "canonical_url": "https://www.prnewswire.com/news-releases/pudu-robotics-feiert-sein-debut-auf-der-ifa-und-bringt-sein-gesamtes-robotik-portfolio-nach-europa-302871208.html",
-      "published_at": "2026-09-07T08:38:00Z",
+      "canonical_url": "https://www.prnewswire.com/news-releases/iron-the-worlds-first-advanced-general-purpose-humanoid-robot-walks-off-the-production-lines-as-xpengs-humanoid-robot-manufacturing-facility-is-officially-commissioned-302871836.html",
+      "published_at": "2026-09-08T02:56:39Z",
       "corroboration": [
         {
-          "name": "IFA 2026",
-          "url": "https://www.ifa-berlin.com/"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Vendor press release with published timestamp (2026-09-07 04:38 ET) fetched in-window; event is IFA 2026 Berlin (Sept 4-8)."
-      },
-      "tags": [
-        "Pudu Robotics",
-        "PUDU D7",
-        "Semi-humanoid",
-        "Service robots",
-        "IFA 2026"
-      ]
-    },
-    {
-      "id": "robotics-ifa-runway",
-      "section": "Robotics",
-      "rank": 13,
-      "story_type": "Industry event",
-      "title": "IFA 2026 'Robots on the Runway': 11 brands' humanoids and quadrupeds perform on a shared Berlin catwalk",
-      "summary": "IFA's 'Robots on the Runway' live show (2026-09-05, Creator Stage, Messe Berlin) put humanoids, quadrupeds and companion robots from 11 brands - including Unitree, AgiBot, EngineAI, Dobot, DEEP Robotics and Galbot - on a shared floor for poses, dance and backflips, alongside autonomous robots competing in football. It is a controlled demo, not verified autonomy or safety, but a shared floor is a useful comparative signal for balance, noise and footprint that solo product videos hide. IFA runs through Sept 8, with Pudu's D7 debut and AGIBOT's TUV-Rheinland certification among this week's in-fair items.",
-      "source": {
-        "name": "IFA Berlin press release",
-        "url": "https://www.ifa-berlin.com/press-releases/ifa2026-humanoid-robots"
-      },
-      "canonical_url": "https://www.ifa-berlin.com/press-releases/ifa2026-humanoid-robots",
-      "published_at": "2026-09-05T12:45:00+02:00",
-      "corroboration": [
-        {
-          "name": "Yahoo News (event report)",
-          "url": "https://ca.news.yahoo.com/humanoid-robots-over-catwalk-tech-130629614.html"
+          "name": "CEO post (earlier, 01:30 UTC)",
+          "url": "https://x.com/xiaopenghexpeng/status/2097135503015616798"
         },
         {
-          "name": "AGIBOT at IFA 2026 (Humanoids Daily)",
-          "url": "https://www.humanoidsdaily.com/news/agibot-deepens-european-push-at-ifa-2026-with-t-v-rheinland-certification-and-tekpoint-retail-alliance"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "Official IFA press release plus independent event coverage; the runway is a rehearsed demonstration, not a capability benchmark. The prior edition's LapaasVoice item covered the same event; this edition uses the official IFA source and adds the in-fair follow-throughs."
-      },
-      "tags": [
-        "IFA 2026",
-        "Humanoids",
-        "Quadrupeds",
-        "Embodied AI",
-        "Berlin"
-      ]
-    },
-    {
-      "id": "longevity-epigenetic-interventions",
-      "section": "Longevity",
-      "rank": 14,
-      "story_type": "Catch-up / human observational study",
-      "title": "Catch-up: Nature Medicine - epigenetic clocks respond to some lifestyle and drug interventions, not to OTC supplements",
-      "summary": "A Nature Medicine analysis (Sehgal et al., 2026-08-21) assessed 16 epigenetic aging clocks across 51 human longitudinal studies and found that certain dietary, lifestyle and pharmacological interventions measurably shift epigenetic age - while OTC supplements and some medical procedures did not. It is the most direct human evidence yet for which interventions move aging biomarkers at all, and it will be the reference table anyone designing longevity trials or screening protocols cites. Caveats: observational/biomarker-shift data, not hard clinical endpoints; 'newer biological age clocks outperformed older models' is the authors' framing.",
-      "source": {
-        "name": "Nature Medicine",
-        "url": "https://www.nature.com/articles/s41591-026-04562-9"
-      },
-      "canonical_url": "https://www.nature.com/articles/s41591-026-04562-9",
-      "published_at": "2026-08-21T12:00:00Z",
-      "corroboration": [
-        {
-          "name": "Yale News coverage",
-          "url": "https://news.yale.edu/2026/08/21/can-you-slow-aging-process-study-reveals-which-interventions-might-help"
+          "name": "Video post",
+          "url": "https://x.com/XPENG_Global/status/2097159359520231758"
         },
         {
-          "name": "Medical News Today",
-          "url": "https://www.medicalnewstoday.com/articles/what-can-and-cant-slow-down-aging-new-study-offers-clues"
+          "name": "Photo post",
+          "url": "https://x.com/XPENG_Global/status/2097173232071692681"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official PRNewswire release (09-07 22:26 ET) with in-window @XPENG_Global posts. Commissioning claim is vendor-reported; no independent verification of 'world's first' or of autonomous off-line walking."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 46,
+        "label": "46 X engagement (likes 37 + reposts 7 + replies 2) at 2026-09-08T04:25Z",
+        "observed_at": "2026-09-08T04:25:11Z",
+        "evidence_url": "https://x.com/XPENG_Global/status/2097157136350363679"
+      },
+      "tags": [
+        "XPENG",
+        "IRON",
+        "Humanoid robot",
+        "Production line",
+        "Manufacturing",
+        "Autonomous walk-off"
+      ]
+    },
+    {
+      "id": "robotics-neura-seco",
+      "section": "Robotics",
+      "rank": 2,
+      "story_type": "Industrialization / supply chain",
+      "title": "NEURA Robotics and SECO to put humanoid 4NE1 into series production in Europe - Qualcomm Dragonwing Smart Limbs",
+      "summary": "@NEURARobotics (2026-09-07 09:06 UTC) and @SECO_spa (06:01 UTC, with the partner PR page) announced a series-production partnership: SECO will build the compute modules for NEURA's humanoid 4NE1 and 'Smart Limbs', which run on Qualcomm Dragonwing, with a focus on industrial data and automation for semiconductor and electronics manufacturing. For builders this is one of the more concrete European industrialization deals of the window - a specific compute-module supplier, a specific chip (Dragonwing), and a specific end-market (semis/electronics) - rather than a generic 'we're scaling physical AI' press release. Caveat: it is a partnership, not a shipped product or a funded round; no volume, price or ship date was announced.",
+      "source": {
+        "name": "NEURA Robotics (@NEURARobotics)",
+        "url": "https://x.com/NEURARobotics/status/2096887905138446771"
+      },
+      "canonical_url": "https://www.seco.com/news/details/neura-robotics-and-seco-join-forces-to-scale-physical-ai-from-europe",
+      "published_at": "2026-09-07T12:00:00Z",
+      "corroboration": [
+        {
+          "name": "SECO partner post",
+          "url": "https://x.com/SECO_spa/status/2096841182278045820"
+        },
+        {
+          "name": "SECO partner PR page",
+          "url": "https://www.seco.com/news/details/neura-robotics-and-seco-join-forces-to-scale-physical-ai-from-europe"
         }
       ],
       "quality": {
         "signal": "corroborated",
         "confidence": "high",
-        "note": "Peer-reviewed Nature Medicine paper verified via Crossref (published 2026-08-21); coverage via Yale News and MNT. Labeled catch-up: published 08-21, outside the 30h window, canonical URL absent from all prior editions, and still circulating in-window."
+        "note": "Two official accounts posted the same-day announcement; partner PR page fetched in-window. Date-only (noon UTC used). Partnership, not a shipped product or funding round."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 329,
+        "label": "329 X engagement (likes 281 + reposts 35 + replies 13) at 2026-09-08T04:25Z",
+        "observed_at": "2026-09-08T04:25:11Z",
+        "evidence_url": "https://x.com/NEURARobotics/status/2096887905138446771"
       },
       "tags": [
-        "Epigenetic clocks",
-        "Aging biomarkers",
-        "Interventions",
-        "Human study",
-        "Nature Medicine",
-        "Catch-up"
+        "NEURA Robotics",
+        "SECO",
+        "4NE1",
+        "Humanoid series production",
+        "Qualcomm Dragonwing",
+        "European supply chain"
       ]
     },
     {
-      "id": "longevity-science-translational-tspo",
-      "section": "Longevity",
-      "rank": 15,
-      "story_type": "New paper / observational imaging",
-      "title": "Science Translational Medicine: elevated TSPO in skull bone marrow with chronic pain and knee osteoarthritis",
-      "summary": "Science Translational Medicine reports elevated TSPO (an immune-density marker) in skull bone marrow in chronic back pain and knee osteoarthritis vs controls, hinting at a neuroimmune pain pathway relevant to age-related OA. It is observational imaging (n=125 pain, 22 controls), not an intervention - and OA is age-associated rather than a geroscience target, so read it as mechanism-adjacent to aging pain/immunity. No medical advice.",
+      "id": "robotics-galbot-robogesture",
+      "section": "Robotics",
+      "rank": 3,
+      "story_type": "Peer-reviewed research / ECCV",
+      "title": "Galbot RoboGesture (ECCV 2026): real-time semantic-aligned co-speech gestures for humanoids on a Unitree G1",
+      "summary": "Galbot Robotics posted its ECCV 2026 paper RoboGesture (arXiv 2608.28693, project page robogesture.github.io) - a ~2-second listen → respond → gesture loop for humanoid interaction, demonstrated on a Unitree G1. The contribution is the semantic alignment between speech content and co-speech gesture timing, not a new actuator or model family. Poster session is 10 Sep 16:30-18:30 CEST at ECCV (ExHall #178). Caveat: it is a capability demo with a project page, not a commercial product or a funded round; the 'real-time' claim is vendor-reported and the demo hardware is a third-party (Unitree) platform.",
       "source": {
-        "name": "Science Magazine (@ScienceMagazine)",
-        "url": "https://x.com/ScienceMagazine/status/2095894182787186812"
+        "name": "Galbot Robotics (@GalbotRobotics)",
+        "url": "https://x.com/GalbotRobotics/status/2096310403101860144"
       },
-      "canonical_url": "https://www.science.org/doi/10.1126/scitranslmed.aed8729",
-      "published_at": "2026-09-04T15:18:07Z",
+      "canonical_url": "https://arxiv.org/abs/2608.28693",
+      "published_at": "2026-09-05T18:52:02Z",
       "corroboration": [
         {
-          "name": "Science Translational Medicine",
-          "url": "https://www.science.org/journal/scitranslmed"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "Paper DOI verified; @ScienceMagazine post at the 72h edge. Observational; TSPO is a putative marker, not a proven treatment target."
-      },
-      "tags": [
-        "TSPO",
-        "Osteoarthritis",
-        "Neuroimmune",
-        "Bone marrow",
-        "Imaging",
-        "Science Translational Medicine"
-      ]
-    },
-    {
-      "id": "longevity-scisignal-orai",
-      "section": "Longevity",
-      "rank": 16,
-      "story_type": "Animal research / neurovascular aging",
-      "title": "Science Signaling: loss of ORAI/STIM1 capillary signaling produces dementia-like signs in mice",
-      "summary": "Science Signaling (Lavanderos et al., published 2026-09-01) shows capillary endothelial ORAI Ca2+ channels and STIM1 drive capillary-to-arteriole communication in neurovascular coupling, and that loss produced dementia-like signs in mice. It is a mouse physiology study, not a human trial, but it puts the capillary endothelium's signaling machinery - not just neurons - on the table for vascular cognitive decline, which is the dominant aging pathway for cognitive loss. No medical advice.",
-      "source": {
-        "name": "Science Magazine (@ScienceMagazine)",
-        "url": "https://x.com/ScienceMagazine/status/2096070843788845471"
-      },
-      "canonical_url": "https://www.science.org/journal/signaling",
-      "published_at": "2026-09-05T03:00:06Z",
-      "corroboration": [
+          "name": "Project page",
+          "url": "https://robogesture.github.io/"
+        },
         {
-          "name": "Science Signaling TOC",
-          "url": "https://www.science.org/journal/signaling"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "@ScienceMagazine post (the post truncated the DOI; the journal TOC is linked in the post), so the journal TOC is the canonical link. Mouse data; human translation unproven."
-      },
-      "tags": [
-        "ORAI",
-        "STIM1",
-        "Neurovascular coupling",
-        "Cognitive aging",
-        "Mice",
-        "Science Signaling"
-      ]
-    },
-    {
-      "id": "longevity-sciimmunol-platelets",
-      "section": "Longevity",
-      "rank": 17,
-      "story_type": "Catch-up / animal research",
-      "title": "Catch-up: Science Immunology - platelet-derived serotonin drives age-related lung pathology in SARS-CoV-2",
-      "summary": "Science Immunology reports that platelet-derived serotonin drives age-related lung pathology in SARS-CoV-2 infection in aging mice - an aging-immune mechanism with the classic hallmarks signature (platelets, serotonin, lung) that shows how age shifts the immune response to the same pathogen. It is a mouse study, not a human trial; no dosing or therapeutic claim is implied. No medical advice. Published 2026-08-28, outside the 30h window, canonical URL absent from prior editions - included as a labeled catch-up.",
-      "source": {
-        "name": "Science Magazine (@ScienceMagazine)",
-        "url": "https://x.com/ScienceMagazine/status/2095738147057369344"
-      },
-      "canonical_url": "https://www.science.org/doi/10.1126/sciimmunol.aec9853",
-      "published_at": "2026-08-28T00:00:00Z",
-      "corroboration": [
-        {
-          "name": "Science Immunology",
-          "url": "https://www.science.org/journal/sciimmunol"
+          "name": "arXiv paper",
+          "url": "https://arxiv.org/abs/2608.28693"
         }
       ],
       "quality": {
         "signal": "corroborated",
         "confidence": "high",
-        "note": "Peer-reviewed paper verified via Crossref (published 2026-08-28); @ScienceMagazine posted it 09-04. Mouse study; the 'aging-immune' mechanism is the paper's framing."
+        "note": "Official company post plus arXiv paper and project page, all fetched in-window. 72h catch-up edge (09-05 18:52 UTC). Capability demo, not a commercial deployment."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 60,
+        "label": "60 X engagement (likes 45 + reposts 10 + replies 5) at 2026-09-08T04:25Z",
+        "observed_at": "2026-09-08T04:25:11Z",
+        "evidence_url": "https://x.com/GalbotRobotics/status/2096310403101860144"
       },
       "tags": [
-        "Platelets",
-        "Serotonin",
-        "SARS-CoV-2",
-        "Aging immunity",
-        "Mice",
-        "Science Immunology",
-        "Catch-up"
+        "Galbot",
+        "RoboGesture",
+        "ECCV 2026",
+        "Co-speech gesture",
+        "Humanoid interaction",
+        "Unitree G1"
       ]
     },
     {
-      "id": "longevity-nature-mash-review",
-      "section": "Longevity",
-      "rank": 18,
-      "story_type": "Review / metabolic aging",
-      "title": "Nature review: molecular mechanisms of MASLD/MASH - the metabolic substrate of age-related liver disease",
-      "summary": "A Nature review (VoR 2026-09-02, posted by @Nature 2026-09-07) walks through MASLD/MASH pathogenesis - insulin resistance, lipotoxicity, immune inflammation, fibrosis and the gut-liver axis. It is a review, not a trial or FDA action, but MASH is one of the fastest-growing age-associated organ pathologies and this is the current consolidated mechanism reference for anyone building on metabolic aging or liver-directed interventions. No medical advice.",
+      "id": "robotics-agility-going-concern",
+      "section": "Robotics",
+      "rank": 4,
+      "story_type": "SEC filing / financials",
+      "title": "Agility Robotics' S-4 (2026-09-04): 'substantial doubt' about continuing as a going concern without the Churchill XI merger",
+      "summary": "Agility Robotics' (CCXI-merger partner) S-4 registration statement, filed 2026-09-04 with the SEC, states that without consideration of the proposed Churchill Capital XI business combination, Agility 'has concluded there is substantial doubt about its ability to continue as a going concern.' The filing notes operating losses since inception, expected continuation of negative cash flows, and that the auditor (Grant Thornton) concurred on the going-concern assessment for FY2025. This is the first time the going-concern language has been visible in a public SEC filing for Agility - a data point that the humanoid sector's capital intensity is outpacing even well-customered operators, and that the SPAC close is load-bearing for continuity. Caveat: it is an S-4 risk-factor disclosure, not a 10-K; the merger is still subject to shareholder and regulatory approval.",
       "source": {
-        "name": "Nature (@Nature)",
-        "url": "https://x.com/Nature/status/2096893419142389789"
+        "name": "SEC EDGAR - Agility Robotics / Churchill Capital XI S-4",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002074973&type=S-4&dateb=&owner=include&count=10"
       },
-      "canonical_url": "https://www.nature.com/articles/s41586-026-10529-0",
-      "published_at": "2026-09-02T00:00:00Z",
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/2074973/000121390026097764/ea0297114-04.htm",
+      "published_at": "2026-09-04T12:00:00Z",
       "corroboration": [
         {
-          "name": "Nature",
-          "url": "https://www.nature.com/journal/nature"
+          "name": "Agility Robotics / Churchill XI S-4 (EDGAR)",
+          "url": "https://www.sec.gov/Archives/edgar/data/2074973/000121390026097764/ea0297114-04.htm"
+        },
+        {
+          "name": "Commentary thread (X)",
+          "url": "https://x.com/mikekalilmfg/status/2097072186066350321"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Direct SEC EDGAR filing (fetched in-window; 30 going-concern hits, auditor-concurred language confirmed). Date-only, noon UTC used. 72h catch-up edge (filed 09-04). S-4, not 10-K; merger still pending."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 55,
+        "label": "55 X engagement (likes 44 + reposts 2 + replies 9) at 2026-09-08T04:25Z",
+        "observed_at": "2026-09-08T04:25:11Z",
+        "evidence_url": "https://x.com/mikekalilmfg/status/2097072186066350321"
+      },
+      "tags": [
+        "Agility Robotics",
+        "Churchill Capital XI",
+        "Going concern",
+        "S-4",
+        "SEC",
+        "SPAC"
+      ]
+    },
+    {
+      "id": "robotics-abb-pixelpaint",
+      "section": "Robotics",
+      "rank": 5,
+      "story_type": "Industrial deployment",
+      "title": "ABB PixelPaint now in production at Mercedes-Benz Sindelfingen - first on the Maybach SL 680 Monogram Series",
+      "summary": "@ABBRobotics (2026-09-07 14:23 UTC) announced that its PixelPaint automotive-painting system is now running in production at Mercedes-Benz's Sindelfingen plant, with the Mercedes-Maybach SL 680 Monogram Series as the first model finished with it. It is a live industrial deployment of an existing ABB painting system (not a new robot platform), but it is a notable 'first' for a named, premium model and a concrete data point on how much of the paint-shop step has moved to robotic, pixel-level finishing. Caveat: deployment announcement, not a new SKU or a funded round; no throughput or cost numbers were published.",
+      "source": {
+        "name": "ABB Robotics (@ABBRobotics)",
+        "url": "https://x.com/ABBRobotics/status/2096967652702826939"
+      },
+      "canonical_url": "https://x.com/ABBRobotics/status/2096967652702826939",
+      "published_at": "2026-09-07T14:23:42Z",
+      "corroboration": [
+        {
+          "name": "ABB Robotics account",
+          "url": "https://x.com/ABBRobotics"
         }
       ],
       "quality": {
         "signal": "primary",
         "confidence": "medium",
-        "note": "Peer-reviewed Nature review; VoR 09-02 per the @Nature post, posted in-window 09-07 09:28 UTC. A synthesis, not a new result."
+        "note": "Official @ABBRobotics post only (no ABB blog URL linked in the post). Deployment of an existing system, not a new platform."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 20,
+        "label": "20 X engagement (likes 19 + reposts 1 + replies 0) at 2026-09-08T04:25Z",
+        "observed_at": "2026-09-08T04:25:11Z",
+        "evidence_url": "https://x.com/ABBRobotics/status/2096967652702826939"
       },
       "tags": [
-        "MASH",
-        "MASLD",
-        "Metabolic aging",
-        "Liver",
-        "Review",
-        "Nature"
+        "ABB",
+        "PixelPaint",
+        "Mercedes-Benz",
+        "Automotive painting",
+        "Industrial robotics"
+      ]
+    },
+    {
+      "id": "longevity-insilico-rentosertib",
+      "section": "Longevity",
+      "rank": 1,
+      "story_type": "Peer-reviewed clinical paper / proteomic clocks",
+      "title": "Insilico Medicine: six proteomic aging clocks all predict younger in the rentosertib Phase 2a IPF trial - peak ~3-4 year predicted-age drop at week 4",
+      "summary": "Zhavoronkov et al. (Nature Biotechnology, published 2026-09-07; @InSilicoMeds and @NatureBiotech posted the paper in-window) used 12-week longitudinal Olink proteomic data (CNCB OMIX008341, n=42) from the published Phase 2a IPF trial of rentosertib - an AI-designed TNIK inhibitor - and found that six independently developed proteomic aging clocks (ProtAge, OrganAge, PAC, ipfP3GPT, PAOPAC, etc.) consistently predicted lower biological age in the treated arms, peaking at ~3-4 years younger at week 4 (30 mg BID), with one clock showing up to ~6 years. The authors frame it as a dual-purpose trial blueprint for embedding geroscience endpoints into standard disease trials, aligned with FDA Biomarker/BEST. Caveats the authors state: n is small, all patients have IPF, and the study cannot yet separate geroprotection from treating the lung; rentosertib is already in Phase 3 in China for IPF - this paper is not a new trial launch. No medical advice.",
+      "source": {
+        "name": "Insilico Medicine (@InSilicoMeds)",
+        "url": "https://x.com/InSilicoMeds/status/2096970738016330190"
+      },
+      "canonical_url": "https://www.nature.com/articles/s41587-026-03286-y",
+      "published_at": "2026-09-07T14:35:58Z",
+      "corroboration": [
+        {
+          "name": "Nature Biotechnology paper",
+          "url": "https://www.nature.com/articles/s41587-026-03286-y"
+        },
+        {
+          "name": "Insilico press release",
+          "url": "https://insilico.com/news/rnt0709261-rentosertib-proteomic-aging-clocks"
+        },
+        {
+          "name": "Nature Biotechnology journal post",
+          "url": "https://x.com/NatureBiotech/status/2097003504464204126"
+        },
+        {
+          "name": "First author post (@biogerontology)",
+          "url": "https://x.com/biogerontology/status/2096894405730791830"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Peer-reviewed Nature Biotechnology paper (fetched in-window) with the company's official X post, the journal's official post, and the first author's personal post all in-window. Human clinical (Phase 2a) data, not animal or observational; the 'aging reversal' framing is the authors'/company's, and Levitt's caveat is that it cannot yet separate geroprotection from lung treatment."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 599,
+        "label": "599 X engagement (likes 496 + reposts 86 + replies 17) at 2026-09-08T04:25Z",
+        "observed_at": "2026-09-08T04:25:11Z",
+        "evidence_url": "https://x.com/InSilicoMeds/status/2096970738016330190"
+      },
+      "tags": [
+        "Insilico Medicine",
+        "Rentosertib",
+        "TNIK",
+        "Proteomic aging clocks",
+        "IPF",
+        "Phase 2a",
+        "Geroscience",
+        "Dual-purpose trials"
+      ]
+    },
+    {
+      "id": "longevity-cell-skin-aging",
+      "section": "Longevity",
+      "rank": 2,
+      "story_type": "Peer-reviewed research / basic geroscience",
+      "title": "Cell: skin-innervating glutamatergic neurons modulate aging - sensory innervation of skin as an aging regulator",
+      "summary": "Cell Press posted a new Cell paper (S0092-8674(26)00752-X, @CellCellPress 2026-09-06 23:08 UTC) showing that skin-innervating glutamatergic neurons modulate aging - a result that puts the sensory nervous system's skin projection on the list of aging regulators, alongside the more-cited metabolic and immune pathways. It is basic geroscience (mechanism, not intervention), and the in-window event is the journal's issue publication and official post. No medical advice; no drug or dose is implied.",
+      "source": {
+        "name": "Cell Press (@CellCellPress)",
+        "url": "https://x.com/CellCellPress/status/2096737414672990413"
+      },
+      "canonical_url": "https://www.cell.com/cell/abstract/S0092-8674(26)00752-X",
+      "published_at": "2026-09-06T23:08:49Z",
+      "corroboration": [
+        {
+          "name": "Cell journal abstract",
+          "url": "https://www.cell.com/cell/abstract/S0092-8674(26)00752-X"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official Cell Press post plus the Cell abstract page, both fetched in-window. Basic mechanism paper, not an intervention study."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 84,
+        "label": "84 X engagement (likes 66 + reposts 18 + replies 0) at 2026-09-08T04:25Z",
+        "observed_at": "2026-09-08T04:25:11Z",
+        "evidence_url": "https://x.com/CellCellPress/status/2096737414672990413"
+      },
+      "tags": [
+        "Cell",
+        "Skin innervation",
+        "Glutamatergic neurons",
+        "Aging modulation",
+        "Basic geroscience"
+      ]
+    },
+    {
+      "id": "longevity-psilocybin-cipn",
+      "section": "Longevity",
+      "rank": 3,
+      "story_type": "Peer-reviewed research / neuroprotection (mouse)",
+      "title": "Science: two prophylactic psilocybin doses prevented CIPN in mice across chemo cycles without blunting the antitumor effect",
+      "summary": "Heles et al. (Science, published 2026-09-03; @ScienceMagazine and @Nature amplified in-window on 09-07) showed that two doses of psilocybin given before each of six chemotherapy cycles over eight months completely prevented mice from developing chemotherapy-induced peripheral neuropathy (CIPN) - a condition that affects up to 60% of people on platinum-based regimens - without reducing the chemotherapy's tumor-shrinking effect. The mechanism is preservation of mitochondrial trafficking into distal sensory neurons, not a classic analgesic effect. For builders this is a 'prevent the damage, not treat the pain' design pattern with a specific, checkable molecular target; for the aging/healthspan space it is a direct data point on neuroprotection in an age-relevant indication. Caveat: mouse/human-tissue data, not a human trial - the authors say human trials are starting, not yet reported. No medical advice.",
+      "source": {
+        "name": "Science Magazine (@ScienceMagazine)",
+        "url": "https://x.com/ScienceMagazine/status/2097046770085740784"
+      },
+      "canonical_url": "https://www.science.org/doi/10.1126/science.aec6116",
+      "published_at": "2026-09-07T19:38:05Z",
+      "corroboration": [
+        {
+          "name": "Science paper (DOI)",
+          "url": "https://www.science.org/doi/10.1126/science.aec6116"
+        },
+        {
+          "name": "Nature news recap",
+          "url": "https://www.nature.com/articles/d41586-026-02744-6"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Peer-reviewed Science paper (DOI verified via Crossref, published 2026-09-03) with in-window @ScienceMagazine and @Nature amplification. Mouse/human-tissue data, not a human trial; 'Catch-up' edge - the paper predates the 30h window but the journal amplification and community reaction are the in-window event."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 544,
+        "label": "544 X engagement (likes 437 + reposts 98 + replies 9) at 2026-09-08T04:25Z",
+        "observed_at": "2026-09-08T04:25:11Z",
+        "evidence_url": "https://x.com/ScienceMagazine/status/2097046770085740784"
+      },
+      "tags": [
+        "Psilocybin",
+        "CIPN",
+        "Chemotherapy",
+        "Neuroprotection",
+        "Mitochondrial trafficking",
+        "Mice",
+        "Healthspan"
+      ]
+    },
+    {
+      "id": "longevity-ackman-mitochondria",
+      "section": "Longevity",
+      "rank": 4,
+      "story_type": "Human case report / mitochondrial transplant",
+      "title": "Bill Ackman's daughter received a first-of-its-kind FDA-emergency-authorized mitochondrial transplant from leg to eyes",
+      "summary": "The Washington Post (2026-09-06) reports that Bill Ackman's 26-year-old daughter Lucy, who lost sight after a brain hemorrhage crushed her optic nerve, received an experimental mitochondrial transplant - mitochondria moved from her leg muscle to her eyes - under a one-time FDA emergency authorization granted in May 2026. It is the most prominent human use yet of the 'mitochondrial transplant for neural repair' strategy, which is of direct interest to longevity researchers because mitochondria are a recurring target in aging research (the 2024 Nature mouse optic-nerve paper is the precedent). It is a single-patient case report, not a trial or an approval; the team is hoping for optic-nerve healing and possible partial vision restoration. No medical advice.",
+      "source": {
+        "name": "The Washington Post",
+        "url": "https://www.washingtonpost.com/technology/2026/09/06/she-lost-her-sight-her-billionaire-father-bet-daring-new-treatment/"
+      },
+      "canonical_url": "https://www.washingtonpost.com/technology/2026/09/06/she-lost-her-sight-her-billionaire-father-bet-daring-new-treatment/",
+      "published_at": "2026-09-06T12:00:00Z",
+      "corroboration": [
+        {
+          "name": "Yahoo News / Science",
+          "url": "https://www.yahoo.com/news/science/articles/bill-ackman-reveals-daughter-received-100103249.html"
+        },
+        {
+          "name": "Benzinga",
+          "url": "https://www.benzinga.com/news/health-care/26/09/61539911/bill-ackman-daughter-mitochondria-treatment-leg-eyes-amazing-potential"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "WaPo original (09-06) with independent Yahoo/Benzinga coverage, all fetched in-window. Single-patient case report, not a trial; the FDA authorization was a one-time emergency use, not a standing approval."
+      },
+      "tags": [
+        "Mitochondrial transplant",
+        "Optic nerve",
+        "FDA emergency use",
+        "Bill Ackman",
+        "Human case report",
+        "Neuro-repair"
       ]
     }
   ]
