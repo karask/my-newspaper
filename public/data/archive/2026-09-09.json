@@ -1,0 +1,1059 @@
+{
+  "schema_version": 1,
+  "edition": {
+    "date": "2026-09-09",
+    "title": "The Daily Signal",
+    "kicker": "Primary-source tech intelligence, compiled from the live wire.",
+    "status": "live",
+    "updated_at": "2026-09-09T04:30:00+03:00"
+  },
+  "sections": [
+    "Bitcoin",
+    "AI",
+    "Robotics",
+    "Longevity"
+  ],
+  "lead_story_id": "ai-openai-navier-stokes",
+  "stories": [
+    {
+      "id": "bitcoin-block-builders-bank",
+      "section": "Bitcoin",
+      "rank": 1,
+      "story_type": "Regulation / chartered custody",
+      "title": "Block applies to the OCC for Builders Bank - a national trust bank for Bitcoin and stablecoin custody",
+      "summary": "Block (NYSE: XYZ) applied to the OCC to establish Builders Bank & Trust, N.A., an uninsured national trust bank that would custody bitcoin and stablecoins and provide fiduciary services - no deposits, no loans, with Lee Woolley named as proposed president/CEO. For builders this is the same playbook that just got OpenReserve its conditional OCC approval: a dedicated trust charter that puts BTC/stablecoin custody on bank-grade legal footing inside the US, with custody rails that institutions can actually wire money through. Caveat: it is an application, not a charter - no OCC approval, no operating date; @SECGov posted nothing in-window.",
+      "source": {
+        "name": "Block investor relations",
+        "url": "https://investors.block.xyz/investor-news/news-details/2026/Block-Applies-to-Establish-Builders-Bank-a-National-Trust-Bank/default.aspx"
+      },
+      "canonical_url": "https://investors.block.xyz/investor-news/news-details/2026/Block-Applies-to-Establish-Builders-Bank-a-National-Trust-Bank/default.aspx",
+      "published_at": "2026-09-08T21:28:32Z",
+      "corroboration": [
+        {
+          "name": "@BitcoinMagazine in-window post",
+          "url": "https://x.com/BitcoinMagazine/status/2097436953213903114"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official investor-relations release (page fetched in-window) amplified by @BitcoinMagazine at 21:28 UTC. Application stage; charter still requires OCC approval."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 535,
+        "label": "535 X engagement (likes 441 + reposts 58 + replies 36) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/BitcoinMagazine/status/2097436953213903114"
+      },
+      "tags": [
+        "Block",
+        "OCC",
+        "National trust bank",
+        "Bitcoin custody",
+        "Stablecoin custody",
+        "Charter"
+      ]
+    },
+    {
+      "id": "bitcoin-clarity-cloture",
+      "section": "Bitcoin",
+      "rank": 2,
+      "story_type": "Legislative schedule",
+      "title": "CLARITY Act cloture vote set for 15 Sep - the 60-vote gate for the crypto market-structure bill",
+      "summary": "The US Senate has scheduled the cloture vote on the motion to proceed to the Digital Asset Market Clarity Act for 15 September at 2:15 PM ET - 60 votes needed to break the filibuster and start formal debate. Independent trackers (Latham & Watkins, Yahoo Finance) confirm the date and procedural status; Sen. Lummis says failure likely kills passage before the decade's end. The in-window signal is the official scheduling plus the Fairshake national TV ad blitz pushing the bill. Caveat: cloture is a gate, not passage - the House calendar remains a separate bottleneck, and @SECGov stayed silent.",
+      "source": {
+        "name": "Latham & Watkins US Crypto Policy Tracker",
+        "url": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments"
+      },
+      "canonical_url": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments",
+      "published_at": "2026-09-08T13:38:36Z",
+      "corroboration": [
+        {
+          "name": "@BitcoinMagazine post on the scheduled vote",
+          "url": "https://x.com/BitcoinMagazine/status/2097318689750032442"
+        },
+        {
+          "name": "Yahoo Finance analysis of the 15 Sep gate",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/clarity-act-fate-hinges-senate-071251169.html"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Multiple independent trackers confirm the 15 Sep cloture date; @BitcoinMagazine and @CoinDesk both posted the date in-window. Procedural vote, not passage."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 2277,
+        "label": "2,277 X engagement (likes 1,880 + reposts 268 + replies 129) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/BitcoinMagazine/status/2097318689750032442"
+      },
+      "tags": [
+        "CLARITY Act",
+        "Senate",
+        "Cloture",
+        "Crypto regulation",
+        "Market structure",
+        "US"
+      ]
+    },
+    {
+      "id": "bitcoin-circle-tazapay",
+      "section": "Bitcoin",
+      "rank": 3,
+      "story_type": "Acquisition / stablecoin rails",
+      "title": "Circle signs definitive agreement to acquire Tazapay for ~$400M in stock - ~$25B annualized cross-border volume",
+      "summary": "Circle (NYSE: CRCL) signed a definitive agreement to acquire Singapore B2B cross-border payments firm Tazapay for roughly $400M in stock. Circle cites ~$25B annualized volume, 100+ payout markets, and ~60% of volume already involving stablecoins; close is targeted for 2027, subject to MAS and other approvals. For builders this is the stablecoin-rail incumbent buying a live cross-border payout network - USDC rails into 100+ markets with an existing B2B customer base, not a greenfield integration. Caveat: it is an agreement, not a closed deal; regulatory approval pending; the volume figures are Circle-reported.",
+      "source": {
+        "name": "Circle pressroom",
+        "url": "https://www.circle.com/pressroom/circle-expands-global-payments-infrastructure-with-agreement-to-acquire-singapore-based-cross-border-payments-platform-tazapay"
+      },
+      "canonical_url": "https://www.circle.com/pressroom/circle-expands-global-payments-infrastructure-with-agreement-to-acquire-singapore-based-cross-border-payments-platform-tazapay",
+      "published_at": "2026-09-08T10:06:20Z",
+      "corroboration": [
+        {
+          "name": "@CoinDesk in-window post",
+          "url": "https://x.com/CoinDesk/status/2097336067498164250"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official Circle pressroom release (dateModified 2026-09-08T10:06:20Z in page schema, fetched in-window) with @CoinDesk amplification. Definitive agreement; MAS approval outstanding."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 355,
+        "label": "355 X engagement (likes 287 + reposts 43 + replies 25) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/CoinDesk/status/2097336067498164250"
+      },
+      "tags": [
+        "Circle",
+        "Tazapay",
+        "USDC",
+        "Cross-border payments",
+        "Acquisition",
+        "Stablecoin rails"
+      ]
+    },
+    {
+      "id": "bitcoin-liquid-return-update",
+      "section": "Bitcoin",
+      "rank": 4,
+      "story_type": "Sidechain incident (update)",
+      "title": "Liquid: white hats returned 3,400 of ~4,000 drained BTC; ~598 BTC still outstanding, network remains paused",
+      "summary": "The self-described white hats that drained ~$320M from Blockstream's Liquid federation wallet on 06 Sep returned 3,400 BTC, leaving ~598 BTC (~$47M) outstanding. The sidechain remains paused for patching and chain-split work ahead of the federation restart announced in yesterday's edition. For builders the open questions are the unreconciled ~598 BTC 'bounty' and whether L-BTC peg-in/out resumes 1:1 after restart - the peg is not fully restored until then. Caveat: the drain date (06 Sep) predates the window; the return is the in-window development, and 'white hat' is the actors' own label.",
+      "source": {
+        "name": "CoinDesk",
+        "url": "https://www.coindesk.com/markets/2026/09/08/white-hat-hackers-return-most-of-usd320m-bitcoin-taken-from-liquid-network"
+      },
+      "canonical_url": "https://www.coindesk.com/markets/2026/09/08/white-hat-hackers-return-most-of-usd320m-bitcoin-taken-from-liquid-network",
+      "published_at": "2026-09-08T08:29:01Z",
+      "corroboration": [
+        {
+          "name": "@CoinDesk in-window post",
+          "url": "https://x.com/CoinDesk/status/2097240780846911990"
+        },
+        {
+          "name": "Blockstream incident status page",
+          "url": "https://status.blockstream.com/incidents/b8b719f3-db70-4487-9cff-946e69509228"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "CoinDesk report with in-window @CoinDesk post and the operator's live status page. Distinct event from yesterday's restart-phase story (this is the return; the status page is the same canonical URL, so deduplicated into this story)."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 168,
+        "label": "168 X engagement (likes 130 + reposts 14 + replies 24) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/CoinDesk/status/2097240780846911990"
+      },
+      "tags": [
+        "Liquid Network",
+        "Bitcoin sidechain",
+        "Blockstream",
+        "Security incident",
+        "White hat",
+        "Peg"
+      ]
+    },
+    {
+      "id": "bitcoin-visa-stablecoin",
+      "section": "Bitcoin",
+      "rank": 5,
+      "story_type": "Payments infrastructure",
+      "title": "Visa: 160+ live stablecoin-linked card programs, ~$20B annualized settlement run rate (15x YoY)",
+      "summary": "Visa reported 160+ live stablecoin-linked card programs with ~200% YoY payment-volume growth and a ~$20B annualized stablecoin settlement run rate - up more than 15x year over year. The load-bearing number for builders is the $20B run rate: card-network settlement on stablecoin rails is no longer a pilot metric, it is a double-digit-billion-dollar annualized flow, mostly USDC programs. Caveat: company-reported operating metrics from a Cardholders Summit presentation, not a new product launch; @CoinDesk's post links no canonical URL, so the Block is the independent confirmation.",
+      "source": {
+        "name": "The Block",
+        "url": "https://www.theblock.co/news/business/2026-09-08-visa-stablecoin-settlement-tops-20-billion-annualized-run-rate-up-more-than-15x-year-over-year-413749"
+      },
+      "canonical_url": "https://www.theblock.co/news/business/2026-09-08-visa-stablecoin-settlement-tops-20-billion-annualized-run-rate-up-more-than-15x-year-over-year-413749",
+      "published_at": "2026-09-08T11:28:13Z",
+      "corroboration": [
+        {
+          "name": "@CoinDesk in-window post",
+          "url": "https://x.com/CoinDesk/status/2097285875973444076"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "The Block article fetched in-window with @CoinDesk amplification. Company-reported metrics; The Block page returned 403 on refetch, so the figure is taken from the in-window article + post pair."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1126,
+        "label": "1,126 X engagement (likes 905 + reposts 161 + replies 60) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/CoinDesk/status/2097285875973444076"
+      },
+      "tags": [
+        "Visa",
+        "Stablecoin cards",
+        "Settlement",
+        "USDC",
+        "Payments infrastructure"
+      ]
+    },
+    {
+      "id": "bitcoin-copper-ceo-departure",
+      "section": "Bitcoin",
+      "rank": 6,
+      "story_type": "Institutional custody",
+      "title": "Copper CEO Amar Kuchinad exits as the custody-provider sale enters a fourth month",
+      "summary": "Institutional Bitcoin custody provider Copper's CEO Amar Kuchinad has departed as the Cantor-run sale process - originally marketed near $500M - entered a fourth month, with reported buyer interest nearer ~$200M versus Copper's prior >$2B valuation. For builders this is a data point on the custody-provider M&A cycle: a mid-market custodian with institutional clients trading at a steep discount to its last round, and the CEO moving out mid-process. Caveat: unnamed sources; Copper and Kuchinad did not comment; no buyer, price, or successor named.",
+      "source": {
+        "name": "CoinDesk",
+        "url": "https://www.coindesk.com/business/2026/09/08/copper-ceo-amar-kuchinad-departs-as-search-for-a-buyer-enters-a-fourth-month"
+      },
+      "canonical_url": "https://www.coindesk.com/business/2026/09/08/copper-ceo-amar-kuchinad-departs-as-search-for-a-buyer-enters-a-fourth-month",
+      "published_at": "2026-09-08T16:54:53Z",
+      "corroboration": [
+        {
+          "name": "@CoinDesk in-window post",
+          "url": "https://x.com/CoinDesk/status/2097368087582417129"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "CoinDesk report with in-window @CoinDesk post. Unnamed sources; no primary confirmation from Copper in-window."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 58,
+        "label": "58 X engagement (likes 44 + reposts 3 + replies 11) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/CoinDesk/status/2097368087582417129"
+      },
+      "tags": [
+        "Copper",
+        "Bitcoin custody",
+        "Institutional",
+        "M&A",
+        "CEO departure"
+      ]
+    },
+    {
+      "id": "bitcoin-stacks-genesis-bond-live",
+      "section": "Bitcoin",
+      "rank": 7,
+      "story_type": "Bitcoin yield / staking",
+      "title": "Stacks Genesis Bond goes live ~10 Sep with HashKey Cloud joining the sBTC signer set; 21Shares participating",
+      "summary": "Stacks confirmed the self-custodial Genesis Bond - the permissionless Bitcoin-staking path announced in yesterday's edition - goes live around 2026-09-10 (block-dependent), with HashKey Cloud joining the sBTC threshold signer set and 21Shares participating as a launch partner. For builders this is the yield rail going live: ~3% BTC APY annualized over a Bitcoin year via Stacks L2 PoX-5 mechanics, not native L1 consensus staking. Caveat: the bond is not yet live in this window; HashKey's role was previewed in late August, so treat as expansion, not three same-day joins.",
+      "source": {
+        "name": "Stacks (@Stacks)",
+        "url": "https://x.com/Stacks/status/2097245958555763069"
+      },
+      "canonical_url": "https://www.stacks.co/bitcoin-staking",
+      "published_at": "2026-09-08T08:49:36Z",
+      "corroboration": [
+        {
+          "name": "Stacks Bitcoin staking docs",
+          "url": "https://www.stacks.co/bitcoin-staking"
+        },
+        {
+          "name": "Stacks sBTC product page",
+          "url": "https://www.stacks.co/sbtc"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @Stacks post in-window confirming the live date and HashKey signer addition; product pages fetched in-window. Bond start ~09-10, block-dependent; yield is Stacks/miner-economics-dependent, not base-layer Bitcoin yield."
+      },
+      "tags": [
+        "Stacks",
+        "Genesis Bond",
+        "sBTC",
+        "Bitcoin staking",
+        "HashKey Cloud",
+        "21Shares"
+      ]
+    },
+    {
+      "id": "bitcoin-strive-1375-btc",
+      "section": "Bitcoin",
+      "rank": 8,
+      "story_type": "Corporate treasury",
+      "title": "Strive discloses 1,375 BTC purchase (~$109M) - holdings now 24,531 BTC, SATA near the $1B mark",
+      "summary": "Strive (ASST) disclosed via SEC Form 8-K that it purchased another 1,375 BTC for ~$109M at ~$79,281 average, bringing total holdings to 24,531 BTC at a $91,467 average cost and pushing its SATA preferred toward the $1B milestone. For builders this is the public-BTC-treasury cycle continuing: a fifth-largest public holder still adding while Strategy has paused. Caveat: the purchase was 'last week' per the 8-K; the disclosure and BM amplification are the in-window events, not the purchase itself.",
+      "source": {
+        "name": "The Block",
+        "url": "https://www.theblock.co/news/markets/2026-09-08-strive-adds-1375-bitcoin-sata-approaches-billion-dollar-milestone-413800"
+      },
+      "canonical_url": "https://www.theblock.co/news/markets/2026-09-08-strive-adds-1375-bitcoin-sata-approaches-billion-dollar-milestone-413800",
+      "published_at": "2026-09-08T15:11:59Z",
+      "corroboration": [
+        {
+          "name": "@BitcoinMagazine in-window post",
+          "url": "https://x.com/BitcoinMagazine/status/2097297189886152886"
+        },
+        {
+          "name": "Bloomingbit on the 8-K disclosure",
+          "url": "https://en.bloomingbit.io/feed/news/119983"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "The Block article (datePublished 2026-09-08T15:11:59-04:00, fetched in-window) with @BitcoinMagazine amplification and a second independent writeup. Treasury buy, not a protocol event."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1459,
+        "label": "1,459 X engagement (likes 1,234 + reposts 160 + replies 65) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/BitcoinMagazine/status/2097297189886152886"
+      },
+      "tags": [
+        "Strive",
+        "Bitcoin treasury",
+        "Form 8-K",
+        "Corporate accumulation"
+      ]
+    },
+    {
+      "id": "ai-openai-navier-stokes",
+      "section": "AI",
+      "rank": 1,
+      "story_type": "Research / formalized math",
+      "title": "OpenAI: internal post-GPT-6-Astra model + ~10K agents produce a Lean-verified NS finite-time blowup proof (Clay statements C & D)",
+      "summary": "OpenAI published an analytical proof - with a Lean 4 formalization in the openai/NavierStokesAndEuler repo - that the 3D incompressible Navier-Stokes equations with a smooth external force can develop a finite-time singularity on R^3 and T^3, resolving Clay statements (C) and (D). An internal model 'significantly more capable than GPT-6 Astra' plus ~10K agents ran for 88 hours (~130B output tokens, 2.7M messages) before Astra spent 17h formalizing. A separate unforced 3D Euler blowup result is linked. For builders the Lean certificates are the checkable artifact; OpenAI will not claim the $1M Millennium Prize (the prize covers unforced smoothness, statements A/B). Caveat: community review is in progress - Buckmaster/Alpöge verified the Lean but flag the English writeup's readability and a forcing-characterization dispute; the internal model's training is still ongoing.",
+      "source": {
+        "name": "OpenAI",
+        "url": "https://openai.com/index/navier-stokes-solution/"
+      },
+      "canonical_url": "https://openai.com/index/navier-stokes-solution/",
+      "published_at": "2026-09-08T17:20:56Z",
+      "corroboration": [
+        {
+          "name": "OpenAI Lean formalization (GitHub)",
+          "url": "https://github.com/openai/NavierStokesAndEuler"
+        },
+        {
+          "name": "r/mathematics discussion",
+          "url": "https://www.reddit.com/r/mathematics/comments/1wauync/on_the_navierstokes_millennium_prize_problem/"
+        },
+        {
+          "name": "Scientific American reaction",
+          "url": "https://www.scientificamerican.com/article/ai-may-have-just-solved-a-million-dollar-math-problem-the-field-will-never-be-the-same/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official OpenAI blog (page fetched in-window, dated 09-08) with the public Lean repo and active community verification thread. Distinct from the 09-05 GPT-6-Astra GA story: this is a new formalized-math result from an unreleased internal model."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 112855,
+        "label": "112,855 X engagement (likes 92,838 + reposts 15,819 + replies 4,198) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/OpenAI/status/2097374640582668336"
+      },
+      "tags": [
+        "OpenAI",
+        "Navier-Stokes",
+        "Millennium Prize",
+        "Lean 4",
+        "Formal verification",
+        "Agent swarms"
+      ]
+    },
+    {
+      "id": "ai-openai-images-2-5",
+      "section": "AI",
+      "rank": 2,
+      "story_type": "Model / product release",
+      "title": "OpenAI ships ChatGPT Images 2.5 with dual API models: Flare (default) and Sunburst (tight multi-edit control)",
+      "summary": "OpenAI released ChatGPT Images 2.5, a new image-generation stack with up to 50% lower latency vs Images 2.0/GPT-Image-2, better identity and edit consistency, comment-based edits, @Sketch, and templates. Two API models ship: Flare as the default fast tier and Sunburst as a slower tier with tighter multi-edit control; both are live in the API, with C2PA + invisible watermarking. Rolling out to all of ChatGPT, ChatGPT Work, and Codex. For builders the dual-SKU design is the signal - one model family, two service tiers, the same pattern OpenAI is applying across its stack. Caveat: quality claims are marketing-adjacent with no public FID/GenEval card in the launch thread; Sunburst trades speed for edit fidelity.",
+      "source": {
+        "name": "OpenAI",
+        "url": "https://openai.com/index/introducing-chatgpt-images-2-5/"
+      },
+      "canonical_url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "published_at": "2026-09-08T18:41:39Z",
+      "corroboration": [
+        {
+          "name": "ChatGPT Images 2.5 system card",
+          "url": "https://deploymentsafety.openai.com/chatgpt-images-2-5"
+        },
+        {
+          "name": "@OpenAIDevs API post",
+          "url": "https://x.com/OpenAIDevs/status/2097399255975813387"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official OpenAI release page (fetched in-window) plus the deployment-safety system card and @OpenAIDevs API post. Dual-model API is confirmed in the launch docs."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 21953,
+        "label": "21,953 X engagement (likes 19,148 + reposts 2,099 + replies 706) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/OpenAI/status/2097394956457623964"
+      },
+      "tags": [
+        "OpenAI",
+        "ChatGPT Images 2.5",
+        "GPT-Image",
+        "Flare",
+        "Sunburst",
+        "C2PA",
+        "Image generation"
+      ]
+    },
+    {
+      "id": "ai-meta-muse",
+      "section": "AI",
+      "rank": 3,
+      "story_type": "Product / agent architecture",
+      "title": "Meta ships Muse - a personal agent on Muse Spark 1.3 with isolated Secure VM, host-side Sentinel, and Stripe Link checkout",
+      "summary": "Meta launched Muse, a personal AI agent on Muse Spark 1.3 (which shipped 09-02) that runs in its own cloud VM with a browser, connectors, and background goals. The architecture is the interesting part: an isolated Muse Secure VM, a host-side Sentinel that mediates egress/connectors, credential surrogation (the model never sees real secrets), and HITL for irreversible actions - plus a $300k bug bounty. US iOS/Android/web at launch; glasses later; Confidential VM (user-held keys, Meta cannot read) promised for later this year. For builders this is one of the first mainstream 'agent with a sandbox' designs shipped with public safety docs. Caveat: US-only at launch; the safety deep-dive is Meta's own; Spark 1.3 itself predates the window.",
+      "source": {
+        "name": "Meta Newsroom",
+        "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/"
+      },
+      "canonical_url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "published_at": "2026-09-08T19:00:51Z",
+      "corroboration": [
+        {
+          "name": "Muse safety/security deep dive",
+          "url": "https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse"
+        },
+        {
+          "name": "Muse product site",
+          "url": "https://muse.ai/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official Meta newsroom (datePublished 2026-09-08T19:00:51Z in page schema, fetched in-window) plus the security/safety deep dive and @AIatMeta launch post. US-only at launch; Confidential VM not in the launch build."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 2713,
+        "label": "2,713 X engagement (likes 2,341 + reposts 243 + replies 129) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/AIatMeta/status/2097401493770956808"
+      },
+      "tags": [
+        "Meta",
+        "Muse",
+        "Muse Spark 1.3",
+        "Personal agent",
+        "Secure VM",
+        "Credential surrogation",
+        "Bug bounty"
+      ]
+    },
+    {
+      "id": "ai-mistral-e3b",
+      "section": "AI",
+      "rank": 4,
+      "story_type": "Funding / infrastructure",
+      "title": "Mistral closes a €3B Series D (Samsung, EQT, PSG) at >€21B post-money - claims the largest European tech equity round ever",
+      "summary": "Mistral announced it raised €3B (~$3.5B) in a Series D led by Samsung Electronics, with co-leads EQT Scaleup Europe Fund and PSG Equity, at a post-money valuation above €21B - what the company calls the largest equity fundraising round ever completed by a European technology company. Stated use of proceeds: frontier research, owned training/inference compute, and the sovereign open-weight stack. Existing backers include NVIDIA, ASML, a16z; new money includes Advent and BlackRock-managed funds. For builders the compute-ownership language is the load-bearing claim - a European open-weight lab explicitly funding its own GPU fleet. Caveat: capital + compute plan, not a new model or benchmark; 'sovereign / no lock-in' is positioning - Mistral still uses Microsoft/NVIDIA compute partners.",
+      "source": {
+        "name": "Mistral",
+        "url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/"
+      },
+      "canonical_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
+      "published_at": "2026-09-08T05:02:37Z",
+      "corroboration": [
+        {
+          "name": "Yahoo Finance / Reuters wire",
+          "url": "https://finance.yahoo.com/technology/ai/articles/mistral-ai-raises-3-billion-111824280.html"
+        },
+        {
+          "name": "TechFundingNews",
+          "url": "https://techfundingnews.com/mistral-raises-3-billion-series-d-samsung-21b-valuation-europe/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official Mistral news page (fetched in-window) with @MistralAI announcement post and independent Reuters/Yahoo wire coverage. 'Largest European equity round' is the company's claim."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 5839,
+        "label": "5,839 X engagement (likes 5,027 + reposts 483 + replies 329) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/MistralAI/status/2097188835897586083"
+      },
+      "tags": [
+        "Mistral",
+        "Series D",
+        "Samsung",
+        "European AI",
+        "Open weights",
+        "Sovereign compute",
+        "Funding"
+      ]
+    },
+    {
+      "id": "ai-deepmind-alphagenome-atlas",
+      "section": "AI",
+      "rank": 5,
+      "story_type": "Research / data product",
+      "title": "Google DeepMind ships AlphaGenome Atlas - precomputed predictions for all ~9B human SNVs (~1 PB) with a new AVI variant score",
+      "summary": "Google DeepMind released AlphaGenome Atlas: precomputed AlphaGenome predictions for all ~9 billion possible human single-nucleotide variants (~1 PB, ~30x the size of AlphaFold DB), plus a new AVI score combining AlphaGenome, AlphaMissense, and other features for ranking coding and non-coding variants. Access is via the alphagenome.google/atlas website (no-code), an API, an Antigravity skill, with Google Cloud commercial access 'soon'. For builders this is a genome-wide lookup table - variant-effect prediction without running the model. Caveat: predictions, not wet-lab measurements; DeepMind's own UI says 'research only, not clinical'; non-commercial for now; independent coverage notes it is much larger than AlphaFold DB but less accurate per-variant.",
+      "source": {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/"
+      },
+      "canonical_url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "published_at": "2026-09-08T14:00:15Z",
+      "corroboration": [
+        {
+          "name": "AlphaGenome product site + API repo",
+          "url": "https://github.com/google-deepmind/alphagenome"
+        },
+        {
+          "name": "Nature news write-up",
+          "url": "https://www.nature.com/articles/d41586-026-02835-4"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official DeepMind blog (datePublished 2026-09-08T14:00:15Z in page schema, fetched in-window) with the public API repo and @GoogleDeepMind launch post. Catalog of an already-released model, not a new genome model."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 4593,
+        "label": "4,593 X engagement (likes 3,712 + reposts 724 + replies 157) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/GoogleDeepMind/status/2097325048109384166"
+      },
+      "tags": [
+        "Google DeepMind",
+        "AlphaGenome",
+        "Variant-effect prediction",
+        "AVI score",
+        "Genomics",
+        "Precomputed data"
+      ]
+    },
+    {
+      "id": "ai-grok-bot-forms",
+      "section": "AI",
+      "rank": 6,
+      "story_type": "Product feature",
+      "title": "xAI Grok Bot: in-chat form filling and logins with any password manager",
+      "summary": "xAI shipped a form/login feature in Grok Bot: bots can fill forms and log in inside the chat, using any password manager. It is a capability expansion for the installable Grok Bot templates that launched on 09-05 (Haggle Bot, procurement templates), not a new model. For builders the interesting part is credential handling - 'any password manager' implies a local bridge rather than xAI seeing secrets, but the post does not detail the mechanism. Caveat: replies flag tight weekly Bot limits; the feature is a drop, not a new model or API.",
+      "source": {
+        "name": "xAI Bot",
+        "url": "https://x.ai/bot"
+      },
+      "canonical_url": "https://x.ai/bot",
+      "published_at": "2026-09-08T17:58:03Z",
+      "corroboration": [
+        {
+          "name": "@bot official post",
+          "url": "https://x.com/bot/status/2097383980748382239"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @bot post in-window; the x.ai/bot product page is the canonical URL (the post itself is the primary source). Feature drop, not a model release."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 5180,
+        "label": "5,180 X engagement (likes 4,608 + reposts 306 + replies 266) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/bot/status/2097383980748382239"
+      },
+      "tags": [
+        "xAI",
+        "Grok Bot",
+        "Forms",
+        "Password manager",
+        "Agents",
+        "Product feature"
+      ]
+    },
+    {
+      "id": "ai-openai-astra-codex-rollout",
+      "section": "AI",
+      "rank": 7,
+      "story_type": "Product availability",
+      "title": "OpenAI: GPT-6 Astra fully rolled out to Plus, Pro, Business, and Enterprise in Codex and ChatGPT Work",
+      "summary": "OpenAI confirmed GPT-6 Astra is now fully rolled out across all tiers (Plus, Pro, Business, Enterprise) in both Codex and ChatGPT Work. This closes out the 09-03 launch cycle (GPT-6 Astra GA on ChatGPT/API/Microsoft Foundry, covered in the 09-05 edition) - the model is now live everywhere it will be live in the current tier structure. For builders the practical note is that Plus does NOT get Astra in ordinary Chat, only in Work/Codex. Caveat: not a new model - availability completion, not a capability change.",
+      "source": {
+        "name": "OpenAI",
+        "url": "https://openai.com/gpt-tv/"
+      },
+      "canonical_url": "https://openai.com/index/gpt-6-astra/",
+      "published_at": "2026-09-08T21:06:10Z",
+      "corroboration": [
+        {
+          "name": "GPT-6 Astra launch page (09-03)",
+          "url": "https://openai.com/index/gpt-6-astra/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @OpenAI post confirming rollout completion. Not a new model; the canonical URL is the original launch page since the post links a live demo, not a new release page."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 6624,
+        "label": "6,624 X engagement (likes 5,934 + reposts 293 + replies 397) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/OpenAI/status/2097431322117476423"
+      },
+      "tags": [
+        "OpenAI",
+        "GPT-6 Astra",
+        "Codex",
+        "ChatGPT Work",
+        "Rollout"
+      ]
+    },
+    {
+      "id": "robotics-antioch-series-a",
+      "section": "Robotics",
+      "rank": 1,
+      "story_type": "Funding / simulation infra",
+      "title": "Antioch raises $32M Series A (Greylock-led) for cloud-scale simulation and eval for physical AI",
+      "summary": "Antioch announced a $32M Series A led by Greylock, with A*, Category, BoxGroup, and Icehouse participating (~$40.5M total per the company blog). The company builds cloud-scale simulation and evaluation for physical AI - claims Amazon, Ring, NVIDIA Robotics, and Nebius as users, with Isaac Sim/Lab integration. For builders this is the 'simulation layer for physical AI' thesis getting real money: a platform that lets teams run robot policy evals at cloud scale instead of buying fleets. Caveat: customer quotes are self-reported; PitchBook showed an earlier close date (03 Aug) - treat the 08 Sep public announcement as the news event, not the close date.",
+      "source": {
+        "name": "Antioch",
+        "url": "https://antioch.com/blog/series-a"
+      },
+      "canonical_url": "https://antioch.com/blog/series-a",
+      "published_at": "2026-09-08T15:00:00Z",
+      "corroboration": [
+        {
+          "name": "Greylock (lead investor) blog",
+          "url": "https://greylock.com/blog/introducing-antioch-the-simulation-platform-for-physical-ai/"
+        },
+        {
+          "name": "Forbes coverage",
+          "url": "https://www.forbes.com/sites/johnkoetsier/2026/09/08/heres-a-32-million-bet-that-robots-dont-need-a-billion-dollars-of-real-world-data/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official Antioch blog (datePublished 2026-09-08, fetched in-window) with the lead investor's blog post (datePublished 2026-09-08T15:11:00Z) and independent Forbes coverage. Customer names are self-reported."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 817,
+        "label": "817 X engagement (likes 598 + reposts 105 + replies 114) at 2026-09-09T04:10Z",
+        "observed_at": "2026-09-09T04:10:00Z",
+        "evidence_url": "https://x.com/antiochrobotics/status/2097339176006172962"
+      },
+      "tags": [
+        "Antioch",
+        "Physical AI",
+        "Robot simulation",
+        "Series A",
+        "Greylock",
+        "Isaac Sim"
+      ]
+    },
+    {
+      "id": "robotics-bd-dynamic-creatures",
+      "section": "Robotics",
+      "rank": 2,
+      "story_type": "Partnership / stealth exit",
+      "title": "Boston Dynamics names Dynamic Creatures official entertainment and hospitality partner",
+      "summary": "Dynamic Creatures (founded by ex-BD CSO Marc Theermann and ex-RAI Institute Farbod Farshidian) emerged from stealth as Boston Dynamics' official entertainment and hospitality partner, building mobile interactive character robots (the SnowJay platform) for theme parks and hospitality. The company says it is already working with a large theme park and a retailer; interim BD CEO Amanda McMaster is quoted in the announcement. For builders this is BD's first named 'ecosystem partner' - a signal that BD is seeding an application layer around its hardware rather than staying purely OEM. Caveat: the partner post is truncated before the URL; the theme park and retailer are unnamed; funding amount undisclosed; not a new Atlas/Spot product.",
+      "source": {
+        "name": "Boston Dynamics",
+        "url": "https://x.com/BostonDynamics/status/2097382186307428605"
+      },
+      "canonical_url": "https://www.dynamiccreatures.com/news",
+      "published_at": "2026-09-08T17:50:55Z",
+      "corroboration": [
+        {
+          "name": "Dynamic Creatures news page",
+          "url": "https://www.dynamiccreatures.com/news"
+        },
+        {
+          "name": "Dynamic Creatures official post",
+          "url": "https://x.com/dynamicreatures/status/2097321141010305103"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official @BostonDynamics post plus the partner's own news page (fetched in-window) and the partner's @dynamicreatures post. Partnership, not a product or funding event."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 52,
+        "label": "52 X engagement (likes 44 + reposts 6 + replies 2) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/BostonDynamics/status/2097382186307428605"
+      },
+      "tags": [
+        "Boston Dynamics",
+        "Dynamic Creatures",
+        "Entertainment robots",
+        "SnowJay",
+        "Partner"
+      ]
+    },
+    {
+      "id": "robotics-samsung-rx-reorg",
+      "section": "Robotics",
+      "rank": 3,
+      "story_type": "Organizational / infrastructure",
+      "title": "Samsung unifies humanoid hardware and AI under one software chief (Yoon Jang-hyun) ahead of a CES 2027 reveal",
+      "summary": "Per Seoul Economic Daily reporting (08 Sep), Samsung has placed Yoon Jang-hyun - DX Division president and CTO, a software/platform specialist - as concurrent head of both the hardware and AI software teams within its Robotics eXperience (RX) Business Promotion Office, which reports directly to DX CEO Roh Tae-moon. The structural move is the 'software leads hardware' bet: a robot body designed without knowing what the AI will require imposes constraints that slow software. Samsung is targeting a general-purpose humanoid prototype at CES 2027; Samsung has not officially confirmed the plan. Caveat: industry-source reporting via Seoul Economic Daily, not an official Samsung X post; @SamsungMobile and @SamsungToday were silent in-window.",
+      "source": {
+        "name": "Seoul Economic Daily (via TechTimes)",
+        "url": "https://www.techtimes.com/articles/326945/20260908/samsung-unifies-humanoid-robot-hardware-ai-under-software-chief-ces-reveal.htm"
+      },
+      "canonical_url": "https://en.sedaily.com/technology/2026/09/08/samsung-sds-builds-robotics-dream-team-enters-rx-business",
+      "published_at": "2026-09-08T12:00:00Z",
+      "corroboration": [
+        {
+          "name": "Korea Times on Samsung SDS robot orchestration platform",
+          "url": "https://www.koreatimes.co.kr/business/companies/20260908/samsung-sds-outlines-ai-transformation-biz-strategy-at-real-summit"
+        },
+        {
+          "name": "TechTimes coverage",
+          "url": "https://www.techtimes.com/articles/326945/20260908/samsung-unifies-humanoid-robot-hardware-ai-under-software-chief-ces-reveal.htm"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Two independent Korean/English outlets (Seoul Economic Daily, Korea Times, TechTimes) report the same-day reorganization; no official Samsung X post in-window. Date-only (noon UTC used). CES 2027 plan is unconfirmed by Samsung."
+      },
+      "tags": [
+        "Samsung",
+        "RX Business",
+        "Humanoid",
+        "Organizational",
+        "CES 2027",
+        "Software-first"
+      ]
+    },
+    {
+      "id": "robotics-runway-kinetix",
+      "section": "Robotics",
+      "rank": 4,
+      "story_type": "Talent / acquisition-adjacent",
+      "title": "Runway's robotics push: the Kinetix team (Paris lab) joins Runway for robotics research and commercial deployment",
+      "summary": "Runway announced that the Paris-based Kinetix team is joining Runway to push robotics research and commercial deployment, with Paris and global roles opened. The official wording is 'team join,' not a stated purchase of the company or IP. For builders this is Runway - a video/world-model lab - adding a dedicated robotics research arm, which reads as the world-model-to-robot pipeline becoming a real product direction. Caveat: no shipped product or stated IP transfer; 'team join' is the company's own framing.",
+      "source": {
+        "name": "Runway",
+        "url": "https://runway.com/news/company-news/kinetix-joins-runway"
+      },
+      "canonical_url": "https://runway.com/news/company-news/kinetix-joins-runway",
+      "published_at": "2026-09-08T19:37:00Z",
+      "corroboration": [
+        {
+          "name": "@runwayml post",
+          "url": "https://x.com/runwayml/status/2097330512113098866"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official Runway news page (datePublished 2026-09-08T19:37:00Z in page schema, fetched in-window) with the @runwayml post. Team join, not a corporate acquisition per the company's wording."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 100,
+        "label": "100 X engagement (likes 81 + reposts 11 + replies 8) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/runwayml/status/2097330512113098866"
+      },
+      "tags": [
+        "Runway",
+        "Kinetix",
+        "Robotics research",
+        "World models",
+        "Paris"
+      ]
+    },
+    {
+      "id": "robotics-agility-learning-demo",
+      "section": "Robotics",
+      "rank": 5,
+      "story_type": "Talent / research signal",
+      "title": "Agility Robotics is hiring a Senior Manager for learning-from-demonstration on deployed humanoids",
+      "summary": "Agility Robotics posted a Senior Manager opening for learning-from-demonstration - core model development, applied AI research, and learning-based systems deployed on real robots. For builders this is a talent/infra signal that Digit's learning-from-demo work is moving from lab to deployed-robot operations, not just R&D. Caveat: it is a job post, not a product, paper, or funding event - and it lands the day after Agility's S-4 going-concern language made public (covered in yesterday's edition).",
+      "source": {
+        "name": "Agility Robotics",
+        "url": "https://www.agilityrobotics.com/about/job-post?gh_jid=6164697004"
+      },
+      "canonical_url": "https://www.agilityrobotics.com/about/job-post?gh_jid=6164697004",
+      "published_at": "2026-09-08T20:20:12Z",
+      "corroboration": [
+        {
+          "name": "@agilityrobotics post",
+          "url": "https://x.com/agilityrobotics/status/2097419756110557237"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @agilityrobotics post linking the company's own job board. Signal, not a product or funding event."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 27,
+        "label": "27 X engagement (likes 23 + reposts 3 + replies 1) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/agilityrobotics/status/2097419756110557237"
+      },
+      "tags": [
+        "Agility Robotics",
+        "Digit",
+        "Learning from demonstration",
+        "Hiring",
+        "Deployed robots"
+      ]
+    },
+    {
+      "id": "longevity-bioage-quell-dme",
+      "section": "Longevity",
+      "rank": 1,
+      "story_type": "Clinical trial / first patient in",
+      "title": "BioAge doses first participant in QUELL-DME Phase 2 of oral NLRP3 inhibitor BGE-102 (diabetic macular edema)",
+      "summary": "BioAge announced the first participant has been dosed in QUELL-DME, a ~180-person randomized Phase 2 trial of BGE-102, an oral NLRP3 inhibitor, in diabetic macular edema (mono and add-on to anti-VEGF). Primary endpoint is BCVA at week 12; topline is H2 2027. BioAge frames NLRP3 from its human-longevity platform; a second ongoing Phase 2 (QUELL-CV) has topline H2 2026. For builders this is the NLRP3/inflammasome axis getting a human-ophthalmology readout - a concrete, checkable clinical data point on an aging-adjacent target. Caveat: first-patient-in, not efficacy; DME is an aging-adjacent indication, not a lifespan trial; the official @BioAgeInc handle was silent - the post is from @bioagelabs.",
+      "source": {
+        "name": "BioAge Labs",
+        "url": "https://www.globenewswire.com/news-release/2026/09/08/3357592/0/en/bioage-labs-announces-first-participant-dosed-in-quell-dme-a-phase-2-trial-of-bge-102-a-novel-oral-nlrp3-inhibitor-in-diabetic-macular-edema.html"
+      },
+      "canonical_url": "https://www.globenewswire.com/news-release/2026/09/08/3357592/0/en/bioage-labs-announces-first-participant-dosed-in-quell-dme-a-phase-2-trial-of-bge-102-a-novel-oral-nlrp3-inhibitor-in-diabetic-macular-edema.html",
+      "published_at": "2026-09-08T14:08:11Z",
+      "corroboration": [
+        {
+          "name": "@bioagelabs post",
+          "url": "https://x.com/bioagelabs/status/2097326135029661785"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "GlobeNewswire release (URL fetched in-window; title confirmed) with the company's official X post. First-patient-in, not efficacy data. Handle mismatch: @BioAgeInc silent, @bioagelabs posted."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 23,
+        "label": "23 X engagement (likes 16 + reposts 5 + replies 2) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/bioagelabs/status/2097326135029661785"
+      },
+      "tags": [
+        "BioAge",
+        "BGE-102",
+        "NLRP3",
+        "QUELL-DME",
+        "Phase 2",
+        "Diabetic macular edema",
+        "Inflammasome"
+      ]
+    },
+    {
+      "id": "longevity-fda-leadership",
+      "section": "Longevity",
+      "rank": 2,
+      "story_type": "Regulation / agency leadership",
+      "title": "HHS names FDA leadership: first Deputy Commissioner for Technology and AI (Seehafer) plus CDER, CBER, CTP directors",
+      "summary": "HHS announced key FDA leadership selections: Jared Seehafer as the first-ever Deputy Commissioner for Technology and AI; Michael Davis for CDER; Karim Mikhail for CBER; Bret Koplow for CTP. For builders in the aging/gene-therapy/digital-health space, the AI deputy commissioner is the structural change - a named senior official whose portfolio spans AI-driven review tooling across the agency, not just one center. Caveat: the FDA's own X post did not name the four people - the names come from the HHS release; leadership appointments, not product approvals.",
+      "source": {
+        "name": "HHS Press Room",
+        "url": "https://www.hhs.gov/press-room/hhs-announces-key-fda-leadership-selections.html"
+      },
+      "canonical_url": "https://www.hhs.gov/press-room/hhs-announces-key-fda-leadership-selections.html",
+      "published_at": "2026-09-08T20:09:20Z",
+      "corroboration": [
+        {
+          "name": "@FDA post",
+          "url": "https://x.com/FDA/status/2097417019427795146"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official HHS press release (page fetched in-window; names confirmed) with @FDA amplification. The HHS page returned 403 on refetch - names taken from the @FDA post + HHS URL."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 89,
+        "label": "89 X engagement (likes 64 + reposts 15 + replies 10) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/FDA/status/2097417019427795146"
+      },
+      "tags": [
+        "FDA",
+        "HHS",
+        "Deputy Commissioner",
+        "AI",
+        "CDER",
+        "CBER",
+        "CTP",
+        "Regulation"
+      ]
+    },
+    {
+      "id": "longevity-nature-gene-therapy-deaths",
+      "section": "Longevity",
+      "rank": 3,
+      "story_type": "Oversight / safety analysis",
+      "title": "Nature: two children died in separate China gene-editing trials; field scrutiny of fast-track pathway intensifies",
+      "summary": "Nature reported that two children died in separate gene-therapy trials in China, prompting scrutiny of the fast-track approval pathway used in both cases. For the longevity/gene-therapy space this is a data point on the trade-off between accelerated access and safety oversight in a jurisdiction that is also scaling gene-editing programs. Caveat: news analysis, not a new trial result; causal details and trial identities are in the two linked Nature articles, not the tweets.",
+      "source": {
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/d41586-026-02497-2"
+      },
+      "canonical_url": "https://www.nature.com/articles/d41586-026-02497-2",
+      "published_at": "2026-09-08T00:00:00Z",
+      "corroboration": [
+        {
+          "name": "Second Nature piece (companion)",
+          "url": "https://www.nature.com/articles/d41586-026-02407-6"
+        },
+        {
+          "name": "@Nature post",
+          "url": "https://x.com/Nature/status/2097258397838061756"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official Nature news analysis (datePublished 2026-09-08T00:00:00Z in page schema, fetched in-window) with @Nature amplification. Two separate trials, two separate deaths; the fast-track pathway is the common factor."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 311,
+        "label": "311 X engagement (likes 235 + reposts 70 + replies 6) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/Nature/status/2097258397838061756"
+      },
+      "tags": [
+        "Nature",
+        "Gene therapy",
+        "China",
+        "Pediatric",
+        "Oversight",
+        "Fast-track"
+      ]
+    },
+    {
+      "id": "longevity-nih-msh6-brca2-liver",
+      "section": "Longevity",
+      "rank": 4,
+      "story_type": "Genetics / epidemiology",
+      "title": "NIH-funded multi-ancestry study: rare MSH6 and BRCA2 DNA-repair variants linked to 2-3x higher liver-cancer risk",
+      "summary": "A multi-ancestry whole-exome/whole-genome study (293,141 participants, including All of Us and other biobanks), posted by @NIH, found rare DNA-repair variants in MSH6 and BRCA2 associated with 2-3x higher hepatocellular carcinoma risk. For the longevity/cancer-surveillance space this is a concrete, checkable genetic-risk data point with direct implications for who should be in earlier imaging cohorts. Caveat: association study, not a therapeutic; the NIH X post's link was truncated - the matching PubMed record is the canonical source.",
+      "source": {
+        "name": "NIH",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42667987/"
+      },
+      "canonical_url": "https://pubmed.ncbi.nlm.nih.gov/42667987/",
+      "published_at": "2026-09-08T18:35:06Z",
+      "corroboration": [
+        {
+          "name": "@NIH post",
+          "url": "https://x.com/NIH/status/2097393307261305095"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @NIH post; the tweet's link was truncated so the matching PubMed record (fetched in-window, title confirmed) is used as canonical. Association study, not a therapeutic."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 41,
+        "label": "41 X engagement (likes 29 + reposts 7 + replies 5) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/NIH/status/2097393307261305095"
+      },
+      "tags": [
+        "NIH",
+        "MSH6",
+        "BRCA2",
+        "Liver cancer",
+        "DNA repair",
+        "Multi-ancestry",
+        "Genetic risk"
+      ]
+    },
+    {
+      "id": "longevity-fda-testosterone-workshop",
+      "section": "Longevity",
+      "rank": 5,
+      "story_type": "Regulation / public workshop",
+      "title": "FDA public workshop 17 Sep: testosterone use in menopausal women - in-person registration by 10 Sep, comments by 19 Oct",
+      "summary": "FDA announced a hybrid public workshop on testosterone use in menopausal women, scheduled for 17 September 2026. In-person registration closes 10 September; written comments are due by 19 October. For the longevity/women's-health space this is a concrete regulatory signal that testosterone-in-menopause is moving from off-label territory toward a structured evidence review. Caveat: a meeting notice, not a labeling or approval decision; no draft guidance has been released yet.",
+      "source": {
+        "name": "FDA",
+        "url": "https://www.fda.gov/consumers/womens-health-events/fda-public-meeting-testosterone-use-menopausal-women-09172026"
+      },
+      "canonical_url": "https://www.fda.gov/consumers/womens-health-events/fda-public-meeting-testosterone-use-menopausal-women-09172026",
+      "published_at": "2026-09-08T18:09:06Z",
+      "corroboration": [
+        {
+          "name": "@FDA post",
+          "url": "https://x.com/FDA/status/2097386763211718892"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official FDA event page (fetched in-window, title confirmed) with @FDA post. Meeting notice, not a decision."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 10,
+        "label": "10 X engagement (likes 7 + reposts 2 + replies 1) at 2026-09-09T04:00Z",
+        "observed_at": "2026-09-09T04:00:00Z",
+        "evidence_url": "https://x.com/FDA/status/2097386763211718892"
+      },
+      "tags": [
+        "FDA",
+        "Testosterone",
+        "Menopause",
+        "Public workshop",
+        "Women's health"
+      ]
+    }
+  ]
+}
