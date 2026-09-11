@@ -48,9 +48,10 @@ EDITORIAL AND EVIDENCE RULES
 
 WEBSITE UPDATE
 1. Read docs/news.schema.json and public/data/news.json before drafting.
-2. Write daily-news-candidate.json matching schema_version 1 exactly. Keep sections exactly ["Bitcoin", "AI", "Robotics", "Longevity"]. Use edition.status "live", today's local date, and a timezone-aware updated_at.
-3. Validate the 12-story minimum, 4–8 target per topic, unique event IDs, honest evidence labels, and global ranking. Select the most consequential fresh technical release as lead_story_id.
-4. Run these gates in order:
+2. DRAFTING CHECKPOINT: Never draft the complete candidate in one model response. Write one section file at a time (`/tmp/news-bitcoin.json`, `/tmp/news-ai.json`, `/tmp/news-robotics.json`, `/tmp/news-longevity.json`), validate each as a JSON array, then assemble daily-news-candidate.json programmatically with Python, assigning unique global ranks and the selected lead_story_id. This bounds each generation and prevents a large final JSON tool call from timing out.
+3. Write daily-news-candidate.json matching schema_version 1 exactly. Keep sections exactly ["Bitcoin", "AI", "Robotics", "Longevity"]. Use edition.status "live", today's local date, and a timezone-aware updated_at.
+4. Validate the 12-story minimum, 4–8 target per topic, unique event IDs, honest evidence labels, and global ranking. Select the most consequential fresh technical release as lead_story_id.
+5. Run these gates in order:
    cd /home/kos/personal-newspaper && python3 scripts/build.py validate --production daily-news-candidate.json
    cd /home/kos/personal-newspaper && python3 scripts/build.py ingest daily-news-candidate.json
    cd /home/kos/personal-newspaper && python3 scripts/build.py build

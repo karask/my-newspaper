@@ -129,6 +129,15 @@ class EditorialAutomationTests(unittest.TestCase):
         ]:
             self.assertIn(token, self.prompt)
 
+    def test_pipeline_drafts_large_editions_in_bounded_sections(self):
+        for token in [
+            "DRAFTING CHECKPOINT",
+            "Never draft the complete candidate in one model response",
+            "one section file at a time",
+            "assemble daily-news-candidate.json programmatically",
+        ]:
+            self.assertIn(token, self.prompt)
+
     def test_pipeline_has_broad_coverage_and_catchup_gates(self):
         for token in [
             "16–30 stories total",
