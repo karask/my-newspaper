@@ -1,0 +1,935 @@
+{
+  "schema_version": 1,
+  "edition": {
+    "date": "2026-09-12",
+    "title": "The Daily Signal",
+    "kicker": "Primary-source tech intelligence, compiled from the live wire.",
+    "status": "live",
+    "updated_at": "2026-09-12T04:36:20.538552+00:00"
+  },
+  "sections": [
+    "Bitcoin",
+    "AI",
+    "Robotics",
+    "Longevity"
+  ],
+  "lead_story_id": "ai-cursor-projects-launch",
+  "stories": [
+    {
+      "id": "bitcoin-blockstream-liquid-ransom",
+      "section": "Bitcoin",
+      "story_type": "development",
+      "title": "Blockstream refuses the ransom: 'Return the bitcoin' for the remaining ~598.5 BTC from the Liquid exploit",
+      "summary": "Blockstream said it will not pay a bounty for the ~598.5 BTC still held from the September 6 Liquid Network exploit (~4,000 BTC minted via an Elements range-proof caching bug; ~3,400 already returned). It calls the withholding 'a crime, not responsible disclosure' and will pursue law enforcement and forensics. Liquid resumed trading but peg-outs stay disabled while the BTC/LBTC reserve is restored. Builders should care: it is a live test case for who funds recovery of a permissionless sidechain's backing.",
+      "source": {
+        "name": "@Blockstream official post",
+        "url": "https://x.com/Blockstream/status/2098281867908690394"
+      },
+      "canonical_url": "https://www.theblock.co/news/ecosystems/2026-09-11-return-the-bitcoin-blockstream-refuses-ransom-demand-for-remaining-600-btc-from-liquid-exploit-414247",
+      "published_at": "2026-09-11T05:25:56+00:00",
+      "corroboration": [
+        {
+          "name": "The Block report",
+          "url": "https://www.theblock.co/news/ecosystems/2026-09-11-return-the-bitcoin-blockstream-refuses-ransom-demand-for-remaining-600-btc-from-liquid-exploit-414247"
+        },
+        {
+          "name": "Bitcoin Magazine",
+          "url": "https://bitcoinmagazine.com/news/blockstream-tells-demands-bitcoin"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @Blockstream statement post (05:25:56 UTC) is the primary record; no official blog URL was posted, so the canonical page is an independent write-up. The exploit and most of the return predate this window."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 2280,
+        "label": "2,280 total engagement on the @Blockstream post (1,423 likes, 188 reposts, 669 replies)",
+        "observed_at": "2026-09-12T04:20:00+00:00",
+        "evidence_url": "https://x.com/Blockstream/status/2098281867908690394"
+      },
+      "tags": [
+        "liquid",
+        "blockstream",
+        "exploit",
+        "custody"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "bitcoin-unicredit-custody",
+      "section": "Bitcoin",
+      "story_type": "institutional",
+      "title": "UniCredit is weighing a digital-asset custody and brokerage push with a vendor selection underway",
+      "summary": "Italy's second-largest bank is selecting a technology vendor for digital-asset custody and brokerage, with tokenized products, stablecoins and crypto exposure in discussion. This is an early-stage report from anonymous sources - UniCredit declined to comment and says no final decision has been made. It matters because a systemically important EU bank running custody/brokerage would anchor the tokenization and RWA pipelines already moving in Europe.",
+      "source": {
+        "name": "@BitcoinMagazine post",
+        "url": "https://x.com/BitcoinMagazine/status/2098436262814159259"
+      },
+      "canonical_url": "https://bitcoinmagazine.com/news/unicredit-working-on-crypto-custody",
+      "published_at": "2026-09-11T18:47:07+00:00",
+      "corroboration": [
+        {
+          "name": "Bitcoin Magazine report",
+          "url": "https://bitcoinmagazine.com/news/unicredit-working-on-crypto-custody"
+        },
+        {
+          "name": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-09-11/unicredit-eyes-digital-asset-push-with-custody-brokerage-tech"
+        }
+      ],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "Bloomberg-sourced reporting; UniCredit has not confirmed. Published 13:47 UTC-05:00 on the Bitcoin Magazine page."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1183,
+        "label": "1,183 total engagement on the @BitcoinMagazine post (988 likes, 120 reposts, 75 replies)",
+        "observed_at": "2026-09-12T04:20:00+00:00",
+        "evidence_url": "https://x.com/BitcoinMagazine/status/2098436262814159259"
+      },
+      "tags": [
+        "custody",
+        "banks",
+        "europe",
+        "institutional"
+      ],
+      "rank": 2
+    },
+    {
+      "id": "bitcoin-zodia-custody-ceo",
+      "section": "Bitcoin",
+      "story_type": "corporate",
+      "title": "Zodia Custody CEO Julian Sawyer steps down to adviser as the Standard Chartered-linked custody split advances",
+      "summary": "The institutional digital-asset custodian is preparing an operational split, with its CEO moving to an adviser role per an internal memo. Yesterday's edition covered the Standard Chartered custody angle from Block/press; this is a new personnel and restructuring development confirmed by CoinDesk. Institutional builders tracking custody consolidation should watch how the split re-divides the asset-custody and staking business lines.",
+      "source": {
+        "name": "@CoinDesk post",
+        "url": "https://x.com/CoinDesk/status/2098407087944478829"
+      },
+      "canonical_url": "https://www.coindesk.com/business/2026/09/11/zodia-custody-ceo-julian-sawyer-steps-down-becomes-adviser",
+      "published_at": "2026-09-11T13:43:30+00:00",
+      "corroboration": [
+        {
+          "name": "CoinDesk article",
+          "url": "https://www.coindesk.com/business/2026/09/11/zodia-custody-ceo-julian-sawyer-steps-down-becomes-adviser"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Based on an internal memo seen by CoinDesk, not a company press release. New personnel event on 11 Sep; the underlying SC custody angle was already covered in the 09-10/09-11 editions."
+      },
+      "tags": [
+        "custody",
+        "institutional",
+        "standard-chartered"
+      ],
+      "rank": 3
+    },
+    {
+      "id": "bitcoin-sbf-supreme-court-petition",
+      "section": "Bitcoin",
+      "story_type": "legal",
+      "title": "Sam Bankman-Fried petitions the Supreme Court for a new trial and to vacate the ~$11B forfeiture",
+      "summary": "The FTX founder's lawyers filed a cert petition seeking to vacate his conviction and the roughly $11 billion forfeiture, arguing evidentiary and Eighth Amendment issues. Filing was reported 10 Sep; the petition's public footprint lands inside this window. SCOTUS grants about 1% of cert petitions, so it is a legal milestone rather than a market event, but it keeps the largest crypto forfeiture live in appellate court.",
+      "source": {
+        "name": "@CoinDesk post",
+        "url": "https://x.com/CoinDesk/status/2098384436781818069"
+      },
+      "canonical_url": "https://www.cnn.com/2026/09/10/politics/sam-bankman-fried-appeals-conviction-to-supreme-court",
+      "published_at": "2026-09-10T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "CoinDesk analysis",
+          "url": "https://www.coindesk.com/news-analysis/2026/09/11/the-legal-drama-of-imprisoned-sam-bankman-fried-is-waiting-on-its-last-act"
+        },
+        {
+          "name": "CNN",
+          "url": "https://www.cnn.com/2026/09/10/politics/sam-bankman-fried-appeals-conviction-to-supreme-court"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Filing reported 10 Sep (just outside the 30h window; kept as the freshest distinct SBF event with canonical URL absent from the edition and archives). CNN exposes a date only; noon UTC used."
+      },
+      "tags": [
+        "legal",
+        "ftx",
+        "supreme-court"
+      ],
+      "rank": 4
+    },
+    {
+      "id": "bitcoin-sebi-demat-2-0-tokenization",
+      "section": "Bitcoin",
+      "story_type": "catch-up",
+      "title": "Catch-up: SEBI launches Demat 2.0 - a live tokenized-corporate-bond pilot with digital-rupee settlement",
+      "summary": "India's securities regulator confirmed a successful pilot that tokenizes corporate bonds in the country's ~$620B corporate-bond market with digital-rupee settlement, with CoinDesk detailing the infrastructure on 11 Sep. It is the clearest state-run RWA pipeline outside the US and a template for how regulators will handle tokenized T-bill/corporate-bond rails. The SEBI statement is dated 10 Sep (72h catch-up); the canonical URL is absent from the edition and archives.",
+      "source": {
+        "name": "@CoinDesk post",
+        "url": "https://x.com/CoinDesk/status/2098435660361187639"
+      },
+      "canonical_url": "https://www.sebi.gov.in/media-and-notifications/press-releases/sep-2026/successful-launch-of-demat-2-0-pilot-project-for-tokenised-corporate-bonds_104418.html",
+      "published_at": "2026-09-10T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "CoinDesk report",
+          "url": "https://www.coindesk.com/markets/2026/09/11/india-starts-tokenizing-usd620-billion-corporate-bond-market-with-digital-rupee-settlement"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official SEBI press release (date-only, 10 Sep; noon UTC used). CoinDesk coverage 11 Sep confirms the digital-rupee settlement detail."
+      },
+      "tags": [
+        "rwa",
+        "tokenization",
+        "india",
+        "regulation"
+      ],
+      "rank": 5
+    },
+    {
+      "id": "bitcoin-stacks-stack-sats",
+      "section": "Bitcoin",
+      "story_type": "product",
+      "title": "Stacks launches Stack Sats: 1 BTC a month (3 BTC total) DeFi rewards program on BTC DeFi",
+      "summary": "Stacks opened pre-registration for Stack Sats, paying out 1 BTC per month (3 BTC total) for using BTC on Stacks - Bitflow LP/trading and Zest sBTC/USDCx. Bitflow incentives start 16 Sep. Staking is now live (Genesis Bond era) and this adds an incentive layer on top of BTC DeFi. Caveat: it is an incentive program, not a protocol upgrade, and the payout pool is small relative to BTC supply.",
+      "source": {
+        "name": "@Stacks official post",
+        "url": "https://x.com/Stacks/status/2098438358611702103"
+      },
+      "canonical_url": "https://www.stacks.co/blog/stack-sats-the-1-btc-a-month-defi-rewards-program-on-stacks",
+      "published_at": "2026-09-11T15:44:47+00:00",
+      "corroboration": [
+        {
+          "name": "Stacks blog",
+          "url": "https://www.stacks.co/blog/stack-sats-the-1-btc-a-month-defi-rewards-program-on-stacks"
+        },
+        {
+          "name": "@Stacks staking-live post",
+          "url": "https://x.com/Stacks/status/2098406462213287940"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @Stacks announcement with a dated blog post (15:44:47 UTC)."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 112,
+        "label": "112 total engagement on the @Stacks post (81 likes, 24 reposts, 7 replies)",
+        "observed_at": "2026-09-12T04:20:00+00:00",
+        "evidence_url": "https://x.com/Stacks/status/2098438358611702103"
+      },
+      "tags": [
+        "stacks",
+        "defi",
+        "staking",
+        "btc"
+      ],
+      "rank": 6
+    },
+    {
+      "id": "ai-cursor-projects-launch",
+      "section": "AI",
+      "story_type": "product-release",
+      "title": "Cursor ships Projects: persistent, cloud-by-default coordinator agents for teams",
+      "summary": "Cursor launched Projects - a persistent agent coordinator that runs cloud-by-default, holds shared artifacts, and can subscribe to Slack channels, PRs and schedules. Cursor reports new users ship +30% more merged PRs and heavy Projects users work 6x more on internal tasks. It is in beta and rolling out. For builders: this is the multi-agent harness pattern moving from labs into the dominant code editor, and the artifact/subscription model is a template for agentic dev tooling.",
+      "source": {
+        "name": "@cursor_ai official post",
+        "url": "https://x.com/cursor_ai/status/2098162488013455784"
+      },
+      "canonical_url": "https://cursor.com/blog/projects",
+      "published_at": "2026-09-10T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "Cursor blog",
+          "url": "https://cursor.com/blog/projects"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @cursor_ai post 10 Sep 21:31 UTC with the official blog (dated 12:00 UTC 10 Sep). Beta, rolling out; the post sits 10 seconds inside the 30h cut."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 11348,
+        "label": "11,348 total engagement on the @cursor_ai post (10,232 likes, 599 reposts, 517 replies)",
+        "observed_at": "2026-09-12T04:20:00+00:00",
+        "evidence_url": "https://x.com/cursor_ai/status/2098162488013455784"
+      },
+      "tags": [
+        "cursor",
+        "coding-agent",
+        "multi-agent",
+        "product"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "ai-openai-habitat-storage",
+      "section": "AI",
+      "story_type": "engineering",
+      "title": "OpenAI details Habitat: ChatGPT's online storage layer at 70M+ RPS and 500+ PB",
+      "summary": "OpenAI published part one of 'Rapidly scaling online storage to serve over 1 billion ChatGPT users', describing Habitat - the online storage layer behind ChatGPT/Codex at 70M+ RPS, 500+ PB across ~40 regions on Cosmos DB, Nanobase and Valkey. The X post says the Python service hit >20M RPS before a Rust rewrite; the blog documents the asyncio delay, connection pooling and process fan-out work. Builders should care: it is a rare first-party look at serving state for a billion-user agent workload, and the Python-to-Rust path is a cost story.",
+      "source": {
+        "name": "@OpenAIDevs official post",
+        "url": "https://x.com/OpenAIDevs/status/2098502006935814272"
+      },
+      "canonical_url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+      "published_at": "2026-09-11T20:00:41+00:00",
+      "corroboration": [
+        {
+          "name": "OpenAI engineering blog",
+          "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @OpenAIDevs post with the official blog (dated 11 Sep). Part one of a series; the Rust rewrite is asserted on X and the blog defers later architecture."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 3087,
+        "label": "3,087 total engagement on the @OpenAIDevs post (2,863 likes, 153 reposts, 71 replies)",
+        "observed_at": "2026-09-12T04:20:00+00:00",
+        "evidence_url": "https://x.com/OpenAIDevs/status/2098502006935814272"
+      },
+      "tags": [
+        "openai",
+        "infrastructure",
+        "storage",
+        "scaling"
+      ],
+      "rank": 2
+    },
+    {
+      "id": "ai-openai-gpt-rosalind-trusted-access",
+      "section": "AI",
+      "story_type": "product-update",
+      "title": "GPT-Rosalind leaves research preview: trusted access worldwide via API, Codex and ChatGPT Enterprise",
+      "summary": "OpenAI's life-sciences model series GPT-Rosalind is now in trusted access globally through the API, Codex and ChatGPT Enterprise, with Codex Life Sciences plugins covering genomic, protein-structure and translational workflows; published pricing starts 5 Oct. It is not general availability - access is eligibility-gated - and the page first shipped 16 Apr, so this is a status update, not a first reveal. For biotech/bio builders it is the first frontier-lab model with a domain-gated distribution path and a Codex plugin package.",
+      "source": {
+        "name": "@OpenAIDevs official post",
+        "url": "https://x.com/OpenAIDevs/status/2098509226335412479"
+      },
+      "canonical_url": "https://openai.com/index/introducing-gpt-rosalind/",
+      "published_at": "2026-09-11T20:29:22+00:00",
+      "corroboration": [
+        {
+          "name": "OpenAI release page",
+          "url": "https://openai.com/index/introducing-gpt-rosalind/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @OpenAIDevs status update; the release page itself dates to 16 Apr. Trusted access, not GA."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 888,
+        "label": "888 total engagement on the @OpenAIDevs post (792 likes, 54 reposts, 42 replies)",
+        "observed_at": "2026-09-12T04:20:00+00:00",
+        "evidence_url": "https://x.com/OpenAIDevs/status/2098509226335412479"
+      },
+      "tags": [
+        "openai",
+        "life-sciences",
+        "domain-model",
+        "codex"
+      ],
+      "rank": 3
+    },
+    {
+      "id": "ai-cognition-fusion-devin-cli",
+      "section": "AI",
+      "story_type": "product-release",
+      "title": "Cognition ships Fusion in Devin Desktop & CLI: a lead/sidekick harness claiming up to 39% cheaper coding",
+      "summary": "Cognition released Fusion, a lead/sidekick harness for Devin Desktop and CLI that routes work between frontier models (Fable & Astra) with a cheap lead; it claims up to 39% cost reduction on frontier work held as lead, with a recommended Fable 5.1 + SWE-2 pairing. Evals with Artificial Analysis and Vals AI show trade-offs: Astra+SWE-2 is worse on Terminal-Bench 4 (55.6 -> 50.0) and Vals Code Migration (67.7 -> 61.3). The practical takeaway for coding-agent builders: model routing is now a product surface, and cost/quality trade-offs are quantified per benchmark.",
+      "source": {
+        "name": "@cognition official post",
+        "url": "https://x.com/cognition/status/2098445562404024343"
+      },
+      "canonical_url": "https://cognition.com/blog/local-fusion",
+      "published_at": "2026-09-11T17:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "Cognition blog",
+          "url": "https://cognition.com/blog/fusion-in-devin-cli"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @cognition post with the blog (dated 2026-09-11T10:00-07:00 = 17:00 UTC). Vendor-harness numbers; some regressions disclosed."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1267,
+        "label": "1,267 total engagement on the @cognition post (1,105 likes, 86 reposts, 76 replies)",
+        "observed_at": "2026-09-12T04:20:00+00:00",
+        "evidence_url": "https://x.com/cognition/status/2098445562404024343"
+      },
+      "tags": [
+        "cognition",
+        "devin",
+        "coding-agent",
+        "model-routing"
+      ],
+      "rank": 4
+    },
+    {
+      "id": "ai-google-research-toolgrad",
+      "section": "AI",
+      "story_type": "research",
+      "title": "Google Research: ToolGrad generates tool-use datasets with textual 'gradients' - Gemma-3-12B hits 83.1 on BFCL",
+      "summary": "Google Research published ToolGrad, an answer-first pipeline that generates synthetic tool-use data using textual 'gradients' (chain first, then prompt), claiming ~100% generation pass rate. A Gemma-3-12B fine-tuned on ToolGrad-500 scored 83.1 on BFCL, against gemini-2.5-pro 83.2, claude-4.5 Opus 82.8 and gpt-5 74.4. Code is on GitHub (zhongyi-zhou/toolgrad) and the paper is arXiv 2508.04086 (ACL 2026). Builders: this is a cheap recipe for tool-call data, and the comparison baseline is 12B open weights.",
+      "source": {
+        "name": "@GoogleResearch official post",
+        "url": "https://x.com/GoogleResearch/status/2098183830968705163"
+      },
+      "canonical_url": "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
+      "published_at": "2026-09-10T22:56:22+00:00",
+      "corroboration": [
+        {
+          "name": "Google Research blog",
+          "url": "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/"
+        },
+        {
+          "name": "arXiv paper",
+          "url": "https://arxiv.org/abs/2508.04086"
+        },
+        {
+          "name": "GitHub repo",
+          "url": "https://github.com/zhongyi-zhou/toolgrad"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @GoogleResearch post with blog, code and paper. The blog is dated 2026-09-10; BFCL comparisons are vs older proprietary snapshots, not Astra/Fable."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1736,
+        "label": "1,736 total engagement on the @GoogleResearch post (1,545 likes, 165 reposts, 26 replies)",
+        "observed_at": "2026-09-12T04:20:00+00:00",
+        "evidence_url": "https://x.com/GoogleResearch/status/2098183830968705163"
+      },
+      "tags": [
+        "google",
+        "tool-use",
+        "synthetic-data",
+        "open-weights"
+      ],
+      "rank": 5
+    },
+    {
+      "id": "ai-together-ai-fine-tuning",
+      "section": "AI",
+      "story_type": "product-update",
+      "title": "Together AI expands fine-tuning with GLM-5.3, Kimi K2.7-code, live metrics and 30-70% cheaper selected models",
+      "summary": "Together AI's fine-tuning service now supports GLM-5.3 and Kimi K2.7-code with live training metrics, early stopping and dataset previews, and claims 30-70% lower cost on selected models. The company also put a public preview of preemptible NVIDIA GPUs on the same surface at ~50% of on-demand pricing (up to 5 minutes to checkpoint) for evals, fine-tunes and short jobs. For builders who fine-tune in a loop, the two changes together - cheaper models + killable GPUs - change the cost calculus for rapid iteration.",
+      "source": {
+        "name": "@togethercompute official post",
+        "url": "https://x.com/togethercompute/status/2098444999541010741"
+      },
+      "canonical_url": "https://www.together.ai/blog/together-ai-expands-fine-tuning-service-with-more-models-live-metrics-and-finer-controls",
+      "published_at": "2026-09-11T16:00:51+00:00",
+      "corroboration": [
+        {
+          "name": "Together AI blog",
+          "url": "https://www.together.ai/blog/together-ai-expands-fine-tuning-service-with-more-models-live-metrics-and-finer-controls"
+        },
+        {
+          "name": "Preemptible GPUs post",
+          "url": "https://x.com/togethercompute/status/2098171482408956223"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @togethercompute post with dated blog (2026-09-11T16:00:51Z). Discount range applies to 'selected models' only; preemptible jobs can be killed."
+      },
+      "tags": [
+        "together-ai",
+        "fine-tuning",
+        "gpu",
+        "platform"
+      ],
+      "rank": 6
+    },
+    {
+      "id": "ai-runway-mcp-chatgpt-astra",
+      "section": "AI",
+      "story_type": "integration",
+      "title": "Runway lands in ChatGPT via Astra/MCP: image-to-style-frame-to-Blender-to-Seedance-2.5 pipeline",
+      "summary": "Runway is now available in ChatGPT through Astra's MCP integration, with a demo that takes a product image, generates a Runway-style frame, animates it in Blender, and renders with Seedance 2.5. This is a distribution integration, not a new model - Seedance 2.5 is the renderer. For builders: it is a concrete example of video-generation models shipping as MCP tools that a frontier chat harness can call, and a template for how video-model vendors will reach users inside general assistants.",
+      "source": {
+        "name": "@runwayml official post",
+        "url": "https://x.com/runwayml/status/2098451477308067875"
+      },
+      "canonical_url": "https://runway.com/mcp",
+      "published_at": "2026-09-11T16:39:54+00:00",
+      "corroboration": [
+        {
+          "name": "Runway MCP page",
+          "url": "https://runway.com/mcp"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @runwayml integration post with a live product page. Demo pipeline only; not a new Runway model."
+      },
+      "tags": [
+        "runway",
+        "mcp",
+        "chatgpt",
+        "video-generation"
+      ],
+      "rank": 7
+    },
+    {
+      "id": "ai-grok-bot-microsoft-teams",
+      "section": "AI",
+      "story_type": "product-update",
+      "title": "Grok Bot can now search and act inside Microsoft Teams",
+      "summary": "xAI shipped a Microsoft Teams plugin for Grok Bot that lets it search and act in a tenant's Teams content. This extends Grok Bot's connector set (Salesforce/HubSpot/Gong/Clay/Granola from the previous edition) into the dominant enterprise chat surface. It is a connector/plugin, not a new xAI model, and the tenant-IT enablement path is not yet specified. For builders: agent connectors are the new GTM surface, and Teams is the highest-leverage one.",
+      "source": {
+        "name": "@bot official post",
+        "url": "https://x.com/bot/status/2098481256417866145"
+      },
+      "canonical_url": "https://x.ai/bot/plugin/63354504",
+      "published_at": "2026-09-11T18:38:14+00:00",
+      "corroboration": [
+        {
+          "name": "Grok Bot Teams plugin page",
+          "url": "https://x.ai/bot/plugin/63354504"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @bot post with a live plugin URL; tenant enablement not documented on the page."
+      },
+      "tags": [
+        "grok",
+        "teams",
+        "enterprise",
+        "connectors"
+      ],
+      "rank": 8
+    },
+    {
+      "id": "robotics-skild-100m-arr",
+      "section": "Robotics",
+      "story_type": "commercial-milestone",
+      "title": "Skild AI claims $100M ARR, 10 months after first commercial deployment - 60+ paying customers",
+      "summary": "Skild AI says its robot-brain platform has hit a $100M annual revenue run-rate with 60+ paying customers, ten months after first commercial deployment, with named deployments at NVIDIA/Foxconn dual-arm Blackwell assembly, Sumitomo Wiring Systems and a Mitsui kitchen pilot. CEO Deepak Pathak restated the figure on X the same day. Caveat: ARR is company-reported, not audited, and S1 (the model powering these deployments) launched 18 Aug - this is a commercial milestone, not a new model. For builders: it is the strongest data point yet that robot-brain licensing (vs hardware ownership) can reach nine figures fast.",
+      "source": {
+        "name": "@SkildAI official post",
+        "url": "https://x.com/SkildAI/status/2098093862548099111"
+      },
+      "canonical_url": "https://www.skild.ai/blogs/skild-crosses-100m-arr",
+      "published_at": "2026-09-10T16:58:52+00:00",
+      "corroboration": [
+        {
+          "name": "Skild blog",
+          "url": "https://www.skild.ai/blogs/skild-crosses-100m-arr"
+        },
+        {
+          "name": "CEO Deepak Pathak post",
+          "url": "https://x.com/deepakpathak/status/2098096900457259109"
+        },
+        {
+          "name": "Bloomberg interview",
+          "url": "https://www.bloomberg.com/news/articles/2026-09-10/robotics-startup-skild-ai-hits-100-million-in-revenue-run-rate"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @SkildAI post (16:58:52 UTC) plus company blog (dated 10 Sep, no clock time) and Bloomberg. ARR is self-reported."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 2625,
+        "label": "2,625 total engagement on the @SkildAI post (2,217 likes, 309 reposts, 99 replies)",
+        "observed_at": "2026-09-12T04:26:00+00:00",
+        "evidence_url": "https://x.com/SkildAI/status/2098093862548099111"
+      },
+      "tags": [
+        "skild",
+        "arr",
+        "robot-brain",
+        "commercial"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "robotics-maven-series-a",
+      "section": "Robotics",
+      "story_type": "funding",
+      "title": "Maven Robotics exits stealth with a $100M Series A for wheeled dual-arm industrial robots",
+      "summary": "The Santa Clara startup Maven Robotics exited stealth with a $100M Series A from RoboStrategy, LocalGlobe, Vine Ventures and XTX Ventures for general-purpose wheeled dual-arm mobile manipulators (~10 mph, 30 kg lift) doing mixed palletizing and tote handling. Proceeds fund 250 gen-3 robots and gen-4 design; TechCrunch reports Fortune 250 CPG fleets running up to 8 robots on 16-hour days at 99%+ uptime. Caveat: deployed fleet sizes are small and self-reported, and 'world's first general-purpose industrial robotics system' is Maven's own framing.",
+      "source": {
+        "name": "@mavenrobotics official thread",
+        "url": "https://x.com/mavenrobotics/status/2098082495564800315"
+      },
+      "canonical_url": "https://www.globenewswire.com/news-release/2026/09/10/3359782/0/en/maven-robotics-raises-100m-series-a-for-the-world-s-first-general-purpose-robotics-system-for-industrial-work.html",
+      "published_at": "2026-09-10T15:30:00+00:00",
+      "corroboration": [
+        {
+          "name": "TechCrunch exclusive",
+          "url": "https://techcrunch.com/2026/09/10/maven-robotics-wants-to-steal-your-robot-deployment-deal/"
+        },
+        {
+          "name": "TechCrunch post",
+          "url": "https://x.com/TechCrunch/status/2098053664883560487"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official GlobeNewswire wire (15:30 UTC 10 Sep) plus the official X thread and TechCrunch (14:17 UTC 10 Sep, just inside the window)."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 67,
+        "label": "67 total engagement on the @mavenrobotics thread (49 likes, 9 reposts, 9 replies)",
+        "observed_at": "2026-09-12T04:26:00+00:00",
+        "evidence_url": "https://x.com/mavenrobotics/status/2098082495564800315"
+      },
+      "tags": [
+        "maven",
+        "funding",
+        "industrial-robots",
+        "stealth-exit"
+      ],
+      "rank": 2
+    },
+    {
+      "id": "robotics-aidin-hd-hyundai",
+      "section": "Robotics",
+      "story_type": "funding",
+      "title": "AIDIN Robotics closes KRW16B strategic round from HD Hyundai Robotics and Samsung Venture Investment",
+      "summary": "Korean force/torque sensor maker AIDIN Robotics took KRW13B (stake size undisclosed) from HD Hyundai Robotics plus KRW3B from Samsung Venture Investment. The two will co-develop shipbuilding-specific robots, a heavy-duty five-finger hand for HD Hyundai's humanoids, and surface-finishing automation starting in shipyards. It is one of the clearest supply-chain plays in physical AI: owning the sensing component that many robot builders will need rather than the robot itself. AIDIN exports six-axis F/T sensors to 10 countries.",
+      "source": {
+        "name": "Seoul Economic Daily report",
+        "url": "https://en.sedaily.com/finance/2026/09/11/hd-hyundai-invests-13-billion-won-in-korean-robot-sensor"
+      },
+      "canonical_url": "https://en.sedaily.com/finance/2026/09/11/hd-hyundai-invests-13-billion-won-in-korean-robot-sensor",
+      "published_at": "2026-09-11T01:05:30+00:00",
+      "corroboration": [
+        {
+          "name": "TechStartups funding digest",
+          "url": "https://techstartups.com/2026/09/11/startup-funding-news-today-september-11-2026-kinetix-ai-aidin-robotics-enigmata-more/"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Seoul Economic Daily (published 10:05:30 KST = 01:05:30 UTC) names the amounts and parties; AIDIN confirmed the Samsung leg 'the same day' per the report. No official press release URL published yet."
+      },
+      "tags": [
+        "aidin",
+        "sensors",
+        "korea",
+        "physical-ai",
+        "funding"
+      ],
+      "rank": 3
+    },
+    {
+      "id": "robotics-kinetix-ai-raise",
+      "section": "Robotics",
+      "story_type": "funding",
+      "title": "Kinetix AI (Shenzhen) closes RMB500M+ in Angel+ rounds for its embodied-AI stack",
+      "summary": "Shenzhen-based Kinetix AI disclosed more than RMB500M (~$75M) across Angel+ financings; the company is reportedly approaching 200 people, with a co-founder who worked on XPeng's IRON robot. Not to be confused with the Kinetix Paris lab that joined Runway (covered in the 09-11 edition) - this is a different, Chinese embodied-AI company. It signals continued capital rotation into the humanoid stack between US and China, and into full-stack companies plus component suppliers.",
+      "source": {
+        "name": "@AGkorthos post",
+        "url": "https://x.com/AGkorthos/status/2098420907161104640"
+      },
+      "canonical_url": "https://techstartups.com/2026/09/11/startup-funding-news-today-september-11-2026-kinetix-ai-aidin-robotics-enigmata-more/",
+      "published_at": "2026-09-11T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "TechStartups funding digest",
+          "url": "https://techstartups.com/2026/09/11/startup-funding-news-today-september-11-2026-kinetix-ai-aidin-robotics-enigmata-more/"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Reported via X (@AGkorthos, 11 Sep) and a dated 11 Sep funding digest; no official company press release found in-window. 'Reportedly' language kept throughout."
+      },
+      "tags": [
+        "kinetix",
+        "china",
+        "funding",
+        "embodied-ai"
+      ],
+      "rank": 4
+    },
+    {
+      "id": "robotics-figure-index-wau",
+      "section": "Robotics",
+      "story_type": "milestone",
+      "title": "Figure's Index human-data pipeline hits 86,000 weekly active uploaders (CEO post)",
+      "summary": "Figure CEO Brett Adcock posted that Index - Figure's app for collecting real physical-task video to train Helix - now has 86,000 weekly active users uploading task video, with a live global contribution map. Index launched 25 Aug, so this is a usage milestone roughly two weeks after launch, not a new robot, model or factory release. For builders: the data-engine flywheel (consumer-grade upload app -> fleet training data) is scaling faster than most public robot data programs.",
+      "source": {
+        "name": "@adcock_brett (Figure CEO) post",
+        "url": "https://x.com/adcock_brett/status/2098431861257322679"
+      },
+      "canonical_url": "https://www.figure.ai/index-app",
+      "published_at": "2026-09-11T15:21:57+00:00",
+      "corroboration": [
+        {
+          "name": "Figure Index product intro (25 Aug)",
+          "url": "https://www.figure.ai/news/introducing-index"
+        }
+      ],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "Self-reported metric from the CEO's account, not @Figure_robot; live map page exists. The underlying product is from 25 Aug."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1401,
+        "label": "1,401 total engagement on the @adcock_brett post (1,234 likes, 73 reposts, 94 replies)",
+        "observed_at": "2026-09-12T04:20:00+00:00",
+        "evidence_url": "https://x.com/adcock_brett/status/2098431861257322679"
+      },
+      "tags": [
+        "figure",
+        "helix",
+        "data-engine",
+        "humanoid"
+      ],
+      "rank": 5
+    },
+    {
+      "id": "robotics-mecka-sequoia-report",
+      "section": "Robotics",
+      "story_type": "reporting",
+      "title": "Report: Mecka AI's robot-training-data round nears a ~$500M valuation led by Sequoia",
+      "summary": "TechCrunch reports that Mecka AI - a human-motion/egocentric-data vendor for humanoids - is nearing a Sequoia-led round at a ~$500M valuation, three months after a $60M Framework-led round; round size is undisclosed. The deal is not closed ('terms are not final'), Mecka did not comment and Sequoia declined. It lands in the data-bottleneck layer: whoever owns high-quality human motion data for humanoid training is being repriced aggressively.",
+      "source": {
+        "name": "@TechCrunch post",
+        "url": "https://x.com/TechCrunch/status/2098547411228455242"
+      },
+      "canonical_url": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
+      "published_at": "2026-09-11T22:58:00+00:00",
+      "corroboration": [
+        {
+          "name": "TechCrunch article",
+          "url": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/"
+        }
+      ],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "Two unnamed sources; deal not final. No official Mecka post found in-window. Treated as reporting, not a closed round."
+      },
+      "tags": [
+        "mecka",
+        "robot-data",
+        "sequoia",
+        "reporting"
+      ],
+      "rank": 6
+    },
+    {
+      "id": "longevity-nsf-funding-overhaul",
+      "section": "Longevity",
+      "story_type": "funding-policy",
+      "title": "NSF overhauls grant funding toward White House priorities - a 'portfolio' model mixing directed Frontier Initiatives",
+      "summary": "NSF leadership announced a shift from pure investigator-driven grants to a 'portfolio' model that mixes them with NSF-directed Frontier Initiatives across intelligence, quantum, materials and biological design. The dollar split between investigator-driven and directed work is unspecified, and Nature reports anonymous staff fear a squeeze on core science. For aging/geroscience labs, this is a direct change to the grant supply that funded much of the field's core work - and a signal of how federal biology funding will look.",
+      "source": {
+        "name": "@Nature post",
+        "url": "https://x.com/Nature/status/2098522640474321387"
+      },
+      "canonical_url": "https://www.nature.com/articles/d41586-026-02892-9",
+      "published_at": "2026-09-11T00:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "NSF statement",
+          "url": "https://www.nsf.gov/news/nsf-leadership-new-golden-age-science"
+        },
+        {
+          "name": "Full NSF letter PDF",
+          "url": "https://nsf-gov-resources.nsf.gov/files/Statement-NSF-Leadership-Golden-Age-Science.pdf"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official NSF statement (letter dated 10 Sep) with Nature's reporting (11 Sep, date-only; noon UTC used). Dollar split not yet specified."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 102,
+        "label": "102 total engagement on the @Nature post (70 likes, 28 reposts, 4 replies)",
+        "observed_at": "2026-09-12T04:20:00+00:00",
+        "evidence_url": "https://x.com/Nature/status/2098522640474321387"
+      },
+      "tags": [
+        "nsf",
+        "funding",
+        "grant-policy",
+        "biology"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "longevity-nih-bone-marrow-chip",
+      "section": "Longevity",
+      "story_type": "research",
+      "title": "NIH: researchers design a bone-marrow-on-a-chip model for studying human immune cells",
+      "summary": "NIH announced the design of a 'bone marrow chip' platform for studying human hematopoietic (immune) cells on a chip - a relevant tool for hematopoiesis, immunity and aging research, since the marrow microenvironment is a key regulator of blood-forming stem cells. This is a platform/design result, not a clinical trial. Note: the NIH news-release URL currently resolves to a site-migration notice, so the official @NIH post is the in-window primary record.",
+      "source": {
+        "name": "@NIH official post",
+        "url": "https://x.com/NIH/status/2098482941751931286"
+      },
+      "canonical_url": "https://www.nih.gov/news-events/news-releases/researchers-design-bone-marrow-chip-model-study-human-immune-cells",
+      "published_at": "2026-09-11T18:44:55+00:00",
+      "corroboration": [
+        {
+          "name": "NIH news release",
+          "url": "https://www.nih.gov/news-events/news-releases/researchers-design-bone-marrow-chip-model-study-human-immune-cells"
+        }
+      ],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "Official @NIH post is the in-window record; the canonical NIH page currently returns a site-migration notice, so full methods could not be re-verified."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 23,
+        "label": "23 total engagement on the @NIH post (17 likes, 5 reposts, 1 reply)",
+        "observed_at": "2026-09-12T04:20:00+00:00",
+        "evidence_url": "https://x.com/NIH/status/2098482941751931286"
+      },
+      "tags": [
+        "nih",
+        "organ-on-chip",
+        "hematopoiesis",
+        "immune"
+      ],
+      "rank": 2
+    },
+    {
+      "id": "longevity-sirt1-sepsis-aki-rat",
+      "section": "Longevity",
+      "story_type": "research",
+      "title": "Sinclair amplifies SRT1720 study: SIRT1 activation improves mitochondrial metabolism in sepsis-related kidney injury (rat)",
+      "summary": "David Sinclair highlighted a Renal Failure paper showing the SIRT1 activator SRT1720 improved mitochondrial energy metabolism in a rat/cell model of sepsis-associated acute kidney injury; Sinclair later corrected the compound from SRT2104 to SRT1720. This is preclinical only - animal and cell evidence, not a human trial - but it is a concrete example of the sirtuin/longevity-drug pipeline being tested in a clinically important, age-related organ-injury setting. No medical advice implied.",
+      "source": {
+        "name": "@davidasinclair post",
+        "url": "https://x.com/davidasinclair/status/2098423289790050779"
+      },
+      "canonical_url": "https://www.tandfonline.com/doi/full/10.1080/0886022X.2026.2723540",
+      "published_at": "2026-09-10T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "Renal Failure paper (DOI)",
+          "url": "https://www.tandfonline.com/doi/full/10.1080/0886022X.2026.2723540"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Expert amplification of a primary paper (published 10 Sep, date-only; noon UTC used). Preclinical (rat/cell). DOI full-text is paywalled (403 to automated fetch); Sinclair's post is the in-window record."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1313,
+        "label": "1,313 total engagement on the @davidasinclair post (1,171 likes, 108 reposts, 34 replies)",
+        "observed_at": "2026-09-12T04:20:00+00:00",
+        "evidence_url": "https://x.com/davidasinclair/status/2098423289790050779"
+      },
+      "tags": [
+        "sirt1",
+        "sirtuin",
+        "renal",
+        "preclinical"
+      ],
+      "rank": 3
+    },
+    {
+      "id": "longevity-nature-osteoporosis-cells",
+      "section": "Longevity",
+      "story_type": "research-news",
+      "title": "Nature: could modified marrow cells rebuild bone? Small trial hints at regenerative potential in osteoporosis",
+      "summary": "Nature reports on a small trial showing that modified, bone-seeking marrow cells may have regenerative potential in osteoporosis - a bone-rebuilding approach adjacent to the aging/osteoporosis space. It is early-stage (small trial) and the mechanism/population detail lives in the article. Relevant to longevity because bone health is a major age-related fracture risk and this is a cell-based rather than purely pharmacologic intervention.",
+      "source": {
+        "name": "@Nature post",
+        "url": "https://x.com/Nature/status/2098434140735500670"
+      },
+      "canonical_url": "https://www.nature.com/articles/d41586-026-02828-3",
+      "published_at": "2026-09-11T00:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "Nature news article",
+          "url": "https://www.nature.com/articles/d41586-026-02828-3"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Nature news write-up (11 Sep, date-only; noon UTC used). Small trial; population and intervention specifics are in the article, not the post."
+      },
+      "tags": [
+        "osteoporosis",
+        "bone",
+        "regenerative-medicine",
+        "nature"
+      ],
+      "rank": 4
+    },
+    {
+      "id": "longevity-science-trial-trading-editorial",
+      "section": "Longevity",
+      "story_type": "policy-editorial",
+      "title": "Science editorial: no trading on a trial's efficacy/safety results while it's still running and unpublished",
+      "summary": "Yang & Kesselheim publish a Science policy editorial arguing that no public contract should be allowed to trade on a trial's efficacy or safety results while the trial is ongoing and before the results are public. This is an opinion piece, not a regulator rule, but it directly targets biotech/longevity trial markets (including longevity therapeutics) and would change how sponsors, investors and trial participants handle result disclosure timing.",
+      "source": {
+        "name": "@ScienceMagazine post",
+        "url": "https://x.com/ScienceMagazine/status/2098412541160415555"
+      },
+      "canonical_url": "https://www.science.org/doi/10.1126/science.ael8642",
+      "published_at": "2026-09-11T14:05:11+00:00",
+      "corroboration": [
+        {
+          "name": "Science editorial (DOI)",
+          "url": "https://www.science.org/doi/10.1126/science.ael8642"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Official @ScienceMagazine post with the DOI. Opinion/editorial, not a binding rule."
+      },
+      "tags": [
+        "clinical-trials",
+        "policy",
+        "science",
+        "biotech"
+      ],
+      "rank": 5
+    }
+  ]
+}
