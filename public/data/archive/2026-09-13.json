@@ -1,0 +1,654 @@
+{
+  "schema_version": 1,
+  "edition": {
+    "date": "2026-09-13",
+    "title": "The Daily Signal",
+    "kicker": "Primary-source tech intelligence, compiled from the live wire.",
+    "status": "live",
+    "updated_at": "2026-09-13T05:42:29.025268+00:00"
+  },
+  "sections": [
+    "Bitcoin",
+    "AI",
+    "Robotics",
+    "Longevity"
+  ],
+  "lead_story_id": "ai-deepseek-v41-flash",
+  "stories": [
+    {
+      "id": "bitcoin-revolut-kyc-leak",
+      "section": "Bitcoin",
+      "rank": 1,
+      "story_type": "security",
+      "title": "Revolut hands over customer KYC + Bitcoin transaction histories after a spoofed government-domain request",
+      "summary": "A request sent from a real government-domain mailbox passed Revolut's checks and produced disclosures that, per customer notices, included passports/IDs, selfies, addresses, IBANs and Bitcoin transaction histories. Revolut has called it a 'sophisticated external impersonation scam' hitting a limited customer set and says funds were untouched, but it has not published a count, market or the agency domain used. For builders this is a live test of how custodial crypto rails handle non-standard disclosure requests - and a reminder that 'govt domain' is no longer sufficient proof of origin.",
+      "source": {
+        "name": "@CoinDesk post",
+        "url": "https://x.com/CoinDesk/status/2098694743534215419"
+      },
+      "canonical_url": "https://www.coindesk.com/tech/2026-09-12/bitcoin-activity-passports-exposed-after-revolut-falls-for-fake-government-request",
+      "published_at": "2026-09-12T08:46:33+00:00",
+      "corroboration": [
+        {
+          "name": "The Block report",
+          "url": "https://www.theblock.co/news/business/2026-09-12-revolut-says-customer-kyc-bitcoin-transaction-data-exposed-after-fake-request-from-govt-domain-414516"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "CoinDesk post (08:46:33 UTC) plus The Block. Revolut's own company comment in the CoinDesk article postdates the X post. Customer count/market still unspecified."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1380,
+        "label": "1,380 total engagement on the @CoinDesk post (995 likes, 248 reposts, 137 replies)",
+        "observed_at": "2026-09-13T04:29:00+00:00",
+        "evidence_url": "https://x.com/CoinDesk/status/2098694743534215419"
+      },
+      "tags": [
+        "revolut",
+        "custody",
+        "security",
+        "regulation"
+      ]
+    },
+    {
+      "id": "bitcoin-stacks-bitflow-live",
+      "section": "Bitcoin",
+      "rank": 2,
+      "story_type": "product",
+      "title": "Stacks says its Bitflow 'Stack Sats' BTC incentive campaign goes live 16 Sep",
+      "summary": "The official @Stacks account says the Bitflow incentive program - a 1 BTC/month pool where a $25 swap enters a daily BTC raffle - starts 16 Sep, on top of Stacks' pooled-Bitcoin-staking ('Genesis Bond') surface. The same day Stacks claimed Bitcoin staking is pulling in institutions and large BTC holders new to STX. It is a DEX incentive campaign, not a protocol upgrade or audit - the payout pool is small relative to BTC supply and the 'institutions are stacking' line is unsourced marketing.",
+      "source": {
+        "name": "@Stacks official post",
+        "url": "https://x.com/Stacks/status/2098830756789522590"
+      },
+      "canonical_url": "https://app.bitflow.finance/stack-sats",
+      "published_at": "2026-09-12T17:47:01+00:00",
+      "corroboration": [
+        {
+          "name": "@Stacks staking-usage post",
+          "url": "https://x.com/Stacks/status/2098796029776891983"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @Stacks announcement (17:47:01 UTC) with the live campaign page. Follow-up to the 11 Sep 'Stack Sats' program announcement already covered in the 09-12 edition."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 84,
+        "label": "84 total engagement on the @Stacks post (68 likes, 9 reposts, 7 replies)",
+        "observed_at": "2026-09-13T04:29:00+00:00",
+        "evidence_url": "https://x.com/Stacks/status/2098830756789522590"
+      },
+      "tags": [
+        "stacks",
+        "bitflow",
+        "btc",
+        "incentives"
+      ]
+    },
+    {
+      "id": "bitcoin-nasdaq-payward-tokenized-equities",
+      "section": "Bitcoin",
+      "rank": 3,
+      "story_type": "catch-up",
+      "title": "Catch-up: Nasdaq Ventures invests $100M in Kraken parent Payward for tokenized equities",
+      "summary": "Nasdaq's venture arm put $100M into Payward (Kraken's parent), reportedly pushing Kraken's valuation to ~$21B, to extend the Nasdaq Equity Tokens (NETs) collaboration and target 2027 tokenized-stock trading plus market infrastructure and surveillance. It lands 10 Sep - just outside the 30-hour window - and its canonical CoinDesk URL is absent from today's edition and archives. The 10 Sep event is the cleanest institutional RWA signal this week even if the X chatter about it is older.",
+      "source": {
+        "name": "CoinDesk (10 Sep)",
+        "url": "https://www.coindesk.com/business/2026-09-10/nasdaq-invests-usd100-million-in-kraken-parent-company-payward-at-usd21-billion-valuation"
+      },
+      "canonical_url": "https://www.coindesk.com/business/2026-09-10/nasdaq-invests-usd100-million-in-kraken-parent-company-payward-at-usd21-billion-valuation",
+      "published_at": "2026-09-10T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/nasdaq-invests-100-million-kraken-132047317.html"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026-09-10/nasdaq-invests-100-million-in-crypto-firm-eyes-2027-launch-of-tokenized-stocks.html"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "CoinDesk, Yahoo Finance and CNBC all cover the 10 Sep event. Date-only source; noon UTC used."
+      },
+      "tags": [
+        "nasdaq",
+        "payward",
+        "kraken",
+        "rwa",
+        "tokenized-equities"
+      ]
+    },
+    {
+      "id": "bitcoin-clarity-vote-math",
+      "section": "Bitcoin",
+      "rank": 4,
+      "story_type": "regulation",
+      "title": "White House digital-asset director on the Sept 15 CLARITY Act cloture vote: 'bad day to be a Clarity Act doomer'",
+      "summary": "Bitcoin Magazine's X post quotes White House Digital Asset Advisory Council executive director Patrick Witt calling the sentiment ahead of the 15 Sep procedural/cloture vote 'a bad day to be a Clarity Act doomer,' while the vote still needs 60 votes and the Tillis-Gallego ethics compromise remains unresolved. The 15 Sep action is procedural, not enactment; a cloture failure would kill the bill for 2026 and, given midterm politics, likely until 2029. This is a second-hand quote, not a bill text drop - but it is the clearest in-window signal on where the White House stands.",
+      "source": {
+        "name": "@BitcoinMagazine post",
+        "url": "https://x.com/BitcoinMagazine/status/2098829323876614373"
+      },
+      "canonical_url": "https://crypto.news/clarity-act-senate-vote-september-15-provisions/",
+      "published_at": "2026-09-12T17:41:19+00:00",
+      "corroboration": [
+        {
+          "name": "CoinDesk - Senate Clarity Act coverage",
+          "url": "https://www.coindesk.com/policy"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Witt's original X post not located in this sweep; the quote is second-hand via Bitcoin Magazine's screenshots. The crypto.news explainer (04 Sep) is the cleanest in-window written breakdown of the vote mechanics."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 3875,
+        "label": "3,875 total engagement on the @BitcoinMagazine post (3,383 likes, 360 reposts, 132 replies)",
+        "observed_at": "2026-09-13T04:29:00+00:00",
+        "evidence_url": "https://x.com/BitcoinMagazine/status/2098829323876614373"
+      },
+      "tags": [
+        "clarity-act",
+        "senate",
+        "ethics",
+        "us-regulation"
+      ]
+    },
+    {
+      "id": "bitcoin-starkware-qsb",
+      "section": "Bitcoin",
+      "rank": 5,
+      "story_type": "catch-up",
+      "title": "Catch-up: StarkWare says Quantum-Safe Bitcoin is 'possible today on Bitcoin mainnet'",
+      "summary": "StarkWare posted a QSB promo on 12 Sep claiming hash-based quantum-safe outputs are 'possible today on Bitcoin mainnet' with no consensus change - coins moved into a QSB output are protected even if the public key leaks. The underlying mainnet event (first QSB tx, block 964,199) was 26 Aug and is not in this window; QSB does not make Bitcoin itself quantum-safe, it only protects coins moved into that specific output, and StarkWare still prefers a future soft fork. Worth a read if you are planning a QSB strategy, but this post is a recirculation of the August release.",
+      "source": {
+        "name": "@StarkWareLtd post",
+        "url": "https://x.com/StarkWareLtd/status/2098773150788190539"
+      },
+      "canonical_url": "https://starkware.co/blog/the-first-quantum-safe-bitcoin-transaction-has-been-mined/",
+      "published_at": "2026-09-12T13:58:07+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official StarkWare X post with the dated blog. The underlying mainnet tx predates the window (26 Aug)."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 86,
+        "label": "86 total engagement on the @StarkWareLtd post (69 likes, 9 reposts, 8 replies)",
+        "observed_at": "2026-09-13T04:29:00+00:00",
+        "evidence_url": "https://x.com/StarkWareLtd/status/2098773150788190539"
+      },
+      "tags": [
+        "starkware",
+        "quantum-safe",
+        "bitcoin",
+        "protocol"
+      ]
+    },
+    {
+      "id": "ai-dario-pace-frontier",
+      "section": "AI",
+      "rank": 1,
+      "story_type": "governance",
+      "title": "Anthropic unilaterally commits to embedded third-party evaluators - 'We Must Pace the Frontier'",
+      "summary": "Dario Amodei published a long essay committing Anthropic to embedded third-party evaluators (e.g. METR) with permanent employee-level access to verify safety, report incidents and assess alignment of models and training pipelines, and arguing the pace of capability must be deliberately slowed given recursive self-improvement and the OpenAI-Hugging Face incident. @sama responded on X that OpenAI will also give independent evaluators employee-like access ('We'll have more to share soon'), and @ClementDelangue said Hugging Face is launching an Open Alignment Initiative led by Thomas Wolf and asked to join Anthropic's program. Caveat: the essay is on Amodei's personal site, not anthropic.com - @AnthropicAI and @claudeai did not post; the OpenAI/HF moves are verbal CEO commitments, not published contracts.",
+      "source": {
+        "name": "@DarioAmodei post",
+        "url": "https://x.com/DarioAmodei/status/2098773920774074715"
+      },
+      "canonical_url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+      "published_at": "2026-09-12T14:01:10+00:00",
+      "corroboration": [
+        {
+          "name": "@sama (OpenAI CEO)",
+          "url": "https://x.com/sama/status/2098811563415150910"
+        },
+        {
+          "name": "@ClementDelangue (Hugging Face CEO)",
+          "url": "https://x.com/ClementDelangue/status/2098790988034580852"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official CEO essay (posted 14:01:10 UTC) plus in-window verbal commitments from OpenAI and Hugging Face CEOs. Steps 2-3 of the evaluator program are proposals, not yet codified."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 81533,
+        "label": "81,533 total engagement on the @DarioAmodei post (63,060 likes, 11,290 reposts, 7,183 replies)",
+        "observed_at": "2026-09-13T04:20:00+00:00",
+        "evidence_url": "https://x.com/DarioAmodei/status/2098773920774074715"
+      },
+      "tags": [
+        "anthropic",
+        "safety",
+        "governance",
+        "third-party-evaluators",
+        "recursive-self-improvement"
+      ]
+    },
+    {
+      "id": "ai-deepseek-v41-flash",
+      "section": "AI",
+      "rank": 2,
+      "story_type": "model-release",
+      "title": "Catch-up: DeepSeek-V4.1-Flash is the smallest of the new architecture family with native vision",
+      "summary": "DeepSeek's official API changelog carries the V4.1-Flash release entry dated 10 Sep - a 552B-parameter MoE with native multimodal visual understanding, ~8B active parameters on input, 1M-token context and pricing built around low cached-input costs. It sits alongside V4-Pro at the top of the family and the company said it would route V4-Pro requests to Flash where appropriate. For builders: the release is outside the 30-hour window (posted 10 Sep ~06:00 UTC, just ahead of it), so this is a catch-up - but it is the cleanest new open-weights frontier-tier release this week and the official changelog is the canonical record.",
+      "source": {
+        "name": "DeepSeek API changelog",
+        "url": "https://api-docs.deepseek.com/updates/"
+      },
+      "canonical_url": "https://api-docs.deepseek.com/updates/",
+      "published_at": "2026-09-10T06:10:00+00:00",
+      "corroboration": [
+        {
+          "name": "r/DeepSeek official thread",
+          "url": "https://www.reddit.com/r/DeepSeek/comments/1wcajkh/deepseekv41flash_release_official/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official DeepSeek API changelog (dated 10 Sep) is the primary record. The r/DeepSeek thread (06:01 UTC 10 Sep) is community amplification, not an official post. Canonical is the changelog page itself since it does not carry a stable per-model URL."
+      },
+      "popularity": {
+        "platform": "reddit",
+        "engagement": 507,
+        "label": "507 total engagement on the r/DeepSeek thread (392 score, 115 comments)",
+        "observed_at": "2026-09-13T04:29:00+00:00",
+        "evidence_url": "https://www.reddit.com/r/DeepSeek/comments/1wcajkh/deepseekv41flash_release_official/"
+      },
+      "tags": [
+        "deepseek",
+        "moE",
+        "open-weights",
+        "vision",
+        "context"
+      ]
+    },
+    {
+      "id": "ai-qwen38-cerebras",
+      "section": "AI",
+      "rank": 3,
+      "story_type": "infrastructure",
+      "title": "Qwen3.8-27B is now served on Cerebras (per @Alibaba_Qwen, 12 Sep)",
+      "summary": "The official @Alibaba_Qwen account confirmed on 12 Sep that Qwen3.8-27B is served on Cerebras's cloud (`qwen-3.8-27b`), with Cerebras quoting ~1,850 tok/s, an AA Intelligence Index of 34 and 64k/128k context on the public endpoint. Cerebras's own changelog already listed the model on 03 Sep, so this is a late official confirmation rather than a new weight drop - and the 27B dense model is a different beast from the 2.4T-param Qwen3.8-Max that went open-weight in August. For builders: the Cerebras endpoint is the cleanest way to run a dense Qwen3.8-27B at inference-class latency without the MoE routing.",
+      "source": {
+        "name": "@Alibaba_Qwen official post",
+        "url": "https://x.com/Alibaba_Qwen/status/2098676748972122394"
+      },
+      "canonical_url": "https://inference-docs.cerebras.ai/models/qwen-3.8-27b",
+      "published_at": "2026-09-12T07:35:03+00:00",
+      "corroboration": [
+        {
+          "name": "Cerebras inference docs",
+          "url": "https://cloud.cerebras.ai"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @Alibaba_Qwen confirmation post (07:35:03 UTC) with Cerebras's own endpoint docs. Not a new model - Cerebras listed the endpoint on 03 Sep."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1092,
+        "label": "1,092 total engagement on the @Alibaba_Qwen post (992 likes, 42 reposts, 58 replies)",
+        "observed_at": "2026-09-13T04:29:00+00:00",
+        "evidence_url": "https://x.com/Alibaba_Qwen/status/2098676748972122394"
+      },
+      "tags": [
+        "qwen",
+        "cerebras",
+        "inference",
+        "dense"
+      ]
+    },
+    {
+      "id": "ai-hf-open-alignment",
+      "section": "AI",
+      "rank": 4,
+      "story_type": "org",
+      "title": "Hugging Face launching an Open Alignment Initiative; asks to join Anthropic's embedded-evaluator program",
+      "summary": "Thomas Wolf-led Hugging Face announced an Open Alignment Initiative on 12 Sep - a program that will run and publish independent safety evals for open models - and simultaneously asked to be admitted to Anthropic's new embedded-evaluator program per Dario Amodei's essay. @huggingface did not post; the announcement came via @ClementDelangue. Caveat: the initiative was first teased on 10 Sep as an Open Alignment team; this is the CEO-level restatement plus the request to Anthropic, not a confirmed seat.",
+      "source": {
+        "name": "@ClementDelangue post",
+        "url": "https://x.com/ClementDelangue/status/2098790988034580852"
+      },
+      "canonical_url": "https://x.com/ClementDelangue/status/2098790988034580852",
+      "published_at": "2026-09-12T15:08:59+00:00",
+      "corroboration": [
+        {
+          "name": "Hugging Face (org)",
+          "url": "https://huggingface.co"
+        }
+      ],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "CEO-level restatement; @huggingface did not post. No Hugging Face blog URL attached. The program is being announced in parallel with Anthropic's essay."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 3658,
+        "label": "3,658 total engagement on the @ClementDelangue post (3,107 likes, 325 reposts, 226 replies)",
+        "observed_at": "2026-09-13T04:29:00+00:00",
+        "evidence_url": "https://x.com/ClementDelangue/status/2098790988034580852"
+      },
+      "tags": [
+        "hugging-face",
+        "open-alignment",
+        "safety",
+        "evals"
+      ]
+    },
+    {
+      "id": "ai-gpt6-astra-community-roundup",
+      "section": "AI",
+      "rank": 5,
+      "story_type": "community",
+      "title": "OpenAI roundups the GPT-6 Astra community build wave (X article)",
+      "summary": "OpenAI's developer account published an X article on 12 Sep curating what the community has built with GPT-6 Astra - the deployment-safety-reviewed model released this month - plus a separate marketing quote of GPT-Live-1's GA from 10 Sep. This is a curated community roundup, not a new model or API. It matters because Astra's adoption pattern (fast, distributed, security-first builds) is the template for how OpenAI will roll out the next frontier model.",
+      "source": {
+        "name": "@OpenAIDevs post",
+        "url": "https://x.com/OpenAIDevs/status/2098827327832822014"
+      },
+      "canonical_url": "https://x.com/i/article/2098531824528220160",
+      "published_at": "2026-09-12T17:33:23+00:00",
+      "corroboration": [
+        {
+          "name": "@OpenAIDevs GPT-Live-1 GA quote",
+          "url": "https://x.com/OpenAIDevs/status/2098913661993603215"
+        }
+      ],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "Official @OpenAIDevs X-article roundup (17:33:23 UTC) plus a marketing quote of the GPT-Live-1 GA post (10 Sep). Not a new release."
+      },
+      "tags": [
+        "openai",
+        "gpt-6-astra",
+        "community",
+        "roundup"
+      ]
+    },
+    {
+      "id": "rob-fanuc-google-welding-agent",
+      "section": "Robotics",
+      "rank": 1,
+      "story_type": "product-launch",
+      "title": "FANUC + Google: an 'AI Welding Agent' that reads a drawing and welds with zero setup or teaching",
+      "summary": "FANUC announced (11 Sep) an AI Welding Agent built on Google's Gemini Enterprise that reads an arc-welding component drawing, then auto-generates welding parameters (current/voltage) and the robot motion program - 'zero setup, zero teaching.' It demos at the International Welding Show in Tokyo from 16 Sep with shipments scheduled by end of December 2026; operators can still fine-tune the generated program, and the drawings are not used to train other customers' models. This is an industrial arm, not a humanoid - but it is the clearest 'drawings-to-weld' Physical-AI shipping product yet, and a template for how vision-LLMs will be folded into classic CNC/welding workflows.",
+      "source": {
+        "name": "FANUC news release",
+        "url": "https://www.fanuc.co.jp/en/profile/pr/newsrelease/2026/notice20260911.html"
+      },
+      "canonical_url": "https://www.fanuc.co.jp/en/profile/pr/newsrelease/2026/notice20260911.html",
+      "published_at": "2026-09-11T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "Nikkei Asia exclusive",
+          "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/japan-s-fanuc-google-team-up-on-ai-automated-welding-robots"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official FANUC news release (11 Sep, date-only; noon UTC used) plus Nikkei Asia exclusive (10 Sep 15:01 UTC). No public weld-quality or cycle-time numbers; operator can edit the program."
+      },
+      "tags": [
+        "fanuc",
+        "google",
+        "welding",
+        "physical-ai",
+        "industrial"
+      ]
+    },
+    {
+      "id": "rob-geact2-agiBot",
+      "section": "Robotics",
+      "rank": 2,
+      "story_type": "research",
+      "title": "AgiBot ships GE-Act 2.0: a world-action model for manipulation that lifts G1-OP to 44.1% on zero-shot OOD tasks",
+      "summary": "AgiBot's official account (11 Sep) released GE-Act 2.0, a native world-action model trained from scratch on manipulation - no inherited video generator, no per-task fine-tune - scaling its data from 300 to 30,000 hours and using ~2,000 hours of failure/rollout data as training signal. G1-OP success climbs from 17.1% to 44.1% on 100 zero-shot out-of-distribution atomic tasks, and G2-90D adds +17.7 pp with <2% of co-training data. Paper is arXiv 2609.05588. Caveat: 44.1% still means most attempts fail, and the eval is AgiBot's own technical report, not a third-party benchmark.",
+      "source": {
+        "name": "@AGIBOTofficial post",
+        "url": "https://x.com/AGIBOTofficial/status/2098372932372476021"
+      },
+      "canonical_url": "https://ge-act-v2.github.io/",
+      "published_at": "2026-09-11T11:27:47+00:00",
+      "corroboration": [
+        {
+          "name": "arXiv paper (2609.05588)",
+          "url": "https://arxiv.org/abs/2609.05588"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @AGIBOTofficial drop (11:27:47 UTC) with project page and arXiv paper (submitted 04 Sep, outside the 30h window - the X release is in-window). Company technical report, not third-party eval."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 145,
+        "label": "145 total engagement on the @AGIBOTofficial post (108 likes, 29 reposts, 8 replies)",
+        "observed_at": "2026-09-13T04:20:00+00:00",
+        "evidence_url": "https://x.com/AGIBOTofficial/status/2098372932372476021"
+      },
+      "tags": [
+        "agibot",
+        "world-action-model",
+        "manipulation",
+        "vla"
+      ]
+    },
+    {
+      "id": "rob-husqvarna-fcc-exemption",
+      "section": "Robotics",
+      "rank": 3,
+      "story_type": "regulation",
+      "title": "Husqvarna gets the first FCC exemption for foreign-manufactured advanced robots (lawn mowers)",
+      "summary": "Swedish Husqvarna received the first conditional FCC approval for foreign-manufactured advanced robotics - its Automower 305/310/420/440 V IQ series - after the Defense Department decided they don't pose a national-security risk. It is the first carve-out from the foreign-robot rule announced in July, which has hit robot vacuums, pool cleaners and mowers. The FCC notice is dated 9 Sep (company PR 11 Sep 13:30 UTC; The Verge 12 Sep), so it is a 72-hour catch-up. It matters as the template for how the foreign-robot ban gets applied to specific, named hardware rather than by category.",
+      "source": {
+        "name": "Husqvarna Group (Cision PR)",
+        "url": "https://news.cision.com/husqvarna-group/r/husqvarna-group-first-to-receive-fcc-conditional-approval-for-foreign-manufactured-advanced-robotic-,c4394973"
+      },
+      "canonical_url": "https://news.cision.com/husqvarna-group/r/husqvarna-group-first-to-receive-fcc-conditional-approval-for-foreign-manufactured-advanced-robotic-,c4394973",
+      "published_at": "2026-09-11T13:30:00+00:00",
+      "corroboration": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/994330/husqvarna-gets-the-first-exception-to-the-fccs-foreign-robot-ban-for-its-mowers"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Company PR (11 Sep 13:30 UTC) plus The Verge (12 Sep 13:51 UTC). Underlying FCC notice dated 9 Sep - 72h catch-up, not a humanoid."
+      },
+      "tags": [
+        "husqvarna",
+        "fcc",
+        "foreign-robot-ban",
+        "regulation"
+      ]
+    },
+    {
+      "id": "rob-cap-unitree-locomotion",
+      "section": "Robotics",
+      "rank": 4,
+      "story_type": "research",
+      "title": "Unitree G1 result: CAP learns to walk 'perception-blind' via continuously adaptive denoising (CoRL 2026)",
+      "summary": "A CoRL 2026-accepted paper (arXiv 2609.11553, submitted 10 Sep) reports CAP - a continuously adaptive, perception-blind humanoid locomotion controller that learns to robustly walk by denoising, validated on a real Unitree G1. It is a real-robot locomotion result aimed at robustness under sensory degradation (the 'perception-blind' framing means the controller keeps the robot walking even when perception fails). It is academic, not a company launch, and the G1 is a research platform - but perception-robust locomotion is a core open problem for anything that has to keep moving when a sensor drops out.",
+      "source": {
+        "name": "arXiv 2609.11553",
+        "url": "https://arxiv.org/abs/2609.11553"
+      },
+      "canonical_url": "https://arxiv.org/abs/2609.11553",
+      "published_at": "2026-09-10T13:45:10+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "arXiv preprint (submitted 10 Sep 13:45 UTC, inside the 72h window), accepted at CoRL 2026. Academic, single-platform (G1); not independently reproduced."
+      },
+      "tags": [
+        "unitree",
+        "locomotion",
+        "g1",
+        "perception-robust"
+      ]
+    },
+    {
+      "id": "lon-fda-ismbyld",
+      "section": "Longevity",
+      "rank": 1,
+      "story_type": "fda-approval",
+      "title": "FDA approves first therapy that directly targets muscle loss in SMA (Isembyld / apitegromab)",
+      "summary": "The FDA approved Isembyld (apitegromab-mstn), an anti-myostatin monoclonal antibody, for spinal muscular atrophy in patients 2+ already on an SMN2-targeted therapy - the first SMA drug that targets the muscle itself rather than SMN2. In the pivotal SAPPHIRE trial (NCT05156320), 10 mg/kg q4w slowed HFMSE decline vs placebo in ages 2-12, with clinically meaningful improvement in 34.2% vs 13.5%. Why a builder cares: myostatin inhibition is the exact muscle-sparing axis being tracked for sarcopenia and GLP-1-combo use, so this is the first approved in-class drug. Caveat: the indication is SMA on SMN2 therapy, not age-related sarcopenia; the label flags higher fracture risk (9% vs 2%) and the pivotal cohort was 2-21.",
+      "source": {
+        "name": "@FDA post",
+        "url": "https://x.com/FDA/status/2098776185392058711"
+      },
+      "canonical_url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-therapy-target-muscle-loss-spinal-muscular-atrophy",
+      "published_at": "2026-09-11T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "Scholar Rock press release",
+          "url": "https://investors.scholarrock.com/news-releases/news-release-details/scholar-rock-announces-fda-approval-isembyldtm-apitegromab-mstn"
+        },
+        {
+          "name": "@ScholarRock post",
+          "url": "https://x.com/ScholarRock/status/2098560127712248212"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official FDA notable-approvals page (11 Sep, date-only; noon UTC) plus the @FDA post (12 Sep 14:10 UTC) and Scholar Rock IR. SMA, not age-related sarcopenia."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 78,
+        "label": "78 total engagement on the @FDA post (60 likes, 11 reposts, 7 replies)",
+        "observed_at": "2026-09-13T04:20:00+00:00",
+        "evidence_url": "https://x.com/FDA/status/2098776185392058711"
+      },
+      "tags": [
+        "fda",
+        "sma",
+        "myostatin",
+        "muscle",
+        "sarcopenia"
+      ]
+    },
+    {
+      "id": "lon-cell-msc-osteoporosis",
+      "section": "Longevity",
+      "rank": 2,
+      "story_type": "research",
+      "title": "Cell: fucosylated autologous bone-marrow MSCs - a first-in-human dose in advanced osteoporosis",
+      "summary": "A Cell paper (online 11 Sep, NCT02566655) reports a single IV dose of fucosylated autologous bone-marrow mesenchymal stem cells in 10 women with advanced osteoporosis - a glycocalyx-targeted approach that steers the cells to the bone. No serious adverse events; the authors report a large, durable drop in fragility fractures plus rises in osteoanabolic markers, bone tissue area and volumetric BMD. It is a Phase 1 safety trial with an efficacy signal, not a registrational RCT - the fracture reduction is against each patient's own pre-treatment history, with no contemporaneous control arm. It sits directly on age-related bone failure, which is a major fracture risk in longevity.",
+      "source": {
+        "name": "@CellCellPress post",
+        "url": "https://x.com/CellCellPress/status/2098490119598858309"
+      },
+      "canonical_url": "https://www.cell.com/cell/abstract/S0092-8674(26)00944-X",
+      "published_at": "2026-09-11T19:13:27+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Cell abstract page (11 Sep) surfaced via the official @CellCellPress post. n=10, no control arm; self-history comparison. Cell pages 403 to automated fetch, so the abstract line is from the @CellCellPress post + trial record."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 47,
+        "label": "47 total engagement on the @CellCellPress post (41 likes, 6 reposts, 0 replies)",
+        "observed_at": "2026-09-13T04:20:00+00:00",
+        "evidence_url": "https://x.com/CellCellPress/status/2098490119598858309"
+      },
+      "tags": [
+        "osteoporosis",
+        "mesenchymal-stem-cells",
+        "bone",
+        "regenerative-medicine",
+        "human"
+      ]
+    },
+    {
+      "id": "lon-amnesti-aging-lung",
+      "section": "Longevity",
+      "rank": 3,
+      "story_type": "research",
+      "title": "Science Immunology: an aged-lung STING adjuvant (AMnESTI) restores heterosubtypic flu protection in old animals",
+      "summary": "A new Science Immunology paper (11 Sep, Gao, Zhang et al.) shows that combining manganese with a STING agonist in alveolar-epithelial-cell-targeting nanoparticles (AMnESTI) reverses age-associated lung immune decline and restores heterosubtypic (cross-strain) protection from inactivated influenza vaccines. It is an animal (mouse) immunosenescence result - not a lifespan study, not a human trial - but it is a concrete gerontology-adjacent intervention aimed at aged lung epithelium rather than 'a better flu shot.' Caveat: STING agonists can drive systemic inflammation/interferonopathy, AEC targeting is a delivery claim, and restoring vaccine titers is not the same as reversing organismal aging.",
+      "source": {
+        "name": "@inmunoes post",
+        "url": "https://x.com/inmunoes/status/2098488107146637405"
+      },
+      "canonical_url": "https://www.science.org/doi/10.1126/sciimmunol.adz5242",
+      "published_at": "2026-09-11T12:00:00+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Science Immunology article (11 Sep, date-only; noon UTC) surfaced via an in-window X post. Animal evidence (mice); full abstract paywalled, mechanism from Science's blurb."
+      },
+      "tags": [
+        "immunosenescence",
+        "sting",
+        "influenza",
+        "lung",
+        "animal"
+      ]
+    },
+    {
+      "id": "lon-pdl2-senescence-checkpoint",
+      "section": "Longevity",
+      "rank": 4,
+      "story_type": "catch-up",
+      "title": "Catch-up: PD-L2 is an immune checkpoint on senescent cells; blocking it cuts senescence burden in aged mice",
+      "summary": "A Cell Metabolism paper from the Kirkland group (first published 10 Sep - just outside the 30h window, so labelled Catch-up) shows PD-L2 is upregulated on senescent cells, letting them evade immune clearance; genetic deletion or anti-PD-L2 antibody blockade reduces senescent-cell burden and improves insulin sensitivity and grip strength in old mice, and circulating soluble PD-L2 rises with human aging and falls after senolytics. It reframes senolytics from 'kill cells with BH3 mimetics' to 'clear them via an immune checkpoint.' Evidence is animal intervention plus a human observational biomarker - not a human efficacy trial. Caveat: checkpoint blockade carries autoimmunity risk, and grip strength/insulin sensitivity are healthspan proxies, not lifespan.",
+      "source": {
+        "name": "Cell Metabolism (via GEN)",
+        "url": "https://www.genengnews.com/topics/translational-medicine/pd-l2-blockade-may-reduce-harmful-aging-cell-buildup/"
+      },
+      "canonical_url": "https://www.cell.com/cell-metabolism/abstract/S1550-4131(26)00339-6",
+      "published_at": "2026-09-10T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "Cedars-Sinai via Mirage News",
+          "url": "https://www.miragenews.com/protein-blockage-may-cut-harmful-aging-cell-1742213/"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Cell Metabolism 'first published 10 Sep' (just outside the 30h window; 72h catch-up). Date-only; noon UTC. Animal + human-observational biomarker. Cell pages 403 to automated fetch; details from the journal RSS blurb + GEN + Cedars-Sinai PR."
+      },
+      "tags": [
+        "senescence",
+        "pdl2",
+        "immune-checkpoint",
+        "senolytics",
+        "animal"
+      ]
+    }
+  ]
+}
