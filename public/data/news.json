@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "edition": {
-    "date": "2026-09-15",
+    "date": "2026-09-16",
     "title": "The Daily Signal",
     "kicker": "Primary-source tech intelligence, compiled from the live wire.",
     "status": "live",
-    "updated_at": "2026-09-15T08:04:15+03:00"
+    "updated_at": "2026-09-16T07:05:00+03:00"
   },
   "sections": [
     "Bitcoin",
@@ -13,987 +13,797 @@
     "Robotics",
     "Longevity"
   ],
-  "lead_story_id": "ai-sama-pre-rl-safety-cases",
+  "lead_story_id": "ai-gemini-3-8-live",
   "stories": [
     {
-      "id": "ai-sama-pre-rl-safety-cases",
-      "section": "AI",
-      "story_type": "policy",
-      "title": "Altman: OpenAI now writes explicit safety cases before frontier RL runs - and backs a federal frontier-safety framework",
-      "summary": "In a long thread, Altman says OpenAI writes explicit safety cases before frontier RL runs expected to jump capability - not just before release - and backs a federal frontier-safety framework with independent auditors, while insisting labs will not wait for legislation or an antitrust exemption. He names two failure modes the cases must address: loss of control, and concentration of power in one person/company/country. For builders this is the first concrete 'pacing is a process artifact, not a stop' claim from a frontier lab CEO, landing in the same week as Amodei's 12 Sep 'We Must Pace the Frontier' essay. Caveat: no spec, eval protocol, auditor names, or OpenAI blog attached - this is a CEO process claim, not a model or benchmark drop.",
+      "id": "bitcoin-clarity-cloture-fail",
+      "section": "Bitcoin",
+      "story_type": "regulation",
+      "title": "CLARITY Act cloture fails 49-50 in the Senate - US market-structure law back to the drawing board",
+      "summary": "The Senate failed the 60-vote cloture test on the Digital Asset Market Clarity Act, 49-50 - not even a majority, with multiple Republicans voting no over final ethics, national-security and oversight provisions. Lummis told reporters 'I think we're done. It's over.' For builders this is the furthest the bill has ever come and the cleanest data point that the SEC/CFTC parallel rulemaking tracks (Reg Crypto Assets, proposed 18 Aug) are now the live regulatory path until at least the November midterms. Caveat: this is a procedural failure, not a floor vote on final text - a restart remains possible in the final weeks of the session.",
       "source": {
-        "name": "@sama post",
-        "url": "https://x.com/sama/status/2099348812305473766"
+        "name": "@CoinDesk post",
+        "url": "https://x.com/CoinDesk/status/2099932043945680992"
       },
-      "canonical_url": "https://x.com/sama/status/2099348812305473766",
-      "published_at": "2026-09-14T04:05:35+00:00",
+      "canonical_url": "https://www.coindesk.com/policy/2026/09/15/crypto-clarity-act-flames-out-in-failed-u-s-senate-vote",
+      "published_at": "2026-09-15T18:43:08+00:00",
       "corroboration": [
         {
-          "name": "@sama follow-up (failure modes)",
-          "url": "https://x.com/sama/status/2099352016988614852"
+          "name": "The Block - 'This one stings'",
+          "url": "https://www.theblock.co/news/regulation/2026-09-15-this-one-stings-clarity-act-fails-senate-is-cryptos-biggest-regulatory-push-dead-415135"
+        },
+        {
+          "name": "CNBC - cloture vote fails",
+          "url": "https://www.cnbc.com/2026/09/15/senate-cloture-vote-on-clarity-act-fails-dealing-regulatory-setback-to-crypto-industry.html"
+        },
+        {
+          "name": "@BitcoinMagazine post",
+          "url": "https://x.com/BitcoinMagazine/status/2099933434697146794"
+        },
+        {
+          "name": "@CoinDesk - Slotkin no-vote explanation",
+          "url": "https://x.com/CoinDesk/status/2099956877232632095"
         }
       ],
       "quality": {
         "signal": "primary",
-        "confidence": "medium",
-        "note": "Official CEO thread (04:05:35 UTC, fetched) with follow-up naming failure modes. Process/governance statement, not a release - the X thread is the primary source."
+        "confidence": "high",
+        "note": "Official outcome of the Senate vote (18:43 UTC X post, fetched with live engagement); CoinDesk article of record (fetched, published 15 Sep); The Block and CNBC corroborate the 49-50 tally. Procedural, not final-text, defeat."
       },
       "popularity": {
         "platform": "x",
-        "engagement": 16222,
-        "label": "16,222 total engagement on the @sama post (13,605 likes, 2,617 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/sama/status/2099348812305473766"
-      },
-      "tags": [
-        "openai",
-        "frontier-safety",
-        "rl",
-        "governance",
-        "altman"
-      ],
-      "rank": 1
-    },
-    {
-      "id": "bitcoin-clarity-pre-vote-squeeze",
-      "section": "Bitcoin",
-      "story_type": "developing",
-      "title": "Pre-cloture squeeze: banking groups demand tighter stablecoin rewards, bipartisan state AG coalition urges rejection, Lummis says Dems 'simply won't'",
-      "summary": "The eve of Tuesday's 60-vote cloture test on the Clarity Act ran on lobbying, not votes: eight US banking groups (ABA, BPI, ICBA among them) asked Senate leaders to tighten stablecoin-reward language that still permits interest-like payments; NY AG Letitia James is leading a bipartisan coalition of ~17-18 state AGs urging rejection over federal preemption via the 'qualified transaction' definition; and Bessent and Lummis traded cabinet-level endorsements vs. 'Democrats simply won't' quotes. Builders should read this as the bill's last substantive pressure points (rewards + state enforcement) before the procedural vote; none of it is law yet.",
-      "source": {
-        "name": "@BitcoinMagazine Lummis post",
-        "url": "https://x.com/BitcoinMagazine/status/2099627234084479352"
-      },
-      "canonical_url": "https://x.com/BitcoinMagazine/status/2099627234084479352",
-      "published_at": "2026-09-14T22:31:56+00:00",
-      "corroboration": [
-        {
-          "name": "@CoinDesk - banking groups letter",
-          "url": "https://x.com/CoinDesk/status/2099558854950318402"
-        },
-        {
-          "name": "@CoinDesk - state AG coalition",
-          "url": "https://x.com/CoinDesk/status/2099516017311388079"
-        },
-        {
-          "name": "@BitcoinMagazine - Bessent quote",
-          "url": "https://x.com/BitcoinMagazine/status/2099550297932640532"
-        },
-        {
-          "name": "@BitcoinMagazine - cloture flag",
-          "url": "https://x.com/BitcoinMagazine/status/2099478824052208083"
-        }
-      ],
-      "quality": {
-        "signal": "developing",
-        "confidence": "medium",
-        "note": "In-window lobbying/quote cluster ahead of the 15 Sep cloture vote (covered as the final-text release yesterday). Letter and coalition are primary artifacts via outlet posts; AG count 17-18 per the CoinDesk article. Vote outcome not yet known."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 2889,
-        "label": "2,889 total engagement on the @BitcoinMagazine Lummis post (2,629 likes, 260 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/BitcoinMagazine/status/2099627234084479352"
+        "engagement": 1985,
+        "label": "1,985 total engagement on the @CoinDesk post (1,484 likes, 293 reposts, 208 replies observed live)",
+        "observed_at": "2026-09-16T04:00:03+00:00",
+        "evidence_url": "https://x.com/CoinDesk/status/2099932043945680992"
       },
       "tags": [
         "clarity-act",
         "cloture",
-        "state-ag",
-        "stablecoin-rewards",
-        "lobbying"
-      ],
-      "rank": 2
-    },
-    {
-      "id": "bitcoin-sbr-house-markup",
-      "section": "Bitcoin",
-      "story_type": "regulation",
-      "title": "Strategic Bitcoin Reserve bill (H.R. 8957) set for House Financial Services full-committee markup September 16",
-      "summary": "The House Financial Services Committee's latest memorandum places H.R. 8957, the American Reserve Modernization Act of 2026, in a nine-bill full-committee markup scheduled for Wednesday 16 Sep, 10:00 a.m. ET, in Rayburn - the first concrete House step toward a Strategic Bitcoin Reserve after the Senate-side CLARITY track. For builders this matters because it pairs a sovereign-treasury BTC mechanism with the market-structure bill: pass both and the US has both a rules framework and a reserve vehicle. Caveat: committee memoranda change, and the bill is one of nine on the docket.",
-      "source": {
-        "name": "@BitcoinMagazine post",
-        "url": "https://x.com/BitcoinMagazine/status/2099564155850125820"
-      },
-      "canonical_url": "https://cryptobriefing.com/house-committee-strategic-bitcoin-reserve-bill/",
-      "published_at": "2026-09-14T18:21:17+00:00",
-      "corroboration": [
-        {
-          "name": "TFTC - committee memo detail (15 Sep)",
-          "url": "https://www.tftc.io/arma-hr-8957-strategic-bitcoin-reserve-markup-september-16"
-        },
-        {
-          "name": "BitcoinEthereumNews - markup report",
-          "url": "https://bitcoinethereumnews.com/bitcoin/us-house-to-hold-strategic-bitcoin-reserve-bill-markup-vote-on-september-16/"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "Three independent outlets report the same committee memorandum (14-15 Sep). The official committee calendar was not located directly; treat the 16 Sep date as memo-based, not yet a filed notice."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 1951,
-        "label": "1,951 total engagement on the @BitcoinMagazine post (1,892 likes, 59 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/BitcoinMagazine/status/2099564155850125820"
-      },
-      "tags": [
-        "strategic-bitcoin-reserve",
-        "hr-8957",
-        "house-financial-services",
-        "markup",
-        "us-regulation"
+        "senate",
+        "us-regulation",
+        "market-structure"
       ],
       "rank": 3
     },
     {
-      "id": "lon-branyas-117-multiomics",
-      "section": "Longevity",
-      "story_type": "catch-up",
-      "title": "Catch-up: @foundmyfitness recaps the 117-year-old supercentenarian study - short telomeres + aged immune cells, but epigenetic age ~23 years younger",
-      "summary": "Patrick McKenzie (@foundmyfitness) posted (14 Sep 14:10 UTC) a recap of the most comprehensive supercentenarian study to date - the multi-omic analysis of Maria Branyas (117) from the Esteller group (Josep Carreras Institute, Cell Reports Medicine): exceptionally short telomeres and an aged pro-inflammatory immune system coexisting with a genuinely low-inflammation state, protective genetic variants, a bifidobacteria-dominated microbiome and an epigenetic age ~23 years below chronological. The underlying paper is from Sep 2025 - outside the window, hence Catch-up (canonical URL absent from this edition and archives) - but it is the definitive n=1 dataset on how extreme longevity actually looks biologically. Caveat: n=1, observational; her biology is not a formula, as the recap itself notes.",
+      "id": "bitcoin-wh-cea-stablecoin-yield",
+      "section": "Bitcoin",
+      "story_type": "policy",
+      "title": "White House CEA: banning stablecoin yield would lift bank lending ~0.02% - net welfare cost $0.8B/yr, 76% to big banks",
+      "summary": "The White House Council of Economic Advisers published a staff estimate quantifying the CLARITY Act's contested stablecoin-reward language: a prohibition on issuer yield would raise bank lending by roughly 0.02% (~$2.1B) but deliver a net welfare loss of ~$0.8B/year, with 76% of the lending gain accruing to large banks. For builders it is the administration's first quantitative talking point defending the bill's yield provisions days after the cloture failure - expect it cited in any post-midterm reintroduction. Caveat: it is a CEA model, not legislation, and the GENIUS Act already limits some issuer yield; the numbers are scenario-based.",
       "source": {
-        "name": "@foundmyfitness post",
-        "url": "https://x.com/foundmyfitness/status/2099501036914319464"
+        "name": "@CoinDesk post",
+        "url": "https://x.com/CoinDesk/status/2099906087063638155"
       },
-      "canonical_url": "https://doi.org/10.1016/j.xcrm.2025.102368",
-      "published_at": "2026-09-14T14:10:28+00:00",
-      "corroboration": [
-        {
-          "name": "ScienceDaily summary (paper)",
-          "url": "https://www.sciencedaily.com/releases/2026/09/260909231800.htm"
-        },
-        {
-          "name": "Josep Carreras Institute news",
-          "url": "https://www.carrerasresearch.org/en/news/researchers-at-the-josep-carreras-institute-describe-for-the-first-time-the-delicate-balance-of-longevity"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "high",
-        "note": "Official @foundmyfitness post (14:10:28 UTC, fetched) of the 2025 Cell Reports Medicine paper (DOI verified live). In-window event is the amplification; paper is n=1 multi-omics, observational."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 1862,
-        "label": "1,862 total engagement on the @foundmyfitness post (1,799 likes, 63 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/foundmyfitness/status/2099501036914319464"
-      },
-      "tags": [
-        "supercentenarian",
-        "multi-omics",
-        "epigenetic-age",
-        "telomeres",
-        "longevity-extremes"
-      ],
-      "rank": 4
-    },
-    {
-      "id": "lon-nature-aisb-openfold3",
-      "section": "Longevity",
-      "story_type": "research",
-      "title": "Nature: pharma consortium fine-tunes OpenFold3 on 20,000+ proprietary structures - beats public-data AlphaFold-like models",
-      "summary": "A Nature news item (@Nature post 14 Sep 11:51 UTC) reports that the AISB Network consortium fine-tuned OpenFold3 on more than 20,000 proprietary pharma protein-ligand structures and outperformed public-data AlphaFold-like models - the first serious signal that proprietary structural data is a moat for computational drug design. For longevity/biotech builders: structure prediction accuracy at the ligand interface is exactly where aging-target druggability (kinases, proteostasis factors, epigenetic writers/erasers) lives, so proprietary-tuned predictors change the hit-to-lead economics for aging programs. Caveat: it is a news report, not a peer-reviewed paper, and the tuned model is not public.",
-      "source": {
-        "name": "@Nature post",
-        "url": "https://x.com/Nature/status/2099466107283206212"
-      },
-      "canonical_url": "https://www.nature.com/articles/d41586-026-02882-x",
-      "published_at": "2026-09-14T11:51:40+00:00",
+      "canonical_url": "https://www.whitehouse.gov/research/2026/09/effects-of-stablecoin-yield-prohibition-on-bank-lending-26b6/",
+      "published_at": "2026-09-15T09:00:00+00:00",
       "corroboration": [],
       "quality": {
         "signal": "primary",
         "confidence": "high",
-        "note": "Official @Nature post (11:51:40 UTC, fetched) of the Nature news item (page fetched, datePublished 14 Sep). News report, not a peer-reviewed paper; model not public."
+        "note": "Official White House CEA page (fetched; article:published_time 2026-09-15T09:00:00Z). Model estimate released amid CLARITY talks - not a rule or bill."
       },
       "popularity": {
         "platform": "x",
-        "engagement": 794,
-        "label": "794 total engagement on the @Nature post (780 likes, 14 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/Nature/status/2099466107283206212"
+        "engagement": 282,
+        "label": "282 total engagement on the @CoinDesk post (219 likes, 39 reposts, 24 replies observed live)",
+        "observed_at": "2026-09-16T04:20:00+00:00",
+        "evidence_url": "https://x.com/CoinDesk/status/2099906087063638155"
       },
       "tags": [
-        "openfold3",
-        "protein-structure",
-        "drug-discovery",
-        "aisb",
-        "pharma"
-      ],
-      "rank": 5
-    },
-    {
-      "id": "ai-nvidia-perplexity-windows-rtx",
-      "section": "AI",
-      "story_type": "product",
-      "title": "NVIDIA + Perplexity: Portable Computer for Windows RTX - local agent harness, models and MCP on 24 GB+ cards",
-      "summary": "Perplexity's agent harness, orchestrator, scheduler and model now run on Windows GeForce RTX / RTX PRO machines with >=24 GB VRAM: local work stays on-device and does not burn Computer credits, cloud/search steps require explicit permission, and local MCP servers plus Outlook/OneDrive/Word, Gmail/Drive, Slack and GitHub integrations ship. For builders this extends the Aug DGX Spark / Linux RTX launch into the Windows dev-machine segment - a concrete 'agent runs locally' stack you can pin hardware specs against. Caveat: NVIDIA's blog names Qwen 3.8 27B as the Windows local model, while Perplexity's own product page says Windows RTX gets PPLX 27B only and Qwen 3.8 27B is not on Windows RTX - read both pages before quoting the model list. Nemotron 3.5 Lightning and DGX Station are 'coming soon'.",
-      "source": {
-        "name": "@nvidia post",
-        "url": "https://x.com/nvidia/status/2099515451801776283"
-      },
-      "canonical_url": "https://blogs.nvidia.com/blog/local-ai-perplexity-windows-pcs/",
-      "published_at": "2026-09-14T15:07:45+00:00",
-      "corroboration": [
-        {
-          "name": "Perplexity - Portable Computer for Windows",
-          "url": "https://www.perplexity.ai/hub/blog/portable-computer-for-windows-is-here"
-        },
-        {
-          "name": "Perplexity - product page",
-          "url": "https://www.perplexity.ai/hub/products/portable-computer"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official @nvidia post (15:07:45 UTC, fetched) with the NVIDIA blog (fetched) and Perplexity's own launch post/product page (pages block some automated fetchers). Perplexity product on NVIDIA silicon, not a new NVIDIA model."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 756,
-        "label": "756 total engagement on the @nvidia post (678 likes, 78 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/nvidia/status/2099515451801776283"
-      },
-      "tags": [
-        "nvidia",
-        "perplexity",
-        "local-inference",
-        "rtx",
-        "agents"
+        "white-house",
+        "cea",
+        "stablecoin",
+        "bank-lending",
+        "clarity-act"
       ],
       "rank": 6
     },
     {
-      "id": "ai-runway-agent-skill-pack",
-      "section": "AI",
-      "story_type": "product",
-      "title": "Runway ships a copyable-prompt walkthrough plus a runway-sd-enhancer agent skill for Seedance 2.5",
-      "summary": "Runway published a full story-to-final-edit walkthrough with copyable prompts and a downloadable 'runway-sd-enhancer' agent skill targeting Seedance 2.5 - the first first-party 'agent skill' artifact in its product stack, and the same day it announced its 30 Sep SF summit speakers. For builders: agent skills are Runway's answer to the MCP/plugin race on the video side - the pattern (downloadable skill + copyable prompt library) is the one to copy for your own model surfaces. Caveat: no new video model; Seedance 2.5 and Nano Banana 2 Lite are already in the product, and the summit post is event marketing.",
-      "source": {
-        "name": "@runwayml post",
-        "url": "https://x.com/runwayml/status/2099571028649271462"
-      },
-      "canonical_url": "https://runway.com/prompts/a-game-of-horse",
-      "published_at": "2026-09-14T18:48:36+00:00",
-      "corroboration": [
-        {
-          "name": "Runway summit (30 Sep)",
-          "url": "https://summit.runwayml.com/"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "medium",
-        "note": "Official @runwayml post (18:48:36 UTC, fetched). Prompt-library + skill tutorial, not a new model; the second post (22:00 UTC) is summit speaker marketing."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 280,
-        "label": "280 total engagement on the @runwayml post (268 likes, 12 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/runwayml/status/2099571028649271462"
-      },
-      "tags": [
-        "runway",
-        "seedance",
-        "agent-skill",
-        "video-generation"
-      ],
-      "rank": 7
-    },
-    {
-      "id": "rob-agility-announcement-teaser",
-      "section": "Robotics",
-      "story_type": "developing",
-      "title": "Agility tees up an official announcement for 15 Sep 11:00 UTC - 'We've got news. Tomorrow. 7AM ET.'",
-      "summary": "Agility posted an official countdown - news 'Tomorrow. 7AM ET' - putting a dated company announcement inside ~7 hours of this edition, with content undisclosed. For builders: given Agility's going-concern filing (covered 09-12), a same-day official announcement is the one robotics signal to watch tonight; whatever it is - next-gen Digit, a customer win or a financing update - it lands on a public-company timetable. Caveat: this is a teaser post; no press release existed at publication time, so the event is unconfirmed until the 11:00 UTC drop.",
-      "source": {
-        "name": "@agilityrobotics teaser",
-        "url": "https://x.com/agilityrobotics/status/2099619219193364655"
-      },
-      "canonical_url": "https://x.com/agilityrobotics/status/2099619219193364655",
-      "published_at": "2026-09-14T22:00:05+00:00",
-      "corroboration": [],
-      "quality": {
-        "signal": "developing",
-        "confidence": "medium",
-        "note": "Official @agilityrobotics teaser (22:00:05 UTC, fetched). Content undisclosed; matching press release not located at publication time. X post is the source of record."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 210,
-        "label": "210 total engagement on the @agilityrobotics teaser (192 likes, 18 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/agilityrobotics/status/2099619219193364655"
-      },
-      "tags": [
-        "agility",
-        "digit",
-        "announcement",
-        "teaser"
-      ],
-      "rank": 8
-    },
-    {
-      "id": "bitcoin-atkins-clarity-backing",
+      "id": "bitcoin-dojo-robinhood-fraud",
       "section": "Bitcoin",
-      "story_type": "policy",
-      "title": "SEC Chair Atkins: advance Clarity before Tuesday's vote; SEC crypto agenda continues with or without the bill",
-      "summary": "At a Solana Policy Institute event, SEC Chair Paul Atkins urged Congress to move the Clarity Act ahead of Tuesday's procedural vote while saying the SEC's own agenda - issuance rules, transfer-agent modernization, custody - proceeds regardless of the bill. That framing matters for builders: the Commission is signaling its Reg Crypto Assets rulemaking (proposed 18 Aug) will not stall on the Senate calendar, so the two tracks can land out of order. Caveat: Atkins' backing is a vote-asking position, and the article's framing of the vote is cloture-on-motion-to-proceed, not passage.",
+      "story_type": "security",
+      "title": "DOJ SDNY charges two Robinhood engineers with fraud for front-running token listings on Hyperliquid perps",
+      "summary": "US Attorney's Office SDNY charged engineers Hefu Chai and Huaisong Xiang with commodities and wire fraud for trading Hyperliquid perpetuals using nonpublic Robinhood listing information, with each making over $50k. For builders this is the first case tying exchange-listing front-running to a commodities-fraud theory on DEX perps - the precedent (commodity perps = securities-adjacent conduct) matters more than the dollar amounts. Caveat: charges, not a conviction; the complaint's allegations are not yet tested in court.",
       "source": {
         "name": "@CoinDesk post",
-        "url": "https://x.com/CoinDesk/status/2099684738428494300"
+        "url": "https://x.com/CoinDesk/status/2099907528033263897"
       },
-      "canonical_url": "https://www.coindesk.com/policy/2026/09/14/sec-s-atkins-backs-clarity-act-but-says-agency-will-keep-pushing-crypto-rules-without-it",
-      "published_at": "2026-09-15T02:20:26+00:00",
+      "canonical_url": "https://www.justice.gov/usao-sdny/pr/two-robinhood-employees-charged-fraud",
+      "published_at": "2026-09-15T17:05:43+00:00",
       "corroboration": [
         {
-          "name": "SEC - Reg Crypto Assets proposal (18 Aug)",
-          "url": "https://www.sec.gov/newsroom/press-releases/2026-76-sec-proposes-new-regulation-crypto-assets"
+          "name": "The Block - listing front-running charges",
+          "url": "https://www.theblock.co/news/regulation/2026-09-15-doj-charges-robinhood-engineers-front-running-crypto-listings-hyperliquid-414865"
+        },
+        {
+          "name": "Decrypt - fraud charges",
+          "url": "https://decrypt.co/378267/robinhood-engineers-charged-fraud-over-crypto-listing-trades"
         }
       ],
       "quality": {
         "signal": "corroborated",
         "confidence": "high",
-        "note": "CoinDesk article of record (URL live; page rate-limits automated fetchers - headline and post text verified via syndication). Atkins' statements are event quotes, not an SEC document."
+        "note": "DOJ SDNY press release (page live; fetch is JS-heavy so text verified via The Block and Decrypt, both fetched 15 Sep). Charges announced in-window (17:05 UTC X post)."
       },
       "popularity": {
         "platform": "x",
-        "engagement": 196,
-        "label": "196 total engagement on the @CoinDesk post (176 likes, 20 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/CoinDesk/status/2099684738428494300"
+        "engagement": 228,
+        "label": "228 total engagement on the @CoinDesk post (162 likes, 32 reposts, 34 replies observed live)",
+        "observed_at": "2026-09-16T04:20:00+00:00",
+        "evidence_url": "https://x.com/CoinDesk/status/2099907528033263897"
       },
       "tags": [
-        "sec",
-        "atkins",
-        "clarity-act",
-        "reg-crypto-assets",
-        "us-regulation"
+        "doj",
+        "sdny",
+        "robinhood",
+        "hyperliquid",
+        "front-running"
       ],
       "rank": 9
     },
     {
-      "id": "bitcoin-revolut-leak-ransom-phase",
+      "id": "bitcoin-house-tax-bill-markup",
       "section": "Bitcoin",
-      "story_type": "security",
-      "title": "Revolut data breach moves to leak-and-ransom phase: hackers publish KYC + Bitcoin transaction-history files",
-      "summary": "Actors claiming Revolut customer data - passports, selfies and, per the original 12 Sep incident, Bitcoin activity/passport-style transaction records exposed via a spoofed government request - have started publishing files and threatening daily leaks. For builders this is the rare case where a crypto-fiat KYC leak carries on-chain history: wallet-linked identity data in the wild changes the threat model for anyone running hot wallets behind exchange KYC. Caveat: affected-user count is still undisclosed and no funds were lost; the 14 Sep update is outlet-reported - no dedicated follow-up article was located.",
+      "story_type": "regulation",
+      "title": "House Ways & Means drops Digital Asset Tax Certainty Act - de minimis, staking, mining, wash sale language headed to 16 Sep markup",
+      "summary": "The House Ways & Means Committee released the Digital Asset Tax Certainty Act text (late 14 Sep) covering the $10 de minimis threshold, staking and mining income treatment, wash sales and broker rules, with full-committee markup set for 16 Sep 10:00 ET. For builders the mining/staking language is the Bitcoin-relevant piece: it would codify that self-custodial mining and staking rewards are income events, closing the loop the CLARITY Act's death leaves open. Caveat: committee markup is not a floor vote, and House recess after this week makes 2026 enactment unlikely.",
       "source": {
-        "name": "@CoinDesk update post",
-        "url": "https://x.com/CoinDesk/status/2099473156310237476"
+        "name": "@CoinDesk post",
+        "url": "https://x.com/CoinDesk/status/2099861319704809562"
       },
-      "canonical_url": "https://www.coindesk.com/tech/2026/09/12/bitcoin-activity-passports-exposed-after-revolut-falls-for-fake-government-request",
-      "published_at": "2026-09-14T12:19:41+00:00",
+      "canonical_url": "https://www.coindesk.com/policy/2026/09/14/u-s-house-panel-shares-crypto-tax-bill-ahead-of-hearing-later-this-week",
+      "published_at": "2026-09-15T03:27:38+00:00",
       "corroboration": [],
       "quality": {
-        "signal": "developing",
+        "signal": "corroborated",
         "confidence": "medium",
-        "note": "In-window update to the 12 Sep incident (covered yesterday under bitcoin-revolut-kyc-leak). The 14 Sep event - published files + daily-leak threats - rests on the outlet post; original incident article is the canonical record."
+        "note": "CoinDesk article (fetched; datePublished 2026-09-15T03:27:38Z) of the committee text drop; bill text released late 14 Sep, markup scheduled 16 Sep. Markup has not occurred as of this edition."
       },
       "popularity": {
         "platform": "x",
-        "engagement": 183,
-        "label": "183 total engagement on the @CoinDesk update post (161 likes, 22 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/CoinDesk/status/2099473156310237476"
+        "engagement": 361,
+        "label": "361 total engagement on the @CoinDesk post (290 likes, 46 reposts, 25 replies observed live)",
+        "observed_at": "2026-09-16T04:20:00+00:00",
+        "evidence_url": "https://x.com/CoinDesk/status/2099861319704809562"
       },
       "tags": [
-        "revolut",
-        "kyc",
-        "breach",
-        "bitcoin-history",
-        "identity"
-      ],
-      "rank": 10
-    },
-    {
-      "id": "ai-interconnects-open-models-reading-list",
-      "section": "AI",
-      "story_type": "analysis",
-      "title": "Interconnects publishes a curated open-source AI and open-models reading list - HN front-page signal for the open-weights camp",
-      "summary": "Nathan Lambert's Interconnects dropped a long-form reading list mapping the open-model research landscape - the 14 Sep HN front-page placement (item 49690260, 153 points) made it the community's default index for what to read on open weights, data pipelines and evals this cycle. For builders: it is the fastest way to backfill the open-model literature (pretraining data, midtraining, post-training, evals) ahead of the next open frontier release. Caveat: it is a curated reading list, not a model, paper or benchmark - and the underlying post itself is from 11 Sep.",
-      "source": {
-        "name": "Interconnects (11 Sep post, HN front-page 14 Sep)",
-        "url": "https://www.interconnects.ai/p/open-source-ai-reading-list"
-      },
-      "canonical_url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
-      "published_at": "2026-09-14T00:22:51+00:00",
-      "corroboration": [
-        {
-          "name": "Hacker News discussion",
-          "url": "https://news.ycombinator.com/item?id=49690260"
-        }
-      ],
-      "quality": {
-        "signal": "analysis",
-        "confidence": "medium",
-        "note": "Post datePublished 11 Sep (fetched); in-window event is the 14 Sep 00:22 UTC HN front-page placement (153 points, 29 comments, fetched from the Algolia API). Curated list, not a primary release."
-      },
-      "popularity": {
-        "platform": "mixed",
-        "engagement": 182,
-        "label": "182 total engagement on the Hacker News thread (153 points, 29 comments observed via the Algolia API) - strongest observed signal for this story",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://news.ycombinator.com/item?id=49690260"
-      },
-      "tags": [
-        "open-source-ai",
-        "open-models",
-        "interconnects",
-        "reading-list"
+        "tax",
+        "ways-and-means",
+        "mining",
+        "staking",
+        "de-minimis"
       ],
       "rank": 11
     },
     {
-      "id": "bitcoin-strategy-strc-buyback",
+      "id": "bitcoin-ecb-digital-euro-merchants",
       "section": "Bitcoin",
-      "story_type": "market",
-      "title": "Strategy: $139M of STRC preferred repurchased, 845,050 BTC treasury unchanged - second consecutive week with no BTC add",
-      "summary": "Strategy (MSTR) used the week to 13 Sep to buy back roughly $139.3M of its STRC preferred (~1.4-1.42M shares) from cash, leaving the 845,050 BTC treasury untouched - the second straight week of capital allocation that skips buying more Bitcoin. For builders tracking corporate-treasury behavior, this is the tell: Saylor's vehicle is now defending the preferred's dividend economics before accreting BTC, which changes the marginal-BTC-demand assumptions many models run on. Caveat: buyback capacity and pace are company statements, and the $2B buyback program is a stated goal, not a completed tranche.",
+      "story_type": "infrastructure",
+      "title": "ECB opens merchant call for the digital euro beta pilot - H2 2027 beta, possible 2029 issuance",
+      "summary": "The ECB opened a call for euro-area e-commerce and m-commerce merchants to join a 12-month digital euro beta pilot, with a target H2 2027 start and issuance possibly in 2029; applications close 27 Oct 2026 17:00 CET. For builders on the payment-rail side this dates the euro CBDC's merchant integration window and the API surface they will build against. Caveat: CBDC, not Bitcoin - the beta is a pilot, not legal tender, and issuance may still slip.",
       "source": {
         "name": "@CoinDesk post",
-        "url": "https://x.com/CoinDesk/status/2099496596920570234"
+        "url": "https://x.com/CoinDesk/status/2099872185460416959"
       },
-      "canonical_url": "https://bitcoinmagazine.com/news/strategy-again-skips-bitcoin-buy",
-      "published_at": "2026-09-14T13:52:50+00:00",
+      "canonical_url": "https://www.ecb.europa.eu/press/intro/news/html/ecb.mipnews260915.en.html",
+      "published_at": "2026-09-15T14:45:17+00:00",
       "corroboration": [],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "high",
-        "note": "CoinDesk post (13:52:50 UTC, fetched) of the disclosure; Bitcoin Magazine's 14 Sep piece (15:33:44 UTC, fetched) corroborates. Week-to-date numbers are company-disclosed."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 113,
-        "label": "113 total engagement on the @CoinDesk post (83 likes, 30 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/CoinDesk/status/2099496596920570234"
-      },
-      "tags": [
-        "strategy",
-        "mstr",
-        "strc",
-        "buyback",
-        "bitcoin-treasury"
-      ],
-      "rank": 12
-    },
-    {
-      "id": "lon-nih-hormone-modeling-21m",
-      "section": "Longevity",
-      "story_type": "funding",
-      "title": "NIH launches a $21M computational-modeling initiative on sex-specific hormonal biology - digital twins of hormone homeostasis",
-      "summary": "The NIH announced a $21M 'Computational Modeling of Hormone Homeostasis' initiative funding multi-scale digital twins and AI models of sex-specific hormone biology, aimed at improving drug-response prediction. For longevity builders this matters because sex hormones sit at the center of aging-rate heterogeneity - menopause-related trajectories, androgen dynamics and their differential aging effects are among the largest unmodeled variables in lifespan science, and a public modeling push will produce the shared reference datasets the field needs. Caveat: it is an awards announcement, not a clinical result; the models are research infrastructure.",
-      "source": {
-        "name": "@NIH post",
-        "url": "https://x.com/NIH/status/2099527378422607903"
-      },
-      "canonical_url": "https://www.nih.gov/news-events/news-releases/nih-launches-21-million-initiative-improve-understanding-sex-specific-hormonal-biology",
-      "published_at": "2026-09-14T15:55:09+00:00",
-      "corroboration": [],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official @NIH post (15:55:09 UTC, fetched) of the NIH news release (page live; blocks some automated fetchers). Funding announcement, not a result."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 102,
-        "label": "102 total engagement on the @NIH post (95 likes, 7 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/NIH/status/2099527378422607903"
-      },
-      "tags": [
-        "nih",
-        "hormone-biology",
-        "digital-twins",
-        "funding",
-        "sex-differences"
-      ],
-      "rank": 13
-    },
-    {
-      "id": "bitcoin-stacks-zest-incentives",
-      "section": "Bitcoin",
-      "story_type": "product",
-      "title": "Stacks: Zest Protocol's Stacks market gets monthly STX rewards worth 0.5 BTC for sBTC suppliers and USDCx borrowers",
-      "summary": "@Stacks officially boosted Zest Protocol's incentive program on its Stacks market: monthly STX rewards worth ~0.5 BTC, split between sBTC suppliers and qualifying USDCx borrowers. For builders this is the incentive layer that makes sBTC (Stacks-pegged BTC) and USDCx usable yield-bearing rails on Bitcoin L2 - the program is marketing, not a consensus change, and rewards are paid in STX, not BTC, so APY depends on the STX price. Caveat: the program blog predates the window (11 Sep); the official @Stacks amplification is the in-window event.",
-      "source": {
-        "name": "@Stacks official post",
-        "url": "https://x.com/Stacks/status/2099495938700222781"
-      },
-      "canonical_url": "https://www.zestprotocol.com/blog/defi-incentives-are-coming-to-zest-protocol-stacks-market",
-      "published_at": "2026-09-14T13:50:13+00:00",
-      "corroboration": [
-        {
-          "name": "@Stacks roadmap post",
-          "url": "https://x.com/Stacks/status/2099467202454024294"
-        }
-      ],
       "quality": {
         "signal": "primary",
         "confidence": "medium",
-        "note": "Official @Stacks post (13:50:13 UTC) of the Zest incentive program (blog live, fetched; program dated ~11 Sep). Incentive program, not a protocol or consensus change."
+        "note": "Official ECB news page (title live, fetched); 15 Sep 14:45 UTC X post. Date-only on the page - time set from the X post timestamp."
       },
       "popularity": {
         "platform": "x",
-        "engagement": 78,
-        "label": "78 total engagement on the @Stacks post (74 likes, 4 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/Stacks/status/2099495938700222781"
+        "engagement": 165,
+        "label": "165 total engagement on the @CoinDesk post (120 likes, 28 reposts, 17 replies observed live)",
+        "observed_at": "2026-09-16T04:20:00+00:00",
+        "evidence_url": "https://x.com/CoinDesk/status/2099872185460416959"
       },
       "tags": [
-        "stacks",
-        "zest",
-        "sbtc",
-        "usdcx",
-        "incentives"
-      ],
-      "rank": 14
-    },
-    {
-      "id": "ai-openai-arch-linux-codex",
-      "section": "AI",
-      "story_type": "product",
-      "title": "OpenAIDevs: the Codex/ChatGPT desktop app now officially supports Arch Linux via a signed OpenAI repo",
-      "summary": "OpenAI's docs now list Arch (current rolling) alongside Ubuntu 24.04/26.04 LTS, Debian 13 and Fedora 43/44, x64 and ARM64, with a first-party install path: a signed OpenAI repo via install-arch.sh, then pacman -Syu. For builders on rolling-release distros this removes the last practical objection to running the Codex app in the dev environment - though the Linux app is still in preview, Computer Use remains macOS/Windows-only, and native Wayland is experimental (XWayland by default). Caveat: the post is a reply on the 11 Aug Linux-preview thread, not a new model or release.",
-      "source": {
-        "name": "@OpenAIDevs post",
-        "url": "https://x.com/OpenAIDevs/status/2099582651229450749"
-      },
-      "canonical_url": "https://learn.chatgpt.com/docs/linux/linux-app",
-      "published_at": "2026-09-14T19:34:47+00:00",
-      "corroboration": [],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official @OpenAIDevs post (19:34:47 UTC, fetched) with the updated docs page (fetched). Linux app remains in preview; Arch is a supported distro, not a full GA signal."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 56,
-        "label": "56 total engagement on the @OpenAIDevs post (51 likes, 5 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/OpenAIDevs/status/2099582651229450749"
-      },
-      "tags": [
-        "openai",
-        "codex",
-        "linux",
-        "arch",
-        "desktop-app"
+        "ecb",
+        "digital-euro",
+        "cbdc",
+        "merchant-pilot"
       ],
       "rank": 15
     },
     {
-      "id": "lon-fda-psychedelics-hearing",
-      "section": "Longevity",
-      "story_type": "policy",
-      "title": "FDA holds live public hearing on the future therapeutic use of psychedelic drugs - data standardization is the load-bearing item",
-      "summary": "The FDA ran a live-streamed public hearing on 14 Sep on the potential future therapeutic use of psychedelic drugs, covering provider training, patient safety, access and data standardization, with comments due 5 Oct 2026. For longevity readers the through-line is that psychedelics are the fastest-growing interventional class touching aging-adjacent endpoints (depression, PTSD, end-of-life) - and the hearing's focus on trial-data standardization will shape how any longevity-adjacent psychedelic program's evidence gets read by regulators. It is a hearing, not an approval; no product decisions were made on the day.",
-      "source": {
-        "name": "@FDA post",
-        "url": "https://x.com/FDA/status/2099536154705965182"
-      },
-      "canonical_url": "https://www.fda.gov/news-events/fda-meetings-conferences-and-workshops/considerations-potential-future-therapeutic-use-psychedelic-drugs-public-hearing-09142026",
-      "published_at": "2026-09-14T16:30:01+00:00",
-      "corroboration": [
-        {
-          "name": "Hearing stream",
-          "url": "https://www.youtube.com/live/5Kg1gj3KbAI"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official @FDA post (16:30:01 UTC, fetched) with the event page (fetched). Hearing, not an approval; comments due 5 Oct."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 51,
-        "label": "51 total engagement on the @FDA post (48 likes, 3 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/FDA/status/2099536154705965182"
-      },
-      "tags": [
-        "fda",
-        "psychedelics",
-        "public-hearing",
-        "regulation",
-        "neurodegeneration"
-      ],
-      "rank": 16
-    },
-    {
-      "id": "bitcoin-starkware-qubit-estimate",
+      "id": "bitcoin-coindesk-apac-stablecoin",
       "section": "Bitcoin",
-      "story_type": "research",
-      "title": "StarkWare thread: new estimate has secp256k1 breakable with ~20,000 physical qubits in ~26 days; STARKs argued immune",
-      "summary": "In an official thread, StarkWare walks through the newly published ECDSA.fail result - an 86.1% cut in the point-addition resource score for secp256k1, with seven StarkWare/SNF co-authors - plus the IonQ resource estimate that the curve behind Bitcoin and Ethereum keys could be broken with ~20,000 physical qubits in ~26 days, and why STARK proofs (hash-based) are argued immune to that attack class. For builders: this is the concrete post-quantum Bitcoin threat-model update - a circuit-level resource estimate, not a live break, and the comparison circuits behind the Google estimate are still unpublished. Caveat: the arXiv paper itself dropped 9 Sep; this is the official 14 Sep recap.",
+      "story_type": "market",
+      "title": "CoinDesk Research: APAC holds 51.2% of stablecoin payment volume - H1 2026 adjusted volume $37.2T",
+      "summary": "CoinDesk Research's APAC stablecoin landscape series (15 Sep) reports APAC = 51.2% of identified stablecoin payment volume, H1 2026 adjusted volume of $37.2T, and a May market-cap peak of $321B. For builders tracking where stablecoin rails actually move value, this is the reference slice on the APAC side that US-focused coverage skips. Caveat: a research note, not protocol data - methodology and 'adjusted volume' definition drive the numbers.",
       "source": {
-        "name": "@StarkWareLtd post",
-        "url": "https://x.com/StarkWareLtd/status/2099563656266826047"
+        "name": "@CoinDesk post",
+        "url": "https://x.com/CoinDesk/status/2099981642064634066"
       },
-      "canonical_url": "https://arxiv.org/abs/2609.09582",
-      "published_at": "2026-09-14T18:19:18+00:00",
-      "corroboration": [
-        {
-          "name": "Quantum-safe Bitcoin hub",
-          "url": "https://quantum.starkware.co/"
-        }
-      ],
+      "canonical_url": "https://www.coindesk.com/research/the-definitive-stablecoin-landscape-series-asia-pacific",
+      "published_at": "2026-09-15T22:00:13+00:00",
+      "corroboration": [],
       "quality": {
-        "signal": "corroborated",
+        "signal": "analysis",
         "confidence": "medium",
-        "note": "Official @StarkWareLtd thread (18:19:18 UTC) of the 9 Sep arXiv paper (already covered 09-11 as bitcoin-ecdsa-fail-shor-cost; 09-13 as bitcoin-starkware-qsb). The 20,000-qubit figure is a third-party resource estimate cited in the thread."
+        "note": "CoinDesk Research series installment (X post 15 Sep 22:00 UTC, live engagement fetched). Research note, not a protocol release."
       },
       "popularity": {
         "platform": "x",
-        "engagement": 50,
-        "label": "50 total engagement on the @StarkWareLtd post (46 likes, 4 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/StarkWareLtd/status/2099563656266826047"
+        "engagement": 294,
+        "label": "294 total engagement on the @CoinDesk post (216 likes, 43 reposts, 35 replies observed live)",
+        "observed_at": "2026-09-16T04:20:00+00:00",
+        "evidence_url": "https://x.com/CoinDesk/status/2099981642064634066"
       },
       "tags": [
-        "quantum",
-        "secp256k1",
-        "post-quantum",
-        "starkware",
-        "ecdsa"
+        "stablecoin",
+        "apac",
+        "payment-volume",
+        "research"
       ],
-      "rank": 17
+      "rank": 12
     },
     {
-      "id": "bitcoin-sec-24h-equity-roundtable",
+      "id": "bitcoin-dojo-irgc-forfeiture",
       "section": "Bitcoin",
-      "story_type": "policy",
-      "title": "SEC sets Thursday public roundtable on preparations for 24-hour US equity trading",
-      "summary": "The SEC posted its official reminder for a live-streamed Thursday public roundtable on preparations for 24-hour US equity trading, with supporting data posted for review ahead of the session. Crypto-adjacent for builders because the structural question it answers - how US exchanges, clearing and surveillance get re-plumbed for around-the-clock sessions - is the same one stablecoin and tokenized-asset rails are already solving off-market. Caveat: it is an equity-market-structure event, not a Bitcoin rule; the supporting-data memo link was truncated in the post.",
-      "source": {
-        "name": "@SECGov post",
-        "url": "https://x.com/SECGov/status/2099541331269845460"
-      },
-      "canonical_url": "https://www.sec.gov/newsroom/meetings-events/roundtable-preparations-24-hour-trading",
-      "published_at": "2026-09-14T16:50:35+00:00",
-      "corroboration": [],
-      "quality": {
-        "signal": "primary",
-        "confidence": "medium",
-        "note": "Official @SECGov reminder post (16:50:35 UTC); newsroom event page live (403 to some automated fetchers). Event is Thursday 17 Sep - a scheduled session, not a rule."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 49,
-        "label": "49 total engagement on the @SECGov post (40 likes, 9 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/SECGov/status/2099541331269845460"
-      },
-      "tags": [
-        "sec",
-        "24-hour-trading",
-        "market-structure",
-        "roundtable"
-      ],
-      "rank": 18
-    },
-    {
-      "id": "lon-csf-flow-auditory-stimulation",
-      "section": "Longevity",
-      "story_type": "research",
-      "title": "Science Translational Medicine: slow-wave-synchronized auditory stimulation increases CSF flow in humans - a lever on glymphatic clearance",
-      "summary": "An STM paper (amplified by @ScienceMagazine 14 Sep 18:00 UTC) reports that closed-loop auditory pink-noise stimulation timed to EEG slow-wave peaks increased cerebrospinal fluid flow in healthy adults napping inside an MRI (n=14). For builders this is a rare human proof-of-concept on the glymphatic-clearance question: if you can pharmacologically or behaviorally deepen slow-wave coupling, you may modulate the brain's waste-transport system implicated in neurodegenerative disease. It is a healthy-volunteer proof of concept - not a patient trial, not an aging intervention, and the dose-response and durability are unknown.",
-      "source": {
-        "name": "@ScienceMagazine post",
-        "url": "https://x.com/ScienceMagazine/status/2099558870897062027"
-      },
-      "canonical_url": "https://www.science.org/doi/10.1126/scitranslmed.aea5469",
-      "published_at": "2026-09-14T18:00:17+00:00",
-      "corroboration": [],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official journal account post (18:00:17 UTC, fetched) of the STM paper (DOI matched to the article via journal listing; Science.org blocks some automated fetchers). Human n=14 proof of concept."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 29,
-        "label": "29 total engagement on the @ScienceMagazine post (27 likes, 2 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/ScienceMagazine/status/2099558870897062027"
-      },
-      "tags": [
-        "glymphatic",
-        "csf-flow",
-        "slow-wave",
-        "auditory-stimulation",
-        "human"
-      ],
-      "rank": 19
-    },
-    {
-      "id": "lon-nih-neuroprosthesis-speech-gesture",
-      "section": "Longevity",
-      "story_type": "research",
-      "title": "NIH/Nature: a 'multifunctional' neuroprosthesis translates speech and gestures in real time for paralysis",
-      "summary": "The NIH posted (14 Sep 18:24 UTC) a news release - mirrored by a Nature news item - on a neuroprosthesis for paralysis that simultaneously decodes speech and body language in real time. For the longevity/aging portfolio this is a healthy-aging infrastructure story: simultaneous speech+gesture decoding is the capability that makes BCI assistance viable for stroke, ALS and the broader post-injury aging population, and the dual-channel result removes a known limitation of speech-only implants. It is assistive BCI research, not an aging intervention - no drug, no lifespan claim.",
-      "source": {
-        "name": "@NIH post",
-        "url": "https://x.com/NIH/status/2099564865148825894"
-      },
-      "canonical_url": "https://www.nih.gov/news-events/news-releases/neuroprosthesis-paralysis-enables-simultaneous-speech-body-language",
-      "published_at": "2026-09-14T18:24:06+00:00",
-      "corroboration": [
-        {
-          "name": "Nature news item (14 Sep)",
-          "url": "https://www.nature.com/articles/d41586-026-02895-6"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official @NIH post (18:24:06 UTC, fetched) with the NIH release (live) and the parallel Nature news item (fetched, datePublished 14 Sep). Assistive BCI, not an aging intervention."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 27,
-        "label": "27 total engagement on the @NIH post (27 likes, 0 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/NIH/status/2099564865148825894"
-      },
-      "tags": [
-        "neuroprosthesis",
-        "bci",
-        "speech-decoding",
-        "paralysis",
-        "assistive"
-      ],
-      "rank": 20
-    },
-    {
-      "id": "rob-ciftis-embodied-work",
-      "section": "Robotics",
       "story_type": "developing",
-      "title": "CIFTIS 2026: Chinese robotics firms put embodied AI to work - object handling, factory inspection, shelf restocking",
-      "summary": "Xinhua's coverage of the China International Fair for Trade in Services (CIFTIS 2026, 14 Sep) shows Chinese robotics firms demonstrating embodied AI in deployed-adjacent roles: handling objects, factory inspection and supermarket shelf restocking, alongside an international-cooperation push. For builders this is a data point on where the China ecosystem is actually selling (commercial services + inspection, not just demo backflips), and on export posture ahead of the spy-law compliance debates that WAIC raised. Caveat: state-agency trade-fair coverage - demos and partnerships, not shipped product or published specs.",
+      "title": "Catch-up: DOJ SDNY seeks ~$61M crypto forfeiture from IRGC-linked oil proceeds - $1.5B unhosted-wallet pipeline named",
+      "summary": "US Attorney's Office SDNY filed a civil forfeiture action against ~$61M in cryptocurrency alleged to be proceeds of IRGC-linked Iranian oil sales, naming a ~$1.5B 'Entity A' unhosted-wallet pipeline and Chinese firms Blessed Trust and Hexa Whale via Binance accounts. For builders running custody or OTC desks, the unhosted-wallet nomenclature and the Iranian-state-adjacent counterparty theory extend the enforcement perimeter to non-custodial infrastructure. Caveat: press release is 14 Sep 22:47 UTC - ~43 minutes before this edition's 30h window - so it is labeled Catch-up; the asset is an allegation in a complaint, not a conviction.",
       "source": {
-        "name": "@XHNews post",
-        "url": "https://x.com/XHNews/status/2099427484139979198"
+        "name": "@CoinDesk post",
+        "url": "https://x.com/CoinDesk/status/2099831137434530009"
       },
-      "canonical_url": "https://english.news.cn/20260914/78d22fa32707490a95ee51987d1c8d9d/c.html",
-      "published_at": "2026-09-14T09:18:12+00:00",
-      "corroboration": [],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "Xinhua official post (09:18:12 UTC, fetched) with the trade-fair article (link resolved from the post entity). Trade-fair coverage, not a product launch."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 12,
-        "label": "12 total engagement on the @XHNews post (8 likes, 4 replies observed; reposts not exposed by the fetched endpoint)",
-        "observed_at": "2026-09-15T04:25:00+00:00",
-        "evidence_url": "https://x.com/XHNews/status/2099427484139979198"
-      },
-      "tags": [
-        "ciftis",
-        "china",
-        "embodied-ai",
-        "demonstrations",
-        "deployment"
-      ],
-      "rank": 21
-    },
-    {
-      "id": "ai-google-anthropic-openai-cyber-day",
-      "section": "AI",
-      "story_type": "catch-up",
-      "title": "Catch-up: same-day cyber AI day - Gemini 3.8 Flash + Flash Cyber (Fairwind program), and OpenAI says GPT-6 Astra meets its Critical cyber threshold",
-      "summary": "The Hacker News' 14 Sep piece ties together a coordinated cyber-AI push: Google's Gemini 3.8 Flash Cyber (blog dated 2 Sep - the catch-up; live coverage lands in-window) is its most capable cybersecurity model, frontier-level on vulnerability detection and automated patching, gated to 'trusted defenders' through the new Fairwind program (named partners include CrowdStrike, Datadog, Menlo Security, Palo Alto Networks, Snowflake); in parallel OpenAI says GPT-6 Astra meets its internal Critical cybersecurity capability threshold. For builders: tiered-access cyber models are now a real product category, and 'defender-only' gating is the new default posture for dual-use capability. Caveat: the Flash model launch itself predates the window - this is the in-window industry framing, not a new model.",
-      "source": {
-        "name": "The Hacker News (14 Sep)",
-        "url": "https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html"
-      },
-      "canonical_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
-      "published_at": "2026-09-14T12:00:00+00:00",
-      "corroboration": [
-        {
-          "name": "Google - Flash Cyber model page",
-          "url": "https://deepmind.google/models/gemini/cyber/"
-        },
-        {
-          "name": "TechTimes - launch detail",
-          "url": "https://www.techtimes.com/articles/326403/20260903/google-launches-gemini-38-flash-cyber-ai-patches-26x-faster-restricted-vetted-defenders.htm"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "Google blog (datePublished 2 Sep 15:00 UTC, fetched) is the model's canonical record - outside the 30h window, hence Catch-up; the Hacker News piece (14 Sep, date-only, noon UTC used) is the in-window synthesis. Fairwind partner list per TechTimes/Hacker News."
-      },
-      "tags": [
-        "gemini-flash-cyber",
-        "gpt-6-astra",
-        "cybersecurity",
-        "fairwind",
-        "tiered-access"
-      ],
-      "rank": 22
-    },
-    {
-      "id": "lon-rentosertib-aging-results",
-      "section": "Longevity",
-      "story_type": "research",
-      "title": "Insilico's rentosertib: phase 2a participants show 3-4 year reversal in predicted biological age on six proteomic clocks",
-      "summary": "Medical News Today's 13 Sep report on the Insilico Medicine rentosertib phase 2a trial (the AI-designed drug for idiopathic pulmonary fibrosis) says participants experienced reversal of predicted biological aging across six proteomic clock models, with the peak effect at week 4 of about 3-4 years of biological-age reversal. For builders this is the first time a drug-candidate trial has reported a multi-clock proteomic reversal at this magnitude - and the 9 Sep Nature Methods paper (covered 09-08) had already published the integrated-clock methodology, so the measurement layer and the result layer now line up. It is human clinical data, but a small phase 2a with aging as an exploratory endpoint - not a geroprotective indication - and the clocks are predictive models, not ground truth.",
-      "source": {
-        "name": "Medical News Today (13 Sep)",
-        "url": "https://www.medicalnewstoday.com/articles/ai-designed-lung-disease-drug-lowers-biological-age-markers-early-trial"
-      },
-      "canonical_url": "https://www.medicalnewstoday.com/articles/ai-designed-lung-disease-drug-lowers-biological-age-markers-early-trial",
-      "published_at": "2026-09-13T10:10:00+00:00",
-      "corroboration": [
-        {
-          "name": "Nature Methods - proteomic clock integration (7 Sep, covered 09-08)",
-          "url": "https://www.nature.com/articles/s41587-026-03286-y"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "MNT report (datePublished fetched 13 Sep 10:10 UTC) of the trial results; the 7 Sep Nature Methods paper (archive 09-08) is the methodology. Human phase 2a; aging endpoints are exploratory; clock reversals are model-based."
-      },
-      "tags": [
-        "rentosertib",
-        "insilico",
-        "proteomic-clocks",
-        "phase-2a",
-        "biological-age"
-      ],
-      "rank": 23
-    },
-    {
-      "id": "rob-unitree-g1-plus-launch",
-      "section": "Robotics",
-      "story_type": "product",
-      "title": "Unitree launches G1+ humanoid - movable neck, 110% higher shoulder/waist peak torque, priced at $15,000",
-      "summary": "Unitree launched G1+, an upgrade of its compact G1 humanoid: two added neck DoF (pitch/yaw), claimed 110% higher peak torque at shoulder and waist, +43% max arm torque, and reduced motor heating at equal torque (72% shoulder/waist, 30% arm, 28% thigh). The perception stack adds binocular vision, a chest-mounted wide-angle camera, head touch sensing, six mics and two 10 W speakers; the base model is listed at US$15,000 ex tax/shipping (95,000 yuan incl. tax in China vs 85,000 for G1). For builders: a $15k head-capable research humanoid with published torque deltas is the price point where multi-unit lab fleets stop being a budget exception. Caveat: all performance numbers are manufacturer claims, and the dollar and yuan price bases differ (tax/shipping).",
-      "source": {
-        "name": "Humanoids Daily (14 Sep)",
-        "url": "https://www.humanoidsdaily.com/news/unitree-launches-g1-plus-humanoid-with-stronger-motors-and-moving-neck"
-      },
-      "canonical_url": "https://www.humanoidsdaily.com/news/unitree-launches-g1-plus-humanoid-with-stronger-motors-and-moving-neck",
-      "published_at": "2026-09-14T14:16:37+00:00",
-      "corroboration": [],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "Specialist coverage of the 14 Sep launch (datePublished fetched; The Standard also reported it). @UnitreeRobotics did not post in-window. Torque/heating figures are Unitree claims."
-      },
-      "tags": [
-        "unitree",
-        "g1",
-        "humanoid",
-        "price",
-        "torque"
-      ],
-      "rank": 24
-    },
-    {
-      "id": "rob-reward-ai-om1-zero-shot",
-      "section": "Robotics",
-      "story_type": "research",
-      "title": "Reward AI exits stealth with OM-1 - a robot manipulation policy trained only on human demo data, zero-shot across embodiments",
-      "summary": "Stealth startup Reward AI debuted OM-1, a foundational manipulation policy trained entirely on direct human manipulation data - no teleoperation, no on-robot experience - built on the Omnibody Hand, a wearable 7-DoF mocap device derived from Stanford's DexCap research (tactile feedback, proximity sensing, global-shutter in-hand cameras, electromagnetic tracking). The company claims OM-1 generalizes zero-shot across tabletop arms, heavy industrial manipulators and humanoids, and learns novel long-horizon skills from under 30 minutes of demonstrations, with a decoupled high-frequency RL control layer handling dynamics independently of policy inference. For builders this is the strongest in-window argument for the 'human-data-first' school against web-scale video pretraining (Dyna-2-style) and fleet teleoperation (Skild S1-style) - all claims are company-reported, no paper yet.",
-      "source": {
-        "name": "Humanoids Daily (14 Sep)",
-        "url": "https://www.humanoidsdaily.com/news/reward-ai-exits-stealth-with-om-1-pitching-zero-shot-human-to-robot-manipulation"
-      },
-      "canonical_url": "https://www.humanoidsdaily.com/news/reward-ai-exits-stealth-with-om-1-pitching-zero-shot-human-to-robot-manipulation",
-      "published_at": "2026-09-14T20:45:04+00:00",
-      "corroboration": [],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "Specialist coverage of the 14 Sep stealth exit (datePublished fetched). No independent paper or weights located yet; generalization claims are company-reported."
-      },
-      "tags": [
-        "reward-ai",
-        "om-1",
-        "manipulation",
-        "human-data",
-        "zero-shot",
-        "stealth-exit"
-      ],
-      "rank": 25
-    },
-    {
-      "id": "rob-munich-kyle-alpha",
-      "section": "Robotics",
-      "story_type": "developing",
-      "title": "Munich stealth startup shows 'Kyle', its walking alpha humanoid - Gen 1 targeted for early 2027",
-      "summary": "Nikolai Ensslen (Synapticon co-founder) shared unblurred footage of Kyle, the alpha development platform of his new Munich robotics venture, saying it is 'one of the better gaits out there' at early stage. The boxy, exposed-wiring frame is deliberately shown as a development mule - not the product - with the first-generation robot targeted for an early 2027 unveil. For builders: a named motion-control specialist from Synapticon entering the humanoid race with public locomotion footage is a concrete European data point on who is building walking humanoids outside the US/China concentration, ahead of a product reveal. Caveat: single-founder video, no specs, no company name publicly confirmed beyond the founder.",
-      "source": {
-        "name": "Humanoids Daily (14 Sep)",
-        "url": "https://www.humanoidsdaily.com/news/munich-stealth-humanoid-startup-shows-kyle-prototype-targets-2027-reveal"
-      },
-      "canonical_url": "https://www.humanoidsdaily.com/news/munich-stealth-humanoid-startup-shows-kyle-prototype-targets-2027-reveal",
-      "published_at": "2026-09-14T19:42:19+00:00",
+      "canonical_url": "https://www.justice.gov/usao-sdny/pr/us-attorney-seeks-forfeiture-61-million-cryptocurrency-iranian-militarys-black-market",
+      "published_at": "2026-09-14T22:47:00+00:00",
       "corroboration": [],
       "quality": {
         "signal": "developing",
         "confidence": "medium",
-        "note": "Specialist coverage (datePublished fetched) of founder-shared footage (14 Sep). Alpha platform, not Gen 1; early 2027 reveal is a stated target, not a commitment."
+        "note": "DOJ SDNY press release (14 Sep 22:47 UTC, ~43 min before window start - Catch-up label, canonical URL absent from all archives). Page live but JS-heavy; details via the 15 Sep CoinDesk post."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 109,
+        "label": "109 total engagement on the @CoinDesk post (82 likes, 12 reposts, 15 replies observed live)",
+        "observed_at": "2026-09-16T04:20:00+00:00",
+        "evidence_url": "https://x.com/CoinDesk/status/2099831137434530009"
       },
       "tags": [
-        "kyle",
-        "munich",
-        "locomotion",
-        "stealth",
-        "europe"
+        "doj",
+        "sdny",
+        "forfeiture",
+        "iran",
+        "unhosted-wallet"
       ],
-      "rank": 26
+      "rank": 18
     },
     {
-      "id": "rob-robocurve-10m-seed",
-      "section": "Robotics",
-      "story_type": "funding",
-      "title": "Robocurve raises a $10M seed to independently evaluate physical AI - open benchmarks, 97k harness downloads",
-      "summary": "Robocurve (YC S26, founder Jay Chooi) raised a $10M seed led by Initialized - with Notable Capital, Decasonic, Y Combinator and Halcyon Futures - to build the independent lab that measures how good robot AI actually is: open benchmarks anyone can run and verify, built around Inspect Robots, its open-source physical-AI evaluation harness (97k+ downloads, 200+ institutions, 6M+ research views in under 3 months per the company). For builders: this is the eval-infrastructure bet landing in parallel with the data-pipeline raises (XDOF's ~$1.2B Series B talks) - the physical-AI bottleneck narrative is now funding both data and measurement. Caveat: the round is confirmed via a VC's 14 Sep fundraise receipts post; Robocurve's site confirms the raise but no term sheet or official press release was located.",
+      "id": "ai-gemini-3-8-live",
+      "section": "AI",
+      "story_type": "model",
+      "title": "Google ships Gemini 3.8 Live and 3.8 Live Extended Thinking - native speech-to-speech agents with background tool use, $0.005/min in",
+      "summary": "Google released two native speech-to-speech models built on Gemini 3 Pro: Gemini 3.8 Live (scale/cost) and 3.8 Live Extended Thinking (multi-step reasoning with parallel tool calls running in the background while the conversation continues). Vendor-claimed #1 on the Artificial Analysis Speech-to-Speech Quality Index (82.6), 68.6% tau-Voice, 97.7% Big Bench Audio, 128K in / 64K out, 97-language auto-switch, visual grounding and SynthID on audio; pricing starts at $0.005/min audio in, $0.018/min out. Public preview in the Gemini API and AI Studio now; Search Live and Workspace Live rolling out. For builders: this is the first frontier-lab voice stack where the reasoning layer doesn't block on the audio turn - the 'turnComplete' semantics change matters if you're building on it. Caveat: enterprise is private preview and several headline scores are vendor-reported.",
       "source": {
-        "name": "Frontrun - fundraise receipts (14 Sep)",
-        "url": "https://www.frontrun.vc/blog/fundraise_receipts-2026-09-14/"
+        "name": "@GoogleDeepMind post",
+        "url": "https://x.com/GoogleDeepMind/status/2099907440422830269"
       },
-      "canonical_url": "https://robocurve.org/",
-      "published_at": "2026-09-14T12:00:00+00:00",
+      "canonical_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "published_at": "2026-09-15T17:05:22+00:00",
       "corroboration": [
         {
-          "name": "Robocurve site (raise announced)",
-          "url": "https://robocurve.org/"
+          "name": "Google blog (fetched)",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/"
         },
         {
-          "name": "Y Combinator - Robocurve",
-          "url": "https://www.ycombinator.com/companies/robocurve"
+          "name": "Gemini API model docs",
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-live-extended-thinking"
+        },
+        {
+          "name": "@GoogleAIStudio pricing post",
+          "url": "https://x.com/GoogleAIStudio/status/2099915030074736828"
+        },
+        {
+          "name": "MarkTechPost coverage",
+          "url": "https://www.marktechpost.com/2026/09/15/google-releases-gemini-3-8-live-and-3-8-live-extended-thinking-for-production-grade-voice-agents/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @GoogleDeepMind post (17:05:22 UTC, fetched with live engagement) plus Google blog page fetched (published Sep 15, 2026). Independent coverage confirms the 82.6/97.7/97-language figures."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 3283,
+        "label": "3,283 total engagement on the @GoogleDeepMind post (2,825 likes, 292 reposts, 166 replies observed live)",
+        "observed_at": "2026-09-16T04:00:03+00:00",
+        "evidence_url": "https://x.com/GoogleDeepMind/status/2099907440422830269"
+      },
+      "tags": [
+        "google",
+        "gemini",
+        "speech-to-speech",
+        "voice-agents",
+        "realtime"
+      ],
+      "rank": 2
+    },
+    {
+      "id": "ai-gpt-5-5-sunset",
+      "section": "AI",
+      "story_type": "product",
+      "title": "OpenAI: GPT-5.5 leaves ChatGPT, Work and Codex on Oct 14 - move to gpt-5.6-sol or GPT-6 Astra; API keeps 5.5",
+      "summary": "OpenAI announced that on 2026-10-14 GPT-5.5 is retired from ChatGPT, ChatGPT Work and Codex on all plans (consumer through Edu); Codex users on ChatGPT login are steered to gpt-5.6-sol or GPT-6 Astra, while API-key Codex and API usage keep 5.5. For builders: anything pinning gpt-5.5 in saved defaults, custom agents or scripts that use ChatGPT login breaks on the 14th - audit your defaults now. @OpenAIDevs' companion post (20:11:45 UTC) also links a GPT-6 Astra + Cognition Devin test-generation case study. Caveat: this is a model retirement, not a new model - and the consumer copy names both Astra and 5.6-sol, so pin the exact slug from the docs.",
+      "source": {
+        "name": "@ChatGPT post",
+        "url": "https://x.com/ChatGPT/status/2099954190600876533"
+      },
+      "canonical_url": "https://learn.chatgpt.com/docs/models",
+      "published_at": "2026-09-15T20:11:08+00:00",
+      "corroboration": [
+        {
+          "name": "@OpenAIDevs clarification",
+          "url": "https://x.com/OpenAIDevs/status/2099954342170067174"
+        },
+        {
+          "name": "ChatGPT Learn changelog entry",
+          "url": "https://learn.chatgpt.com/docs/changelog"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @ChatGPT post (20:11:08 UTC, fetched with live engagement) plus @OpenAIDevs clarification (20:11:45 UTC). learn.chatgpt.com fetched live (models doc page)."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 21327,
+        "label": "21,327 total engagement on the @ChatGPT post (19,780 likes, 842 reposts, 705 replies observed live)",
+        "observed_at": "2026-09-16T04:00:03+00:00",
+        "evidence_url": "https://x.com/ChatGPT/status/2099954190600876533"
+      },
+      "tags": [
+        "openai",
+        "gpt-5.5",
+        "gpt-5.6",
+        "gpt-6-astra",
+        "codex"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "ai-salesforce-in-claude",
+      "section": "AI",
+      "story_type": "product",
+      "title": "Salesforce in Claude (beta) - 37 sales skills, CRM write-back, Slack connector on paid plans",
+      "summary": "Anthropic shipped the Salesforce plugin for Claude (beta): accounts, opportunities and pipeline inside Claude, 37 Salesforce-built sales skills, Salesforce and Slack connectors, and CRM write-back after user approval - available on paid Claude plans in chat and Claude Cowork (web/desktop). For builders it is the first first-party CRM distribution channel for Claude agents, and the AgentExchange approval gate (org must be Salesforce-approved, admin OAuth then per-user) is the pattern to expect from enterprise data connectors. Caveat: requires latest Sales Cloud enterprise; not a new Claude model.",
+      "source": {
+        "name": "@claudeai post",
+        "url": "https://x.com/claudeai/status/2099876514330206578"
+      },
+      "canonical_url": "https://claude.com/blog/salesforce-in-claude",
+      "published_at": "2026-09-15T15:02:29+00:00",
+      "corroboration": [
+        {
+          "name": "Claude blog (fetched, Sep 15)",
+          "url": "https://claude.com/blog/salesforce-in-claude"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @claudeai post (15:02:29 UTC, fetched with live engagement); claude.com/blog page fetched (datePublished Sep 15, 2026)."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 8942,
+        "label": "8,942 total engagement on the @claudeai post (8,109 likes, 569 reposts, 264 replies observed live)",
+        "observed_at": "2026-09-16T04:00:03+00:00",
+        "evidence_url": "https://x.com/claudeai/status/2099876514330206578"
+      },
+      "tags": [
+        "anthropic",
+        "claude",
+        "salesforce",
+        "crm",
+        "agents"
+      ],
+      "rank": 4
+    },
+    {
+      "id": "ai-nvidia-dsx-vr-tokens-per-watt",
+      "section": "AI",
+      "story_type": "infrastructure",
+      "title": "NVIDIA AI Infra Summit: Vera Rubin NVL72 + DSX MaxLPS - up to 30x tokens/MW vs GB300 on AgentX, 2,529 tok/s/user on Thor-class 100K ctx",
+      "summary": "NVIDIA's AI Infra Summit dropped the tokens-per-watt stack: DSX MaxLPS (Lambda co-developed, +24% tokens/s and +23% perf/W on 19 vs 16 nodes), up to +40% GPUs in the same megawatt on Vera Rubin NVL72, AgentX running DeepSeek V4 Pro at up to 30x tokens/MW vs GB300 NVL72, Groq 3 LPX at 2,529 tok/s/user on 100K-context Qwen 3.8 27B, plus DSX Flex demand-response with Emerald AI and NVHBM with Amazon Annapurna. For builders the useful number is the per-megawatt productivity curve, not the peak marketing bound - 'up to 30x' is a workload-dependent ceiling. Caveat: many figures are NVIDIA or partner-measured, some pending SemiAnalysis review.",
+      "source": {
+        "name": "@nvidia post",
+        "url": "https://x.com/nvidia/status/2099907057025536506"
+      },
+      "canonical_url": "https://blogs.nvidia.com/blog/ai-infra-summit-vera-rubin-dsx-energy-efficiencies-tokens-per-watt-ai-factories/",
+      "published_at": "2026-09-15T16:55:40+00:00",
+      "corroboration": [
+        {
+          "name": "NVIDIA blog (fetched, 16:55:40 UTC)",
+          "url": "https://blogs.nvidia.com/blog/ai-infra-summit-vera-rubin-dsx-energy-efficiencies-tokens-per-watt-ai-factories/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @nvidia post (17:03:51 UTC, fetched with live engagement); NVIDIA blog fetched, article:published_time 2026-09-15T16:55:40+00:00."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 497,
+        "label": "497 total engagement on the @nvidia post (404 likes, 51 reposts, 42 replies observed live)",
+        "observed_at": "2026-09-16T04:00:03+00:00",
+        "evidence_url": "https://x.com/nvidia/status/2099907057025536506"
+      },
+      "tags": [
+        "nvidia",
+        "vera-rubin",
+        "dsx",
+        "tokens-per-watt",
+        "ai-factories"
+      ],
+      "rank": 5
+    },
+    {
+      "id": "ai-retrieve-for-train",
+      "section": "AI",
+      "story_type": "research",
+      "title": "Google Research: Retrieve-for-Train - offline RL compiles set-level search fan-outs into a 53.9M diffusion retriever",
+      "summary": "Google Research published Retrieve-for-Train (arXiv 2603.06397, ICML 2026 write-up published 15 Sep): an offline RL system that compiles set-level search 'fan-outs' (diversity, coverage, complementarity) into a 53.9M-parameter diffusion retriever that emits a full result slate in a single pass, skipping test-time chain-of-thought. Trained on Gemma3-4B and Qwen3-4B with GRPO; the reward mixes groundedness, Vendi diversity and query alignment. For builders on retrieval-augmented stacks this is the 'train the retriever to behave like the search pipeline' pattern - the retriever becomes the compiled artifact, not a runtime loop. Caveat: research system, not a Google Search or API product; the paper predates the blog.",
+      "source": {
+        "name": "@GoogleResearch post",
+        "url": "https://x.com/GoogleResearch/status/2099951761985601580"
+      },
+      "canonical_url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
+      "published_at": "2026-09-15T20:01:29+00:00",
+      "corroboration": [
+        {
+          "name": "Google Research blog (fetched, Sep 15)",
+          "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/"
+        },
+        {
+          "name": "arXiv paper",
+          "url": "https://arxiv.org/abs/2603.06397"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @GoogleResearch post (20:01:29 UTC, fetched with live engagement); research.google blog fetched (September 15, 2026)."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 676,
+        "label": "676 total engagement on the @GoogleResearch post (606 likes, 58 reposts, 12 replies observed live)",
+        "observed_at": "2026-09-16T04:00:03+00:00",
+        "evidence_url": "https://x.com/GoogleResearch/status/2099951761985601580"
+      },
+      "tags": [
+        "google-research",
+        "retrieval",
+        "offline-rl",
+        "diffusion-retriever",
+        "search"
+      ],
+      "rank": 10
+    },
+    {
+      "id": "ai-luma-camera-angles",
+      "section": "AI",
+      "story_type": "product",
+      "title": "Luma ships Camera Angles - one photo to a multi-angle shoot of the same subject",
+      "summary": "Luma Labs released Camera Angles, a product feature that takes a single photo and generates a multi-angle 'shoot' of the same subject - effectively decoupling camera placement from capture in Luma's image pipeline. For builders working on subject-consistent generation this is the feature primitive (one subject, N camera poses, same identity) that product teams have been hand-rolling. Caveat: small product post, not a foundation-model release; no independent consistency or quality numbers yet; distinct from the 2025 Dream Machine 'Camera Angle Concepts' feature.",
+      "source": {
+        "name": "@LumaLabsAI post",
+        "url": "https://x.com/LumaLabsAI/status/2100003363333050636"
+      },
+      "canonical_url": "https://app.lumalabs.ai/solutions/camera-angles",
+      "published_at": "2026-09-15T23:26:32+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @LumaLabsAI post (23:26:32 UTC) with the product URL from an official reply. Product feature, low-engagement post."
+      },
+      "tags": [
+        "luma",
+        "camera-angles",
+        "image-generation",
+        "product"
+      ],
+      "rank": 20
+    },
+    {
+      "id": "rob-agility-digit-5",
+      "section": "Robotics",
+      "story_type": "product",
+      "title": "Agility unveils Digit 5 - 50 lb payload, 20 h/day operation, cooperative safety, first launch partner for NVIDIA Halos on IGX Thor",
+      "summary": "Agility Robotics released Digit 5, its next-generation industrial humanoid, with a new cooperative-safety architecture (AI person detection, independent safety controller, visual/auditory motion cues) designed to let the robot work within arm's reach of people without physical barriers. Hardware: cycloidal hip/knee, 50 lb / 22.7 kg payload, 5'11\" / 284 lb, 7.2 ft reach, 90-min pack with 9-min charge (10:1 run-to-charge, 20 h / 24 h claimed), swappable ISO-flange end effectors. Agility claims $300M+ in milestone-conditioned multi-year orders as of May 2026; Digit 4 has logged >65,000 hours. First commercial push outside North America (EU/UK, CE mark planned); early access H1 2027, GA by end-2027. Digit 5 is the first launch partner for NVIDIA's Halos for Robotics platform on IGX Thor. Caveat: specs and order book are company claims; orders are milestone-contingent, not revenue; the 'cooperatively safe' designation is the company's, not yet a published certification.",
+      "source": {
+        "name": "@agilityrobotics post",
+        "url": "https://x.com/agilityrobotics/status/2099815562406928479"
+      },
+      "canonical_url": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
+      "published_at": "2026-09-15T11:00:17+00:00",
+      "corroboration": [
+        {
+          "name": "Agility product page",
+          "url": "https://www.agilityrobotics.com/solutions/digit-5"
+        },
+        {
+          "name": "PR Newswire (fetched)",
+          "url": "https://www.prnewswire.com/news-releases/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale-302878540.html"
+        },
+        {
+          "name": "GeekWire - 50 lb / 20 h specs",
+          "url": "https://www.geekwire.com/2026/agilitys-new-digit-5-robot-lifts-50-pounds-works-20-hours-a-day-and-operates-alongside-people/"
+        },
+        {
+          "name": "Bloomberg TV interview",
+          "url": "https://x.com/agilityrobotics/status/2099950440918167771"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @agilityrobotics post (11:00:17 UTC, fetched with live engagement) plus Agility press release fetched (15 Sep 2026). Independent coverage (GeekWire, BI, Bloomberg) confirms the key specs. The 14 Sep teaser (already in 09-15 edition) is the pre-launch event; this is the actual product drop."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 368,
+        "label": "368 total engagement on the @agilityrobotics post (300 likes, 46 reposts, 22 replies observed live)",
+        "observed_at": "2026-09-16T04:00:03+00:00",
+        "evidence_url": "https://x.com/agilityrobotics/status/2099815562406928479"
+      },
+      "tags": [
+        "agility",
+        "digit-5",
+        "humanoid",
+        "cooperative-safety",
+        "nvidia-halos"
+      ],
+      "rank": 7
+    },
+    {
+      "id": "rob-nvidia-isaca-0-3",
+      "section": "Robotics",
+      "story_type": "catch-up",
+      "title": "Catch-up: NVIDIA releases Isaac Lab-Arena 0.3 - open-source policy-eval stack with agentic environment generation and multi-node GPU eval",
+      "summary": "NVIDIA's Isaac Lab-Arena 0.3 (GitHub drop 10 Sep, official X amplification 15 Sep 00:31 UTC) adds agentic natural-language environment generation, variation sweeps, multi-node GPU evaluation, and GR00T / pi-0.5 client-server modes to the open-source policy-eval layer on Isaac Lab. Ships 31 kitchen + 38 RoboLab-style sample tasks with subtask predicates and sensitivity analysis. For builders this is the reference eval harness for training and benchmarking embodied policies before deployment - the 'agentic NL environment generation' pattern means you can describe a task in English and get a runnable eval. Caveat: 0.3 Alpha - APIs are still moving; the GitHub announcement predates this edition's window, hence the Catch-up label.",
+      "source": {
+        "name": "@NVIDIARobotics post",
+        "url": "https://x.com/NVIDIARobotics/status/2099657221336424957"
+      },
+      "canonical_url": "https://github.com/isaac-sim/IsaacLab-Arena/discussions/1245",
+      "published_at": "2026-09-15T00:31:05+00:00",
+      "corroboration": [
+        {
+          "name": "Isaac Lab-Arena 0.3 docs",
+          "url": "https://isaac-sim.github.io/IsaacLab-Arena/release/0.3.0/"
+        },
+        {
+          "name": "GitHub tag",
+          "url": "https://github.com/isaac-sim/IsaacLab-Arena/tree/release/0.3.0"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @NVIDIARobotics post (15 Sep 00:31:05 UTC, fetched with live engagement). GitHub discussion URL from the official reply. The 0.3 Alpha shipped 10 Sep - outside the 30h window, hence Catch-up; the X amplification is in-window."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 303,
+        "label": "303 total engagement on the @NVIDIARobotics post (257 likes, 32 reposts, 14 replies observed live)",
+        "observed_at": "2026-09-16T04:45:00+00:00",
+        "evidence_url": "https://x.com/NVIDIARobotics/status/2099657221336424957"
+      },
+      "tags": [
+        "nvidia",
+        "isaac-lab",
+        "policy-eval",
+        "open-source",
+        "embodied-ai"
+      ],
+      "rank": 13
+    },
+    {
+      "id": "rob-ubtech-liuzhou-official-x",
+      "section": "Robotics",
+      "story_type": "catch-up",
+      "title": "Catch-up: UBTECH posts official English amplification of the Liuzhou super-factory commissioning - 10-minute takt, 10,000-unit nameplate",
+      "summary": "UBTECH's official X account posted (15 Sep 12:00:01 UTC) the first English-language amplification of the Liuzhou humanoid-robot factory commissioning that was already reported via Humanoids Daily on 12 Sep: 10-minute takt, 1,000-unit to 10,000-unit nameplate scaling 'in less than 9 months.' For builders tracking Chinese humanoid production capacity this is the official-source confirmation of the factory specs. Caveat: the ceremony was 12 Sep - already covered in the 14 Sep edition via Humanoids Daily; this is the official-X angle, hence Catch-up. Capacity is design intent, not verified yield.",
+      "source": {
+        "name": "@UBTECHRobotics post",
+        "url": "https://x.com/UBTECHRobotics/status/2099830594817646663"
+      },
+      "canonical_url": "https://x.com/UBTECHRobotics/status/2099830594817646663",
+      "published_at": "2026-09-15T12:00:01+00:00",
+      "corroboration": [
+        {
+          "name": "14 Sep edition - Humanoids Daily coverage",
+          "url": "https://www.humanoidsdaily.com/news/inside-ubtech-s-10-000-unit-super-factory-how-robots-are-building-humanoids-in-liuzhou"
         }
       ],
       "quality": {
         "signal": "corroborated",
         "confidence": "medium",
-        "note": "VC receipts post (14 Sep, datePublished fetched) naming lead + investors; Robocurve's own site confirms the $10M raise (fetched). Date-only for the exact announcement moment - noon UTC used. Download/institution counts are company-claimed."
+        "note": "Official @UBTECHRobotics post (15 Sep 12:00:01 UTC, fetched with live engagement). Event (factory commissioning) was 12 Sep and already in the 14 Sep archive; this is the official-X amplification, hence Catch-up. UBTECH's own newsroom was not updated with a matching English release."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 140,
+        "label": "140 total engagement on the @UBTECHRobotics post (105 likes, 26 reposts, 9 replies observed live)",
+        "observed_at": "2026-09-16T04:45:00+00:00",
+        "evidence_url": "https://x.com/UBTECHRobotics/status/2099830594817646663"
       },
       "tags": [
-        "robocurve",
-        "funding",
-        "evaluation",
-        "inspect-robots",
-        "physical-ai"
+        "ubtech",
+        "humanoid",
+        "factory",
+        "production-capacity",
+        "china"
       ],
-      "rank": 27
+      "rank": 16
+    },
+    {
+      "id": "lon-fda-expedited-ind-pilot",
+      "section": "Longevity",
+      "story_type": "policy",
+      "title": "FDA opens the Expedited IND Pilot - sponsor/QRI pairs can apply from today; ~8-10 pairs, selection ~18 Dec 2026",
+      "summary": "The FDA announced the final design of the Expedited Investigational New Drug (IND) Pilot (HHS 'Operation TrialBlazer') and is accepting applications from 15 Sep until 30 Oct 2026: drug sponsors pair with Qualified Research Institutions to compress the path from drug identification to first-in-human study, with ~8-10 pairs expected and selection around 18 Dec 2026. The agency's stated benchmark: FIH trials take up to two years in the US versus much faster in China and Australia. For longevity builders this is the concrete gate to get a geroscience candidate into a US FIH on an accelerated clock - and it does NOT waive IND safety review. Caveat: it is a pilot program, not a new approval pathway; the X post itself carried no link, the FDA press page is the source of record.",
+      "source": {
+        "name": "@FDA post",
+        "url": "https://x.com/FDA/status/2099871503730774493"
+      },
+      "canonical_url": "https://www.fda.gov/news-events/press-announcements/fda-launches-expedited-ind-pilot-begins-accepting-applications",
+      "published_at": "2026-09-15T14:42:34+00:00",
+      "corroboration": [
+        {
+          "name": "FDA program page (fetched)",
+          "url": "https://www.fda.gov/industry/fda-actions-accelerate-and-modernize-early-and-late-stage-clinical-development/fda-expedited-investigational-new-drug-ind-pilot-program"
+        },
+        {
+          "name": "Endpoints - pilot plan detail",
+          "url": "https://endpoints.news/fda-details-pilot-plan-to-expedite-new-drugs-eyeing-up-to-10-programs/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @FDA post (15 Sep 14:42:34 UTC, fetched with live engagement); FDA press announcement fetched (For Immediate Release, September 15, 2026; program page updated 15 Sep 11:26 EDT)."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 240,
+        "label": "240 total engagement on the @FDA post (173 likes, 31 reposts, 36 replies observed live)",
+        "observed_at": "2026-09-16T04:00:03+00:00",
+        "evidence_url": "https://x.com/FDA/status/2099871503730774493"
+      },
+      "tags": [
+        "fda",
+        "ind-pilot",
+        "first-in-human",
+        "clinical-trials",
+        "operation-trialblazer"
+      ],
+      "rank": 8
+    },
+    {
+      "id": "lon-retro-rtr-242-dosing",
+      "section": "Longevity",
+      "story_type": "catch-up",
+      "title": "Catch-up: Retro Biosciences widens its RTR-242 Alzheimer's trial - higher doses, no red flags from early patients",
+      "summary": "Retro Biosciences (Altman-backed; lysosome-acidity restorer RTR-242) is expanding its Phase 1 Alzheimer's dosing cohort after early doses showed no red flags, with higher-dose arms now dosing. For builders tracking the reprogramming/lysosomal-aging pipeline this is the first human-safety signal on a drug explicitly positioned as a youth-restore-then-maintain therapy for neurodegeneration - the Phase 1 readout will define the dosing window for the Phase 2 AD program. Caveat: Phase 1 safety expansion only - no efficacy readout; coverage is via Longevity Technology's 14 Sep 11:26 UTC post of a 11 Sep article, hence Catch-up.",
+      "source": {
+        "name": "@LongevityTech post",
+        "url": "https://x.com/LongevityTech/status/2099459871036891594"
+      },
+      "canonical_url": "https://longevity.technology/news/retro-biosciences-tweaks-its-alzheimers-pill-dosing/",
+      "published_at": "2026-09-14T11:26:53+00:00",
+      "corroboration": [
+        {
+          "name": "Business Insider - higher doses",
+          "url": "https://www.businessinsider.com/retro-biotech-testing-higher-doses-of-rtr-242-alzheimers-drug-2026-8"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "In-window event is the 14 Sep 11:26:53 UTC @LongevityTech post (fetched with live engagement) of the longevity.technology article (fetched, datePublished 2026-09-11T16:34:05Z). Phase 1, human, safety-focused - not an efficacy claim."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 23,
+        "label": "23 total engagement on the @LongevityTech post (20 likes, 2 reposts, 1 reply observed live)",
+        "observed_at": "2026-09-16T04:45:00+00:00",
+        "evidence_url": "https://x.com/LongevityTech/status/2099459871036891594"
+      },
+      "tags": [
+        "retro-biosciences",
+        "rtr-242",
+        "alzheimers",
+        "lysosome",
+        "phase-1"
+      ],
+      "rank": 17
+    },
+    {
+      "id": "lon-avai-klotho-working-cell-bank",
+      "section": "Longevity",
+      "story_type": "developing",
+      "title": "Avaí Bio + Austrianova establish the working cell bank for the α-Klotho 'Cell-in-a-Box' anti-aging therapy",
+      "summary": "Avaí Bio (OTCQB: AVAI) and its JV partner Austrianova completed adventitious-agent and viral testing of the GMP Master Cell Bank and established the Working Cell Bank for their α-Klotho (Klothonova) cell-based therapy delivered via Cell-in-a-Box encapsulation - the next manufacturing gate before GMP production runs and clinical supply. For builders, α-Klotho remains one of the most-studied 'longevity protein' targets with organ-protective effects documented across species, and a certified working cell bank is what separates a cell-therapy company from a pre-clinical one. Caveat: small-cap (OTCQB) company release via GlobeNewswire - no clinical data in this announcement; cell banking does not validate the mechanism.",
+      "source": {
+        "name": "Avaí Bio press release (GlobeNewswire, 15 Sep)",
+        "url": "https://www.globenewswire.com/news-release/2026/09/15/3362098/0/en/avai-bio-and-austrianova-complete-adventitious-agent-testing-of-master-cell-bank-establish-working-cell-bank-for-%CE%B1-klotho-anti-aging-therapy.html"
+      },
+      "canonical_url": "https://www.globenewswire.com/news-release/2026/09/15/3362098/0/en/avai-bio-and-austrianova-complete-adventitious-agent-testing-of-master-cell-bank-establish-working-cell-bank-for-%CE%B1-klotho-anti-aging-therapy.html",
+      "published_at": "2026-09-15T13:28:33+00:00",
+      "corroboration": [
+        {
+          "name": "BioSpace mirror (fetched, 13:28:33 UTC)",
+          "url": "https://www.biospace.com/press-releases/avai-bio-and-austrianova-complete-adventitious-agent-testing-of-master-cell-bank-establish-working-cell-bank-for-%CE%B1-klotho-anti-aging-therapy"
+        },
+        {
+          "name": "Prior milestone - GMP MCB + viral testing (21 May)",
+          "url": "https://austrianova.com/2026/05/21/avai-bio-and-austrianova-complete-gmp-master-cell-bank-begin-viral-testing-for-cell-based-klotho-anti-aging-therapy/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Company press release of record (datePublished 2026-09-15T13:28:33Z on both GlobeNewswire and BioSpace, fetched). No official X post located; manufacturing milestone, no clinical data."
+      },
+      "tags": [
+        "klotho",
+        "cell-therapy",
+        "gmp",
+        "cell-bank",
+        "avai-bio"
+      ],
+      "rank": 14
+    },
+    {
+      "id": "lon-montana-right-to-try",
+      "section": "Longevity",
+      "story_type": "developing",
+      "title": "Montana's right-to-try board is now running the show - biotech industry wrote the law, now it operates the review",
+      "summary": "Business Insider (15 Sep) reports that Montana's experimental-treatment program - the first US right-to-try regime letting biotech companies sell certain experimental drugs directly to patients without terminal illness - is being operated by the biotech industry that wrote it: the review board is assembled by a longevity entrepreneur and funded by $12,500 application fees, and the first approved treatment is already coming to patients. For longevity builders this is the de facto regulatory sandbox where novel aging therapies can reach humans fastest in the US - and the governance question (who vets what) is the one to watch before other states copy it. Caveat: feature journalism, not a statute or rule change; treatments still do not require FDA approval but neither are they FDA-cleared.",
+      "source": {
+        "name": "Business Insider (15 Sep)",
+        "url": "https://www.businessinsider.com/montana-right-to-try-prospera-biotech-experimental-treatment-anzinger-2026-9"
+      },
+      "canonical_url": "https://www.businessinsider.com/montana-right-to-try-prospera-biotech-experimental-treatment-anzinger-2026-9",
+      "published_at": "2026-09-15T12:00:00-04:00",
+      "corroboration": [
+        {
+          "name": "MIT Tech Review - experimental medical hub",
+          "url": "https://www.technologyreview.com/2026/07/30/1140942/montana-experimental-medical-hub-pushed-forward-right-to-try/"
+        },
+        {
+          "name": "Missourian - first approval",
+          "url": "https://missoulian.com/news/state-regional/article_b64fa98d-f526-5a02-af99-3a3ea7845662.html"
+        }
+      ],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "Business Insider page fetched (datePublished 2026-09-15, no exposed time - noon ET used, limitation stated). Policy/feature coverage of a state program in operation; not an official release."
+      },
+      "tags": [
+        "montana",
+        "right-to-try",
+        "experimental-treatment",
+        "policy",
+        "prospera"
+      ],
+      "rank": 19
     }
   ]
 }
