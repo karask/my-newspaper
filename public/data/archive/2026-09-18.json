@@ -1,0 +1,809 @@
+{
+  "schema_version": 1,
+  "edition": {
+    "date": "2026-09-18",
+    "title": "The Daily Signal",
+    "kicker": "Primary-source tech intelligence, compiled from the live wire.",
+    "status": "live",
+    "updated_at": "2026-09-18T04:05:00+00:00"
+  },
+  "sections": [
+    "Bitcoin",
+    "AI",
+    "Robotics",
+    "Longevity"
+  ],
+  "lead_story_id": "ai-openai-astra-law",
+  "stories": [
+    {
+      "id": "ai-openai-astra-law",
+      "section": "AI",
+      "story_type": "product",
+      "title": "OpenAI ships Astra for Law - GPT-6 Astra plus a 230M-URL US legal search index; 54% vs 38.7% on Vals Legal Research Bench",
+      "summary": "OpenAI launched Astra for Law: GPT-6 Astra paired with legal instructions and a Legal Search Index spanning 230M+ URLs of US case law, statutes and regulations, plus 26 partner and 47 community legal plugins; the API model (gpt-6-astra-law) is 'coming soon'. For builders on the vertical-agent stack this is the reference for grounding a frontier model in a curated legal corpus rather than raw web search - the retrieval layer is the differentiator, and it's the model-agnostic seam where legal/finance/medical verticals will get built. Caveat: selected firms via Trusted Access in ChatGPT/Codex for now, and the 54% vs 38.7% Vals Legal Research Bench is vendor-reported, not an independent eval.",
+      "source": {
+        "name": "@OpenAI post",
+        "url": "https://x.com/OpenAI/status/2100679992720142459"
+      },
+      "canonical_url": "https://openai.com/index/astra-for-law/",
+      "published_at": "2026-09-17T20:15:13+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @OpenAI post (20:15:13 UTC, live engagement via X syndication); openai.com page fetched live (title 'Introducing Astra for Law')."
+      },
+      "tags": [
+        "openai",
+        "gpt-6-astra",
+        "legal",
+        "legal-search-index",
+        "vertical-agents"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 12297,
+        "label": "11,788 likes + 509 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/OpenAI/status/2100679992720142459"
+      },
+      "rank": 1
+    },
+    {
+      "id": "rob-figure-helix-2-5-30homes",
+      "section": "Robotics",
+      "story_type": "research",
+      "title": "Figure releases Helix 2.5 - zero-shot whole-body work across 30 unseen Bay Area homes, no fine-tuning (~56% task success)",
+      "summary": "Figure released Helix 2.5: robots deployed zero-shot into 30 previously unseen rental homes and performed whole-body household work (bed making, towel folding, toy tidying) with no data collection, fine-tuning or adaptation in those environments or objects - Index-pretrained policies completed 237 of 420 trials (~56%), up from a 9% baseline. For builders tracking generalization this is the first zero-shot, whole-body, 30-home-scale demonstration on a humanoid (Figure's claim) - the signal is that the pretraining corpus, not per-home adaptation, is doing the work. Caveat: it is a company demo in rented homes, not an independent third-party eval or a commercial home-robot ship date; the three behaviors were still trained with demonstrations collected elsewhere.",
+      "source": {
+        "name": "@Figure_robot post",
+        "url": "https://x.com/Figure_robot/status/2100657350952779925"
+      },
+      "canonical_url": "https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization",
+      "published_at": "2026-09-17T18:45:15+00:00",
+      "corroboration": [
+        {
+          "name": "Humanoids Daily - 56% success detail",
+          "url": "https://www.humanoidsdaily.com/news/figure-helix-2-5-30-unseen-homes"
+        },
+        {
+          "name": "Helix 2.5 30-Home Generalization (video)",
+          "url": "https://www.youtube.com/watch?v=lJpM_2a1zrE"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @Figure_robot post (18:45:15 UTC, live engagement via X syndication); figure.ai page fetched live (title 'Helix 2.5: Zero-Shot 30-Home Generalization'); Humanoids Daily and cryptobriefing corroborate the 56%/237-of-420 figure."
+      },
+      "tags": [
+        "figure",
+        "helix-2.5",
+        "zero-shot",
+        "generalization",
+        "humanoid",
+        "vla"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 10536,
+        "label": "9,898 likes + 638 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/Figure_robot/status/2100657350952779925"
+      },
+      "rank": 2
+    },
+    {
+      "id": "btc-sec-innovation-exemption-tokenized",
+      "section": "Bitcoin",
+      "story_type": "regulation",
+      "title": "SEC issues \"Innovation Exemption\" to de-risk tokenized NMS stock trading on permissioned venues - 5-year sunset, comment requested",
+      "summary": "The SEC (press release 2026-90, via official @SECGov) granted temporary, conditional exemptive relief so Tokenized Securities Venues are not treated as \"exchanges\" under the Exchange Act when trading tokenized non-market-standard (NMS) stock via permissioned AMMs and liquidity pools, with volume/listing caps, permissioned access, a 30-day issuer veto, and a 5-year sunset. For builders on institutional token rails this is the on-the-record regulatory opening that lets off-exchange, AMM-style tokenized-stock markets operate under the sandbox rather than the exchange regime - the same permissioned-venue pattern that Reg Crypto Assets and the tokenized-deposit work have been steering toward. Caveat: it is a conditional, comment-requested staff order for tokenized NMS stocks (not BTC), and the relief is sunsetting in five years unless converted.",
+      "source": {
+        "name": "@SECGov post",
+        "url": "https://x.com/SECGov/status/2100571317128888364"
+      },
+      "canonical_url": "https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment",
+      "published_at": "2026-09-17T13:03:23+00:00",
+      "corroboration": [
+        {
+          "name": "Investment Watch Blog coverage",
+          "url": "https://www.investmentwatchblog.com/sec-issues-innovation-exemption-to-facilitate-the-trading-of-tokenized-nms-stock-and-request-for-comment/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @SECGov post (13:03:23 UTC, live engagement fetched via X syndication); press-release URL confirmed via live web search (sec.gov returns 403 to bots, content corroborated by the Investment Watch recap)."
+      },
+      "tags": [
+        "sec",
+        "tokenized-stock",
+        "exchange-act",
+        "innovation-exemption",
+        "amms",
+        "regulation"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 10072,
+        "label": "9,354 likes + 718 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/SECGov/status/2100571317128888364"
+      },
+      "rank": 3
+    },
+    {
+      "id": "ai-claude-projects-redesigned",
+      "section": "AI",
+      "story_type": "product",
+      "title": "Claude Code Projects redesigned - one conversation directs parallel cloud threads with shared project memory",
+      "summary": "Anthropic redesigned Claude Code Projects: a single conversation now directs parallel cloud threads that share project memory, moving the unit of work from a folder to a conversation. For builders on agentic-coding surfaces this is the orchestration pattern - one planner routing many background executors against shared state - that determines how far you can push long-running multi-file work. Caveat: beta for select Pro/Max cloud sessions; threads cannot yet reach local files, local tools, or internal networks.",
+      "source": {
+        "name": "@claudeai post",
+        "url": "https://x.com/claudeai/status/2100632677904744716"
+      },
+      "canonical_url": "https://claude.com/blog/projects-redesigned",
+      "published_at": "2026-09-17T17:07:12+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @claudeai post (17:07:12 UTC, live engagement via X syndication); claude.com blog page fetched live (Last-Modified 17 Sep, title 'Projects redesigned: from folder to conversation')."
+      },
+      "tags": [
+        "anthropic",
+        "claude-code",
+        "projects",
+        "orchestration",
+        "cloud-agents"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 8936,
+        "label": "8,516 likes + 420 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/claudeai/status/2100632677904744716"
+      },
+      "rank": 4
+    },
+    {
+      "id": "ai-anthropic-biomolecular-uplift",
+      "section": "AI",
+      "story_type": "research",
+      "title": "Anthropic: Claude optimized 30+ open-source biomolecular models (~4x faster avg), incl. FlashPairformer GPU kernels - code + report released",
+      "summary": "Anthropic published a study where Claude optimized 30+ open-source biomolecular modeling tools, cutting average runtime ~4x, including rewriting FlashPairformer with custom GPU kernels; code and a technical report are out and the Adaptyv competition will wet-lab test 5,000+ of the resulting designs. For builders on protein/structure pipelines this is a concrete, reproducible 'agent-optimizes-the-science-tooling' result - the value is in the kernels and the wet-lab validation loop, not just the speedup numbers. Caveat: speedups are Anthropic-reported on H100s, and the competition lab work starts later (applications/challenges after this window).",
+      "source": {
+        "name": "@AnthropicAI post",
+        "url": "https://x.com/AnthropicAI/status/2100701581109072332"
+      },
+      "canonical_url": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling",
+      "published_at": "2026-09-17T21:41:00+00:00",
+      "corroboration": [
+        {
+          "name": "Code (GitHub)",
+          "url": "https://github.com/anthropics/uplifting-biomolecular-modeling"
+        },
+        {
+          "name": "Adaptyv competition",
+          "url": "https://proteinbase.com/competitions/anthropic-adaptyv-2026"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @AnthropicAI post (21:41:00 UTC, live engagement via X syndication); anthropic.com page fetched live (title 'How Claude is uplifting biomolecular modeling')."
+      },
+      "tags": [
+        "anthropic",
+        "biomolecular",
+        "protein",
+        "gpu-kernels",
+        "flashpairformer"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 2279,
+        "label": "2,148 likes + 131 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/AnthropicAI/status/2100701581109072332"
+      },
+      "rank": 5
+    },
+    {
+      "id": "btc-coinbase-stablecore-banks",
+      "section": "Bitcoin",
+      "story_type": "infrastructure",
+      "title": "Coinbase partners with Stablecore to bring regulated stablecoin custody, trading and payments to community/regional banks and credit unions",
+      "summary": "Coinbase announced an integration with Stablecore to extend regulated digital-asset custody, trading and stablecoin payments into the community-bank and credit-union segment - the long-tail of US depository institutions that the big-bank tokenization pushes have not reached. For builders on the bank-rails side this is a distribution channel to thousands of smaller institutions (the companies' framing) that would otherwise need a bespoke custody/ledger integration. Caveat: it is an integration/partnership, not a live nationwide rollout - \"thousands of banks\" is the companies' claim, and the CoinSbase blog URL returned 403 to bots so specifics come from the @coinbase post.",
+      "source": {
+        "name": "@coinbase post",
+        "url": "https://x.com/coinbase/status/2100616157258469775"
+      },
+      "canonical_url": "https://www.coinbase.com/blog/coinbase-and-stablecore-bring-stablecoin-and-digital-asset-services-to-community-and-regional-banks-and-credit-unions",
+      "published_at": "2026-09-17T16:01:34+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @coinbase post (16:01:34 UTC, live engagement fetched); coinbase.com blog URL confirmed via live X search but returned HTTP 403 to direct bot fetch, so specifics come from the post."
+      },
+      "tags": [
+        "coinbase",
+        "stablecore",
+        "community-banks",
+        "credit-unions",
+        "stablecoin",
+        "custody"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 2113,
+        "label": "1,987 likes + 126 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/coinbase/status/2100616157258469775"
+      },
+      "rank": 6
+    },
+    {
+      "id": "ai-anthropic-lifesci-verification",
+      "section": "AI",
+      "story_type": "product",
+      "title": "Anthropic opens Life Sciences Verification Program beta - Mythos (plus Opus/Sonnet) to verified biology teams with more-permissive science safeguards",
+      "summary": "Anthropic opened the Life Sciences Verification Program beta, giving verified biology teams access to Mythos (plus Opus/Sonnet) under more-permissive science safeguards. For builders on computational biology this is the controlled-access path to a frontier model tuned for scientific reasoning - the 'verified team + looser guardrails' structure is how a lab gets past the default cautious defaults that block real research workflows. Caveat: teams/institutions only; high-risk Mythos remains limited pending US-government coordination, and individual Pro/Max access comes later.",
+      "source": {
+        "name": "@AnthropicAI post",
+        "url": "https://x.com/AnthropicAI/status/2100646837799834096"
+      },
+      "canonical_url": "https://www.anthropic.com/news/life-sciences-verification-program",
+      "published_at": "2026-09-17T18:03:28+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @AnthropicAI post (18:03:28 UTC, live engagement via X syndication); anthropic.com page fetched live (title 'Introducing the Life Sciences Verification Program')."
+      },
+      "tags": [
+        "anthropic",
+        "mythos",
+        "life-sciences",
+        "verification-program",
+        "science-safeguards"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 2009,
+        "label": "1,842 likes + 167 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/AnthropicAI/status/2100646837799834096"
+      },
+      "rank": 7
+    },
+    {
+      "id": "btc-circle-arc-mainnet-live",
+      "section": "Bitcoin",
+      "story_type": "infrastructure",
+      "title": "Circle's Arc mainnet goes live - USDC-as-gas L1 with BlackRock, DTCC, Visa, Mastercard, ICE as founding validators; Aave/Morpho/Uniswap day-one",
+      "summary": "Circle's Arc mainnet (announced 16 Sep via @circle) is live: a USDC-as-gas layer-1 with founding validators including BlackRock, DTCC, Visa, Mastercard, ICE and Standard Chartered, a 10B ARC genesis mint, and day-one Aave, Morpho and Uniswap integrations. For builders on the institutional-stablecoin L1 track this is the reference architecture for a permissioned payment-rail chain - the validator set is the institutional moat. Caveat: it is a permissioned PoA, not a Bitcoin L1 or open L2; CoinDesk reported day-one traffic skewed to memecoin trading rather than payments, so the 'economic operating system' positioning is still ahead of observed usage.",
+      "source": {
+        "name": "@circle post",
+        "url": "https://x.com/circle/status/2100170801240543557"
+      },
+      "canonical_url": "https://www.circle.com/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
+      "published_at": "2026-09-16T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "CoinDesk - day-one memecoin caveat",
+          "url": "https://www.coindesk.com/business/2026/09/17/circle-launched-a-corporate-l2-backed-by-blackrock-but-traders-immediately-turned-it-into-a-memecoin-casino"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @circle post (10:31:52 UTC); circle.com pressroom page fetched live (datePublished 2026-09-16, no time - using noon in source tz as limitation; the @circle post is the earliest confirmed signal)."
+      },
+      "tags": [
+        "circle",
+        "arc",
+        "usdc",
+        "layer1",
+        "institutional",
+        "mainnet"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 1529,
+        "label": "1,321 likes + 208 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/circle/status/2100170801240543557"
+      },
+      "rank": 8
+    },
+    {
+      "id": "btc-zama-confidential-defi-wbtc",
+      "section": "Bitcoin",
+      "story_type": "infrastructure",
+      "title": "Catch-up: Zama confidential DeFi at scale - 16 Morpho yield vaults (incl. WBTC/cWBTC) plus Confidential Swap live; Tether confirms USDT on Zama",
+      "summary": "Zama's FHE (fully homomorphic encryption) confidential-DeFi stack went live with 16 Morpho yield vaults across 5 curators and 5 assets - including WBTC/cWBTC, which Wintermute positions as the 'first confidential-only BTC yield vault' - plus a Confidential Swap; Tether confirmed USDT is live on Zama as cUSDT. For builders on private-yield/privacy rails this is the first broad confidential-vault deployment that wraps BTC and USDT exposure rather than just wrapping token prices. Caveat: FHE wrappers on public chains, not a Bitcoin L1/Lightning change; 'live today' is Zama's claim and cUSDT wrapping/volume predates the confirmation (~$131M cumulative shielded per Zama).",
+      "source": {
+        "name": "@zama post",
+        "url": "https://x.com/zama/status/2099828283093209488"
+      },
+      "canonical_url": "https://www.zama.org/post/confidential-defi-at-scale",
+      "published_at": "2026-09-15T11:50:50+00:00",
+      "corroboration": [
+        {
+          "name": "@tether confirms cUSDT on Zama",
+          "url": "https://x.com/tether/status/2099876087144612145"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @zama post (15 Sep 11:50:50 UTC, just outside the 30h window - included as Catch-up since the canonical zama.org post URL is absent from prior editions); @tether confirmation post. Company-announced launch."
+      },
+      "tags": [
+        "zama",
+        "fhe",
+        "confidential-defi",
+        "wbtc",
+        "usdc",
+        "morpho"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 568,
+        "label": "474 likes + 94 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/zama/status/2099828283093209488"
+      },
+      "rank": 9
+    },
+    {
+      "id": "ai-qwen-omni-flash",
+      "section": "AI",
+      "story_type": "model",
+      "title": "Qwen3.8-Omni-Flash released - agentic omni-modal (audio+video+tools), 1M context, ~89% lower video-input cost; Qwen-MM-Plugins open-sourced",
+      "summary": "Alibaba released Qwen3.8-Omni-Flash: an agentic omni-modal model (audio + video + tool use) with 1M context, claiming +19.5 avg on WildClawBench-MM and UniClawBench and ~89% lower video-input cost vs Qwen3.5-Omni-Plus; the Qwen-MM-Plugins stack is open-sourced. For builders running omni-modal agents this is a meaningful cost drop on the video-ingestion path plus a concrete agentic-tooling primitive, and the open plugins are the part you can adopt today. Caveat: benchmark numbers are vendor-reported vs Gemini 3.8 Flash, and the Qwen-Live Harness is still 'coming soon'.",
+      "source": {
+        "name": "@Alibaba_Qwen post",
+        "url": "https://x.com/Alibaba_Qwen/status/2100785962414702599"
+      },
+      "canonical_url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+      "published_at": "2026-09-18T03:16:18+00:00",
+      "corroboration": [
+        {
+          "name": "Qwen-MM-Plugins (GitHub)",
+          "url": "https://github.com/QwenLM/Qwen-MM-Plugins"
+        },
+        {
+          "name": "QwenCloud model page",
+          "url": "https://www.qwencloud.com/models/qwen3.8-omni-flash"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @Alibaba_Qwen post (03:16:18 UTC, live engagement via X syndication); qwen.ai blog page fetched live. Newest in-window item (~14 min before run start)."
+      },
+      "tags": [
+        "qwen",
+        "omni-modal",
+        "agentic",
+        "long-context",
+        "open-source"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 426,
+        "label": "385 likes + 41 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/Alibaba_Qwen/status/2100785962414702599"
+      },
+      "rank": 10
+    },
+    {
+      "id": "btc-cftc-passive-software-no-action",
+      "section": "Bitcoin",
+      "story_type": "regulation",
+      "title": "CFTC Market Participants Division no-action: passive software providers can route orders to registered derivatives venues without IB/AP registration",
+      "summary": "The CFTC's Market Participants Division issued a staff no-action position (Letter 26-25 / release 9300-26, 17 Sep) under which it will not recommend enforcement against providers of 'passive' software - and their relevant personnel - for failing to register as introducing brokers or associated persons, so long as the software only displays data and submits orders to CFTC-registered FCMs/IBs/DCMs, with no custody and no order discretion, including for event and perpetual contracts. For builders of wallet/app rails into regulated perps and prediction markets this extends the March Phantom-only relief to a broader 'dumb pipe' class. Caveat: it is a staff no-action, not a Commission rule - the relief is conditional on the software staying firmly in the passive category, and no separate article URL shipped with the @CoinDesk post.",
+      "source": {
+        "name": "@CoinDesk post",
+        "url": "https://x.com/CoinDesk/status/2100638269977272485"
+      },
+      "canonical_url": "https://www.cftc.gov/PressRoom/PressReleases/9300-26",
+      "published_at": "2026-09-17T17:29:26+00:00",
+      "corroboration": [
+        {
+          "name": "Crowdfund Insider - CFTC no-action",
+          "url": "https://www.crowdfundinsider.com/2026/09/310903-cftc-staff-issues-no-action-position-to-providers-of-passive-software/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "cftc.gov release fetched live (Last-Modified 17 Sep 2026, title 'CFTC Staff Issues No-Action Position to Providers of Passive Software'); @CoinDesk post at 17:29:26 UTC; Crowdfund Insider and cointelegraph corroborate."
+      },
+      "tags": [
+        "cftc",
+        "no-action",
+        "passive-software",
+        "perpetuals",
+        "derivatives",
+        "regulation"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 372,
+        "label": "347 likes + 25 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/CoinDesk/status/2100638269977272485"
+      },
+      "rank": 11
+    },
+    {
+      "id": "ai-muse-mac",
+      "section": "AI",
+      "story_type": "product",
+      "title": "Meta ships Muse for Mac - personal agent acts on-device across files, Messages, Calendar, Notes with explicit permission",
+      "summary": "Meta's Muse (launched 8 Sep) now has a native Mac client: the personal agent can act on-device over files, Messages, Calendar and Notes, gated by explicit permission per action. For builders on the on-device personal-agent surface this is the native-OS integration reference - the permission model (explicit, per-action, on-device) is the pattern that makes a Mac agent shippable rather than just a cloud chat. Caveat: the Muse model itself predates this window; this is the native Mac client, not a new model.",
+      "source": {
+        "name": "@AIatMeta post",
+        "url": "https://x.com/AIatMeta/status/2100714755568644409"
+      },
+      "canonical_url": "https://ai.meta.com/muse/download/",
+      "published_at": "2026-09-17T22:33:21+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @AIatMeta post (22:33:21 UTC, live engagement via X syndication); ai.meta.com download page fetched live (title 'Download Muse: Free AI Agent for Mac & Mobile')."
+      },
+      "tags": [
+        "meta",
+        "muse",
+        "mac",
+        "on-device-agent",
+        "permissions"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 320,
+        "label": "295 likes + 25 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/AIatMeta/status/2100714755568644409"
+      },
+      "rank": 12
+    },
+    {
+      "id": "lon-insilico-longevity-vaccines",
+      "section": "Longevity",
+      "story_type": "developing",
+      "title": "Catch-up: Insilico launches an 'AI-driven longevity vaccines' program - circular mRNA + targeted LNP to clear senescent/fibrotic cells",
+      "summary": "Insilico Medicine announced an AI-driven 'longevity vaccines' research initiative: circular mRNA delivered by targeted LNPs to help the immune system identify and clear problematic cells linked to aging (senescent, fibrotic, autoreactive), with immunosenescence as the first target. For builders tracking the anti-aging-immunotherapy space this is the first named program framing 'vaccines' as a cell-clearing mechanism rather than a pathogen-defense one - the circular-mRNA + LNP design is the load-bearing technical bet. Caveat: it is a company program announcement (15 Sep, just outside the 30h window - included as Catch-up), not a peer-reviewed trial result or an FDA action; 'rejuvenating the immune system' is the stated goal, not an observed outcome.",
+      "source": {
+        "name": "@biogerontology post",
+        "url": "https://x.com/biogerontology/status/2099958599183179910"
+      },
+      "canonical_url": "https://insilico.com/news/lgv150926en-ai-driven-longevity-vaccines",
+      "published_at": "2026-09-15T20:28:40+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "insilico.com page fetched live (pub 2026-09-15); @biogerontology post at 15 Sep 20:28:40 UTC, ~35h before window start - included as Catch-up since the canonical URL is absent from prior editions. Company program announcement."
+      },
+      "tags": [
+        "insilico",
+        "longevity-vaccines",
+        "circular-mrna",
+        "senolytics",
+        "immunosenescence"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 248,
+        "label": "233 likes + 15 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/biogerontology/status/2099958599183179910"
+      },
+      "rank": 13
+    },
+    {
+      "id": "rob-ubtech-liuzhou-super-factory",
+      "section": "Robotics",
+      "story_type": "infrastructure",
+      "title": "UBTECH: Liuzhou 'robots-building-robots' factory live - designed for 1 humanoid per 10 min, 10,000+/yr Walker S and Cruzr",
+      "summary": "UBTECH said its Liuzhou 'super factory' - where robots assemble robots - is live, with a design cadence of 1 humanoid every 10 minutes and a designed capacity of 10,000+ units/year for Walker S and Cruzr, using Siemens software for the line. For builders tracking the Chinese humanoid build-out this is the first named 'robots-building-robots' plant with a published design rate - the interesting number is the per-unit cycle time, which sets the cost floor for mass-produced humanoids. Caveat: the plant was commissioned 12 Sep (just before this window) and the cadence is design capacity, not audited output.",
+      "source": {
+        "name": "@UBTECHRobotics post",
+        "url": "https://x.com/UBTECHRobotics/status/2099830594817646663"
+      },
+      "canonical_url": "https://www.humanoidsdaily.com/news/inside-ubtech-s-10-000-unit-super-factory-how-robots-are-building-humanoids-in-liuzhou",
+      "published_at": "2026-09-15T12:00:01+00:00",
+      "corroboration": [
+        {
+          "name": "Global Times - factory coverage",
+          "url": "https://www.globaltimes.cn/page/202609/1370528.shtml"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Official @UBTECHRobotics post (15 Sep 12:00:01 UTC, just outside the 30h window - included as the in-window official account signal for the Liuzhou factory); Global Times coverage corroborates. Design capacity, not audited output."
+      },
+      "tags": [
+        "ubtech",
+        "liuzhou",
+        "factory",
+        "walker-s",
+        "cruzr",
+        "mass-production"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 147,
+        "label": "133 likes + 14 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/UBTECHRobotics/status/2099830594817646663"
+      },
+      "rank": 14
+    },
+    {
+      "id": "rob-nvidia-video-to-data-challenge",
+      "section": "Robotics",
+      "story_type": "research",
+      "title": "NVIDIA opens the Video to Data (V2D) challenge - 4D reconstruction, robotic grounding, egocentric video-to-policy; winners at CoRL 2026",
+      "summary": "NVIDIA opened the Video to Data (V2D) Challenge, covering 4D scene reconstruction, robotic grounding, and egocentric video-to-policy learning, with winners announced at CoRL 2026 and registration open until 21 Sep. For builders on embodied data pipelines this is a public, structured benchmark for the data-generation layer (raw egocentric video -> grounded 4D representations -> policies) that the V2D Isaac repo is the reference for. Caveat: the @NVIDIARobotics post's registration URL was truncated, so the GitHub repo (nvidia-isaac/video_to_data) is the canonical code surface, not the signup form.",
+      "source": {
+        "name": "@NVIDIARobotics post",
+        "url": "https://x.com/NVIDIARobotics/status/2100261000540807292"
+      },
+      "canonical_url": "https://github.com/nvidia-isaac/video_to_data",
+      "published_at": "2026-09-16T16:30:18+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @NVIDIARobotics post (16 Sep 16:30:18 UTC, live engagement via X syndication); GitHub repo nvidia-isaac/video_to_data fetched live. Registration URL truncated on X - GitHub is the observed code/canonical surface."
+      },
+      "tags": [
+        "nvidia",
+        "video-to-data",
+        "4d-reconstruction",
+        "egocentric",
+        "corl-2026"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 132,
+        "label": "125 likes + 7 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/NVIDIARobotics/status/2100261000540807292"
+      },
+      "rank": 15
+    },
+    {
+      "id": "rob-nvidia-thor-mlperf-edge-agentic",
+      "section": "Robotics",
+      "story_type": "benchmark",
+      "title": "NVIDIA: Jetson AGX Thor + TensorRT Edge-LLM post MLPerf Edge Agentic 6.4x faster than llama.cpp - 52.33 tok/s on Qwen 3.6 27B",
+      "summary": "NVIDIA published an MLPerf Edge Agentic submission where Jetson AGX Thor running TensorRT Edge-LLM completes the agentic edge benchmark 6.4x faster than llama.cpp, hitting 52.33 tok/s on Qwen 3.6 27B on-device. For builders sizing on-device/edge agents this is the first public MLPerf datapoint for the Thor edge-agentic stack - the throughput-vs-llama.cpp delta is the reference for what a fully local, tool-calling agent can actually sustain on an edge card. Caveat: it is NVIDIA's own MLPerf submission (vendor-validated, but vendor-chosen config), the blog is dated 16 Sep with the @NVIDIARobotics amplification at 17 Sep 23:40 UTC.",
+      "source": {
+        "name": "@NVIDIARobotics post",
+        "url": "https://x.com/NVIDIARobotics/status/2100731771516039491"
+      },
+      "canonical_url": "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/",
+      "published_at": "2026-09-16T20:37:07+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "developer.nvidia.com blog fetched live (published 2026-09-16T20:37:07Z); @NVIDIARobotics in-window amplification post at 23:40:58 UTC."
+      },
+      "tags": [
+        "nvidia",
+        "jetson-thor",
+        "mlperf",
+        "edge-agentic",
+        "tensorrt-edge-llm"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 110,
+        "label": "91 likes + 19 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/NVIDIARobotics/status/2100731771516039491"
+      },
+      "rank": 16
+    },
+    {
+      "id": "rob-boston-dynamics-dow-skillbridge",
+      "section": "Robotics",
+      "story_type": "infrastructure",
+      "title": "Boston Dynamics joins DoW SkillBridge as an industry partner - service members' final 180 days as training/apprenticeships",
+      "summary": "Boston Dynamics announced it is a Department of War SkillBridge industry partner: service members in their final 180 days can complete training, apprenticeships or internships with the company through the DoW program. For builders on the robotics workforce pipeline this is a direct channel to recruit and retain defense-adjacent technical talent - and a soft signal that Boston Dynamics is planning to scale its workforce (and likely its manufacturing/deployment footprint) over the next couple of years. Caveat: a workforce/HR pipeline, not a robot or product release; the @BostonDynamics post's secondary 'learn more' URL was truncated, so the directory URL is the one on record for open roles.",
+      "source": {
+        "name": "@BostonDynamics post",
+        "url": "https://x.com/BostonDynamics/status/2100592135963594960"
+      },
+      "canonical_url": "https://skillbridge.osd.mil/",
+      "published_at": "2026-09-17T14:26:06+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @BostonDynamics post (14:26:06 UTC, live engagement via X syndication); skillbridge.osd.mil fetched live (title 'DoW Skillbridge'). Workforce partnership, not a product."
+      },
+      "tags": [
+        "boston-dynamics",
+        "skillbridge",
+        "department-of-war",
+        "workforce",
+        "defense"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 56,
+        "label": "53 likes + 3 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/BostonDynamics/status/2100592135963594960"
+      },
+      "rank": 17
+    },
+    {
+      "id": "lon-insilico-longevitybench-llm",
+      "section": "Longevity",
+      "story_type": "research",
+      "title": "Insilico's Cell cover study releases LongevityBench + open Longevity-LLMs - 17-task aging-biology benchmark; L-Qwen3.5-9B tops the leaderboard",
+      "summary": "A Cell cover study from Insilico Medicine opens up LongevityBench - a 17-task benchmark spanning five biodata domains (clinical, genetics, epigenetics, transcriptomics, proteomics) - together with Longevity-LLMs, a family of compact open-source language models trained on clinical and multi-omics aging data, with models and data at longevitybenchmarks.org. The authors report that no single model dominated all tasks, that results shifted with question phrasing, and that omics-based age prediction remained the hardest task for frontier models; their compact L-Qwen3.5-9B claims top scores on the bench. For builders on the AI-for-aging track this is the reference public benchmark + open weights to test (and beat) aging-model reasoning. Caveat: it is an author-reported leaderboard on age/biomarker prediction, not a clinical longevity result - the models predict signatures, they don't extend lives.",
+      "source": {
+        "name": "@biogerontology post",
+        "url": "https://x.com/biogerontology/status/2100710820191572023"
+      },
+      "canonical_url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00999-2",
+      "published_at": "2026-09-17T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "PR Newswire - LongevityBench / Longevity-LLMs / LongevityClaw",
+          "url": "https://www.prnewswire.com/news-releases/insilico-medicine-opens-ai-longevity-discovery-toolkit-to-researchers-worldwide-in-cell-cover-study-302882275.html"
+        },
+        {
+          "name": "LongevityBench open site",
+          "url": "https://longevitybenchmarks.org"
+        },
+        {
+          "name": "Unite.AI - task-breakdown detail",
+          "url": "https://www.unite.ai/insilico-medicine-releases-open-longevity-ai-toolkit-in-cell-study/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Cell cover paper (canonical URL; cell.com returns 403 to bots, title/content corroborated via PRNewswire, Manila Times and Unite.AI); @biogerontology post at 17 Sep 22:17 UTC; longevitybenchmarks.org fetched live. Only a date (17 Sep) is exposed on the paper, so noon UTC used as limitation."
+      },
+      "tags": [
+        "insilico",
+        "longevitybench",
+        "longevity-llm",
+        "aging-biology",
+        "benchmark",
+        "cell"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 38,
+        "label": "34 likes + 4 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/biogerontology/status/2100710820191572023"
+      },
+      "rank": 18
+    },
+    {
+      "id": "lon-longevity-biotech-report-2026",
+      "section": "Longevity",
+      "story_type": "analysis",
+      "title": "Longevity.Technology's 2026 report maps 3,036 assets / 781 companies and projects a $617B annual market by 2045",
+      "summary": "Longevity.Technology's 2026 Longevity Biotech Report publishes a full data map of 3,036 assets across 781 companies and projects a $617B annual market by 2045 - the dataset and projections behind the investment-figures press release that ran yesterday. For builders sizing the geroscience landscape this is the reference asset/company count and the 2045 market curve to benchmark pipeline claims against. Caveat: it is a sponsored industry market map, not primary financial or scientific data; the $617B figure is the report's projection, and asset counts depend on its inclusion criteria.",
+      "source": {
+        "name": "@LongevityTech post",
+        "url": "https://x.com/LongevityTech/status/2100565458638246273"
+      },
+      "canonical_url": "https://longevity.technology/data/report/longevity-biotech-report-2026/",
+      "published_at": "2026-09-17T16:22:01+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "analysis",
+        "confidence": "medium",
+        "note": "Official @LongevityTech post (17 Sep 16:22:01 UTC, live engagement via X syndication) linking the report data page - the full 3,036-asset/781-company dataset distinct from yesterday's investment-figures PRNewswire. Sponsored industry report."
+      },
+      "tags": [
+        "longevity-biotech",
+        "market-map",
+        "assets",
+        "companies",
+        "2045-projection"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 21,
+        "label": "21 likes + 0 replies observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/LongevityTech/status/2100565458638246273"
+      },
+      "rank": 19
+    },
+    {
+      "id": "rob-drobotics-400m-series-c",
+      "section": "Robotics",
+      "story_type": "funding",
+      "title": "D-Robotics completes $400M Series C to scale Sunrise robot chips (8M+ shipped) and a full-stack robot-software platform",
+      "summary": "D-Robotics closed a $400M Series C (strategic investment from a leading global internet company, plus Mirae Asset/Meituan et al.) to expand its Sunrise chip portfolio across computing levels and build a software platform spanning data collection, model training, simulation, verification and inference deployment; the company says it has shipped 8M+ Sunrise chips and that its S600 embodied-AI chip is already used by 20+ humanoid makers including UBTECH and Fourier. For builders on the Chinese humanoid supply chain this is the largest China robotics round in ~4 years and a signal that the compute+software substrate - not the robot body - is where the next round of capital is going. Caveat: PR/Dealroom framing; revenue 'several times YoY' is the company's H1-2026 claim.",
+      "source": {
+        "name": "@TradedVC post",
+        "url": "https://x.com/TradedVC/status/2100676078322745629"
+      },
+      "canonical_url": "https://www.prnewswire.com/news-releases/d-robotics-completes-400-million-in-series-c-funding-driving-the-robotics-industry-into-a-boom-in-product-categories-302881297.html",
+      "published_at": "2026-09-17T07:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "VentureBurn - S600 chip / 8M shipped",
+          "url": "https://ventureburn.com/d-robotics-raises-400-million-to-build-the-brain-for-every-robot/"
+        },
+        {
+          "name": "theaiinsider.tech - Series C detail",
+          "url": "https://theaiinsider.tech/2026/09/17/chinas-d-robotics-raises-400m-in-series-c-funding-to-expand-ai-robotics-platform/"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "PRNewswire release fetched live (Last-Modified 17 Sep 2026, title verified); surfaced via X (@TradedVC / @primefounders, no official D-Robotics handle post found in-window); VentureBurn and theaiinsider corroborate the 8M-shipped and S600 details. PR date is 17 Sep 03:00 ET."
+      },
+      "tags": [
+        "d-robotics",
+        "series-c",
+        "robot-chips",
+        "sunrise",
+        "embodied-ai",
+        "china"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 0,
+        "label": "0 likes + 0 replies observed live on the source post (X syndication; reposts not exposed by that endpoint) - low-engagement aggregator post, engagement not a strong signal here",
+        "observed_at": "2026-09-18T03:41:00+00:00",
+        "evidence_url": "https://x.com/TradedVC/status/2100676078322745629"
+      },
+      "rank": 20
+    },
+    {
+      "id": "lon-mdpi-self-correction-framework",
+      "section": "Longevity",
+      "story_type": "analysis",
+      "title": "Geroscience framework: aging as 'loss of biological self-correction' - a unified lens for inflammaging and restored resilience",
+      "summary": "Bar-Or, Williams and Paredes published a geroscience framework in Geriatrics reframing aging as a loss of the body's biological self-correction capacity - tying inflammaging, metabolic drift and resilience loss to a single 'correction deficit' construct, and sketching how interventions (including metformin's TAME-style hypothesis) could restore it. For builders on the geroscience/therapeutics side this is a useful conceptual scaffold for prioritizing which 'correction' defects (vs which single biomarkers) an intervention should target. Caveat: it is a framework/position paper, not an experimental or clinical result - it proposes a unifying model and does not demonstrate that any specific intervention restores self-correction in humans.",
+      "source": {
+        "name": "MDPI Geriatrics paper",
+        "url": "https://www.mdpi.com/2308-3417/11/5/134"
+      },
+      "canonical_url": "https://www.mdpi.com/2308-3417/11/5/134",
+      "published_at": "2026-09-16T12:00:00+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "analysis",
+        "confidence": "medium",
+        "note": "MDPI Geriatrics 11(5):134 (2026), 'Aging as Loss of Biological Self-Correction' - verified via live web search (mdpi.com returns 403 to bots; citation and title confirmed). Conceptual/framework paper; only a date is exposed, so noon UTC used as limitation."
+      },
+      "tags": [
+        "geroscience",
+        "inflammaging",
+        "self-correction",
+        "resilience",
+        "framework"
+      ],
+      "rank": 21
+    }
+  ]
+}
