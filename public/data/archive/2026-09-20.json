@@ -1,0 +1,603 @@
+{
+  "schema_version": 1,
+  "edition": {
+    "date": "2026-09-20",
+    "title": "The Daily Signal",
+    "kicker": "Primary-source tech intelligence, compiled from the live wire.",
+    "status": "live",
+    "updated_at": "2026-09-20T08:40:00+03:00"
+  },
+  "sections": [
+    "Bitcoin",
+    "AI",
+    "Robotics",
+    "Longevity"
+  ],
+  "lead_story_id": "ai-qwen-livetranslate",
+  "stories": [
+    {
+      "id": "btc-etf-inflows-433m",
+      "section": "Bitcoin",
+      "rank": 1,
+      "story_type": "infrastructure",
+      "title": "Catch-up: US spot Bitcoin ETFs took in $433M on Friday - FBTC +$310.7M, IBIT +$108.4M; two-day net inflow now $592.5M",
+      "summary": "US spot Bitcoin ETFs logged $433.0M in net inflows on Friday's (18 Sep) US cash session, per Farside: FBTC +$310.7M, IBIT +$108.4M, BITB +$9.7M, HODL +$2.3M, ARKB +$1.9M - the second straight inflow day after ~$746M in mid-week outflows, bringing the two-day net to +$592.5M. For builders on the institutional BTC demand side this is the concrete flow print behind the $81k reclaim, with ~72% concentrated in Fidelity's FBTC. Caveat: it is a single-day flow print, not a protocol or regulatory release, and Farside disclaims errors; the timestamp is the in-window @BitcoinMagazine post while the print is for 18 Sep.",
+      "source": {
+        "name": "@BitcoinMagazine post",
+        "url": "https://x.com/BitcoinMagazine/status/2101321147023282543"
+      },
+      "canonical_url": "https://farside.co.uk/btc/",
+      "published_at": "2026-09-18T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "Bitcoin News Digest (19 Sep)",
+          "url": "https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-september-19"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Farside daily ETF flow table is the canonical data source; @BitcoinMagazine post fetched live 14:42:56 UTC with engagement observed via X syndication. The print is for the 18 Sep US cash session (just before the 30h cutoff, so labeled Catch-up); only the date is exposed on the flow table, noon UTC used as limitation. Canonical URL absent from prior editions."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1996,
+        "label": "1,996 likes observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-20T05:25:00+00:00",
+        "evidence_url": "https://x.com/BitcoinMagazine/status/2101321147023282543"
+      },
+      "tags": [
+        "btc-etf",
+        "spot-etf",
+        "flows",
+        "institutional",
+        "fbtc",
+        "ibit",
+        "farside"
+      ]
+    },
+    {
+      "id": "btc-zcsh-3for1-split",
+      "section": "Bitcoin",
+      "rank": 2,
+      "story_type": "regulation",
+      "title": "Catch-up: Grayscale files a 3-for-1 share split of the Zcash ETF (ZCSH) - record 28 Sep, post-split trading 30 Sep",
+      "summary": "Grayscale's Zcash Trust (NYSE Arca: ZCSH) filed an 8-K on 18 Sep announcing a 3-for-1 forward share split (record 28 Sep, payable 29 Sep, post-split trading 30 Sep) less than a month after launch, with the fund at ~$890M NAV and $11B+ cumulative volume per CoinDesk. For builders on the tokenized-ETF/asset-management stack this is the first split of a ZEC product and a signal issuers are treating Zcash as a durable institutional asset worth retail-priced shares. Caveat: it is a mechanical share split, not a new listing, an upgrade or a Bitcoin product - it is ZEC, not BTC - and the 8-K accession (0001193125-26-395068) is confirmed on EDGAR but the exhibit was bot-gated on fetch.",
+      "source": {
+        "name": "@CoinDesk post",
+        "url": "https://x.com/CoinDesk/status/2101099939279557016"
+      },
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1720265/000119312526395068/0001193125-26-395068-index.htm",
+      "published_at": "2026-09-18T12:00:00-04:00",
+      "corroboration": [
+        {
+          "name": "EDGAR primary document (zcsh-20260918.htm)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1720265/000119312526395068/zcsh-20260918.htm"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "SEC EDGAR confirms 8-K accession 0001193125-26-395068 filed 2026-09-18 (primary doc zcsh-20260918.htm) via the CIK submissions API; @CoinDesk post fetched live 00:03:56 UTC with engagement observed via X syndication. Exhibit 99.1 was 403 to bots, so the record/payable dates and NAV/volume figures come from the @CoinDesk post. 8-K filing date (18 Sep) is just before the 30h cutoff, so labeled Catch-up; canonical URL absent from all prior editions."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 425,
+        "label": "425 likes observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-20T05:25:00+00:00",
+        "evidence_url": "https://x.com/CoinDesk/status/2101099939279557016"
+      },
+      "tags": [
+        "grayscale",
+        "zcsh",
+        "zcash",
+        "etf",
+        "share-split",
+        "nyse-arca",
+        "sec-8k"
+      ]
+    },
+    {
+      "id": "btc-zest-levered-staking-vault",
+      "section": "Bitcoin",
+      "rank": 3,
+      "story_type": "infrastructure",
+      "title": "Zest says its levered Bitcoin staking vault (zvstBTC) on Stacks is operating - looping toward ~6-8% APY vs ~2.6% unlevered",
+      "summary": "Zest Protocol posted that its levered Bitcoin staking vault (zvstBTC) built on Stacks is operating, after earlier coverage described a looping vault targeting ~6-8% APY versus ~2.6% unlevered, initially capped at ~10 BTC. For builders on BTC yield this is the first named levered BTC-collateral vault - a new risk tier between unlevered sBTC staking and CEX margin, where the yield is amplified by a loop and the liquidation/smart-contract risk sits with the depositor. Caveat: it is a status 'operating' post, not a first-launch announcement, and the vault carries leverage, liquidation and smart-contract risk with no official product URL exposed in the post.",
+      "source": {
+        "name": "@ZestProtocol post",
+        "url": "https://x.com/ZestProtocol/status/2101298516765417547"
+      },
+      "canonical_url": "https://x.com/ZestProtocol/status/2101298516765417547",
+      "published_at": "2026-09-19T13:13:01+00:00",
+      "corroboration": [
+        {
+          "name": "Crypto Briefing - levered BTC staking vault",
+          "url": "https://cryptobriefing.com/zest-protocol-levered-bitcoin-staking-vault-stacks/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @ZestProtocol post fetched live 13:13:01 UTC with engagement observed via X syndication. No official product URL in the image-only post, so the post is the canonical record; cryptobriefing.com coverage (403 to bots) corroborates the ~6-8% looping APY and ~10 BTC cap. In-window."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 56,
+        "label": "56 likes observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-20T05:25:00+00:00",
+        "evidence_url": "https://x.com/ZestProtocol/status/2101298516765417547"
+      },
+      "tags": [
+        "zest",
+        "btc-staking",
+        "leveraged",
+        "zvstbtc",
+        "stacks",
+        "sbtc",
+        "defi"
+      ]
+    },
+    {
+      "id": "btc-stacks-genesis-bond-inside",
+      "section": "Bitcoin",
+      "rank": 4,
+      "story_type": "infrastructure",
+      "title": "Stacks publishes an inside look at the first institutional Bitcoin bond on its network - BTC timelocked on L1, STX-secured, ~3% BTC-denominated PoX yield",
+      "summary": "Stacks followed up its Genesis Bond (live since 10 Sep) with an institutional deep-dive: the structure timelocks BTC on Bitcoin L1 paired with STX collateral, and targets a ~3% BTC-denominated yield funded by Proof-of-Transfer miner bid redistribution, with a ~250 BTC opening tranche and a 6-month term. For builders designing institutional BTC yield products this is the first named 'Bitcoin Protocol Bond' - a concrete, auditable alternative to custodial and OTC BTC carry where the yield is explicitly miner-bid redistribution rather than native L1 staking. Caveat: it is an inside-look post on a structure that went live 10 Sep (this post is the in-window signal), the yield is PoX redistribution, not L1 issuance, and it requires an STX lock plus a 6-month term with redemption/bridge risk.",
+      "source": {
+        "name": "@Stacks post",
+        "url": "https://x.com/Stacks/status/2101317392093917681"
+      },
+      "canonical_url": "https://www.stacks.co/institutional-bitcoin-staking",
+      "published_at": "2026-09-19T14:28:01+00:00",
+      "corroboration": [
+        {
+          "name": "Stacks - Genesis Bond launch blog (10 Sep)",
+          "url": "https://www.stacks.co/blog/the-genesis-bond-is-live-institutions-begin-bitcoin-staking-on-stacks"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @Stacks post fetched live 14:28:01 UTC with engagement observed via X syndication; stacks.co/institutional-bitcoin-staking page fetched live (HTTP 200). The underlying bond went live 10 Sep (already covered by the 14 Sep edition under its blog URL); this inside-look post is the in-window signal and the canonical institutional page URL is absent from all prior editions."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 62,
+        "label": "62 likes observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-20T05:25:00+00:00",
+        "evidence_url": "https://x.com/Stacks/status/2101317392093917681"
+      },
+      "tags": [
+        "stacks",
+        "genesis-bond",
+        "institutional-btc",
+        "proof-of-transfer",
+        "btc-yield",
+        "protocol-bond"
+      ]
+    },
+    {
+      "id": "ai-qwen-livetranslate",
+      "section": "AI",
+      "rank": 5,
+      "story_type": "model",
+      "title": "Alibaba releases Qwen3.8-LiveTranslate - realtime simultaneous-interpretation model, 60 languages in / 29 out, LAAL 2.8s to 2.3s; API-only, no open weights",
+      "summary": "Alibaba's Qwen team released Qwen3.8-LiveTranslate, a real-time simultaneous-interpretation model built on an 'Interleave' hybrid-MoE Thinker-Talker architecture over a single interleaved audio/text causal stream, with claimed average-lag (LAAL) cut from 2.8s to 2.3s, realtime speaker diarization, more stable voice cloning and synced bilingual source+translation output. For builders on voice-agent and meeting-transcription stacks this is the concrete reference for the 'interpret, don't just transcribe' path: the API id is qwen3.8-livetranslate-flash-realtime (WebSocket) at $7.5/$0.55/$20/$30 per 1M audio-in/image-in/text-out/audio-out tokens, with image frames accepted as visual context. Caveat: it is closed - no open weights, no function calling, structured outputs, batching or fine-tuning; context is 53K with 4K max output and 10 RPM, and the benchmark wins (Omnilingua-MSpeaker, FLEURS) are vendor-reported with FLEURS the only public set.",
+      "source": {
+        "name": "@Alibaba_Qwen post",
+        "url": "https://x.com/Alibaba_Qwen/status/2101206705111757253"
+      },
+      "canonical_url": "https://qwen.ai/blog?id=qwen3.8-livetranslate",
+      "published_at": "2026-09-19T07:08:11+00:00",
+      "corroboration": [
+        {
+          "name": "QwenCloud model page (qwen3.8-livetranslate-flash-realtime)",
+          "url": "https://www.qwencloud.com/models/qwen3.8-livetranslate-flash-realtime"
+        },
+        {
+          "name": "Live demo (omni.qwen.ai)",
+          "url": "https://omni.qwen.ai/live-translate"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @Alibaba_Qwen post fetched live 07:08:11 UTC with engagement observed via X syndication; qwen.ai blog, QwenCloud model page and demo all fetched live (HTTP 200). Third-party launch coverage (orcarouter.ai, kucoin.com) corroborates the 2.8s->2.3s LAAL and 60-in/29-out language split. In-window model release."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1954,
+        "label": "1,954 likes observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-20T05:25:00+00:00",
+        "evidence_url": "https://x.com/Alibaba_Qwen/status/2101206705111757253"
+      },
+      "tags": [
+        "alibaba",
+        "qwen3.8-livetranslate",
+        "simultaneous-interpretation",
+        "realtime-voice",
+        "interleave-architecture",
+        "api",
+        "closed-model"
+      ]
+    },
+    {
+      "id": "ai-cerebras-money-agent",
+      "section": "AI",
+      "rank": 6,
+      "story_type": "product",
+      "title": "Catch-up: Cerebras demos 'Money Agent' - a personal-finance assistant on Qwen3.8-27B running on its wafer-scale engine",
+      "summary": "Cerebras announced Money Agent, a personal-finance assistant built on Alibaba's Qwen 3.8 27B served on Cerebras inference, pitching it as turning a home-buying question into a real-time conversation and then a financial goal 'faster' than chat-based flows. For builders on fast-inference agent UX this is the latest datapoint on Cerebras's wafer-scale latency as a product differentiator for agentic applications rather than raw LLM serving - the agent is the headline, the model and cloud are the platform. Caveat: it is an in-window video-only official post with no product page, docs URL or pricing yet - the canonical record is the post itself, and 'faster' is demo-level, not a benchmark.",
+      "source": {
+        "name": "@cerebras post",
+        "url": "https://x.com/cerebras/status/2100997025773023403"
+      },
+      "canonical_url": "https://x.com/cerebras/status/2100997025773023403",
+      "published_at": "2026-09-18T17:15:00+00:00",
+      "corroboration": [
+        {
+          "name": "Newsquawk headline",
+          "url": "https://www.newsquawk.com/headlines/cerebras-cbrs-announces-it-built-money-agent-a-personal-finance-assistant-powered-by-alibaba-qwen-38-on-cerebras"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @cerebras post located via live X search (17:15 UTC) with video and no link; a cerebras.ai page for Money Agent was not found on fetch, so the post is the canonical record. Third-party headline (newsquawk.com) corroborates the claim. Just before the 30h cutoff, labeled Catch-up; canonical URL absent from prior editions."
+      },
+      "tags": [
+        "cerebras",
+        "money-agent",
+        "qwen3.8-27b",
+        "personal-finance",
+        "agentic-ux",
+        "wafer-scale"
+      ]
+    },
+    {
+      "id": "ai-scientisttwo-autonomous-research",
+      "section": "AI",
+      "rank": 7,
+      "story_type": "research",
+      "title": "Catch-up: Google Cloud + Waterloo release ScientistTwo - a fully autonomous multi-agent framework that produces 'expert-level' ICLR/ICML/NeurIPS-benchmarked papers",
+      "summary": "Google Cloud AI Research and University of Waterloo collaborators released ScientistTwo (arXiv 2609.19644), a fully autonomous multi-agent framework that, given a human-defined research challenge, establishes baselines, formulates hypotheses, runs experiments across datasets and metrics, refines via automated ablations and validates findings through a closed-loop simulated peer-review rebuttal engine - producing 'expert-level' papers plus executable codebases that the authors report outperform human state-of-the-art models and score higher average review ratings than human-authored papers under automated AI review agents. For builders on agent-based R&D tooling this is the strongest published claim yet of end-to-end autonomous research on top-tier ML venues (ICLR, ICML, NeurIPS). Caveat: it is an arXiv preprint (v1 17 Sep) - the 'publishable at top-tier venues' claim is the authors' benchmark, not peer review acceptance, and the evaluation uses automated AI reviewers rather than human ones.",
+      "source": {
+        "name": "arXiv 2609.19644",
+        "url": "https://arxiv.org/abs/2609.19644"
+      },
+      "canonical_url": "https://arxiv.org/abs/2609.19644",
+      "published_at": "2026-09-17T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "Project website",
+          "url": "https://scientist-two.github.io/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "arXiv abstract fetched live (v1 submitted 17 Sep 2026, no time exposed - noon UTC used as limitation); project site fetched live. 72h catch-up on the paper - included because the arXiv URL is absent from all prior editions and it is the most substantive in-scope research release surfaced this window. Preprint, not peer-reviewed."
+      },
+      "tags": [
+        "google-cloud",
+        "scientisttwo",
+        "autonomous-research",
+        "multi-agent",
+        "arxiv",
+        "ai-for-science"
+      ]
+    },
+    {
+      "id": "ai-lunar-foundation-model",
+      "section": "AI",
+      "rank": 8,
+      "story_type": "research",
+      "title": "NASA + IBM release the open-source Lunar Foundation Model - pretrained on ~2M multimodal lunar bundles, beats ImageNet baselines on 3 benchmarks",
+      "summary": "NASA and IBM Research released the Lunar Foundation Model, an open-source AI model pretrained from scratch on SomBench - a multimodal lunar dataset of nearly 2 million co-registered data bundles spanning 11 modalities (imagery, topography, illumination geometry, thermophysical properties, mineralogy, radar, gravity) at two spatial scales - with USRA contributing planetary-science evaluation. Across three downstream benchmarks (regional and meter-scale crater detection, irregular mare patch segmentation, polar ice-prospectivity regression) the pretrained model matched or outperformed ImageNet-pretrained and no-pretraining baselines, with particularly strong label efficiency on crater detection. For builders on domain foundation models and multimodal geospatial AI this is the clean template for 'pretrain on a domain corpus, transfer cheaply' - and the code/weights are public on GitHub. Caveat: it is a lunar-domain model (useful as a reference architecture), not a general geospatial model; the benchmarks are the team's, and the open weights are the model, not SomBench itself.",
+      "source": {
+        "name": "USRA press release",
+        "url": "https://newsroom.usra.edu/usra-contributes-planetary-science-expertise-to-nasa-ibm-lunar-foundation-model/"
+      },
+      "canonical_url": "https://newsroom.usra.edu/usra-contributes-planetary-science-expertise-to-nasa-ibm-lunar-foundation-model/",
+      "published_at": "2026-09-18T12:47:00+00:00",
+      "corroboration": [
+        {
+          "name": "Open-source code and weights (NASA-IMPACT/NASA-IBM-Lunar-Foundation-Model)",
+          "url": "https://github.com/NASA-IMPACT/NASA-IBM-Lunar-Foundation-Model"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "USRA newsroom release fetched live (datePublished 2026-09-18T14:47+02:00 = 12:47 UTC); GitHub repo verified via API (created 30 Jul, weights present; pushed 14 Sep before the window - the 18 Sep USRA release is the in-window announcement). Surfaced via in-window Hacker News thread. Canonical URL absent from prior editions."
+      },
+      "tags": [
+        "nasa",
+        "ibm",
+        "lunar-foundation-model",
+        "sombench",
+        "domain-pretraining",
+        "open-source",
+        "usra"
+      ]
+    },
+    {
+      "id": "rob-1x-50k-neo-plan",
+      "section": "Robotics",
+      "rank": 9,
+      "story_type": "launch",
+      "title": "1X CEO: aim to ship 50,000 NEO robots next year - Hayward capacity ~10k at full ramp, production increases tied to reliability and returns",
+      "summary": "In an interview posted by Relentless's Ti Morse on 18 Sep, 1X founder and CEO Bernt Børnich said the company aims to ship 50,000 NEO humanoids next year, with the Hayward plant at roughly 10,000 units per year at full ramp (not hit this year, as the line reaches full ramp late in the year) plus expansion in San Carlos, across home, enterprise and developer deployments. For builders tracking the humanoid commercialization curve this is the most concrete 12-month volume number any major humanoid maker has put on the table - and the gating constraint Børnich names is not factories but returns: 'not just shipping 50,000 units, but ensuring you don't get them back.' Caveat: it is an interview, not a company press release - no shipment commitments, pricing or per-site breakdowns were disclosed, and Børnich expects specialized models to keep the edge through 2026 with a shift toward general intelligence in 2027.",
+      "source": {
+        "name": "@ti_morse post",
+        "url": "https://x.com/ti_morse/status/2100996216859623565"
+      },
+      "canonical_url": "https://www.humanoidsdaily.com/news/1x-50000-robots-bornich-production-data",
+      "published_at": "2026-09-18T17:11:47+00:00",
+      "corroboration": [
+        {
+          "name": "Humanoids Daily coverage (19 Sep)",
+          "url": "https://www.humanoidsdaily.com/news/1x-50000-robots-bornich-production-data"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official interview post located via live X search (@ti_morse, 17:11:47 UTC 18 Sep; @1x_tech and @BerntBornich did not post the announcement themselves - @1x_tech only replied). Humanoids Daily article fetched live (datePublished 2026-09-19T10:27 UTC) and corroborates the 50k target and 10k Hayward capacity. Just before the 30h cutoff, labeled Catch-up; canonical URL absent from prior editions."
+      },
+      "tags": [
+        "1x",
+        "neo",
+        "humanoid",
+        "production",
+        "bernt-bornich",
+        "manufacturing",
+        "deployment"
+      ]
+    },
+    {
+      "id": "rob-tesla-optimus-supplier-audits",
+      "section": "Robotics",
+      "rank": 10,
+      "story_type": "infrastructure",
+      "title": "Catch-up: Tesla reportedly begins a new round of Optimus supplier audits in Ningbo, China - with component orders already placed",
+      "summary": "Chinese media (Yicai) report that Tesla began a new round of Optimus supplier audits in Ningbo on 17 Sep, with component orders already placed; supplier representatives confirmed ongoing robotics work but did not confirm the latest round. For builders on the humanoid supply chain this is the concrete signal that Optimus 3 hardware sourcing is moving from design freeze to component procurement - the audit round is the step that separates a demo program from a production BOM, and China remains the likely source for at least part of the component stack. Caveat: it is trade-press reporting, not a Tesla statement - no supplier names, order sizes or qualification timeline were disclosed, and Tesla has not confirmed publicly.",
+      "source": {
+        "name": "Humanoids Daily - Tesla Optimus supplier audits",
+        "url": "https://www.humanoidsdaily.com/news/tesla-optimus-supplier-audits-china"
+      },
+      "canonical_url": "https://www.humanoidsdaily.com/news/tesla-optimus-supplier-audits-china",
+      "published_at": "2026-09-18T14:14:44+00:00",
+      "corroboration": [
+        {
+          "name": "Humanoids Daily - Optimus Texas factory steel-frame milestone",
+          "url": "https://www.humanoidsdaily.com/news/tesla-optimus-texas-factory-steel-frame"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Humanoids Daily article fetched live (datePublished 2026-09-18T14:14 UTC); reports Yicai as the origin. No Tesla or @Tesla_Optimus post found in-window, so the trade-press piece is the record; a companion 18 Sep piece on the Texas factory's steel-frame milestone corroborates the build-out. Catch-up label: the 17 Sep audit start is just before the 30h cutoff; canonical URL absent from prior editions."
+      },
+      "tags": [
+        "tesla",
+        "optimus",
+        "supplier-audit",
+        "ningbo",
+        "chinese-media",
+        "bom",
+        "supply-chain"
+      ]
+    },
+    {
+      "id": "rob-lumos-nexcore-skill-days",
+      "section": "Robotics",
+      "rank": 11,
+      "story_type": "product",
+      "title": "Catch-up: Lumos claims its NexCore platform cuts new robot-skill development from weeks to days - up to 99% task success on Mitsubishi Electric applications",
+      "summary": "Lumos Robotics says its NexCore platform - which folds task definition, data collection, model training, evaluation and deployment into one workflow - can reduce the time to develop a new robot skill from weeks to days, on its MOS 2 wheeled dual-arm platform, with production data fed back into training and task success rates up to 99% on cited Mitsubishi Electric applications. For builders on industrial-robotics AI this targets the real cost of scaling humanoid/wheeled-robot deployments: per-task engineering. Caveat: it is a company press release shared with Humanoids Daily - the 99% success claim comes with no detailed test methodology or task-by-task results disclosed, and 'weeks to days' is a company estimate, not a benchmark.",
+      "source": {
+        "name": "Humanoids Daily - Lumos NexCore",
+        "url": "https://www.humanoidsdaily.com/news/lumos-nexcore-robot-skills-weeks-to-days"
+      },
+      "canonical_url": "https://www.humanoidsdaily.com/news/lumos-nexcore-robot-skills-weeks-to-days",
+      "published_at": "2026-09-18T08:52:36+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "Humanoids Daily article fetched live (datePublished 2026-09-18T08:52 UTC), based on a Lumos press release. No official Lumos X post found in-window (handle not on the checked list; the press-release share is the record). NexCore was first showcased at WAIC in August; this release expands its industrial role. Catch-up label: 18 Sep is just before the 30h cutoff; canonical URL absent from prior editions."
+      },
+      "tags": [
+        "lumos",
+        "nexcore",
+        "robot-skills",
+        "mos-2",
+        "industrial-robotics",
+        "mitsubishi-electric"
+      ]
+    },
+    {
+      "id": "rob-tesla-optimus-texas-steel-frame",
+      "section": "Robotics",
+      "rank": 12,
+      "story_type": "infrastructure",
+      "title": "Catch-up: Tesla's Giga Texas Optimus factory nears completion of its main steel frame - concrete pouring on three upper floors",
+      "summary": "Drone observer Joe Tegtmeyer's 17 Sep update, covered by Humanoids Daily, reports Tesla's dedicated Optimus factory at Giga Texas is approaching completion of its main steel structure - roughly five column grids short of the north perimeter beam - with concrete being poured on three upper floors and continued footing/grade-beam work at the southern end. For builders on the humanoid manufacturing timeline this is a physical, verifiable construction milestone (independent of Tesla statements) on the facility that would support Optimus volume production, consistent with Tesla's quarterly disclosure listing both the Texas and California Optimus facilities as under construction. Caveat: it is a building milestone, not a production start - no robots have been produced there yet, and the update establishes no production date.",
+      "source": {
+        "name": "Humanoids Daily - Optimus Texas factory steel frame",
+        "url": "https://www.humanoidsdaily.com/news/tesla-optimus-texas-factory-steel-frame"
+      },
+      "canonical_url": "https://www.humanoidsdaily.com/news/tesla-optimus-texas-factory-steel-frame",
+      "published_at": "2026-09-18T12:00:15+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Humanoids Daily article fetched live (datePublished 2026-09-18T12:00 UTC), reporting drone observer Joe Tegtmeyer's 17 Sep update (via Teslarati). No @Tesla_Optimus post in-window, so the independent site-observation coverage is the record. Catch-up label: the 17 Sep observation is just before the 30h cutoff; canonical URL absent from prior editions."
+      },
+      "tags": [
+        "tesla",
+        "optimus",
+        "giga-texas",
+        "factory",
+        "construction",
+        "manufacturing"
+      ]
+    },
+    {
+      "id": "lon-longeveron-elpis-ii",
+      "section": "Longevity",
+      "rank": 13,
+      "story_type": "clinical",
+      "title": "Longeveron ELPIS II Phase 2b topline: laromestrocel misses primary RVEF endpoint in HLHS infants - exploratory signals and a 'maximize shareholder value' review",
+      "summary": "Longeveron reported topline results from ELPIS II, its Phase 2b trial of the stem-cell therapy laromestrocel as an adjunct to Stage 2 palliative surgery in 40 infants with hypoplastic left heart syndrome: the primary endpoint of change in right-ventricular ejection fraction at Month 12 was not met (LS mean difference -0.7 pp, 95% CI -7.3 to 5.9, p=0.8336). Exploratory as-treated analyses showed no deaths in the treated arm vs one in control over 12 months, fewer adjudicated MACE (~31% fewer), and favorable safety across 644 patients treated to date; the company says it will discuss a path forward with the FDA and is 'exploring all options to maximize shareholder value.' For builders on the cellular-therapy-for-aging/heart pipeline this is the readout for the program behind Longeveron's XPRIZE Healthspan finalist status - a negative primary endpoint with a live exploratory story. Caveat: it is topline (not full) results from a small n=40 pediatric heart trial, not a longevity endpoint per se, and the company is reviewing its options.",
+      "source": {
+        "name": "Longeveron press release (GlobeNewswire)",
+        "url": "https://www.globenewswire.com/news-release/2026/09/16/3363591/0/en/longeveron-announces-topline-results-from-elpis-ii-phase-2b-clinical-trial-evaluating-laromestrocel-as-a-potential-treatment-for-hypoplastic-left-heart-syndrome-hlhs.html"
+      },
+      "canonical_url": "https://www.globenewswire.com/news-release/2026/09/16/3363591/0/en/longeveron-announces-topline-results-from-elpis-ii-phase-2b-clinical-trial-evaluating-laromestrocel-as-a-potential-treatment-for-hypoplastic-left-heart-syndrome-hlhs.html",
+      "published_at": "2026-09-16T12:00:00-04:00",
+      "corroboration": [
+        {
+          "name": "BioSpace - same release",
+          "url": "https://www.biospace.com/press-releases/longeveron-announces-topline-results-from-elpis-ii-phase-2b-clinical-trial-evaluating-laromestrocel-as-a-potential-treatment-for-hypoplastic-left-heart-syndrome-hlhs"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "GlobeNewswire press release (16 Sep) with BioSpace mirror fetched live (datePublished 2026-09-17T04:13 UTC). The GlobeNewswire URL timed out on a direct fetch but is confirmed via search index + BioSpace mirror + Manila Times + BioPharmaWatch. No official Longeveron X post exists (account is @LGVNSocial, last posted Jan 13). 72h catch-up on the trial readout - included because the canonical URL is absent from all prior editions and it is the most substantive in-scope clinical result surfaced this window."
+      },
+      "tags": [
+        "longeveron",
+        "laromestrocel",
+        "elpis-ii",
+        "hlhs",
+        "stem-cell",
+        "phase-2b",
+        "topline"
+      ]
+    },
+    {
+      "id": "lon-nature-brain-microproteins",
+      "section": "Longevity",
+      "rank": 14,
+      "story_type": "research",
+      "title": "Nature Aging: brain atlas maps 1,067 previously-unlisted 'microproteins' absent from UniProt; an MKKS one is down in Alzheimer's",
+      "summary": "A Nature Aging paper (Miller et al., 14 Sep) reports a human brain atlas of 1,067 high-confidence microproteins - short proteins absent from the reviewed UniProt database - derived from 608 post-mortem frontal-cortex samples, with data released for reuse. One, encoded by MKKS, is downregulated in Alzheimer's disease, and its loss impairs microglial mitochondrial respiration in a functional assay. For builders on brain-aging and AD biomarker tooling this is the resource that expands the brain proteome well beyond annotated genes - a new layer of candidate regulators and drug targets, with the full atlas open for reuse. Caveat: the Alzheimer's association is correlative plus a single functional microglia assay, not proof of causality, and microproteins are not validated therapeutic targets yet.",
+      "source": {
+        "name": "@Nature post",
+        "url": "https://x.com/Nature/status/2101237360545444254"
+      },
+      "canonical_url": "https://www.nature.com/articles/d41586-026-02914-6",
+      "published_at": "2026-09-19T09:10:00+00:00",
+      "corroboration": [
+        {
+          "name": "Nature Aging paper (Miller et al.)",
+          "url": "https://www.nature.com/articles/s43587-026-01207-x"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @Nature post fetched live 09:10 UTC with engagement observed via X syndication; the in-window Nature news item (d41586-026-02914-6) fetched live (datePublished 2026-09-16, so the post time is the in-window timestamp) and the underlying Nature Aging paper URL confirmed. 72h on the paper (14 Sep) with the in-window Nature amplification as the signal; canonical URL absent from prior editions."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 227,
+        "label": "227 likes observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-20T05:25:00+00:00",
+        "evidence_url": "https://x.com/Nature/status/2101237360545444254"
+      },
+      "tags": [
+        "alzheimer",
+        "microproteins",
+        "brain-atlas",
+        "mkks",
+        "microglia",
+        "nature-aging",
+        "proteomics"
+      ]
+    },
+    {
+      "id": "lon-nih-tau-mitochondria-ret",
+      "section": "Longevity",
+      "rank": 15,
+      "story_type": "research",
+      "title": "NIH-amplified: tau drives mitochondrial reverse electron transport via NDUFS3 - blocking it protected animal models from neurodegeneration",
+      "summary": "NIH amplified a result (Neuron, Aug 2026) showing that hyperphosphorylated tau enters mitochondria, binds Complex I subunit NDUFS3 and drives reverse electron transport (RET), and that blocking the tau-NDUFS3 interaction protected animal models from neurodegeneration. For builders on neurodegeneration bioenergetics this is a concrete, targetable mechanism - a druggable protein-protein interaction at the inner-membrane Complex I that converts a misfolded cytoplasmic protein into a direct mitochondrial energy insult, relevant to Alzheimer's and the broader aging/energy axis. Caveat: it is preclinical (animal models) and the NIH post is an amplification of Aug work, not a new grant or trial; NIH itself says more research is needed.",
+      "source": {
+        "name": "@NIH post",
+        "url": "https://x.com/NIH/status/2101283942875689268"
+      },
+      "canonical_url": "https://pubmed.ncbi.nlm.nih.gov/42561934/",
+      "published_at": "2026-09-19T12:15:06+00:00",
+      "corroboration": [
+        {
+          "name": "Science news (tau in mitochondria)",
+          "url": "https://www.science.org/content/article/tau-protein-can-sneak-brain-cells-energy-factories-and-wreak-havoc"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @NIH post fetched live 12:15:06 UTC with engagement observed via X syndication; the post carried no URL, so the underlying paper is pinned via PubMed (42561934, 'Tau-induced mitochondrial reverse electron transport drives neurodegeneration') plus a Science news article. The NIH post is the in-window signal; the Neuron work is from 6 Aug 2026."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 99,
+        "label": "99 likes observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-20T05:25:00+00:00",
+        "evidence_url": "https://x.com/NIH/status/2101283942875689268"
+      },
+      "tags": [
+        "tau",
+        "mitochondria",
+        "reverse-electron-transport",
+        "ndufs3",
+        "neurodegeneration",
+        "nih",
+        "bioenergetics"
+      ]
+    },
+    {
+      "id": "lon-nih-debut-healthy-aging-prize",
+      "section": "Longevity",
+      "rank": 16,
+      "story_type": "funding",
+      "title": "NIH DEBUT Challenge recap: 119 biomedical-device entries from 490 students; NIA sponsors a 'Technologies to Foster Healthy Aging' prize",
+      "summary": "NIH amplified its 2026 DEBUT Challenge recap: 119 student applications from 490 students across 29 states competed for $170,000 in prizes for biomedical devices and diagnostics, with the National Institute on Aging sponsoring a dedicated 'Technologies to Foster Healthy Aging' prize track. For builders on aging hardware and diagnostics this is a concrete, recurring NIH mechanism specifically funding student-built aging/healthy-lifespan devices - an early-stage signal of where institutional money is being aimed in the geroscience device space. Caveat: it is a delayed social recap of an 25 Aug winners announcement (the in-window @NIH post is the signal), and the 2026 winners page was not located - this is the program/funding signal, not a clinical result.",
+      "source": {
+        "name": "@NIH post",
+        "url": "https://x.com/NIH/status/2101091696692044121"
+      },
+      "canonical_url": "https://www.nibib.nih.gov/programs/division-interdisciplinary-training-didt/debut",
+      "published_at": "2026-09-18T23:31:11+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @NIH post fetched live 23:31:11 UTC 18 Sep (in-window) with engagement observed via X syndication; the DEBUT program page fetched live (HTTP 200). The post carried no URL, so the program page is the canonical record; winners were announced 25 Aug (delayed recap). 2026 winners page not located."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 27,
+        "label": "27 likes observed live on the source post (X syndication; reposts not exposed by that endpoint)",
+        "observed_at": "2026-09-20T05:25:00+00:00",
+        "evidence_url": "https://x.com/NIH/status/2101091696692044121"
+      },
+      "tags": [
+        "nih",
+        "debut",
+        "nibib",
+        "nia",
+        "healthy-aging",
+        "biomedical-devices",
+        "student-challenge"
+      ]
+    }
+  ]
+}
