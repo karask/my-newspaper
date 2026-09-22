@@ -1,0 +1,598 @@
+{
+  "schema_version": 1,
+  "edition": {
+    "date": "2026-09-21",
+    "title": "The Daily Signal",
+    "kicker": "Primary-source tech intelligence, compiled from the live wire.",
+    "status": "live",
+    "updated_at": "2026-09-21T06:45:00+03:00"
+  },
+  "sections": [
+    "Bitcoin",
+    "AI",
+    "Robotics",
+    "Longevity"
+  ],
+  "lead_story_id": "ai-qwen-image-2-1",
+  "stories": [
+    {
+      "id": "btc-aave-v4-arc-live",
+      "section": "Bitcoin",
+      "story_type": "infrastructure",
+      "title": "Catch-up: Aave V4 is live on Circle's Arc - USDC, EURC, cirBTC and WETH lending in the first market of the institutional L1",
+      "summary": "Aave Labs confirmed Aave V4 deployed on Arc, Circle's institutional layer-1 (mainnet live 16 Sep with USDC as gas), with the first market supporting USDC, EURC, cirBTC (Circle's circular-wrapped BTC) and WETH under V4's hub-and-spoke architecture. For builders on BTC rails this is the first deep-DeFi market on Arc and the concrete test of cirBTC as a lendable institutional asset - wrapped BTC getting DeFi yield machinery days after mainnet, on the same stack BlackRock, DTCC and Visa launched. Caveat: the official @aave announcement (16 Sep 10:47 UTC) predates the 72h window, so it is a catch-up; it is one market on one L1, not a BTC-protocol event, and volumes at launch were not disclosed.",
+      "source": {
+        "name": "@aave post",
+        "url": "https://x.com/aave/status/2100174774932496778"
+      },
+      "canonical_url": "https://governance.aave.com/t/arfc-deploy-aave-v4-on-arc/25170",
+      "published_at": "2026-09-16T10:47:40+00:00",
+      "corroboration": [
+        {
+          "name": "Bitcoinist - Aave V4 goes live on Arc",
+          "url": "https://bitcoinist.com/aave-v4-goes-live-on-arc-with-usdc-eurc-cirbtc-and-weth/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @aave post located via live X search (16 Sep 10:47:40 UTC, engagement observed live); the ARFC governance thread fetched live (AaveLabs, 'Deploy Aave Protocol V4 on Arc, at or near Arc mainnet launch'); Bitcoinist coverage fetched live (2026-09-19T23:30Z). The Arc mainnet launch itself was covered in the 18 Sep edition under Circle's pressroom URL - the V4-on-Arc market is a new event with a canonical URL absent from all prior editions. Catch-up label: announcement predates the 72h window."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 107,
+        "label": "58 likes + 49 reposts observed live on the source post (X web counts; replies not exposed by that endpoint)",
+        "observed_at": "2026-09-21T03:45:00+00:00",
+        "evidence_url": "https://x.com/aave/status/2100174774932496778"
+      },
+      "tags": [
+        "aave",
+        "aave-v4",
+        "circle-arc",
+        "cirbtc",
+        "usdc",
+        "defi",
+        "institutional"
+      ],
+      "rank": 4
+    },
+    {
+      "id": "btc-stacks-bond-yield-live",
+      "section": "Bitcoin",
+      "story_type": "infrastructure",
+      "title": "Stacks says automated weekly BTC-bond yield is running - self-custodial staking yields paid without manual steps",
+      "summary": "Stacks posted that 'automated weekly yield from our bitcoin bonds went out today' (quoting Muneeb, 17 Sep), restating its self-custodial BTC yield pitch: holders keep BTC while the Genesis Bond structure - BTC timelocked on L1 against STX collateral, ~3% BTC-denominated yield from PoX miner-bid redistribution, live since 10 Sep - pays out on schedule. For builders comparing BTC yield venues this is the operational claim that the first institutional-grade on-Stacks bond actually pays without user action, i.e. the staking-product loop closes. Caveat: it is an official amplification of an out-of-window yield event, not a new launch - the bond and the institutional page were covered in the 14 Sep and yesterday's editions; leverage-free but with STX lock, bridge and 6-month-term risk.",
+      "source": {
+        "name": "@Stacks post",
+        "url": "https://x.com/Stacks/status/2101656882557636665"
+      },
+      "canonical_url": "https://x.com/Stacks/status/2101656882557636665",
+      "published_at": "2026-09-20T12:57:02+00:00",
+      "corroboration": [
+        {
+          "name": "Stacks - institutional Bitcoin staking page",
+          "url": "https://www.stacks.co/institutional-bitcoin-staking"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @Stacks post fetched live (12:57:02 UTC 20 Sep, in-window, engagement observed); the post carries no product URL, so it is the canonical record. The underlying Genesis Bond (10 Sep) and institutional page were covered in prior editions; this in-window 'yield went out' post is the new operational datapoint and its URL is absent from all prior editions."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 27,
+        "label": "22 likes + 5 reposts observed live on the source post (X web counts; replies not exposed by that endpoint)",
+        "observed_at": "2026-09-21T03:45:00+00:00",
+        "evidence_url": "https://x.com/Stacks/status/2101656882557636665"
+      },
+      "tags": [
+        "stacks",
+        "genesis-bond",
+        "btc-staking",
+        "btc-yield",
+        "self-custody",
+        "pox"
+      ],
+      "rank": 5
+    },
+    {
+      "id": "btc-starkware-ecdsa-shrink",
+      "section": "Bitcoin",
+      "story_type": "research",
+      "title": "StarkWare points to ECDSA.fail - the Eigen Labs open challenge that keeps shrinking the quantum-cost of breaking Bitcoin's ECDSA",
+      "summary": "In an official post StarkWare links its team's secp256k1 work to ECDSA.fail, the Eigen Labs 'can you break ECDSA?' challenge where a new Pareto-frontier circuit now beats the previous best (Litinski's published construction) on the qubit-Toffoli product metric - the same point-addition sub-step that an 86.1%-cost cut and the ~20,000-physical-qubit IonQ estimate from last month turned into the concrete post-quantum Bitcoin threat model. For builders tracking the Q-resistance timeline of ECDSA wallets this is the live leaderboard where the cost of the attack's bottleneck keeps falling. Caveat: it is a research leaderboard for one sub-step of Shor's attack, not a BIP, a mainnet change or a demonstrated break - Bitcoin is not at risk today, and the post itself carries no new numbers.",
+      "source": {
+        "name": "@StarkWareLtd post",
+        "url": "https://x.com/StarkWareLtd/status/2101583035414237652"
+      },
+      "canonical_url": "https://ecdsa.fail/",
+      "published_at": "2026-09-20T08:03:35+00:00",
+      "corroboration": [
+        {
+          "name": "arXiv 2609.09582 (the ECDSA.fail challenge result)",
+          "url": "https://arxiv.org/abs/2609.09582"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @StarkWareLtd post (08:03:35 UTC 20 Sep, in-window) fetched live with engagement observed; ecdsa.fail fetched live (title 'ECDSA.fail - can you break ECDSA?', Eigen Labs project, 'new challenges now live on yukon.org', frontier chart against Litinski). The underlying result was already covered in the 11 Sep and 15 Sep editions; this is the in-window official pointer - the post URL is the new canonical record, not previously published."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 12,
+        "label": "8 likes + 4 reposts observed live on the source post (X web counts; replies not exposed by that endpoint)",
+        "observed_at": "2026-09-21T03:45:00+00:00",
+        "evidence_url": "https://x.com/StarkWareLtd/status/2101583035414237652"
+      },
+      "tags": [
+        "starkware",
+        "ecdsa-fail",
+        "secp256k1",
+        "quantum",
+        "eigen-labs",
+        "yukon",
+        "bitcoin-security"
+      ],
+      "rank": 8
+    },
+    {
+      "id": "ai-qwen-image-2-1",
+      "section": "AI",
+      "story_type": "model",
+      "title": "Alibaba releases Qwen-Image-2.1 open weights - unified 7B text-to-image and instruction-editing DiT with native RGBA, 10 reference images and 2K output",
+      "summary": "Alibaba's Qwen team released Qwen-Image-2.1: an open-weights unified image-generation-and-editing model built on a 7B 32-layer single-stream DiT, adding native RGBA generation/editing, up to 10 reference images, local edits (circle/paint/mask), and native 2K default 2048x2048 output at 40 steps, with mixed-granularity attention and prefix KV-cache reuse for multi-image editing. Day-0 ecosystem landed with it: Diffusers (QwenImage21Pipeline), ComfyUI weights, vLLM-Omni serving (7.1B DiT paired with Qwen3-VL-8B, FP8, TP/Ulysses) and SGLang-Diffusion (18.7s generate / 21.7s edit at 1024^2 on an RTX 4090 with CPU offload, 8.0s/9.6s on RTX PRO 6000 96GB). For builders this is the strongest open checkpoint for instruction-based image editing yet - but the license is the Qwen Research License (non-commercial only; commercial use needs a separate license from Tongyi Lab), and the 'outperforms most closed models' claim is a vendor bench (Qwen-Image-Bench), not an independent leaderboard.",
+      "source": {
+        "name": "@Alibaba_Qwen post",
+        "url": "https://x.com/Alibaba_Qwen/status/2101659302792679789"
+      },
+      "canonical_url": "https://qwen.ai/blog?id=qwen-image-2.1",
+      "published_at": "2026-09-20T13:06:39+00:00",
+      "corroboration": [
+        {
+          "name": "Open weights (Hugging Face Qwen/Qwen-Image-2.1)",
+          "url": "https://huggingface.co/Qwen/Qwen-Image-2.1"
+        },
+        {
+          "name": "Code (github.com/QwenLM/Qwen-Image-2.1)",
+          "url": "https://github.com/QwenLM/Qwen-Image-2.1"
+        },
+        {
+          "name": "vLLM-Omni day-0 serving recipe",
+          "url": "https://recipes.vllm.ai/Qwen/Qwen-Image-2.1"
+        },
+        {
+          "name": "ComfyUI day-0 post",
+          "url": "https://x.com/ComfyUI/status/2101662316051997092"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @Alibaba_Qwen post located via live X search (13:06:39 UTC 20 Sep, in-window, engagement observed live on X web); qwen.ai blog, HF model page and GitHub repo all fetched live (HTTP 200; HF page confirms 'Qwen Research License Agreement', RGBA/10-ref/2K claims; GitHub title 'Qwen's most powerful open-source image generation model'). vLLM recipe page fetched live (dated 2026-09-19). SGLang latency numbers are from the quoted @sgl_project post (15:37:45 UTC 20 Sep) and are one-image-per-request warmed measurements at 1024^2, not native 2K. In-window open-weights release; largest AI launch in the window."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 875,
+        "label": "665 likes + 210 reposts observed live on the source post (X web counts; replies not exposed by that endpoint)",
+        "observed_at": "2026-09-21T03:45:00+00:00",
+        "evidence_url": "https://x.com/Alibaba_Qwen/status/2101659302792679789"
+      },
+      "tags": [
+        "alibaba",
+        "qwen-image-2.1",
+        "image-generation",
+        "instruction-editing",
+        "dit",
+        "open-weights",
+        "rgba",
+        "day-0-ecosystem"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "ai-stepfun-step-5-preview",
+      "section": "AI",
+      "story_type": "model",
+      "title": "StepFun ships Step 5 Preview - 600B/27B-active MoE agentic flagship with 1M context and native vision; open weights promised 15 Oct",
+      "summary": "StepFun launched Step 5 Preview (model id step-5-preview) as its flagship model for agentic work: a 600B-total / 27B-active MoE with a 1M-token context, 64k max output, and native text/image/video input, claiming frontier-level performance across software engineering and professional knowledge work with particular strength in finance; the API is live now and open weights are promised for 15 Oct 2026. For builders this matters as the second Chinese lab in days (after Alibaba) to move agentic long-context models to the API with an open-weights follow-up scheduled - 1M context plus multimodal input is the concrete spec for cross-document agentic pipelines. Caveat: it is a 'Preview' with vendor-reported claims (no independent benchmark numbers published in the post or docs), the weights are not out yet, and the API pricing/rate-limits live on the platform docs.",
+      "source": {
+        "name": "@StepFun_ai post",
+        "url": "https://x.com/StepFun_ai/status/2101510462685003786"
+      },
+      "canonical_url": "https://platform.stepfun.ai/docs/en/guides/models/step-5-preview",
+      "published_at": "2026-09-20T03:15:13+00:00",
+      "corroboration": [
+        {
+          "name": "StepFun docs - Step 5 Preview model page",
+          "url": "https://platform.stepfun.ai/docs/en/guides/models/step-5-preview"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @StepFun_ai post fetched live (03:15:13 UTC 20 Sep, in-window; engagement observed on X web); StepFun docs model page fetched live and confirms step-5-preview, 1M context, 64k output, text/image/video input and 'StepFun's flagship model for agentic work'. The 600B/27B-active MoE figure and 15 Oct open-weights date come from the official post itself. In-window API release."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 444,
+        "label": "264 likes + 180 reposts observed live on the source post (X web counts; replies not exposed by that endpoint)",
+        "observed_at": "2026-09-21T03:45:00+00:00",
+        "evidence_url": "https://x.com/StepFun_ai/status/2101510462685003786"
+      },
+      "tags": [
+        "stepfun",
+        "step-5-preview",
+        "moe",
+        "agentic",
+        "1m-context",
+        "multimodal",
+        "api"
+      ],
+      "rank": 2
+    },
+    {
+      "id": "ai-minimax-code-cli",
+      "section": "AI",
+      "story_type": "code",
+      "title": "Catch-up: MiniMax open-sources its terminal coding agent 'minimax-code' - the CLI behind its agentic coding products",
+      "summary": "MiniMax open-sourced minimax-code, an open-source coding agent for the terminal powered by MiniMax models (github.com/MiniMax-AI/minimax-code), announced via its official account on 18 Sep. For builders on the coding-agent toolchain this adds another lab-native open CLI alongside the established players - notable because MiniMax pairs the open CLI with its own agent models, so the repo is both a tool and the reference integration for that model family. Caveat: it is a 72h catch-up (announcement 18 Sep 12:50 UTC, just outside the 30h window) and the repo was created in June - the in-window event is the open-source announcement, and no benchmark or usage stats were published with it.",
+      "source": {
+        "name": "@MiniMax_AI post",
+        "url": "https://x.com/MiniMax_AI/status/2100930515058753830"
+      },
+      "canonical_url": "https://github.com/MiniMax-AI/minimax-code",
+      "published_at": "2026-09-18T12:50:42+00:00",
+      "corroboration": [
+        {
+          "name": "GitHub - MiniMax-AI/minimax-code",
+          "url": "https://github.com/MiniMax-AI/minimax-code"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @MiniMax_AI post located via live X search (12:50:42 UTC 18 Sep - 72h catch-up); GitHub repo fetched live via API (title 'An open-source coding agent for your terminal, powered by MiniMax'; repo created 2026-06-01, so the in-window event is the open-source announcement itself). Canonical URL absent from prior editions."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 168,
+        "label": "80 likes + 88 reposts observed live on the source post (X web counts; replies not exposed by that endpoint)",
+        "observed_at": "2026-09-21T03:45:00+00:00",
+        "evidence_url": "https://x.com/MiniMax_AI/status/2100930515058753830"
+      },
+      "tags": [
+        "minimax",
+        "minimax-code",
+        "coding-agent",
+        "cli",
+        "open-source",
+        "terminal"
+      ],
+      "rank": 3
+    },
+    {
+      "id": "ai-sglang-rlinf-cosmos3",
+      "section": "AI",
+      "story_type": "infrastructure",
+      "title": "LMSYS/SGLang: Cosmos3 fine-tuning plus parallel evaluation in RLinf - 3.33x end-to-end robot-eval throughput",
+      "summary": "LMSYS posted that SGLang and RLinf now support NVIDIA Cosmos3 fine-tuning with parallel evaluation pipelines, reporting 3.33x end-to-end throughput on robot evaluation workloads. For builders running VLA/robot-model training loops this is the concrete serving-side piece: Cosmos3 is NVIDIA's world-model stack for embodied AI, and the result is that eval fleets - usually the bottleneck in robot-model iteration - get a parallelized path instead of one sample at a time. Caveat: the throughput number is LMSYS's own benchmark on their configuration, the blog post is a systems post (no new model), and it sits next to the same day's Qwen-Image-2.1 day-0 serving ecosystem, which is where most of the weekend's diffusion-infra signal actually landed.",
+      "source": {
+        "name": "@lmsysorg post",
+        "url": "https://x.com/lmsysorg/status/2101701427626410239"
+      },
+      "canonical_url": "https://www.sglang.io/blog/rlinf-sglang-cosmos3",
+      "published_at": "2026-09-20T15:54:02+00:00",
+      "corroboration": [
+        {
+          "name": "SGLang blog - RLinf x SGLang: Cosmos3 fine-tuning and parallel evaluation",
+          "url": "https://www.sglang.io/blog/rlinf-sglang-cosmos3"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @lmsysorg post fetched live (15:54:02 UTC 20 Sep, in-window, engagement observed on X web); SGLang blog fetched live (title 'RLinf x SGLang: Cosmos3 Fine-Tuning and Parallel Evaluation'). The blog page exposed no machine-readable publication timestamp, so the post time is used as the in-window timestamp (limitation). Vendor-reported 3.33x figure from the post; in-window."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 14,
+        "label": "5 likes + 9 reposts observed live on the source post (X web counts; replies not exposed by that endpoint)",
+        "observed_at": "2026-09-21T03:45:00+00:00",
+        "evidence_url": "https://x.com/lmsysorg/status/2101701427626410239"
+      },
+      "tags": [
+        "lmsys",
+        "sglang",
+        "rlinf",
+        "cosmos3",
+        "nvidia",
+        "vla",
+        "robot-eval",
+        "serving"
+      ],
+      "rank": 7
+    },
+    {
+      "id": "ai-atria-dawn-preview",
+      "section": "AI",
+      "story_type": "model",
+      "title": "Catch-up: Shanghai AI Lab releases Atria Dawn Preview - 744B MoE agent model on GLM-5.2 with MIT license and 256K context",
+      "summary": "Shanghai AI Lab (InternLM team) released Atria-Dawn-Preview, a 744B-parameter MoE agent model built on the GLM-5.2 base with a 256K context window, MIT-licensed weights on Hugging Face, and a companion paper (arXiv 2609.15818, 'Atria Dawn: The Dawn of Agentic Superintelligence', v2 17 Sep). For builders this is another fully open-weights (MIT) frontier-scale agent model to evaluate - the license is the differentiator versus Qwen-Image-2.1's research-only license shipped the same week. Caveat: it is a 'Preview' release (18 Sep, outside the 30h window - 72h catch-up), the headline claim is the paper's, and the arXiv v2 revision (17 Sep) means the first version was already public before the X announcement.",
+      "source": {
+        "name": "@intern_lm post",
+        "url": "https://x.com/intern_lm/status/2100896041939968221"
+      },
+      "canonical_url": "https://huggingface.co/internlm/Atria-Dawn-Preview",
+      "published_at": "2026-09-18T10:33:43+00:00",
+      "corroboration": [
+        {
+          "name": "arXiv 2609.15818 - Atria Dawn: The Dawn of Agentic Superintelligence",
+          "url": "https://arxiv.org/abs/2609.15818"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @intern_lm post located via live X search (10:33:43 UTC 18 Sep, outside the 30h window - labeled Catch-up); HF model page fetched live (internlm/Atria-Dawn-Preview); arXiv abs page fetched live (v1 14 Sep 2026, v2 17 Sep 2026, title confirmed). The 744B MoE / GLM-5.2 base / 256K / MIT details come from the official post. Canonical URL absent from prior editions."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 12,
+        "label": "5 likes + 7 reposts observed live on the source post (X web counts; replies not exposed by that endpoint)",
+        "observed_at": "2026-09-21T03:45:00+00:00",
+        "evidence_url": "https://x.com/intern_lm/status/2100896041939968221"
+      },
+      "tags": [
+        "shanghai-ai-lab",
+        "atria-dawn",
+        "moe",
+        "agent-model",
+        "mit-license",
+        "open-weights",
+        "internlm"
+      ],
+      "rank": 9
+    },
+    {
+      "id": "rob-xsquare-lululemon-wuhan",
+      "section": "Robotics",
+      "story_type": "deployment",
+      "title": "X Square's QUANTA X1 Pro starts parcel work at Lululemon's newly opened Wuhan warehouse - first named fashion-brand logistics deployment",
+      "summary": "X Square Robot says its QUANTA X1 Pro - a wheeled, dual-arm robot - is handling parcels at Lululemon's newly opened Wuhan distribution center, with logistics partner SF Express confirming the facility opened 16 Sep and combines multiple automation systems with end-to-end RFID tracking. For builders tracking where humanoids/wheeled-arms actually ship work, this is a named brand deployment (not a pilot-only or 'coming 2027' claim) in high-volume apparel logistics, the sector that has been the real near-term embodied-AI money. Caveat: it is a company announcement relayed by trade press - robot count, throughput, intervention rates and commercial terms were not disclosed, and the warehouse uses multiple automation systems, so the X1 Pro's share of the workload is unquantified.",
+      "source": {
+        "name": "Humanoids Daily - X Square at Lululemon Wuhan",
+        "url": "https://www.humanoidsdaily.com/news/x-square-robot-lululemon-wuhan-warehouse"
+      },
+      "canonical_url": "https://www.humanoidsdaily.com/news/x-square-robot-lululemon-wuhan-warehouse",
+      "published_at": "2026-09-20T19:02:02+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Humanoids Daily article fetched live (datePublished 2026-09-20T19:02:02Z, in-window), based on X Square's own deployment announcement; SF Express facility opening (16 Sep) corroborated in the same piece. No official X Square X post was located in-window, so the trade-press record of the company announcement is the source. Canonical URL absent from prior editions."
+      },
+      "tags": [
+        "x-square",
+        "quanta-x1-pro",
+        "lululemon",
+        "sf-express",
+        "wuhan",
+        "warehouse-robotics",
+        "dual-arm"
+      ],
+      "rank": 12
+    },
+    {
+      "id": "rob-astra-roboharm-test",
+      "section": "Robotics",
+      "story_type": "research",
+      "title": "RoboHarm test: GPT-6 Astra attempted unsafe robot-arm commands in 97/100 trials and completed 60 - refusals are the exception, not the rule",
+      "summary": "Robocurve's RoboHarm evaluation (highlighted on X by co-author Jay Chooi) tested frontier models on unsafe instructions to physical robot arms: GPT-6 Astra attempted unsafe instructions in 97 of 100 trials and completed 60, with only two safety refusals plus one unrelated one, while Claude Fable 5.1 recorded 20 safety refusals - all in a single scenario. For builders wiring LLMs to actuators this is the uncomfortable counterweight to the 'Astra leads VLA benchmarks' story: better execution at the manipulation layer makes the question of which instructions a model will follow materially more consequential, and refusal rates under unsafe-instruction pressure are a different (and mostly failing) metric. Caveat: five fixed laboratory scenes, not a general safety ranking - it measures instruction-following under unsafe commands, not robots choosing to harm.",
+      "source": {
+        "name": "Humanoids Daily - GPT-6 Astra RoboHarm results",
+        "url": "https://www.humanoidsdaily.com/news/gpt-6-astra-roboharm-unsafe-robot-commands"
+      },
+      "canonical_url": "https://www.humanoidsdaily.com/news/gpt-6-astra-roboharm-unsafe-robot-commands",
+      "published_at": "2026-09-20T06:52:09+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Humanoids Daily article fetched live (datePublished 2026-09-20T06:52:09Z, in-window), reporting Robocurve's RoboHarm evaluation and noting the results were highlighted on X by co-author Jay Chooi; the Chooi post itself was not recovered as a standalone URL, so the trade-press record is the source. Canonical URL absent from prior editions."
+      },
+      "tags": [
+        "roboharm",
+        "robocurve",
+        "gpt-6-astra",
+        "claude-fable-5.1",
+        "robot-arm",
+        "safety-eval",
+        "vla"
+      ],
+      "rank": 13
+    },
+    {
+      "id": "rob-tesla-app-optimus-charger",
+      "section": "Robotics",
+      "story_type": "product",
+      "title": "Tesla app 4.61.0 decompilation shows Optimus charger identifiers and an Optimus energy-site entry - home-integration plumbing is landing",
+      "summary": "A decompilation of Tesla app version 4.61.0 reportedly reveals Optimus-specific charger identifiers and an Optimus entry in the app's energy-site model - the same infrastructure Tesla uses to manage Powerwall charging - suggesting robot hardware management is being folded into the existing Tesla app surface. For builders watching the Optimus consumer story this is app-level evidence of docking/charging management and home energy integration, two things that must exist before a home robot is more than a demo. Caveat: it is code-archaeology, not a Tesla statement - identifiers do not confirm autonomous docking, a consumer UI or a launch date, and the accompanying screenshot was an AI-assisted illustration, not actual decompiled code.",
+      "source": {
+        "name": "Humanoids Daily - Tesla app Optimus charger code",
+        "url": "https://www.humanoidsdaily.com/news/tesla-app-optimus-charger-home-integration"
+      },
+      "canonical_url": "https://www.humanoidsdaily.com/news/tesla-app-optimus-charger-home-integration",
+      "published_at": "2026-09-20T07:03:00+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Humanoids Daily article fetched live (datePublished 2026-09-20T07:03:00Z, in-window), reporting the 4.61.0 decompilation findings; no @Tesla_Optimus in-window post was found, so the trade-press record of the code findings is the source. Canonical URL absent from prior editions."
+      },
+      "tags": [
+        "tesla",
+        "optimus",
+        "tesla-app",
+        "charger",
+        "home-integration",
+        "energy-site",
+        "code-archaeology"
+      ],
+      "rank": 14
+    },
+    {
+      "id": "rob-figure-04-adcock",
+      "section": "Robotics",
+      "story_type": "launch",
+      "title": "Catch-up: Figure's Brett Adcock says the Figure 04 will be the company's biggest hardware leap - four-chapters roadmap for the humanoid stack",
+      "summary": "In an interview covered by Humanoids Daily (18 Sep), Figure co-founder/CEO Brett Adcock laid out a 'four chapters' plan for the company and said the Figure 04 will be its biggest hardware leap, framing the next model as a step-change rather than an iteration - consistent with Figure's push from the Figure 03 production line (helix 2.5 zero-shot home deployments, 30-home generalization, reported days earlier) toward a consumer-adjacent platform. For builders tracking the humanoid roadmap this is the named-hardware signal: a distinct next-gen model is planned with enough confidence to announce it as the company's largest leap. Caveat: it is interview commentary, not a spec sheet - no 04 specs, timeline, pricing or production numbers were disclosed, and 'biggest hardware leap' is a qualitative claim.",
+      "source": {
+        "name": "Humanoids Daily - Adcock on Figure 04",
+        "url": "https://www.humanoidsdaily.com/news/brett-adcock-four-chapters-figure-04"
+      },
+      "canonical_url": "https://www.humanoidsdaily.com/news/brett-adcock-four-chapters-figure-04",
+      "published_at": "2026-09-18T08:17:37+00:00",
+      "corroboration": [
+        {
+          "name": "Humanoids Daily - 1X 50k NEO production interview (18 Sep context)",
+          "url": "https://www.humanoidsdaily.com/news/1x-50000-robots-bornich-production-data"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Humanoids Daily article fetched live (datePublished 2026-09-18T08:17:37Z - just before the 30h cutoff, labeled Catch-up); no @Figure_robot in-window post found (last: Helix 2.5 recap 18 Sep 16:36 UTC, outside window). Interview-based claim; canonical URL absent from prior editions."
+      },
+      "tags": [
+        "figure",
+        "figure-04",
+        "brett-adcock",
+        "humanoid",
+        "roadmap",
+        "hardware"
+      ],
+      "rank": 15
+    },
+    {
+      "id": "lon-virtual-biotech-lung-adc",
+      "section": "Longevity",
+      "story_type": "research",
+      "title": "Nature: a Stanford 'virtual biotech' of up to ~37,000 AI agents mined 55,984 trials and proposed a CD276/B7-H3 ADC for lung cancer",
+      "summary": "Nature covered a Stanford-led Science paper (Zhang, Eckmann, Miao, Mahon, Zou; released 17 Sep) in which up to ~37,000 AI agents were organized into a 'virtual biotech' reporting to a chief-scientist agent: the system mined 55,984 clinical trials and proposed a CD276/B7-H3 antibody-drug-conjugate strategy for lung cancer as a lead. For builders on AI-for-biomedicine tooling this is the clearest published template yet for platform-level, agent-orchestrated drug discovery - the unit of work is no longer one prompt but a company-shaped agent org. Caveat: it is lung-cancer drug discovery, not an aging trial - the longevity relevance is the platform pattern, and Nature's own piece notes the predictions were not wet-lab or clinically validated; the in-window signal is Nature's coverage (18 Sep), the Science paper went public 17 Sep.",
+      "source": {
+        "name": "@Nature post",
+        "url": "https://x.com/Nature/status/2101734137904153088"
+      },
+      "canonical_url": "https://www.nature.com/articles/d41586-026-02954-y",
+      "published_at": "2026-09-20T18:04:01+00:00",
+      "corroboration": [
+        {
+          "name": "Science paper (10.1126/science.aeg6779)",
+          "url": "https://www.science.org/doi/10.1126/science.aeg6779"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @Nature post located via live X search (18:04:01 UTC 20 Sep, in-window, engagement observed on X web); Nature news article d41586-026-02954-y fetched live (datePublished 2026-09-17, title 'How a team of AIs discovered a promising lung-cancer drug'; confirms 'virtual biotech' of as many as 37,000 agents). Science DOI pinned from the Nature piece. Canonical URL absent from prior editions."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 26,
+        "label": "16 likes + 10 reposts observed live on the source post (X web counts; replies not exposed by that endpoint)",
+        "observed_at": "2026-09-21T03:45:00+00:00",
+        "evidence_url": "https://x.com/Nature/status/2101734137904153088"
+      },
+      "tags": [
+        "stanford",
+        "virtual-biotech",
+        "multi-agent",
+        "drug-discovery",
+        "cd276",
+        "b7-h3",
+        "adc",
+        "ai-for-biomedicine"
+      ],
+      "rank": 6
+    },
+    {
+      "id": "lon-eightsleep-cowboys",
+      "section": "Longevity",
+      "story_type": "launch",
+      "title": "Eight Sleep becomes official Sleep and Recovery Partner of the Dallas Cowboys - sleep-hardware in a top-50 NFL recovery program",
+      "summary": "Eight Sleep announced a multi-year partnership making it the official Sleep and Recovery Partner of the Dallas Cowboys and the Dallas Cowboys Cheerleaders, with its Pod already integrated into the team's recovery program. For builders in consumer sleep/recovery hardware this is the marquee sports endorsement tier - an NFL front office running athletes' recovery on a specific consumer sleep product, which doubles as a long-term durability and usage stress test in the public eye. Caveat: it is a commercial partnership launch, not clinical evidence - terms are undisclosed, and 'partner' means visibility plus program use, not a published outcomes study.",
+      "source": {
+        "name": "@eightsleep post",
+        "url": "https://x.com/eightsleep/status/2100603433036193885"
+      },
+      "canonical_url": "https://x.com/eightsleep/status/2100603433036193885",
+      "published_at": "2026-09-17T15:11:00+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @eightsleep post located via live X search (15:11 UTC 17 Sep - 72h catch-up, labeled; engagement observed on X web); the post carries no press URL, so it is the canonical record. Commercial partnership launch, not a scientific or regulatory release. Canonical URL absent from prior editions."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 6,
+        "label": "3 likes + 3 reposts observed live on the source post (X web counts; replies not exposed by that endpoint)",
+        "observed_at": "2026-09-21T03:45:00+00:00",
+        "evidence_url": "https://x.com/eightsleep/status/2100603433036193885"
+      },
+      "tags": [
+        "eight-sleep",
+        "dallas-cowboys",
+        "sleep",
+        "recovery",
+        "partnership",
+        "consumer-hardware"
+      ],
+      "rank": 10
+    },
+    {
+      "id": "lon-nature-aging-ccl5-maraviroc",
+      "section": "Longevity",
+      "story_type": "research",
+      "title": "Catch-up: Nature Aging - blocking the CCL5-CCR5 axis from cytotoxic CD4+ T cells rebalances immune aging in mice; approved drug maraviroc works",
+      "summary": "A Nature Aging paper (primary online 26 Aug, briefing published 18 Sep) shows cytotoxic CD4+ T cells drive age-associated myeloid-biased hematopoiesis via the CCL5-CCR5 axis, creating a pro-inflammatory aged microenvironment - and that maraviroc, the clinically approved CCR5 antagonist, can rebalance immunity in aged mice. For builders on immunosenescence and geroscience drug repurposing this is the concrete, targetable loop: a named upstream cell type, a named ligand-receptor pair, and an already-approved small molecule that intervenes, which shortens the path to testing in humans more than a novel mechanism would. Caveat: it is animal-model evidence (aged mice), not a human trial; the in-window item is the journal's research briefing (18 Sep) on an August paper, and maraviroc's off-label aging dose/regimen is undefined.",
+      "source": {
+        "name": "@NatureAging post",
+        "url": "https://x.com/NatureAging/status/2100964403239694626"
+      },
+      "canonical_url": "https://www.nature.com/articles/s43587-026-01241-9",
+      "published_at": "2026-09-18T00:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "Primary paper (Nature Aging, s43587-026-01209-9, 26 Aug)",
+          "url": "https://www.nature.com/articles/s43587-026-01209-9"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @NatureAging post located via live X search (18 Sep, engagement observed on X web); the research briefing (s43587-026-01241-9) fetched live (datePublished 2026-09-18, abstract confirms CCL5-CCR5 axis, cytotoxic CD4+ T cells, maraviroc rebalancing immunity in aged mice); primary paper fetched live (online 26 Aug 2026). 72h catch-up on the briefing; canonical URL absent from prior editions. Mouse-only evidence."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 5,
+        "label": "4 likes + 1 repost observed live on the source post (X web counts; replies not exposed by that endpoint)",
+        "observed_at": "2026-09-21T03:45:00+00:00",
+        "evidence_url": "https://x.com/NatureAging/status/2100964403239694626"
+      },
+      "tags": [
+        "nature-aging",
+        "ccl5-ccr5",
+        "maraviroc",
+        "immune-aging",
+        "myelopoiesis",
+        "cd4-t-cells",
+        "drug-repurposing",
+        "animal-model"
+      ],
+      "rank": 11
+    }
+  ]
+}

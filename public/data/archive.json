@@ -1,9 +1,14 @@
 {
   "editions": [
     {
-      "date": "2026-09-21",
+      "date": "2026-09-22",
       "url": "./data/news.json",
       "current": true
+    },
+    {
+      "date": "2026-09-21",
+      "url": "./data/archive/2026-09-21.json",
+      "current": false
     },
     {
       "date": "2026-09-20",
