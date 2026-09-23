@@ -1,0 +1,932 @@
+{
+  "schema_version": 1,
+  "edition": {
+    "date": "2026-09-22",
+    "title": "The Daily Signal",
+    "kicker": "Primary-source tech intelligence, compiled from the live wire.",
+    "status": "live",
+    "updated_at": "2026-09-22T07:50:00+03:00"
+  },
+  "sections": [
+    "Bitcoin",
+    "AI",
+    "Robotics",
+    "Longevity"
+  ],
+  "lead_story_id": "ai-grok-4-7",
+  "stories": [
+    {
+      "id": "ai-grok-4-7",
+      "section": "AI",
+      "story_type": "model",
+      "title": "xAI releases Grok 4.7 - same $2/$6 price and speed as 4.6, with longer RL on multi-hour tasks; 46.3% CursorBench, 71.0% DeepSWE",
+      "summary": "xAI shipped Grok 4.7 (model id grok-4.7, 500k context, $2/$6 per 1M in/out - unchanged from 4.6) with a larger base, longer RL on multi-hour tasks, stronger self-verification, and native understanding of the Grok Bot harness; it is live in Cursor, Grok Build and the API today. Vendor tables: CursorBench 4.0 46.3% (vs 4.6's 40.4%, Fable 5.1 Max 51.8%), DeepSWE v1.1 71.0% at high effort (vs 65.2%), EEBench 64.0% (vs 53.0%), AA Briefcase 1,657, Terminal-Bench 4.0 38.0%. For builders the headline is price-stable capability: multi-hour agent work at the previous generation's token economics. Caveat: all numbers are xAI's own vendor benches with different effort settings across models (4.7 xHigh vs 4.6 High), and the 2x-faster Fast variant is Cursor/Grok Build only at 2x price, not on the public API.",
+      "source": {
+        "name": "@SpaceXAI post",
+        "url": "https://x.com/SpaceXAI/status/2102069815225586149"
+      },
+      "canonical_url": "https://x.ai/news/grok-4-7",
+      "published_at": "2026-09-21T16:17:53+00:00",
+      "corroboration": [
+        {
+          "name": "xAI - Introducing Grok 4.7 (release page with benchmark table)",
+          "url": "https://x.ai/news/grok-4-7"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @SpaceXAI post fetched live (16:17:53 UTC 21 Sep, in-window; engagement observed live - strongest in-window AI signal); x.ai release page fetched live (title 'Introducing Grok 4.7', benchmark table confirms 46.3% CursorBench / 71.0% DeepSWE* / 64.0% EEBench / 1,657 AA Briefcase / 38.0% Terminal-Bench and $2/$6 pricing vs GPT-5.6 Sol and Fable 5.1 Max). Independent outlets report the same figures. DeepSWE figure is xAI's own 'high effort' run."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 29664,
+        "label": "25648 likes + 2757 reposts + 1259 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/SpaceXAI/status/2102069815225586149"
+      },
+      "tags": [
+        "xai",
+        "grok-4.7",
+        "coding-model",
+        "agents",
+        "benchmark",
+        "api",
+        "price-stable"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "btc-x-cashtag-timeline-trade",
+      "section": "Bitcoin",
+      "story_type": "product",
+      "title": "X pushes timeline crypto trading live - 'timeline. ticker. trade.' routes Cashtags to Coinbase, Kraken, Gemini, IB and Moomoo",
+      "summary": "X posted 'timeline. ticker. trade.' (21 Sep), a product push for the US Cashtag Partner Program that launched 15 Sep: supported Cashtags now surface a Trade option that routes orders to partner venues - Coinbase, Kraken, Gemini, Interactive Brokers and Moomoo - so execution and custody stay off-platform. For builders on consumer crypto UX this is the largest general-audience surface (X's feed) putting a tap-to-trade path in front of the timeline. Caveat: X does not execute or custody; the program itself launched 15 Sep, so the in-window item is the product push/rollout, not the program's debut, and no volume figures were disclosed.",
+      "source": {
+        "name": "@X post",
+        "url": "https://x.com/X/status/2102147636702634195"
+      },
+      "canonical_url": "https://x.com/X/status/2102147636702634195",
+      "published_at": "2026-09-21T21:27:07+00:00",
+      "corroboration": [
+        {
+          "name": "CryptoBriefing - X Cashtag partner program explainer",
+          "url": "https://cryptobriefing.com/x-partners-crypto-trading-cashtag-program/"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official @X post fetched live (21:27:07 UTC 21 Sep, in-window, text 'timeline. ticker. trade.', high engagement observed); partner-venue list and the 15 Sep program launch corroborated by multiple independent articles fetched via web search. The post is a video product push with no press URL, so it is the canonical record."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 11349,
+        "label": "8926 likes + 1346 reposts + 1227 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/X/status/2102147636702634195"
+      },
+      "tags": [
+        "x",
+        "cashtags",
+        "crypto-trading",
+        "coinbase",
+        "kraken",
+        "gemini",
+        "consumer-crypto",
+        "retail"
+      ],
+      "rank": 2
+    },
+    {
+      "id": "ai-openai-math-advisory-group",
+      "section": "AI",
+      "story_type": "research",
+      "title": "OpenAI launches an independent Advisory Group on Mathematics and AI at the IAS - and says an internal model has resolved Navier-Stokes and 100+ open problems",
+      "summary": "OpenAI announced an unpaid, independent Advisory Group on Mathematics and AI hosted at the Institute for Advanced Study, with initial members including Gowers, Hairer, Vakil, Witten, Srivastava and De Lellis; the mandate is to assess and communicate AI-generated math results and academic standards, and the group may issue unsolicited public advice. The same-day blog adds that an internal model, trained since 28 Aug, has since resolved the Navier-Stokes Millennium Prize problem and more than 100 long-standing open problems across most areas of mathematics. For builders on AI-for-math tooling this is both a governance signal (named mathematicians as an external check) and the strongest claim yet of frontier-scale theorem automation. Caveat: the Navier-Stokes and 100-problem claims are OpenAI's own, in the blog (not the X post), and are not yet independently certified; the group advises, it does not control OpenAI's math pace.",
+      "source": {
+        "name": "@OpenAI post",
+        "url": "https://x.com/OpenAI/status/2102093145051943229"
+      },
+      "canonical_url": "https://openai.com/index/advisory-group-on-mathematics-and-ai/",
+      "published_at": "2026-09-21T17:50:35+00:00",
+      "corroboration": [
+        {
+          "name": "TechCrunch - OpenAI forms math advisory group",
+          "url": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official @OpenAI post fetched live (17:50:35 UTC 21 Sep, in-window, engagement observed); openai.com page confirmed live (title 'Advisory Group on Mathematics and Artificial Intelligence'; the page is JS-heavy, so the Navier-Stokes/100-problem wording was confirmed via the page's indexed text and TechCrunch's same-day report). The X post itself announces only the group; the math claims are blog-only."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 9780,
+        "label": "8193 likes + 888 reposts + 699 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/OpenAI/status/2102093145051943229"
+      },
+      "tags": [
+        "openai",
+        "mathematics",
+        "advisory-group",
+        "navier-stokes",
+        "theorem-proving",
+        "ias",
+        "governance"
+      ],
+      "rank": 3
+    },
+    {
+      "id": "btc-apple-google-stablecoin-hiring",
+      "section": "Bitcoin",
+      "story_type": "infrastructure",
+      "title": "Apple Pay strategy role lists stablecoins and tokenised deposits; Google Cloud hiring a HK Web3 architect for RWA and stablecoin rails",
+      "summary": "CoinDesk reports Apple is hiring for an Apple Pay strategy role that lists stablecoins, tokenised deposits and blockchain as preferred skills, while Google Cloud is recruiting a Hong Kong Web3 architect focused on RWA tokenisation, stablecoin rails and custody. For builders on the tokenisation stack this is org-structure evidence that both largest consumer platforms are staffing stablecoin infrastructure - a lead indicator that has historically preceded product launches by a couple of quarters. Caveat: these are job ads, not launches - neither firm has announced a stablecoin, and posting structure can shift or lapse.",
+      "source": {
+        "name": "@CoinDesk post",
+        "url": "https://x.com/CoinDesk/status/2101982118016356809"
+      },
+      "canonical_url": "https://www.coindesk.com/business/2026/09/21/google-and-apple-seek-crypto-talent-as-big-tech-eyes-stablecoin-and-tokenization-rails",
+      "published_at": "2026-09-21T10:29:24+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "@CoinDesk post fetched live (10:29:24 UTC 21 Sep, in-window, engagement observed); CoinDesk article fetched live (title 'Google and Apple seek digital asset talent as Big Tech eyes stablecoin infrastructure', datePublished 2026-09-21T12:17:48Z). Hiring-signal story: job postings are the underlying primary artifacts."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 3775,
+        "label": "3169 likes + 491 reposts + 115 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/CoinDesk/status/2101982118016356809"
+      },
+      "tags": [
+        "apple",
+        "google",
+        "stablecoin",
+        "tokenisation",
+        "hiring",
+        "big-tech",
+        "rwa"
+      ],
+      "rank": 4
+    },
+    {
+      "id": "rob-unitree-dex5-s",
+      "section": "Robotics",
+      "story_type": "hardware",
+      "title": "Unitree launches the Dex5-S - a 22-DoF, 1:1-size dexterous hand from $6,500 with full backdrivability and joint impact-torque protection",
+      "summary": "Unitree released the Dex5-S, a five-finger, 22-DoF dexterous hand at 1:1 human-hand size starting at $6,500 (ex-tax/shipping), with every joint backdrivable for smooth force control and limit impact-torque protection on each joint; Chinese coverage puts the domestic price at ~39,900 yuan, ~620 g, with 2 kg peak / 1 kg continuous payload and a tactile-equipped Pro tier. For builders on manipulation research the price/DoF point matters: a full backdrivable 22-DoF hand under $7k makes contact-rich RL and dexterity experiments viable on lab budgets instead of single-robot budgets. Caveat: it is a peripheral, not a robot - the launch video mixes demo and CGI footage (noted in replies), and the English site had no dedicated spec/lead-time page at check time.",
+      "source": {
+        "name": "@UnitreeRobotics post",
+        "url": "https://x.com/UnitreeRobotics/status/2101996861259395234"
+      },
+      "canonical_url": "https://www.youtube.com/watch?v=LAT2RIKjhTo",
+      "published_at": "2026-09-21T11:27:59+00:00",
+      "corroboration": [
+        {
+          "name": "AlphaSignal - Unitree Dex5-S coverage",
+          "url": "https://alphasignal.ai/news/unitree-s-dex5-s-brings-a-22-dof-robotic-hand-to-developers-for-6-500"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official @UnitreeRobotics post fetched live (11:27:59 UTC 21 Sep, in-window; text confirms 'Dex5-S Dexterous Hand 22 Degrees of Freedom 1:1 Real-Hand Size, price from $6.5K, all 22 joints backdrivable, limit impact torque protection'; engagement observed). The post's launch video (youtube.com/watch?v=LAT2RIKjhTo) is the canonical product record; independent coverage confirms the pricing."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 2157,
+        "label": "1820 likes + 273 reposts + 64 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/UnitreeRobotics/status/2101996861259395234"
+      },
+      "tags": [
+        "unitree",
+        "dex5-s",
+        "dexterous-hand",
+        "22-dof",
+        "backdrivability",
+        "manipulation",
+        "pricing"
+      ],
+      "rank": 5
+    },
+    {
+      "id": "btc-russia-licensed-market-timeline",
+      "section": "Bitcoin",
+      "story_type": "regulation",
+      "title": "Russia's CBR says licensed crypto market may operate before year-end - 27 subordinate acts in process under 282-FZ",
+      "summary": "CBR First Deputy Governor Vladimir Chistyukhin said Russia's 27 subordinate acts under Federal Law 282-FZ - registries, qualifications, digital depositories, whitelists - are in process, and that if the Justice Ministry registers them, first licenses could land before end-2026; the law itself has been in force since 1 Sep and brought BTC, ETH and USDT into a Bank of Russia-licensed trading framework. For builders tracking sovereign crypto regimes this is one of the largest economies moving from law to operable licensing, with a retail cap of ~300,000 rubles/year per intermediary for non-qualified investors. Caveat: it is a forward-looking statement, not a license grant - crypto for domestic payments remains banned, and the licensing transition runs to 1 Jul 2027.",
+      "source": {
+        "name": "@BitcoinMagazine post",
+        "url": "https://x.com/BitcoinMagazine/status/2102034068388847803"
+      },
+      "canonical_url": "https://bitcoinmagazine.com/news/russia-crypto-industry-could-be-operating",
+      "published_at": "2026-09-21T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "Interfax - original CBR statement",
+          "url": "https://interfax.com/newsroom/top-stories/119211/"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "@BitcoinMagazine post fetched live (13:55:50 UTC 21 Sep, in-window); Bitcoin Magazine write-up fetched live (datePublished 2026-09-21T11:48:50-05:00); Interfax original fetched live (confirms 300,000-ruble non-qualified investor cap on BTC/ETH/USDT). Bitcoin Magazine page exposes only a date-level timestamp, so noon in the article's timezone (approximated to 12:00 UTC) is used - limitation stated."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 995,
+        "label": "804 likes + 150 reposts + 41 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/BitcoinMagazine/status/2102034068388847803"
+      },
+      "tags": [
+        "russia",
+        "cbr",
+        "282-fz",
+        "crypto-licensing",
+        "digital-depositories",
+        "regulated-market",
+        "btc"
+      ],
+      "rank": 6
+    },
+    {
+      "id": "lon-foundmyfitness-hwi-rct",
+      "section": "Longevity",
+      "story_type": "research",
+      "title": "12-week RCT: 40C hot-water immersion improves brachial artery function like aerobic exercise - but exercise also wins on femoral arteries",
+      "summary": "foundmyfitness recaps a randomized controlled trial (Costa et al., Experimental Physiology, doi 10.1113/EP094115): 31 inactive older adults (58 +/- 7 years, BMI ~30) were randomized to 12 weeks of 3x40-min moderate aerobic exercise, 3x40-min 40C hot-water immersion, or inactive control; brachial-artery flow-mediated dilation improved with both exercise and hot water, but femoral-artery FMD improved with exercise only, and neither intervention moved resting blood pressure or pulse-wave velocity. For builders on heat-therapy and vascular-aging interventions this is the cleanest head-to-head human RCT of heat vs exercise to date, with the practical finding that heat is a partial substitute for exercise, not a full one. Caveat: it is one small (n=31) randomized trial in community-dwelling overweight older adults - the paper was published 19 Jul 2026 (the in-window item is the expert recap, 21 Sep), fitness was not re-tested post-intervention, and no dose-response was established.",
+      "source": {
+        "name": "@foundmyfitness post",
+        "url": "https://x.com/foundmyfitness/status/2102037336385036732"
+      },
+      "canonical_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13394765/",
+      "published_at": "2026-09-21T14:08:49+00:00",
+      "corroboration": [
+        {
+          "name": "Costa et al. 2026, Exp Physiol (full text on PMC)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13394765/"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official @foundmyfitness post fetched live (14:08:49 UTC 21 Sep, in-window, engagement observed); the full paper fetched live (Exp Physiol. 2026 Jul 19:10.1113/EP094115, online ahead of print; randomised controlled trial, n=31, 12-week 3x40-min arms; brachial FMD interaction P=0.014; no resting BP or PWV effect; ANZCTR CTRN12623000724673). Human clinical evidence, explicitly labeled as one RCT."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 914,
+        "label": "806 likes + 66 reposts + 42 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/foundmyfitness/status/2102037336385036732"
+      },
+      "tags": [
+        "hot-water-immersion",
+        "heat-therapy",
+        "vascular-function",
+        "fmd",
+        "rct",
+        "older-adults",
+        "exercise"
+      ],
+      "rank": 7
+    },
+    {
+      "id": "btc-ecb-pontes-live",
+      "section": "Bitcoin",
+      "story_type": "infrastructure",
+      "title": "ECB launches Pontes - Eurosystem DLT settlement in central bank money - and says it will invest own funds in tokenised securities",
+      "summary": "The Eurosystem brought Pontes live on 21 Sep: a wholesale bridge linking DLT platforms to T2S-style settlement so tokenised-asset trades settle in central bank money, with the first banks and DLT operators onboarded and the full product staged through 2028. In a second press release the same day, the ECB said it will put a small slice of its own funds into tokenised public-sector/supranational securities and settle those buys through Pontes - first time a major central bank is both investor and settlement provider in tokenised markets. For builders on tokenised-asset rails this is the euro-area reference rail and a concrete counterweight to US-only settlement stacks. Caveat: it is euro-area wholesale plumbing, not a Bitcoin L1 event, the investment is preparatory work (Executive Board still sets size/timing), and the ECB explicitly said it is not a Bitcoin or private-stablecoin purchase.",
+      "source": {
+        "name": "@CoinDesk post",
+        "url": "https://x.com/CoinDesk/status/2102000106945855735"
+      },
+      "canonical_url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260921~e754847a7b.en.html",
+      "published_at": "2026-09-21T11:40:53+00:00",
+      "corroboration": [
+        {
+          "name": "ECB own-funds tokenised securities release",
+          "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260921_1~5a011ecbea.en.html"
+        },
+        {
+          "name": "ECB Pontes program page",
+          "url": "https://www.ecb.europa.eu/paym/target/pontes/html/index.en.html"
+        },
+        {
+          "name": "CoinDesk - own-funds follow-up post",
+          "url": "https://x.com/CoinDesk/status/2102078715458953705"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "ECB press release fetched live (title 'Eurosystem brings central bank money to tokenised finance', date-coded 2026-09-21); second ECB release fetched live (title confirms own-funds tokenised-securities investment with Pontes settlement); ECB Pontes program page fetched live ('initial launch of Pontes took place 21 September 2026'). The @CoinDesk post (11:40:53 UTC, in-window) did not link the ECB page, so it is the amplifying source; official ECB URLs are canonical."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 742,
+        "label": "567 likes + 116 reposts + 59 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/CoinDesk/status/2102000106945855735"
+      },
+      "tags": [
+        "ecb",
+        "pontes",
+        "eurosystem",
+        "dlt",
+        "tokenised-securities",
+        "wholesale-settlement",
+        "cbdc",
+        "central-bank-money"
+      ],
+      "rank": 8
+    },
+    {
+      "id": "ai-nvidia-einride-hyperion",
+      "section": "AI",
+      "story_type": "infrastructure",
+      "title": "NVIDIA and Einride: next-gen autonomous trucking on NVIDIA Hyperion - Hyperion + Halos safety, Cosmos synthetic data, Blackwell compute",
+      "summary": "NVIDIA announced a strategic collaboration with Einride to run its next-generation Einride Driver on NVIDIA Hyperion for highway and suburban autonomous trucking, combining Hyperion's platform with Halos lifecycle safety, Cosmos for edge-case and synthetic data generation, and Blackwell-class compute delivered via an Exemplar Cloud partner. Einride keeps the driving stack, validation and regulatory path; NVIDIA supplies the compute and tooling. For builders on physical-AI stacks this is the first named heavy-duty freight customer for Hyperion, with Einride projecting 1,500-2,000 vehicles by 2028 as demand context. Caveat: it is a collaboration to adapt Hyperion to heavy-duty freight, not a claim that highway autonomy is already scaled - validation and the regulatory path remain Einride's.",
+      "source": {
+        "name": "@nvidia post",
+        "url": "https://x.com/nvidia/status/2102007208909164941"
+      },
+      "canonical_url": "https://www.globenewswire.com/news-release/2026/09/21/3365322/0/en/einride-enters-strategic-collaboration-with-nvidia-to-advance-its-autonomous-trucking-on-nvidia-hyperion.html",
+      "published_at": "2026-09-21T12:09:06+00:00",
+      "corroboration": [
+        {
+          "name": "NVIDIA - Halos physical-AI safety blog",
+          "url": "https://blogs.nvidia.com/blog/physical-ai-halos-safety/"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Official @nvidia post fetched live (12:09:06 UTC 21 Sep, in-window, engagement observed) quoting Einride; GlobeNewswire press release URL is the one linked from the official post and is date-coded 2026-09-21 (fetch timed out on two attempts - transient; URL verified by date segment and the post link). 1,500-2,000-vehicle figure is Einride's demand projection from the post, not a contract."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 728,
+        "label": "603 likes + 67 reposts + 58 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/nvidia/status/2102007208909164941"
+      },
+      "tags": [
+        "nvidia",
+        "einride",
+        "hyperion",
+        "autonomous-trucking",
+        "halos",
+        "cosmos",
+        "physical-ai"
+      ],
+      "rank": 9
+    },
+    {
+      "id": "rob-boston-dynamics-rmac",
+      "section": "Robotics",
+      "story_type": "infrastructure",
+      "title": "Boston Dynamics opens RMAC at Hyundai Metaplant America - Atlas training on parts logistics, with 25,000-unit and 30,000-robots/year targets restated",
+      "summary": "Boston Dynamics opened the Robotics Metaplant Application Center inside Hyundai's Metaplant America (Savannah, GA), where Atlas robots are being trained in the real plant on parts logistics and sequencing ahead of assembly tasks by 2030; Hyundai Group restated its plan for 25,000 Atlas units at Hyundai/Kia plants and a U.S. factory rated for 30,000 robots per year, and RMAC is slated to move into a ~10x larger building in 2027. For builders tracking the humanoid-to-factory pipeline this is the named, live training ground - the gap between demo and plant-floor data is being closed inside an operating OEM, with 2028 sequencing / 2030 assembly still the published horizon. Caveat: it is a training center, not a production fleet - the 25k/30k figures are ambitions, not current output.",
+      "source": {
+        "name": "@BostonDynamics post",
+        "url": "https://x.com/BostonDynamics/status/2102036458714337622"
+      },
+      "canonical_url": "https://bostondynamics.com/news/boston-dynamics-opens-robotics-metaplant-application-center-to-train-humanoid-robots-for-manufacturing-tasks/",
+      "published_at": "2026-09-21T14:05:20+00:00",
+      "corroboration": [
+        {
+          "name": "The Robot Report - Boston Dynamics opens Metaplant Application Center",
+          "url": "https://www.therobotreport.com/boston-dynamics-opens-metaplant-application-center-train-atlas-humanoid-robots/"
+        },
+        {
+          "name": "Axios Boston - Hyundai opens robot training center",
+          "url": "https://www.axios.com/local/boston/2026/09/21/boston-dynamics-humanoid-robots-hyundai-metaplant"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official @BostonDynamics post fetched live (14:05:20 UTC 21 Sep, in-window, engagement observed); Boston Dynamics newsroom page fetched live (title confirmed, datePublished 2026-09-21T13:31:44Z, RMAC scope and 2030 assembly timeline in the text); The Robot Report and Axios coverage confirm the opening."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 661,
+        "label": "561 likes + 71 reposts + 29 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/BostonDynamics/status/2102036458714337622"
+      },
+      "tags": [
+        "boston-dynamics",
+        "atlas",
+        "hyundai",
+        "rmac",
+        "metaplant",
+        "humanoid-training",
+        "manufacturing"
+      ],
+      "rank": 10
+    },
+    {
+      "id": "ai-nvidia-clean-energy-climate-week",
+      "section": "AI",
+      "story_type": "infrastructure",
+      "title": "NVIDIA at Climate Week: ThinkLabs cuts grid-interconnection review from 30-45 days to 2 minutes with AI agents; CFS, TerraPower, Redwood Materials in the stack",
+      "summary": "NVIDIA's Climate Week post details five customer deployments: ThinkLabs' grid-interconnection agents and digital twins (claiming an SCE interconnection review that took 30-45 days now completes in about 2 minutes), Atomic Canyon's nuclear knowledge systems, Redwood Materials pairing repurposed EV batteries with Blackwell for AI-factory power, TerraPower's Omniverse digital twins for Natrium plants, and Commonwealth Fusion Systems using Omniverse/OpenUSD to compress SPARC experimentation. For builders on AI-factory energy and interconnection - the current hard bottleneck - the ThinkLabs number is the concrete systems result. Caveat: it is marketing of existing customer work, not a new chip or SKU; the interconnection speedup is one utility anecdote and fusion-to-grid remains CFS's 2030s claim.",
+      "source": {
+        "name": "@nvidia post",
+        "url": "https://x.com/nvidia/status/2102159628020666805"
+      },
+      "canonical_url": "https://blogs.nvidia.com/blog/clean-energy-nvidia-ai/",
+      "published_at": "2026-09-21T10:00:35+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "NVIDIA blog fetched live (title '5 Companies Using NVIDIA AI for Clean Energy', datePublished 2026-09-21T10:00:35Z); official @nvidia post fetched live (22:14:46 UTC 21 Sep, in-window, engagement observed). All figures are customer-claimed in NVIDIA's post, not independent measurements."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 286,
+        "label": "231 likes + 30 reposts + 25 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/nvidia/status/2102159628020666805"
+      },
+      "tags": [
+        "nvidia",
+        "clean-energy",
+        "grid-interconnection",
+        "thinklabs",
+        "cfs",
+        "terrapower",
+        "ai-factory"
+      ],
+      "rank": 11
+    },
+    {
+      "id": "ai-qwen-image-2-1-output-license",
+      "section": "AI",
+      "story_type": "code",
+      "title": "Alibaba clarifies Qwen-Image-2.1 licensing: generated outputs are not licensed Materials - users keep the rights to images they generate",
+      "summary": "In response to the day's licensing questions, Alibaba's Qwen team confirmed that outputs generated with Qwen-Image-2.1 are not part of the licensed Materials: users retain the rights to images and other content they generate, while the weights remain under the Qwen Research License. This matters because yesterday's launch shipped under a non-commercial research license, and the outputs-vs-weights distinction is exactly the clause commercial pipelines care about - you can build product on the generated images even while the checkpoint's redistribution terms are research-grade. Caveat: it is a clarification of the research license, not a license change - the weights themselves still need a separate Tongyi Lab license for commercial use, and the post is a reply, not a legal document.",
+      "source": {
+        "name": "@Alibaba_Qwen post",
+        "url": "https://x.com/Alibaba_Qwen/status/2101897967703925145"
+      },
+      "canonical_url": "https://x.com/Alibaba_Qwen/status/2101897967703925145",
+      "published_at": "2026-09-21T04:55:01+00:00",
+      "corroboration": [
+        {
+          "name": "HF model page (Qwen Research License Agreement)",
+          "url": "https://huggingface.co/Qwen/Qwen-Image-2.1"
+        },
+        {
+          "name": "@Alibaba_Qwen - SGLang-Diffusion day-0 serving post",
+          "url": "https://x.com/Alibaba_Qwen/status/2101866688425984233"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @Alibaba_Qwen reply fetched live (04:55:01 UTC 21 Sep, in-window; text confirms 'Outputs are not part of the licensed Materials. Users retain the rights to images and other content they generate'). The model launch itself was covered in the 21 Sep edition; this in-window clarification is the new event and its URL is absent from all prior editions."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 237,
+        "label": "221 likes + 9 reposts + 7 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/Alibaba_Qwen/status/2101897967703925145"
+      },
+      "tags": [
+        "alibaba",
+        "qwen-image-2.1",
+        "license",
+        "outputs",
+        "research-license",
+        "commercial-use"
+      ],
+      "rank": 12
+    },
+    {
+      "id": "lon-nature-hepb2-epigenetic",
+      "section": "Longevity",
+      "story_type": "research",
+      "title": "Nature: a wave of epigenetic therapies is pushing toward a functional cure of chronic hepatitis B (~250M people)",
+      "summary": "Nature's in-window feature covers the converging field of epigenetic therapies - including gene-tagging / epigenetic editing approaches - aimed at silencing cccDNA and achieving a functional cure of chronic hepatitis B, which affects roughly 250 million people. For builders on gene-therapy and longevity-of-organ health this is the pipeline class worth tracking: silencing a persistent viral reservoir is the same engineering problem as epigenetic control of aging-associated gene expression, and the HBV program is where the tools are getting clinical validation first. Caveat: it is a feature on an infectious-disease pipeline, not an aging-clock result - no aging endpoint is claimed, and most candidates are still in early-phase trials.",
+      "source": {
+        "name": "@Nature post",
+        "url": "https://x.com/Nature/status/2102031369287148016"
+      },
+      "canonical_url": "https://www.nature.com/articles/d41586-026-02981-9",
+      "published_at": "2026-09-21T13:45:06+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @Nature post fetched live (13:45:06 UTC 21 Sep, in-window, engagement observed; text confirms the 250M-person scope); Nature feature fetched live (title \"'Epigenetic' editing is here: gene-tagging technique banishes hepatitis B virus\", datePublished 2026-09-21)."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 183,
+        "label": "145 likes + 35 reposts + 3 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/Nature/status/2102031369287148016"
+      },
+      "tags": [
+        "nature",
+        "hepatitis-b",
+        "epigenetic-therapy",
+        "functional-cure",
+        "cccdna",
+        "gene-therapy"
+      ],
+      "rank": 13
+    },
+    {
+      "id": "btc-strategy-strive-8k",
+      "section": "Bitcoin",
+      "story_type": "treasury",
+      "title": "Strategy and Strive file 8-Ks - 2,305 BTC bought for ~$182.7M (Sep 14-20), Strategy now at 846,000 BTC",
+      "summary": "Strategy's 8-K (filed 21 Sep, period 14-20 Sep) shows 950 BTC purchased for $75.7M at an average of $79,670, bringing its holdings to 846,000 BTC ($63.8B aggregate, $75,416 average), alongside a $174M STRC preferred buyback program update; Strive's 8-K shows 1,355 BTC for ~$107.7M at $79,475 average, lifting its holdings to 26,355 BTC. For builders reading corporate-treasury flow this is the second consecutive weekly 8-K cycle with multi-hundred-BTC purchases at ~$79.5k, and it confirms the buying cadence has not paused during the consolidation. Caveat: treasury buys, not protocol or infrastructure - the purchases happened 14-20 Sep and the 8-Ks are the public disclosure; @SECGov itself posted nothing in-window.",
+      "source": {
+        "name": "@CoinDesk post",
+        "url": "https://x.com/CoinDesk/status/2102015318444982472"
+      },
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526396093/mstr-20260914.htm",
+      "published_at": "2026-09-21T08:00:13+00:00",
+      "corroboration": [
+        {
+          "name": "Strive 8-K (asst-20260921)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1920406/000162828026062806/asst-20260921.htm"
+        },
+        {
+          "name": "@BitcoinMagazine post on the 8-Ks",
+          "url": "https://x.com/BitcoinMagazine/status/2102006501959221632"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Both SEC 8-K documents fetched live from EDGAR: Strategy's document confirms 950 BTC / $75.7M / $79,670 average / 846,000 BTC holdings (announcement dated 21 Sep, filing date 2026-09-21 08:00:13); Strive's document confirms 1,355 BTC at ~$79,475 average, holdings 25,000 to 26,355. @CoinDesk and @BitcoinMagazine posts fetched live (12:41:20 and 12:06:18 UTC 21 Sep, in-window)."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 162,
+        "label": "114 likes + 20 reposts + 28 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/CoinDesk/status/2102015318444982472"
+      },
+      "tags": [
+        "strategy",
+        "mstr",
+        "strive",
+        "btc-treasury",
+        "8-k",
+        "sec",
+        "corporate-btc"
+      ],
+      "rank": 14
+    },
+    {
+      "id": "btc-starkware-strk20-winners",
+      "section": "Bitcoin",
+      "story_type": "code",
+      "title": "StarkWare names STRK20 privacy sprint winners - Erebus, StakeWars and Xenia shipped on the Starknet privacy pool SDK",
+      "summary": "StarkWare posted the official winners of its STRK20 privacy hackathon: Erebus (confidential AI-agent negotiation with shielded settlement on the STRK20 pool), StakeWars (sealed-bid onchain auctions, github.com/broody/stake-wars) and Xenia (private payment links, github.com/jadonamite/XENIA), saying 200+ projects shipped on a single privacy SDK. For builders on BTC-adjacent L2s this is the clearest signal yet that the STRK20 pool - native private transfers for ERC-20-shaped tokens on Starknet - is usable enough to run a competition of production-grade private apps. Caveat: these are hackathon outputs, not a Starknet protocol upgrade or a Bitcoin mainnet change, and Erebus's repo link was not in the official thread.",
+      "source": {
+        "name": "@StarkWareLtd post",
+        "url": "https://x.com/StarkWareLtd/status/2102047013122785723"
+      },
+      "canonical_url": "https://github.com/broody/stake-wars",
+      "published_at": "2026-09-21T14:47:16+00:00",
+      "corroboration": [
+        {
+          "name": "GitHub - jadonamite/XENIA (private payment links)",
+          "url": "https://github.com/jadonamite/XENIA"
+        },
+        {
+          "name": "Starknet - Privacy Is Now Live on Starknet (STRK20)",
+          "url": "https://www.starknet.io/blog/privacy-live-on-starknet/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @StarkWareLtd post fetched live (14:47:16 UTC 21 Sep, in-window, engagement observed); both GitHub repos exist (fetched live via web search: broody/stake-wars, jadonamite/XENIA); Starknet's STRK20 launch post confirms the underlying privacy pool. Canonical URL is the first named winner's repo since the post is the announcement of record."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 97,
+        "label": "69 likes + 14 reposts + 14 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/StarkWareLtd/status/2102047013122785723"
+      },
+      "tags": [
+        "starkware",
+        "starknet",
+        "strk20",
+        "privacy",
+        "hackathon",
+        "sealed-bid-auction",
+        "confidential-compute"
+      ],
+      "rank": 15
+    },
+    {
+      "id": "lon-nature-edible-battery",
+      "section": "Longevity",
+      "story_type": "research",
+      "title": "Nature: biodegradable paper battery powers swallowable medical devices in pigs for up to 3 days before breaking down",
+      "summary": "Nature reports on a rice-paper-like, biodegradable battery (magnesium / molybdenum-trioxide / activated-carbon, ~1.77-1.84 V) that powered an ingestible device with an RFID tag inside pigs for up to three days before gradually degrading in the gastrointestinal tract. For builders on in-body sensing and long-duration ingestible therapeutics this removes the two classic blockers - a non-degradable power source and the retrieval problem - for the 3-day class of GI monitoring devices. Caveat: it is animal-model evidence (pigs), not human trials, and the Nature piece is news coverage of the underlying study (Nature Chemical Engineering) - longevity relevance is the platform for long-duration in-body drug delivery and monitoring, not an aging result itself.",
+      "source": {
+        "name": "@Nature post",
+        "url": "https://x.com/Nature/status/2102063509395611741"
+      },
+      "canonical_url": "https://www.nature.com/articles/d41586-026-02987-3",
+      "published_at": "2026-09-21T15:52:49+00:00",
+      "corroboration": [
+        {
+          "name": "Live Science - paper battery for internal medical devices",
+          "url": "https://www.livescience.com/health/scientists-made-a-paper-battery-you-can-swallow-to-power-internal-medical-devices"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official @Nature post fetched live (15:52:49 UTC 21 Sep, in-window, engagement observed); Nature news article fetched live (title 'Edible batteries power medical devices in the body', datePublished 2026-09-21, image caption confirms pig test and RFID tag); independent Live Science coverage fetched live confirming the 3-day pig data. Voltage and chemistry figures from the Nature piece."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 94,
+        "label": "73 likes + 21 reposts + 0 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/Nature/status/2102063509395611741"
+      },
+      "tags": [
+        "nature",
+        "edible-battery",
+        "ingestible-device",
+        "biodegradable",
+        "gi-tract",
+        "animal-model",
+        "in-body-sensing"
+      ],
+      "rank": 16
+    },
+    {
+      "id": "rob-agility-digit5-halos",
+      "section": "Robotics",
+      "story_type": "product",
+      "title": "Agility's Digit 5 adds swappable grippers - and Agility backs NVIDIA's Halos as the physical-AI safety layer",
+      "summary": "Agility Robotics posted two in-window items: the Digit 5, its next Digit generation, with swappable grippers as the headline hardware change (agilityrobotics.com/solutions/digit-5), and an endorsement of NVIDIA's Halos stack as lifecycle safety for physical AI - safety treated as a continuous runtime property, not a pre-deployment checklist. For builders deploying biped/warehouse robots the gripper-swapping point is operationally concrete (one chassis, multiple payload tooling), and Halos is the named safety architecture that the biggest Western humanoid deployments are converging on. Caveat: the Digit 5 page is product marketing without a dated 21 Sep launch, and the Halos post is partnership messaging, not a certification.",
+      "source": {
+        "name": "@agilityrobotics post",
+        "url": "https://x.com/agilityrobotics/status/2102098743512486331"
+      },
+      "canonical_url": "https://www.agilityrobotics.com/solutions/digit-5",
+      "published_at": "2026-09-21T18:12:50+00:00",
+      "corroboration": [
+        {
+          "name": "@agilityrobotics - NVIDIA Halos safety endorsement",
+          "url": "https://x.com/agilityrobotics/status/2102135318426292689"
+        },
+        {
+          "name": "NVIDIA - Why Physical AI Needs Safety at Every Layer (Halos)",
+          "url": "https://blogs.nvidia.com/blog/physical-ai-halos-safety/"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Both official @agilityrobotics posts fetched live (Digit 5 at 18:12:50 UTC, Halos endorsement at 20:38:10 UTC, 21 Sep - in-window, engagement observed); Digit 5 solutions page fetched live (title 'Digit 5 | Agility'); NVIDIA Halos blog fetched live (title confirmed). Treated as one event: Digit 5 generation + safety-stack alignment."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 93,
+        "label": "82 likes + 6 reposts + 5 replies observed live on the Digit 5 source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/agilityrobotics/status/2102098743512486331"
+      },
+      "tags": [
+        "agility",
+        "digit-5",
+        "swappable-grippers",
+        "nvidia-halos",
+        "physical-ai-safety",
+        "warehouse-robotics"
+      ],
+      "rank": 17
+    },
+    {
+      "id": "ai-runway-workflows-expansion",
+      "section": "AI",
+      "story_type": "product",
+      "title": "Runway expands Workflows with compositing, alpha, HDR and RGB depth maps - VFX pipelines staying in-app",
+      "summary": "Runway announced an expanded Workflows surface adding compositing, alpha, HDR and RGB depth outputs, so more of the VFX/compositing pipeline can stay inside the app instead of round-tripping to external tools. For builders on video-gen pipelines the depth/alpha/HDR outputs are the interesting part - they are what make Runway output composable with existing compositing stacks rather than a final render. Caveat: no model card, API changelog or technical blog was linked from the post - feature availability, pricing and which models feed the depth maps are unspecified.",
+      "source": {
+        "name": "@runwayml post",
+        "url": "https://x.com/runwayml/status/2102126749622345858"
+      },
+      "canonical_url": "https://app.runwayml.com/workflows/create?featured-workflow-id=1226",
+      "published_at": "2026-09-21T20:04:07+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @runwayml post fetched live (20:04:07 UTC 21 Sep, in-window, engagement observed); the post links the in-app workflow URL as the canonical record. No model or API changelog posted; details are as stated in the post."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 83,
+        "label": "68 likes + 9 reposts + 6 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/runwayml/status/2102126749622345858"
+      },
+      "tags": [
+        "runway",
+        "video-generation",
+        "workflows",
+        "compositing",
+        "depth-maps",
+        "hdr"
+      ],
+      "rank": 18
+    },
+    {
+      "id": "lon-nih-human-based-infra",
+      "section": "Longevity",
+      "story_type": "infrastructure",
+      "title": "NIH announces major investment in human-based (non-animal) research infrastructure and technologies",
+      "summary": "The NIH issued a news release on 21 Sep announcing major investment in human-based - non-animal - research infrastructure and technologies, the platform shift that translational aging/disease work depends on: organoids, tissue-based and cell-based systems that can be run at scale without animal models. For builders on geroscience platforms this is funding-commitment signal at the top US agency, which historically leads to program announcements and RFA cycles for human-tissue infrastructure. Caveat: the live NIH page sat behind a site-migration notice when fetched, so the dollar amount and award list could not be extracted and are left unverified here; it is infrastructure funding, not a geroprotector trial.",
+      "source": {
+        "name": "@NIH post",
+        "url": "https://x.com/NIH/status/2102064698644377957"
+      },
+      "canonical_url": "https://www.nih.gov/news-events/news-releases/nih-makes-major-investments-advance-human-based-research-infrastructure-technologies",
+      "published_at": "2026-09-21T15:57:33+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @NIH post fetched live (15:57:33 UTC 21 Sep, in-window, engagement observed; text: 'NIH makes major investment to advance human-based research infrastructure and technologies'). The linked NIH release URL was verified to exist (canonical title in the post matches the URL slug) but the page returned a migration notice on fetch, so dollar figures are deliberately not stated."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 79,
+        "label": "56 likes + 17 reposts + 5 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/NIH/status/2102064698644377957"
+      },
+      "tags": [
+        "nih",
+        "human-based-research",
+        "non-animal",
+        "organoids",
+        "infrastructure",
+        "translational-aging"
+      ],
+      "rank": 19
+    },
+    {
+      "id": "rob-athenazero-science-robotics",
+      "section": "Robotics",
+      "story_type": "research",
+      "title": "Science Robotics: AthenaZero - a low-inertia bimanual robot that throws at 30.8 m/s, catches at 18.3 m/s and bats with >82% success",
+      "summary": "A peer-reviewed Science Robotics paper (Morgan et al.) presents AthenaZero, a low-inertia, torque-transparent bimanual platform designed so the robot can balance inertia against control authority at millisecond timescales, demonstrated with throwing a baseball at 30.8 m/s, catching at 18.3 m/s, and batting with >82% success rate. For builders on dynamic manipulation this is the design argument that matters: end-effector mass and inertia - not torque alone - set the speed limit for contact-rich tasks, and the platform's remote-actuator/Bowden-cable grippers (80 ms open/close) show a concrete path. Caveat: it is a laboratory platform, not a commercial humanoid, and the baseball tasks, while athletic, are fixed experimental scenarios.",
+      "source": {
+        "name": "@ScienceMagazine post",
+        "url": "https://x.com/ScienceMagazine/status/2102050385405841875"
+      },
+      "canonical_url": "https://www.science.org/doi/10.1126/scirobotics.aee1868",
+      "published_at": "2026-09-21T15:00:40+00:00",
+      "corroboration": [
+        {
+          "name": "arXiv 2609.19194 - AthenaZero preprint (full system details)",
+          "url": "https://arxiv.org/abs/2609.19194"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official @ScienceMagazine post fetched live (15:00:40 UTC 21 Sep, in-window, engagement observed); the Science Robotics DOI resolves (fetched live - journal page confirms the AthenaZero manuscript); arXiv 2609.19194 fetched live with the full system description (low-inertia bimanual manipulator, 30.8 m/s throw, 18.3 m/s catch, >82% bat success). The performance figures come from the arXiv abstract/paper, not the X post."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 57,
+        "label": "43 likes + 10 reposts + 4 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/ScienceMagazine/status/2102050385405841875"
+      },
+      "tags": [
+        "science-robotics",
+        "athenazero",
+        "dynamic-manipulation",
+        "bimanual",
+        "low-inertia",
+        "baseball",
+        "peer-reviewed"
+      ],
+      "rank": 20
+    },
+    {
+      "id": "lon-science-alzheimer-genes-investigation",
+      "section": "Longevity",
+      "story_type": "research",
+      "title": "Science investigation casts doubt on Alzheimer's-protective gene variants - data handling and image issues flagged in the Christchurch/Reelin/COLBOS line of work",
+      "summary": "On World Alzheimer's Day, Science published an investigation questioning the claimed Alzheimer's-protective mutations that have circulated since the Christchurch, New Zealand cohort reports - including the Reelin/COLBOS variant line - citing data-handling anomalies and highly problematic images; former PNAS editor-in-chief Randy Schekman called the anomalies 'pretty obvious', and senior Alzheimer's researchers (including Holtzman and Tanzi) agree the flagged images look problematic. For builders on geroprotective-genetics pipelines this is the counterweight to the protective-variant hype cycle: the candidate list needs re-scrutiny before it drives screening or drug-target decisions. Caveat: it is investigative journalism on specific datasets, not a retracted paper - the variants are doubted, not disproven, and the underlying article dates to 13 Aug 2026 (the in-window item is Science's World Alzheimer's Day push, 21 Sep).",
+      "source": {
+        "name": "@ScienceMagazine post",
+        "url": "https://x.com/ScienceMagazine/status/2102120603088027700"
+      },
+      "canonical_url": "https://www.science.org/content/article/science-investigation-casts-doubt-genes-hailed-warding-alzheimer-s-disease",
+      "published_at": "2026-09-21T19:39:41+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Official @ScienceMagazine post fetched live (19:39:41 UTC 21 Sep, in-window, engagement observed; text confirms the investigation and links the Science article); the Science article URL verified live via web search (title 'Science investigation casts doubt on genes hailed for warding off Alzheimer's disease', with Schekman/Holtzman/Tanzi quotes). The article itself is dated 13 Aug 2026 - the in-window event is the journal's World Alzheimer's Day republication, which the post states."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 22,
+        "label": "13 likes + 6 reposts + 3 replies observed live on the source post",
+        "observed_at": "2026-09-22T04:10:00+00:00",
+        "evidence_url": "https://x.com/ScienceMagazine/status/2102120603088027700"
+      },
+      "tags": [
+        "science",
+        "alzheimers",
+        "protective-genes",
+        "chch",
+        "reelin",
+        "colbos",
+        "reproducibility",
+        "replication"
+      ],
+      "rank": 21
+    },
+    {
+      "id": "rob-physical-int-peza",
+      "section": "Robotics",
+      "story_type": "infrastructure",
+      "title": "Physical Intelligence registers in the Philippines with plans for a robot-motion 'data factory' - offshore data-engine infrastructure",
+      "summary": "The Philippine export-zone agency PEZA said it registered Physical Intelligence, Inc. with plans to build a robot-motion 'data factory' (BusinessWorld Online, 21 Sep). For builders on VLA data economics this is infrastructure-level evidence that frontier robot-learning companies are standing up dedicated, off-shore data-collection facilities - the data engine is becoming its own factory, not an afterthought attached to on-robot logging. Caveat: the registration was not posted by @Physical_Int itself in-window, so the company has not yet confirmed or detailed the facility - treat as regulator-sourced and unconfirmed by the company.",
+      "source": {
+        "name": "BusinessWorld Online - Physical Intelligence registers with PEZA",
+        "url": "https://bworldonline.com/editors-picks/2026/09/21/780081/physical-intelligence-registers-with-peza-plans-to-build-data-factory/"
+      },
+      "canonical_url": "https://bworldonline.com/editors-picks/2026/09/21/780081/physical-intelligence-registers-with-peza-plans-to-build-data-factory/",
+      "published_at": "2026-09-21T15:11:06+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "BusinessWorld article fetched live (datePublished 2026-09-21T15:11:06Z, in-window; title confirms PEZA registration and 'data factory' plans). @Physical_Int had no in-window post, so this is regulator/press-sourced without company confirmation - hence 'developing' signal."
+      },
+      "tags": [
+        "physical-intelligence",
+        "peza",
+        "philippines",
+        "data-factory",
+        "vla",
+        "robot-learning",
+        "infrastructure"
+      ],
+      "rank": 22
+    },
+    {
+      "id": "ai-openai-academy-paths",
+      "section": "AI",
+      "story_type": "product",
+      "title": "OpenAI expands OpenAI Academy with role-based learning paths for developers, leaders, educators and students",
+      "summary": "OpenAI published a new set of role-based learning paths on OpenAI Academy, structured for employees, developers, leaders, educators and students to build practical AI skills (21 Sep). For teams standardizing on OpenAI tooling this is the curriculum surface that was missing - the academy moves from generic content to role-scoped tracks, which is how organizations actually roll out agent workflows. Caveat: it is a learning-content launch, not a model or API release, and no corresponding @OpenAI/@OpenAIDevs X post was located in-window, so the blog post is the primary record.",
+      "source": {
+        "name": "OpenAI blog",
+        "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths/"
+      },
+      "canonical_url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths/",
+      "published_at": "2026-09-21T12:00:00+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "OpenAI blog page fetched live (title 'Expanding OpenAI Academy with new learning paths', page dateline 'September 21, 2026', role-based paths for employees/developers/leaders/educators/students). The page exposes only a date-level timestamp, so noon UTC is used - limitation stated. No matching @OpenAI/@OpenAIDevs post found in-window, so the web-only record stands alone."
+      },
+      "tags": [
+        "openai",
+        "academy",
+        "learning-paths",
+        "education",
+        "enterprise"
+      ],
+      "rank": 23
+    }
+  ]
+}
