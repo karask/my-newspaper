@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "edition": {
-    "date": "2026-09-24",
+    "date": "2026-09-25",
     "title": "The Daily Signal",
     "kicker": "Primary-source tech intelligence, compiled from the live wire.",
     "status": "live",
-    "updated_at": "2026-09-24T07:28:18+03:00"
+    "updated_at": "2026-09-25T09:35:00+03:00"
   },
   "sections": [
     "Bitcoin",
@@ -13,921 +13,717 @@
     "Robotics",
     "Longevity"
   ],
-  "lead_story_id": "ai-claude-art-enzyme-system",
+  "lead_story_id": "ai-meta-muse-realtime-avatar",
   "stories": [
     {
-      "id": "ai-claude-art-enzyme-system",
-      "section": "AI",
-      "story_type": "Research release",
-      "title": "Anthropic's Claude agents discover a novel phage reverse-transcriptase system (ART) in its new molecular-biology lab",
-      "summary": "First public result from Anthropic's molecular-biology wet lab: roughly 950 Claude agents over 21 hours and 210M tokens surfaced an uncharacterized phage reverse-transcriptase system with CRISPR-like repeat arrays, which the team names ART (array-associated reverse transcriptases). The claim is hypothesis-generation, not discovery of the underlying RT enzyme (already in the literature), and function, programmability, and biotech utility are still unknown. For builders this is a concrete datapoint on agentic science: Claude noticed a system humans had not annotated. Caveat: lab confirmation is done by humans; Dario Amodei notes a related Stanford system.",
-      "source": {
-        "name": "Anthropic - Claude discovers a novel enzyme system",
-        "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
-      },
-      "canonical_url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-      "published_at": "2026-09-23T18:18:33+00:00",
-      "corroboration": [
-        {
-          "name": "Anthropic X post",
-          "url": "https://x.com/AnthropicAI/status/2102824959827742916"
-        },
-        {
-          "name": "Preprint PDF",
-          "url": "https://www-cdn.anthropic.com/22573675ada52a8ca8a97a1a4b4326b2f208a071.pdf"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official Anthropic announcement with preprint; page carries no machine-exposed timestamp, so the official X post time (18:18:33 UTC) is used as the publication timestamp."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 37979,
-        "label": "32862 likes + 4007 reposts + 1110 replies observed live on the source post",
-        "observed_at": "2026-09-24T03:48:00+00:00",
-        "evidence_url": "https://x.com/AnthropicAI/status/2102824959827742916"
-      },
-      "tags": [
-        "anthropic",
-        "agentic-science",
-        "molecular-biology",
-        "claude"
-      ],
-      "rank": 1
-    },
-    {
-      "id": "ai-openai-chatgpt-voice-plugins",
-      "section": "AI",
-      "story_type": "Product launch",
-      "title": "ChatGPT Voice gains account plugins and runs inside ChatGPT Work on web and mobile",
-      "summary": "OpenAI shipped a major Voice update: live Voice sessions can call account plugins (email, calendar, Slack) and now run on GPT-6 Astra/Sol/Luna backends. Voice also operates inside ChatGPT Work on web and mobile across docs, decks, sites, spreadsheets, and browser tasks. This is a product-infrastructure release, not a new model. Caveat: no dedicated openai.com launch post was found; the Help Center release notes say Voice-in-Work requires both Voice and Work access, and destructive plugin actions still need on-screen approval.",
-      "source": {
-        "name": "OpenAI Help Center - ChatGPT Voice",
-        "url": "https://help.openai.com/en/articles/20001274-chatgpt-voice"
-      },
-      "canonical_url": "https://help.openai.com/en/articles/20001274-chatgpt-voice",
-      "published_at": "2026-09-23T17:12:27+00:00",
-      "corroboration": [
-        {
-          "name": "OpenAI X post",
-          "url": "https://x.com/OpenAI/status/2102808325742322002"
-        },
-        {
-          "name": "OpenAI release notes",
-          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official OpenAI X post (17:12:27 UTC) is the announcement; Help Center is the canonical product page. Page timestamp is not machine-exposed, so the post time is used."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 11420,
-        "label": "10107 likes + 731 reposts + 582 replies observed live on the source post",
-        "observed_at": "2026-09-24T03:48:00+00:00",
-        "evidence_url": "https://x.com/OpenAI/status/2102808325742322002"
-      },
-      "tags": [
-        "openai",
-        "chatgpt",
-        "voice",
-        "plugins",
-        "gpt-6"
-      ],
-      "rank": 2
-    },
-    {
-      "id": "ai-claude-marketplace",
-      "section": "AI",
-      "story_type": "Platform launch",
-      "title": "Claude Marketplace: 2,000+ MCP connectors, purchasable Claude-powered agents, and SI partners",
-      "summary": "Anthropic launched the Claude Marketplace, a single catalog of 2,000+ MCP connectors/plugins (Slack, Notion, etc.), purchasable Claude-powered agents from vendors like Cursor, CrowdStrike, Harvey and Snowflake, and SI partners including Accenture, Deloitte and BCG. Committed Anthropic spend can be applied to listed products. This is a distribution channel, not a model release. Caveat: marketplace listing is not a capability guarantee; connector quality and data-sharing terms vary by vendor.",
-      "source": {
-        "name": "Claude blog - Claude Marketplace",
-        "url": "https://claude.com/blog/claude-marketplace"
-      },
-      "canonical_url": "https://claude.com/blog/claude-marketplace",
-      "published_at": "2026-09-23T19:21:42+00:00",
-      "corroboration": [
-        {
-          "name": "Claude X post",
-          "url": "https://x.com/claudeai/status/2102840851538080172"
-        },
-        {
-          "name": "Claude Marketplace platform page",
-          "url": "https://claude.com/platform/marketplace"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official Claude blog (date 'September 23, 2026') with official X post; post time used as the publication timestamp since the blog exposes only a date."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 4181,
-        "label": "3812 likes + 208 reposts + 161 replies observed live on the source post",
-        "observed_at": "2026-09-24T03:48:00+00:00",
-        "evidence_url": "https://x.com/claudeai/status/2102840851538080172"
-      },
-      "tags": [
-        "anthropic",
-        "claude",
-        "mcp",
-        "marketplace",
-        "agents"
-      ],
-      "rank": 3
-    },
-    {
-      "id": "ai-qwen-audio-3-1",
+      "id": "ai-meta-muse-realtime-avatar",
       "section": "AI",
       "story_type": "Model release",
-      "title": "Alibaba ships Qwen-Audio-3.1: five-model audio stack with ASR-Next/TTS-Next and steep list-price cuts",
-      "summary": "Alibaba released Qwen-Audio-3.1, a hosted audio stack with upgraded ASR, TTS and Realtime models plus new ASR-Next (diarization, sound events) and TTS-Next (LM+diffusion generating voice, SFX and beds in one pass). Stated list-price cuts: TTS ~70%, Realtime ~85%, ASR up to 95%. For builders the price/feature jump is the signal. Caveat: the tweet's 'Blog' link resolved to a signed, time-limited Aliyun OSS file rather than a durable public blog; ASR-Next/TTS-Next APIs are 'coming soon' and no open weights were promised.",
+      "title": "Meta ships Muse Realtime Avatar: a real-time avatar model distilled 60x (120 to 2 NFEs) for infinite conversational video",
+      "summary": "Meta released Muse Realtime Avatar, an audio-driven Diffusion Transformer that turns Muse Realtime Voice into expressive, live interactive avatars by consuming the same speech VQ token stream. The engineering headline is the distillation: a 40-step three-way-CFG teacher (120 model evaluations per chunk) is distilled via self-forcing plus distribution matching into an unguided two-step causal student (120 to 2 NFEs, ~60x), with a fixed-length KV cache carrying motion context forward for as long as the conversation runs. Meta reports 448x768 at 25 fps, ~870 ms turn latency and 12 concurrent sessions per GB200. Caveat: the reported preference wins over Runway Characters and HeyGen LiveAvatar come from a short live-call rater study, not a public benchmark, and the blog's examples are not all inside the shipped Muse app.",
       "source": {
-        "name": "QwenCloud - Qwen-Audio-3.1-Realtime-Plus",
-        "url": "https://www.qwencloud.com/models/qwen-audio-3.1-realtime-plus"
+        "name": "Meta AI Research - Bringing Your Muse to Life",
+        "url": "https://research.meta.ai/blog/bringing-your-muse-to-life"
       },
-      "canonical_url": "https://www.qwencloud.com/models/qwen-audio-3.1-realtime-plus",
-      "published_at": "2026-09-23T09:11:23+00:00",
+      "canonical_url": "https://research.meta.ai/blog/bringing-your-muse-to-life",
+      "published_at": "2026-09-24T05:43:20+00:00",
       "corroboration": [
         {
-          "name": "Alibaba Qwen X post",
-          "url": "https://x.com/Alibaba_Qwen/status/2102687258990026993"
+          "name": "Meta AI X post",
+          "url": "https://x.com/AIatMeta/status/2102997291732766943"
         },
         {
-          "name": "Realtime paper (arXiv 2609.25176)",
-          "url": "https://arxiv.org/abs/2609.25176"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "medium",
-        "note": "Official model page plus X post; no machine-exposed page timestamp, so the X post time (09:11:23 UTC) is used. Durable blog URL absent keeps confidence medium."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 3897,
-        "label": "3464 likes + 320 reposts + 113 replies observed live on the source post",
-        "observed_at": "2026-09-24T03:48:00+00:00",
-        "evidence_url": "https://x.com/Alibaba_Qwen/status/2102687258990026993"
-      },
-      "tags": [
-        "alibaba",
-        "qwen",
-        "audio",
-        "tts",
-        "asr"
-      ],
-      "rank": 4
-    },
-    {
-      "id": "ai-openai-mentalhealthbench",
-      "section": "AI",
-      "story_type": "Benchmark release",
-      "title": "OpenAI releases MentalHealthBench: 1,215 synthetic mental-health conversations with clinician rubrics",
-      "summary": "OpenAI published an open evaluation of 1,215 synthetic mental-health conversations with 5,262 clinician-written rubric items, spanning non-acute to emergency cases. OpenAI reports GPT-6 Astra at 57.3 versus GPT-4o at 32.1 on task-clipped scoring. It is a measurement tool, not evidence of clinical adequacy. Caveat: conversations are synthetic and grading uses GPT-5.6 Sol as an LLM judge of human rubrics; the highest reported score is still under 60%.",
-      "source": {
-        "name": "OpenAI - Introducing MentalHealthBench",
-        "url": "https://openai.com/index/introducing-mentalhealthbench/"
-      },
-      "canonical_url": "https://openai.com/index/introducing-mentalhealthbench/",
-      "published_at": "2026-09-23T19:08:41+00:00",
-      "corroboration": [
-        {
-          "name": "OpenAI X post",
-          "url": "https://x.com/OpenAI/status/2102837574092161102"
+          "name": "Meta - biggest news from Connect 2026",
+          "url": "https://about.fb.com/news/2026/09/the-biggest-news-from-connect-2026/"
         },
         {
-          "name": "MentalHealthBench paper PDF",
-          "url": "https://cdn.openai.com/ctf-cdn/MentalHealthBench_A_Comprehensive_Benchmark_of_AI_Capabilities_in_Realistic_Mental_Health_Conversations.pdf"
+          "name": "Muse platform",
+          "url": "https://muse.ai/platform"
         }
       ],
       "quality": {
         "signal": "primary",
         "confidence": "high",
-        "note": "Official OpenAI post with paper PDF; page not machine-timestamped, so the X post time (19:08:41 UTC) is used."
+        "note": "Official Meta AI Research blog with official @AIatMeta post; the blog exposes only a date (September 23, 2026), so the official X post time (05:43:20 UTC, 2026-09-24) is used as the publication timestamp."
       },
       "popularity": {
         "platform": "x",
-        "engagement": 3777,
-        "label": "3310 likes + 174 reposts + 293 replies observed live on the source post",
-        "observed_at": "2026-09-24T03:48:00+00:00",
-        "evidence_url": "https://x.com/OpenAI/status/2102837574092161102"
-      },
-      "tags": [
-        "openai",
-        "benchmark",
-        "mental-health",
-        "evaluation"
-      ],
-      "rank": 5
-    },
-    {
-      "id": "ai-qwen-intelligence-mobile-agents",
-      "section": "AI",
-      "story_type": "Platform launch",
-      "title": "Alibaba launches Qwen Intelligence: three mobile agent stacks plus open benchmarks (MobilePA-Bench, MobileWorld)",
-      "summary": "Alibaba released Qwen Intelligence, an OEM agent stack for smartphones with a Planner (claimed #1 on MobilePA-Bench), Mobile-Use (API-first with GUI fallback; vendor-reported MobileWorld 82.1 / real-device 92.2 / 90% end-to-end), and a Creative agent (~3s image gen). Open benchmarks: MobilePA-Bench, MobileWorld, MobileWorld-Real, MobileWorld-Safety. HONOR Magic9 (Sept 28) is named as the first device. This is a phone-maker SDK, not a consumer app. Caveat: scores are vendor-reported, often against Qwen's own baseline; the creative-agent arXiv ID is an August paper reused in the announcement.",
-      "source": {
-        "name": "Qwen Intelligence site",
-        "url": "https://www.qwenintelligence.com/"
-      },
-      "canonical_url": "https://www.qwenintelligence.com/",
-      "published_at": "2026-09-23T11:50:54+00:00",
-      "corroboration": [
-        {
-          "name": "Alibaba Qwen X post",
-          "url": "https://x.com/Alibaba_Qwen/status/2102727405198876753"
-        },
-        {
-          "name": "Alibaba newsroom (Alizila)",
-          "url": "https://www.alizila.com/alibaba-launches-qwen-intelligence-to-power-next-generation-agentic-smartphones/"
-        },
-        {
-          "name": "MobileWorld repo",
-          "url": "https://github.com/Tongyi-MAI/MobileWorld"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "medium",
-        "note": "Official Alibaba announcement via X and newsroom; the canonical site carries no machine-exposed timestamp, so the X post time is used. Vendor-reported scores keep confidence at medium."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 2887,
-        "label": "2519 likes + 259 reposts + 109 replies observed live on the source post",
-        "observed_at": "2026-09-24T03:48:00+00:00",
-        "evidence_url": "https://x.com/Alibaba_Qwen/status/2102727405198876753"
-      },
-      "tags": [
-        "alibaba",
-        "qwen",
-        "mobile-ai",
-        "agents",
-        "benchmarks"
-      ],
-      "rank": 6
-    },
-    {
-      "id": "rob-skild-physical-self-play",
-      "section": "Robotics",
-      "story_type": "Research release",
-      "title": "Skild AI's S1 learns to play soccer via 140 simulated years of self-play, then runs on the 'Messinator' robot",
-      "summary": "Skild published a physical self-play result: its S1 world-model policy learned football through 140 simulated years of self-play in a virtual World Cup environment, then transferred to a physical robot they call the Messinator. This is a research result, not a new commercial model, funding, or deployment. For builders it is a concrete sim-to-real datapoint on self-play as a training data engine. Caveat: '140 years' is simulated time, S1 itself shipped in August (outside this window), and the result is a demo plus transfer claim.",
-      "source": {
-        "name": "Skild AI - Physical Self-Play",
-        "url": "https://www.skild.ai/blogs/physical-self-play"
-      },
-      "canonical_url": "https://www.skild.ai/blogs/physical-self-play",
-      "published_at": "2026-09-23T17:10:05+00:00",
-      "corroboration": [
-        {
-          "name": "Skild AI X post",
-          "url": "https://x.com/SkildAI/status/2102807730331492500"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "medium",
-        "note": "Official Skild blog (date 'Sep 23, 2026') with X post; the blog exposes only a date, so the X post time (17:10:05 UTC) is used as the publication timestamp."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 2048,
-        "label": "1522 likes + 361 reposts + 165 replies observed live on the source post",
-        "observed_at": "2026-09-24T03:55:00+00:00",
-        "evidence_url": "https://x.com/SkildAI/status/2102807730331492500"
-      },
-      "tags": [
-        "skild",
-        "self-play",
-        "world-model",
-        "sim-to-real",
-        "robotics"
-      ],
-      "rank": 7
-    },
-    {
-      "id": "btc-cftc-market-structure-existing-law",
-      "section": "Bitcoin",
-      "story_type": "Regulation",
-      "title": "After the CLARITY Act's Senate defeat, the CFTC says it will build crypto market structure under existing law",
-      "summary": "CFTC Chair Mike Selig told CNBC that the agency is using existing statutory authority to build a crypto-asset market-structure regime, the highest-signal U.S. regulatory move this week. The shift to agency rulemaking came right after the Senate failed to advance the CLARITY Act, which stalled congressional crypto legislation. Builders should watch this because the center of gravity for U.S. crypto regulation just moved from Congress to the CFTC and SEC. Caveat: it is an interview/keynote statement, not a final rule; the written remarks come from Selig's Sept 22 Treasury Market Conference keynote.",
-      "source": {
-        "name": "Bitcoin Magazine - CFTC preparing for onchain markets",
-        "url": "https://bitcoinmagazine.com/news/cftc-is-preparing-for-onchain-markets"
-      },
-      "canonical_url": "https://bitcoinmagazine.com/news/cftc-is-preparing-for-onchain-markets",
-      "published_at": "2026-09-23T19:55:21+00:00",
-      "corroboration": [
-        {
-          "name": "CFTC - Selig keynote (Sept 22 Treasury Market Conference)",
-          "url": "https://www.cftc.gov/PressRoom/SpeechesTestimony/opaselig11"
-        },
-        {
-          "name": "CoinDesk - White House adviser on CLARITY defeat",
-          "url": "https://www.coindesk.com/policy/2026/09/23/white-house-adviser-defends-president-trump-s-crypto-ties-in-wake-of-clarity-act-defeat"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "high",
-        "note": "Official CFTC keynote text corroborates the CNBC interview; the X post is the @BitcoinMagazine coverage link."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 1021,
-        "label": "841 likes + 133 reposts + 47 replies observed live on the source post",
-        "observed_at": "2026-09-24T03:48:00+00:00",
-        "evidence_url": "https://x.com/BitcoinMagazine/status/2102859160555847740"
-      },
-      "tags": [
-        "cftc",
-        "market-structure",
-        "regulation",
-        "clarity-act"
-      ],
-      "rank": 8
-    },
-    {
-      "id": "lon-eight-sleep-pod-6",
-      "section": "Longevity",
-      "story_type": "Hardware launch",
-      "title": "Eight Sleep launches Pod 6: 50%-smaller hub, 9x sensors, from $1,999 (Autopilot subscription required)",
-      "summary": "Eight Sleep's official launch of Pod 6 ships a hub 50% smaller than before (fits under most bed frames), 9x more sensors, new Solo sizes and new fabric with tap buttons, starting at $1,999. In-thread the company confirmed Autopilot (subscription) is required for 12 months. It is consumer sleep hardware, not a clinical aging trial, and TechCrunch notes a separate FDA path for sleep apnea is still pending rather than granted. For builders the signal is the sensor-density jump in the sleep-data stack.",
-      "source": {
-        "name": "Eight Sleep blog - Discover everything new with Pod 6",
-        "url": "https://www.eightsleep.com/blog/discover-everything-new-with-pod-6/"
-      },
-      "canonical_url": "https://www.eightsleep.com/blog/discover-everything-new-with-pod-6/",
-      "published_at": "2026-09-23T11:58:48+00:00",
-      "corroboration": [
-        {
-          "name": "Eight Sleep X post",
-          "url": "https://x.com/eightsleep/status/2102729393260855566"
-        },
-        {
-          "name": "Eight Sleep product page",
-          "url": "https://www.eightsleep.com/product/pod-cover/"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official Eight Sleep blog with matching X launch post; the blog page has no machine-exposed timestamp, so the X post time (11:58:48 UTC) is used."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 883,
-        "label": "805 likes + 36 reposts + 42 replies observed live on the source post",
-        "observed_at": "2026-09-24T03:48:00+00:00",
-        "evidence_url": "https://x.com/eightsleep/status/2102729393260855566"
-      },
-      "tags": [
-        "eight-sleep",
-        "sleep",
-        "hardware",
-        "biometrics"
-      ],
-      "rank": 9
-    },
-    {
-      "id": "ai-gemini-3-8-tts",
-      "section": "AI",
-      "story_type": "Model release",
-      "title": "Google adds Gemini 3.8 Flash TTS and Flash-Lite TTS to the Gemini API with SynthID watermarking",
-      "summary": "Google added two new text-to-speech models to the Gemini API and AI Studio: Gemini 3.8 Flash TTS (creative tier) and Flash-Lite TTS (scale tier), with promptable voice design, line-level acting (pacing, laughs, pauses) and SynthID watermarking. Google claims #1 on the Hume Voice Design benchmark at 71.4. For builders the API availability and watermarking matter most. Caveat: the Gemini Enterprise API is 'coming soon', voice cloning (30s sample + consent) is in the blog rather than the tweet, and vendor TTS leaderboards are not independent evals.",
-      "source": {
-        "name": "Google blog - Gemini 3.8 text-to-speech",
-        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/"
-      },
-      "canonical_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
-      "published_at": "2026-09-23T15:15:00+00:00",
-      "corroboration": [
-        {
-          "name": "Google DeepMind X post",
-          "url": "https://x.com/GoogleDeepMind/status/2102781530867126505"
-        },
-        {
-          "name": "Gemini API docs - Flash TTS",
-          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash-tts"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official Google blog with machine-exposed datePublished (2026-09-23T15:15:00+00:00) and DeepMind X post."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 531,
-        "label": "412 likes + 49 reposts + 70 replies observed live on the source post",
-        "observed_at": "2026-09-24T03:48:00+00:00",
-        "evidence_url": "https://x.com/GoogleDeepMind/status/2102781530867126505"
-      },
-      "tags": [
-        "google",
-        "gemini",
-        "tts",
-        "synthid"
-      ],
-      "rank": 10
-    },
-    {
-      "id": "btc-blockchain-nyse-tokenized-equities",
-      "section": "Bitcoin",
-      "story_type": "Infrastructure",
-      "title": "Blockchain.com and NYSE sign an MOU to explore global 24/7/365 trading of tokenized U.S. equities",
-      "summary": "Blockchain.com and NYSE signed an MOU to distribute tokenized U.S.-listed stocks and ETFs to Blockchain.com's 44M+ accounts via NYSE's planned digital ATS, plus ICE Data crypto data-sharing. It is an MOU, not a live venue: the ATS is not operational and the arrangement is explicitly pending regulatory approval. Builders should note it is a distribution deal for tokenized TradFi, not new Bitcoin infrastructure per se.",
-      "source": {
-        "name": "PR Newswire - Blockchain.com and NYSE partner on tokenized securities",
-        "url": "https://www.prnewswire.com/news-releases/blockchaincom-and-nyse-partner-to-explore-global-247365-trading-of-tokenized-securities-302887041.html"
-      },
-      "canonical_url": "https://www.prnewswire.com/news-releases/blockchaincom-and-nyse-partner-to-explore-global-247365-trading-of-tokenized-securities-302887041.html",
-      "published_at": "2026-09-23T13:00:00+00:00",
-      "corroboration": [
-        {
-          "name": "Blockchain.com blog",
-          "url": "https://www.blockchain.com/blog/posts/blockchaincom-and-nyse-team-up-to-explore-tokenized-securities"
-        },
-        {
-          "name": "CoinDesk X post",
-          "url": "https://x.com/CoinDesk/status/2102779493211381984"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "Official press release plus company blog; MOU status keeps confidence medium."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 306,
-        "label": "224 likes + 45 reposts + 37 replies observed live on the source post",
-        "observed_at": "2026-09-24T03:48:00+00:00",
-        "evidence_url": "https://x.com/CoinDesk/status/2102779493211381984"
-      },
-      "tags": [
-        "nyse",
-        "tokenized-equities",
-        "blockchain-com",
-        "tradfi"
-      ],
-      "rank": 11
-    },
-    {
-      "id": "rob-boston-dynamics-stretch-endurance",
-      "section": "Robotics",
-      "story_type": "Engineering deep-dive",
-      "title": "Boston Dynamics publishes accelerated wear-testing methodology for Stretch, including cable-life rigs",
-      "summary": "Boston Dynamics released an official engineering write-up on accelerated endurance testing for Stretch, the warehouse robot, including how they build cable-life rigs to predict field failure before fleet scale. It is not a product launch or fleet number, but the methodology is exactly the reliability engineering that gates real deployments. Builders should care because cable and actuator wear are the unglamorous failure modes that decide total cost of ownership. Caveat: it is an interview/blog format, not a paper or benchmark.",
-      "source": {
-        "name": "Boston Dynamics - Ask a roboticist: meet Diane",
-        "url": "https://bostondynamics.com/blog/ask-a-roboticist-meet-diane/"
-      },
-      "canonical_url": "https://bostondynamics.com/blog/ask-a-roboticist-meet-diane/",
-      "published_at": "2026-09-23T13:59:17+00:00",
-      "corroboration": [
-        {
-          "name": "Boston Dynamics X post",
-          "url": "https://x.com/BostonDynamics/status/2102767770790137888"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official Boston Dynamics blog with machine-exposed datePublished (2026-09-23T13:59:17+00:00) and matching X post."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 273,
-        "label": "234 likes + 25 reposts + 14 replies observed live on the source post",
-        "observed_at": "2026-09-24T03:48:00+00:00",
-        "evidence_url": "https://x.com/BostonDynamics/status/2102767770790137888"
-      },
-      "tags": [
-        "boston-dynamics",
-        "stretch",
-        "reliability",
-        "testing"
-      ],
-      "rank": 12
-    },
-    {
-      "id": "btc-moonpay-north-capital",
-      "section": "Bitcoin",
-      "story_type": "Acquisition",
-      "title": "MoonPay to acquire SEC-registered broker-dealer North Capital in a >$60M all-stock deal",
-      "summary": "MoonPay is acquiring North Capital, a private-markets platform with roughly $9B transaction volume, in an all-stock deal above $60M. The deal buys an SEC-registered broker-dealer and transfer-agent kit, a direct infrastructure play for tokenized RWAs. It is subject to regulatory approval and not closed. Caveat: CoinDesk's post said '@NorCap'; the article names the target North Capital.",
-      "source": {
-        "name": "CoinDesk - MoonPay to acquire North Capital",
-        "url": "https://www.coindesk.com/business/2026/09/23/moonpay-to-acquire-sec-registered-north-capital-in-usd60-million-all-stock-deal"
-      },
-      "canonical_url": "https://www.coindesk.com/business/2026/09/23/moonpay-to-acquire-sec-registered-north-capital-in-usd60-million-all-stock-deal",
-      "published_at": "2026-09-23T14:33:44+00:00",
-      "corroboration": [
-        {
-          "name": "CoinDesk X post",
-          "url": "https://x.com/CoinDesk/status/2102768380646236201"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "CoinDesk is both source and X coverage; deal is pending approval, hence medium confidence."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 233,
-        "label": "170 likes + 21 reposts + 42 replies observed live on the source post",
-        "observed_at": "2026-09-24T03:48:00+00:00",
-        "evidence_url": "https://x.com/CoinDesk/status/2102768380646236201"
-      },
-      "tags": [
-        "moonpay",
-        "acquisition",
-        "broker-dealer",
-        "tokenized-rwa"
-      ],
-      "rank": 13
-    },
-    {
-      "id": "lon-psychad-brain-atlas",
-      "section": "Longevity",
-      "story_type": "Research atlas",
-      "title": "PsychAD delivers population-scale single-cell molecular maps of the aging brain: ~6.3M nuclei across 1,494 donors",
-      "summary": "The NIA-backed PsychAD consortium released high-resolution single-cell maps of the dorsolateral prefrontal cortex (~6.3M nuclei, 1,494 donors spanning infancy to age 108) covering Alzheimer's disease, Parkinson's, Lewy body disease, vascular dementia, schizophrenia, bipolar disorder and controls, with companion papers across Nature journals. This is a post-mortem atlas, not a therapeutic, and it is cross-sectional (one timepoint per donor). For builders it is the reference substrate for gene-expression studies of brain aging and neurodegeneration. The NIH and Nature both posted the release within hours of each other.",
-      "source": {
-        "name": "NIH release - high-resolution molecular maps of Alzheimer's-related disorders",
-        "url": "https://www.nih.gov/news-events/news-releases/scientists-develop-high-resolution-molecular-maps-alzheimers-related-brain-disorders"
-      },
-      "canonical_url": "https://www.nih.gov/news-events/news-releases/scientists-develop-high-resolution-molecular-maps-alzheimers-related-brain-disorders",
-      "published_at": "2026-09-23T15:20:45+00:00",
-      "corroboration": [
-        {
-          "name": "Nature news - prefrontal gene-expression atlas",
-          "url": "https://www.nature.com/articles/d41586-026-02947-x"
-        },
-        {
-          "name": "NIH X post",
-          "url": "https://x.com/NIH/status/2102780212354089070"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "high",
-        "note": "Official NIH news release plus independent Nature news item on the same day; NIH page blocks bots (403), so the official NIH X post time (15:20:45 UTC) is used as the publication timestamp."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 216,
-        "label": "215 likes + 1 repost observed live on the Nature source post",
-        "observed_at": "2026-09-24T03:48:00+00:00",
-        "evidence_url": "https://x.com/Nature/status/2102792122252325064"
-      },
-      "tags": [
-        "nia",
-        "psychad",
-        "single-cell",
-        "brain-aging",
-        "atlas"
-      ],
-      "rank": 14
-    },
-    {
-      "id": "btc-bitmex-shutdown",
-      "section": "Bitcoin",
-      "story_type": "Market/venue",
-      "title": "BitMEX ends trading after 11 years; withdrawals remain open",
-      "summary": "BitMEX, the venue that popularized perpetual swaps, stopped trading and deposits effective 04:00 UTC on Sept 22, with withdrawals left open. The shutdown was pre-announced in July, and remaining balances on verified accounts will face a monthly fee. It is a concrete venue-level event, not a Bitcoin protocol change. Caveat: pending litigation is separate from the operational wind-down.",
-      "source": {
-        "name": "CoinDesk - BitMEX shuts down trading after 11 years",
-        "url": "https://www.coindesk.com/business/2026/09/23/bitmex-shuts-down-trading-after-11-years-leaves-withdrawals-open"
-      },
-      "canonical_url": "https://www.coindesk.com/business/2026/09/23/bitmex-shuts-down-trading-after-11-years-leaves-withdrawals-open",
-      "published_at": "2026-09-23T12:05:27+00:00",
-      "corroboration": [
-        {
-          "name": "CoinDesk X post",
-          "url": "https://x.com/CoinDesk/status/2102731063906938895"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "high",
-        "note": "CoinDesk coverage plus X post; the shutdown date and withdrawal terms are stated in the article."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 211,
-        "label": "145 likes + 39 reposts + 27 replies observed live on the source post",
-        "observed_at": "2026-09-24T03:48:00+00:00",
-        "evidence_url": "https://x.com/CoinDesk/status/2102731063906938895"
-      },
-      "tags": [
-        "bitmex",
-        "perpetuals",
-        "venue"
-      ],
-      "rank": 15
-    },
-    {
-      "id": "lon-radar-abdominal-ct",
-      "section": "Longevity",
-      "story_type": "Medical-AI paper",
-      "title": "Science: RADAR generalist vision-language model reaches ~0.91 AUC on >400k abdominal CTs",
-      "summary": "A Science paper reports RADAR, a vision-language model trained on more than 400,000 contrast abdominal CTs that reaches roughly 0.91 AUC internally and generalizes to unseen acute findings. It is a retrospective medical-AI result, not a deployed diagnostic, and not a longevity drug, but it is directly relevant to the aging-mortality pipeline (imaging as a cheap screening substrate). For builders the generalization claim across acute findings is the interesting part. Caveat: retrospective, single-institution-internal validation; the tweet did not carry a DOI (confirmed independently).",
-      "source": {
-        "name": "Science paper (doi:10.1126/science.aec6129)",
-        "url": "https://www.science.org/doi/10.1126/science.aec6129"
-      },
-      "canonical_url": "https://www.science.org/doi/10.1126/science.aec6129",
-      "published_at": "2026-09-23T13:47:07+00:00",
-      "corroboration": [
-        {
-          "name": "Science Magazine X post",
-          "url": "https://x.com/ScienceMagazine/status/2102756649698033906"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "Science Magazine official X post; the Science.org DOI page blocks bots (403), so the X post time (13:47:07 UTC) is used as the publication timestamp."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 108,
-        "label": "98 likes + 5 reposts + 5 replies observed live on the source post",
-        "observed_at": "2026-09-24T03:48:00+00:00",
-        "evidence_url": "https://x.com/ScienceMagazine/status/2102756649698033906"
-      },
-      "tags": [
-        "science",
-        "medical-ai",
-        "ct",
-        "imaging",
-        "retrospective"
-      ],
-      "rank": 16
-    },
-    {
-      "id": "lon-kamuvudine-9-ms-mouse",
-      "section": "Longevity",
-      "story_type": "Animal-model research",
-      "title": "NIH: modified HIV drug kamuvudine-9 reverses vision loss and paralysis in an MS mouse model",
-      "summary": "NIH released work on kamuvudine-9 (K-9), a modified HIV drug, which restored motor and visual function in a multiple-sclerosis animal model via inflammasome blockade. The claims include a human claims-data association between NRTI use and lower MS risk/relapse. This is an animal model plus observational human data, not an FDA-approved MS therapy, and it is a neurodegeneration-adjacent result rather than a direct aging intervention. For builders the mechanism (inflammasome-targeted nucleoside) is a new handle on neuroinflammation-driven aging.",
-      "source": {
-        "name": "NIH release - modified HIV drug reverses deficits in MS model",
-        "url": "https://www.nih.gov/news-events/news-releases/modified-hiv-drug-reverses-vision-loss-paralysis-multiple-sclerosis-model"
-      },
-      "canonical_url": "https://www.nih.gov/news-events/news-releases/modified-hiv-drug-reverses-vision-loss-paralysis-multiple-sclerosis-model",
-      "published_at": "2026-09-23T19:08:38+00:00",
-      "corroboration": [
-        {
-          "name": "Science Translational Medicine paper (doi:10.1126/scitranslmed.aei2870)",
-          "url": "https://www.science.org/doi/10.1126/scitranslmed.aei2870"
-        },
-        {
-          "name": "NIH X post",
-          "url": "https://x.com/NIH/status/2102837561030815965"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "high",
-        "note": "Official NIH release with the Science Translational Medicine paper; NIH page blocks bots (403), so the NIH X post time (19:08:38 UTC) is used as the publication timestamp."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 104,
-        "label": "79 likes + 22 reposts + 3 replies observed live on the source post",
-        "observed_at": "2026-09-24T03:48:00+00:00",
-        "evidence_url": "https://x.com/NIH/status/2102837561030815965"
-      },
-      "tags": [
-        "nih",
-        "ms",
-        "animal-model",
-        "inflammasome",
-        "neurodegeneration"
-      ],
-      "rank": 17
-    },
-    {
-      "id": "lon-egfr-t790m-lung-cancer",
-      "section": "Longevity",
-      "story_type": "Observational genetics",
-      "title": "Science: rare germline EGFR T790M (~1 in 15,850) associated with ~25x lung-cancer odds, ~62x in never-smokers",
-      "summary": "In a 3.37M-person study, a rare inherited EGFR T790M variant was associated with roughly 25-fold overall lung-cancer odds and about 62-fold odds in never-smokers. This is cancer genetics, not a gerotherapeutics result, and screening or policy implications are untested. For longevity-minded readers it sharpens the argument that a small number of high-penetrance germline variants drive disproportionate mortality risk. Caveat: it is an observational association, and the variant is rare (~1/15,850).",
-      "source": {
-        "name": "Science paper (doi:10.1126/science.aec0473)",
-        "url": "https://www.science.org/doi/10.1126/science.aec0473"
-      },
-      "canonical_url": "https://www.science.org/doi/10.1126/science.aec0473",
-      "published_at": "2026-09-24T01:31:06+00:00",
-      "corroboration": [
-        {
-          "name": "Science Magazine X post",
-          "url": "https://x.com/ScienceMagazine/status/2102933811877097552"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "Science Magazine official X post; the Science.org DOI page blocks bots (403), so the X post time (01:31:06 UTC) is used as the publication timestamp."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 28,
-        "label": "22 likes + 2 reposts + 4 replies observed live on the source post",
-        "observed_at": "2026-09-24T03:48:00+00:00",
-        "evidence_url": "https://x.com/ScienceMagazine/status/2102933811877097552"
-      },
-      "tags": [
-        "science",
-        "egfr",
-        "genetics",
-        "lung-cancer",
-        "observational"
-      ],
-      "rank": 18
-    },
-    {
-      "id": "rob-agility-digit-data-security",
-      "section": "Robotics",
-      "story_type": "Thought leadership",
-      "title": "Agility CTO on data security for Digit in real facilities: faces, labels and IP as the robot's data problem",
-      "summary": "Agility CTO Pras Velagapudi published a talk on what happens to data once a robot leaves the lab: in real facilities, Digit must treat faces, address labels and proprietary IP as data to protect. It is thought leadership, not a software or hardware release. For builders it frames the security model that deployment contracts will increasingly encode. Caveat: it is a clip, not a spec or standard.",
-      "source": {
-        "name": "Agility Robotics - Digit data security talk (YouTube)",
-        "url": "https://www.youtube.com/watch?v=WpGs7DKe8QY"
-      },
-      "canonical_url": "https://www.youtube.com/watch?v=WpGs7DKe8QY",
-      "published_at": "2026-09-23T16:28:27+00:00",
-      "corroboration": [
-        {
-          "name": "Agility Robotics X post",
-          "url": "https://x.com/agilityrobotics/status/2102797253169856973"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "low",
-        "note": "Official Agility X post with YouTube video; the video page's publish timestamp is not machine-exposed here, so the X post time (16:28:27 UTC) is used. Lower confidence because it is a talk, not a release."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 22,
-        "label": "20 likes + 1 repost + 1 reply observed live on the source post",
-        "observed_at": "2026-09-24T03:48:00+00:00",
-        "evidence_url": "https://x.com/agilityrobotics/status/2102797253169856973"
-      },
-      "tags": [
-        "agility",
-        "digit",
-        "data-security",
-        "deployment"
-      ],
-      "rank": 19
-    },
-    {
-      "id": "ai-meta-muse-charm-connect",
-      "section": "AI",
-      "story_type": "Product launch",
-      "title": "Meta Connect 2026: Muse Charm handheld, Meta VR Glasses at $1,299, audio AI glasses, and Muse Realtime Avatar",
-      "summary": "At Meta Connect 2026, Zuckerberg unveiled Muse Charm, a palm-sized always-on handheld for its Muse personal agent, plus new Meta VR Glasses at $1,299 with an IMAX-grade display and spatial computing. Also announced: camera-free audio AI glasses across Ray-Ban/Oakley/Meta brands (100+ styles by year-end), Muse Realtime Avatar (voice-driven expressive avatars from Meta Superintelligence Labs), Muse on AI glasses activated by name, and computer-use for Muse on Mac. The Muse agent is already popular; the hardware slate is Meta's push to make the agent portable. Caveat: several items (glasses access, hearing-assistance feature) ship 'later this year', and the keynote was the Sept 23 event with a follow-up day on Sept 24.",
-      "source": {
-        "name": "Meta - Everything We Announced at Meta Connect 2026",
-        "url": "https://www.meta.com/blog/meta-connect-2026-everything-we-announced/"
-      },
-      "canonical_url": "https://www.meta.com/blog/meta-connect-2026-everything-we-announced/",
-      "published_at": "2026-09-23T12:00:00-07:00",
-      "corroboration": [
-        {
-          "name": "TechCrunch - Tamagotchi-like Muse wearable",
-          "url": "https://techcrunch.com/2026/09/23/meta-made-a-tamagotchi-like-wearable-for-its-muse-ai-agent/"
-        },
-        {
-          "name": "CNBC - $1,299 Meta VR Glasses and Muse Charm",
-          "url": "https://www.cnbc.com/2026/09/23/mark-zuckerberg-1299-meta-vr-glasses-ai-agent.html"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "high",
-        "note": "Official Meta blog (date-only 'Sep 23, 2026', noon PT used with limitation stated) corroborated by TechCrunch and CNBC same-day coverage."
+        "engagement": 452,
+        "label": "363 likes + 41 reposts + 48 replies observed live on the source post",
+        "observed_at": "2026-09-25T06:05:00+00:00",
+        "evidence_url": "https://x.com/AIatMeta/status/2102997291732766943"
       },
       "tags": [
         "meta",
         "muse",
-        "ai-wearable",
-        "vr",
-        "meta-connect"
+        "diffusion-transformer",
+        "distillation",
+        "realtime-video",
+        "avatar"
       ],
-      "rank": 20
+      "rank": 1
     },
     {
-      "id": "btc-starkware-pq-bitcoin-cost",
+      "id": "btc-cftc-crypto-faq-tokenized-recordkeeping",
       "section": "Bitcoin",
-      "story_type": "Research release",
-      "title": "StarkWare's AI research contest cuts post-quantum Bitcoin tx proving cost 79% in one week",
-      "summary": "An open contest run with EigenLayer and Yukon reports the estimated GPU cost of a post-quantum-secure Bitcoin transaction dropping from roughly $320 to about $67 in a week, via improved proving. The $20k prize pool is still open, so treat the figure as a research/compute estimate, not a mainnet deployment. For builders this is the cost trajectory to watch if per-tx post-quantum mitigation ever gets standardized. Caveat: it is not a Bitcoin Core change, and it mitigates new txs, not already-exposed pubkeys.",
+      "story_type": "Regulation",
+      "title": "CFTC staff FAQ update: futures brokers and clearinghouses can hold customer funds in tokenized forms and keep blockchain recordkeeping",
+      "summary": "The CFTC issued updated staff FAQs on crypto-asset and blockchain registrant activity. The new Q12-Q15 let futures commission merchants and derivatives clearing organizations invest customer funds in tokenized forms of Regulation 1.25 permitted investments when the legal and economic rights are equivalent, and treat blockchain/DLT as satisfying the Regs 1.31 and 45.2 recordkeeping requirements (including foregoing separate off-chain copies as long as records can be produced even during network disruptions). It is a staff FAQ, not a Commission rule. For builders the signal is the center of gravity for U.S. crypto market structure moving into the agencies now that the CLARITY Act stalled in the Senate; the FAQ builds on Letters 25-39 and 26-05.",
       "source": {
-        "name": "StarkWare blog - quantum-safe Bitcoin costs down 79%",
-        "url": "https://starkware.co/blog/ai-research-competition-cut-quantum-safe-bitcoin-costs-by-79-in-a-week/"
+        "name": "CFTC - Staff FAQ update on crypto assets and blockchain",
+        "url": "https://www.cftc.gov/PressRoom/PressReleases/9303-26"
       },
-      "canonical_url": "https://starkware.co/blog/ai-research-competition-cut-quantum-safe-bitcoin-costs-by-79-in-a-week/",
-      "published_at": "2026-09-23T10:33:09+00:00",
+      "canonical_url": "https://www.cftc.gov/PressRoom/PressReleases/9303-26",
+      "published_at": "2026-09-24T17:43:14+00:00",
       "corroboration": [
         {
-          "name": "StarkWare X post",
-          "url": "https://x.com/StarkWareLtd/status/2102791757104849320"
+          "name": "CFTC X post",
+          "url": "https://x.com/CFTC/status/2103178460852047892"
+        },
+        {
+          "name": "CoinDesk - commodities firms can invest in tokenized assets",
+          "url": "https://www.coindesk.com/policy/2026/09/24/u-s-commodities-firms-can-invest-in-tokenized-assets-use-blockchain-records-cftc"
+        },
+        {
+          "name": "Bitcoin Magazine coverage",
+          "url": "https://x.com/BitcoinMagazine/status/2103185879632142595"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official CFTC press release with official @CFTC X post; the FAQ PDF is dated 9/24/2026. The CFTC X post time (17:43:14 UTC) is used as the publication timestamp since the press release page does not expose a machine-readable time."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 4574,
+        "label": "3651 likes + 807 reposts + 116 replies observed live on the source post",
+        "observed_at": "2026-09-25T06:05:00+00:00",
+        "evidence_url": "https://x.com/BitcoinMagazine/status/2103185879632142595"
+      },
+      "tags": [
+        "cftc",
+        "regulation",
+        "tokenized-assets",
+        "recordkeeping",
+        "market-structure"
+      ],
+      "rank": 2
+    },
+    {
+      "id": "btc-allocinit-shielded-bitcoin",
+      "section": "Bitcoin",
+      "story_type": "Research proposal",
+      "title": "Alloc Init publishes 'Shielded Bitcoin': a Zcash-style metaprotocol for private L1 transfers with no soft fork",
+      "summary": "Alloc Init (Shikhelman, Komarov, Moskvin) published Shielded Bitcoin, a metaprotocol for private Bitcoin L1 transfers with no soft fork and no trusted operators. Transaction data lands on Bitcoin; independent indexers verify ZK proofs and nullifiers, and peg-in/out is planned via PIPEs v2 witness encryption. It is a research proposal, not deployed code. For builders this is a credible path to L1 privacy without consensus changes. Caveat: peg-in/out is explicitly a later paper, witness encryption is experimental, and Bitcoin nodes do not enforce the metaprotocol.",
+      "source": {
+        "name": "Shielded Bitcoin paper (Alloc Init)",
+        "url": "https://www.allocinit.xyz/uploads/shielded-bitcoin.pdf"
+      },
+      "canonical_url": "https://www.allocinit.xyz/uploads/shielded-bitcoin.pdf",
+      "published_at": "2026-09-24T17:31:19+00:00",
+      "corroboration": [
+        {
+          "name": "Bitcoin Magazine X post",
+          "url": "https://x.com/BitcoinMagazine/status/2103175461773730108"
+        },
+        {
+          "name": "Alloc Init - Shielded Bitcoin write-up",
+          "url": "https://allocinit.notion.site/Shielded-Bitcoin-Private-Transfers-on-Bitcoin-L1-3e436974087f80f586acf2462bc547a5"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Open PDF paper plus official @BitcoinMagazine post; the paper exposes no machine-readable timestamp, so the X post time (17:31:19 UTC) is used. Medium confidence because it is a proposal, not deployed code."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 2069,
+        "label": "1672 likes + 248 reposts + 149 replies observed live on the source post",
+        "observed_at": "2026-09-25T06:05:00+00:00",
+        "evidence_url": "https://x.com/BitcoinMagazine/status/2103175461773730108"
+      },
+      "tags": [
+        "privacy",
+        "metaprotocol",
+        "zkcash",
+        "zk-proofs",
+        "bitcoin-l1"
+      ],
+      "rank": 3
+    },
+    {
+      "id": "ai-google-coherent-long-form-video",
+      "section": "AI",
+      "story_type": "Research release",
+      "title": "Google Research publishes a multi-agent 'video co-director' framework for coherent long-form video (Co-Director, CANVAS)",
+      "summary": "Google Research released an orchestration-layer framework that treats minutes-long, multi-shot video generation as a global optimization and world-state-tracking problem, built on top of Gemini and Veo. It bundles Co-Director (to appear at COLM 2026) for creative-intent search, CANVAS (to appear at EMNLP 2026) for persistent visual world-state, A2RD and VQQA, with a closed-loop MLLM judge to catch identity drift and cascading pipeline failures. It is a research/orchestration layer, not a new foundation video model. Caveat: the claimed 'substantial gains' are paper-level and qualitative rather than a public leaderboard.",
+      "source": {
+        "name": "Google Research - Automating coherent long-form video generation",
+        "url": "https://research.google/blog/coherent-long-form-video-generation/"
+      },
+      "canonical_url": "https://research.google/blog/coherent-long-form-video-generation/",
+      "published_at": "2026-09-24T19:44:12+00:00",
+      "corroboration": [
+        {
+          "name": "Google Research X post",
+          "url": "https://x.com/GoogleResearch/status/2103208899650437286"
+        },
+        {
+          "name": "CANVAS paper (arXiv 2604.13452)",
+          "url": "https://arxiv.org/abs/2604.13452"
+        },
+        {
+          "name": "Co-Director paper (arXiv 2604.24842)",
+          "url": "https://arxiv.org/abs/2604.24842"
         }
       ],
       "quality": {
         "signal": "primary",
         "confidence": "high",
-        "note": "Official StarkWare blog post with exposed publication timestamp; X post links the same result."
+        "note": "Official Google Research blog dated 2026-09-24 with official @GoogleResearch post; the X post time (19:44:12 UTC) is used as the publication timestamp since the blog exposes only a date."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1411,
+        "label": "1247 likes + 138 reposts + 26 replies observed live on the source post",
+        "observed_at": "2026-09-25T06:05:00+00:00",
+        "evidence_url": "https://x.com/GoogleResearch/status/2103208899650437286"
       },
       "tags": [
-        "post-quantum",
-        "bitcoin",
-        "zk",
-        "starkware",
-        "proving"
+        "google",
+        "video-generation",
+        "multi-agent",
+        "world-model",
+        "co-director"
       ],
-      "rank": 21
+      "rank": 4
     },
     {
-      "id": "rob-xpeng-iron-supply-chain",
+      "id": "rob-unitree-19-humanoid-worldskills",
       "section": "Robotics",
-      "story_type": "Manufacturing milestone",
-      "title": "XPENG signs supplier designation agreements for the IRON humanoid ahead of its year-end mass-production target",
-      "summary": "After its first robotics supply-chain partner conference (Sept 22, suppliers of joint modules, actuators and precision structural parts), XPENG announced on Sept 23 that its IRON robotics business has signed supplier designation agreements and is scheduling production on its lines. It retains its target of mass production by end-2026 with market launch and deliveries in 2027, starting with XPENG's own stores and campuses. For builders this is the supply-chain layer that has been gating humanoid volume all year. Caveat: XPENG did not name suppliers, disclose contract values, or quantify committed component volumes, and the line is operating but yields are not stated.",
+      "story_type": "Demo / fleet scale",
+      "title": "Unitree runs 19 full-size humanoids in a live AI-driven cluster performance at WorldSkills Shanghai",
+      "summary": "Unitree released an official clip of 19 full-size humanoids performing a live, AI-driven cluster routine with 120 dancers before 10,000+ people at the WorldSkills Shanghai opening (22 Sep). It is a demonstration, not a product, code, or factory launch. For builders the useful datapoint is a large-scale multi-robot synchronized control and staging. Caveat: the event was two days earlier; 'fully autonomous' and 'world's largest' are Unitree's claims, and there is no independent verification of autonomy level or any new hardware SKU.",
       "source": {
-        "name": "Humanoids Daily - XPENG lines up humanoid suppliers",
-        "url": "https://www.humanoidsdaily.com/news/xpeng-iron-supply-chain-partner-conference"
+        "name": "Unitree Robotics X post",
+        "url": "https://x.com/UnitreeRobotics/status/2103025066212819390"
       },
-      "canonical_url": "https://www.humanoidsdaily.com/news/xpeng-iron-supply-chain-partner-conference",
-      "published_at": "2026-09-23T15:46:10+00:00",
+      "canonical_url": "https://x.com/UnitreeRobotics/status/2103025066212819390",
+      "published_at": "2026-09-24T07:33:42+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "low",
+        "note": "Official @UnitreeRobotics post (video); no separate canonical page is posted, so the X post itself is the source and its time (07:33:42 UTC) is the publication timestamp. Low confidence: it is a demo/choreography recap, not a release."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1338,
+        "label": "1105 likes + 183 reposts + 50 replies observed live on the source post",
+        "observed_at": "2026-09-25T06:05:00+00:00",
+        "evidence_url": "https://x.com/UnitreeRobotics/status/2103025066212819390"
+      },
+      "tags": [
+        "unitree",
+        "humanoid",
+        "swarm",
+        "worldskills",
+        "demo"
+      ],
+      "rank": 5
+    },
+    {
+      "id": "ai-anthropic-claude-ebola-response",
+      "section": "AI",
+      "story_type": "Deployment",
+      "title": "Anthropic: Claude used to cut Ebola sitrep assembly from a full day to under an hour in the Bundibugyo outbreak",
+      "summary": "Anthropic published a deployment feature with CEPI, WHO AFRO and INRB for the Bundibugyo Ebola response: a Claude skill compresses situational-report assembly from about a full day to under an hour, Claude Science is used for genome assembly and phylogeny from INRB sequencing, and CEPI uses Claude to organize vaccine-candidate evidence. It is a product deployment, not a new model or API. Caveat: Anthropic states the scientific judgments stay with humans, and it is a feature story rather than a launch.",
+      "source": {
+        "name": "Anthropic - Claude in Ebola response",
+        "url": "https://www.anthropic.com/features/ebola-response"
+      },
+      "canonical_url": "https://www.anthropic.com/features/ebola-response",
+      "published_at": "2026-09-23T23:08:15+00:00",
       "corroboration": [
         {
-          "name": "XPeng Robotics X post (IRON behavior reel, Sept 23)",
-          "url": "https://x.com/XPENGRobotics/status/2102576919602667693"
+          "name": "Anthropic X post",
+          "url": "https://x.com/AnthropicAI/status/2102897863097545197"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official Anthropic feature page with official X post; the X post time (2026-09-23 23:08:15 UTC) is used as the publication timestamp."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1050,
+        "label": "853 likes + 63 reposts + 134 replies observed live on the source post",
+        "observed_at": "2026-09-25T06:05:00+00:00",
+        "evidence_url": "https://x.com/AnthropicAI/status/2102897863097545197"
+      },
+      "tags": [
+        "anthropic",
+        "claude",
+        "epidemiology",
+        "deployment",
+        "genomics"
+      ],
+      "rank": 6
+    },
+    {
+      "id": "ai-nvidia-open-protein-complex-dataset",
+      "section": "AI",
+      "story_type": "Research and open data release",
+      "title": "NVIDIA and Google DeepMind release an open protein-complex prediction dataset for 2,800+ viruses",
+      "summary": "A Google DeepMind/EMBL-EBI/NVIDIA coalition released an open dataset of predicted protein complexes across 2,800+ viruses, with roughly 30% of the interactions not present in the PDB, plus an open BioNeMo structure-prediction pipeline so others can run the sequence-to-structure inference. It is predictions, not crystal structures, and uses an AlphaFold2-era model rather than a new folding architecture. For builders the open pipeline and viral-interaction coverage are the usable part. Caveat: entries are confidence-labeled predictions, not experimental structures.",
+      "source": {
+        "name": "NVIDIA Blog - open protein dataset",
+        "url": "https://blogs.nvidia.com/blog/open-protein-dataset/"
+      },
+      "canonical_url": "https://blogs.nvidia.com/blog/open-protein-dataset/",
+      "published_at": "2026-09-24T14:14:33+00:00",
+      "corroboration": [
+        {
+          "name": "NVIDIA X post",
+          "url": "https://x.com/nvidia/status/2103125940825923694"
+        },
+        {
+          "name": "BioNeMo structure-prediction pipeline (GitHub)",
+          "url": "https://github.com/NVIDIA-BioNeMo/BioNeMo-Structure-Prediction-Pipeline"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @nvidia post with the open pipeline; the NVIDIA blog page does not expose a machine-readable timestamp, so the X post time (14:14:33 UTC) is used."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 727,
+        "label": "567 likes + 94 reposts + 66 replies observed live on the source post",
+        "observed_at": "2026-09-25T06:05:00+00:00",
+        "evidence_url": "https://x.com/nvidia/status/2103125940825923694"
+      },
+      "tags": [
+        "nvidia",
+        "protein-complex",
+        "open-data",
+        "deepmind",
+        "biomolecular"
+      ],
+      "rank": 7
+    },
+    {
+      "id": "ai-perplexity-photon-fast-search",
+      "section": "AI",
+      "story_type": "Infrastructure release",
+      "title": "Perplexity ships Photon: a Rust retrieval/ranking engine behind new Fast Search, p95 under 230 ms at $1 per 1k requests",
+      "summary": "Perplexity replaced its prior open-source retrieval engine with a new Rust retrieval and ranking stack called Photon, behind a new Fast Search tier. The company reports p95 under 230 ms (median 160 ms) and a -68% per-task cost on six internal agent benchmarks, priced at $1 versus $5 per 1k requests; Photon itself dropped p99 from ~800 ms to ~65 ms with -20% serving machines and 2.5x data/document capacity. Caveat: all latency and cost figures are Perplexity-internal, and the company reports Fast Search is -0.24 relevance and -3 pp answer-availability on its long-tail tests.",
+      "source": {
+        "name": "Perplexity - Photon blog",
+        "url": "https://www.perplexity.ai/hub/blog/photon"
+      },
+      "canonical_url": "https://www.perplexity.ai/hub/blog/photon",
+      "published_at": "2026-09-24T18:07:51+00:00",
+      "corroboration": [
+        {
+          "name": "Perplexity X post",
+          "url": "https://x.com/perplexity_ai/status/2103184653373014509"
+        },
+        {
+          "name": "Fast Search API docs",
+          "url": "https://docs.perplexity.ai/docs/search/fast-search"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @perplexity_ai post with the blog and API docs; the blog page is bot-gated (403) and does not expose a machine-readable timestamp, so the X post time (18:07:51 UTC) is used."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 386,
+        "label": "329 likes + 23 reposts + 34 replies observed live on the source post",
+        "observed_at": "2026-09-25T06:05:00+00:00",
+        "evidence_url": "https://x.com/perplexity_ai/status/2103184653373014509"
+      },
+      "tags": [
+        "perplexity",
+        "search",
+        "retrieval",
+        "rust",
+        "inference-cost"
+      ],
+      "rank": 8
+    },
+    {
+      "id": "rob-feather-30000-wheeled-humanoid",
+      "section": "Robotics",
+      "story_type": "Launch and funding",
+      "title": "Feather emerges from stealth with a $29,990 wheeled humanoid for developers and a $7.6M pre-seed",
+      "summary": "Feather Robotics came out of stealth with a $7.6M pre-seed (led by Gradient, with Builder Capital, Geometry, Seed Innovation and Virgo) and a wheeled dual-arm platform it prices at $29,990 promotional (listed $32,990), with orders open. It targets the developer/low-budget humanoid niche. For builders the entry price point and wheeled base are the differentiators. Caveat: it is a wheeled dual-arm platform, not a biped; the company's 'human strength' claim does not match the published spec (1.8 kg rated / 6.8 kg peak per arm), and there are no uptime or task-success numbers yet.",
+      "source": {
+        "name": "Feather Robotics",
+        "url": "https://feather.dev/"
+      },
+      "canonical_url": "https://feather.dev/",
+      "published_at": "2026-09-24T19:07:59+00:00",
+      "corroboration": [
+        {
+          "name": "Feather X post",
+          "url": "https://x.com/featherrobotics/status/2103199788217057728"
+        },
+        {
+          "name": "Humanoids Daily - Feather launch and funding",
+          "url": "https://www.humanoidsdaily.com/news/feather-launches-30000-wheeled-humanoid-developers-7-6m-funding"
         }
       ],
       "quality": {
         "signal": "corroborated",
         "confidence": "medium",
-        "note": "Machine-exposed datePublished (2026-09-23T15:46:10+00:00); the underlying event is XPENG's own Sept 23 announcement. Independent secondary source reporting a company claim keeps confidence at medium."
+        "note": "Official @featherrobotics post with the company site; Humanoids Daily corroborates. The Humanoids Daily article carries datePublished 2026-09-24; the official X post time (19:07:59 UTC) is used as the publication timestamp. Medium confidence: company-sourced specs and claims."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 191,
+        "label": "148 likes + 19 reposts + 24 replies observed live on the source post",
+        "observed_at": "2026-09-25T06:05:00+00:00",
+        "evidence_url": "https://x.com/featherrobotics/status/2103199788217057728"
       },
       "tags": [
-        "xpeng",
-        "iron",
+        "feather",
         "humanoid",
-        "supply-chain",
-        "manufacturing"
+        "wheeled",
+        "funding",
+        "pre-seed"
       ],
-      "rank": 22
+      "rank": 9
     },
     {
-      "id": "rob-vesoma-stealth-emerges",
-      "section": "Robotics",
-      "story_type": "Startup launch",
-      "title": "Munich stealth team emerges as Vesoma, with former DeepMind research director Martin Riedmiller as chief AI officer",
-      "summary": "The European startup behind the Kyle walking prototype has announced itself as Vesoma, a 60+ person team across Munich and Limassol, with Martin Riedmiller (former Google DeepMind research director) as chief AI officer, led by Synapticon co-founder Nikolai Ensslen and Easybrain co-founder Peter Skoromnyi. The first Vesoma 1 units are under construction; the team says it designed, built and walked its first humanoid prototypes within six months using a learned locomotion policy. Its thesis: robots learn physical work through their own interactions. Caveat: published product imagery is explicitly labeled design visualization, and there is no customer delivery date yet (the earlier early-2027 unveiling target is unchanged).",
+      "id": "btc-bitget-352m-hack",
+      "section": "Bitcoin",
+      "story_type": "Security incident",
+      "title": "Bitget reports ~$352M drained in a hot/warm wallet exploit; withdrawals paused, user funds said to be safe",
+      "summary": "Bitget's CEO said unauthorized transfers took roughly $351.6M from hot and warm wallets at 18:31 UTC on Sept 24, with cold wallets claimed intact, withdrawals paused, and the user protection fund cited at over $464M. It is a custodial-exchange incident, not a Bitcoin protocol failure. For builders the operational detail (hot/warm vs cold separation, withdrawal pause, protection-fund sizing) is what a self-hosting or DeFi-focused team should weigh. Caveat: it is a company statement, not a completed forensic report, and the root cause has not been published.",
       "source": {
-        "name": "Humanoids Daily - Vesoma emerges from stealth",
-        "url": "https://www.humanoidsdaily.com/news/vesoma-emerges-stealth-humanoid-robot"
+        "name": "CoinDesk - Bitget loses ~$352M in hack",
+        "url": "https://www.coindesk.com/markets/2026/09/24/crypto-exchange-bitget-loses-usd352-million-in-hack-claims-user-funds-are-safe"
       },
-      "canonical_url": "https://www.humanoidsdaily.com/news/vesoma-emerges-stealth-humanoid-robot",
-      "published_at": "2026-09-23T14:02:46+00:00",
+      "canonical_url": "https://www.coindesk.com/markets/2026/09/24/crypto-exchange-bitget-loses-usd352-million-in-hack-claims-user-funds-are-safe",
+      "published_at": "2026-09-24T22:01:14+00:00",
       "corroboration": [
         {
-          "name": "Humanoids Daily - Munich stealth humanoid 'Kyle' prototype (Sept 15)",
-          "url": "https://www.humanoidsdaily.com/news/munich-stealth-humanoid-startup-shows-kyle-prototype-targets-2027-reveal"
+          "name": "CoinDesk X post",
+          "url": "https://x.com/CoinDesk/status/2103243387105431641"
         }
       ],
       "quality": {
         "signal": "corroborated",
         "confidence": "medium",
-        "note": "Machine-exposed datePublished (2026-09-23T14:02:46+00:00); secondary coverage of a company X announcement. Units are 'under construction', so confidence is medium."
+        "note": "CoinDesk coverage with matching official X post; the exact figure is the company's own reported number. Medium confidence because it is pre-forensics."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 176,
+        "label": "126 likes + 23 reposts + 27 replies observed live on the source post",
+        "observed_at": "2026-09-25T06:05:00+00:00",
+        "evidence_url": "https://x.com/CoinDesk/status/2103243387105431641"
       },
       "tags": [
-        "vesoma",
-        "humanoid",
-        "locomotion",
-        "startup",
-        "martin-riedmiller"
+        "bitget",
+        "exchange",
+        "security",
+        "hot-wallet",
+        "custody"
       ],
-      "rank": 23
+      "rank": 10
+    },
+    {
+      "id": "btc-anchorage-stacks-pox5-custody",
+      "section": "Bitcoin",
+      "story_type": "Infrastructure",
+      "title": "Anchorage Digital brings institutional custody to Stacks PoX-5 Bitcoin staking via the BTC Bond",
+      "summary": "Anchorage Digital is building institutional custody for Stacks PoX-5 Bitcoin Staking: clients enroll and fund a BTC Bond from an Anchorage Digital Bank, N.A. account, receive weekly BTC rewards, and keep principal on Bitcoin L1 in a consensus timelock. It is building support, not a live service. For builders the important detail is the custody model (principal stays on L1, STX-side registration and signing stay with the client), which is what a bank-grade institution can underwrite. Caveat: it is Stacks yield, not Bitcoin-native staking, and the flow is not yet operational.",
+      "source": {
+        "name": "Stacks blog - Anchorage institutional custody for PoX-5",
+        "url": "https://www.stacks.co/blog/anchorage-digital-brings-institutional-custody-to-bitcoin-staking-on-stacks"
+      },
+      "canonical_url": "https://www.stacks.co/blog/anchorage-digital-brings-institutional-custody-to-bitcoin-staking-on-stacks",
+      "published_at": "2026-09-24T14:19:27+00:00",
+      "corroboration": [
+        {
+          "name": "Stacks X post",
+          "url": "https://x.com/Stacks/status/2103125812103016654"
+        },
+        {
+          "name": "Anchorage press release",
+          "url": "https://www.anchorage.com/press-room/anchorage-digital-to-enable-institutional-bitcoin-staking-with-stacks"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Official Stacks blog with machine-exposed datePublished (2026-09-24T10:19:27-04:00 = 14:19:27 UTC) and official @Stacks X post; the Anchorage press release corroborates. Medium confidence because it is an announced build, not a shipped product."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 155,
+        "label": "110 likes + 29 reposts + 16 replies observed live on the source post",
+        "observed_at": "2026-09-25T06:05:00+00:00",
+        "evidence_url": "https://x.com/Stacks/status/2103125812103016654"
+      },
+      "tags": [
+        "stacks",
+        "pox-5",
+        "custody",
+        "anchorage",
+        "institutional"
+      ],
+      "rank": 11
+    },
+    {
+      "id": "rob-o-id-modular-humanoid-funding",
+      "section": "Robotics",
+      "story_type": "Funding",
+      "title": "Tokyo's O-ID raises a $1.2M pre-seed for a modular, serviceable humanoid aimed at auto and logistics",
+      "summary": "Tokyo startup O-ID closed a $1.2M pre-seed (led by TAWANI Ventures, with Hustle Fund, Techstars and angels) for a modular humanoid with swappable joints, limbs and compute, aimed at Japanese auto and logistics. It is a small early round, not a launch. For builders the angle is modularity as a serviceability/cost strategy. Caveat: no price, volume, or rollout date; the Sumitomo Electric relationship is an exploratory letter of intent, not an order; and the company describes a holonomic base, so 'humanoid' should not be read as a walking biped.",
+      "source": {
+        "name": "Humanoids Daily - O-ID modular humanoid funding",
+        "url": "https://www.humanoidsdaily.com/news/o-id-modular-humanoid-robot-funding"
+      },
+      "canonical_url": "https://www.humanoidsdaily.com/news/o-id-modular-humanoid-robot-funding",
+      "published_at": "2026-09-24T14:06:40+00:00",
+      "corroboration": [
+        {
+          "name": "Humanoids Daily X post",
+          "url": "https://x.com/humanoidsdaily/status/2103123958102884640"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "low",
+        "note": "Press release supplied to Humanoids Daily; machine-exposed datePublished 2026-09-24. Low-medium confidence: small pre-seed, no public wire URL, product still in pre-launch/animation stage."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 108,
+        "label": "96 likes + 7 reposts + 5 replies observed live on the source post",
+        "observed_at": "2026-09-25T06:05:00+00:00",
+        "evidence_url": "https://x.com/humanoidsdaily/status/2103123958102884640"
+      },
+      "tags": [
+        "o-id",
+        "modular",
+        "humanoid",
+        "funding",
+        "japan"
+      ],
+      "rank": 12
+    },
+    {
+      "id": "lon-lsp2-nature-lifespan",
+      "section": "Longevity",
+      "story_type": "Animal-model research",
+      "title": "Nature: two papers recast the fruit-fly protein Lsp2 as a nutrient-sensing link from diet to lifespan",
+      "summary": "Two Nature papers (with a matching News & Views) show that the Drosophila storage protein Lsp2 links mTORC1 to target-mRNA translation and, in a second paper, links early-life diet to adult translation and lifespan, recasting dietary restriction as a nutrient-sensing -> translation-control -> lifespan mechanism in development and adulthood. This is animal (Drosophila) evidence, not a human intervention, and it is a mechanism result rather than a therapeutic. For builders the significance is a named, testable handle on how nutrient sensing gates translation that may be conserved. Caveat: all results are in fruit flies; no human data is presented.",
+      "source": {
+        "name": "Nature News & Views - Surprising protein links dietary restriction to...",
+        "url": "https://www.nature.com/articles/d41586-026-02774-0"
+      },
+      "canonical_url": "https://www.nature.com/articles/d41586-026-02774-0",
+      "published_at": "2026-09-24T18:21:01+00:00",
+      "corroboration": [
+        {
+          "name": "Nature X post",
+          "url": "https://x.com/Nature/status/2103187966587740166"
+        },
+        {
+          "name": "Primary paper - Lsp2 links mTORC1 to TOP mRNA translation and lifespan (Nature)",
+          "url": "https://www.nature.com/articles/s41586-026-11029-x"
+        },
+        {
+          "name": "Primary paper - Lsp2 links early-life diet to adult translation and lifespan...",
+          "url": "https://www.nature.com/articles/s41586-026-11031-3"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official @Nature post linking the N&V and both primary Nature papers. The N&V and papers are dated 2026-09-23; the in-window @Nature announcement (18:21:01 UTC, 2026-09-24) is used as the publication timestamp since the N&V exposes only a date-level datePublished."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 94,
+        "label": "72 likes + 22 reposts + 0 replies observed live on the source post",
+        "observed_at": "2026-09-25T06:05:00+00:00",
+        "evidence_url": "https://x.com/Nature/status/2103187966587740166"
+      },
+      "tags": [
+        "nature",
+        "drosophila",
+        "lifespan",
+        "nutrient-sensing",
+        "mtorc1"
+      ],
+      "rank": 13
+    },
+    {
+      "id": "lon-nih-linked-discoveries",
+      "section": "Longevity",
+      "story_type": "Research tooling release",
+      "title": "NIH launches 'Linked Discoveries,' an experimental PubMed tool mapping related work and replications across ~29M papers",
+      "summary": "NIH launched Linked Discoveries, an experimental tool layered over roughly 29 million PubMed papers that maps related work including replications, with a same-day Science editorial on replication. It is research infrastructure, not a finding. For longevity/biotech builders it lowers the cost of checking whether a claimed intervention has independent support before you build on it. Caveat: the tool 'does not judge study quality or determine whether a finding has been replicated,' and NLM says the first public version will change with feedback.",
+      "source": {
+        "name": "NIH release - NIH launches new PubMed tool to strengthen research...",
+        "url": "https://www.nih.gov/news-events/news-releases/nih-launches-new-pubmed-tool-strengthen-research-replication-reproducibility"
+      },
+      "canonical_url": "https://www.nih.gov/news-events/news-releases/nih-launches-new-pubmed-tool-strengthen-research-replication-reproducibility",
+      "published_at": "2026-09-24T18:52:41+00:00",
+      "corroboration": [
+        {
+          "name": "NIH X post",
+          "url": "https://x.com/NIH/status/2103195935752810876"
+        },
+        {
+          "name": "Science editorial on replication (tweeted same day)",
+          "url": "https://x.com/ScienceMagazine/status/2103205363520557238"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official NIH news release with official @NIH X post; the NIH page is bot-gated (403) to curl, so the @NIH post time (18:52:41 UTC) is used as the publication timestamp."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 81,
+        "label": "63 likes + 16 reposts + 2 replies observed live on the source post",
+        "observed_at": "2026-09-25T06:05:00+00:00",
+        "evidence_url": "https://x.com/NIH/status/2103195935752810876"
+      },
+      "tags": [
+        "nih",
+        "pubmed",
+        "replication",
+        "reproducibility",
+        "research-infra"
+      ],
+      "rank": 14
+    },
+    {
+      "id": "rob-tesla-optimus-gen3-renders",
+      "section": "Robotics",
+      "story_type": "Catch-up / analysis",
+      "title": "Tesla app 'gen3' Optimus renders surface; Humanoids Daily says the files sit in a mock assets folder",
+      "summary": "Files labeled 'gen3' for Optimus have been in the Tesla Android app since late August, with higher-resolution copies arriving early September; a follow-up analysis compares the outlines (head, neck, shins, shoulders) and notes the apparent width differences are 2D renders, not measured hardware. @Tesla_Optimus posted nothing. It is not confirmation of Gen 3 hardware. For builders the take is to watch the app asset pipeline as a soft signal, not to treat renders as a spec. Caveat: the account said the files sit in assets/mock/, so they may be placeholder art rather than final geometry.",
+      "source": {
+        "name": "Humanoids Daily - Tesla app Optimus gen3 renders",
+        "url": "https://www.humanoidsdaily.com/news/tesla-app-optimus-gen3-renders"
+      },
+      "canonical_url": "https://www.humanoidsdaily.com/news/tesla-app-optimus-gen3-renders",
+      "published_at": "2026-09-24T07:43:04+00:00",
+      "corroboration": [
+        {
+          "name": "Humanoids Daily X post (render comparison)",
+          "url": "https://x.com/humanoidsdaily/status/2103100540628459995"
+        }
+      ],
+      "quality": {
+        "signal": "developing",
+        "confidence": "low",
+        "note": "Secondary coverage of app-asset files, not an official Tesla release; machine-exposed datePublished 2026-09-24T07:43:04. Low confidence: 'gen3' is a label in mock assets, and @Tesla_Optimus was silent in-window. Labelled Catch-up since the underlying files first surfaced before the primary window."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 72,
+        "label": "66 likes + 4 reposts + 2 replies observed live on the source post",
+        "observed_at": "2026-09-25T06:05:00+00:00",
+        "evidence_url": "https://x.com/humanoidsdaily/status/2103100540628459995"
+      },
+      "tags": [
+        "tesla",
+        "optimus",
+        "gen3",
+        "renders",
+        "rumor"
+      ],
+      "rank": 15
+    },
+    {
+      "id": "lon-nih-alz-eye-exam",
+      "section": "Longevity",
+      "story_type": "Preliminary research (developing)",
+      "title": "NIH-funded work: early Alzheimer's-associated vascular changes may be visible on a non-invasive eye exam",
+      "summary": "NIH highlighted funded work suggesting that early Alzheimer's-associated vascular changes may be detectable via non-invasive eye (retinal) imaging. It is a preliminary signal, not a validated clinical test. For builders the value is a cheap, non-invasive screening modality that could front-load an aging/neurodegeneration pipeline. Caveat: 'may be detectable' is not a diagnostic; the in-window @NIH post links to a paywalled ClinicalKey item rather than a public PubMed landing page, so the result is not independently verifiable from the post alone.",
+      "source": {
+        "name": "NIH X post (linking the ClinicalKey item)",
+        "url": "https://x.com/NIH/status/2103276571322675228"
+      },
+      "canonical_url": "https://www.clinicalkey.com/#!/content/playContent/1-s2.0-S2274580726001597",
+      "published_at": "2026-09-25T00:13:06+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "developing",
+        "confidence": "low",
+        "note": "Official @NIH post (00:13:06 UTC) linking a paywalled ClinicalKey player; no public PubMed landing page is exposed in the post. Low confidence: preliminary, paywalled canonical, 'may be detectable' framing."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 49,
+        "label": "38 likes + 9 reposts + 2 replies observed live on the source post",
+        "observed_at": "2026-09-25T06:05:00+00:00",
+        "evidence_url": "https://x.com/NIH/status/2103276571322675228"
+      },
+      "tags": [
+        "nih",
+        "alzheimer",
+        "retinal-imaging",
+        "screening",
+        "vascular"
+      ],
+      "rank": 16
+    },
+    {
+      "id": "lon-fda-galleri-advisory",
+      "section": "Longevity",
+      "story_type": "Policy / advisory (developing)",
+      "title": "FDA advisory panel weighs GRAIL's Galleri multi-cancer early-detection test; panel split on effectiveness",
+      "summary": "An FDA advisory committee reviewed GRAIL's Galleri multi-cancer early-detection blood test, with votes reported as 10-0 on safety, 6-4 on effectiveness, and 7-2-1 that benefits outweigh risks. It is an advisory committee vote, not an approval, and there is no mortality-endpoint data. For longevity-minded readers it is the regulatory inflection point for multi-cancer early-detection (MCED) as a screening substrate. Caveat: the @Nature post surfaces this in a context News & Views that is itself dated March 2026, and @FDA did not post in-window, so treat the panel vote as the fresh event and the Nature piece as corroboration.",
+      "source": {
+        "name": "Nature News & Views - Cancer blood tests are everywhere, here's why you...",
+        "url": "https://www.nature.com/articles/d41586-026-00661-2"
+      },
+      "canonical_url": "https://www.nature.com/articles/d41586-026-00661-2",
+      "published_at": "2026-09-24T16:44:42+00:00",
+      "corroboration": [
+        {
+          "name": "Nature X post (in-window announcement of the FDA panel coverage)",
+          "url": "https://x.com/Nature/status/2103163728808001645"
+        }
+      ],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "In-window @Nature post (16:44:42 UTC) surfacing the FDA advisory panel vote on GRAIL Galleri; the linked Nature N&V is dated 2026-03-04 (context piece), and @FDA was silent in-window. Medium confidence: advisory-only, panel split on effectiveness."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 46,
+        "label": "37 likes + 8 reposts + 1 reply observed live on the source post",
+        "observed_at": "2026-09-25T06:05:00+00:00",
+        "evidence_url": "https://x.com/Nature/status/2103163728808001645"
+      },
+      "tags": [
+        "fda",
+        "galleri",
+        "grail",
+        "mcED",
+        "advisory-committee"
+      ],
+      "rank": 17
     }
   ]
 }
