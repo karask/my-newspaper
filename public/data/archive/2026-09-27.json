@@ -1,0 +1,674 @@
+{
+  "schema_version": 1,
+  "edition": {
+    "date": "2026-09-27",
+    "title": "The Daily Signal",
+    "kicker": "Primary-source tech intelligence, compiled from the live wire.",
+    "status": "live",
+    "updated_at": "2026-09-27T07:15:00+03:00"
+  },
+  "sections": [
+    "Bitcoin",
+    "AI",
+    "Robotics",
+    "Longevity"
+  ],
+  "lead_story_id": "ai-grok-bot-plaid-finance",
+  "stories": [
+    {
+      "id": "ai-grok-bot-plaid-finance",
+      "section": "AI",
+      "story_type": "Product launch",
+      "title": "Grok Bot ships a Plaid-backed read-only Finance connector: bank, card and investment accounts",
+      "summary": "SpaceXAI's official @bot account (Sep 26 19:54:25 UTC) launched a Plaid-backed, read-only Finance connector for Grok Bot, letting the persistent computer-use agent pull bank, card and investment accounts to answer spending and investment questions; a same-thread follow-up points to the Bot marketplace where it is listed. This is a new data plane for a persistent agent, not a new model — it extends Grok Bot's connector stack to personal finance. For builders the pattern is the interesting part: a read-only broker between a general agent and financial rails, with 'never sees your logins' and one-click unlink. Caveat: availability is gated to paid Cursor / SuperGrok / Teams / Enterprise Bot plans per the product page, and there is no dedicated x.ai/news post — the X thread is the announcement.",
+      "source": {
+        "name": "Grok Bot X post",
+        "url": "https://x.com/bot/status/2103936247995752705"
+      },
+      "canonical_url": "https://x.ai/bot",
+      "published_at": "2026-09-26T19:54:25+00:00",
+      "corroboration": [
+        {
+          "name": "Grok Bot follow-up post",
+          "url": "https://x.com/bot/status/2103936249832903074"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @bot post plus official x.ai/bot product page; the X post time (19:54:25 UTC) is used as the publication timestamp."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 5103,
+        "label": "4345 likes + 371 reposts + 387 replies observed live on the source post",
+        "observed_at": "2026-09-27T03:55:00+00:00",
+        "evidence_url": "https://x.com/bot/status/2103936247995752705"
+      },
+      "tags": [
+        "spacexai",
+        "grok-bot",
+        "plaid",
+        "finance",
+        "connectors",
+        "computer-use"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "ai-openai-devday-2026",
+      "section": "AI",
+      "story_type": "Event",
+      "title": "OpenAI DevDay 2026 countdown: keynote Sep 29, Codex session on a >1,000-hour coding-agent run",
+      "summary": "@OpenAIDevs (Sep 26 19:28:30 UTC) opened the 72-hour countdown to DevDay 2026 (Tuesday Sep 29, keynote 10:00 PDT / 17:00 UTC), with the livestream at openai.com/live/ and in-person apps closed. The agenda teases a Codex session on an internal >1,000-hour coding-agent run. For builders this is the next big OpenAI surface: expect model/agent announcements and pricing there. Caveat: it is a calendar/livestream pointer, not a release — no model, API, pricing or code ship is included in the post.",
+      "source": {
+        "name": "OpenAI DevDay countdown post",
+        "url": "https://x.com/OpenAIDevs/status/2103929727761137940"
+      },
+      "canonical_url": "https://openai.com/devday/",
+      "published_at": "2026-09-26T19:28:30+00:00",
+      "corroboration": [
+        {
+          "name": "OpenAI live stream page",
+          "url": "https://openai.com/live/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @OpenAIDevs post; the X post time (19:28:30 UTC) is the publication timestamp."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 7672,
+        "label": "6881 likes + 339 reposts + 452 replies observed live on the source post",
+        "observed_at": "2026-09-27T03:55:00+00:00",
+        "evidence_url": "https://x.com/OpenAIDevs/status/2103929727761137940"
+      },
+      "tags": [
+        "openai",
+        "devday",
+        "codex",
+        "coding-agent",
+        "event"
+      ],
+      "rank": 2
+    },
+    {
+      "id": "btc-peirce-resignation-date",
+      "section": "Bitcoin",
+      "story_type": "Regulation / personnel",
+      "title": "SEC Commissioner Hester Peirce sets her last day: Oct 2, 2026",
+      "summary": "Hester Peirce posted her resignation letter with 'T minus 7' (Sep 25 17:08:59 UTC), fixing her final day at the SEC as October 2, 2026. She led the SEC's Crypto Task Force and has been the commission's most consistent crypto advocate; after her departure the commission is down to two seated members, Atkins and Uyeda. For builders this is the clearest marker yet of how much of the 2026 crypto-rulemaking posture was tied to one commissioner. Caveat: it is a personnel exit, not a rule change; no SEC.gov release was issued, only the letter image on X.",
+      "source": {
+        "name": "Hester Peirce X post",
+        "url": "https://x.com/HesterPeirce/status/2103532228667965651"
+      },
+      "canonical_url": "https://x.com/HesterPeirce/status/2103532228667965651",
+      "published_at": "2026-09-25T17:08:59+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @HesterPeirce post with her resignation letter; the X post time (17:08:59 UTC) is the publication timestamp. Medium confidence: the date is fixed by her own post, but no SEC.gov release corroborates it."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 6034,
+        "label": "4443 likes + 477 reposts + 1114 replies observed live on the source post",
+        "observed_at": "2026-09-27T03:55:00+00:00",
+        "evidence_url": "https://x.com/HesterPeirce/status/2103532228667965651"
+      },
+      "tags": [
+        "sec",
+        "hester-peirce",
+        "crypto-task-force",
+        "regulation",
+        "personnel"
+      ],
+      "rank": 3
+    },
+    {
+      "id": "ai-codex-full-outage",
+      "section": "AI",
+      "story_type": "Infrastructure / ops",
+      "title": "OpenAI Codex full outage, then all-clear: 4 components down ~1h, no RCA yet",
+      "summary": "OpenAI's status page recorded a full Codex outage affecting 4 components (identified ~17:58, resolved ~18:54 on Sep 25), with the developer-facing all-clear posted by @OpenAIDevs at 01:00:16 UTC Sep 26; the status page lists a 'login via API key' workaround during the incident and now reads fully operational, with Codex 90-day uptime at 99.95%. For builders running agents on Codex this is the current availability reference point heading into DevDay. Caveat: no root-cause analysis — status only cites an 'internal issue', and status-page display timestamps are not labeled UTC; the X stamp is.",
+      "source": {
+        "name": "OpenAI status incident",
+        "url": "https://status.openai.com/incidents/01M3DCNWMW57HYK8FJ5FBFPA39"
+      },
+      "canonical_url": "https://status.openai.com/incidents/01M3DCNWMW57HYK8FJ5FBFPA39",
+      "published_at": "2026-09-26T01:00:16+00:00",
+      "corroboration": [
+        {
+          "name": "OpenAI Developers X all-clear",
+          "url": "https://x.com/OpenAIDevs/status/2103650830604030228"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official OpenAI status incident page with the official @OpenAIDevs all-clear post; the X post time (01:00:16 UTC) is used as the publication timestamp."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 5659,
+        "label": "5224 likes + 196 reposts + 239 replies observed live on the source post",
+        "observed_at": "2026-09-27T03:55:00+00:00",
+        "evidence_url": "https://x.com/OpenAIDevs/status/2103650830604030228"
+      },
+      "tags": [
+        "openai",
+        "codex",
+        "outage",
+        "availability",
+        "devday"
+      ],
+      "rank": 4
+    },
+    {
+      "id": "btc-usdt-relaunch-rgb-utexo",
+      "section": "Bitcoin",
+      "story_type": "Stablecoin / infrastructure",
+      "title": "Tether: USDT's relaunch on Bitcoin runs on Utexo and RGB",
+      "summary": "Bitfinex's official account (Sep 25 15:14 UTC) said 'USDt's relaunch on Bitcoin runs on infrastructure @utexocom and @RGB_Hub have built. RGB is the settlement layer'; Tether CEO Paolo Ardoino (Sep 24 13:56 UTC) added 'USDT on Bitcoin. It's coming home.' The relaunch would put USDT onto Bitcoin via RGB asset tokens and Utexo, a BTC-native DeFi layer, rather than a new chain. For builders this is a second, USDT-side parallel to USDC's planned arrival on a Bitcoin-anchored chain — the stablecoin-on-Bitcoin race now has a named settlement layer. Caveat: no launch date, amount or official tether.io/bitfinex.com page was found; the Morgan Stanley context came from a dinner quote, not a signed mandate.",
+      "source": {
+        "name": "Bitfinex X post",
+        "url": "https://x.com/bitfinex/status/2103503493944283257"
+      },
+      "canonical_url": "https://x.com/bitfinex/status/2103503493944283257",
+      "published_at": "2026-09-25T15:14:48+00:00",
+      "corroboration": [
+        {
+          "name": "Paolo Ardoino X post",
+          "url": "https://x.com/paoloardoino/status/2103121411338375272"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Official @bitfinex and Tether CEO posts; the @bitfinex post time (15:14:48 UTC) is used as the publication timestamp. Medium confidence: no dated official announcement page located."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1872,
+        "label": "1513 likes + 202 reposts + 157 replies observed live on the @paoloardoino post",
+        "observed_at": "2026-09-27T03:55:00+00:00",
+        "evidence_url": "https://x.com/paoloardoino/status/2103121411338375272"
+      },
+      "tags": [
+        "tether",
+        "usdt",
+        "rgb",
+        "utexo",
+        "stablecoins",
+        "bitcoin-l1"
+      ],
+      "rank": 5
+    },
+    {
+      "id": "rob-freemocap-open-source-mocap",
+      "section": "Robotics",
+      "story_type": "Open-source release",
+      "title": "FreeMoCap: fully open-source, hardware-agnostic motion capture that runs on cheap webcams",
+      "summary": "FreeMoCap shipped v2.0.0-alpha.25 (tagged Sep 24 19:06 UTC; the project's X account promoted it Sep 25) — a free, open-source, hardware- and software-agnostic, research-grade markerless motion-capture system and platform built for decentralized research, education and training, with pip-installable CUDA support. The repo has ~10.3k stars and a steady weekly-alpha cadence. For builders this lowers the data-collection floor: human motion capture for robot learning no longer requires a motion-capture studio. Caveat: it is an alpha release of a long-running open project (since 2021), not a v1.0; the X post is promotion of the latest alpha, and accuracy claims are project-maintained, not independently benchmarked.",
+      "source": {
+        "name": "FreeMoCap announcement post",
+        "url": "https://x.com/IlirAliu_/status/2103537109680165025"
+      },
+      "canonical_url": "https://github.com/freemocap/freemocap",
+      "published_at": "2026-09-25T17:28:23+00:00",
+      "corroboration": [
+        {
+          "name": "FreeMoCap release v2.0.0-alpha.25",
+          "url": "https://github.com/freemocap/freemocap/releases/tag/v2.0.0-alpha.25"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Project X post (17:28:23 UTC) with the matching GitHub release (tagged 2026-09-24 19:06:29 UTC) and official freemocap.org site; the X post time is used as the publication timestamp."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 715,
+        "label": "623 likes + 86 reposts + 6 replies observed live on the source post",
+        "observed_at": "2026-09-27T04:10:00+00:00",
+        "evidence_url": "https://x.com/IlirAliu_/status/2103537109680165025"
+      },
+      "tags": [
+        "freemocap",
+        "motion-capture",
+        "open-source",
+        "markerless",
+        "robot-learning"
+      ],
+      "rank": 6
+    },
+    {
+      "id": "btc-usdc-alpen-cctp",
+      "section": "Bitcoin",
+      "story_type": "Stablecoin / infrastructure",
+      "title": "Catch-up: USDC and CCTP are coming to Alpen, Circle's first Bitcoin-anchored chain",
+      "summary": "Alpen announced (official blog, Sep 24, 2026, with @circle and @AlpenLabs posts) that Circle-issued USDC and Circle's Cross-Chain Transfer Protocol will be available on Alpen at its mainnet launch, enabling lending, borrowing and trading around native BTC. Alpen is a zero-knowledge, Bitcoin-anchored rollup where 'BTC stays on Bitcoin' in their architecture; Circle and Alpen are commercial partners, not affiliates. For builders this is the first Circle-supported chain explicitly built for a Bitcoin financial system. Caveat: not live — USDC/CCTP arrive at mainnet launch, and 'BTC stays on Bitcoin' is a design claim, not verified infrastructure.",
+      "source": {
+        "name": "Alpen - USDC is coming to Bitcoin",
+        "url": "https://www.alpen.org/blog/usdc-is-coming-to-bitcoin"
+      },
+      "canonical_url": "https://www.alpen.org/blog/usdc-is-coming-to-bitcoin",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "Circle X post",
+          "url": "https://x.com/circle/status/2103122279999607181"
+        },
+        {
+          "name": "Alpen Labs X post",
+          "url": "https://x.com/AlpenLabs/status/2103122283006996655"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official Alpen blog post dated September 24, 2026 with matching @circle and @AlpenLabs posts; the @AlpenLabs post time (14:00:01 UTC) is used as the publication timestamp since the blog exposes only a date. Catch-up: released ~40h before the edition."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 387,
+        "label": "313 likes + 50 reposts + 24 replies observed live on the @AlpenLabs post",
+        "observed_at": "2026-09-27T03:55:00+00:00",
+        "evidence_url": "https://x.com/AlpenLabs/status/2103122283006996655"
+      },
+      "tags": [
+        "circle",
+        "usdc",
+        "cctp",
+        "alpen",
+        "bitcoin-rollup",
+        "stablecoins"
+      ],
+      "rank": 7
+    },
+    {
+      "id": "lon-myofibril-number-atrophy",
+      "section": "Longevity",
+      "story_type": "Research (human + animal mechanism)",
+      "title": "Journal of Physiology: muscle atrophy from aging and disuse is mainly loss of myofibril number, not size",
+      "summary": "A Journal of Physiology paper (online Sep 25, 2026; promoted by @DMSabatini Sep 26 and @davidasinclair Sep 26) used macroscopic-to-ultrastructural analyses in human and mouse tissue to show that aging- and disuse-induced muscle-fibre atrophy is mediated primarily by a lower number of myofibrils rather than smaller myofibril size, in SERCA1 fibres. For builders of sarcopenia interventions this reframes the target: preserving myofibril number — not just cross-sectional area — is the mechanistic lever. Caveat: it is an observational/mechanism paper, not a trial or therapeutic result, and the authors' own amplification is commentary, not a new finding.",
+      "source": {
+        "name": "David Sinclair X post",
+        "url": "https://x.com/davidasinclair/status/2103991707251695658"
+      },
+      "canonical_url": "https://physoc.onlinibrary.wiley.com/doi/10.1113/JP291728",
+      "published_at": "2026-09-25T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "Author X post",
+          "url": "https://x.com/DMSabatini/status/2103941083625337313"
+        },
+        {
+          "name": "DOI",
+          "url": "https://doi.org/10.1113/JP291728"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Peer-reviewed Journal of Physiology article (Crossref publication date 2026-09-25, no clock time on the publisher page, so noon UTC is used as the stated limitation) with author and expert X posts in-window; the @davidasinclair post time is the in-window trigger, not the paper's publication time."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 307,
+        "label": "285 likes + 17 reposts + 5 replies observed live on the @davidasinclair post",
+        "observed_at": "2026-09-27T04:10:00+00:00",
+        "evidence_url": "https://x.com/davidasinclair/status/2103991707251695658"
+      },
+      "tags": [
+        "journal-of-physiology",
+        "sarcopenia",
+        "myofibrils",
+        "muscle-atrophy",
+        "aging",
+        "mechanism"
+      ],
+      "rank": 8
+    },
+    {
+      "id": "btc-blockstream-corporate-clarification",
+      "section": "Bitcoin",
+      "story_type": "Corporate / infrastructure",
+      "title": "Blockstream: Services USA/Canada mining businesses were spun out in 2024 and are not owned by Blockstream Corp",
+      "summary": "Blockstream's official account (Sep 26 17:28 UTC) clarified that Blockstream Services USA and Canada have, since mid-2024, been spun out with the mining business and are not owned, controlled or managed by Blockstream Corp.; they use the name under a time-limited license. It matters for who actually controls the mining/services entities behind the biggest BTC mining brand. Caveat: it clarifies a 2024 spinout, not a new launch or deal, and no supporting filing was linked in the post.",
+      "source": {
+        "name": "Blockstream X post",
+        "url": "https://x.com/Blockstream/status/2103899502847631486"
+      },
+      "canonical_url": "https://x.com/Blockstream/status/2103899502847631486",
+      "published_at": "2026-09-26T17:28:24+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "low",
+        "note": "Official @Blockstream post; the X post time (17:28:24 UTC) is the publication timestamp. Low confidence: corporate clarification with no linked filing; it clarifies a prior spinout."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 107,
+        "label": "78 likes + 7 reposts + 22 replies observed live on the source post",
+        "observed_at": "2026-09-27T03:55:00+00:00",
+        "evidence_url": "https://x.com/Blockstream/status/2103899502847631486"
+      },
+      "tags": [
+        "blockstream",
+        "mining",
+        "corporate",
+        "governance"
+      ],
+      "rank": 9
+    },
+    {
+      "id": "ai-akamai-anthropic-11-6b",
+      "section": "AI",
+      "story_type": "Infrastructure commitment",
+      "title": "Anthropic commits ~$11.6B over seven years to Akamai dedicated cloud compute, with a warrant for up to 387,051 Series B shares",
+      "summary": "An SEC 8-K filed by Akamai (Sept 24, 2026) discloses that under Project Plans 2 and 3 of the May 5, 2026 master agreement, Anthropic has committed to pay roughly $11.6 billion across two initial seven-year terms for dedicated cloud compute plus managed support, subject to delivery and service-availability requirements and termination rights. The deal also carries a warrant for up to 387,051 Series B non-voting preferred shares at $2,226.60, each convertible into 20 common shares, vesting in tranches tied to $3.0B increments of contractual value. For builders this is a major, contractually-documented AI capacity commitment — the scale of CPU/dedicated-cloud spending around frontier model training and serving. Caveat: the contract date is Sept 18, the public 8-K is Sept 24; TechCrunch's $5.5B capex figure is from its story, not the 8-K body; and neither @AnthropicAI nor @Akamai posted the deal in the window — it surfaced via the filing and Bloomberg.",
+      "source": {
+        "name": "Akamai 8-K (Project Plans 2 and 3)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1086222/000119312526401048/d288154d8k.htm"
+      },
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1086222/000119312526401048/d288154d8k.htm",
+      "published_at": "2026-09-24T20:14:58+00:00",
+      "corroboration": [
+        {
+          "name": "TechCrunch - Anthropic/Akamai $11.6B",
+          "url": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/"
+        },
+        {
+          "name": "Bloomberg X post",
+          "url": "https://x.com/business/status/2103268285630255393"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "SEC 8-K accepted 2026-09-24 16:14:58 ET (20:14:58 UTC) with the TechCrunch write-up (published 2026-09-25 19:13:38 UTC) and Bloomberg's post; the 8-K filing time (20:14:58 UTC) is used as the publication timestamp."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 104,
+        "label": "76 likes + 15 reposts + 13 replies observed live on the @business post",
+        "observed_at": "2026-09-27T04:05:00+00:00",
+        "evidence_url": "https://x.com/business/status/2103268285630255393"
+      },
+      "tags": [
+        "anthropic",
+        "akamai",
+        "infrastructure",
+        "cloud-compute",
+        "funding",
+        "sec-8k"
+      ],
+      "rank": 10
+    },
+    {
+      "id": "lon-ecdna-mmej-poltheta",
+      "section": "Longevity",
+      "story_type": "Research (peer-reviewed, cancer/aging-adjacent)",
+      "title": "Nature: MMEJ repair at TA repeats maintains oncogenic ecDNA — Polθ inhibition destabilizes it",
+      "summary": "A peer-reviewed Nature paper (published 23 Sep 2026; @Nature posted it in-window Sep 26 11:34 UTC) shows that microhomology-mediated end joining, not NHEJ or HR, selectively maintains extrachromosomal DNA: TA-rich loci on ecDNA are break hotspots, FANCM suppresses break formation, and ERCC1–ERCC4 cleavage channels breaks into MMEJ. Disrupting FANCM or Polθ destabilizes ecDNA and compromises the fitness of ecDNA-dependent cancers, identifying Polθ inhibition as a strategy to sensitize ecDNA-driven tumours. For longevity-adjacent builders, it is a concrete mechanism for one of the hallmarks of genomic instability that drives aging and cancer. Caveat: it is oncology, not a longevity intervention; the in-window item is Nature's post of the already-published paper.",
+      "source": {
+        "name": "Nature X post",
+        "url": "https://x.com/Nature/status/2103810371840512359"
+      },
+      "canonical_url": "https://www.nature.com/articles/s41586-026-11048-8",
+      "published_at": "2026-09-23T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "Nature paper (open access)",
+          "url": "https://www.nature.com/articles/s41586-026-11048-8"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Peer-reviewed open-access Nature article published 23 September 2026 (no clock time on the page, so noon UTC is used as the stated limitation) with the official @Nature post in-window (11:34:14 UTC, Sep 26)."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 92,
+        "label": "75 likes + 14 reposts + 3 replies observed live on the source post",
+        "observed_at": "2026-09-27T04:10:00+00:00",
+        "evidence_url": "https://x.com/Nature/status/2103810371840512359"
+      },
+      "tags": [
+        "nature",
+        "ecdna",
+        "mmej",
+        "polytheta",
+        "dna-repair",
+        "cancer",
+        "genomic-instability"
+      ],
+      "rank": 11
+    },
+    {
+      "id": "ai-nscale-3-36b-preipo",
+      "section": "AI",
+      "story_type": "Funding / infrastructure",
+      "title": "Nscale raises $3.36B pre-IPO convertible led by Third Point, with $1B committed by NVIDIA for liquid-cooled GPU clusters",
+      "summary": "Nscale announced (official press release, Sep 25 13:42:05 UTC via @nscale) a $3.36B pre-IPO convertible financing led by Third Point, with NVIDIA, Apollo, Citadel, Hudson Bay and the Abu Dhabi Investment Council participating; $2.36B is at close and NVIDIA's $1B is expected mid-November 2026 into non-voting shares. The notes convert at the IPO, and the company cites more than $103B total contracted value, with proceeds going to power, liquid-cooled data centers and GPU clusters. For builders this is one of the largest AI-infrastructure financing events of the week, and a direct read on GPU-cluster buildout demand. Caveat: NVIDIA's billion is a commitment, not cash at close, and the $103B TCV is Nscale's own figure.",
+      "source": {
+        "name": "Nscale press release",
+        "url": "https://www.nscale.com/press-releases/pre-ipo-convertible-financing"
+      },
+      "canonical_url": "https://www.nscale.com/press-releases/pre-ipo-convertible-financing",
+      "published_at": "2026-09-25T13:42:05+00:00",
+      "corroboration": [
+        {
+          "name": "Nscale X post",
+          "url": "https://x.com/nscale/status/2103480158699270623"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official Nscale press release with official @nscale post; the X post time (13:42:05 UTC) is used as the publication timestamp since the press page exposes no clock time."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 38,
+        "label": "32 likes + 3 reposts + 3 replies observed live on the source post",
+        "observed_at": "2026-09-27T04:05:00+00:00",
+        "evidence_url": "https://x.com/nscale/status/2103480158699270623"
+      },
+      "tags": [
+        "nscale",
+        "nvidia",
+        "gpu-clusters",
+        "funding",
+        "pre-ipo",
+        "data-centers"
+      ],
+      "rank": 12
+    },
+    {
+      "id": "lon-wildfire-smoke-macaque-aging",
+      "section": "Longevity",
+      "story_type": "Research news (animal, preprint)",
+      "title": "Catch-up: Science news — a single wildfire-smoke exposure leaves lasting immune and DNA changes suggesting accelerated aging in macaques",
+      "summary": "Science's news team reports that rhesus macaques exposed to a single 2020 Oregon wildfire smoke event at the Oregon National Primate Research Center — with no immediate harm — show, now as adolescents, lasting immune changes and DNA modifications (epigenetic-clock shifts) consistent with accelerated aging. For builders this is a natural experiment linking a real environmental stressor to durable molecular aging signatures, relevant to air-pollution and aging research. Caveat: Science's news page describes a bioRxiv preprint posted last month (August 2026) that has not yet been peer-reviewed; it is an animal result, not a human clinical finding, and the live Science page was behind a Cloudflare check at fetch time (dated 22 Sep 2026, 4:40 PM ET via the search index).",
+      "source": {
+        "name": "NewsfromScience X post",
+        "url": "https://x.com/NewsfromScience/status/2103658316958236873"
+      },
+      "canonical_url": "https://www.science.org/content/article/single-wildfire-smoke-exposure-causes-lasting-harm-monkey-study-suggests",
+      "published_at": "2026-09-22T20:40:00+00:00",
+      "corroboration": [
+        {
+          "name": "NewsfromScience earlier post",
+          "url": "https://x.com/NewsfromScience/status/2102763706169819472"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Official @NewsfromScience (Science news team) posts; the article is dated 22 Sep 2026, 4:40 PM ET (20:40 UTC) per the search-index copy of the page — the live page was blocked by Cloudflare at fetch time, so that timestamp carries the stated limitation. Catch-up: ~54h before the edition."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 27,
+        "label": "23 likes + 4 reposts + 0 replies observed live on the source post",
+        "observed_at": "2026-09-27T04:10:00+00:00",
+        "evidence_url": "https://x.com/NewsfromScience/status/2103658316958236873"
+      },
+      "tags": [
+        "science",
+        "wildfire-smoke",
+        "rhesus-macaques",
+        "epigenetic-aging",
+        "immune",
+        "environmental"
+      ],
+      "rank": 13
+    },
+    {
+      "id": "lon-heart-graft-recipient-age",
+      "section": "Longevity",
+      "story_type": "Preprint (animal + human tissue)",
+      "title": "Catch-up: bioRxiv preprint — transplanted hearts take on the recipient's biological age, without shifting systemic age",
+      "summary": "A Gladyshev-lab bioRxiv preprint (v1 posted Sep 15, 2026) shows that heterochronic heart grafts in mice, plus human cardiac biopsy data, shift DNA-methylation and expression age of the grafted heart toward the recipient — young hearts age locally, old hearts rejuvenate locally — while the systemic recipient age does not shift in the same direction. This directly tests 'organ replacement as rejuvenation' at the epigenetic level. In-window, @EricTopol highlighted it (Sep 26 15:43 UTC), and the human DNAm set was corrected in-thread to 11 patients, not 400+. Caveat: preprint, not peer-reviewed; mouse models plus a small human biopsy set — correlation, not a treatment trial.",
+      "source": {
+        "name": "Eric Topol X post",
+        "url": "https://x.com/EricTopol/status/2103873061468692586"
+      },
+      "canonical_url": "https://www.biorxiv.org/content/10.64898/2026.09.15.751836v1",
+      "published_at": "2026-09-15T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "bioRxiv preprint (v1)",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.09.15.751836v1"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "bioRxiv preprint (v1 posted 2026-09-15, no clock time, so noon UTC is used as the stated limitation) with the in-window @EricTopol discussion (15:43:20 UTC, Sep 26) as the trigger. Catch-up: the preprint itself predates the 72-hour window; the canonical URL is absent from all archives."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 8,
+        "label": "6 likes + 0 reposts + 2 replies observed live on the source post",
+        "observed_at": "2026-09-27T04:10:00+00:00",
+        "evidence_url": "https://x.com/EricTopol/status/2103873061468692586"
+      },
+      "tags": [
+        "biorxiv",
+        "transplant",
+        "dna-methylation",
+        "epigenetic-age",
+        "gladyshev",
+        "rejuvenation"
+      ],
+      "rank": 14
+    },
+    {
+      "id": "rob-lerobot-humanoids-g1",
+      "section": "Robotics",
+      "story_type": "Open-source integration",
+      "title": "LeRobot: running humanoid loco-manipulation on a Unitree G1 with a π0.5 policy over SONIC motion tokens",
+      "summary": "Hugging Face's LeRobot team published 'Bringing Humanoids to LeRobot' (Sep 25, 2026): it wires a Unitree G1 into the open LeRobot stack, where a π0.5 VLA policy predicts SONIC latent motion tokens and a fast whole-body controller on the G1 decodes them into stable 29-DoF motion, building on the OpenHLM whole-body loco-manipulation work. The key architectural point for builders: VLA inference is too slow to control a biped directly, so a fast controller sits between the learned policy and the robot, and useful loco-manipulation saturates at roughly 40 demonstrations per task. Caveat: it is a community blog integration write-up (signed 'The LeRobot team'), not a versioned LeRobot release or new robot; the underlying policies, docs and hardware are already public.",
+      "source": {
+        "name": "Hugging Face - Bringing Humanoids to LeRobot",
+        "url": "https://huggingface.co/blog/nepyope/bringing-humanoids-to-lerobot"
+      },
+      "canonical_url": "https://huggingface.co/blog/nepyope/bringing-humanoids-to-lerobot",
+      "published_at": "2026-09-25T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "LeRobot G1 docs",
+          "url": "https://huggingface.co/docs/lerobot/unitree_g1"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official LeRobot blog post dated September 25, 2026; the page exposes only a date, so noon UTC is used as the stated limitation. Medium confidence: community article, not a versioned release."
+      },
+      "tags": [
+        "lerobot",
+        "huggingface",
+        "unitree-g1",
+        "sonic",
+        "vla",
+        "whole-body-control"
+      ],
+      "rank": 15
+    },
+    {
+      "id": "rob-wb-wam-official-repo",
+      "section": "Robotics",
+      "story_type": "Open-source release",
+      "title": "WB-WAM: open whole-body humanoid loco-manipulation model — 1,880h heterogeneous pretraining, 81.9% on HumanoidArena",
+      "summary": "The WB-WAM team (Tsinghua, Xiong'an Institute of AI, University of Melbourne) published the official training, data and deployment repository for a whole-body humanoid loco-manipulation world-action model (repo created Sep 25 09:31:32 UTC; project page live). The project page cites 1,880.2 hours of heterogeneous pretraining and an 81.9% mean success rate on seven HumanoidArena tasks, with the real-robot path on a Unitree G1 with Wuji hands. For builders this is another concrete, reproducible whole-body humanoid policy with public data and code. Caveat: the paper link is still 'coming soon' (not yet peer-reviewed), it is one specific G1 + Wuji configuration, and no release tag was verified — the new repo is the event.",
+      "source": {
+        "name": "WB-WAM project page",
+        "url": "https://wb-wam.github.io/"
+      },
+      "canonical_url": "https://github.com/WB-WaM/WB-WAM-Official",
+      "published_at": "2026-09-25T09:31:32+00:00",
+      "corroboration": [
+        {
+          "name": "WB-WAM GitHub repo",
+          "url": "https://github.com/WB-WaM/WB-WAM-Official"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official project page and GitHub repo (created 2026-09-25 09:31:32 UTC); the repo-creation time is used as the publication timestamp. Medium confidence: companion paper not yet public."
+      },
+      "tags": [
+        "wb-wam",
+        "humanoid",
+        "loco-manipulation",
+        "unitree-g1",
+        "world-action-model",
+        "open-source"
+      ],
+      "rank": 16
+    },
+    {
+      "id": "rob-nauticus-50m-loi",
+      "section": "Robotics",
+      "story_type": "Funding / strategic",
+      "title": "Catch-up: Nauticus Robotics signs non-binding LOI for up to $50M strategic investment",
+      "summary": "Nauticus Robotics (NASDAQ: KITT) signed a non-binding letter of intent for a strategic investment of up to $50 million via a private placement, disclosed by PR Newswire (Sep 25, 03:55 ET) and an SEC Form 8-K (accession 0001849820-26-000150). The company makes subsea ROVs and autonomy software; the filing notes final terms could dilute holders or change control. For builders this is the only exact-dollar robotics capital item on the wires this weekend. Caveat: the LOI is non-binding and does not obligate the investor to fund anything; it is subsea autonomy, not a humanoid or embodied-AI venture round.",
+      "source": {
+        "name": "Nauticus PR Newswire release",
+        "url": "https://www.prnewswire.com/news-releases/nauticus-robotics-inc-signs-non-binding-letter-of-intent-for-strategic-investment-of-up-to-50-million-302889932.html"
+      },
+      "canonical_url": "https://www.sec.gov/Archives/edgar/data/1849820/000184982026000150/0001849820-26-000150-index.html",
+      "published_at": "2026-09-25T07:55:00+00:00",
+      "corroboration": [
+        {
+          "name": "SEC 8-K press-release exhibit",
+          "url": "https://www.sec.gov/Archives/edgar/data/1849820/000184982026000150/pressrelease.htm"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "PR Newswire release (03:55 ET / 07:55 UTC, Sep 25) with the matching SEC 8-K; the PR timestamp (07:55 UTC) is used as the publication timestamp. Catch-up: ~43h before the edition. Medium confidence: non-binding LOI, no cash at signing."
+      },
+      "tags": [
+        "nauticus",
+        "subsea-rovs",
+        "strategic-investment",
+        "funding",
+        "loi"
+      ],
+      "rank": 17
+    }
+  ]
+}
