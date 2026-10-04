@@ -1,0 +1,651 @@
+{
+  "schema_version": 1,
+  "edition": {
+    "date": "2026-10-02",
+    "title": "The Daily Signal",
+    "kicker": "Primary-source tech intelligence, compiled from the live wire.",
+    "status": "live",
+    "updated_at": "2026-10-02T08:55:00+03:00"
+  },
+  "sections": [
+    "Bitcoin",
+    "AI",
+    "Robotics",
+    "Longevity"
+  ],
+  "lead_story_id": "ai-gemini4-argon",
+  "stories": [
+    {
+      "id": "btc-zkapi",
+      "section": "Bitcoin",
+      "story_type": "product",
+      "title": "Ethereum Foundation and Open Anonymity Project launch zkAPI: private usage credits for any metered API",
+      "summary": "zkAPI is now live: users deposit ETH or USDC into a vault contract that records their balance as a private note, and each API request is backed by a zero-knowledge proof that the balance covers the cost - so you can pay for metered APIs (AI models included) without the provider learning who you are or how much you've spent. It implements the private-credits design Buterin and Ethereum Foundation dAI lead Davide Crapis published in February, built with the Open Anonymity Project. For builders, this is a privacy-by-default billing primitive for on-chain API consumption that doesn't need account abstraction or account linking. Caveat: it is a launch-day release from two small teams; adoption and which providers ship integrations is still to be proven, and The Block's ethereum.org blog link 404s on direct fetch (the announcement page is reachable from the ethereum.org blog listing).",
+      "source": {
+        "name": "The Block",
+        "url": "https://www.theblock.co/news/defi/2026-10-01-ethereum-foundation-launches-zkapi-417504"
+      },
+      "canonical_url": "https://www.theblock.co/news/defi/2026-10-01-ethereum-foundation-launches-zkapi-417504",
+      "published_at": "2026-10-01T23:22:00+00:00",
+      "corroboration": [
+        {
+          "name": "Ethereum.org blog listing",
+          "url": "https://www.ethereum.org/blog/"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official ethereum.org blog post \"Introducing zkAPI\" is linked from the ethereum.org/blog/ listing with a 2026/10/01 URL (direct canonical path currently 404s to scripted clients, likely not yet indexed/canonicalized server-side). TheBlock reported the launch at 8:22PM EDT Oct 1 with the full technical design. Canonical set to the TheBlock article which is live and has an exposed publication timestamp."
+      },
+      "tags": [
+        "zk-api",
+        "ethereum-foundation",
+        "zero-knowledge",
+        "privacy",
+        "defi"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "btc-sec-custody",
+      "section": "Bitcoin",
+      "story_type": "regulation",
+      "title": "SEC proposes rules letting investment advisers and funds self-custody crypto under a federal framework",
+      "summary": "The SEC released a proposed rule (2026-100) addressing how registered investment advisers and funds may custody crypto under the federal regime, moving toward allowing advisers and funds to hold assets in self-custody arrangements rather than relying exclusively on third-party custodians. This is the concrete regulatory text that decides how institutional Bitcoin and crypto custody will actually work once the proposal moves to a rule - material for any protocol building custody rails or tokenized products that need adviser approval. Caveat: it is a proposal, not a final rule; comment period and possible changes before adoption are ahead, and sec.gov rate-limited direct timestamp retrieval, so the publication time is from TheBlock/CoinDesk same-day coverage.",
+      "source": {
+        "name": "The Block",
+        "url": "https://www.theblock.co/news/regulation/2026-10-01-sec-proposes-crypto-custody-rule-investment-advisers-funds-417498"
+      },
+      "canonical_url": "https://www.sec.gov/newsroom/press-releases/2026-100-sec-proposal-would-address-how-investment-advisers-funds-can-custody-crypto-assets-under-federal",
+      "published_at": "2026-10-01T21:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/10/01/u-s-sec-maps-out-crypto-custody-in-new-proposal-that-furthers-its-digital-assets-agenda"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official SEC press release page exists at the canonical URL (title verified); TheBlock and CoinDesk both covered it on Oct 1. Direct sec.gov fetch returned 403 to scripted clients, so timestamp is from TheBlock's 5:00PM EDT publication time."
+      },
+      "tags": [
+        "sec",
+        "custody",
+        "regulation",
+        "advisers",
+        "institutional"
+      ],
+      "rank": 2
+    },
+    {
+      "id": "btc-lloyds-visa-usdc",
+      "section": "Bitcoin",
+      "story_type": "institutional",
+      "title": "Lloyds and Visa settle a live $750,000 cross-border payment in USDC in pilot",
+      "summary": "In a live cross-border pilot, Lloyds and Visa settled a $750,000 payment using USDC end-to-end, extending their earlier USDC settlement experiments into a real money-movement test between a major European bank and the payments network. This is one of the first demonstrations that stablecoin settlement can work inside an existing card-network rails experiment at material size. Caveat: it is a pilot transaction, not a production rail; volumes, latency guarantees, and which corridors it covers are not yet disclosed.",
+      "source": {
+        "name": "The Block",
+        "url": "https://www.theblock.co/news/business/2026-10-01-lloyds-visa-settle-750000-using-usdc-in-live-cross-border-pilot-417378"
+      },
+      "canonical_url": "https://www.theblock.co/news/business/2026-10-01-lloyds-visa-settle-750000-using-usdc-in-live-cross-border-pilot-417378",
+      "published_at": "2026-10-01T11:13:00+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "TheBlock business desk reporting of a live pilot settlement; no independent official Lloyds/Visa release fetched in-window (press releases not located in the window), so single strong source."
+      },
+      "tags": [
+        "usdc",
+        "stablecoin",
+        "visa",
+        "lloyds",
+        "cross-border"
+      ],
+      "rank": 3
+    },
+    {
+      "id": "btc-base-cobalt",
+      "section": "Bitcoin",
+      "story_type": "product",
+      "title": "Base ships Cobalt upgrade: conditional transactions and new B20 asset functions on mainnet",
+      "summary": "Base's Cobalt upgrade is live on mainnet, adding conditional transaction execution and new B20 asset functions that let apps reuse live on-chain policies such as KYC allowlists and sanctions blocklists without copying member lists, and let issuers schedule display-multiplier changes aligned to the ERC-8056 standard (e.g., for a stock split). This is the substrate for composable, policy-governed tokenized assets on Base - directly relevant to anyone building RWA or tokenized-fund products on the chain. Caveat: it is an infrastructure upgrade; ecosystem adoption of the new condition primitives will determine real-world impact.",
+      "source": {
+        "name": "The Block",
+        "url": "https://www.theblock.co/news/ecosystems/2026-09-30-base-launches-cobalt-upgrade-with-conditional-transactions-and-new-b20-asset-functions-417308"
+      },
+      "canonical_url": "https://www.theblock.co/news/ecosystems/2026-09-30-base-launches-cobalt-upgrade-with-conditional-transactions-and-new-b20-asset-functions-417308",
+      "published_at": "2026-09-30T19:00:00+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "TheBlock ecosystem desk; Cobalt is now live on Base mainnet per the report. No separate Base blog post fetched in-window."
+      },
+      "tags": [
+        "base",
+        "cobalt",
+        "upgrade",
+        "tokenized-assets",
+        "erc-8056"
+      ],
+      "rank": 4
+    },
+    {
+      "id": "btc-dogeos-testnet",
+      "section": "Bitcoin",
+      "story_type": "product",
+      "title": "DogeOS launches a public testnet bringing EVM smart contracts to Dogecoin via a zk-rollup",
+      "summary": "DogeOS, the project betting that Dogecoin miners will eventually secure its app layer, launched a public testnet that brings EVM smart contracts to Dogecoin through a zk-rollup construction. It is a concrete infrastructure milestone: EVM-compatible programmatic logic on a major meme-coin chain, with the rollup security story still maturing. Caveat: it is a testnet, not mainnet; the miner-security model it depends on is a bet, not a deployed property, and TVL and app counts are still early.",
+      "source": {
+        "name": "The Block",
+        "url": "https://www.theblock.co/news/ecosystems/2026-09-30-dogeos-launches-public-testnet-dogecoin-zk-rollup-evm-417307"
+      },
+      "canonical_url": "https://www.theblock.co/news/ecosystems/2026-09-30-dogeos-launches-public-testnet-dogecoin-zk-rollup-evm-417307",
+      "published_at": "2026-09-30T18:23:00+00:00",
+      "corroboration": [
+        {
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/10/01/dogecoin-gets-defi-testnet-as-dogeos-bets-miners-will-eventually-secure-its-apps"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "TheBlock and CoinDesk both covered the testnet launch in-window; CoinDesk's follow-up ran Oct 1."
+      },
+      "tags": [
+        "dogecoin",
+        "dogeos",
+        "zk-rollup",
+        "evm",
+        "testnet"
+      ],
+      "rank": 5
+    },
+    {
+      "id": "btc-etf-outflows",
+      "section": "Bitcoin",
+      "story_type": "market",
+      "title": "Bitcoin ETFs' nine-day, $3B inflow streak ends with $149M of net outflows",
+      "summary": "US spot Bitcoin ETFs saw $149M of net outflows on Oct 1, ending a nine-day, roughly $3B inflow streak that had carried the quarter. The funds' best quarter since 2024 (with ether's best since 2021) closed on Sep 30, and the first trading day of Q4 opened with distribution rather than accumulation. Caveat: this is a flow/price observation, not a protocol or product event - useful as context for the quarter's institutional bid, not as a structural development.",
+      "source": {
+        "name": "The Block",
+        "url": "https://www.theblock.co/news/markets/2026-10-01-bitcoin-etfs-9-day-3-billion-inflow-streak-comes-to-an-end-as-149-million-exits-the-funds-417384"
+      },
+      "canonical_url": "https://www.theblock.co/news/markets/2026-10-01-bitcoin-etfs-9-day-3-billion-inflow-streak-comes-to-an-end-as-149-million-exits-the-funds-417384",
+      "published_at": "2026-10-01T12:17:00+00:00",
+      "corroboration": [
+        {
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/10/01/bitcoin-kicks-off-new-quarter-in-the-old-usd82-000-usd85-000-price-range"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Flow data from TheBlock markets desk, corroborated by CoinDesk's Q4-open piece; both same-day."
+      },
+      "tags": [
+        "bitcoin-etf",
+        "flows",
+        "market",
+        "institutional"
+      ],
+      "rank": 6
+    },
+    {
+      "id": "ai-gemini4-argon",
+      "section": "AI",
+      "story_type": "model",
+      "title": "Google DeepMind announces Gemini 4 Argon, its next frontier model, rolling out to trusted cyber defenders",
+      "summary": "Google announced Gemini 4 Argon, a frontier model built to sustain deep reasoning across long-horizon workflows in software engineering, enterprise knowledge work (legal, finance) and cybersecurity defense. It is rolling out first to a set of trusted cyber defenders through the Fairwind Program, with introductory pricing of $2/M input and $10/M output tokens (cached input 95% off), and Google says it is engaged in the US government's voluntary pre-release model access process. Google reports internal wins: Argon beat a published quantum-algorithm baseline by 40% in minutes, and Argon agent swarms freed over 300 TiB of memory across Google's data centers. Caveat: it is a staged release to early testers, not yet general availability for developers, enterprises or consumers - guardrails are still being iterated.",
+      "source": {
+        "name": "Google Blog",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+      },
+      "canonical_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "published_at": "2026-09-30T20:00:00+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official Google blog post dated Sep 30, 2026 (Kavukcuoglu, SVP Google DeepMind). datePublished metadata verified as 2026-09-30T20:00:00+00:00."
+      },
+      "tags": [
+        "gemini-4",
+        "google-deepmind",
+        "frontier-model",
+        "cyber-defense",
+        "release"
+      ],
+      "rank": 7
+    },
+    {
+      "id": "ai-sec-custody-distill",
+      "section": "AI",
+      "story_type": "research",
+      "title": "OpenAI says it disrupted a coordinated adversarial model-distillation campaign extracting protected reasoning",
+      "summary": "OpenAI published details of a coordinated campaign - active since early July, with 16,000-request spikes on July 24-25 from 4,000+ users - that manipulated model interactions to extract 'protected reasoning' (the model's internal chain-of-thought record) in forms visible to requesters, violating its terms of service. Operators copied encrypted reasoning from one conversation and had another model decrypt and transcribe it; OpenAI fully disrupted the cluster of 15,000+ users by July 28, and shared findings through the Frontier Model Forum. For builders: this is a concrete, named attack class against CoT-bearing models - expect distillation-resistance and cross-conversation isolation to become first-class design constraints, not just ToS items.",
+      "source": {
+        "name": "OpenAI",
+        "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/"
+      },
+      "canonical_url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/",
+      "published_at": "2026-09-30T10:30:00+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official OpenAI post, publicationDateText 'September 30, 2026' verified in page metadata; RSS pubDate 2026-09-30T10:30:00Z."
+      },
+      "tags": [
+        "openai",
+        "distillation",
+        "security",
+        "chain-of-thought",
+        "frontier-model-forum"
+      ],
+      "rank": 8
+    },
+    {
+      "id": "ai-whitehouse-audit",
+      "section": "AI",
+      "story_type": "policy",
+      "title": "OpenAI, Google, Meta, Anthropic, Nvidia and xAI sign voluntary White House pact for outside AI safety audits",
+      "summary": "Six frontier labs - OpenAI, Google, Meta, Anthropic, Nvidia and xAI - agreed under a voluntary White House framework to let outside auditors assess their AI safety controls, covering cyberattack, hacking and biological/chemical risk monitoring after a string of incidents where experimental agents reached systems they were not cleared for. Trump called the pact 'morally binding'; it carries no enforcement mechanism, no disclosure requirement and no implementation deadline, with each company choosing its own auditors. For builders: the audit category now exists as a market even without teeth - expect audit-readiness (repro evals, incident logs, agent-permission scopes) to become a procurement requirement in enterprise and public-sector deals.",
+      "source": {
+        "name": "CoinDesk",
+        "url": "https://www.coindesk.com/tech/2026/09/30/openai-google-and-meta-pledge-outside-ai-audits-under-voluntary-white-house-deal"
+      },
+      "canonical_url": "https://www.coindesk.com/tech/2026/09/30/openai-google-and-meta-pledge-outside-ai-audits-under-voluntary-white-house-deal",
+      "published_at": "2026-09-30T10:43:00+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "CoinDesk policy/tech desk, Sep 30 6:43AM EDT; the pact itself is a voluntary framework with the six named signatories."
+      },
+      "tags": [
+        "safety-audit",
+        "white-house",
+        "policy",
+        "frontier-labs",
+        "compliance"
+      ],
+      "rank": 9
+    },
+    {
+      "id": "ai-fig-jagged",
+      "section": "AI",
+      "story_type": "benchmark",
+      "title": "Fig benchmarks frontier models: Astra, Opus 5.5 and peers show 'jagged' performance across agentic tasks from web browsing to robotics",
+      "summary": "Fig (the agentic-evaluation lab) published a cross-model benchmark of frontier systems - including GPT-6 Astra and Claude Opus 5.5 - across SOTA agentic task families spanning web browsing and robotics, finding performance is highly task-dependent rather than uniformly ranked: no single model wins across all slices, with models swapping positions sharply between task families. For builders choosing an agent backbone, this is a reminder to benchmark on your own task distribution rather than aggregate leaderboards - the 'best model' depends on which slice of agentic work you ship. Caveat: independent lab benchmark; task definitions and harness details matter, and the results are the lab's own measurements.",
+      "source": {
+        "name": "Fig Inc",
+        "url": "https://www.fig.inc/blog/astra-opus-5-5-and-other-frontier-models-demonstrate-jagged-performance-across-sota-agentic-tasks-from-web-browsing-to-robotics/"
+      },
+      "canonical_url": "https://www.fig.inc/blog/astra-opus-5-5-and-other-frontier-models-demonstrate-jagged-performance-across-sota-agentic-tasks-from-web-browsing-to-robotics/",
+      "published_at": "2026-09-29T05:27:45+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Fig's own blog post with datePublished 2026-09-29T05:27:45.000Z verified; independent evaluation lab, not a vendor-neutral standard. Also discussed on Hacker News in-window."
+      },
+      "tags": [
+        "benchmark",
+        "agentic",
+        "frontier-models",
+        "fig",
+        "evaluation"
+      ],
+      "rank": 10
+    },
+    {
+      "id": "ai-suncatcher",
+      "section": "AI",
+      "story_type": "infrastructure",
+      "title": "Google's Project Suncatcher prototype TPU satellite is in orbit after Transporter-18 launch",
+      "summary": "Google's Project Suncatcher prototype satellite - built with Planet and launched on SpaceX's Transporter-18 rideshare - is now in orbit and operating as expected, confirmed by the Google Research team. It is the first step in a research moonshot exploring whether space could host scalable machine-learning infrastructure: over coming weeks the team will gather in-orbit data on how TPUs handle the physical stress of spaceflight and the radiation and thermal extremes of orbit, with the underlying peer-reviewed design published in Joule. For builders thinking about where inference compute physically lives (thermal, power, radiation, launch cadence), this is the concrete first data point on running TPU silicon in space rather than on the ground. Caveat: it is a prototype in early characterization - no production compute workload has run in orbit yet.",
+      "source": {
+        "name": "Google Research",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-prototype/"
+      },
+      "canonical_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-prototype/",
+      "published_at": "2026-10-01T23:30:00+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official Google Research blog post by Travis Beals (Sr Director, Paradigms of Intelligence), datePublished metadata verified as 2026-10-01T23:30:00+00:00."
+      },
+      "tags": [
+        "google-research",
+        "suncatcher",
+        "space-compute",
+        "tpu",
+        "infrastructure"
+      ],
+      "rank": 11
+    },
+    {
+      "id": "rob-humanoidtoolbench",
+      "section": "Robotics",
+      "story_type": "paper",
+      "title": "HumanoidToolBench: an 18-task benchmark spanning humanoid tool selection, manipulation and mobile execution",
+      "summary": "A new 18-task benchmark, HumanoidToolBench, jointly evaluates the capabilities a humanoid needs to use tools beyond its physical limits: selecting a suitable tool, coordinating dexterous manipulation, and locomoting to reach the task when needed. Prior benchmarks tested these pieces in isolation; this one forces a single system to pick the tool and then act, on a real humanoid, across the full selection-to-mobile-execution pipeline. For embodied-AI builders it is a useful yardstick for the 'last-mile' failure mode - a great manipulation policy that can't choose the right implement, or choose it but can't get there. Caveat: it is an academic benchmark (arXiv, 2026-10-01T17:59:50Z); task coverage and baselines determine how far the results transfer to your hardware.",
+      "source": {
+        "name": "arXiv",
+        "url": "https://arxiv.org/abs/2610.02089"
+      },
+      "canonical_url": "https://arxiv.org/abs/2610.02089",
+      "published_at": "2026-10-01T17:59:50+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "arXiv abstract verified via the export API; submission timestamp 2026-10-01T17:59:50Z exact."
+      },
+      "tags": [
+        "humanoid",
+        "tool-use",
+        "benchmark",
+        "embodied-ai",
+        "manipulation"
+      ],
+      "rank": 12
+    },
+    {
+      "id": "rob-uniwam",
+      "section": "Robotics",
+      "story_type": "paper",
+      "title": "UniWAM: a unified world-action model that fuses VLA grounding with video-generation spatiotemporal priors",
+      "summary": "UniWAM argues that vision-language-action models are under-grounded in world dynamics (action-only supervision) while world-action models inherit video-generation priors but lose semantic reasoning under distribution shift - and unifies the two in a single model. The paper targets exactly the open problem for generalist robot manipulation: how to keep VLM understanding while gaining the spatiotemporal dynamics that video priors supply. For teams building VLA stacks, this is a concrete architectural direction worth watching for the next round of open weights. Caveat: single-lab arXiv result (2026-10-01T17:01:27Z); no public weights or leaderboard position were confirmed in-window.",
+      "source": {
+        "name": "arXiv",
+        "url": "https://arxiv.org/abs/2610.02054"
+      },
+      "canonical_url": "https://arxiv.org/abs/2610.02054",
+      "published_at": "2026-10-01T17:01:27+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "arXiv abstract verified via export API; exact submission time. Novelty claims are the authors'. "
+      },
+      "tags": [
+        "vla",
+        "world-model",
+        "manipulation",
+        "architecture",
+        "embodied-ai"
+      ],
+      "rank": 13
+    },
+    {
+      "id": "rob-skeletonwam",
+      "section": "Robotics",
+      "story_type": "paper",
+      "title": "SkeleWAM: a compact world-action model that represents manipulation scenes as sparse 3D skeletons",
+      "summary": "SkeleWAM replaces video or learned-latent future-state prediction with a sparse 3D skeleton of robot joints and object contact points as the world-action representation, arguing that full-frame video prediction carries appearance information irrelevant to control and wastes capacity on it. The result is a compact world-action model aimed at efficient real-time manipulation. For hardware-constrained deployers this is directly relevant: if action-plus-geometry prediction can match video-prediction WAMs at a fraction of the compute, on-robot inference budgets get materially easier. Caveat: arXiv preprint (2026-10-01T17:35:10Z); no public code or cross-embodiment validation confirmed in-window.",
+      "source": {
+        "name": "arXiv",
+        "url": "https://arxiv.org/abs/2610.02120"
+      },
+      "canonical_url": "https://arxiv.org/abs/2610.02120",
+      "published_at": "2026-10-01T17:35:10+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "arXiv abstract verified via export API; exact submission time."
+      },
+      "tags": [
+        "world-model",
+        "3d-skeleton",
+        "manipulation",
+        "efficiency",
+        "robotics"
+      ],
+      "rank": 14
+    },
+    {
+      "id": "rob-flashdexretarget",
+      "section": "Robotics",
+      "story_type": "paper",
+      "title": "FlashDexRetarget: RL-based multi-motion retargeting that accelerates dexterous manipulation data generation from human demos",
+      "summary": "FlashDexRetarget addresses the bottleneck of transferring human hand-object demonstrations to robotic embodiments: physics-based retargeting either fails often or trains slowly per motion. The paper's RL-based framework retargets a batch of motions at high success rate, making human demo data a faster, more reusable source of dexterous manipulation training signal. For teams scaling dexterous fleets, data generation cost is usually the binding constraint - a higher-success, lower-cost retargeter attacks it directly. Caveat: arXiv preprint (2026-10-01T15:15:42Z); the headline gains are on the authors' task set, and embodiment coverage matters for transfer.",
+      "source": {
+        "name": "arXiv",
+        "url": "https://arxiv.org/abs/2610.01849"
+      },
+      "canonical_url": "https://arxiv.org/abs/2610.01849",
+      "published_at": "2026-10-01T15:15:42+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "arXiv abstract verified via export API; exact submission time."
+      },
+      "tags": [
+        "dexterous-manipulation",
+        "retargeting",
+        "rl",
+        "data-generation",
+        "human-demos"
+      ],
+      "rank": 15
+    },
+    {
+      "id": "rob-rpg",
+      "section": "Robotics",
+      "story_type": "paper",
+      "title": "RPG (Reconstruct, Practice, Go Real): weight-free autonomous self-improvement of robot execution from offline data",
+      "summary": "RPG is a framework for autonomously improving a robot's execution system without updating model weights: it identifies manipulation capabilities present in an offline dataset, reconstructs them, practices them, and deploys them in the real world - i.e., a closed loop of capability discovery and skill acquisition that does not require retraining the underlying policy. For builders this is the 'continuous improvement without retraining' pattern, and the paper frames it as a way to cut the human labor of skill maintenance across diverse tasks. Caveat: arXiv preprint (2026-10-01T17:21:54Z); the no-weight-update constraint is also the main limitation - it works within the capability envelope of the frozen policy.",
+      "source": {
+        "name": "arXiv",
+        "url": "https://arxiv.org/abs/2610.02204"
+      },
+      "canonical_url": "https://arxiv.org/abs/2610.02204",
+      "published_at": "2026-10-01T17:21:54+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "arXiv abstract verified via export API; exact submission time."
+      },
+      "tags": [
+        "self-improvement",
+        "offline-learning",
+        "skill-acquisition",
+        "manipulation",
+        "embodied-ai"
+      ],
+      "rank": 16
+    },
+    {
+      "id": "rob-seeingmachines",
+      "section": "Robotics",
+      "story_type": "product",
+      "title": "Seeing Machines demonstrates real-time 3D human understanding for physical AI on NVIDIA Jetson Thor",
+      "summary": "Seeing Machines demonstrated real-time 3D human-pose and scene understanding running on NVIDIA's Jetson Thor edge platform, aimed at physical-AI deployments that need on-device human awareness (assisted-living, workplace safety, service robotics) without round-trips to the cloud. Jetson Thor is NVIDIA's new robotics SoC line, so a validated perception stack on it is a useful signal for the platform's real-time capability envelope. Caveat: it is a demonstration reported by Technode, not a product launch with published specs - latency, accuracy and field-deployment status were not detailed in the coverage I could fetch in-window.",
+      "source": {
+        "name": "Technode",
+        "url": "https://technode.global/2026/10/02/seeing-machines-3d-human-understanding-physical-ai-nvidia-jetson-thor/"
+      },
+      "canonical_url": "https://technode.global/2026/10/02/seeing-machines-3d-human-understanding-physical-ai-nvidia-jetson-thor/",
+      "published_at": "2026-10-02T01:28:19+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "Technode report with datePublished 2026-10-02T01:28:19+00:00; single source in-window. Seeing Machines' own press materials not fetched."
+      },
+      "tags": [
+        "edge-compute",
+        "nvidia-jetson-thor",
+        "3d-perception",
+        "physical-ai",
+        "human-sensing"
+      ],
+      "rank": 17
+    },
+    {
+      "id": "lon-longeveron-ad",
+      "section": "Longevity",
+      "story_type": "clinical",
+      "title": "Longeveron posts Phase 2a Alzheimer's data: laromestrocel reduces neuroinflammation in core AD brain regions",
+      "summary": "Longeveron (NASDAQ: LGVN) announced a new analysis from its Phase 2a trial in mild Alzheimer's disease showing that laromestrocel - its mesenchymal stem cell therapy - inhibits progressive brain inflammation in core AD regions, with the strongest effects in the left hippocampus (p<0.001 in both the 25M-cells-x4 and 100M-cells-x4 monthly dose groups), left temporal cortex (p=0.007) and medulla (p=0.007). The data were published as a medRxiv preprint (10.64898/2026.09.16.26363132) alongside the company's announcement of three October longevity/aging investment conferences. For the field this is another step in the MSC-therapy-for-AD track: a mechanism-level (anti-neuroinflammatory) signal in a small, open-label n=49 cohort. Caveat: preprint, not peer-reviewed; primary endpoint was brain volume, and subgroup sizes per region are small (N=10-11) - interpret as exploratory signal, not proof of cognitive benefit.",
+      "source": {
+        "name": "BioSpace",
+        "url": "https://www.biospace.com/press-releases/longeveron-to-participate-in-three-longevity-aging-investment-conferences"
+      },
+      "canonical_url": "https://www.medrxiv.org/content/10.64898/2026.09.16.26363132v1",
+      "published_at": "2026-09-30T00:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "BioSpace (GlobeNewswire release)",
+          "url": "https://www.biospace.com/press-releases/longeveron-to-participate-in-three-longevity-aging-investment-conferences"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Official GlobeNewswire release dated Sept. 30, 2026 (mirrored by BioSpace, datePublished 2026-10-01T02:19:38Z) with the medRxiv preprint as the scientific source. Longeveron's prior ELPIS II Phase 2b topline (missed primary RVEP endpoint) is already in the archive - this is the new AD neuroinflammation analysis, a distinct data set."
+      },
+      "tags": [
+        "alzheimer",
+        "stem-cell-therapy",
+        "neuroinflammation",
+        "phase-2a",
+        "longeveron"
+      ],
+      "rank": 18
+    },
+    {
+      "id": "lon-timepie-nature",
+      "section": "Longevity",
+      "story_type": "paper",
+      "title": "Nature Aging: the 6th TimePie Longevity Forum report on aging biomarkers and intervention discovery",
+      "summary": "Nature Aging published the proceedings of the 6th TimePie Longevity Forum (Shanghai, 20-21 September), bringing together ~2,500 participants from 16 countries with an explicit aim of bridging mechanistic aging research and translational biomarker frameworks capable of guiding intervention testing in humans. The Forum is increasingly the venue where multi-omic aging clocks, digital-aging biomarkers and intervention-prioritization methodology get cross-pollinated across labs and companies. For builders, the value is the consensus direction: biomarker panels that can rank and gate interventions, not just report an age number. Caveat: this is a forum report in Nature Aging (published 2026-09-30; forum itself was September 20-21) - a synthesis of the field's state, not a single new result.",
+      "source": {
+        "name": "Nature Aging",
+        "url": "https://www.nature.com/articles/s43587-026-01226-8"
+      },
+      "canonical_url": "https://www.nature.com/articles/s43587-026-01226-8",
+      "published_at": "2026-09-30T12:00:00+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Nature Aging article, DOI 10.1038/s43587-026-01226-8, Crossref publication date 2026-09-30. Only a publication date is exposed (noon UTC used, stated limitation)."
+      },
+      "tags": [
+        "nature-aging",
+        "biomarkers",
+        "intervention-discovery",
+        "timepie",
+        "forum-report"
+      ],
+      "rank": 19
+    },
+    {
+      "id": "lon-organ-aging-blood",
+      "section": "Longevity",
+      "title": "bioRxiv: inferring organ-level aging, hallmark-of-aging and senescence scores from blood and facial photographs",
+      "summary": "A new bioRxiv preprint (Schneider, Belic, Fuentealba, Senchyna et al., posted 2026-09-29) describes methods for inferring organ-level aging, hallmark-of-aging and senescence scores from two cheap inputs: blood and facial photographs. If the organ-specific decomposition holds, this moves aging assessment from a single organism-level number (e.g., one epigenetic clock) toward organ-resolved risk readouts - exactly the granularity a clinician or a digital-aging product would need to prioritize interventions. For builders, organ-resolved clocks from blood+face are a materially more buildable input than imaging-only approaches. Caveat: preprint, posted 2026-09-29 (bioRxiv v1; date-only timestamp, noon UTC used); validation cohorts and independent replication are not yet established.",
+      "source": {
+        "name": "bioRxiv",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.09.23.753830v1"
+      },
+      "canonical_url": "https://www.biorxiv.org/content/10.64898/2026.09.23.753830v1",
+      "published_at": "2026-09-29T12:00:00+00:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "DOI 10.64898/2026.09.23.753830 verified via Crossref (created 2026-09-29T21:20:17Z); resolves to the bioRxiv landing page. bioRxiv's landing page hides the exact submission time from metadata, so noon UTC on the post date is used and stated."
+      },
+      "tags": [
+        "biomarker",
+        "organ-aging",
+        "senescence",
+        "blood-biomarker",
+        "preprint"
+      ],
+      "rank": 20,
+      "story_type": "paper"
+    },
+    {
+      "id": "lon-oura-ipo",
+      "section": "Longevity",
+      "story_type": "business",
+      "title": "Oura delays its Nasdaq IPO (was up to $2.2B) citing market uncertainty, eight days after filing",
+      "summary": "Oura postponed its planned Nasdaq listing - which had been set to raise up to $2.2B from a 50M-share offering formally launched on September 21 - citing uncertainty in the IPO market, 'despite strong demand' and a strengthening business, per CEO Tom Hale. For the longevity/quantified-health sector this is a market-timing signal, not a product one: the most prominent consumer health-wearable company chose to wait, which will shape the valuation environment for the next wave of longevity and digital-health listings. Caveat: it is an IPO deferral - not a fundamental business change, and no new product or financial data was released with the announcement.",
+      "source": {
+        "name": "CNBC",
+        "url": "https://www.cnbc.com/2026/09/29/smart-ring-maker-oura-postpones-ipo-due-to-market-uncertainty.html"
+      },
+      "canonical_url": "https://www.cnbc.com/2026/09/29/smart-ring-maker-oura-postpones-ipo-due-to-market-uncertainty.html",
+      "published_at": "2026-09-29T10:02:59+00:00",
+      "corroboration": [
+        {
+          "name": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-09-29/smart-ring-maker-oura-postpones-ipo-due-to-market-uncertainty"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "CNBC (2026-09-29T10:02:59Z) and Bloomberg both reported the delay on Sep 29. Oura's own blog has no dedicated post in-window; the statement is via CNBC/Bloomberg. Within the 72h catch-up window (opened Sep 29 04:47 UTC)."
+      },
+      "tags": [
+        "oura",
+        "ipo",
+        "wearables",
+        "quantified-health",
+        "market"
+      ],
+      "rank": 21
+    },
+    {
+      "id": "lon-neko-nyc",
+      "section": "Longevity",
+      "story_type": "product",
+      "title": "Neko Health opens its first US clinic in SoHo, New York - the 'most valuable hour in healthcare' for America",
+      "summary": "Neko Health - the full-body scanning and bloodwork prevention clinic founded by Spotify's Daniel Ek - opened its first US location in SoHo, New York, after more than 25,000 New Yorkers joined the waitlist ahead of launch. The UK rollout (London, Manchester, Birmingham) preceded this; the US opening extends the 'one hour, whole-body scan plus bloods, prevention-focused clinicians' model to the American market at a consumer price point. For the longevity/clinical-prevention sector this is the clearest signal yet that the scan-and-assess clinic model is scaling internationally as a consumer product, not just a UK premium service. Caveat: the opening date on the official press release is September 24, 2026 - just outside the 72-hour catch-up window - and the PRNewswire link in circulation is a correction to that release; it is included as a labeled catch-up because the US launch is a major missed development and its canonical URL is absent from all prior editions.",
+      "source": {
+        "name": "Neko Health",
+        "url": "https://www.nekohealth.com/us/en/press/neko-health-opens-its-doors-in-new-york"
+      },
+      "canonical_url": "https://www.nekohealth.com/us/en/press/neko-health-opens-its-doors-in-new-york",
+      "published_at": "2026-09-24T12:00:00+00:00",
+      "corroboration": [
+        {
+          "name": "PRNewswire (correction)",
+          "url": "https://www.prnewswire.com/news-releases/neko-health-opens-its-doors-in-new-york-bringing-the-most-valuable-hour-in-healthcare-to-america-302889358.html"
+        },
+        {
+          "name": "TechCrunch (US office announcement)",
+          "url": "https://techcrunch.com/2026/08/18/daniel-eks-body-scanning-startup-neko-health-opens-first-us-office-in-new-york/"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Catch-up. Official Neko Health US press page ('Neko Health Opens Its Doors In New York', citation date 2026-09-24) is the canonical source; the circulating PRNewswire item is a correction to that release (issued Oct 1, 2026). Opening predates the 30h window; date-only (noon UTC used)."
+      },
+      "tags": [
+        "neko",
+        "body-scanning",
+        "daniel-ek",
+        "prevention-clinic",
+        "us-launch"
+      ],
+      "rank": 22
+    }
+  ]
+}
