@@ -1,0 +1,705 @@
+{
+  "schema_version": 1,
+  "edition": {
+    "date": "2026-10-04",
+    "title": "The Daily Signal",
+    "kicker": "Primary-source tech intelligence, compiled from the live wire.",
+    "status": "live",
+    "updated_at": "2026-10-04T14:47:33+03:00"
+  },
+  "sections": [
+    "Bitcoin",
+    "AI",
+    "Robotics",
+    "Longevity"
+  ],
+  "lead_story_id": "ai-gpt6-ultrafast",
+  "stories": [
+    {
+      "id": "ai-gpt6-ultrafast",
+      "section": "AI",
+      "story_type": "model-deployment",
+      "title": "Catch-up: GPT-6 Astra Ultrafast is live in the OpenAI API: up to 8x faster token generation on Blackwell",
+      "summary": "NVIDIA and OpenAI announced GPT-6 Astra Ultrafast, an inference mode that delivers up to 8x faster token generation than Astra Standard, now available in the OpenAI API and to eligible ChatGPT Work and Codex users. The speedups come from inference optimizations that tap Blackwell, and OpenAI is using its own models to refine the inference software running on the GPUs. For builders this shortens agent edit-test-debug loops and makes interactive apps feel responsive; the catch is that Ultrafast is an availability/latency mode on existing Astra capability, not a new model.",
+      "source": {
+        "name": "NVIDIA on X",
+        "url": "https://x.com/nvidia/status/2105809442365423918"
+      },
+      "canonical_url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
+      "published_at": "2026-10-01T23:44:13Z",
+      "corroboration": [
+        {
+          "name": "OpenAI API changelog",
+          "url": "https://developers.openai.com/api/docs/changelog"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official NVIDIA blog (datePublished 2026-10-01T23:44Z) + official @nvidia post. Catch-up: outside the 30h window but absent from the current edition and archives; distinct from the Sep GPT-6 Astra launch already covered."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1529,
+        "label": "1,290 likes + 106 reposts + 133 replies",
+        "observed_at": "2026-10-04T14:35:00+03:00",
+        "evidence_url": "https://x.com/nvidia/status/2105809442365423918"
+      },
+      "tags": [
+        "openai",
+        "nvidia",
+        "inference",
+        "blackwell",
+        "gpt-6"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "btc-blast-shutdown",
+      "section": "Bitcoin",
+      "story_type": "protocol/ecosystem",
+      "title": "Catch-up: Blast announces shutdown over unsustainable L2 economics; users must bridge back to Ethereum by Oct 26",
+      "summary": "The Blast team announced its L2 is shutting down: operating costs exceed revenue, so the chain is winding down and users must withdraw to Ethereum before October 26. It is a rare post-launch exit from a live layer-2, with real user funds in flight and a hard bridge deadline. Builders should treat it as a case study in L2 cost structures, not a chain-specific bug: the shutdown post is the primary evidence, and official docs will govern the withdrawal path.",
+      "source": {
+        "name": "Blast on X",
+        "url": "https://x.com/blast/status/2106032805280891073"
+      },
+      "canonical_url": "https://x.com/blast/status/2106032805280891073",
+      "published_at": "2026-10-02T14:45:23Z",
+      "corroboration": [
+        {
+          "name": "Crypto Integrated Oct 3 digest",
+          "url": "https://www.cryptointegrat.com/p/crypto-news-october-3-2026"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @blast account post; engagement observed via post API (3,541 likes / 429 reposts / 1,507 replies). Catch-up (72h sweep): outside the 30h window; canonical URL verified absent from current edition and all archives."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 5478,
+        "label": "3,541 likes + 429 reposts + 1,507 replies",
+        "observed_at": "2026-10-04T14:30:00+03:00",
+        "evidence_url": "https://x.com/blast/status/2106032805280891073"
+      },
+      "tags": [
+        "layer-2",
+        "ethereum",
+        "shutdown",
+        "ecosystem"
+      ],
+      "rank": 2
+    },
+    {
+      "id": "rob-atlas-hands",
+      "section": "Robotics",
+      "story_type": "hardware",
+      "title": "Catch-up: Boston Dynamics shows new directly-actuated Atlas hands with 13 degrees of freedom, built for sim-to-real",
+      "summary": "Boston Dynamics posted new directly-actuated hands for Atlas with 13 degrees of freedom, built for sim-to-real learning workflows. Direct actuation in a full-size humanoid hand is a meaningful hardware step for dexterous manipulation research. For builders this is a data point that BD is closing the hand-dexterity loop alongside its locomotion work. Caveat: the announcement is the official X post itself (no article URL in the post), so the post is the canonical evidence; treat specific capability claims as company-described.",
+      "source": {
+        "name": "Boston Dynamics on X",
+        "url": "https://x.com/BostonDynamics/status/2105659276425298012"
+      },
+      "canonical_url": "https://x.com/BostonDynamics/status/2105659276425298012",
+      "published_at": "2026-10-01T14:01:07Z",
+      "corroboration": [
+        {
+          "name": "Boston Dynamics blog",
+          "url": "https://bostondynamics.com/blog/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @BostonDynamics post (Oct 1, 2026 14:01 UTC). Catch-up: no separate canonical article found in the blog index; post is the primary evidence."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 2467,
+        "label": "2,001 likes + 341 reposts + 125 replies",
+        "observed_at": "2026-10-04T14:35:00+03:00",
+        "evidence_url": "https://x.com/BostonDynamics/status/2105659276425298012"
+      },
+      "tags": [
+        "boston-dynamics",
+        "atlas",
+        "hands",
+        "dexterity",
+        "sim-to-real"
+      ],
+      "rank": 3
+    },
+    {
+      "id": "ai-google-fl",
+      "section": "AI",
+      "story_type": "research-infrastructure",
+      "title": "Catch-up: Google ships a TEE-based Federated Learning system with externally verifiable differential privacy",
+      "summary": "Google Research announced a next-generation Federated Learning system built on Trusted Execution Environments that delivers externally verifiable differential-privacy guarantees while moving computation server-side for faster, more accurate training across more devices. Gboard has already adopted it and reports substantially faster compute times than the prior FL system. For builders this is a concrete move toward auditable privacy (not just claimed DP) at scale. Caveat: it is a systems/research post; it depends on TEE properties that are still evolving, as the authors note.",
+      "source": {
+        "name": "Google Research on X",
+        "url": "https://x.com/GoogleResearch/status/2106041109944357182"
+      },
+      "canonical_url": "https://research.google/blog/toward-provably-private-learning-from-federated-data/",
+      "published_at": "2026-10-02T15:18:23Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official Google Research blog + official @GoogleResearch post. Blog is date-only (Oct 2, 2026); published_at uses the official X post timestamp (2026-10-02 15:18:23 UTC). Catch-up item."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1519,
+        "label": "1,306 likes + 174 reposts + 39 replies",
+        "observed_at": "2026-10-04T14:35:00+03:00",
+        "evidence_url": "https://x.com/GoogleResearch/status/2106041109944357182"
+      },
+      "tags": [
+        "google",
+        "federated-learning",
+        "privacy",
+        "tee",
+        "systems"
+      ],
+      "rank": 4
+    },
+    {
+      "id": "ai-meta-math",
+      "section": "AI",
+      "story_type": "research",
+      "title": "Catch-up: Meta: mathematicians and Muse Spark co-author six papers, five answering previously open research questions",
+      "summary": "Meta published six papers produced in collaboration with mathematicians who used Muse Spark 1.1 and 1.2 in Thinking Mode through the standard meta.ai chat interface, with no custom research scaffold. Five present answers to previously open research questions across areas like probability, differential equations, group theory, and a number-theory/string-theory link. Each paper marks which passages were AI-drafted and which were human. For a builder the takeaway is a template: current-gen LLMs used as research collaborators on genuinely open problems, with attribution discipline. Caveat: it is six narrow math results, not a claim that AI does open research broadly.",
+      "source": {
+        "name": "Meta AI on X",
+        "url": "https://x.com/AIatMeta/status/2106099776035152231"
+      },
+      "canonical_url": "https://research.meta.ai/blog/solving-open-research-problems-together",
+      "published_at": "2026-10-02T19:11:30Z",
+      "corroboration": [
+        {
+          "name": "Meta AI Research",
+          "url": "https://research.meta.ai/blog/solving-open-research-problems-together"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official Meta AI research blog + official @AIatMeta post. Blog is date-only (Oct 2, 2026); published_at uses the official X post timestamp (2026-10-02 19:11:30 UTC). Catch-up item."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1346,
+        "label": "1,124 likes + 134 reposts + 88 replies",
+        "observed_at": "2026-10-04T14:35:00+03:00",
+        "evidence_url": "https://x.com/AIatMeta/status/2106099776035152231"
+      },
+      "tags": [
+        "meta",
+        "muse-spark",
+        "research",
+        "math",
+        "ai-science"
+      ],
+      "rank": 5
+    },
+    {
+      "id": "btc-base-tokenized-stocks",
+      "section": "Bitcoin",
+      "story_type": "ecosystem",
+      "title": "Catch-up: 26 new tokenized stocks land on Base, tradable 24/7",
+      "summary": "Coinbase's Base chain listed 26 new tokenized stocks, tradable 24/7 and composable with Base's DeFi stack. For a Bitcoin reader the signal is how fast tokenized equities are moving onto L2s that also hold USDC rails. Caveat: tokenized equity = wrapped claim, not direct ownership; the @base post is the primary source (901 likes / 157 reposts / 155 replies).",
+      "source": {
+        "name": "Base on X",
+        "url": "https://x.com/base/status/2106022851346383309"
+      },
+      "canonical_url": "https://x.com/base/status/2106022851346383309",
+      "published_at": "2026-10-02T14:05:50Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @base post; engagement observed via post API. Catch-up (72h sweep): outside the 30h window; canonical URL verified absent from current edition and all archives."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1213,
+        "label": "901 likes + 157 reposts + 155 replies",
+        "observed_at": "2026-10-04T14:35:00+03:00",
+        "evidence_url": "https://x.com/base/status/2106022851346383309"
+      },
+      "tags": [
+        "base",
+        "tokenization",
+        "rwa",
+        "coinbase"
+      ],
+      "rank": 6
+    },
+    {
+      "id": "ai-synthid-bio",
+      "section": "AI",
+      "story_type": "release",
+      "title": "Catch-up: Google DeepMind introduces SynthID Bio: imperceptible watermarks embedded in AI-designed protein sequences",
+      "summary": "DeepMind announced SynthID Bio, a family of watermarking methods for AI-generated biological designs that embeds an imperceptible signature directly into protein sequences, letting DNA labs verify whether a synthetic design came from AI and keeping sequence databases accurate. It is described as a world first for biological design provenance. For a builder, this is provenance tooling aimed squarely at the synthetic-biology/synthetic-protein pipeline. Caveat: the launch is via the official @GoogleDeepMind post; the dedicated blog page is an SPA that does not expose a stable timestamp on a direct fetch, so the post is the canonical anchor.",
+      "source": {
+        "name": "Google DeepMind on X",
+        "url": "https://x.com/GoogleDeepMind/status/2105624656170643854"
+      },
+      "canonical_url": "https://x.com/GoogleDeepMind/status/2105624656170643854",
+      "published_at": "2026-10-01T11:43:33Z",
+      "corroboration": [
+        {
+          "name": "Google DeepMind blog index",
+          "url": "https://deepmind.google/discover/blog/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @GoogleDeepMind release thread (2026-10-01 11:43 UTC). Dedicated blog URL renders as an SPA without an exposed date on direct fetch, so the post is used as canonical; listed in the official blog index. Catch-up item."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 1095,
+        "label": "790 likes + 115 reposts + 190 replies",
+        "observed_at": "2026-10-04T14:35:00+03:00",
+        "evidence_url": "https://x.com/GoogleDeepMind/status/2105624656170643854"
+      },
+      "tags": [
+        "deepmind",
+        "synthid",
+        "watermarking",
+        "protein",
+        "provenance"
+      ],
+      "rank": 7
+    },
+    {
+      "id": "btc-smbc-nikko-uniswap",
+      "section": "Bitcoin",
+      "story_type": "institutional",
+      "title": "Catch-up: SMBC Nikko building a Japan-regulated trading venue on Uniswap; compliance runs inside a hook, mid-2027 launch",
+      "summary": "SMBC Nikko, one of Japan's largest securities firms, announced it is building a regulated onchain trading venue on Uniswap, with compliance enforced inside a hook so each pool is built to Japan's investor requirements. A regulated broker on Uniswap is a concrete data point for DeFi institutionalization. Caveat: launch is mid-2027 and the mechanism (compliance hooks) is the interesting part, not the ticker.",
+      "source": {
+        "name": "Uniswap on X",
+        "url": "https://x.com/uniswap/status/2106028366860284193"
+      },
+      "canonical_url": "https://x.com/uniswap/status/2106028366860284193",
+      "published_at": "2026-10-02T14:27:45Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @Uniswap post; engagement observed via post API (732/117/61). Catch-up (72h sweep): outside the 30h window; canonical URL verified absent from current edition and all archives."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 910,
+        "label": "732 likes + 117 reposts + 61 replies",
+        "observed_at": "2026-10-04T14:35:00+03:00",
+        "evidence_url": "https://x.com/uniswap/status/2106028366860284193"
+      },
+      "tags": [
+        "uniswap",
+        "institutional",
+        "japan",
+        "compliance"
+      ],
+      "rank": 8
+    },
+    {
+      "id": "btc-korea-onchain",
+      "section": "Bitcoin",
+      "story_type": "policy",
+      "title": "Catch-up: South Korea: stocks, bonds and funds can move onchain from February 2027; depository building Avalanche connectivity",
+      "summary": "South Korea unveiled rules allowing stocks, bonds and funds to move onchain starting February 2027, with the national securities depository building connectivity on Avalanche. For a BTC-focused reader this matters as sovereign tokenization infrastructure that will sit alongside spot-Bitcoin rails. The caveat: it is a February 2027 regime, and the depository's Avalanche linkage is a connectivity project, not a live settlement system.",
+      "source": {
+        "name": "Cointelegraph on X",
+        "url": "https://x.com/Cointelegraph/status/2106137279173431628"
+      },
+      "canonical_url": "https://x.com/Cointelegraph/status/2106137279173431628",
+      "published_at": "2026-10-02T21:40:32Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Major outlet's official X post ('JUST IN'); primary rule text not linked in the post, so canonical is the post itself. Catch-up (72h sweep): outside the 30h window; canonical URL verified absent from current edition and all archives."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 757,
+        "label": "594 likes + 115 reposts + 48 replies",
+        "observed_at": "2026-10-04T14:35:00+03:00",
+        "evidence_url": "https://x.com/Cointelegraph/status/2106137279173431628"
+      },
+      "tags": [
+        "tokenization",
+        "south-korea",
+        "onchain",
+        "policy"
+      ],
+      "rank": 9
+    },
+    {
+      "id": "ai-runway-continuum",
+      "section": "AI",
+      "story_type": "release",
+      "title": "Catch-up: Runway unveils Project Continuum: a real-time video-interface OS and a 'Visual Thinking' harness for coding agents",
+      "summary": "At its AI Summit, Runway introduced Project Continuum, a research application built around real-time video interfaces: as you browse, a real-time video model generates 'portals' (interactive overlays that visualize any concept, place, or simulation), scenes re-compose with spatial awareness as you resize, and any media can expand into an interactive world simulation. It also includes 'Visual Thinking,' a new harness that visualizes each step and tool call of a coding agent in real time. For builders the coding-agent visualizer is the concrete artifact. Caveat: it is a research application shown at the summit, not a shipped product; the summit talks page is the canonical link.",
+      "source": {
+        "name": "Runway on X",
+        "url": "https://x.com/runwayml/status/2105685396734853582"
+      },
+      "canonical_url": "https://summit.runway.com/talks",
+      "published_at": "2026-10-01T15:44:54Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @runwayml launch thread (2026-10-01 15:44 UTC), announced at the Runway AI Summit (Sept 30). No dedicated product URL in the post; summit talks page used as canonical. Catch-up item."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 506,
+        "label": "426 likes + 45 reposts + 35 replies",
+        "observed_at": "2026-10-04T14:35:00+03:00",
+        "evidence_url": "https://x.com/runwayml/status/2105685396734853582"
+      },
+      "tags": [
+        "runway",
+        "video",
+        "agents",
+        "generative-ai",
+        "research"
+      ],
+      "rank": 10
+    },
+    {
+      "id": "btc-zcash-zakura",
+      "section": "Bitcoin",
+      "story_type": "ecosystem",
+      "title": "Catch-up: Zcash reaches two independent full-node implementations: Zebra and Zakura",
+      "summary": "Zcash now has two independent full-node implementations enforcing the same rules: the foundation's Zebra and the new Zakura client. A second serious node implementation is a meaningful decentralization milestone for a coin whose security model is heavily tied to node consensus, and a template for other chains. Caveat: it is a client milestone, not a network upgrade; the official @Zcash post is the primary source.",
+      "source": {
+        "name": "Zcash on X",
+        "url": "https://x.com/zcash/status/2106062292010016873"
+      },
+      "canonical_url": "https://x.com/zcash/status/2106062292010016873",
+      "published_at": "2026-10-02T16:42:33Z",
+      "corroboration": [
+        {
+          "name": "Zebra (Zcash Foundation)",
+          "url": "https://github.com/ZcashFoundation/zebra"
+        },
+        {
+          "name": "Zakura",
+          "url": "https://github.com/zakura-core/zakura"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @zcash post with links to both codebases; engagement observed via post API (210/32/14). Catch-up (72h sweep): outside the 30h window; canonical URL verified absent from current edition and all archives."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 256,
+        "label": "210 likes + 32 reposts + 14 replies",
+        "observed_at": "2026-10-04T14:35:00+03:00",
+        "evidence_url": "https://x.com/zcash/status/2106062292010016873"
+      },
+      "tags": [
+        "zcash",
+        "consensus",
+        "nodes",
+        "privacy"
+      ],
+      "rank": 11
+    },
+    {
+      "id": "rob-agility-fort",
+      "section": "Robotics",
+      "story_type": "release",
+      "title": "Catch-up: Agility and Fort Robotics launch an Offboard Safety Bridge that extends Digit's safety architecture beyond the robot",
+      "summary": "Agility Robotics announced a partnership with Fort Robotics on an Offboard Safety Bridge that extends Digit's safety architecture beyond the robot itself, connecting Digit to Fort's offboard safety monitoring. For industrial deployments, offboard safety infrastructure is one of the real blockers to dense humanoid/legged deployments. Caveat: it is a partnership announcement with a short X post (the linked t.co URL did not resolve), so treat the technical detail as company-described.",
+      "source": {
+        "name": "Agility Robotics on X",
+        "url": "https://x.com/agilityrobotics/status/2105647670727410103"
+      },
+      "canonical_url": "https://x.com/agilityrobotics/status/2105647670727410103",
+      "published_at": "2026-10-01T13:15:00Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @agilityrobotics post (Oct 1, 2026 13:15 UTC). The post's t.co link did not resolve during verification; no second source found. Catch-up item."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 95,
+        "label": "76 likes + 9 reposts + 10 replies",
+        "observed_at": "2026-10-04T14:35:00+03:00",
+        "evidence_url": "https://x.com/agilityrobotics/status/2105647670727410103"
+      },
+      "tags": [
+        "agility",
+        "digit",
+        "safety",
+        "industrial",
+        "partnership"
+      ],
+      "rank": 12
+    },
+    {
+      "id": "lon-biolens",
+      "section": "Longevity",
+      "story_type": "tooling",
+      "title": "Catch-up: BioAge opens BioLens, an LLM-augmented literature database of mouse lifespan studies, to researchers for free",
+      "summary": "At ARDD 2026, BioAge introduced BioLens, a database that surfaces the value locked in the mouse-lifespan literature - which is scattered across individual figures and methods sections - and made it free to researchers. For geroscience builders this is a retrieval layer over preclinical aging data, the kind of tooling that speeds target discovery and meta-analysis. Caveat: it is a data/tooling release, not a new biological finding; the primary evidence is the official @bioagelabs post (no stable dedicated web page was published as of this run).",
+      "source": {
+        "name": "BioAge Labs on X",
+        "url": "https://x.com/bioagelabs/status/2106114003130855900"
+      },
+      "canonical_url": "https://x.com/bioagelabs/status/2106114003130855900",
+      "published_at": "2026-10-02T20:08:02Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @bioagelabs post (2026-10-02 20:08 UTC), ~8h before the 30h cutoff; announced at ARDD 2026. Post is the primary evidence; no dedicated public page URL was exposed. Catch-up (72h sweep): outside the 30h window; canonical URL verified absent from current edition and all archives."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 17,
+        "label": "12 likes + 5 reposts + 0 replies",
+        "observed_at": "2026-10-04T14:35:00+03:00",
+        "evidence_url": "https://x.com/bioagelabs/status/2106114003130855900"
+      },
+      "tags": [
+        "bioage",
+        "biolens",
+        "mouse-lifespan",
+        "literature",
+        "arrrd"
+      ],
+      "rank": 13
+    },
+    {
+      "id": "rob-astribot-t1",
+      "section": "Robotics",
+      "story_type": "commercial",
+      "title": "Astribot T1 makes overseas debut at IROS 2026, offered from US$18,000",
+      "summary": "Astribot announced that its T1 wheeled-arm humanoid made its overseas debut at IROS 2026 and is offered from US$18,000, with partner projects exploring new robot capabilities beyond the show floor. A sub-$20k deployable humanoid with a physical-ai stack is a price anchor for the commercial robotics market. Caveat: the claim comes from the company's own account in an after-the-fact commercial post (the IROS show ran Sept 27-Oct 1); price and 'orderable now' are company claims without an independent test or public order link.",
+      "source": {
+        "name": "Astribot on X",
+        "url": "https://x.com/Astribot_Inc/status/2106340343046426929"
+      },
+      "canonical_url": "https://x.com/Astribot_Inc/status/2106340343046426929",
+      "published_at": "2026-10-03T11:07:26Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official @Astribot_Inc post inside the 30h window (Oct 3, 2026 11:07 UTC). Company claim; no independent corroboration found."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 3,
+        "label": "2 likes + 1 repost + 0 replies",
+        "observed_at": "2026-10-04T14:40:00+03:00",
+        "evidence_url": "https://x.com/Astribot_Inc/status/2106340343046426929"
+      },
+      "tags": [
+        "astribot",
+        "humanoid",
+        "pricing",
+        "iros",
+        "commercial"
+      ],
+      "rank": 14
+    },
+    {
+      "id": "lon-mash-dq",
+      "section": "Longevity",
+      "story_type": "clinical-trial",
+      "title": "Catch-up: First-in-people senolytic RCT: dasatinib + quercetin improves fibrosis in a 31-person MASH trial, with a sharp safety trade-off",
+      "summary": "A phase-2, double-blind, randomized, placebo-controlled trial of intermittent senolytic therapy (dasatinib 100 mg plus quercetin 1,000 mg) in 31 people with fibrotic MASH found the primary endpoint - >=1-stage fibrosis improvement without MASH worsening on paired biopsies - achieved in 47% of treated vs 7% of placebo participants (P=0.02), with MASH resolution 53% vs 7%. Single-nucleus RNA-seq showed decreased senescence and fibrotic gene signatures in the treated arm. The material caveat is safety: adverse events were far more common (82% vs 43%), all self-limiting, and this is a small proof-of-principle study, not a dose-ranging or long-term trial.",
+      "source": {
+        "name": "Nature Metabolism",
+        "url": "https://www.nature.com/articles/s42255-026-01643-4"
+      },
+      "canonical_url": "https://www.nature.com/articles/s42255-026-01643-4",
+      "published_at": "2026-10-01T00:00:00Z",
+      "corroboration": [
+        {
+          "name": "Geroscience discussion (X)",
+          "url": "https://x.com/BackyardBrief/status/2106319248163586374"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Open-access Nature Metabolism letter, published 1 October 2026 (journal is date-only; noon in source timezone used). Human randomized trial; distinct evidence level from the observational/animal items in this section. Catch-up: absent from current edition and archives."
+      },
+      "tags": [
+        "senolytics",
+        "mash",
+        "fibrosis",
+        "clinical-trial",
+        "dasatinib"
+      ],
+      "rank": 15
+    },
+    {
+      "id": "rob-roboparty-rp1",
+      "section": "Robotics",
+      "story_type": "release",
+      "title": "RoboParty unveils RP1, billed as the first full-stack open-source high-performance humanoid, with 160 N-m peak torque",
+      "summary": "RoboParty said it unveiled RP1 (ROBOTO 01) at IROS 2026, positioning it as the world's first high-performance full-stack open-source bipedal humanoid built on its Romomo actuator modules (up to 160 N-m peak joint torque) and the PartyOS foundation with its UFO unsupervised-RL balance-recovery framework. The company plans to progressively open motion control, simulation, SDKs and training tools, with broader software/hardware releases and a mass-production program in Q4. For builders this is an open-hardware humanoid stack worth tracking. Caveat: 'full-stack open source' is a roadmap, not a shipped repo (the public GitHub is the older January RPO project), and the wire dates the unveil to Sept 28.",
+      "source": {
+        "name": "RoboParty press release",
+        "url": "https://www.prnewswire.com/news-releases/roboparty-unveils-rp1-a-high-performance-full-stack-open-source-humanoid-robot-at-iros-302897655.html"
+      },
+      "canonical_url": "https://www.prnewswire.com/news-releases/roboparty-unveils-rp1-a-high-performance-full-stack-open-source-humanoid-robot-at-iros-302897655.html",
+      "published_at": "2026-10-03T15:59:00Z",
+      "corroboration": [
+        {
+          "name": "RoboParty RPO (GitHub)",
+          "url": "https://github.com/Roboparty/roboto_origin"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Company's own PRNewswire wire (Oct 3, 2026, 11:59 ET), inside the 30h window. Company claims; no independent test or order link."
+      },
+      "tags": [
+        "humanoid",
+        "open-source",
+        "iros",
+        "robotics",
+        "actuation"
+      ],
+      "rank": 16
+    },
+    {
+      "id": "btc-eip8363-hegota",
+      "section": "Bitcoin",
+      "story_type": "protocol",
+      "title": "Catch-up: Ethereum: staking reward burn proposal EIP-8363 pulled from the Hegota upgrade",
+      "summary": "The Ethereum Foundation's Hegota upgrade scope lost EIP-8363, the proposal to burn staking rewards, per The Block. That is a concrete signal about which economic levers Ethereum is willing to touch in the next upgrade cycle. Caveat: it is a scope decision, not a rejection of the idea outright; The Block's article is the canonical write-up (published Oct 1, 16:17 UTC).",
+      "source": {
+        "name": "The Block",
+        "url": "https://www.theblock.co/news/ecosystems/2026-10-01-ethereum-staking-reward-burn-proposal-eip-8363-pulled-hegota-upgrade-417419"
+      },
+      "canonical_url": "https://www.theblock.co/news/ecosystems/2026-10-01-ethereum-staking-reward-burn-proposal-eip-8363-pulled-hegota-upgrade-417419",
+      "published_at": "2026-10-01T16:17:23Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Major crypto outlet; RSS pubDate confirms 2026-10-01 16:17 UTC. No official Ethereum post linked. Catch-up (72h sweep): outside the 30h window; canonical URL verified absent from current edition and all archives."
+      },
+      "tags": [
+        "ethereum",
+        "protocol",
+        "hegota",
+        "staking"
+      ],
+      "rank": 17
+    },
+    {
+      "id": "lon-fda-aging-agenda",
+      "section": "Longevity",
+      "story_type": "policy",
+      "title": "Catch-up: FDA signals aging and longevity will be a topic in its next regulatory-science priorities document",
+      "summary": "At ARDD 2026 at Harvard, senior FDA officials (including CDER's Jeffrey Siegel and the FDA Chief Scientist) described two routes to proving an aging-targeting therapy - benefit in age-related diseases, or direct measurement of age-related deterioration - and indicated the FDA is preparing a new focus-areas-of-regulatory-science document in which aging and longevity will be a topic. For the field this is the closest thing yet to a regulatory map, not a commitment to a specific pathway. Caveat: it is conference coverage with no @FDA post and no timeline, so treat it as directional.",
+      "source": {
+        "name": "Longevity.Technology",
+        "url": "https://longevity.technology/news/fda-puts-aging-on-its-regulatory-science-agenda/"
+      },
+      "canonical_url": "https://longevity.technology/news/fda-puts-aging-on-its-regulatory-science-agenda/",
+      "published_at": "2026-10-01T12:00:00Z",
+      "corroboration": [
+        {
+          "name": "ARDD coverage (X)",
+          "url": "https://x.com/itsphilippk/status/2106439983670206893"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Detailed trade-press report of the ARDD session (1 Oct 2026; date-only, noon source-timezone used), corroborated by multiple independent X posts. No official FDA document yet. Catch-up (72h sweep): outside the 30h window; canonical URL verified absent from current edition and all archives."
+      },
+      "tags": [
+        "fda",
+        "regulatory-science",
+        "aging",
+        "policy",
+        "arrrd"
+      ],
+      "rank": 18
+    },
+    {
+      "id": "lon-lilly-foundayo",
+      "section": "Longevity",
+      "story_type": "clinical-data",
+      "title": "Catch-up: Lilly: post-hoc ATTAIN-1 models predict oral Foundayo (orforglipron) cuts 10-yr type 2 diabetes risk by ~57% and CV risk by ~18%",
+      "summary": "Eli Lilly reported post-hoc modeling on the ATTAIN-1 trial of its FDA-approved oral GLP-1 Foundayo (orforglipron): at the 17.2 mg dose, predicted 57% lower 10-year type-2-diabetes risk and 18% lower cardiovascular risk versus placebo. For a longevity reader the relevance is GLP-1s as candidate interventions across metabolic and vascular aging. The material caveat, emphasized by Lilly: these are risk-model estimates, not counted diabetes cases or heart attacks, and they are post-hoc - a modeling analysis, not a new readout.",
+      "source": {
+        "name": "Eli Lilly investor news",
+        "url": "https://investor.lilly.com/news-releases/news-release-details/lillys-oral-glp-1-foundayo-orforglipron-was-associated"
+      },
+      "canonical_url": "https://investor.lilly.com/news-releases/news-release-details/lillys-oral-glp-1-foundayo-orforglipron-was-associated",
+      "published_at": "2026-10-01T11:00:50Z",
+      "corroboration": [
+        {
+          "name": "Geroscience discussion (X)",
+          "url": "https://x.com/biogerontology/status/2105830964509426074"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official Lilly press release, datePublished 2026-10-01T07:00:50-04:00 (=11:00:50 UTC). Post-hoc risk-engine estimates from the ATTAIN-1 trial; distinct from the MASH trial and the FDA agenda items above. Catch-up item."
+      },
+      "tags": [
+        "lilly",
+        "glp-1",
+        "orforglipron",
+        "metabolic",
+        "risk-model"
+      ],
+      "rank": 19
+    },
+    {
+      "id": "ai-gemma4-competition",
+      "section": "AI",
+      "story_type": "announcement",
+      "title": "Catch-up: Gemma 4 Developer Agent Competition goes live on Kaggle: post-train an open model into a dev-workflow agent, $100K prize",
+      "summary": "Google launched the Gemma 4 Developer Agent Competition, a Kaggle challenge to post-train an open model into a coding agent that speeds up everyday dev workflows on consumer hardware, with a $100K prize pool and a separate paper track. It is a concrete, open entry point into building on the Gemma 4 open models. For builders it is a signal of where the open-model agent effort is pointed. Caveat: it is a competition, not a model release; the Kaggle page is the canonical link.",
+      "source": {
+        "name": "Google Research on X",
+        "url": "https://x.com/GoogleResearch/status/2106061557851693406"
+      },
+      "canonical_url": "https://www.kaggle.com/competitions/gemma-4-developer-agent",
+      "published_at": "2026-10-02T16:39:38Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official @GoogleResearch announcement (2026-10-02 16:39 UTC) with the live Kaggle competition URL. published_at uses the official X post timestamp. Catch-up item."
+      },
+      "tags": [
+        "google",
+        "gemma",
+        "kaggle",
+        "agents",
+        "open-source"
+      ],
+      "rank": 20
+    }
+  ]
+}
