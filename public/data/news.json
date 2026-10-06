@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "edition": {
-    "date": "2026-10-05",
+    "date": "2026-10-06",
     "title": "The Daily Signal",
     "kicker": "Primary-source tech intelligence, compiled from the live wire.",
     "status": "live",
-    "updated_at": "2026-10-05T08:07:08+03:00"
+    "updated_at": "2026-10-06T08:15:20+03:00"
   },
   "sections": [
     "Bitcoin",
@@ -13,793 +13,697 @@
     "Robotics",
     "Longevity"
   ],
-  "lead_story_id": "ai-aleph-alpha-kolibri",
+  "lead_story_id": "ai-reflection-beam",
   "stories": [
     {
-      "id": "ai-aleph-alpha-kolibri",
+      "id": "ai-reflection-beam",
       "section": "AI",
-      "rank": 1,
-      "story_type": "model-release",
-      "title": "Aleph Alpha releases Kolibri, a 78B open-weight MoE with up to 1M-token context, under Apache 2.0",
-      "summary": "Aleph Alpha released Kolibri on October 3, 2026, an English-German mixture-of-experts transformer with 78B total parameters (3.46B active per token), FP8 weights (~78 GB), tool calling and an explicit reasoning mode, downloadable from Hugging Face under Apache 2.0. It was pre-trained on 20T tokens over 21 days on 768 NVIDIA B200s, supports up to 1,048,576-token context (the card recommends staying at or under 262,144 for serving efficiency), and runs on as little as 2x A100 80GB or a single H200/B200/B300. It is positioned as a 'sovereign' model for regulated, mission-critical work in public administration, industrials and aerospace, with full supply-chain auditability from data ingestion to final evals. Caveat: the headline numbers (e.g. AIME 2025 96.9, GPQA Diamond 84.3 on Aleph Alpha's own comparison table) are company-reported, and the 1M context is validated but the vendor itself recommends the 256k regime for hard or latency-sensitive work.",
+      "story_type": "model release",
+      "title": "Reflection AI debuts Beam: 501B open-weight MoE (23B active) targeting Chinese open models at 3-4x lower inference cost",
+      "summary": "Reflection AI published Beam, its first open-weight foundation model: a sparse MoE with 501B total parameters and 23B active per token, trained on 23.8T curated tokens and an RL campaign that ran 100M+ rollouts across ~1M environments on ~10.5K GB300 GPUs over four weeks. The company claims it matches leading Chinese open models (GLM 5.2-class) on advanced reasoning at 3-4x less inference compute, with a 1M-token effective context from midtraining and a reasoning-effort control knob. Weights are not yet public as of Oct 5 - final red-teaming, waitlist early access via an OpenAI-compatible API - so treat benchmark claims as self-reported until the weights drop. This is the first credible Western open-weight counterweight to DeepSeek/Qwen/Z.ai in the efficiency lane.",
       "source": {
-        "name": "Aleph Alpha on X",
-        "url": "https://x.com/Aleph__Alpha/status/2106306840657297814"
+        "name": "Reflection AI official blog (canonical release)",
+        "url": "https://reflection.ai/blog/introducing-beam"
       },
-      "canonical_url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
-      "published_at": "2026-10-03T08:54:18Z",
+      "canonical_url": "https://reflection.ai/blog/introducing-beam",
+      "published_at": "2026-10-05T12:00:00Z",
       "corroboration": [
         {
-          "name": "Kolibri-1 on Hugging Face",
-          "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1"
+          "name": "TechCrunch: Reflection debuts Beam",
+          "url": "https://techcrunch.com/2026-10-05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/"
         },
         {
-          "name": "Cohere on X",
-          "url": "https://x.com/cohere/status/2106454131023995094"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official @Aleph__Alpha release post (2026-10-03 08:54 UTC) + official blog (03/10/2026) + live Hugging Face model card with exact parameter counts and training details. Verified absent from current edition and archives."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 7256,
-        "label": "6,269 likes + 674 reposts + 313 replies",
-        "observed_at": "2026-10-05T07:30:00+03:00",
-        "evidence_url": "https://x.com/Aleph__Alpha/status/2106306840657297814"
-      },
-      "tags": [
-        "aleph-alpha",
-        "kolibri",
-        "moe",
-        "open-source",
-        "apache-2.0",
-        "1m-context"
-      ]
-    },
-    {
-      "id": "ai-deepseek-harness",
-      "section": "AI",
-      "rank": 2,
-      "story_type": "agent-tooling",
-      "title": "Catch-up: DeepSeek Harness ships public-preview desktop agent, open source on macOS, Windows and Linux",
-      "summary": "DeepSeek's official account announced (October 2, 2026) that DeepSeek Harness - its open-source agent harness built on Cordis' 'everything is a plugin' architecture - now has packaged desktop builds for macOS and Windows, with Linux available via the @deepseek-ai/dsh npm package (web UI via `npx @deepseek-ai/dsh web`). It ships in public preview worldwide with composable plugins for everyday work, coding, data analysis and scheduled tasks, and the demo defaults to DeepSeek-V4.1-Flash. For builders this is a first-party open harness to compare against Claude Code and Codex, including a 'creator mode' for building new plugins through chat. Caveat: the first desktop announcement was the @DeepSeekHarness account on September 30; this is the main-account confirmation, it is explicitly public-preview, and no new foundation model was released with it.",
-      "source": {
-        "name": "DeepSeek on X",
-        "url": "https://x.com/deepseek_ai/status/2105915715241062644"
-      },
-      "canonical_url": "https://www.deepseek.com/en/harness/",
-      "published_at": "2026-10-02T07:00:07Z",
-      "corroboration": [
-        {
-          "name": "DeepSeek Harness (GitHub)",
-          "url": "https://github.com/deepseek-ai/deepseek-harness"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official @deepseek_ai post (2026-10-02 07:00 UTC) with the live product page, which states 'public preview worldwide and open source'. 72h catch-up: outside the 30h window; canonical URL verified absent from current edition and archives."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 5114,
-        "label": "4,537 likes + 356 reposts + 221 replies",
-        "observed_at": "2026-10-05T07:45:00+03:00",
-        "evidence_url": "https://x.com/deepseek_ai/status/2105915715241062644"
-      },
-      "tags": [
-        "deepseek",
-        "harness",
-        "agents",
-        "open-source",
-        "plugins"
-      ]
-    },
-    {
-      "id": "ai-nvidia-nemotron-asr",
-      "section": "AI",
-      "rank": 3,
-      "story_type": "release",
-      "title": "Catch-up: NVIDIA publishes a Nemotron 3.5 ASR dialect-adaptation recipe that cut Saudi Arabic WER from 55% to 30%",
-      "summary": "NVIDIA released a NeMo fine-tuning recipe for Nemotron 3.5 ASR that adapts the existing 0.6B streaming multilingual ASR model to Najdi and Hijazi Saudi Arabic using 133.7 hours of SADA speech: word error rate on the target split fell from 55.05% to 29.96% while English FLEURS actually improved from 11.04% to 10.42%, via partial encoder unfreezing and a weighted replay mix. The write-up (blog dated September 30, distributed October 2) includes a path to other low-resource languages and is runnable on a pair of RTX PRO 6000 Blackwell GPUs. For builders it is a concrete template for dialect/domain ASR adaptation without retraining from scratch. Caveat: the post itself cautions the workflow does not generalize to every dialect or deployment, and ~30% of words are still wrong on the target split.",
-      "source": {
-        "name": "NVIDIA AI on X",
-        "url": "https://x.com/NVIDIAAI/status/2106068053452574908"
-      },
-      "canonical_url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-for-saudi-arabic-dialects-with-a-path-to-other-languages/",
-      "published_at": "2026-10-02T17:05:27Z",
-      "corroboration": [],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official @NVIDIAAI post (2026-10-02 17:05 UTC) with the NVIDIA developer blog post (page published 2026-10-01 per live metadata). 72h catch-up: outside the 30h window; absent from archives."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 3200,
-        "label": "2,769 likes + 297 reposts + 134 replies",
-        "observed_at": "2026-10-05T07:30:00+03:00",
-        "evidence_url": "https://x.com/NVIDIAAI/status/2106068053452574908"
-      },
-      "tags": [
-        "nvidia",
-        "nemotron",
-        "asr",
-        "fine-tuning",
-        "arabic"
-      ]
-    },
-    {
-      "id": "ai-hf-multi-harness-rl",
-      "section": "AI",
-      "rank": 4,
-      "story_type": "open-source",
-      "title": "Catch-up: Hugging Face's multi-harness RL guide: same weights score 62% in one agent harness, 33% in another",
-      "summary": "Hugging Face published 'the ultimate guide to multi-harness RL' (article updated October 1; the official @huggingface post amplified it on October 2): train agents through real coding harnesses (OpenCode, Claude Code, Codex, Mini-SWE-Agent) by pointing them at an OpenEnv capture proxy instead of editing the harness, with Harbor tasks and TRL. The headline motivating result is that the same model, with the same weights, scores 62% in one agent harness and 33% in another; their reported training run took Liquid AI's LFM2.5-2.6B from 42% to 54% pass@1 across four harnesses with 31% fewer tool calls, while SFT on 3,189 Qwen3.8-27B rollouts plateaued at 47.5%. For builders it is the clearest public argument yet that harness choice, not just weights, dominates agent quality - and a free recipe to fix it. Caveat: one 2.6B model and one task family; numbers are the authors'/Hugging Face's.",
-      "source": {
-        "name": "Hugging Face on X",
-        "url": "https://x.com/huggingface/status/2106034221005312448"
-      },
-      "canonical_url": "https://huggingface.co/spaces/FineEnvs/multi-harness-rl",
-      "published_at": "2026-10-02T14:51:01Z",
-      "corroboration": [
-        {
-          "name": "Author thread",
-          "url": "https://x.com/adithya_s_k/status/2105684965891703141"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official @huggingface post (2026-10-02 14:51 UTC) with the live Space; article updated 2026-10-01 per the Space page, results through Sep 29. 72h catch-up: outside the 30h window; absent from archives."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 1467,
-        "label": "1,154 likes + 158 reposts + 155 replies",
-        "observed_at": "2026-10-05T07:30:00+03:00",
-        "evidence_url": "https://x.com/huggingface/status/2106034221005312448"
-      },
-      "tags": [
-        "hugging-face",
-        "rl",
-        "agents",
-        "harness",
-        "openenv",
-        "open-source"
-      ]
-    },
-    {
-      "id": "ai-openai-agents-api-weekly",
-      "section": "AI",
-      "rank": 5,
-      "story_type": "api-update",
-      "title": "Catch-up: OpenAI Agents API weekly: one-call computer use, Bedrock Managed Agents, subagent dashboards",
-      "summary": "OpenAI's developer account recapped the Agents API weekly (post October 3, quoting OpenAI engineer @stevendcoffey's October 2 thread): computer use is now a single API call (agent plus OpenAI-hosted browser, with sign-in handled by your app), Bedrock Managed Agents is available ('Agents API, except AWS'), and new hosted environment sizes, subagent dashboard controls and environment reuse across sessions shipped, alongside reliability claims of 99.97% turn reliability, fewer SSE disconnects and ~20% faster tool calls. For builders running agents in production, the environment-reuse and subagent-visibility controls are the operationally useful deltas. Caveat: GPT-6.1 Sol and the original computer-use entry are September 29 items; the reliability and portability claims appear only in the employee thread, not yet as dated changelog entries.",
-      "source": {
-        "name": "OpenAI Developers on X",
-        "url": "https://x.com/OpenAIDevs/status/2106176799545970710"
-      },
-      "canonical_url": "https://x.com/OpenAIDevs/status/2106176799545970710",
-      "published_at": "2026-10-03T00:17:34Z",
-      "corroboration": [
-        {
-          "name": "Quoted source: @stevendcoffey",
-          "url": "https://x.com/stevendcoffey/status/2106159012538442068"
+          "name": "MarkTechPost: architecture and training details",
+          "url": "https://www.marktechpost.com/2026-10-05/reflection-ai-introduces-beam-a-501b-open-weight-moe-model-with-23b-active-parameters-for-coding-and-agentic-workloads/"
         },
         {
-          "name": "OpenAI API changelog",
-          "url": "https://developers.openai.com/api/docs/changelog"
+          "name": "Axios first report (Oct 4)",
+          "url": "https://www.axios.com/2026-10-04/reflection-open-weight-ai"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official blog page verified live (title 'Introducing Beam: Reflection's 501B open-weight model', dated October 5, 2026). Blog exposes only a date, so published_at uses noon UTC; TechCrunch/MarkTechPost coverage dated Oct 5 corroborates timing. Caveat: weights unreleased, benchmarks self-reported."
+      },
+      "popularity": {
+        "platform": "mixed",
+        "engagement": 472,
+        "label": "364 points + 108 comments",
+        "observed_at": "2026-10-06T04:25:00Z",
+        "evidence_url": "https://news.ycombinator.com/item?id=49969183"
+      },
+      "tags": [
+        "Reflection AI",
+        "Beam",
+        "open-weight",
+        "MoE",
+        "RL",
+        "Western open models"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "btc-cftc-anprm",
+      "section": "Bitcoin",
+      "story_type": "regulatory proposal",
+      "title": "CFTC opens comment period on ANPRM for retail crypto transactions and a crypto-asset market subcategory",
+      "summary": "Release 9307-26 (Oct 5) is an advance notice of proposed rulemaking on retail crypto transactions under CEA 2(c)(2)(D) and a new 'crypto asset market' subcategory of designated contract market. Chairman Selig frames it as using existing CEA authority after Congress did not pass the Clarity Act, and comments are due 60 days after Federal Register publication. It would not force spot crypto onto CFTC platforms, and it is an ANPRM, not a proposed or final rule. The SEC has been moving in parallel on the same question, so builders should track both dockets for where the US crypto perimeter actually lands.",
+      "source": {
+        "name": "BitcoinMagazine X post (official coverage)",
+        "url": "https://x.com/BitcoinMagazine/status/2107135616337236175"
+      },
+      "canonical_url": "https://www.cftc.gov/PressRoom/PressReleases/9307-26",
+      "published_at": "2026-10-05T16:00:00Z",
+      "corroboration": [
+        {
+          "name": "CoinDesk coverage of the joint CFTC/SEC push",
+          "url": "https://www.coindesk.com/policy/2026-10-05/u-s-cftc-joins-sec-in-proposing-crypto-regulations-though-spot-market-gap-lingers"
+        },
+        {
+          "name": "CoinDesk X post",
+          "url": "https://x.com/CoinDesk/status/2107144211808100469"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Canonical CFTC release page verified live (title and 'October 05, 2026' date confirmed by direct fetch). Release page exposes only a date, so published_at uses noon US Eastern; the X post timestamp (15:47:34Z) is an independent confirmation the action hit on Oct 5."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 2065,
+        "label": "1,995 likes + 70 replies",
+        "observed_at": "2026-10-06T04:20:00Z",
+        "evidence_url": "https://x.com/BitcoinMagazine/status/2107135616337236175"
+      },
+      "tags": [
+        "CFTC",
+        "ANPRM",
+        "regulation",
+        "retail-crypto",
+        "CEA"
+      ],
+      "rank": 2
+    },
+    {
+      "id": "btc-stacks-bond2",
+      "section": "Bitcoin",
+      "story_type": "protocol launch",
+      "title": "Stacks opens Bitcoin Staking Bond 2 with liquid staking as the primary path",
+      "summary": "Bond 2 is the second Bitcoin Staking bond and the first where most capacity runs through liquid staking: BTC moves to Stacks as sBTC, participants receive stBTC as a liquid claim usable across Stacks (e.g., pledged on Zest to borrow USDC while the underlying BTC keeps earning staking rewards). StackingDAO holds most capacity, with Xverse and 21Shares also participating; deploy cutoff is Bitcoin block 970,450 and the bond starts around Oct 10. Self-custodial staking stays whitelisted for anchors with a 50+ BTC minimum, while the pooled path is not self-custodial. This is the clearest signal yet of BTC capital behaving as yield-bearing, composable collateral rather than idle reserves.",
+      "source": {
+        "name": "Stacks X post (official)",
+        "url": "https://x.com/Stacks/status/2107196369610149980"
+      },
+      "canonical_url": "https://www.stacks.co/blog/bitcoin-staking-bond-2-liquid-staking",
+      "published_at": "2026-10-05T12:00:00Z",
+      "corroboration": [
+        {
+          "name": "Stacks follow-up post (links the blog)",
+          "url": "https://x.com/Stacks/status/2107196381769416707"
+        },
+        {
+          "name": "Stacks earlier post: second period opens Oct 10",
+          "url": "https://x.com/Stacks/status/2107048192072446295"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official Stacks blog verified live (title, author 'Stacks Labs', 'October 5, 2026'). Blog exposes only a date, so published_at is noon UTC; the official X post at 19:48:58Z independently confirms the Oct 5 launch."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 116,
+        "label": "106 likes + 10 replies",
+        "observed_at": "2026-10-06T04:20:00Z",
+        "evidence_url": "https://x.com/Stacks/status/2107196369610149980"
+      },
+      "tags": [
+        "Stacks",
+        "Bitcoin staking",
+        "liquid staking",
+        "sBTC",
+        "PoX"
+      ],
+      "rank": 3
+    },
+    {
+      "id": "ai-openai-textgrain",
+      "section": "AI",
+      "story_type": "product feature launch",
+      "title": "OpenAI ships textGrain: statistical text watermarking, API opt-in today, EU ChatGPT/Codex default over coming weeks",
+      "summary": "OpenAI published its text watermarking approach for the EU AI Act: textGrain adds an invisible statistical signal to word choices (not a visible mark, not user-identifying). Starting Oct 5, API customers worldwide can opt in on select models (off by default); eligible ChatGPT and Codex text in the EU gets watermarked over the coming weeks on all plans. At a 1% target false-positive rate the detector caught ~80% of 200-token and ~95% of 400-token passages, but synonym replacement, translation, and short text degrade it badly - replacing 10% of words with synonyms dropped detection from ~92% to 66%. The technical report is explicitly unfinished and the detector is application-gated; OpenAI says it matched or beat SynthID for text and plans to open-source the method.",
+      "source": {
+        "name": "OpenAI X post (official launch thread)",
+        "url": "https://x.com/OpenAI/status/2107164650249101695"
+      },
+      "canonical_url": "https://openai.com/index/eu-text-provenance/",
+      "published_at": "2026-10-05T17:42:56Z",
+      "corroboration": [
+        {
+          "name": "OpenAI technical report PDF (textGrain)",
+          "url": "https://cdn.openai.com/pdf/e9508624-d767-41b6-a26d-e34ca798ada6/textgrain-entropy-calibrated-watermarking-for-language-model-text.pdf"
+        },
+        {
+          "name": "OpenAI release page (verified live, dated October 5, 2026)",
+          "url": "https://openai.com/index/eu-text-provenance/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official launch thread with exact UTC timestamp (2026-10-05 17:42:56Z) plus verified official release page and technical report PDF. Release page fetch confirmed date 'October 5, 2026' and watermarking details."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 6670,
+        "label": "5,985 likes + 685 reposts",
+        "observed_at": "2026-10-06T04:20:00Z",
+        "evidence_url": "https://x.com/OpenAI/status/2107164650249101695"
+      },
+      "tags": [
+        "OpenAI",
+        "watermarking",
+        "EU AI Act",
+        "content provenance",
+        "textGrain"
+      ],
+      "rank": 4
+    },
+    {
+      "id": "ai-openai-mcp-no-devmode",
+      "section": "AI",
+      "story_type": "product feature launch",
+      "title": "ChatGPT: custom MCP servers now work without developer mode",
+      "summary": "OpenAI's dev team confirmed (via a native @OpenAIDevs repost of the in-house announcement) that the developer-mode toggle for custom MCP servers is gone: the path is now Plugins -> Add -> Create custom MCP server for all users. No docs, changelog, or plan restrictions were published alongside, and evidence is a before/after screenshot from the official account. For builders, the practical change is that MCP integration is now a default ChatGPT surface rather than a power-user path, which changes how many users will actually ship MCP-backed tools into their daily loops.",
+      "source": {
+        "name": "OpenAIDevs X post (official, native repost of @mxstbr)",
+        "url": "https://x.com/OpenAIDevs/status/2107194254087106776"
+      },
+      "canonical_url": "https://x.com/OpenAIDevs/status/2107194254087106776",
+      "published_at": "2026-10-05T19:40:34Z",
+      "corroboration": [
+        {
+          "name": "Source post by @mxstbr (Plugins, MCP, Skills at OpenAI)",
+          "url": "https://x.com/mxstbr/status/2107166154242572454"
         }
       ],
       "quality": {
         "signal": "primary",
         "confidence": "medium",
-        "note": "Official @OpenAIDevs quote-tweet (2026-10-03 00:17 UTC, 12 minutes before the 30h cutoff, so labeled 72h catch-up) of an official OpenAI engineer post. Claims verified against the official changelog where possible; several items not yet on the changelog."
+        "note": "Official account repost with exact timestamp; no release page or changelog exists yet, so the X post is the canonical source. Screenshot-only evidence, no plan limits stated."
       },
       "popularity": {
         "platform": "x",
-        "engagement": 573,
-        "label": "483 likes + 26 reposts + 64 replies",
-        "observed_at": "2026-10-05T07:30:00+03:00",
-        "evidence_url": "https://x.com/OpenAIDevs/status/2106176799545970710"
+        "engagement": 1070,
+        "label": "955 likes + 115 reposts",
+        "observed_at": "2026-10-06T04:20:00Z",
+        "evidence_url": "https://x.com/OpenAIDevs/status/2107194254087106776"
       },
       "tags": [
-        "openai",
-        "agents-api",
-        "computer-use",
-        "bedrock",
-        "infrastructure"
-      ]
+        "OpenAI",
+        "ChatGPT",
+        "MCP",
+        "plugins",
+        "developer tools"
+      ],
+      "rank": 5
     },
     {
-      "id": "ai-replit-drift",
-      "section": "AI",
-      "rank": 6,
-      "story_type": "product-teaser",
-      "title": "Replit CEO teasers 'Replit Drift', which @Replit quoted with 'Full throttle'",
-      "summary": "Replit CEO Amjad Masad posted a short teaser on October 3, 2026 labeled only 'Replit Drift' with a video, and @Replit quoted it on October 4 with 'Full throttle'. No product page, spec or release date has been published. For builders this is a signal that Replit is working on something beyond its existing agent stack - the company has also been shipping chart generation in chat and selectable GPT-6.1 Sol / Claude Sonnet 5.5 agent models. Caveat: it is a two-word teaser with no docs; treat the name and scope as company-described until a product page lands.",
+      "id": "btc-okxice-sec",
+      "section": "Bitcoin",
+      "story_type": "regulatory filing",
+      "title": "OKX-ICE joint venture OKXICE notifies SEC of plans for a 24/7 tokenized US stock venue",
+      "summary": "OKXICE, the OKX-Intercontinental Exchange joint venture, notified the SEC that it plans a round-the-clock tokenized US stock trading venue under the SEC innovation exemption, with more than 60 US-listed names, stablecoin pairs, and a 30-day window for issuers to object. It is a notification, not a live exchange, and no primary EDGAR filing URL was confirmed, so treat details as reported by CoinDesk and corroborated by Reuters/Bloomberg coverage of the same notice. For builders, this is the exchange-side answer to perpetual-trading demand: a tokenized stock market that never closes, settling against crypto-native rails.",
       "source": {
-        "name": "Amjad Masad on X",
-        "url": "https://x.com/amasad/status/2106406812316827874"
+        "name": "CoinDesk X post (official)",
+        "url": "https://x.com/CoinDesk/status/2107048775378174257"
       },
-      "canonical_url": "https://x.com/amasad/status/2106406812316827874",
-      "published_at": "2026-10-03T15:31:33Z",
+      "canonical_url": "https://www.coindesk.com/markets/2026-10-05/okx-and-nyse-s-owner-file-for-round-the-clock-tokenized-trading-in-u-s-stocks",
+      "published_at": "2026-10-05T10:02:29Z",
       "corroboration": [
         {
-          "name": "Replit quote",
-          "url": "https://x.com/Replit/status/2106807418344919129"
+          "name": "CoinDesk article (canonical, date-stamped Oct 5)",
+          "url": "https://www.coindesk.com/markets/2026-10-05/okx-and-nyse-s-owner-file-for-round-the-clock-tokenized-trading-in-u-s-stocks"
         }
       ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Canonical article URL verified to exist on coindesk.com/markets listing (direct page fetch 404s with a plain UA but the listing confirms the exact path). No primary SEC filing URL was surfaced; '63 NYSE-listed' in the post vs 'more than 60 US-listed' in the article is a minor mismatch. published_at uses the official X post timestamp."
+      },
+      "tags": [
+        "OKX",
+        "ICE",
+        "tokenized stocks",
+        "SEC innovation exemption",
+        "24/7 trading"
+      ],
+      "rank": 6
+    },
+    {
+      "id": "btc-starkware-pq",
+      "section": "Bitcoin",
+      "story_type": "research proof-of-concept",
+      "title": "StarkWare signs a Starknet testnet transaction with a NIST ML-DSA post-quantum key held in a phone's secure hardware",
+      "summary": "StarkWare says it sent a Starknet testnet transaction signed with a NIST ML-DSA (FIPS 204) key generated and held in a phone's secure element, verified onchain without a hard fork. The follow-up post is explicit that this is an unaudited testnet proof of concept, not mainnet and not a Bitcoin L1 change. It matters because post-quantum signature verification now works end-to-end inside a production proving stack's verifier without consensus changes, de-risking the multi-year migration question for all STARK-based rollups.",
+      "source": {
+        "name": "StarkWare X post (official)",
+        "url": "https://x.com/StarkWareLtd/status/2107139847613972590"
+      },
+      "canonical_url": "https://x.com/StarkWareLtd/status/2107139847613972590",
+      "published_at": "2026-10-05T16:04:23Z",
+      "corroboration": [
+        {
+          "name": "StarkWare follow-up: unaudited testnet PoC",
+          "url": "https://x.com/StarkWareLtd/status/2107139859567816872"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official company account post with exact timestamp; no blog, code, or paper URL was published in the thread, so the X post is the canonical source. Company itself labels it unaudited testnet."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 73,
+        "label": "64 likes + 9 replies",
+        "observed_at": "2026-10-06T04:20:00Z",
+        "evidence_url": "https://x.com/StarkWareLtd/status/2107139847613972590"
+      },
+      "tags": [
+        "StarkWare",
+        "post-quantum",
+        "ML-DSA",
+        "Starknet",
+        "crypto signing"
+      ],
+      "rank": 7
+    },
+    {
+      "id": "btc-payward-sgb",
+      "section": "Bitcoin",
+      "story_type": "infrastructure deal",
+      "title": "Kraken parent Payward and Singapore Gulf Bank integrate clearing for 24/7 institutional dollar settlement of crypto trades",
+      "summary": "Payward (Kraken's parent) is integrating Singapore Gulf Bank's clearing network so selected institutional clients in Asia and the Gulf can settle qualifying digital-asset trades in dollars around the clock, including on non-banking days. The rails are dollars through a bank clearing network rather than Bitcoin itself, and Payward reportedly announced the deal on Sunday, so the primary announcement may sit just before the window. It is one more data point in the trend of TradFi clearing infrastructure wrapping tokenized assets, which decides where institutional crypto volume actually settles.",
+      "source": {
+        "name": "CoinDesk X post (official)",
+        "url": "https://x.com/CoinDesk/status/2107032767561171328"
+      },
+      "canonical_url": "https://www.coindesk.com/business/2026-10-05/kraken-operator-payward-and-singapore-gulf-bank-platform-for-24-7-institutional-crypto-settlement",
+      "published_at": "2026-10-05T08:58:53Z",
+      "corroboration": [
+        {
+          "name": "CoinDesk article (canonical, date-stamped Oct 5)",
+          "url": "https://www.coindesk.com/business/2026-10-05/kraken-operator-payward-and-singapore-gulf-bank-platform-for-24-7-institutional-crypto-settlement"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Canonical article URL verified to exist on coindesk.com/business listing. No primary Payward announcement URL was found; published_at uses the official X post timestamp."
+      },
+      "tags": [
+        "Payward",
+        "Kraken",
+        "clearing",
+        "institutional settlement",
+        "Singapore"
+      ],
+      "rank": 8
+    },
+    {
+      "id": "btc-fairshake-house",
+      "section": "Bitcoin",
+      "story_type": "policy action",
+      "title": "Fairshake publishes lists of the 32 US House incumbents it will spend on in November",
+      "summary": "The industry's largest crypto PAC, Fairshake, named the House incumbents on both parties it will bankroll in the November midterms. This is campaign spending, not a filing or a rule, but the lists are a concrete read on where the industry's political weight is placed heading into a session that decides the Clarity Act and follow-on market-structure bills. Builders tracking regulatory timing should treat the endorsed-coalition composition as a leading indicator of which chambers' crypto bills get floor votes.",
+      "source": {
+        "name": "CoinDesk X post (official)",
+        "url": "https://x.com/CoinDesk/status/2107192769127297082"
+      },
+      "canonical_url": "https://www.coindesk.com/policy/2026-10-05/crypto-s-campaign-arm-fairshake-sets-lists-of-u-s-house-favorites-it-ll-spend-on",
+      "published_at": "2026-10-05T19:34:40Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "URL is the one linked in the official post; article not independently fetched this run (date-stamped Oct 5 in the post). published_at uses the X post timestamp."
+      },
+      "tags": [
+        "Fairshake",
+        "policy",
+        "US House",
+        "campaign",
+        "crypto PAC"
+      ],
+      "rank": 9
+    },
+    {
+      "id": "ai-anthropic-glm53-catchup",
+      "section": "AI",
+      "story_type": "research warning (Catch-up)",
+      "title": "Anthropic research: GLM-5.3, the downloadable Chinese open-weight model, builds end-to-end cyber exploits near frontier level",
+      "summary": "Catch-up: Anthropic's research page 'GLM-5.3 and the spread of advanced cyber capabilities' (published Sep 29 15:46 UTC) documents that Z.ai's open-weight GLM-5.3 can find vulnerabilities and assemble working exploit chains with roughly the success rates of Anthropic's own frontier models - at ~20 minutes of human attention, ~8 hours of model work and ~$20 in API costs per run. NIST's CAISI earlier called it the most cyber-capable open-weight model released to date. The distribution problem is the point: unlike a frontier API, these weights are downloadable and modifiable, so safety constraints are easier for downstream users to change. This is a research warning, not a finding of a specific incident.",
+      "source": {
+        "name": "Anthropic official research page (canonical)",
+        "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities"
+      },
+      "canonical_url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "published_at": "2026-09-29T15:46:00Z",
+      "corroboration": [
+        {
+          "name": "TheNextWeb coverage (Oct 1)",
+          "url": "https://thenextweb.com/news/glm-5-3-cyber-exploits-mythos-anthropic-safeguards"
+        },
+        {
+          "name": "SCMP coverage",
+          "url": "https://www.scmp.com/tech/big-tech/article/3369354/anthropic-raises-alarm-over-elite-hacking-ability-chinese-firm-zais-glm-53"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Canonical Anthropic research page verified live; machine-readable datePublished 2026-09-29T15:46:00Z. Inside the 72h catch-up window and the canonical URL is absent from all prior editions/archives. Not a new Sep-29 X announcement - labeled Catch-up plainly per contract."
+      },
+      "tags": [
+        "Anthropic",
+        "GLM-5.3",
+        "Z.ai",
+        "cyber capabilities",
+        "open-weight risk",
+        "Catch-up"
+      ],
+      "rank": 10
+    },
+    {
+      "id": "ai-khanmigo-trial",
+      "section": "AI",
+      "story_type": "research paper (Catch-up)",
+      "title": "Working paper: two-year school experiment on Khanmigo AI tutoring",
+      "summary": "A new EdWorkingPapers preprint (ai26-1551, dated October 2026, page timestamp Oct 1) reports a two-year school experiment measuring Khanmigo's effect as an AI tutor. The paper comes out of the Oreopoulos/Mitchell-King-Rice network and is a preprint, not a peer-reviewed publication, so effect sizes should be read as early experimental evidence on sustained (not single-shot) AI tutoring. It is one of the longest-run controlled AI-tutoring deployments published so far, which is why it drew immediate HN discussion on Oct 6.",
+      "source": {
+        "name": "EdWorkingPapers (canonical preprint page)",
+        "url": "https://edworkingpapers.com/ai26-1551"
+      },
+      "canonical_url": "https://edworkingpapers.com/ai26-1551",
+      "published_at": "2026-10-01T12:00:00Z",
+      "corroboration": [
+        {
+          "name": "Hacker News thread (Oct 6, 44pts)",
+          "url": "https://news.ycombinator.com/item?id=49972419"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Preprint page verified live; the site exposes 'October 2026' with an <time datetime='2026-10-01T12:00:00Z'> metadata tag, so published_at uses that date at noon UTC. Preprint, not peer-reviewed. In-window signal: Hacker News discussion (Oct 6, 44pts/35cmt) of the preprint; the preprint page is dated October 2026 (time tag 2026-10-01)."
+      },
+      "tags": [
+        "Khanmigo",
+        "AI tutoring",
+        "education",
+        "working paper",
+        "RCT"
+      ],
+      "rank": 11
+    },
+    {
+      "id": "rob-sharpa-iro",
+      "section": "Robotics",
+      "story_type": "hardware launch (Catch-up)",
+      "title": "Sharpa launches D01 tactile robot, W02 dexterous hand and AE01 haptic data glove at IROS",
+      "summary": "Sharpa unveiled three flagship products at IROS 2026 (official release Sep 28, widely covered into this window): D01, an integrated tactile-sensing robot with whole-body electronic skin (100 Hz tactile sampling, 0.1-20 N force range, 0.2 N resolution, >10.5 m/s end-effector speed, 1:1 arm payload-to-weight ratio); W02, a lighter, more compact fully-tactile dexterous hand (21 DoF, <750 g, IP54); and AE01, a high-fidelity haptic exoskeleton glove for teleoperation data capture. The W02 drop from W01's 22 DoF is deliberate - a smaller, lighter hand with full-hand touch rather than more degrees of freedom. Specs are vendor-claimed at launch, with production timing unspecified in the release.",
+      "source": {
+        "name": "Sharpa official newsroom (canonical)",
+        "url": "https://www.sharpa.com/blogs/news/sharpa-launches-three-flagship-products-at-iros-pushing-the-boundaries-of-dexterous-manipulation"
+      },
+      "canonical_url": "https://www.sharpa.com/blogs/news/sharpa-launches-three-flagship-products-at-iros-pushing-the-boundaries-of-dexterous-manipulation",
+      "published_at": "2026-09-28T12:00:00Z",
+      "corroboration": [
+        {
+          "name": "PRNewswire: Sharpa unveils three flagship products",
+          "url": "https://www.prnewswire.com/news-releases/sharpa-unveils-three-flagship-products-d01-robot-w02-dexterous-hand-and-ae01-data-glove-at-iros-2026-302892129.html"
+        },
+        {
+          "name": "RobotToday industry briefing",
+          "url": "https://robottoday.com/industry-briefing/sharpa-introduces-d01-tactile-robot-w02-dexterous-hand-and-ae01-haptic-glove-at-iros-2026/14616"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official company newsroom verified live (dateline 'Sept. 28, 2026', Pittsburgh). Outside the 30h window; included as catch-up because the IROS launch cycle was still rolling through major tech outlets during the window and the canonical URL is new to this paper. Vendor specs."
+      },
+      "tags": [
+        "Sharpa",
+        "D01",
+        "W02",
+        "AE01",
+        "dexterous manipulation",
+        "tactile sensing",
+        "IROS 2026",
+        "Catch-up"
+      ],
+      "rank": 12
+    },
+    {
+      "id": "rob-agility-meridian",
+      "section": "Robotics",
+      "story_type": "industry development",
+      "title": "Agility CEO Peggy Johnson joins MITRE-led Project Meridian on the future of defense technology",
+      "summary": "Agility Robotics announced that CEO Peggy Johnson will participate in Project Meridian, a Department of War-commissioned study led by MITRE examining emerging technology on a 10-20 year horizon, including logistics and operational support. She participates as an individual consultant to MITRE, separate from Agility's commercial operations, and the company repeated that Digit is not to be weaponized, pointing to the industry's 2022 responsible-application pledge. It is an advisory seat, not a contract or deployment - but a mainstream humanoid maker formally feeding into DoW strategy is a concrete milestone for humanoid-to-defense pipelines.",
+      "source": {
+        "name": "Agility Robotics X post (official)",
+        "url": "https://x.com/agilityrobotics/status/2107151087103008854"
+      },
+      "canonical_url": "https://www.agilityrobotics.com/content/agility-robotics-ceo-peggy-johnson-selected-to-join-project-meridian",
+      "published_at": "2026-10-05T12:00:00Z",
+      "corroboration": [
+        {
+          "name": "Agility press release (verified live, October 5, 2026, Salem Ore.)",
+          "url": "https://www.agilityrobotics.com/content/agility-robotics-ceo-peggy-johnson-selected-to-join-project-meridian"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official company press release verified live (dateline 'SALEM, Ore., Oct. 5, 2026'); X post timestamp 16:49:02Z. Blog exposes only a date, so published_at is noon UTC."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 82,
+        "label": "79 likes + 3 replies",
+        "observed_at": "2026-10-06T04:20:00Z",
+        "evidence_url": "https://x.com/agilityrobotics/status/2107151087103008854"
+      },
+      "tags": [
+        "Agility Robotics",
+        "Project Meridian",
+        "MITRE",
+        "defense",
+        "humanoid strategy"
+      ],
+      "rank": 13
+    },
+    {
+      "id": "rob-openrua",
+      "section": "Robotics",
+      "story_type": "research paper (Catch-up)",
+      "title": "OpenRUA: an off-the-shelf coding agent as a zero-shot visuomotor policy for ROS 2 robots (99% CaP-Bench, 87% LIBERO-PRO in simulation)",
+      "summary": "The OpenRUA paper (arXiv 2610.02459, submitted Oct 1) shows that giving Claude Code (powered by Claude Opus 5) nothing but a terminal into a ROS 2 robot's native software stack - no bespoke primitives, no task-specific wrappers - turns it into a zero-shot visuomotor policy: 99.0% on CaP-Bench and 87.0% on LIBERO-PRO, in simulation. The open-source repo shipped v0.4.0-v0.4.3 on Oct 4-5 with Docker images for simulation and a 'run first' workflow that discovers the robot on its own. Caveats: simulation results with one frontier agent, and the harness still ships as early v0.4 - but the architectural claim (LLM agent + terminal = robot controller) is the reusable insight.",
+      "source": {
+        "name": "arXiv: OpenRUA - Robot-Use Agents Are Zero-Shot Visuomotor Policies",
+        "url": "https://arxiv.org/abs/2610.02459"
+      },
+      "canonical_url": "https://arxiv.org/abs/2610.02459",
+      "published_at": "2026-10-01T00:00:00Z",
+      "corroboration": [
+        {
+          "name": "OpenRUA GitHub repo (releases v0.4.0-v0.4.3 on Oct 4-5)",
+          "url": "https://github.com/terminalworld/OpenRUA"
+        },
+        {
+          "name": "openrua PyPI package",
+          "url": "https://pypi.org/project/openrua/"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "arXiv abstract verified live ('Submitted 1 Oct 2026'); GitHub releases verified via API (v0.4.3 published 2026-10-05T22:09:27Z). arXiv exposes only the submission date, so published_at is Oct 1 at midnight UTC. Results are simulation-only with a single frontier agent. In-window signal: open-source releases v0.4.0-v0.4.3 shipped to GitHub Oct 4-5 (v0.4.3 2026-10-05T22:09:27Z); the paper itself is older."
+      },
+      "tags": [
+        "OpenRUA",
+        "LLM agents",
+        "ROS 2",
+        "zero-shot policy",
+        "CaP-Bench",
+        "LIBERO-PRO",
+        "Catch-up"
+      ],
+      "rank": 14
+    },
+    {
+      "id": "lon-genflow-sirt6c",
+      "section": "Longevity",
+      "story_type": "animal trial interim data",
+      "title": "Genflow SLAB interim data: SIRT6c gene therapy lowers methylation age in aged beagles, not yet significant",
+      "summary": "At the Animal Longevity Summit, Genflow presented Day 182 interim results from SLAB, a randomized, blinded, controlled study in 24 beagles over ten years old (vehicle, two pDNA doses of GF-1004, and an AAV8 SIRT6c high-expression arm): mean Horvath-dog methylation age fell 1.08 years in the low-dose pDNA group and 0.48 in the high-dose group versus 0.07 in controls, but no difference reached significance (p=0.31/0.64) and every arm drifted downward. The primary confirmatory endpoint moved from Day 259 to Day 320. Animal data, single site, one clock: the open question is whether the methylation shift tracks with frailty and functional readouts as the study matures.",
+      "source": {
+        "name": "Longevity.Technology coverage of the ALOS 2026 presentation (canonical)",
+        "url": "https://longevity.technology/news/genflow-gene-therapy-nudges-aging-clock-in-dogs/"
+      },
+      "canonical_url": "https://longevity.technology/news/genflow-gene-therapy-nudges-aging-clock-in-dogs/",
+      "published_at": "2026-10-05T12:00:00Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Verified live: article dated Oct 5 2026 with concrete effect sizes and p-values. Secondary reporting of a conference presentation; no raw dataset published. Article exposes only a date, so published_at is noon UTC."
+      },
+      "tags": [
+        "Genflow",
+        "SIRT6c",
+        "GF-1004",
+        "epigenetic clock",
+        "beagle",
+        "sarcopenia",
+        "ALOS 2026"
+      ],
+      "rank": 15
+    },
+    {
+      "id": "lon-glp1-pediatric",
+      "section": "Longevity",
+      "story_type": "observational claims study (Catch-up)",
+      "title": "Lurie Children's: 1 in 6 pediatric GLP-1 users received a new nutritional-deficiency diagnosis within a year",
+      "summary": "A retrospective US claims analysis of 2,031 GLP-1 users aged 10-17 (2017-2022, mostly liraglutide) found 16.8% received a new nutritional-deficiency diagnosis within a year - 12.4% for vitamin D - and fewer than one in four had nutrition counseling within six months of starting. This is observational claims data, not a trial, and neither the hospital nor the in-window commentary claims causation. The practical read for builders: as GLP-1 use extends into pediatrics, deficiency monitoring and counseling need to be part of the care pathway, and claims-derived baseline rates are the numbers to beat.",
+      "source": {
+        "name": "Lurie Children's newsroom (canonical, verified live)",
+        "url": "https://www.luriechildrens.org/en/news-stories/glp-1s-linked-to-nutritional-deficiencies-in-children/"
+      },
+      "canonical_url": "https://www.luriechildrens.org/en/news-stories/glp-1s-linked-to-nutritional-deficiencies-in-children/",
+      "published_at": "2026-09-21T12:00:00Z",
+      "corroboration": [
+        {
+          "name": "foundMyFitness commentary post (in-window, Oct 5 19:51:55Z)",
+          "url": "https://x.com/foundmyfitness/status/2107197111637012907"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Hospital newsroom verified live with the Sep 21 2026 date (date-only, noon UTC used). The in-window signal is commentary, so this is included as a catch-up of the underlying data release; retrospective claims, mostly liraglutide."
+      },
+      "tags": [
+        "GLP-1",
+        "pediatrics",
+        "nutritional deficiency",
+        "vitamin D",
+        "claims study",
+        "Catch-up"
+      ],
+      "rank": 16
+    },
+    {
+      "id": "lon-tbi-fenofibrate",
+      "section": "Longevity",
+      "story_type": "research paper + human pilot (Catch-up)",
+      "title": "Science Translational Medicine: skull bone-marrow monocytes drive chronic TBI neuroinflammation; fenofibrate pilot improves cognition in 40 older adults",
+      "summary": "Cranial bone-marrow monocytes infiltrate the brain after chronic traumatic brain injury and drive age-worsening neuroinflammation; in models, fenofibrate reduced that infiltration via PPAR-alpha. A proof-of-concept randomized trial in 40 older adults with chronic TBI reported lower plasma neurofilament light (NfL) and better cognition on the fenofibrate arm. This is an n=40 pilot with an existing drug, not a pivotal trial, but it is one of the first randomized human tests tying a bone-marrow immune source to chronic neuroinflammation. The paper (Sep 30, 2026, Vol. 18, Issue 869) was posted by the official Science account inside this window.",
+      "source": {
+        "name": "Science Magazine X post (official journal account)",
+        "url": "https://x.com/ScienceMagazine/status/2107304850270613521"
+      },
+      "canonical_url": "https://www.science.org/doi/10.1126/scitranslmed.aef5898",
+      "published_at": "2026-09-30T12:00:00Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "DOI taken from the official @ScienceMagazine post (Oct 6 03:00:02Z, in-window); science.org returned 403 to direct fetch, so the paper's Sep 30 date comes from the post's cited volume/issue. Human pilot n=40, fenofibrate is a repurposed existing drug."
+      },
+      "popularity": {
+        "platform": "x",
+        "engagement": 12,
+        "label": "11 likes + 1 reply",
+        "observed_at": "2026-10-06T04:20:00Z",
+        "evidence_url": "https://x.com/ScienceMagazine/status/2107304850270613521"
+      },
+      "tags": [
+        "TBI",
+        "neuroinflammation",
+        "fenofibrate",
+        "PPAR-alpha",
+        "NfL",
+        "randomized pilot"
+      ],
+      "rank": 17
+    },
+    {
+      "id": "rob-science-microrobot",
+      "section": "Robotics",
+      "story_type": "research paper (Catch-up)",
+      "title": "Science Robotics: a 185-mg flying robot with no transmission, powered by an electrostrictive actuator",
+      "summary": "A Science Robotics paper (Vol. 11, Issue 118, published Sep 30) reports a 185-milligram free-flying robot with no transmission: its cone-shaped wings are driven directly by an electrostrictive actuator, and the airframe survives crushing impacts. The official @ScienceMagazine account posted it inside this window (Oct 5 15:00:28Z). For builders, direct-actuation at ~0.2 g is the size threshold where drones stop needing gear trains and drive-train failure modes largely disappear - relevant to anything from mm-scale swarms to in-body sensing. Lab paper, not a product.",
+      "source": {
+        "name": "Science Magazine X post (official journal account)",
+        "url": "https://x.com/ScienceMagazine/status/2107123766161531193"
+      },
+      "canonical_url": "https://www.science.org/doi/10.1126/scirobotics.aed8148",
+      "published_at": "2026-09-30T12:00:00Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "DOI from the official @ScienceMagazine post (Oct 5 15:00:28Z, in-window); publication date Sep 30 2026 confirmed via PubMed/Europe PMC/Crossref records (PMID 42814792). science.org article HTML returned 403 to direct fetch. Date-only, noon UTC used. In-window journal amplification of a Sep 30 paper - labeled Catch-up."
+      },
+      "tags": [
+        "Science Robotics",
+        "microrobot",
+        "electrostriction",
+        "direct actuation",
+        "insect-scale",
+        "Catch-up"
+      ],
+      "rank": 18
+    },
+    {
+      "id": "lon-nature-cancer-survival",
+      "section": "Longevity",
+      "story_type": "data analysis (news)",
+      "title": "Nature data analysis: US five-year cancer survival hit 71%, up from 49% in the late 1970s",
+      "summary": "Nature's data-visual news piece (Oct 5) quantifies the past half-century of cancer survival progress: US five-year survival now stands at 71% versus 49% in the late 1970s, with the biggest gains in specific cancers and the sharpest residual gaps elsewhere. It is a news analysis, not a new trial or therapy - the value for longevity work is the baseline: survival-rate plateaus by cancer type define where aging-related mortality still concentrates. The @Nature account posted it in-window with the article URL.",
+      "source": {
+        "name": "Nature X post (official journal account)",
+        "url": "https://x.com/Nature/status/2107178996987314311"
+      },
+      "canonical_url": "https://www.nature.com/articles/d41586-026-03157-1",
+      "published_at": "2026-10-05T18:39:57Z",
+      "corroboration": [],
       "quality": {
         "signal": "developing",
         "confidence": "medium",
-        "note": "Official CEO teaser (2026-10-03 15:31 UTC, in the 30h window) with the official @Replit quote (2026-10-04 18:03 UTC). No product URL exists yet."
+        "note": "Official @Nature post with exact timestamp (Oct 5 18:39:57Z); the canonical article page verified live (title 'The top cancer success stories of the past 50 years, by the numbers', datePublished 2026-10-05T00:00:00Z). News analysis, not a primary study - hence signal 'developing'."
       },
       "popularity": {
         "platform": "x",
-        "engagement": 421,
-        "label": "374 likes + 11 reposts + 36 replies",
-        "observed_at": "2026-10-05T07:45:00+03:00",
-        "evidence_url": "https://x.com/amasad/status/2106406812316827874"
+        "engagement": 59,
+        "label": "56 likes + 3 replies",
+        "observed_at": "2026-10-06T04:35:00Z",
+        "evidence_url": "https://x.com/Nature/status/2107178996987314311"
       },
       "tags": [
-        "replit",
-        "drift",
-        "teaser",
-        "agents"
-      ]
-    },
-    {
-      "id": "ai-google-oss-vrp-pause",
-      "section": "AI",
-      "rank": 7,
-      "story_type": "research-infrastructure",
-      "title": "Catch-up: Google pauses OSS VRP product-vulnerability intake, citing a flood of mostly-invalid automated submissions",
-      "summary": "Google's bug-hunters team announced (October 1, 2026, via @GoogleVRP and the official VRP rules page) that, as of October 1, it is no longer accepting product vulnerabilities submitted to the Open Source Software VRP - a 'significant rise in automated submissions, the vast majority of which are not valid' is the stated reason, with an update promised in Q1 2027. Supply-chain reports and submissions filed before October 1 are unaffected, and some Google Cloud repos may still go through the Cloud VRP. For builders it is a concrete marker of how AI-generated bug-report volume is starting to strain even a large lab's security-intake pipeline - and a data point for anyone running a bug bounty. Caveat: the official text says 'automated', not 'AI' ('AI slop' is press language); OSS-Fuzz itself was not halted, and the OSV-SCALIBR patch rewards have been on hold separately since July 6, 2026.",
-      "source": {
-        "name": "Google VRP on X",
-        "url": "https://x.com/GoogleVRP/status/2105689195180179605"
-      },
-      "canonical_url": "https://bughunters.google.com/about/rules/open-source/google-open-source-software-vulnerability-reward-program-rules",
-      "published_at": "2026-10-01T16:00:00Z",
-      "corroboration": [
-        {
-          "name": "Google OSS retweet",
-          "url": "https://x.com/GoogleOSS/status/2105754364937908506"
-        },
-        {
-          "name": "Tom's Hardware",
-          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-suspends-part-of-the-oss-vrp-bug-bounty-program-due-to-an-influx-of-invalid-ai-submissions-product-vulnerability-submissions-ended-october-1"
-        }
+        "Nature",
+        "cancer survival",
+        "epidemiology",
+        "mortality baseline",
+        "US"
       ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official @GoogleVRP post (2026-10-01 16:00 UTC) and the official VRP rules page carrying the 'no longer accepting' text. 72h catch-up: outside the 30h window; absent from archives."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 370,
-        "label": "325 likes + 34 reposts + 11 replies",
-        "observed_at": "2026-10-05T07:30:00+03:00",
-        "evidence_url": "https://x.com/GoogleVRP/status/2105689195180179605"
-      },
-      "tags": [
-        "google",
-        "bug-bounty",
-        "oss",
-        "ai",
-        "security"
-      ]
-    },
-    {
-      "id": "lon-ardd-glp1-longevity",
-      "section": "Longevity",
-      "rank": 8,
-      "story_type": "clinical-data",
-      "title": "At ARDD 2026, Lilly and Novo each present early GLP-1 aging data: tirzepatide epigenetic clocks, semaglutide life-expectancy models",
-      "summary": "Longevity.Technology's ARDD 2026 coverage (October 4, 2026) reports that Eli Lilly and Novo Nordisk - two of the four pharma companies speaking at the conference - each presented early work on GLP-1 longevity for the first time. Novo (project leader Nikolaj K Roed) presented that semaglutide and other GLP-1 receptor agonists 'may' support healthier aging, with survival and physical-function evidence plus a UK real-world cohort model (n=19,117, from SELECT effect estimates) projecting ~1.9 remaining life-years of gain across age groups, and lower proteomic biological-age estimates within 13-20 weeks. Lilly (VP Aging Research Kevin Duffin) presented a pilot epigenetic sub-study from SURMOUNT-5: paired whole-blood samples from 71 tirzepatide-treated participants at baseline and week 72 (1.38 elapsed years), with all 15 age-unit epigenetic clocks showing less aging than the elapsed chronological time. Both were framed as early, heavily caveated work - observational/modeling and a small pilot, not a new trial readout. For builders this is the moment GLP-1 longevity moved from speculation to first-stage company data.",
-      "source": {
-        "name": "Longevity.Technology",
-        "url": "https://longevity.technology/news/lilly-and-novo-share-glp-1-longevity-data/"
-      },
-      "canonical_url": "https://longevity.technology/news/lilly-and-novo-share-glp-1-longevity-data/",
-      "published_at": "2026-10-04T12:00:00Z",
-      "corroboration": [
-        {
-          "name": "Alex Zhavoronkov on X (Lilly presenter)",
-          "url": "https://x.com/biogerontology/status/2106348014549831885"
-        },
-        {
-          "name": "Ramon Coronado on X (Novo presenter)",
-          "url": "https://x.com/t_recsch/status/2106423100841582748"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "Detailed trade-press report of the ARDD 2026 sessions (published 2026-10-04, date-only; noon source timezone used), corroborated by two independent attendee X posts with matching presenter names and claims. Neither Lilly nor Novo posted the data on its own account; conference presentation, not a published trial. ARDD ran October 1-3; coverage is in the 30h window."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 96,
-        "label": "72 likes + 9 reposts + 5 replies (strongest corroborating post)",
-        "observed_at": "2026-10-05T07:45:00+03:00",
-        "evidence_url": "https://x.com/t_recsch/status/2106423100841582748"
-      },
-      "tags": [
-        "glp-1",
-        "semaglutide",
-        "tirzepatide",
-        "lilly",
-        "novo-nordisk",
-        "epigenetic-clocks",
-        "ardd"
-      ]
-    },
-    {
-      "id": "btc-stacks-pox6",
-      "section": "Bitcoin",
-      "rank": 9,
-      "story_type": "protocol",
-      "title": "Stacks Labs CTO on what changes in PoX 6",
-      "summary": "Stacks posted a video of Labs CTO Adriano Di Luzio discussing what will be the biggest difference in PoX 6, the next Bitcoin-backed proof-of-transfer cycle. It is a discussion of planned differences, not a SIP approval, hard-fork time or activation - PoX-5 remains the live system. For builders tracking Stacks' Bitcoin-staking roadmap it is a direction signal for the next cycle. Caveat: it is an official company-account explainer video, not a release; no spec, GitHub link or activation height was posted in the window.",
-      "source": {
-        "name": "Stacks on X",
-        "url": "https://x.com/Stacks/status/2106421298893381988"
-      },
-      "canonical_url": "https://x.com/Stacks/status/2106421298893381988",
-      "published_at": "2026-10-03T16:29:07Z",
-      "corroboration": [],
-      "quality": {
-        "signal": "primary",
-        "confidence": "medium",
-        "note": "Official @Stacks post (2026-10-03 16:29 UTC), in the 30h window. Company discussion, not a launch."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 85,
-        "label": "71 likes + 11 reposts + 3 replies",
-        "observed_at": "2026-10-05T07:30:00+03:00",
-        "evidence_url": "https://x.com/Stacks/status/2106421298893381988"
-      },
-      "tags": [
-        "stacks",
-        "pox",
-        "bitcoin",
-        "staking"
-      ]
-    },
-    {
-      "id": "rob-lt-mem-iro-best-paper",
-      "section": "Robotics",
-      "rank": 10,
-      "story_type": "research",
-      "title": "Catch-up: LT-Mem wins IROS 2026 Best Paper - volatility-aware spatio-temporal memory for lifelong scene understanding",
-      "summary": "DGIST researchers announced (October 2, 2026) that their LT-Mem paper - volatility-aware spatio-temporal memory for lifelong scene understanding - won the Best Paper Award at IROS 2026, one of 1,933 submitted papers. The work targets persistent, memory-efficient scene representation for robots operating over long time horizons. For builders following embodied AI, IROS Best Paper is a good proxy for where the top of the research distribution landed this cycle. Caveat: the claim comes from the winning author's account; the official IROS awards page still lists finalists only, so the winner naming was not independently confirmed on the conference site.",
-      "source": {
-        "name": "Giseop Kim on X",
-        "url": "https://x.com/GiseopK/status/2105913461582733532"
-      },
-      "canonical_url": "https://lt-mem.github.io/",
-      "published_at": "2026-10-02T06:51:09Z",
-      "corroboration": [
-        {
-          "name": "IROS 2026 awards page",
-          "url": "https://2026.ieee-iros.org/program/awards/"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "Winning author's post (2026-10-02 06:51 UTC) with the project page, where LT-Mem is a listed best-paper finalist. Conference awards page not yet updated with the winner. 72h catch-up: outside the 30h window; absent from archives."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 57,
-        "label": "52 likes + 4 reposts + 1 reply",
-        "observed_at": "2026-10-05T07:30:00+03:00",
-        "evidence_url": "https://x.com/GiseopK/status/2105913461582733532"
-      },
-      "tags": [
-        "iros",
-        "best-paper",
-        "memory",
-        "scene-understanding",
-        "dgist"
-      ]
-    },
-    {
-      "id": "btc-starkware-summit",
-      "section": "Bitcoin",
-      "rank": 11,
-      "story_type": "event",
-      "title": "StarkWare sets a Privacy Summit for Singapore on October 7",
-      "summary": "StarkWare announced a Privacy Summit in Singapore on October 7, 2026, with DashX co-founders listed to discuss private on-chain payroll. It is an event promotion, not a Starknet or StarkWare software release, but it points to a continued focus on privacy infrastructure for on-chain financial flows. For builders it is a calendar signal for privacy tooling adjacent to Bitcoin and L2 ecosystems. Caveat: short X post; the linked Luma event page is the canonical reference and no product or code shipped with it.",
-      "source": {
-        "name": "StarkWare on X",
-        "url": "https://x.com/StarkWareLtd/status/2106716506340122784"
-      },
-      "canonical_url": "https://luma.com/gbb4thfy",
-      "published_at": "2026-10-04T12:02:10Z",
-      "corroboration": [],
-      "quality": {
-        "signal": "primary",
-        "confidence": "medium",
-        "note": "Official @StarkWareLtd post (2026-10-04 12:02 UTC), in the 30h window. Event promo; Luma page is the canonical link."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 54,
-        "label": "42 likes + 8 reposts + 4 replies",
-        "observed_at": "2026-10-05T07:30:00+03:00",
-        "evidence_url": "https://x.com/StarkWareLtd/status/2106716506340122784"
-      },
-      "tags": [
-        "starkware",
-        "privacy",
-        "event",
-        "singapore",
-        "dashx"
-      ]
-    },
-    {
-      "id": "lon-aging-cell-elamipretide",
-      "section": "Longevity",
-      "rank": 12,
-      "story_type": "paper",
-      "title": "Catch-up: Aging Cell: elamipretide rejuvenates oocyte quality and restores female fertility during reproductive aging",
-      "summary": "An Aging Cell paper (published October 2026 per Crossref; posted by the longevity-science community on October 3, 2026) reports that elamipretide - the mitochondrial-targeting peptide (SS-31) in late-stage cardiovascular trials - rejuvenates oocyte quality and restores female fertility during reproductive aging. For builders in geroscience, this is one of the more concrete examples of a drug with existing human trial history being repurposed as a candidate age-related intervention, in the ovarian-aging domain. Caveat: the preprint/early-publication stage and animal/observational design of the specific experiments are not fully verifiable from the posting alone (the journal page was bot-walled during verification); treat it as the early-published paper the post describes, with the evidence level as the paper itself states.",
-      "source": {
-        "name": "Aging Science News on X",
-        "url": "https://x.com/AgingBiology/status/2106502047444922752"
-      },
-      "canonical_url": "https://onlinelibrary.wiley.com/doi/full/10.1111/acel.70749",
-      "published_at": "2026-10-01T12:00:00Z",
-      "corroboration": [],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "Journal paper, publication month 2026-10 only per Crossref API (month-only; first of month, noon source timezone used, limitation stated). Posted in-window (2026-10-03 21:49 UTC). Catch-up: publication is outside the 30h window; absent from archives."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 47,
-        "label": "38 likes + 7 reposts + 2 replies",
-        "observed_at": "2026-10-05T07:30:00+03:00",
-        "evidence_url": "https://x.com/AgingBiology/status/2106502047444922752"
-      },
-      "tags": [
-        "elamipretide",
-        "aging-cell",
-        "oocytes",
-        "fertility",
-        "mitochondria",
-        "reproductive-aging"
-      ]
-    },
-    {
-      "id": "rob-galbot-china-open",
-      "section": "Robotics",
-      "rank": 13,
-      "story_type": "demo",
-      "title": "Galbot: a humanoid takes the stage at the 2026 China Open, playing autonomous table-tennis rallies",
-      "summary": "Galbot posted video (October 4, 2026) of its humanoid playing autonomous table-tennis rallies as the official designated humanoid robot of the 2026 China Open, a Beijing tournament running September 30 - October 11. It is billed as the first time a humanoid has taken the stage at an international tennis tournament. For builders this is another data point for real-time reactive manipulation in front of a live audience, well beyond scripted demos. Caveat: it is a company claim of a 'first' with no third-party verification or technical write-up in the post; engagement was low (13 likes).",
-      "source": {
-        "name": "Galbot on X",
-        "url": "https://x.com/GalbotRobotics/status/2106755540256739468"
-      },
-      "canonical_url": "https://x.com/GalbotRobotics/status/2106755540256739468",
-      "published_at": "2026-10-04T14:37:17Z",
-      "corroboration": [],
-      "quality": {
-        "signal": "primary",
-        "confidence": "medium",
-        "note": "Official @GalbotRobotics post (2026-10-04 14:37 UTC), in the 30h window. Video only; 'first' is company-described."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 20,
-        "label": "13 likes + 5 reposts + 2 replies",
-        "observed_at": "2026-10-05T07:30:00+03:00",
-        "evidence_url": "https://x.com/GalbotRobotics/status/2106755540256739468"
-      },
-      "tags": [
-        "galbot",
-        "humanoid",
-        "table-tennis",
-        "china-open",
-        "dexterity"
-      ]
-    },
-    {
-      "id": "lon-sciadv-geroprotective",
-      "section": "Longevity",
-      "rank": 14,
-      "story_type": "paper",
-      "title": "Catch-up: Science Advances: predicting and finding geroprotective compounds via conserved longevity-associated aging modules",
-      "summary": "A Science Advances paper (published October 2, 2026 per Crossref, posted by the longevity-science community on October 5) proposes a computational pipeline that predicts and experimentally validates geroprotective compounds by modulating conserved longevity-associated aging modules - i.e., using cross-species shared aging-network signatures to nominate aging-relevant drug targets and then testing them. For builders this is the template for closing the loop between aging-module biology and candidate-compound discovery, which is where most geroscience drug discovery currently stalls. Caveat: it is a methods/compound-prediction paper, not a new human trial; I could not open the full text on the live page (paywall/bot-check), so the specific compounds and validation results are as described in the posting community's summaries, not independently verified.",
-      "source": {
-        "name": "Aging Science News on X",
-        "url": "https://x.com/AgingBiology/status/2106916449776198057"
-      },
-      "canonical_url": "https://www.science.org/doi/full/10.1126/sciadv.aee3657",
-      "published_at": "2026-10-02T12:00:00Z",
-      "corroboration": [],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "Journal paper, publication date 2026-10-02 verified via Crossref API (date-only; noon source timezone used). Posted in-window (2026-10-05 01:16 UTC) by the longevity-science news account. Catch-up: paper publication is outside the 30h window; absent from archives."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 14,
-        "label": "11 likes + 3 reposts + 0 replies",
-        "observed_at": "2026-10-05T07:30:00+03:00",
-        "evidence_url": "https://x.com/AgingBiology/status/2106916449776198057"
-      },
-      "tags": [
-        "geroprotectors",
-        "science-advances",
-        "aging-modules",
-        "drug-discovery",
-        "computation"
-      ]
-    },
-    {
-      "id": "lon-eightsleep-solo",
-      "section": "Longevity",
-      "rank": 15,
-      "story_type": "product",
-      "title": "Eight Sleep launches 'Solo', a half-size Pod Cover with the same thermal control and tracking",
-      "summary": "Eight Sleep announced (October 3, 2026) that Solo - a half-size Pod Cover offering the same heating, cooling and sleep-tracking as the full Cover - is available now, aimed at dorms, small apartments and one-sided bed use. For builders and sleep-tracking users it extends the same thermal/sleep-data stack to a smaller, cheaper footprint. Caveat: it is a product-SKU marketing post, not a new sensing or data capability; no price, ship date or clinical claim was in the post.",
-      "source": {
-        "name": "Eight Sleep on X",
-        "url": "https://x.com/eightsleep/status/2106473763848008076"
-      },
-      "canonical_url": "https://x.com/eightsleep/status/2106473763848008076",
-      "published_at": "2026-10-03T19:57:36Z",
-      "corroboration": [
-        {
-          "name": "Eight Sleep blog (biological age)",
-          "url": "https://www.eightsleep.com/blog/biological-age"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "medium",
-        "note": "Official @eightsleep product post (2026-10-03 19:57 UTC), in the 30h window. Marketing post; the company's biological-age blog provides context but is not part of this announcement."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 14,
-        "label": "12 likes + 1 repost + 1 reply",
-        "observed_at": "2026-10-05T07:30:00+03:00",
-        "evidence_url": "https://x.com/eightsleep/status/2106473763848008076"
-      },
-      "tags": [
-        "eightsleep",
-        "solo",
-        "sleep",
-        "product"
-      ]
-    },
-    {
-      "id": "lon-basecamp-140m",
-      "section": "Longevity",
-      "rank": 16,
-      "story_type": "funding",
-      "title": "Catch-up: Basecamp Research raises $140M Series C to train 'EDEN' models on a trillion-gene biological dataset",
-      "summary": "Longevity.Technology reported (October 1, 2026, announced September 23) that London-headquartered Basecamp Research closed an oversubscribed $140 million Series C, led by S32 with backers including NVIDIA, the NATO Innovation Fund and the Rockefeller Foundation, to train its 'EDEN' models on what it calls the Trillion Gene Atlas - a genomic dataset gathered via partnerships in 30+ countries - and to push its AI-designed therapeutics (cell and gene therapies, enzymes, peptides) toward clinical development. For builders this is a meaningful bet on broad, cross-species biological foundation models rather than narrow disease-specific ones, in the longevity-adjacent drug-discovery space. Caveat: the raise announcement predates the 30h window (Sep 23) and the coverage article is Oct 1; it is a funding/data-platform story, not a new aging-trial result.",
-      "source": {
-        "name": "Longevity.Technology",
-        "url": "https://longevity.technology/news/basecamp-raises-140m-to-teach-ai-all-of-biology/"
-      },
-      "canonical_url": "https://longevity.technology/news/basecamp-raises-140m-to-teach-ai-all-of-biology/",
-      "published_at": "2026-10-01T12:00:00Z",
-      "corroboration": [
-        {
-          "name": "Longevity.Technology on X",
-          "url": "https://x.com/LongevityTech/status/2105965746815656004"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "Trade-press report of the raise (article published 2026-10-01, date-only; noon source timezone used), with the official @LongevityTech post in-window (2026-10-02 10:18 UTC). 72h catch-up: the raise itself was announced Sep 23, outside the 30h window; absent from archives."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 6,
-        "label": "5 likes + 1 repost + 0 replies",
-        "observed_at": "2026-10-05T07:45:00+03:00",
-        "evidence_url": "https://x.com/LongevityTech/status/2105965746815656004"
-      },
-      "tags": [
-        "basecamp",
-        "eden",
-        "funding",
-        "genomics",
-        "ai-drug-discovery"
-      ]
-    },
-    {
-      "id": "rob-robostar-noc-best-paper",
-      "section": "Robotics",
-      "rank": 17,
-      "story_type": "research",
-      "title": "RoboSTAR takes Best Paper at the IROS 2026 NOC workshop for next-scale text-to-sign motion generation",
-      "summary": "A researcher posted (October 5, 2026) that RoboSTAR - next-scale text-to-sign motion generation for humanoid robots - won the Best Paper Award at the IROS 2026 NOC (Novel Concepts) workshop. It is a workshop-level recognition rather than a main-conference prize, but NOC is where early humanoid-motion work gets surfaced. For builders the signal is text-conditioned sign-language generation at humanoid scale entering the recognized-work stream. Caveat: it is the author's own post; the paper (arXiv 2609.32250, submitted September 26, 2026) links to the project page yujiazeng.com/RoboSTAR, and the award was not independently confirmed by the workshop site in the window.",
-      "source": {
-        "name": "Zeng Yujia on X",
-        "url": "https://x.com/zyjOrz/status/2106922008814739567"
-      },
-      "canonical_url": "https://arxiv.org/abs/2609.32250",
-      "published_at": "2026-10-05T01:38:46Z",
-      "corroboration": [],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "low",
-        "note": "Author's post (2026-10-05 01:38 UTC, in the 30h window) with the arXiv preprint; low engagement (2 likes) and single-source award claim."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 2,
-        "label": "2 likes + 0 reposts + 0 replies",
-        "observed_at": "2026-10-05T07:30:00+03:00",
-        "evidence_url": "https://x.com/zyjOrz/status/2106922008814739567"
-      },
-      "tags": [
-        "iros",
-        "noc-workshop",
-        "humanoid",
-        "sign-language",
-        "motion-generation"
-      ]
-    },
-    {
-      "id": "btc-sec-3x-etps",
-      "section": "Bitcoin",
-      "rank": 18,
-      "story_type": "regulation",
-      "title": "Catch-up: SEC approves listing of six 3x leveraged ETPs - Bitcoin, Ether, gold, silver, crude oil, natural gas",
-      "summary": "The SEC, by the Division of Trading and Markets, approved Cboe BZX rule filing SR-CboeBZX-2026-065 (Release 34-106577) on October 2, 2026, clearing listing and trading of six series of the VS Trust - 3x Bitcoin, 3x Ether, 3x gold, 3x silver, 3x crude oil and 3x natural gas - under BZX Rule 14.11(e)(4) commodity-based trust shares, sponsored by Volatility Shares. For builders the signal is the first US exchange listing order for 3x-daily BTC/ETH futures products, a step toward leveraged on-chain-adjacent products. Caveat: it is an Exchange Act listing-rule approval, not a press release, and it does not declare the Securities Act registration effective or confirm the shares are live-trading.",
-      "source": {
-        "name": "SEC Release 34-106577",
-        "url": "https://www.sec.gov/files/rules/sro/cboebzx/2026/34-106577.pdf"
-      },
-      "canonical_url": "https://www.sec.gov/files/rules/sro/cboebzx/2026/34-106577.pdf",
-      "published_at": "2026-10-02T16:00:00Z",
-      "corroboration": [
-        {
-          "name": "SEC docket SR-CboeBZX-2026-065",
-          "url": "https://www.sec.gov/rules-regulations/self-regulatory-organization-rulemaking/sr-cboebzx-2026-065"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Primary SEC order PDF, dated October 2, 2026 (date-only; noon US Eastern used). Verified absent from current edition and all archives."
-      },
-      "tags": [
-        "sec",
-        "etf",
-        "leveraged",
-        "volatility-shares",
-        "bitcoin",
-        "cboe-bzx"
-      ]
-    },
-    {
-      "id": "btc-icba-v-occ",
-      "section": "Bitcoin",
-      "rank": 19,
-      "story_type": "policy",
-      "title": "Catch-up: ICBA sues OCC over national trust bank charters for crypto firms",
-      "summary": "Independent Community Bankers of America filed a suit (Case 1:26-cv-03441, D.D.C.) against the OCC and Comptroller Jonathan Gould on October 2, 2026, under the Administrative Procedure Act, challenging the March 2, 2026 final rule and Interpretive Letter 1176 that let non-depository crypto firms obtain national trust bank charters. ICBA's CEO argues the OCC exceeded its statutory authority by opening a side door into the banking system for crypto firms without CRA obligations, consolidated supervision, capital and liquidity standards or FDIC insurance. For a Bitcoin reader this is a concrete legal challenge to the OCC crypto-charter path several firms have relied on. Caveat: it is an initial filed complaint with no court ruling yet; the filing page has no clock-time (Reuters reported it at 2026-10-02 19:37 UTC as secondary).",
-      "source": {
-        "name": "ICBA statement",
-        "url": "https://www.icba.org/w/occ-release-oct-2026"
-      },
-      "canonical_url": "https://www.icba.org/w/occ-release-oct-2026",
-      "published_at": "2026-10-02T16:00:00Z",
-      "corroboration": [
-        {
-          "name": "Filed complaint (ICBA v. OCC)",
-          "url": "https://www.icba.org/documents/d/asset-library-45247/icba-v-occ-as-filed-complaint-c"
-        },
-        {
-          "name": "Reuters",
-          "url": "https://www.reuters.com/world/community-banks-sue-us-regulator-over-crypto-firm-charters-2026-10-02/"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official ICBA statement dated October 2, 2026 (date-only; noon US Eastern used), with the as-filed complaint. Verified absent from archives."
-      },
-      "tags": [
-        "occ",
-        "icba",
-        "crypto",
-        "national-trust",
-        "charter",
-        "policy"
-      ]
-    },
-    {
-      "id": "btc-tether-utexo",
-      "section": "Bitcoin",
-      "rank": 20,
-      "story_type": "stablecoin",
-      "title": "Catch-up: Tether says USDT is 'coming home' to Bitcoin this month via Tether-backed Utexo",
-      "summary": "CoinDesk reported (byline 2026-10-02 08:28 UTC) that Utexo, a Tether-backed infrastructure venture, plans to relaunch USDT on the Bitcoin network this month, more than a decade after its 2014 Omni debut. Utexo co-founder Viktor Ihnatiuk says it has a commercial license to issue USDT on Bitcoin under Tether's trademark, with APIs, SDKs and cloud infrastructure for exchanges, wallets and payment providers; built on the RGB protocol with the UTXO model, it would allow private USDT transfers, direct BTC-USDT swaps and BTC-backed lending without wrapping Bitcoin. Tether CEO Paolo Ardoino framed it on X as 'USDT on Bitcoin. It's coming home.' For builders this is the largest stablecoin returning to Bitcoin's base layer - a meaningful payments-network data point. Caveat: it is a planned relaunch ('this month' is CoinDesk's framing, not Tether's), not evidence issuance is live yet.",
-      "source": {
-        "name": "CoinDesk",
-        "url": "https://www.coindesk.com/tech/2026/09/29/tether-s-usdt-is-coming-home-to-bitcoin-this-month-after-more-than-a-decade"
-      },
-      "canonical_url": "https://www.coindesk.com/tech/2026/09/29/tether-s-usdt-is-coming-home-to-bitcoin-this-month-after-more-than-a-decade",
-      "published_at": "2026-10-02T08:28:19Z",
-      "corroboration": [
-        {
-          "name": "Utexo",
-          "url": "https://utexo.com/"
-        },
-        {
-          "name": "Paolo Ardoino on X",
-          "url": "https://x.com/paoloardoino/status/2103121411338375272"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "CoinDesk report (datePublished 2026-10-02T08:28:19Z verified on the live page), corroborated by utexo.com and the Tether CEO's X post. 'Coming home' quote is Sep 24, outside the window; the plan/coverage is in-window."
-      },
-      "tags": [
-        "tether",
-        "usdt",
-        "utexo",
-        "bitcoin",
-        "rgb",
-        "stablecoin"
-      ]
-    },
-    {
-      "id": "rob-hello-robot-nia",
-      "section": "Robotics",
-      "rank": 21,
-      "story_type": "funding",
-      "title": "Catch-up: Hello Robot awarded a ~$3M NIA Phase IIB SBIR to put Stretch 4 in elder-care homes",
-      "summary": "Public records and trade coverage (October 4, 2026) confirm Hello Robot received a Phase IIB Small Business Innovation Research grant from the NIH's National Institute on Aging (HHS award R44AG072982, 'Stretching their Reach') of nearly $3 million over three years, with project start September 22, 2026 and collaboration with UIUC. The project aims to advance use of the Stretch 4 mobile manipulator in mild cognitive impairment / early Alzheimer's elder-care settings. For builders this is one of the clearest funding signals yet that home-based mobile manipulation is moving into serious clinical-adjacent evaluation. Caveat: Hello Robot did not post an official announcement in the window; the award is documented in HHS funding records and trade press, and the ~$3M figure is the multi-year total, not a new check this week.",
-      "source": {
-        "name": "Robotics & Automation News",
-        "url": "https://roboticsandautomationnews.com/2026/10/04/hello-robot-awarded-3-million-to-develop-stretch-robot-for-elder-care/105500/"
-      },
-      "canonical_url": "https://roboticsandautomationnews.com/2026/10/04/hello-robot-awarded-3-million-to-develop-stretch-robot-for-elder-care/105500/",
-      "published_at": "2026-10-04T13:17:00Z",
-      "corroboration": [
-        {
-          "name": "HHS award record R44AG072982",
-          "url": "https://ppl.hhs.gov/atlas/pls/awardsummary.do?awardId=R44AG072982"
-        }
-      ],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "Trade-press report (byline 2026-10-04; in the 30h window) consistent with the HHS funding record. No official Hello Robot post in the window - flagged as a gap. 72h catch-up labeling: the award action date is September 17, 2026; public coverage is in-window."
-      },
-      "tags": [
-        "hello-robot",
-        "stretch",
-        "nia",
-        "sbir",
-        "elder-care",
-        "mobile-manipulation"
-      ]
+      "rank": 19
     }
   ]
 }
