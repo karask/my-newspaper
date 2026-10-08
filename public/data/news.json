@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "edition": {
-    "date": "2026-10-07",
+    "date": "2026-10-08",
     "title": "The Daily Signal",
     "kicker": "Primary-source tech intelligence, compiled from the live wire.",
     "status": "live",
-    "updated_at": "2026-10-07T07:55:04+03:00"
+    "updated_at": "2026-10-08T07:36:08+03:00"
   },
   "sections": [
     "Bitcoin",
@@ -13,798 +13,745 @@
     "Robotics",
     "Longevity"
   ],
-  "lead_story_id": "ai-mistral-large4",
+  "lead_story_id": "ai-claude-haiku-5-5",
   "stories": [
     {
-      "id": "ai-mistral-large4",
+      "id": "ai-claude-haiku-5-5",
       "section": "AI",
       "story_type": "model release",
-      "title": "Mistral Large 4 (\"Le Chonk\"): 1T-parameter natively multimodal MoE in public preview, open weights expected end of October",
-      "summary": "Mistral shipped Mistral Large 4 into public-preview API: a 1T-parameter natively multimodal mixture-of-experts with 49B active parameters, positioned as the strongest US/EU open-weight model on their aggregate, with vendor-reported cyber (82% on an Artificial Analysis reproduction task, 93% on Cybench), finance, legal and visual-grounding results. Preview pricing is $1.36/$4.18 per million input/output tokens. Caveat: weights are not out - architecture and post-training details are deferred, and the cyber comparisons are partly against closed models that refuse the task.",
+      "title": "Claude Haiku 5.5: Anthropic's cheapest, fastest small model - $0.10/$0.50 per M tokens, adjustable effort, vendor OSWorld 72.4%",
+      "summary": "Anthropic shipped Claude Haiku 5.5 across Claude, AWS, Google Cloud and Azure: ~$0.10/$0.50 per million input/output tokens for prompts up to 100k, which Anthropic says averages ~75% cheaper to run than Haiku 4.5. It is the first Haiku with an adjustable effort dial, and vendor scores include OSWorld 2.1 offline 72.4% (vs 15.7% for Haiku 4.5, 48.9% for GPT-6 Luna), Terminal-Bench 4.0 39.2%, and HLE 57.4% with tools. The same launch halves Sonnet 5.5 cache reads to $0.10/M, cutting typical agentic work ~20%. Caveat: benchmarks are vendor-run; a new tokenizer inflates per-task token counts, so the 75% claim is not a flat 90% list-price cut, and Haiku 5.5 is slower than Opus in Fast Mode.",
       "source": {
-        "name": "Mistral AI official X post (2026-10-06 13:06 UTC)",
-        "url": "https://x.com/MistralAI/status/2107457414387622310"
+        "name": "Claude AI official X post (2026-10-07 18:01:16 UTC)",
+        "url": "https://x.com/claudeai/status/2107894039626277339"
       },
-      "canonical_url": "https://mistral.ai/news/mistral-large-4/",
-      "published_at": "2026-10-06T13:06:16Z",
+      "canonical_url": "https://www.anthropic.com/claude-haiku-5-5",
+      "published_at": "2026-10-07T18:01:16Z",
       "corroboration": [
         {
-          "name": "Mistral release page link post",
-          "url": "https://x.com/MistralAI/status/2107473162313371811"
+          "name": "Haiku 5.5 system card",
+          "url": "https://www.anthropic.com/claude-haiku-5-5-system-card"
+        },
+        {
+          "name": "Anthropic quote-post",
+          "url": "https://x.com/AnthropicAI/status/2107894208547983705"
         }
       ],
       "quality": {
         "signal": "primary",
         "confidence": "high",
-        "note": "Official vendor post plus official release page; benchmarks are vendor-reported."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 42593,
-        "label": "X post @MistralAI: 36,673 likes + 4,129 reposts + 1,791 replies",
-        "observed_at": "2026-10-07T04:08:46Z",
-        "evidence_url": "https://x.com/MistralAI/status/2107457414387622310"
+        "note": "Official vendor post plus official release page and system card; benchmarks vendor-reported."
       },
       "tags": [
         "ai",
-        "mistral",
+        "anthropic",
+        "claude",
+        "haiku",
         "model-release",
-        "mixture-of-experts",
-        "multimodal",
-        "open-weight"
+        "pricing",
+        "agentic"
       ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 42462,
+        "label": "X post @claudeai: 38,370 likes + 2,800 reposts + 1,292 replies",
+        "observed_at": "2026-10-08T04:03:35Z",
+        "evidence_url": "https://x.com/claudeai/status/2107894039626277339"
+      },
       "rank": 1
     },
     {
-      "id": "ai-claude-google-workspace",
+      "id": "ai-gpt6-intelligent-ui",
       "section": "AI",
-      "story_type": "product launch",
-      "title": "Claude lands in Google Docs, Sheets and Slides: in-place edits with approval cards, public beta on paid plans",
-      "summary": "Anthropic shipped Claude as a Workspace sidebar that reads the open file and edits in place with approval cards by default, plus separate Docs/Sheets/Slides connectors that create and edit those files from chat - public beta on all paid plans, with access following existing Google permissions. For builders, in-place doc editing with a permission model that inherits Google's ACLs is the concrete pattern to watch. Caveat: beta, paid plans only; Team/Enterprise owners must enable connectors; no new model is involved.",
+      "story_type": "rollout",
+      "title": "GPT-6 lands in ChatGPT for everyone with 'Intelligent UI': native interactive interfaces streamed in-chat",
+      "summary": "OpenAI is rolling GPT-6 into ChatGPT's main Chat tab: paid tiers get GPT-6 Sol today, Free and Go get GPT-6 Luna from Oct 8. The headline feature is Intelligent UI - the model composes answers from a native component library (text, graphics, charts, buttons, forms, small interactive tools) streamed through a compiler, choosing the format per question. OpenAI claims web-search-backed answers start 44% sooner than GPT-5.6 Instant on an internal eval. Caveat: Work and Codex routing are explicitly unchanged; this is a ChatGPT availability expansion of the GPT-6 family, not a new API model, and the speed figure is internal-eval only.",
       "source": {
-        "name": "Claude AI official X post (2026-10-06 17:25 UTC)",
-        "url": "https://x.com/claudeai/status/2107522596845822135"
+        "name": "OpenAI official X post (2026-10-07 18:05:04 UTC)",
+        "url": "https://x.com/OpenAI/status/2107894997538525580"
       },
-      "canonical_url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
-      "published_at": "2026-10-06T17:25:17Z",
-      "corroboration": [],
+      "canonical_url": "https://openai.com/index/gpt-6-for-everyone/",
+      "published_at": "2026-10-07T18:05:04Z",
+      "corroboration": [
+        {
+          "name": "Sam Altman quote-post",
+          "url": "https://x.com/sama/status/2107924408597950702"
+        },
+        {
+          "name": "GPT-6 system card",
+          "url": "https://deploymentsafety.openai.com/gpt-6-october"
+        }
+      ],
       "quality": {
         "signal": "primary",
         "confidence": "high",
-        "note": "Official product account plus official article page."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 31689,
-        "label": "X post @claudeai: 29,389 likes + 1,803 reposts + 497 replies",
-        "observed_at": "2026-10-07T04:08:46Z",
-        "evidence_url": "https://x.com/claudeai/status/2107522596845822135"
+        "note": "Official vendor post plus official release page and system card; speed claim is an internal eval."
       },
       "tags": [
         "ai",
-        "anthropic",
-        "claude",
-        "google-workspace",
-        "product",
-        "integration"
+        "openai",
+        "gpt-6",
+        "chatgpt",
+        "intelligent-ui",
+        "rollout"
       ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 19639,
+        "label": "X post @OpenAI: 17,544 likes + 1,319 reposts + 776 replies",
+        "observed_at": "2026-10-08T04:03:35Z",
+        "evidence_url": "https://x.com/OpenAI/status/2107894997538525580"
+      },
       "rank": 2
     },
     {
-      "id": "ai-openai-math-results",
-      "section": "AI",
-      "story_type": "research",
-      "title": "OpenAI publishes new math results from an unnamed internal frontier model, with Lean formalizations in open repo",
-      "summary": "OpenAI released writeups of new math results from an unnamed internal frontier model, published after consultation with the IAS Advisory Group on Mathematics and AI, with reasoning summaries, attempt statistics, and Lean formalizations in an open GitHub repo. The average result used about three hours of ChatGPT Pro thinking-equivalent compute - a useful datapoint on the compute cost of frontier math progress. Caveat: the model is not released and the post does not name the problems; Sam Altman's post links the same URL, not a second result.",
-      "source": {
-        "name": "OpenAI official X post (2026-10-06 22:19 UTC)",
-        "url": "https://x.com/OpenAI/status/2107596713791767021"
-      },
-      "canonical_url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
-      "published_at": "2026-10-06T22:19:48Z",
-      "corroboration": [
-        {
-          "name": "Sam Altman X post (same release)",
-          "url": "https://x.com/sama/status/2107623610483720463"
-        },
-        {
-          "name": "OpenAI math results repo",
-          "url": "https://github.com/openai/math"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official vendor post plus official page and open repo; model held back."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 19559,
-        "label": "X post @OpenAI: 16,092 likes + 2,657 reposts + 810 replies",
-        "observed_at": "2026-10-07T04:08:46Z",
-        "evidence_url": "https://x.com/OpenAI/status/2107596713791767021"
-      },
-      "tags": [
-        "ai",
-        "openai",
-        "math",
-        "formal-verification",
-        "lean",
-        "research"
-      ],
-      "rank": 3
-    },
-    {
-      "id": "ai-anthropic-cyber-verification",
+      "id": "ai-grok-bot-x-search",
       "section": "AI",
       "story_type": "product launch",
-      "title": "Anthropic launches Cyber Verification Program: three vetted access tiers for Claude Mythos 5.1, Opus 5.5 and Sonnet 5.5 with fewer cyber blocks",
-      "summary": "Anthropic opened a Cyber Verification Program with three verified tiers - Defense, Red Team (authorized pentesting) and Specialized - for Claude Mythos 5.1, Opus 5.5 and Sonnet 5.5, with fewer cyber blocks than public models, available on Claude Platform, Vertex AI and Microsoft Foundry. Their CyScenarioBench check: public Opus 5.5 blocked every task on the first prompt; Defense tier blocked 46/50 trials; Red Team blocked none and finished 34/50. Caveat: enrollment is application-only, use requires data retention with narrow zero-retention exceptions, and Bedrock is only for Enterprise Frontier Safeguards customers.",
+      "title": "Grok Bot can now search, read and monitor X",
+      "summary": "xAI's official account announced that Grok Bot - xAI's agent surface - can now search, read and monitor X natively. For builders, an agent that can observe the firehose where launches, outages and leaks surface first is a concrete monitoring primitive. Caveat: the post is terse with no API, scope or rate-limit detail, and the linked x.ai/bot page is the account bio pointer rather than documentation.",
       "source": {
-        "name": "Anthropic official X post (2026-10-06 19:00 UTC)",
-        "url": "https://x.com/AnthropicAI/status/2107546569654636883"
+        "name": "xAI bot official X post (2026-10-07 21:40:18 UTC)",
+        "url": "https://x.com/bot/status/2107949161878606089"
       },
-      "canonical_url": "https://www.anthropic.com/news/cyber-verification-program",
-      "published_at": "2026-10-06T19:00:33Z",
-      "corroboration": [],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official vendor post plus official program page."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 4655,
-        "label": "X post @AnthropicAI: 3,919 likes + 413 reposts + 323 replies",
-        "observed_at": "2026-10-07T04:08:46Z",
-        "evidence_url": "https://x.com/AnthropicAI/status/2107546569654636883"
-      },
-      "tags": [
-        "ai",
-        "anthropic",
-        "claude",
-        "cybersecurity",
-        "api-access",
-        "vetting"
-      ],
-      "rank": 4
-    },
-    {
-      "id": "ai-gemini2-embeddings",
-      "section": "AI",
-      "story_type": "model release",
-      "title": "Google releases EmbeddingGemma 2: 740M-param open multimodal embedding model (Apache 2.0), one space for text, code, image, audio and video",
-      "summary": "Google DeepMind released EmbeddingGemma 2 under Apache 2.0: a 740M-parameter on-device embedding model with one vector space for text, code, images, audio and video; the text-only path drops to ~270M, vectors are Matryoshka-truncatable from 768 to 128 dimensions, with 8K context. Weights are on Hugging Face and Kaggle. Caveat: 'best-in-class' is their sub-1B comparison, and the full multimodal footprint is larger than the 740M headline once optional vision/audio encoders are added.",
-      "source": {
-        "name": "Google DeepMind official X post (2026-10-06 16:04 UTC)",
-        "url": "https://x.com/GoogleDeepMind/status/2107502286758895878"
-      },
-      "canonical_url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
-      "published_at": "2026-10-06T16:04:35Z",
-      "corroboration": [
-        {
-          "name": "Hugging Face model card",
-          "url": "https://huggingface.co/google/embeddinggemma-2"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official vendor post plus official blog and public weights."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 3886,
-        "label": "X post @GoogleDeepMind: 3,314 likes + 388 reposts + 184 replies",
-        "observed_at": "2026-10-07T04:08:46Z",
-        "evidence_url": "https://x.com/GoogleDeepMind/status/2107502286758895878"
-      },
-      "tags": [
-        "ai",
-        "google",
-        "embeddings",
-        "open-source",
-        "on-device",
-        "multimodal"
-      ],
-      "rank": 5
-    },
-    {
-      "id": "ai-openai-decisions-api",
-      "section": "AI",
-      "story_type": "product launch",
-      "title": "OpenAI opens public beta of the Decisions API: POST /v1/decisions on gpt-6-luna for classification, choice and scoring up to 10x faster than Responses",
-      "summary": "OpenAI's Decisions API entered public beta on gpt-6-luna only: a single endpoint accepting text and inline images that returns a predicate probability, a choice from a fixed set, or a score on ordered levels. OpenAI says it is up to 10x faster than GPT-6 Luna through the Responses API, and docs price it at $0.10 per million input tokens with no output tokens charged. Caveat: beta with GA expected in coming weeks; hosted image URLs and file_id are not accepted, and the speed claim is versus the Responses API, not an independent baseline.",
-      "source": {
-        "name": "OpenAI Developers official X post (2026-10-06 20:47 UTC)",
-        "url": "https://x.com/OpenAIDevs/status/2107573382229188645"
-      },
-      "canonical_url": "https://developers.openai.com/api/docs/guides/decisions",
-      "published_at": "2026-10-06T20:47:05Z",
-      "corroboration": [],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official vendor post plus official docs page."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 2917,
-        "label": "X post @OpenAIDevs: 2,526 likes + 247 reposts + 144 replies",
-        "observed_at": "2026-10-07T04:08:46Z",
-        "evidence_url": "https://x.com/OpenAIDevs/status/2107573382229188645"
-      },
-      "tags": [
-        "ai",
-        "openai",
-        "api",
-        "classification",
-        "low-latency",
-        "pricing"
-      ],
-      "rank": 6
-    },
-    {
-      "id": "ai-grok47-founding-fundry",
-      "section": "AI",
-      "story_type": "availability",
-      "title": "Grok 4.7 live on Microsoft Foundry per xAI's official account - video-only announcement, no docs or model card",
-      "summary": "xAI's official account announced Grok 4.7 is now live on Microsoft Foundry, in a video post only - no docs, model card, or catalog link in the announcement. Caveat: no region, SKU, context or pricing detail, and no stated difference from existing Grok 4.7 access; a reply under the post claimed the service was down, which xAI did not confirm. Treat as an availability change, not a model launch.",
-      "source": {
-        "name": "xAI official X post (2026-10-07 00:04 UTC)",
-        "url": "https://x.com/SpaceXAI/status/2107623124909060174"
-      },
-      "canonical_url": "https://x.com/SpaceXAI/status/2107623124909060174",
-      "published_at": "2026-10-07T00:04:45Z",
+      "canonical_url": "https://x.com/bot/status/2107949161878606089",
+      "published_at": "2026-10-07T21:40:18Z",
       "corroboration": [],
       "quality": {
         "signal": "primary",
         "confidence": "medium",
-        "note": "Official vendor account; video-only, no external documentation linked."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 640,
-        "label": "X post @SpaceXAI: 530 likes + 59 reposts + 51 replies",
-        "observed_at": "2026-10-07T04:08:46Z",
-        "evidence_url": "https://x.com/SpaceXAI/status/2107623124909060174"
+        "note": "Official vendor account; feature-only announcement, no docs linked."
       },
       "tags": [
         "ai",
         "xai",
         "grok",
-        "azure",
-        "availability"
+        "agents",
+        "x-platform"
       ],
-      "rank": 7
+      "popularity": {
+        "platform": "x",
+        "engagement": 10112,
+        "label": "X post @bot: 8,549 likes + 677 reposts + 886 replies",
+        "observed_at": "2026-10-08T04:03:35Z",
+        "evidence_url": "https://x.com/bot/status/2107949161878606089"
+      },
+      "rank": 3
     },
     {
-      "id": "btc-treasury-finzen-withdrawals",
-      "section": "Bitcoin",
-      "story_type": "regulation",
-      "title": "US Treasury's FinCEN withdraws two crypto surveillance proposals: self-custody wallet reporting and international mixing",
-      "summary": "FinCEN scrapped a 2020 proposal that would have required banks and money service businesses to report crypto transactions above $10,000 involving unhosted (self-custody) wallets, and a 2023 proposal to impose a special reporting measure on international crypto mixing (pooling, splitting transfers, single-use wallets). For builders, this removes a heavy KYC/reporting burden on self-custody flows and mixer operators - FinCEN cited chilling effects on legitimate activity. Caveat: FinCEN says it will keep monitoring mixers, and no Federal Register link was posted - the withdrawal is confirmed via CoinDesk's official account, not yet a Treasury document.",
+      "id": "ai-gemini-nano-banana-2-1",
+      "section": "AI",
+      "story_type": "model release",
+      "title": "Google ships Nano Banana 2.1 (gemini-nano-banana-2.1): GA image model at half the per-image price, Nano Banana 2 deprecated",
+      "summary": "Google released Nano Banana 2.1, its image generation and editing model based on Gemini 3.6 Flash, straight into general availability across the Gemini app, Search AI Mode, AI Studio, Flow, Stitch and the Gemini API (gemini-nano-banana-2.1). Output pricing halved to $0.0336 per 1K-image ($0.067 for Nano Banana 2), but input pricing tripled to $1.50/M tokens and the model thinks harder by default; third-party trackers rank it #5 on Arena's text-to-image board, behind OpenAI's GPT Image models. Nano Banana 2 is deprecated the same day with API shutdown on Oct 29. Caveat: Google announced from its main X account - no blog post, only a DeepMind model card - and the cheaper output assumes heavier reasoning tokens per image.",
       "source": {
-        "name": "CoinDesk official X post (2026-10-05 18:00 UTC)",
-        "url": "https://x.com/CoinDesk/status/2107168948961595457"
+        "name": "Google official X post (2026-10-06 16:00:18 UTC)",
+        "url": "https://x.com/Google/status/2107501209154204148"
       },
-      "canonical_url": "https://cryptobriefing.com/us-treasury-withdraws-crypto-surveillance-rules/",
-      "published_at": "2026-10-05T18:00:01Z",
+      "canonical_url": "https://deepmind.google/models/model-cards/nano-banana-2-1/",
+      "published_at": "2026-10-06T16:00:18Z",
       "corroboration": [
         {
-          "name": "CoinDesk 10-05 roundup post",
-          "url": "https://x.com/CoinDesk/status/2107546831827988714"
+          "name": "Nano Banana 2.1 API docs",
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1"
+        },
+        {
+          "name": "Second Google post same day",
+          "url": "https://x.com/Google/status/2107501211532382687"
         }
       ],
       "quality": {
-        "signal": "corroborated",
+        "signal": "primary",
         "confidence": "high",
-        "note": "Official newsroom account post plus detailed second-outlet article; official Treasury document not yet linked."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 322,
-        "label": "X post @CoinDesk: 235 likes + 53 reposts + 34 replies",
-        "observed_at": "2026-10-07T04:08:46Z",
-        "evidence_url": "https://x.com/CoinDesk/status/2107168948961595457"
+        "note": "Official vendor post plus official model card and API docs; pricing from third-party trackers citing Google docs."
       },
       "tags": [
-        "bitcoin",
-        "regulation",
-        "self-custody",
-        "mixers",
-        "us"
+        "ai",
+        "google",
+        "gemini",
+        "nano-banana",
+        "image-generation",
+        "model-release"
       ],
-      "rank": 8
+      "popularity": {
+        "platform": "x",
+        "engagement": 6240,
+        "label": "X post @Google: 5,326 likes + 620 reposts + 294 replies",
+        "observed_at": "2026-10-08T04:03:35Z",
+        "evidence_url": "https://x.com/Google/status/2107501209154204148"
+      },
+      "rank": 4
     },
     {
-      "id": "btc-metaplanet-q3",
+      "id": "btc-robinhood-25m",
       "section": "Bitcoin",
       "story_type": "corporate",
-      "title": "Metaplanet ends Q3 with 44,000 BTC, adds 1,000 BTC via sell-and-repurchase, launches Bitcoin treasury income strategy",
-      "summary": "Metaplanet reported ending Q3 with 44,000 BTC (valued ~$3.8B in the report), having added 1,000 BTC through a sell-and-repurchase operation it described as a liquidity demonstration, and launched a strategy aimed at Bitcoin-treasury preferred securities. For builders and treasurers, this is the clearest sign yet that BTC-treasury companies are moving from pure accumulation to structured products. Caveat: balances and the income strategy are company-reported via CoinDesk; the preferred securities are new and unseasoned.",
+      "title": "Robinhood executive says the firm bought about $25M of bitcoin; company has not confirmed, no filing cited",
+      "summary": "Robinhood's Johann Kerbrat told Starting Block at DAS Asia that Robinhood put roughly $25 million of BTC on the corporate balance sheet. CoinDesk reports the company has not confirmed the purchase and no filing is cited. For builders tracking balance-sheet adoption among US consumer platforms, an unconfirmed executive statement is early but weak evidence - it sits below the filing-grade disclosures that Metaplanet and MSTR provide. Caveat: Bitcoin Magazine's framing of 'first purchase ever' does not appear in the underlying CoinDesk piece, and a balance-sheet purchase can be sold without notice.",
       "source": {
-        "name": "CoinDesk official X post (2026-10-05 11:09 UTC)",
-        "url": "https://x.com/CoinDesk/status/2107065553815003391"
+        "name": "Bitcoin Magazine official X post (2026-10-07 10:59:48 UTC)",
+        "url": "https://x.com/BitcoinMagazine/status/2107787975866400903"
       },
-      "canonical_url": "https://www.coindesk.com/business/2026/10/05/metaplanet-adds-1-000-bitcoin-after-sale-and-repurchase-launches-income-strategy",
-      "published_at": "2026-10-05T11:09:10Z",
-      "corroboration": [],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "high",
-        "note": "Official newsroom account post with article link in-thread; company-reported figures."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 254,
-        "label": "X post @CoinDesk: 195 likes + 38 reposts + 21 replies",
-        "observed_at": "2026-10-07T04:08:46Z",
-        "evidence_url": "https://x.com/CoinDesk/status/2107065553815003391"
-      },
-      "tags": [
-        "bitcoin",
-        "treasury",
-        "metaplanet",
-        "corporate",
-        "liquid-preferred"
-      ],
-      "rank": 9
-    },
-    {
-      "id": "btc-hk-licensing-bill",
-      "section": "Bitcoin",
-      "story_type": "regulation",
-      "title": "Hong Kong plans to submit a draft bill this year for virtual-asset trading, custody, advisory and management licensing",
-      "summary": "CoinDesk's official account reports Hong Kong will submit a draft bill this year covering licensing for virtual-asset trading, custody, advisory, and management. For builders targeting APAC, a formal licensing regime is the clearest onshore path yet in the region. Caveat: no government URL is linked; scope and the 'this year' timeline are as stated by CoinDesk, not yet confirmed by HKMA or SFC.",
-      "source": {
-        "name": "CoinDesk official X post (2026-10-06 11:47 UTC)",
-        "url": "https://x.com/CoinDesk/status/2107437700555092379"
-      },
-      "canonical_url": "https://x.com/CoinDesk/status/2107437700555092379",
-      "published_at": "2026-10-06T11:47:56Z",
+      "canonical_url": "https://www.coindesk.com/markets/2026/10/07/robinhood-adds-bitcoin-worth-usd25-million-to-its-balance-sheet-report",
+      "published_at": "2026-10-07T10:59:48Z",
       "corroboration": [],
       "quality": {
         "signal": "developing",
         "confidence": "medium",
-        "note": "Single official newsroom account report; no regulator document linked yet."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 208,
-        "label": "X post @CoinDesk: 155 likes + 25 reposts + 28 replies",
-        "observed_at": "2026-10-07T04:08:46Z",
-        "evidence_url": "https://x.com/CoinDesk/status/2107437700555092379"
+        "note": "Named executive statement via official media account plus outlet report; company unconfirmed, no filing."
       },
       "tags": [
         "bitcoin",
-        "regulation",
-        "hong-kong",
-        "licensing",
-        "apac"
+        "robinhood",
+        "corporate-treasury",
+        "balance-sheet"
       ],
-      "rank": 10
-    },
-    {
-      "id": "rob-agility-investor-day",
-      "section": "Robotics",
-      "story_type": "corporate event",
-      "title": "Agility holds Analyst & Investor Day: Digit 5 progress, network-security and hardware-safety layering on Digit",
-      "summary": "Agility Robotics ran its Analyst & Investor Day (live stream and replay published) covering Digit 5 progress and its business model, with a separate same-day post explaining how network security and hardware safety are treated as separate layers on Digit. For builders integrating quadruped fleets, the layered security/hardware-safety architecture is the concrete pattern worth extracting. Caveat: a business briefing and design talk, not a new robot announcement; no spec sheet released in the posts.",
-      "source": {
-        "name": "Agility Robotics official X post (2026-10-06 13:11 UTC)",
-        "url": "https://x.com/agilityrobotics/status/2107458688038678846"
-      },
-      "canonical_url": "https://www.agilityrobotics.com/investors",
-      "published_at": "2026-10-06T13:11:20Z",
-      "corroboration": [
-        {
-          "name": "Agility investor-day replay post",
-          "url": "https://x.com/agilityrobotics/status/2107569081893478802"
-        },
-        {
-          "name": "Digit security/safety layers talk (YouTube)",
-          "url": "https://www.youtube.com/watch?v=WpGs7DKe8QY"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official company account posts plus investor page; event content, not a product release."
-      },
       "popularity": {
         "platform": "x",
-        "engagement": 192,
-        "label": "X post @agilityrobotics: 153 likes + 21 reposts + 18 replies",
-        "observed_at": "2026-10-07T04:08:46Z",
-        "evidence_url": "https://x.com/agilityrobotics/status/2107458688038678846"
+        "engagement": 4448,
+        "label": "X post @BitcoinMagazine: 3,860 likes + 437 reposts + 151 replies",
+        "observed_at": "2026-10-08T04:03:35Z",
+        "evidence_url": "https://x.com/BitcoinMagazine/status/2107787975866400903"
       },
-      "tags": [
-        "robotics",
-        "agility",
-        "digit",
-        "investor-day",
-        "safety",
-        "quadruped"
-      ],
-      "rank": 11
+      "rank": 5
     },
     {
-      "id": "btc-stacks-bonds-full",
-      "section": "Bitcoin",
-      "story_type": "infrastructure",
-      "title": "Stacks reports Bitcoin staking products nearly full: Xverse bond 99%, StackingDao 98%, Zest vault 100%",
-      "summary": "Stacks' official account reports fill rates across its Bitcoin DeFi stack: the Xverse Bitcoin staking bond is 99% filled, StackingDao liquid staking is 98% allocated, and a Zest Protocol liquid BTC vault is at 100% capacity. For BTC DeFi builders, near-full capacity on the major staking rails is a concrete demand signal for yield products. Caveat: self-reported fill rates from the @Stacks account, no docs link in the post.",
-      "source": {
-        "name": "Stacks official X post (2026-10-06 10:38 UTC)",
-        "url": "https://x.com/Stacks/status/2107420166749601966"
-      },
-      "canonical_url": "https://x.com/Stacks/status/2107420166749601966",
-      "published_at": "2026-10-06T10:38:16Z",
-      "corroboration": [],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official project account; self-reported numbers, no audit or docs link."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 171,
-        "label": "X post @Stacks: 139 likes + 23 reposts + 9 replies",
-        "observed_at": "2026-10-07T04:08:46Z",
-        "evidence_url": "https://x.com/Stacks/status/2107420166749601966"
-      },
-      "tags": [
-        "bitcoin",
-        "stacks",
-        "liquid-staking",
-        "bitcl",
-        "capacity"
-      ],
-      "rank": 12
-    },
-    {
-      "id": "btc-bank-russia-registers",
-      "section": "Bitcoin",
-      "story_type": "regulation",
-      "title": "Bank of Russia opens application registers for cryptocurrency exchanges and custodians under 282-FZ",
-      "summary": "The Bank of Russia has opened applications for exchange and custodian registers under Federal Law 282-FZ (in force since Sept 1, 2026): exchanges need 15 million rubles in own funds, primary and backup facilities inside Russia, and face a 30-working-day review; non-qualified investors are capped at 300,000 rubles of crypto purchases per year. For builders, this puts a formal supervised exchange regime with a concrete application route in place in Russia. Caveat: opening the window is not automatic admission - each applicant gets an individual decision; the CBR's own implementing notice was published Sept 24.",
-      "source": {
-        "name": "CoinDesk official X post (2026-10-05 17:18 UTC)",
-        "url": "https://x.com/CoinDesk/status/2107158541706641436"
-      },
-      "canonical_url": "https://www.cryptotimes.io/2026-10-05/bank-of-russia-opens-register-applications-for-cryptocurrency-exchanges/",
-      "published_at": "2026-10-05T17:18:40Z",
-      "corroboration": [],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "high",
-        "note": "Official newsroom account post plus second-outlet article with the CBR rule detail; no direct CBR link in the post."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 156,
-        "label": "X post @CoinDesk: 118 likes + 18 reposts + 20 replies",
-        "observed_at": "2026-10-07T04:08:46Z",
-        "evidence_url": "https://x.com/CoinDesk/status/2107158541706641436"
-      },
-      "tags": [
-        "bitcoin",
-        "regulation",
-        "russia",
-        "licensing",
-        "cbdc"
-      ],
-      "rank": 13
-    },
-    {
-      "id": "rob-boston-dynamics-prasad",
-      "section": "Robotics",
-      "story_type": "leadership",
-      "title": "Boston Dynamics appoints Rohit Prasad as CEO, effective Oct 7: ex-Amazon Alexa/Nova leader to drive 'Physical AI' commercialization",
-      "summary": "Boston Dynamics announced Rohit Prasad - former Amazon SVP who built Alexa and led the Nova foundation model family, previously at Raytheon BBN - as its new chief executive effective October 7, 2026, with a mandate to accelerate 'Physical AI' commercialization across industries. For the robotics stack, pairing a frontier-labs company with a consumer-scale AI product leader is the clearest signal yet that humanoid industrial deployment strategy is being rebuilt around foundation models. Caveat: subject to approval processes; no mandate document or prior-CEO timing published.",
-      "source": {
-        "name": "Boston Dynamics official X post (2026-10-06 19:01 UTC)",
-        "url": "https://x.com/BostonDynamics/status/2107546800043258261"
-      },
-      "canonical_url": "https://bostondynamics.com/news/boston-dynamics-appoints-rohit-prasad-as-chief-executive-officer/",
-      "published_at": "2026-10-06T12:00:00-04:00",
-      "corroboration": [],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official company post plus official press release; page is date-only, timestamped at noon US Eastern per limitation."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 102,
-        "label": "X post @BostonDynamics: 82 likes + 9 reposts + 11 replies",
-        "observed_at": "2026-10-07T04:08:46Z",
-        "evidence_url": "https://x.com/BostonDynamics/status/2107546800043258261"
-      },
-      "tags": [
-        "robotics",
-        "boston-dynamics",
-        "leadership",
-        "physical-ai",
-        "humanoid"
-      ],
-      "rank": 14
-    },
-    {
-      "id": "lon-nih-hrhr-2026",
-      "section": "Longevity",
-      "story_type": "funding",
-      "title": "NIH High-Risk, High-Reward: 58 grants totaling ~$237.5M, including AI-accelerated cancer discovery and speech recovery for stroke survivors",
-      "summary": "NIH awarded 58 new High-Risk, High-Reward grants totaling about $237.5M through the 2026 Director's Awards (Pioneer, New Innovator, Transformative, Early Independence), with funded directions spanning AI-accelerated cancer-treatment discovery, speech recovery for stroke survivors, placenta research for preeclampsia, and repurposing existing drugs for hundreds of rare diseases; awards start in 2026 with up to five years of support. For longevity-research builders, the HRHR pipeline is where de-risked but unconventional aging-adjacent science gets funded. Caveat: not longevity-specific - the program is broad biomedical, and the post links no recipient list.",
-      "source": {
-        "name": "NIH official X post (2026-10-06 18:49 UTC)",
-        "url": "https://x.com/NIH/status/2107543674070437956"
-      },
-      "canonical_url": "https://commonfund.nih.gov/highrisk/news/nih-awards-more-237-million-advance-bold-biomedical-and-behavioral-research",
-      "published_at": "2026-10-06T12:00:00-04:00",
-      "corroboration": [],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official NIH post plus official Common Fund page; page is date-only, timestamped at noon US Eastern per limitation."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 94,
-        "label": "X post @NIH: 85 likes + 6 reposts + 3 replies",
-        "observed_at": "2026-10-07T04:08:46Z",
-        "evidence_url": "https://x.com/NIH/status/2107543674070437956"
-      },
-      "tags": [
-        "longevity",
-        "nih",
-        "funding",
-        "high-risk-high-reward",
-        "biomedical"
-      ],
-      "rank": 15
-    },
-    {
-      "id": "lon-science-speech-clock",
-      "section": "Longevity",
-      "story_type": "paper (Catch-up)",
-      "title": "Science Advances: cross-national 'speech clock' tracks biological aging and dementia markers in Latin American populations",
-      "summary": "A Science Advances paper ('Speech clocks decode dementia phenotypes, social exposome, and biological aging', DOI 10.1126/sciadv.aef9864, online 2026-09-30; in print Oct 2, Vol 12, Issue 40) develops a cross-national speech clock that tracks biological aging and dementia markers in Latin American populations. For longevity-biomarker builders, language-based proxies for physiological aging are cheap, scalable signals worth benchmarking. Caveat: a measurement paper, not a treatment; the journal's social push (Oct 6) is nine days after online publication, so this is a catch-up inclusion.",
-      "source": {
-        "name": "Science Magazine official X post (2026-10-06 18:15 UTC)",
-        "url": "https://x.com/ScienceMagazine/status/2107535129727881621"
-      },
-      "canonical_url": "https://www.science.org/doi/10.1126/sciadv.aef9864",
-      "published_at": "2026-09-30T12:00:00-04:00",
-      "corroboration": [],
-      "quality": {
-        "signal": "primary",
-        "confidence": "high",
-        "note": "Official journal post with DOI link; online date 2026-09-30 confirmed via cross-referenced index (date-only, noon US Eastern per limitation)."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 31,
-        "label": "X post @ScienceMagazine: 27 likes + 3 reposts + 1 reply",
-        "observed_at": "2026-10-07T04:08:46Z",
-        "evidence_url": "https://x.com/ScienceMagazine/status/2107535129727881621"
-      },
-      "tags": [
-        "longevity",
-        "aging",
-        "biomarkers",
-        "dementia",
-        "speech",
-        "paper",
-        "catch-up"
-      ],
-      "rank": 16
-    },
-    {
-      "id": "lon-bioage-apex-novartis",
-      "section": "Longevity",
-      "story_type": "results release",
-      "title": "BioAge and Novartis report first public Project APEx results at ARDD 2026: blood signals of heart failure ~20 years before diagnosis, Alzheimer's resistance signatures",
-      "summary": "BioAge Labs' official account released the first public results from Project APEx with Novartis at ARDD 2026: blood signals of heart failure detected nearly two decades before clinical diagnosis, Alzheimer's resistance/resilience protein signatures, and a new joint target. For longevity-tech builders, multi-year-forward biomarker signals from an industrial partner are the highest-leverage validation yet of predictive proteomics. Caveat: the post links no paper or press release, and BioAge also confirmed BGE-102 (an NLRP3 inhibitor) is in two Phase 2 trials (QUELL-CV, QUELL-DME) - trial data, not results.",
-      "source": {
-        "name": "BioAge Labs official X post (2026-10-06 16:07 UTC)",
-        "url": "https://x.com/bioagelabs/status/2107502954710532138"
-      },
-      "canonical_url": "https://x.com/bioagelabs/status/2107502954710532138",
-      "published_at": "2026-10-06T16:07:14Z",
-      "corroboration": [
-        {
-          "name": "BioAge Labs BGE-102 / NLRP3 Phase 2 post",
-          "url": "https://x.com/bioagelabs/status/2107501597748273203"
-        }
-      ],
-      "quality": {
-        "signal": "primary",
-        "confidence": "medium",
-        "note": "Official company account at a named conference; no paper or press-release URL linked yet."
-      },
-      "popularity": {
-        "platform": "x",
-        "engagement": 10,
-        "label": "X post @bioagelabs: 8 likes + 1 repost + 1 reply",
-        "observed_at": "2026-10-07T04:08:46Z",
-        "evidence_url": "https://x.com/bioagelabs/status/2107502954710532138"
-      },
-      "tags": [
-        "longevity",
-        "bioage",
-        "novartis",
-        "biomarkers",
-        "heart-failure",
-        "alzheimer"
-      ],
-      "rank": 17
-    },
-    {
-      "id": "btc-starknet-v0144",
-      "section": "Bitcoin",
-      "story_type": "protocol-upgrade",
-      "title": "Starknet v0.14.4 live on mainnet: block-sized proof infrastructure, up to 1.1B L2 gas per proven transaction",
-      "summary": "StarkWare's official account confirms Starknet v0.14.4 is live on mainnet, adding infrastructure for block-sized proofs - up to 1.1B L2 gas in a single proven transaction once activated. For builders on Starknet, this is the substrate for far larger provable batches and cheaper per-transaction verification. Caveat: the confirmation post names no block height or git tag; Starknet is a Bitcoin L2, included here for Bitcoin-adjacent infrastructure.",
-      "source": {
-        "name": "StarkWare official X post (2026-10-06 16:29 UTC)",
-        "url": "https://x.com/StarkWareLtd/status/2107508563564515747"
-      },
-      "canonical_url": "https://x.com/StarkWareLtd/status/2107508563564515747",
-      "published_at": "2026-10-06T16:29:31Z",
-      "corroboration": [],
-      "quality": {
-        "signal": "primary",
-        "confidence": "medium",
-        "note": "Official project account; no release notes, block height or code tag linked in the post."
-      },
-      "tags": [
-        "bitcoin",
-        "l2",
-        "starknet",
-        "zk-proofs",
-        "upgrade"
-      ],
-      "rank": 18
-    },
-    {
-      "id": "ai-openai-rate-tier-collapse",
+      "id": "ai-openai-teens",
       "section": "AI",
-      "story_type": "platform change",
-      "title": "OpenAI collapses five paid API usage tiers to three: Build, Launch and Grow, with top tier qualifying at $500 total payments",
-      "summary": "OpenAI's developers account announced that five paid usage tiers collapse to three - Build, Launch, and Grow - with the new top tier (Grow) qualifying at $500 in total API payments, down from $1,000; paid organizations move automatically. For builders on higher tiers, the lower threshold to the top tier is a concrete quota change. Caveat: commercial quota change only - the post does not publish the new numeric rate limits.",
+      "story_type": "product update",
+      "title": "ChatGPT for Teens: under-18 accounts get the teen experience automatically, College Planner previewed for grades 10-12",
+      "summary": "OpenAI updated ChatGPT for Teens: under-18 accounts now get the teen experience automatically instead of opt-in, and it previewed a College Planner that gathers US four-year application requirements, deadlines, tasks and financial-aid steps, initially for grades 10-12, alongside new study tools. No model change was announced. Caveat: College Planner is 'coming soon', not shipping with this post, and the release is consumer-facing with little for builders beyond the auto-segmentation of minor accounts.",
       "source": {
-        "name": "OpenAI Developers official X post (2026-10-06 18:33 UTC)",
-        "url": "https://x.com/OpenAIDevs/status/2107539647392096384"
+        "name": "OpenAI official X post (2026-10-07 19:03:52 UTC)",
+        "url": "https://x.com/OpenAI/status/2107909792945832070"
       },
-      "canonical_url": "https://platform.openai.com/settings/organization/limits",
-      "published_at": "2026-10-06T18:33:02Z",
+      "canonical_url": "https://openai.com/index/teens-learn-and-plan/",
+      "published_at": "2026-10-07T19:03:52Z",
       "corroboration": [],
       "quality": {
         "signal": "primary",
         "confidence": "medium",
-        "note": "Official vendor post; canonical link is the account limits page (login-gated), no public blog post."
+        "note": "Official vendor post plus official page; one component is explicitly a preview."
       },
       "tags": [
         "ai",
         "openai",
-        "api",
-        "rate-limits",
-        "pricing",
-        "platform"
+        "chatgpt",
+        "product",
+        "education"
       ],
-      "rank": 19
+      "popularity": {
+        "platform": "x",
+        "engagement": 2562,
+        "label": "X post @OpenAI: 2,249 likes + 121 reposts + 192 replies",
+        "observed_at": "2026-10-08T04:03:35Z",
+        "evidence_url": "https://x.com/OpenAI/status/2107909792945832070"
+      },
+      "rank": 6
     },
     {
-      "id": "lon-science-longevity-policy",
-      "section": "Longevity",
-      "story_type": "policy analysis (Catch-up)",
-      "title": "Science policy forum: aging/longevity products should go through existing FDA approval routes, with effectiveness and safety evidence",
-      "summary": "A Science Policy Forum ('Longevity products: Innovation through regulation', Strassle, Fernandez Lynch and Zettler; Science 394(6819):33-35, published online Oct 1) argues that products claiming to prevent or reverse aging should enter through existing FDA approval routes and need evidence of effectiveness and safety - a regulatory roadmap for the longevity-drug pipeline. For longevity-tech builders, it frames the likely regulatory posture for aging-biomarker claims. Caveat: analysis/policy, not new science; the article published online 2026-10-01, so this is a catch-up inclusion on Science's Oct 6 push of it (post has no URL - title/DOI recovered from the indexed post).",
+      "id": "ai-synthid-detector",
+      "section": "AI",
+      "story_type": "product launch",
+      "title": "SynthID Detector goes public: checks video, audio and images for Google-AI (and partner) watermarks, even after edits",
+      "summary": "Google DeepMind opened SynthID Detector to everyone: a public tool that checks whether content carries a SynthID watermark from Google AI or named partners (OpenAI, NVIDIA, Kakao; Apple listed as coming soon), including after edits such as filters, on images, audio and video. For builders, a free, cross-vendor watermark-verification endpoint is the missing piece for provenance pipelines - you can now verify watermarks without pulling in the generating model. Caveat: it only detects watermarks the partner systems applied, 'available to everyone' is Google's claim, and it tells you what is there, not who uploaded it.",
       "source": {
-        "name": "Science Magazine official X post (2026-10-06 13:05 UTC)",
-        "url": "https://x.com/ScienceMagazine/status/2107457104302813541"
+        "name": "Google DeepMind official X post (2026-10-07 14:03:41 UTC)",
+        "url": "https://x.com/GoogleDeepMind/status/2107834249680499136"
       },
-      "canonical_url": "https://www.science.org/doi/10.1126/science.aei2427",
-      "published_at": "2026-10-01T12:00:00-04:00",
+      "canonical_url": "https://synthid.com",
+      "published_at": "2026-10-07T14:03:41Z",
       "corroboration": [],
       "quality": {
         "signal": "primary",
         "confidence": "high",
-        "note": "Official journal account plus indexed DOI; article online date 2026-10-01 (date-only, noon US Eastern per limitation)."
+        "note": "Official vendor post with official product URL."
       },
       "tags": [
-        "longevity",
-        "policy",
-        "fda",
-        "science",
-        "regulatory",
-        "catch-up"
+        "ai",
+        "google",
+        "synthid",
+        "watermarking",
+        "provenance",
+        "media"
       ],
-      "rank": 20
+      "popularity": {
+        "platform": "x",
+        "engagement": 1562,
+        "label": "X post @GoogleDeepMind: 1,183 likes + 212 reposts + 167 replies",
+        "observed_at": "2026-10-08T04:03:35Z",
+        "evidence_url": "https://x.com/GoogleDeepMind/status/2107834249680499136"
+      },
+      "rank": 7
     },
     {
-      "id": "rob-spot-pharma-whitepaper",
-      "section": "Robotics",
-      "story_type": "white paper",
-      "title": "Boston Dynamics promotes Spot pharmaceutical-production white paper: 'a new opportunity for robotics in pharma'",
-      "summary": "Boston Dynamics' official account is circulating a white paper on Spot in pharmaceutical production, positioned as a new opportunity for robotics in regulated manufacturing. For builders targeting pharma/logistics integrations, it is the newest public articulation of Spot's regulated-environment use cases. Caveat: the URL's campaign tag reads 20260930, so this is redistribution of an existing paper rather than a new in-window publication.",
+      "id": "btc-sberbank-custody",
+      "section": "Bitcoin",
+      "story_type": "regulation",
+      "title": "Russia's Sberbank admitted to the first digital-depository register under 282-FZ: Bitcoin custody inside existing Sber apps",
+      "summary": "The Bank of Russia admitted Sberbank - the country's largest bank - to its new register of digital depositories under Federal Law 282-FZ, letting it custody bitcoin and smaller assets and move them through SberBank Online, SberInvestments and SberBusiness with standard KYC, monitoring and reporting; a limited-customer rollout starts before a December 1 target. For builders, it is the first concrete on-ramp in Russia's supervised regime, following the CBR's register window that opened last week. Caveat: admission to the register is not a live retail launch, domestic crypto payments remain prohibited since 2022, and the Dec 1 date is the bank's own conditional target.",
       "source": {
-        "name": "Boston Dynamics official X post (2026-10-06 15:36 UTC)",
-        "url": "https://x.com/BostonDynamics/status/2107495103749120176"
+        "name": "Bitcoin Magazine official X post (2026-10-07 14:00:15 UTC)",
+        "url": "https://x.com/BitcoinMagazine/status/2107833387280982262"
       },
-      "canonical_url": "https://bostondynamics.com/whitepaper/a-new-opportunity-for-robotics-in-pharmaceutical-production/",
-      "published_at": "2026-10-06T15:36:02Z",
-      "corroboration": [],
-      "quality": {
-        "signal": "corroborated",
-        "confidence": "medium",
-        "note": "Official company post; underlying paper carries a Sept 30 campaign tag - redistributed, not newly published."
-      },
-      "tags": [
-        "robotics",
-        "boston-dynamics",
-        "spot",
-        "pharma",
-        "white-paper"
-      ],
-      "rank": 21
-    },
-    {
-      "id": "lon-blueberry-evidence",
-      "section": "Longevity",
-      "story_type": "evidence roundup",
-      "title": "Rhonda Patrick's Found My Fitness: one cup of blueberries a day matches the dose in most human vascular evidence; RCTs have not shown disease prevention",
-      "summary": "Found My Fitness' official account published an evidence roundup on blueberries: about one cup per day is the dose that most consistently matches existing human vascular findings (anthocyanins 160-385 mg/cup), while randomized trials have not yet shown prevention of dementia, diabetes, heart attack, or stroke. For longevity-stack builders, it separates anthropogenic polyphenol signaling from antioxidant claims and flags where human clinical outcomes still lag surrogate markers. Caveat: a podcast episode summarizing prior studies - not a new trial.",
-      "source": {
-        "name": "Found My Fitness official X post (2026-10-06 19:03 UTC)",
-        "url": "https://x.com/foundmyfitness/status/2107547417897730323"
-      },
-      "canonical_url": "https://www.foundmyfitness.com/episodes/blueberries",
-      "published_at": "2026-10-06T12:00:00-04:00",
+      "canonical_url": "https://bitcoinmagazine.com/news/russia-sberbank-can-now-custody-bitcoin",
+      "published_at": "2026-10-07T14:00:15Z",
       "corroboration": [],
       "quality": {
         "signal": "corroborated",
         "confidence": "high",
-        "note": "Official account plus episode show notes; page is date-only (Oct 6, 2026), timestamped at noon US Pacific per limitation."
-      },
-      "tags": [
-        "longevity",
-        "nutrition",
-        "blueberries",
-        "vascular",
-        "anthocyanins",
-        "evidence-roundup"
-      ],
-      "rank": 22
-    },
-    {
-      "id": "btc-fnb-sa-btc",
-      "section": "Bitcoin",
-      "story_type": "institutional",
-      "title": "Bitcoin Magazine: South Africa's First National Bank to let 8.6 million clients buy Bitcoin in its banking app",
-      "summary": "Bitcoin Magazine's official account reported that South Africa's First National Bank is letting its 8.6 million clients buy Bitcoin inside the bank's app. If confirmed, that is among the largest retail BTC distribution partnerships in banking. Caveat: it is an unsourced 'JUST IN' post - no bank link or article link - so treat it as early reporting pending bank confirmation.",
-      "source": {
-        "name": "Bitcoin Magazine official X post (2026-10-06 22:00 UTC)",
-        "url": "https://x.com/BitcoinMagazine/status/2107591917953290659"
-      },
-      "canonical_url": "https://x.com/BitcoinMagazine/status/2107591917953290659",
-      "published_at": "2026-10-06T22:00:45Z",
-      "corroboration": [],
-      "quality": {
-        "signal": "developing",
-        "confidence": "low",
-        "note": "Single official media account 'JUST IN' post; no bank or article link yet."
+        "note": "Official media account post plus outlet article quoting the bank's statement; no direct CBR document linked yet."
       },
       "tags": [
         "bitcoin",
-        "institutional",
-        "south-africa",
-        "retail",
-        "banking"
+        "russia",
+        "regulation",
+        "custody",
+        "282-fz",
+        "sberbank"
       ],
-      "rank": 23
+      "popularity": {
+        "platform": "x",
+        "engagement": 1076,
+        "label": "X post @BitcoinMagazine: 884 likes + 133 reposts + 59 replies",
+        "observed_at": "2026-10-08T04:03:35Z",
+        "evidence_url": "https://x.com/BitcoinMagazine/status/2107833387280982262"
+      },
+      "rank": 8
+    },
+    {
+      "id": "btc-usgov-btc-bnb-move",
+      "section": "Bitcoin",
+      "story_type": "on-chain event",
+      "title": "US government-labeled wallets move ~$100M in seized BTC and BNB toward Coinbase Prime; sale not confirmed",
+      "summary": "Arkham-labeled wallets linked to the US government moved 833.6 BTC (~$71.6M) that day - funds traced to the Potapenko/Turogin forfeitures and the Bitfinex hack seizure - into addresses that within hours appeared as Coinbase Prime deposit addresses, plus ~40,285 BNB (~$31.6M) from Alameda-seized assets. The Treasury/US Marshals chain still holds roughly $27.5B in seized crypto, and no agency has announced a sale. For builders watching the Strategic Reserve regime, repeated transfers to exchange deposit addresses are the tell to watch even when the March 2025 executive order says forfeited BTC is held in the reserve. Caveat: the labels are Arkham's, not a US Marshals statement, and a transfer is not a sale.",
+      "source": {
+        "name": "CoinDesk official X post (2026-10-07 08:46:56 UTC)",
+        "url": "https://x.com/CoinDesk/status/2107754535565353245"
+      },
+      "canonical_url": "https://www.coindesk.com/markets/2026/10/07/u-s-government-moves-over-usd100-million-in-btc-and-bnb-a-sale-hasn-t-been-confirmed",
+      "published_at": "2026-10-07T08:46:56Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Official newsroom account post plus detailed outlet article; labels come from Arkham, no agency statement."
+      },
+      "tags": [
+        "bitcoin",
+        "us-government",
+        "strategic-reserve",
+        "on-chain",
+        "seized-assets"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 292,
+        "label": "X post @CoinDesk: 230 likes + 26 reposts + 36 replies",
+        "observed_at": "2026-10-08T04:03:35Z",
+        "evidence_url": "https://x.com/CoinDesk/status/2107754535565353245"
+      },
+      "rank": 9
+    },
+    {
+      "id": "btc-wells-kraken-talks",
+      "section": "Bitcoin",
+      "story_type": "institutional",
+      "title": "Wells Fargo in talks with Kraken's parent Payward for crypto trading liquidity",
+      "summary": "CoinDesk reports Wells Fargo is in talks with Payward - the parent of Kraken - to access crypto trading liquidity. If it lands, a Tier-1 US bank sourcing liquidity from a top-5 exchange house would be a concrete step beyond custody toward bank-level distribution of crypto exposure. Caveat: talks only, and the underlying scoop article is dated October 5 - the in-window item is the X post, not the article - so treat this as early-stage reporting.",
+      "source": {
+        "name": "CoinDesk official X post (2026-10-07 19:35:31 UTC)",
+        "url": "https://x.com/CoinDesk/status/2107917756859379749"
+      },
+      "canonical_url": "https://www.coindesk.com/business/2026/10/05/wells-fargo-in-talks-with-kraken-parent-payward-for-crypto-trading-liquidity",
+      "published_at": "2026-10-07T19:35:31Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "Official newsroom account post; underlying scoop dated Oct 5, talks not signed."
+      },
+      "tags": [
+        "bitcoin",
+        "wells-fargo",
+        "kraken",
+        "payward",
+        "institutional",
+        "liquidity"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 216,
+        "label": "X post @CoinDesk: 165 likes + 28 reposts + 23 replies",
+        "observed_at": "2026-10-08T04:03:35Z",
+        "evidence_url": "https://x.com/CoinDesk/status/2107917756859379749"
+      },
+      "rank": 10
+    },
+    {
+      "id": "ai-google-patent-rct",
+      "section": "AI",
+      "story_type": "research",
+      "title": "Google Research: 3-month RCT with 133 patent attorneys - AI lifts drafting quality +0.38 SD, but skill retention is senior-only",
+      "summary": "Google Research published an NBER paper from a three-month randomized field experiment: 133 patent attorneys at 11 IP firms were randomized to early access to a then-unreleased Google Labs AI patent-writing assistant (now in Gemini Notebook). AI access raised unassisted drafting quality by 0.34 SD at day 10 and 0.38 SD at day 90; after the tool was removed, treated lawyers still beat controls by 0.32 SD on redlining - but that residual skill gain was concentrated in senior lawyers, while juniors split into more strong and more low scores. For teams embedding AI into expert workflows, it is among the first long-horizon causal data on whether assistance builds expertise or atrophies it. Caveat: one profession, one tool, blinded grading by domain experts; the blog posts the headline, the full numbers are in the NBER working paper.",
+      "source": {
+        "name": "Google Research official X post (2026-10-07 20:23:35 UTC)",
+        "url": "https://x.com/GoogleResearch/status/2107929855988048269"
+      },
+      "canonical_url": "https://research.google/blog/does-better-work-always-mean-better-workers/",
+      "published_at": "2026-10-07T20:23:35Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official research-account post plus official blog page; underlying study is an NBER working paper."
+      },
+      "tags": [
+        "ai",
+        "google",
+        "field-experiment",
+        "rct",
+        "labor-economics",
+        "expertise"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 149,
+        "label": "X post @GoogleResearch: 136 likes + 10 reposts + 3 replies",
+        "observed_at": "2026-10-08T04:03:35Z",
+        "evidence_url": "https://x.com/GoogleResearch/status/2107929855988048269"
+      },
+      "rank": 11
+    },
+    {
+      "id": "btc-stacks-pox5-6-design",
+      "section": "Bitcoin",
+      "story_type": "protocol design",
+      "title": "Stacks publishes the full PoX-5 / PoX-6 Bitcoin staking design: self-custody yield auction is the end state, ~12-month bootstrap now",
+      "summary": "Stacks Labs published the complete two-phase design for Bitcoin Staking: PoX-5, the whitelisted bootstrap that activated in the July 30 hard fork with the Endowment setting capacity, target yield and the fixed 5% BTC:STX ratio each six-month bonding period, running roughly twelve months; PoX-6 is the decentralized end state where any holder bonds BTC under their own custody, STX capacity is sold through blind auctions, and yield prices onchain. PoX-6 still needs a SIP vote and a hard fork, and auction rules are not written yet. For BTC DeFi builders, this is the first full parameterization of how self-custody BTC yield will actually behave. Caveat: it is a design explainer, not an activation; the reserve fund only accrues through PoX-5.",
+      "source": {
+        "name": "Stacks official X post (2026-10-07 20:11:02 UTC)",
+        "url": "https://x.com/Stacks/status/2107926694694981684"
+      },
+      "canonical_url": "https://www.stacks.co/blog/bitcoin-staking-pox-5-pox-6",
+      "published_at": "2026-10-07T20:11:02Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official project account plus official blog page with full phase parameters."
+      },
+      "tags": [
+        "bitcoin",
+        "stacks",
+        "pox",
+        "liquid-staking",
+        "protocol-design"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 105,
+        "label": "X post @Stacks: 83 likes + 17 reposts + 5 replies",
+        "observed_at": "2026-10-08T04:03:35Z",
+        "evidence_url": "https://x.com/Stacks/status/2107926694694981684"
+      },
+      "rank": 12
+    },
+    {
+      "id": "btc-kaz-tether-mou",
+      "section": "Bitcoin",
+      "story_type": "institutional",
+      "title": "Kazakhstan's central bank signs exploratory MOU with Tether on a tenge stablecoin and RWA tokenization",
+      "summary": "The National Bank of Kazakhstan, Tether and the Alatau City Authority signed an exploratory MOU to study a tenge-linked stablecoin and real-world-asset tokenization. It commits Kazakhstan to no coin issuance - this is the study phase - but it puts a G20-adjacent central bank into a Tether-stablecoin working group, a notable widening of Tether's sovereign partnerships. Caveat: the MOU is exploratory, CoinDesk's account does not link a government document, and stablecoin-plus-Bitcoin are separate tracks; the item is included under Bitcoin as central-bank infrastructure.",
+      "source": {
+        "name": "CoinDesk official X post (2026-10-07 13:38:12 UTC)",
+        "url": "https://x.com/CoinDesk/status/2107827837973799352"
+      },
+      "canonical_url": "https://www.coindesk.com/business/2026/10/07/tether-tapped-by-kazakhstan-s-central-bank-to-explore-stablecoin-and-tokenization",
+      "published_at": "2026-10-07T13:38:12Z",
+      "corroboration": [],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Official newsroom account post plus outlet article; MOU is exploratory and no central-bank document is linked."
+      },
+      "tags": [
+        "bitcoin",
+        "kazakhstan",
+        "tether",
+        "stablecoin",
+        "central-bank",
+        "rwa"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 85,
+        "label": "X post @CoinDesk: 60 likes + 12 reposts + 13 replies",
+        "observed_at": "2026-10-08T04:03:35Z",
+        "evidence_url": "https://x.com/CoinDesk/status/2107827837973799352"
+      },
+      "rank": 13
+    },
+    {
+      "id": "ai-runway-mcp",
+      "section": "AI",
+      "story_type": "product launch",
+      "title": "Runway ships an MCP plugin: generate images and video inside ChatGPT Astra (also lists Claude, Grok Bot, Cursor)",
+      "summary": "Runway released runway.com/mcp: an MCP integration that generates images and video inside ChatGPT Astra from the same conversation, with its product page also listing Claude, Grok Bot and Cursor as supported surfaces. For builders, media models reachable through standard MCP means one tool interface across chat agents instead of per-vendor SDKs. Caveat: the launch post names no video model version and the post's own URL only appears in a same-minute reply post.",
+      "source": {
+        "name": "Runway official X post (2026-10-07 18:59:12 UTC)",
+        "url": "https://x.com/runwayml/status/2107908620692389989"
+      },
+      "canonical_url": "https://runway.com/mcp",
+      "published_at": "2026-10-07T18:59:12Z",
+      "corroboration": [
+        {
+          "name": "Reply post with runway.com/mcp link",
+          "url": "https://x.com/runwayml/status/2107908623519383755"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official vendor post plus official product page; model version unnamed."
+      },
+      "tags": [
+        "ai",
+        "runway",
+        "mcp",
+        "video-generation",
+        "integration"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 62,
+        "label": "X post @runwayml: 47 likes + 7 reposts + 8 replies",
+        "observed_at": "2026-10-08T04:03:35Z",
+        "evidence_url": "https://x.com/runwayml/status/2107908620692389989"
+      },
+      "rank": 14
+    },
+    {
+      "id": "lon-eightsleep-pregnancy",
+      "section": "Longevity",
+      "story_type": "study release",
+      "title": "Eight Sleep publishes pregnancy/postpartum analysis: Pod users show smaller HR/HRV swings and more sleep in 3rd trimester and postpartum",
+      "summary": "Eight Sleep analyzed data from 100+ pregnancies and ~46,000 nights on the Pod, with a Research Square preprint (rs-10934514): third-trimester Pod members averaged ~3 bpm lower resting heart rate, ~2 ms higher HRV, and ~12 more minutes of sleep per night than published non-Pod benchmarks; postpartum, ~3 bpm lower RHR, ~16 ms higher HRV and ~15 more minutes of sleep. For the recovery/chronobiology builder, it is one of the first nightly-resolution wearables analyses of the pregnancy/postpartum axis, including new metrics like sleep temperature preference and REM. Caveat: it is retrospective and observational with no non-Pod control group - comparisons are against published averages from other wearables - and it is company-authored, not a geroscience trial; the X post's 'up to 16 extra hours' is cumulative across the window, not per night.",
+      "source": {
+        "name": "Eight Sleep official X post (2026-10-07 16:24:34 UTC)",
+        "url": "https://x.com/eightsleep/status/2107869704769646820"
+      },
+      "canonical_url": "https://www.eightsleep.com/blog/pod-eases-strain-in-pregnancy-supports-postpartum-recovery",
+      "published_at": "2026-10-05T12:00:00-04:00",
+      "corroboration": [
+        {
+          "name": "Research Square preprint v3",
+          "url": "https://www.researchsquare.com/article/rs-10934514/v3"
+        }
+      ],
+      "quality": {
+        "signal": "primary",
+        "confidence": "medium",
+        "note": "Official account post plus company blog and preprint; observational, no control group; blog date-only (Oct 5), noon US Pacific per limitation."
+      },
+      "tags": [
+        "longevity",
+        "sleep",
+        "pregnancy",
+        "postpartum",
+        "wearables",
+        "observational"
+      ],
+      "popularity": {
+        "platform": "x",
+        "engagement": 9,
+        "label": "X post @eightsleep: 6 likes + 2 reposts + 1 replies",
+        "observed_at": "2026-10-08T04:03:35Z",
+        "evidence_url": "https://x.com/eightsleep/status/2107869704769646820"
+      },
+      "rank": 15
+    },
+    {
+      "id": "rob-iro-2026-award-finalists",
+      "section": "Robotics",
+      "story_type": "conference results",
+      "title": "IROS 2026 in Pittsburgh: 10 Best Paper/Best Student Paper finalists from 1,933 papers; South Korea takes 40% of the shortlist",
+      "summary": "IROS 2026's program in Pittsburgh ran 1,933 papers; ten made the shared Best Paper/Best Student Paper shortlist, with South Korea placing four - DGIST, POSTECH, KOREATECH and a 42dot/Seoul National/Samsung Research team - against about 6% of the program, while mainland China had three, the US two and Germany one. Per reports from the Sept 30 awards lunch, DGIST's LT-Mem (volatility-aware spatio-temporal memory for lifelong scene understanding) took Best Paper and UPenn quadrotor-formation work took Best Student Paper. For embodied-AI builders, the finalist set is a clean read on where the field's top engineering is going: VLA distillation for on-robot chips, quadruped parkour with depth-denoising world models, and non-contact manipulation of soft tissue. Caveat: this is a secondary analysis of the official IEEE paper index; the award decisions themselves were made at the conference's awards lunch.",
+      "source": {
+        "name": "RobotToday award-finalists analysis (2026-10-07)",
+        "url": "https://robottoday.com/article/iros-2026-best-paper-finalists"
+      },
+      "canonical_url": "https://2026.ieee-iros.org/program/awards/",
+      "published_at": "2026-10-07T12:00:00-04:00",
+      "corroboration": [
+        {
+          "name": "IROS 2026 official awards page",
+          "url": "https://2026.ieee-iros.org/program/awards/"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "high",
+        "note": "Outlet analysis cross-checked against the official IROS awards page; page date-only, timestamped at noon US Eastern per limitation."
+      },
+      "tags": [
+        "robotics",
+        "iros",
+        "best-paper",
+        "vla",
+        "research",
+        "south-korea"
+      ],
+      "rank": 16
+    },
+    {
+      "id": "lon-evipedia-huggingface",
+      "section": "Longevity",
+      "story_type": "data release",
+      "title": "Evipedia's 870+ longevity evidence reviews land on Hugging Face under CC4 with daily refresh",
+      "summary": "The Lifespan Research Institute / Forever Healthy pushed Evipedia - 870+ evidence reviews of health and longevity interventions covering whole-body therapies, peptides, diets, blood therapies and more - to Hugging Face as a full-dataset, daily-refreshed release: one row per review with all metadata and full Markdown, CC4-licensed and built on their open-source AI4L 'Audit-Driven Prompting' framework. For longevity-stack builders, this is the most structured machine-readable longevity-evidence corpus available: a drop-in dataset for RAG pipelines, intervention triage agents, or benchmarking claim quality. Caveat: it is a curated review corpus, not primary trial data - the reviews' own evidence grading is the load-bearing layer, and it is a continuously updated moving target.",
+      "source": {
+        "name": "Lifespan Research Institute press release (2026-10-07)",
+        "url": "https://lifespan.io/evipedia-goes-hugging-face/"
+      },
+      "canonical_url": "https://lifespan.io/evipedia-goes-hugging-face/",
+      "published_at": "2026-10-07T12:00:00-04:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "primary",
+        "confidence": "high",
+        "note": "Official institute press release with dataset details; page date-only, noon US Eastern per limitation."
+      },
+      "tags": [
+        "longevity",
+        "data-release",
+        "evidence",
+        "hugging-face",
+        "open-data",
+        "ai4l"
+      ],
+      "rank": 17
+    },
+    {
+      "id": "rob-casia-vla-iro",
+      "section": "Robotics",
+      "story_type": "research",
+      "title": "CASIA's Peiyan Li co-authors two IROS 2026 VLA papers (HCoT-VLA, StaKe) alongside BridgeVLA and SpatialVAM",
+      "summary": "CASIA PhD candidate Peiyan Li co-authored two VLA (vision-language-action) papers accepted to IROS 2026 - HCoT-VLA and StaKe - on top of his BridgeVLA and SpatialVAM work, per RobotToday. It is a data point that China's top research institutes are shipping a dense volume of embodied-AI control work into the main robotics conference pipeline, rather than only model launches. Caveat: it is a person/paper-roundup piece, not a single result with published metrics; the papers' full technical content is on the IROS program, not in the roundup.",
+      "source": {
+        "name": "RobotToday CASIA VLA papers piece (2026-10-08)",
+        "url": "https://robottoday.com/article/peiyan-li-casia-iros-2026-vla-papers"
+      },
+      "canonical_url": "https://robottoday.com/article/peiyan-li-casia-iros-2026-vla-papers",
+      "published_at": "2026-10-08T12:00:00-04:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Outlet roundup; underlying papers in the IROS 2026 program. Page date-only, noon US Eastern per limitation."
+      },
+      "tags": [
+        "robotics",
+        "vla",
+        "casia",
+        "china",
+        "iros",
+        "embodied-ai"
+      ],
+      "rank": 18
+    },
+    {
+      "id": "lon-hemostemix-bahamas",
+      "section": "Longevity",
+      "story_type": "clinical milestone",
+      "title": "Hemostemix wins Bahamas National Longevity Board approval for commercial Phase 1 VesCell trial, plans dedicated longevity protocol",
+      "summary": "Hemostemix (TSE: HEM) says it secured full approval - including ethics clearance - from The Bahamas' National Longevity and Regenerative Therapy Board to run a commercial Phase 1 study of its autologous vesicle therapy VesCell for angina, vascular dementia and pain, and is designing a second VesCell protocol explicitly targeting longevity, measuring cognition, left-ventricular ejection fraction and immune biomarkers. It also advanced a non-brokered private placement (up to $1M, C$380.5k tranche closed) and moved ACP-01 test batches into cleanroom production. For longevity-builders, a regulatory board named for longevity green-lighting a first-in-human-adjacent commercial Phase 1 is a small but concrete marker of the Bahamas longevity hub. Caveat: it is a micro-cap, pre-revenue company (negative equity, ongoing losses) and the reporting is a TipRanks auto-newsdesk summary of the company announcement - Phase 1 is early evidence, not a longevity intervention proven in humans.",
+      "source": {
+        "name": "TipRanks company-announcement desk (2026-10-08)",
+        "url": "https://www.tipranks.com/news/company-announcements/hemostemix-wins-bahamas-approval-for-vescell-trial-and-advances-financing-manufacturing"
+      },
+      "canonical_url": "https://www.tipranks.com/news/company-announcements/hemostemix-wins-bahamas-approval-for-vescell-trial-and-advances-financing-manufacturing",
+      "published_at": "2026-10-08T00:00:00-04:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "Auto-generated desk summary of a company announcement; no primary press-release URL linked; financials are company-reported."
+      },
+      "tags": [
+        "longevity",
+        "stem-cells",
+        "vescell",
+        "bahamas",
+        "phase-1",
+        "regenerative-medicine"
+      ],
+      "rank": 19
+    },
+    {
+      "id": "lon-aura-bio-peptides",
+      "section": "Longevity",
+      "story_type": "research roundup",
+      "title": "Aura Bio's 300-peptide screen: a natural product repairs sunburned skin after the damage is done; 40% less radiation dermatitis reported",
+      "summary": "Aura Bio co-founders discussed the company's 'Million Molecule Challenge': a screen of 300 peptides at multiple doses for lifespan extension and damage resilience, which surfaced a natural product that repairs sunburned skin post-exposure rather than preventing it - reported ~40% reduction in radiation dermatitis, doubled collagen/elastin production, and early human effects, with an mTOR-inhibitor peptide rising to the top. For longevity builders, post-exposure repair compounds are an under-explored category relative to prevention, and the screen's explicit inclusion of lifespan-decreasing peptides is a sound control practice. Caveat: this is a media recap of founders' discussion, not a paper - most reported figures (including the 20% lifespan extension in the underlying model work) are preclinical/animal, and no trial results are yet peer-reviewed.",
+      "source": {
+        "name": "BoxLife Magazine recap of Aura Bio screening work (2026-10-07)",
+        "url": "https://boxlifemagazine.com/biotech-longevity-molecules-repairs-sunburn-blocks-radiation/"
+      },
+      "canonical_url": "https://boxlifemagazine.com/biotech-longevity-molecules-repairs-sunburn-blocks-radiation/",
+      "published_at": "2026-10-07T12:00:00-04:00",
+      "corroboration": [],
+      "quality": {
+        "signal": "developing",
+        "confidence": "medium",
+        "note": "Secondary recap of founder discussion; animal/early-human evidence, not peer-reviewed. Page date-only, noon US Eastern per limitation."
+      },
+      "tags": [
+        "longevity",
+        "peptides",
+        "skin",
+        "uv-damage",
+        "screen",
+        "preclinical"
+      ],
+      "rank": 20
+    },
+    {
+      "id": "rob-fmc3-embodied-data-mou",
+      "section": "Robotics",
+      "story_type": "industry MoU (Catch-up)",
+      "title": "Catch-up: FMC3 Robotics, Vector Informatik and PEM Motion form embodied-AI data venture in Germany after Stuttgart MoU",
+      "summary": "FMC3 Robotics, Vector Informatik (industrial software) and PEM Motion signed an MoU - announced alongside the Humanoid Robots Summit 2026 in Stuttgart and now formalized in industry reporting - to build a standardized data infrastructure for industrial embodied AI, with a planned joint venture in Germany. For builders, a common data substrate for industrial robot fleets is the unglamorous layer that decides whether cross-embodiment manipulation models ever get out of the lab. Caveat: labeled Catch-up because the signature date was never publicly pinned and coverage ran Sept 15-Oct 2; it is an MoU with a JV 'intended', not a signed entity, and no dataset spec is public yet.",
+      "source": {
+        "name": "RobotToday briefing on the FMC3/Vector/PEM MoU (2026-10-02)",
+        "url": "https://robottoday.com/industry-briefing/fmc-robotics-vector-informatik-and-pem-motion-form-joint-venture-for-embodied-ai-development/14852"
+      },
+      "canonical_url": "https://roboticsandautomationnews.com/2026/10/02/fmc%C2%B3-robotics-vector-and-pem-motion-plan-embodied-ai-joint-venture/105470/",
+      "published_at": "2026-10-02T12:00:00-04:00",
+      "corroboration": [
+        {
+          "name": "Automation-Next original report (2026-09-15)",
+          "url": "https://www.automation-next.com/future-tech/embodied-ai-bekommt-gemeinsame-datenbasis/2736532"
+        },
+        {
+          "name": "Humanoid Robots Summit 2026 (Stuttgart, Sept 9-11)",
+          "url": "https://humanoidrobotssummit.com/"
+        }
+      ],
+      "quality": {
+        "signal": "corroborated",
+        "confidence": "medium",
+        "note": "Two independent industry outlets plus summit venue; no primary company press release located. Dates date-only, noon US Eastern per limitation."
+      },
+      "tags": [
+        "robotics",
+        "embodied-ai",
+        "data-infrastructure",
+        "germany",
+        "moU",
+        "catch-up"
+      ],
+      "rank": 21
     }
   ]
 }
